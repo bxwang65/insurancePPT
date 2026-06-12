@@ -1,0 +1,96 @@
+{
+  "outputSlides": [
+    {
+      "outputSlide": 1,
+      "sourceSlide": 2,
+      "narrativeRole": "cover",
+      "reuseMode": "duplicate-slide",
+      "editTargets": [
+        {
+          "action": "rewrite",
+          "sourceElementId": "sh/cvixczed"
+        }
+      ]
+    },
+    {
+      "outputSlide": 2,
+      "sourceSlide": 3,
+      "narrativeRole": "outline",
+      "reuseMode": "duplicate-slide",
+      "editTargets": [
+        {
+          "action": "rewrite",
+          "sourceElementId": "sh/5o7qpg3e"
+        },
+        {
+          "action": "rewrite",
+          "sourceElementId": "sh/ylc7u54z"
+        },
+        {
+          "action": "rewrite",
+          "sourceElementId": "sh/rytsvu9k"
+        },
+        {
+          "action": "rewrite",
+          "sourceElementId": "sh/lwval87e"
+        },
+        {
+          "action": "rewrite",
+          "sourceElementId": "sh/w3m94fu1"
+        },
+        {
+          "action": "rewrite",
+          "sourceElementId": "sh/3itgfmlk"
+        }
+      ]
+    },
+    {
+      "outputSlide": 3,
+      "sourceSlide": 5,
+      "narrativeRole": "highlights",
+      "reuseMode": "duplicate-slide",
+      "editTargets": [
+        {
+          "action": "rewrite",
+          "sourceElementId": "sh/qtcj6tov"
+        }
+      ]
+    },
+    {
+      "outputSlide": 4,
+      "sourceSlide": 6,
+      "narrativeRole": "company",
+      "reuseMode": "duplicate-slide",
+      "editTargets": [
+        {
+          "action": "rewrite",
+          "sourceElementId": "sh/5wjudg7a"
+        }
+      ]
+    },
+    {
+      "outputSlide": 5,
+      "sourceSlide": 6,
+      "narrativeRole": "withdrawal",
+      "reuseMode": "duplicate-slide",
+      "editTargets": [
+        {
+          "action": "rewrite",
+          "sourceElementId": "sh/5wjudg7a"
+        }
+      ]
+    },
+    {
+      "outputSlide": 6,
+      "sourceSlide": 5,
+      "narrativeRole": "closing",
+      "reuseMode": "duplicate-slide",
+      "editTargets": [
+        {
+          "action": "rewrite",
+          "sourceElementId": "sh/qtcj6tov"
+        }
+      ]
+    }
+  ]
+}

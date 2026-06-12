@@ -1,0 +1,1491 @@
+{
+  "request": {
+    "tenantId": "ctf",
+    "userId": "v21img",
+    "sessionId": "01907ac5",
+    "customerName": "Boxie 家庭",
+    "outputStem": "01907ac5_ctf_v21img",
+    "quality": "high",
+    "format": "pptx",
+    "extractions": [
+      {
+        "pdfName": "匠心傳承儲蓄計劃2尊尚版.pdf",
+        "planType": "savings",
+        "data": {
+          "product_name": "「匠X・传承」储蓄寿险计划2(尊尚版)",
+          "insured": {
+            "name": "VIP 先生",
+            "age": 1,
+            "gender": "男",
+            "smoker": null
+          },
+          "policy": {
+            "product_name": "「匠X・传承」储蓄寿险计划2(尊尚版)",
+            "currency": "美元",
+            "sum_insured": null,
+            "basic_sum_insured": null,
+            "annual_premium": 100000.04,
+            "premium_payment_period": "5年",
+            "coverage_period": "至128岁",
+            "total_premium_with_levy": 100012.86
+          },
+          "benefit_illustration": [
+            {
+              "policy_year": 1,
+              "total_premium_paid": 100000,
+              "guaranteed_cash_value": 0,
+              "reversionary_bonus": 699,
+              "terminal_dividend": 1944,
+              "total_surrender_value": 2643,
+              "death_benefit": 101000
+            },
+            {
+              "policy_year": 2,
+              "total_premium_paid": 200000,
+              "guaranteed_cash_value": 699,
+              "reversionary_bonus": 2099,
+              "terminal_dividend": 1944,
+              "total_surrender_value": 4742,
+              "death_benefit": 202000
+            },
+            {
+              "policy_year": 3,
+              "total_premium_paid": 300000,
+              "guaranteed_cash_value": 27273,
+              "reversionary_bonus": 4204,
+              "terminal_dividend": 4916,
+              "total_surrender_value": 36393,
+              "death_benefit": 303000
+            },
+            {
+              "policy_year": 4,
+              "total_premium_paid": 400000,
+              "guaranteed_cash_value": 50350,
+              "reversionary_bonus": 7018,
+              "terminal_dividend": 35958,
+              "total_surrender_value": 93326,
+              "death_benefit": 404000
+            },
+            {
+              "policy_year": 5,
+              "total_premium_paid": 500000,
+              "guaranteed_cash_value": 99301,
+              "reversionary_bonus": 28207,
+              "terminal_dividend": 107287,
+              "total_surrender_value": 234795,
+              "death_benefit": 505000
+            },
+            {
+              "policy_year": 6,
+              "total_premium_paid": 500000,
+              "guaranteed_cash_value": 160839,
+              "reversionary_bonus": 48577,
+              "terminal_dividend": 130385,
+              "total_surrender_value": 339801,
+              "death_benefit": 505000
+            },
+            {
+              "policy_year": 7,
+              "total_premium_paid": 500000,
+              "guaranteed_cash_value": 316084,
+              "reversionary_bonus": 68022,
+              "terminal_dividend": 130392,
+              "total_surrender_value": 514498,
+              "death_benefit": 514498
+            },
+            {
+              "policy_year": 8,
+              "total_premium_paid": 500000,
+              "guaranteed_cash_value": 320979,
+              "reversionary_bonus": 86438,
+              "terminal_dividend": 130399,
+              "total_surrender_value": 537816,
+              "death_benefit": 537816
+            },
+            {
+              "policy_year": 9,
+              "total_premium_paid": 500000,
+              "guaranteed_cash_value": 333567,
+              "reversionary_bonus": 103724,
+              "terminal_dividend": 133490,
+              "total_surrender_value": 570781,
+              "death_benefit": 570781
+            },
+            {
+              "policy_year": 10,
+              "total_premium_paid": 500000,
+              "guaranteed_cash_value": 382518,
+              "reversionary_bonus": 119785,
+              "terminal_dividend": 135930,
+              "total_surrender_value": 638233,
+              "death_benefit": 638233
+            },
+            {
+              "policy_year": 11,
+              "total_premium_paid": 500000,
+              "guaranteed_cash_value": 395105,
+              "reversionary_bonus": 132071,
+              "terminal_dividend": 140902,
+              "total_surrender_value": 668078,
+              "death_benefit": 668078
+            },
+            {
+              "policy_year": 12,
+              "total_premium_paid": 500000,
+              "guaranteed_cash_value": 407692,
+              "reversionary_bonus": 144542,
+              "terminal_dividend": 143469,
+              "total_surrender_value": 695703,
+              "death_benefit": 695703
+            },
+            {
+              "policy_year": 13,
+              "total_premium_paid": 500000,
+              "guaranteed_cash_value": 502797,
+              "reversionary_bonus": 157199,
+              "terminal_dividend": 161070,
+              "total_surrender_value": 821066,
+              "death_benefit": 821066
+            },
+            {
+              "policy_year": 14,
+              "total_premium_paid": 500000,
+              "guaranteed_cash_value": 503497,
+              "reversionary_bonus": 164051,
+              "terminal_dividend": 194161,
+              "total_surrender_value": 861709,
+              "death_benefit": 861709
+            },
+            {
+              "policy_year": 15,
+              "total_premium_paid": 500000,
+              "guaranteed_cash_value": 504196,
+              "reversionary_bonus": 170958,
+              "terminal_dividend": 256056,
+              "total_surrender_value": 931210,
+              "death_benefit": 931210
+            },
+            {
+              "policy_year": 16,
+              "total_premium_paid": 500000,
+              "guaranteed_cash_value": 504895,
+              "reversionary_bonus": 177920,
+              "terminal_dividend": 298049,
+              "total_surrender_value": 980864,
+              "death_benefit": 980864
+            },
+            {
+              "policy_year": 17,
+              "total_premium_paid": 500000,
+              "guaranteed_cash_value": 505595,
+              "reversionary_bonus": 184938,
+              "terminal_dividend": 367294,
+              "total_surrender_value": 1057827,
+              "death_benefit": 1057827
+            },
+            {
+              "policy_year": 18,
+              "total_premium_paid": 500000,
+              "guaranteed_cash_value": 506294,
+              "reversionary_bonus": 192012,
+              "terminal_dividend": 445797,
+              "total_surrender_value": 1144103,
+              "death_benefit": 1144103
+            },
+            {
+              "policy_year": 19,
+              "total_premium_paid": 500000,
+              "guaranteed_cash_value": 506993,
+              "reversionary_bonus": 199142,
+              "terminal_dividend": 545755,
+              "total_surrender_value": 1251890,
+              "death_benefit": 1251890
+            },
+            {
+              "policy_year": 20,
+              "total_premium_paid": 500000,
+              "guaranteed_cash_value": 507693,
+              "reversionary_bonus": 206330,
+              "terminal_dividend": 652322,
+              "total_surrender_value": 1366345,
+              "death_benefit": 1366345
+            },
+            {
+              "policy_year": 21,
+              "total_premium_paid": 500000,
+              "guaranteed_cash_value": 508392,
+              "reversionary_bonus": 213575,
+              "terminal_dividend": 729189,
+              "total_surrender_value": 1451156,
+              "death_benefit": 1451156
+            },
+            {
+              "policy_year": 22,
+              "total_premium_paid": 500000,
+              "guaranteed_cash_value": 509091,
+              "reversionary_bonus": 220878,
+              "terminal_dividend": 821902,
+              "total_surrender_value": 1551871,
+              "death_benefit": 1551871
+            },
+            {
+              "policy_year": 23,
+              "total_premium_paid": 500000,
+              "guaranteed_cash_value": 509790,
+              "reversionary_bonus": 228239,
+              "terminal_dividend": 933986,
+              "total_surrender_value": 1672015,
+              "death_benefit": 1672015
+            },
+            {
+              "policy_year": 24,
+              "total_premium_paid": 500000,
+              "guaranteed_cash_value": 510490,
+              "reversionary_bonus": 235660,
+              "terminal_dividend": 1051504,
+              "total_surrender_value": 1797654,
+              "death_benefit": 1797654
+            },
+            {
+              "policy_year": 25,
+              "total_premium_paid": 500000,
+              "guaranteed_cash_value": 511189,
+              "reversionary_bonus": 243139,
+              "terminal_dividend": 1180273,
+              "total_surrender_value": 1934601,
+              "death_benefit": 1934601
+            },
+            {
+              "policy_year": 26,
+              "total_premium_paid": 500000,
+              "guaranteed_cash_value": 511888,
+              "reversionary_bonus": 250679,
+              "terminal_dividend": 1328518,
+              "total_surrender_value": 2091085,
+              "death_benefit": 2091085
+            },
+            {
+              "policy_year": 27,
+              "total_premium_paid": 500000,
+              "guaranteed_cash_value": 512588,
+              "reversionary_bonus": 258279,
+              "terminal_dividend": 1483294,
+              "total_surrender_value": 2254161,
+              "death_benefit": 2254161
+            },
+            {
+              "policy_year": 28,
+              "total_premium_paid": 500000,
+              "guaranteed_cash_value": 513287,
+              "reversionary_bonus": 265939,
+              "terminal_dividend": 1661197,
+              "total_surrender_value": 2440423,
+              "death_benefit": 2440423
+            },
+            {
+              "policy_year": 29,
+              "total_premium_paid": 500000,
+              "guaranteed_cash_value": 513986,
+              "reversionary_bonus": 273661,
+              "terminal_dividend": 1817833,
+              "total_surrender_value": 2605480,
+              "death_benefit": 2605480
+            },
+            {
+              "policy_year": 30,
+              "total_premium_paid": 500000,
+              "guaranteed_cash_value": 514686,
+              "reversionary_bonus": 281445,
+              "terminal_dividend": 1986623,
+              "total_surrender_value": 2782754,
+              "death_benefit": 2782754
+            },
+            {
+              "policy_year": 31,
+              "total_premium_paid": 500000,
+              "guaranteed_cash_value": 515385,
+              "reversionary_bonus": 289291,
+              "terminal_dividend": 2158812,
+              "total_surrender_value": 2963488,
+              "death_benefit": 2963488
+            },
+            {
+              "policy_year": 32,
+              "total_premium_paid": 500000,
+              "guaranteed_cash_value": 516084,
+              "reversionary_bonus": 297200,
+              "terminal_dividend": 2368581,
+              "total_surrender_value": 3181865,
+              "death_benefit": 3181865
+            },
+            {
+              "policy_year": 33,
+              "total_premium_paid": 500000,
+              "guaranteed_cash_value": 516783,
+              "reversionary_bonus": 305172,
+              "terminal_dividend": 2582491,
+              "total_surrender_value": 3404446,
+              "death_benefit": 3404446
+            },
+            {
+              "policy_year": 34,
+              "total_premium_paid": 500000,
+              "guaranteed_cash_value": 517483,
+              "reversionary_bonus": 313207,
+              "terminal_dividend": 2798840,
+              "total_surrender_value": 3629530,
+              "death_benefit": 3629530
+            },
+            {
+              "policy_year": 35,
+              "total_premium_paid": 500000,
+              "guaranteed_cash_value": 518182,
+              "reversionary_bonus": 321307,
+              "terminal_dividend": 3031365,
+              "total_surrender_value": 3870854,
+              "death_benefit": 3870854
+            },
+            {
+              "policy_year": 36,
+              "total_premium_paid": 500000,
+              "guaranteed_cash_value": 518881,
+              "reversionary_bonus": 329472,
+              "terminal_dividend": 3281260,
+              "total_surrender_value": 4129613,
+              "death_benefit": 4129613
+            },
+            {
+              "policy_year": 37,
+              "total_premium_paid": 500000,
+              "guaranteed_cash_value": 519581,
+              "reversionary_bonus": 337702,
+              "terminal_dividend": 3549848,
+              "total_surrender_value": 4407131,
+              "death_benefit": 4407131
+            },
+            {
+              "policy_year": 38,
+              "total_premium_paid": 500000,
+              "guaranteed_cash_value": 520280,
+              "reversionary_bonus": 345999,
+              "terminal_dividend": 3838519,
+              "total_surrender_value": 4704798,
+              "death_benefit": 4704798
+            },
+            {
+              "policy_year": 39,
+              "total_premium_paid": 500000,
+              "guaranteed_cash_value": 520979,
+              "reversionary_bonus": 354361,
+              "terminal_dividend": 4234806,
+              "total_surrender_value": 5110146,
+              "death_benefit": 5110146
+            },
+            {
+              "policy_year": 40,
+              "total_premium_paid": 500000,
+              "guaranteed_cash_value": 521679,
+              "reversionary_bonus": 362790,
+              "terminal_dividend": 4573296,
+              "total_surrender_value": 5457765,
+              "death_benefit": 5457765
+            },
+            {
+              "policy_year": 41,
+              "total_premium_paid": 500000,
+              "guaranteed_cash_value": 522378,
+              "reversionary_bonus": 371287,
+              "terminal_dividend": 4958623,
+              "total_surrender_value": 5852288,
+              "death_benefit": 5855681
+            },
+            {
+              "policy_year": 42,
+              "total_premium_paid": 500000,
+              "guaranteed_cash_value": 523077,
+              "reversionary_bonus": 379852,
+              "terminal_dividend": 5329758,
+              "total_surrender_value": 6232687,
+              "death_benefit": 6257064
+            },
+            {
+              "policy_year": 43,
+              "total_premium_paid": 500000,
+              "guaranteed_cash_value": 523776,
+              "reversionary_bonus": 388485,
+              "terminal_dividend": 5725551,
+              "total_surrender_value": 6637812,
+              "death_benefit": 6687648
+            },
+            {
+              "policy_year": 44,
+              "total_premium_paid": 500000,
+              "guaranteed_cash_value": 524476,
+              "reversionary_bonus": 397187,
+              "terminal_dividend": 6147606,
+              "total_surrender_value": 7069269,
+              "death_benefit": 7149603
+            },
+            {
+              "policy_year": 45,
+              "total_premium_paid": 500000,
+              "guaranteed_cash_value": 546154,
+              "reversionary_bonus": 405959,
+              "terminal_dividend": 6576659,
+              "total_surrender_value": 7528772,
+              "death_benefit": 7656368
+            },
+            {
+              "policy_year": 46,
+              "total_premium_paid": 500000,
+              "guaranteed_cash_value": 581119,
+              "reversionary_bonus": 414801,
+              "terminal_dividend": 7022222,
+              "total_surrender_value": 8018142,
+              "death_benefit": 8196469
+            },
+            {
+              "policy_year": 47,
+              "total_premium_paid": 500000,
+              "guaranteed_cash_value": 581818,
+              "reversionary_bonus": 423714,
+              "terminal_dividend": 7533789,
+              "total_surrender_value": 8539321,
+              "death_benefit": 8751088
+            },
+            {
+              "policy_year": 48,
+              "total_premium_paid": 500000,
+              "guaranteed_cash_value": 582518,
+              "reversionary_bonus": 432698,
+              "terminal_dividend": 8079161,
+              "total_surrender_value": 9094377,
+              "death_benefit": 9363660
+            },
+            {
+              "policy_year": 49,
+              "total_premium_paid": 500000,
+              "guaranteed_cash_value": 583217,
+              "reversionary_bonus": 441754,
+              "terminal_dividend": 8660541,
+              "total_surrender_value": 9685512,
+              "death_benefit": 10021206
+            },
+            {
+              "policy_year": 50,
+              "total_premium_paid": 500000,
+              "guaranteed_cash_value": 583916,
+              "reversionary_bonus": 450883,
+              "terminal_dividend": 9280271,
+              "total_surrender_value": 10315070,
+              "death_benefit": 10825076
+            },
+            {
+              "policy_year": 51,
+              "total_premium_paid": 500000,
+              "guaranteed_cash_value": 584616,
+              "reversionary_bonus": 460084,
+              "terminal_dividend": 9940850,
+              "total_surrender_value": 10985550,
+              "death_benefit": 11588124
+            },
+            {
+              "policy_year": 52,
+              "total_premium_paid": 500000,
+              "guaranteed_cash_value": 585315,
+              "reversionary_bonus": 469359,
+              "terminal_dividend": 10644937,
+              "total_surrender_value": 11699611,
+              "death_benefit": 12407217
+            },
+            {
+              "policy_year": 53,
+              "total_premium_paid": 500000,
+              "guaranteed_cash_value": 586014,
+              "reversionary_bonus": 478708,
+              "terminal_dividend": 11395363,
+              "total_surrender_value": 12460085,
+              "death_benefit": 13286538
+            },
+            {
+              "policy_year": 54,
+              "total_premium_paid": 500000,
+              "guaranteed_cash_value": 586714,
+              "reversionary_bonus": 488132,
+              "terminal_dividend": 12195145,
+              "total_surrender_value": 13269991,
+              "death_benefit": 14230607
+            },
+            {
+              "policy_year": 55,
+              "total_premium_paid": 500000,
+              "guaranteed_cash_value": 587413,
+              "reversionary_bonus": 497632,
+              "terminal_dividend": 13047495,
+              "total_surrender_value": 14132540,
+              "death_benefit": 15244254
+            },
+            {
+              "policy_year": 56,
+              "total_premium_paid": 500000,
+              "guaranteed_cash_value": 588112,
+              "reversionary_bonus": 507207,
+              "terminal_dividend": 13955836,
+              "total_surrender_value": 15051155,
+              "death_benefit": 16332535
+            },
+            {
+              "policy_year": 57,
+              "total_premium_paid": 500000,
+              "guaranteed_cash_value": 588811,
+              "reversionary_bonus": 516859,
+              "terminal_dividend": 14923811,
+              "total_surrender_value": 16029481,
+              "death_benefit": 17501188
+            },
+            {
+              "policy_year": 58,
+              "total_premium_paid": 500000,
+              "guaranteed_cash_value": 589511,
+              "reversionary_bonus": 526589,
+              "terminal_dividend": 15955297,
+              "total_surrender_value": 17071397,
+              "death_benefit": 18756240
+            },
+            {
+              "policy_year": 59,
+              "total_premium_paid": 500000,
+              "guaranteed_cash_value": 590210,
+              "reversionary_bonus": 536396,
+              "terminal_dividend": 17054432,
+              "total_surrender_value": 18181038,
+              "death_benefit": 20104181
+            },
+            {
+              "policy_year": 60,
+              "total_premium_paid": 500000,
+              "guaranteed_cash_value": 590909,
+              "reversionary_bonus": 546281,
+              "terminal_dividend": 18225615,
+              "total_surrender_value": 19362805,
+              "death_benefit": 21551989
+            },
+            {
+              "policy_year": 61,
+              "total_premium_paid": 500000,
+              "guaranteed_cash_value": 591609,
+              "reversionary_bonus": 556246,
+              "terminal_dividend": 19473533,
+              "total_surrender_value": 20621388,
+              "death_benefit": 23107046
+            },
+            {
+              "policy_year": 62,
+              "total_premium_paid": 500000,
+              "guaranteed_cash_value": 592308,
+              "reversionary_bonus": 566290,
+              "terminal_dividend": 20803180,
+              "total_surrender_value": 21961778,
+              "death_benefit": 24777587
+            },
+            {
+              "policy_year": 63,
+              "total_premium_paid": 500000,
+              "guaranteed_cash_value": 593007,
+              "reversionary_bonus": 576415,
+              "terminal_dividend": 22219871,
+              "total_surrender_value": 23389293,
+              "death_benefit": 26572356
+            },
+            {
+              "policy_year": 64,
+              "total_premium_paid": 500000,
+              "guaranteed_cash_value": 593707,
+              "reversionary_bonus": 586621,
+              "terminal_dividend": 23729269,
+              "total_surrender_value": 24909597,
+              "death_benefit": 28500801
+            },
+            {
+              "policy_year": 65,
+              "total_premium_paid": 500000,
+              "guaranteed_cash_value": 594406,
+              "reversionary_bonus": 596908,
+              "terminal_dividend": 25337407,
+              "total_surrender_value": 26528721,
+              "death_benefit": 30573033
+            },
+            {
+              "policy_year": 66,
+              "total_premium_paid": 500000,
+              "guaranteed_cash_value": 595105,
+              "reversionary_bonus": 607278,
+              "terminal_dividend": 27050705,
+              "total_surrender_value": 28253088,
+              "death_benefit": 32799432
+            },
+            {
+              "policy_year": 67,
+              "total_premium_paid": 500000,
+              "guaranteed_cash_value": 597902,
+              "reversionary_bonus": 617731,
+              "terminal_dividend": 28873906,
+              "total_surrender_value": 30089539,
+              "death_benefit": 35193053
+            },
+            {
+              "policy_year": 68,
+              "total_premium_paid": 500000,
+              "guaranteed_cash_value": 602797,
+              "reversionary_bonus": 628267,
+              "terminal_dividend": 30814295,
+              "total_surrender_value": 32045359,
+              "death_benefit": 37765590
+            },
+            {
+              "policy_year": 69,
+              "total_premium_paid": 500000,
+              "guaranteed_cash_value": 607693,
+              "reversionary_bonus": 638887,
+              "terminal_dividend": 32881727,
+              "total_surrender_value": 34128307,
+              "death_benefit": 40529646
+            },
+            {
+              "policy_year": 70,
+              "total_premium_paid": 500000,
+              "guaranteed_cash_value": 612588,
+              "reversionary_bonus": 649593,
+              "terminal_dividend": 35084467,
+              "total_surrender_value": 36346648,
+              "death_benefit": 43501080
+            },
+            {
+              "policy_year": 71,
+              "total_premium_paid": 500000,
+              "guaranteed_cash_value": 618182,
+              "reversionary_bonus": 660384,
+              "terminal_dividend": 37430614,
+              "total_surrender_value": 38709180,
+              "death_benefit": 46693893
+            },
+            {
+              "policy_year": 72,
+              "total_premium_paid": 500000,
+              "guaranteed_cash_value": 623077,
+              "reversionary_bonus": 671261,
+              "terminal_dividend": 39930938,
+              "total_surrender_value": 41225276,
+              "death_benefit": 50126387
+            },
+            {
+              "policy_year": 73,
+              "total_premium_paid": 500000,
+              "guaranteed_cash_value": 627972,
+              "reversionary_bonus": 682226,
+              "terminal_dividend": 42594721,
+              "total_surrender_value": 43904919,
+              "death_benefit": 53818542
+            },
+            {
+              "policy_year": 74,
+              "total_premium_paid": 500000,
+              "guaranteed_cash_value": 632867,
+              "reversionary_bonus": 693278,
+              "terminal_dividend": 45432594,
+              "total_surrender_value": 46758739,
+              "death_benefit": 57790687
+            },
+            {
+              "policy_year": 75,
+              "total_premium_paid": 500000,
+              "guaranteed_cash_value": 638462,
+              "reversionary_bonus": 704419,
+              "terminal_dividend": 48455176,
+              "total_surrender_value": 49798057,
+              "death_benefit": 62065753
+            },
+            {
+              "policy_year": 76,
+              "total_premium_paid": 500000,
+              "guaranteed_cash_value": 643357,
+              "reversionary_bonus": 715649,
+              "terminal_dividend": 51675925,
+              "total_surrender_value": 53034931,
+              "death_benefit": 66663139
+            },
+            {
+              "policy_year": 77,
+              "total_premium_paid": 500000,
+              "guaranteed_cash_value": 648951,
+              "reversionary_bonus": 726968,
+              "terminal_dividend": 55106282,
+              "total_surrender_value": 56482201,
+              "death_benefit": 71614159
+            },
+            {
+              "policy_year": 78,
+              "total_premium_paid": 500000,
+              "guaranteed_cash_value": 653846,
+              "reversionary_bonus": 738378,
+              "terminal_dividend": 58761321,
+              "total_surrender_value": 60153545,
+              "death_benefit": 76946711
+            },
+            {
+              "policy_year": 79,
+              "total_premium_paid": 500000,
+              "guaranteed_cash_value": 659441,
+              "reversionary_bonus": 749880,
+              "terminal_dividend": 62654204,
+              "total_surrender_value": 64063525,
+              "death_benefit": 82694258
+            },
+            {
+              "policy_year": 80,
+              "total_premium_paid": 500000,
+              "guaranteed_cash_value": 665035,
+              "reversionary_bonus": 761473,
+              "terminal_dividend": 66801146,
+              "total_surrender_value": 68227654,
+              "death_benefit": 88890671
+            },
+            {
+              "policy_year": 81,
+              "total_premium_paid": 500000,
+              "guaranteed_cash_value": 669930,
+              "reversionary_bonus": 773159,
+              "terminal_dividend": 71219363,
+              "total_surrender_value": 72662452,
+              "death_benefit": 95573913
+            },
+            {
+              "policy_year": 82,
+              "total_premium_paid": 500000,
+              "guaranteed_cash_value": 675525,
+              "reversionary_bonus": 784939,
+              "terminal_dividend": 75925047,
+              "total_surrender_value": 77385511,
+              "death_benefit": 102786347
+            },
+            {
+              "policy_year": 83,
+              "total_premium_paid": 500000,
+              "guaranteed_cash_value": 681119,
+              "reversionary_bonus": 796813,
+              "terminal_dividend": 80937637,
+              "total_surrender_value": 82415569,
+              "death_benefit": 110571937
+            },
+            {
+              "policy_year": 84,
+              "total_premium_paid": 500000,
+              "guaranteed_cash_value": 686714,
+              "reversionary_bonus": 808782,
+              "terminal_dividend": 86277085,
+              "total_surrender_value": 87772581,
+              "death_benefit": 118979924
+            },
+            {
+              "policy_year": 85,
+              "total_premium_paid": 500000,
+              "guaranteed_cash_value": 693007,
+              "reversionary_bonus": 820847,
+              "terminal_dividend": 91963945,
+              "total_surrender_value": 93477799,
+              "death_benefit": 128063804
+            },
+            {
+              "policy_year": 86,
+              "total_premium_paid": 500000,
+              "guaranteed_cash_value": 698602,
+              "reversionary_bonus": 833008,
+              "terminal_dividend": 98022246,
+              "total_surrender_value": 99553856,
+              "death_benefit": 137880277
+            },
+            {
+              "policy_year": 87,
+              "total_premium_paid": 500000,
+              "guaranteed_cash_value": 704196,
+              "reversionary_bonus": 845266,
+              "terminal_dividend": 104475395,
+              "total_surrender_value": 106024857,
+              "death_benefit": 148542273
+            },
+            {
+              "policy_year": 88,
+              "total_premium_paid": 500000,
+              "guaranteed_cash_value": 709791,
+              "reversionary_bonus": 857623,
+              "terminal_dividend": 111349059,
+              "total_surrender_value": 112916473,
+              "death_benefit": 160106608
+            },
+            {
+              "policy_year": 89,
+              "total_premium_paid": 500000,
+              "guaranteed_cash_value": 716084,
+              "reversionary_bonus": 870078,
+              "terminal_dividend": 118669881,
+              "total_surrender_value": 120256043,
+              "death_benefit": 172665886
+            },
+            {
+              "policy_year": 90,
+              "total_premium_paid": 500000,
+              "guaranteed_cash_value": 722378,
+              "reversionary_bonus": 882633,
+              "terminal_dividend": 126467675,
+              "total_surrender_value": 128072686,
+              "death_benefit": 186324188
+            },
+            {
+              "policy_year": 91,
+              "total_premium_paid": 500000,
+              "guaranteed_cash_value": 728672,
+              "reversionary_bonus": 895289,
+              "terminal_dividend": 134773450,
+              "total_surrender_value": 136397411,
+              "death_benefit": 201201529
+            },
+            {
+              "policy_year": 92,
+              "total_premium_paid": 500000,
+              "guaranteed_cash_value": 734965,
+              "reversionary_bonus": 908045,
+              "terminal_dividend": 143620233,
+              "total_surrender_value": 145263243,
+              "death_benefit": 217435075
+            },
+            {
+              "policy_year": 93,
+              "total_premium_paid": 500000,
+              "guaranteed_cash_value": 741259,
+              "reversionary_bonus": 920904,
+              "terminal_dividend": 153043191,
+              "total_surrender_value": 154705354,
+              "death_benefit": 235183347
+            },
+            {
+              "policy_year": 94,
+              "total_premium_paid": 500000,
+              "guaranteed_cash_value": 747553,
+              "reversionary_bonus": 933866,
+              "terminal_dividend": 163079783,
+              "total_surrender_value": 164761202,
+              "death_benefit": 254629954
+            },
+            {
+              "policy_year": 95,
+              "total_premium_paid": 500000,
+              "guaranteed_cash_value": 753846,
+              "reversionary_bonus": 946931,
+              "terminal_dividend": 173769903,
+              "total_surrender_value": 175470680,
+              "death_benefit": 275988818
+            },
+            {
+              "policy_year": 96,
+              "total_premium_paid": 500000,
+              "guaranteed_cash_value": 760839,
+              "reversionary_bonus": 960101,
+              "terminal_dividend": 185155334,
+              "total_surrender_value": 186876274,
+              "death_benefit": 299510942
+            },
+            {
+              "policy_year": 97,
+              "total_premium_paid": 500000,
+              "guaranteed_cash_value": 767833,
+              "reversionary_bonus": 973376,
+              "terminal_dividend": 197282023,
+              "total_surrender_value": 199023232,
+              "death_benefit": 325488775
+            },
+            {
+              "policy_year": 98,
+              "total_premium_paid": 500000,
+              "guaranteed_cash_value": 775525,
+              "reversionary_bonus": 986758,
+              "terminal_dividend": 210197459,
+              "total_surrender_value": 211959742,
+              "death_benefit": 354274253
+            },
+            {
+              "policy_year": 99,
+              "total_premium_paid": 500000,
+              "guaranteed_cash_value": 782518,
+              "reversionary_bonus": 1000246,
+              "terminal_dividend": 223954361,
+              "total_surrender_value": 225737125,
+              "death_benefit": 386282454
+            },
+            {
+              "policy_year": 100,
+              "total_premium_paid": 500000,
+              "guaranteed_cash_value": 790210,
+              "reversionary_bonus": 1013842,
+              "terminal_dividend": 238605986,
+              "total_surrender_value": 240410038,
+              "death_benefit": 422012233
+            },
+            {
+              "policy_year": 101,
+              "total_premium_paid": 500000,
+              "guaranteed_cash_value": 798602,
+              "reversionary_bonus": 1027548,
+              "terminal_dividend": 254210541,
+              "total_surrender_value": 256036691,
+              "death_benefit": 453837582
+            },
+            {
+              "policy_year": 102,
+              "total_premium_paid": 500000,
+              "guaranteed_cash_value": 802798,
+              "reversionary_bonus": 1041362,
+              "terminal_dividend": 270834916,
+              "total_surrender_value": 272679076,
+              "death_benefit": 485987361
+            },
+            {
+              "policy_year": 103,
+              "total_premium_paid": 500000,
+              "guaranteed_cash_value": 806294,
+              "reversionary_bonus": 1055288,
+              "terminal_dividend": 288541634,
+              "total_surrender_value": 290403216,
+              "death_benefit": 520420672
+            },
+            {
+              "policy_year": 104,
+              "total_premium_paid": 500000,
+              "guaranteed_cash_value": 810490,
+              "reversionary_bonus": 1069324,
+              "terminal_dividend": 307399611,
+              "total_surrender_value": 309279425,
+              "death_benefit": 557301291
+            },
+            {
+              "policy_year": 105,
+              "total_premium_paid": 500000,
+              "guaranteed_cash_value": 813986,
+              "reversionary_bonus": 1083473,
+              "terminal_dividend": 327485128,
+              "total_surrender_value": 329382587,
+              "death_benefit": 596801729
+            },
+            {
+              "policy_year": 106,
+              "total_premium_paid": 500000,
+              "guaranteed_cash_value": 817483,
+              "reversionary_bonus": 1097736,
+              "terminal_dividend": 348877237,
+              "total_surrender_value": 350792456,
+              "death_benefit": 639108969
+            },
+            {
+              "policy_year": 107,
+              "total_premium_paid": 500000,
+              "guaranteed_cash_value": 821679,
+              "reversionary_bonus": 1112112,
+              "terminal_dividend": 371660174,
+              "total_surrender_value": 373593965,
+              "death_benefit": 684423210
+            },
+            {
+              "policy_year": 108,
+              "total_premium_paid": 500000,
+              "guaranteed_cash_value": 825175,
+              "reversionary_bonus": 1126603,
+              "terminal_dividend": 395925795,
+              "total_surrender_value": 397877573,
+              "death_benefit": 732956764
+            },
+            {
+              "policy_year": 109,
+              "total_premium_paid": 500000,
+              "guaranteed_cash_value": 829371,
+              "reversionary_bonus": 1141210,
+              "terminal_dividend": 421769034,
+              "total_surrender_value": 423739615,
+              "death_benefit": 784939925
+            },
+            {
+              "policy_year": 110,
+              "total_premium_paid": 500000,
+              "guaranteed_cash_value": 833567,
+              "reversionary_bonus": 1155935,
+              "terminal_dividend": 449293188,
+              "total_surrender_value": 451282690,
+              "death_benefit": 840617149
+            },
+            {
+              "policy_year": 111,
+              "total_premium_paid": 500000,
+              "guaranteed_cash_value": 838462,
+              "reversionary_bonus": 1170776,
+              "terminal_dividend": 478606827,
+              "total_surrender_value": 480616065,
+              "death_benefit": 900251722
+            },
+            {
+              "policy_year": 112,
+              "total_premium_paid": 500000,
+              "guaranteed_cash_value": 842658,
+              "reversionary_bonus": 1185737,
+              "terminal_dividend": 509827714,
+              "total_surrender_value": 511856109,
+              "death_benefit": 964123508
+            },
+            {
+              "policy_year": 113,
+              "total_premium_paid": 500000,
+              "guaranteed_cash_value": 847553,
+              "reversionary_bonus": 1200817,
+              "terminal_dividend": 543078387,
+              "total_surrender_value": 545126757,
+              "death_benefit": 1032535156
+            },
+            {
+              "policy_year": 114,
+              "total_premium_paid": 500000,
+              "guaranteed_cash_value": 852448,
+              "reversionary_bonus": 1216018,
+              "terminal_dividend": 578491530,
+              "total_surrender_value": 580559996,
+              "death_benefit": 1105808626
+            },
+            {
+              "policy_year": 115,
+              "total_premium_paid": 500000,
+              "guaranteed_cash_value": 857343,
+              "reversionary_bonus": 1231341,
+              "terminal_dividend": 616207712,
+              "total_surrender_value": 618296396,
+              "death_benefit": 1184289514
+            },
+            {
+              "policy_year": 116,
+              "total_premium_paid": 500000,
+              "guaranteed_cash_value": 862238,
+              "reversionary_bonus": 1246786,
+              "terminal_dividend": 656376637,
+              "total_surrender_value": 658485661,
+              "death_benefit": 1268348002
+            },
+            {
+              "policy_year": 117,
+              "total_premium_paid": 500000,
+              "guaranteed_cash_value": 867833,
+              "reversionary_bonus": 1262355,
+              "terminal_dividend": 699157041,
+              "total_surrender_value": 701287229,
+              "death_benefit": 1358381261
+            },
+            {
+              "policy_year": 118,
+              "total_premium_paid": 500000,
+              "guaranteed_cash_value": 874126,
+              "reversionary_bonus": 1278048,
+              "terminal_dividend": 744718725,
+              "total_surrender_value": 746870899,
+              "death_benefit": 1454813959
+            },
+            {
+              "policy_year": 119,
+              "total_premium_paid": 500000,
+              "guaranteed_cash_value": 880420,
+              "reversionary_bonus": 1293867,
+              "terminal_dividend": 793243221,
+              "total_surrender_value": 795417508,
+              "death_benefit": 1558100257
+            },
+            {
+              "policy_year": 120,
+              "total_premium_paid": 500000,
+              "guaranteed_cash_value": 887413,
+              "reversionary_bonus": 1309812,
+              "terminal_dividend": 844922421,
+              "total_surrender_value": 847119646,
+              "death_benefit": 1668728040
+            },
+            {
+              "policy_year": 121,
+              "total_premium_paid": 500000,
+              "guaranteed_cash_value": 894406,
+              "reversionary_bonus": 1325885,
+              "terminal_dividend": 899962132,
+              "total_surrender_value": 902182423,
+              "death_benefit": 1787218415
+            },
+            {
+              "policy_year": 122,
+              "total_premium_paid": 500000,
+              "guaranteed_cash_value": 902098,
+              "reversionary_bonus": 1342086,
+              "terminal_dividend": 958580096,
+              "total_surrender_value": 960824280,
+              "death_benefit": 1914131013
+            },
+            {
+              "policy_year": 123,
+              "total_premium_paid": 500000,
+              "guaranteed_cash_value": 910490,
+              "reversionary_bonus": 1358418,
+              "terminal_dividend": 1021008950,
+              "total_surrender_value": 1023277858,
+              "death_benefit": 2050064481
+            },
+            {
+              "policy_year": 124,
+              "total_premium_paid": 500000,
+              "guaranteed_cash_value": 920979,
+              "reversionary_bonus": 1374879,
+              "terminal_dividend": 1087495061,
+              "total_surrender_value": 1089790919,
+              "death_benefit": 2195661403
+            },
+            {
+              "policy_year": 125,
+              "total_premium_paid": 500000,
+              "guaranteed_cash_value": 932868,
+              "reversionary_bonus": 1391473,
+              "terminal_dividend": 1158302988,
+              "total_surrender_value": 1160627329,
+              "death_benefit": 2351607869
+            },
+            {
+              "policy_year": 126,
+              "total_premium_paid": 500000,
+              "guaranteed_cash_value": 946854,
+              "reversionary_bonus": 1408199,
+              "terminal_dividend": 1233713053,
+              "total_surrender_value": 1236068106,
+              "death_benefit": 2518640184
+            },
+            {
+              "policy_year": 127,
+              "total_premium_paid": 500000,
+              "guaranteed_cash_value": 964336,
+              "reversionary_bonus": 1425059,
+              "terminal_dividend": 1314023137,
+              "total_surrender_value": 1316412532,
+              "death_benefit": 2697547631
+            },
+            {
+              "policy_year": 128,
+              "total_premium_paid": 500000,
+              "guaranteed_cash_value": 964336,
+              "reversionary_bonus": 1425059,
+              "terminal_dividend": 1314023137,
+              "total_surrender_value": 1316412532,
+              "death_benefit": 2697547631
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "tenant": {
+    "tenantId": "ctf",
+    "companyName": "周大福人寿",
+    "colors": {
+      "primary": "#0f2841",
+      "secondary": "#c59a49",
+      "accent": "#2f6fb2",
+      "bgStart": "#f5efe3",
+      "bgEnd": "#edf4fb"
+    },
+    "fontFamily": "'Avenir Next','PingFang SC','Microsoft YaHei',sans-serif",
+    "imageWhitelist": {
+      "family": [
+        "https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&w=1600&q=80",
+        "https://images.unsplash.com/photo-1516483638261-f4dbaf036963?auto=format&fit=crop&w=1600&q=80",
+        "https://images.unsplash.com/photo-1519340241574-2cec6aef0c01?auto=format&fit=crop&w=1600&q=80"
+      ],
+      "education": [
+        "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=1600&q=80",
+        "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=1600&q=80",
+        "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1600&q=80"
+      ],
+      "retire": [
+        "https://images.unsplash.com/photo-1516307365426-bea591f05011?auto=format&fit=crop&w=1600&q=80",
+        "https://images.unsplash.com/photo-1444212477490-ca407925329e?auto=format&fit=crop&w=1600&q=80",
+        "https://images.unsplash.com/photo-1475503572774-15a45e5d60b9?auto=format&fit=crop&w=1600&q=80"
+      ],
+      "company": [
+        "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1600&q=80",
+        "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1600&q=80",
+        "https://images.unsplash.com/photo-1460472178825-e5240623afd5?auto=format&fit=crop&w=1600&q=80"
+      ],
+      "finance": [
+        "https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?auto=format&fit=crop&w=1600&q=80",
+        "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=1600&q=80",
+        "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1600&q=80"
+      ],
+      "shield": [
+        "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=1600&q=80",
+        "https://images.unsplash.com/photo-1556740758-90de374c12ad?auto=format&fit=crop&w=1600&q=80",
+        "https://images.unsplash.com/photo-1579621970795-87facc2f976d?auto=format&fit=crop&w=1600&q=80"
+      ]
+    },
+    "companyIntro": "周大福人寿提供保障、储蓄与传承规划服务，定位长期家庭财富与保障管理。",
+    "companyRating": [
+      "Fitch 财务实力评级: A-",
+      "Moody's 财务实力评级: A3",
+      "香港RBC偿付能力充足率: 282%"
+    ]
+  },
+  "outline": {
+    "markdownPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/01907ac5_ctf_v21img_pipeline/outline.md",
+    "slides": [
+      {
+        "id": "s1",
+        "pageType": "narrative",
+        "title": "Boxie 家庭",
+        "bullets": [
+          "产品方案: 「匠X・传承」储蓄寿险计划2(尊尚版)",
+          "关键数字:",
+          "回本: 第7年",
+          "20年: 2.7x",
+          "生成日期: 29/5/2026"
+        ],
+        "chartIntent": "growth",
+        "visualIntent": "family"
+      },
+      {
+        "id": "s2",
+        "pageType": "company",
+        "title": "合作机构",
+        "bullets": [
+          "周大福人寿提供保障、储蓄与传承规划服务，定位长期家庭财富与保障管理。"
+        ],
+        "visualIntent": "company"
+      },
+      {
+        "id": "s3",
+        "pageType": "narrative",
+        "title": "第 undefined 页: undefined",
+        "bullets": [
+          "undefined"
+        ],
+        "visualIntent": "family"
+      },
+      {
+        "id": "s4",
+        "pageType": "narrative",
+        "title": "第 undefined 页: undefined",
+        "bullets": [
+          "undefined"
+        ],
+        "visualIntent": "family"
+      },
+      {
+        "id": "s5",
+        "pageType": "narrative",
+        "title": "「匠X・传承」储蓄寿险计划2(尊尚版) (储蓄险)",
+        "bullets": [
+          "受保人: VIP 先生 | 1岁 | 男",
+          "产品特点:",
+          "5年缴款，灵活规划",
+          "复归红利+终期分红，双重增值",
+          "独特优势:",
+          "长期复利增值，保证+非保证双重回报"
+        ],
+        "chartIntent": "stacked",
+        "visualIntent": "family"
+      },
+      {
+        "id": "s6",
+        "pageType": "cover",
+        "title": "封面",
+        "bullets": [
+          "内容重点: 客户姓名 + 产品名称 + 核心卖点数字",
+          "强调要点:",
+          "回本年份: 第7年",
+          "这份 「匠X・传承」储蓄寿险计划2(尊尚版) 让您的 $100K 年缴转化为 $514K 的账户价值"
+        ],
+        "chartIntent": "growth",
+        "visualIntent": "family"
+      },
+      {
+        "id": "s7",
+        "pageType": "narrative",
+        "title": "关键数字",
+        "bullets": [
+          "回本 (第7年)",
+          "价值: $514K",
+          "已缴保费 $500K，账户价值 $514K，成功回本",
+          "1.3x (第10年)",
+          "价值: $638K",
+          "第10年账户价值 $638K，是已缴保费的 1.3 倍",
+          "2.7x (第20年)",
+          "价值: $1366K"
+        ],
+        "chartIntent": "growth",
+        "visualIntent": "family"
+      },
+      {
+        "id": "s8",
+        "pageType": "conclusion",
+        "title": "综合方案建议",
+        "bullets": [
+          "方案定位",
+          "5年缴，每年 $100K，总投入 $500K。第7年回本，第17年翻2.0倍",
+          "下一步行动",
+          "详细了解各产品具体条款",
+          "根据个人需求调整保障额度",
+          "确认投保意向，启动申请流程"
+        ],
+        "chartIntent": "growth",
+        "visualIntent": "shield"
+      },
+      {
+        "id": "s9",
+        "pageType": "timeline",
+        "title": "感谢",
+        "bullets": [
+          "感谢您的时间",
+          "期待为您提供专业服务",
+          "本文件仅供参考，不构成要约或建议。",
+          "非保证金额并非保证，实际可能高于或低于预期。"
+        ],
+        "chartIntent": "stacked",
+        "visualIntent": "family"
+      },
+      {
+        "id": "s10",
+        "pageType": "narrative",
+        "title": "附加说明",
+        "bullets": [
+          "匠心傳承儲蓄計劃2尊尚版.pdf: 「匠X・传承」储蓄寿险计划2(尊尚版) (储蓄险)",
+          "「匠X・传承」储蓄寿险计划2(尊尚版):",
+          "回本 (第7年): $514K",
+          "1.3x (第10年): $638K",
+          "2.7x (第20年): $1366K",
+          "5.6x (第30年): $2783K"
+        ],
+        "chartIntent": "growth",
+        "visualIntent": "family"
+      },
+      {
+        "id": "table-withdraw",
+        "pageType": "table",
+        "title": "提领方案数据表（每10年）",
+        "bullets": [
+          "展示年龄、保单年度、已交总保费、领取金额、累计领取、退保现金价值、单利、复利"
+        ],
+        "visualIntent": "finance"
+      },
+      {
+        "id": "table-nowithdraw",
+        "pageType": "table",
+        "title": "不提领方案数据表（每10年）",
+        "bullets": [
+          "同口径展示，便于与提领方案做长期价值对比"
+        ],
+        "visualIntent": "finance"
+      }
+    ]
+  },
+  "chartArtifact": {
+    "assetsDir": "/Users/soldier/free-code/packages/insurance-ppt/outputs/01907ac5_ctf_v21img_pipeline/charts",
+    "assets": [
+      {
+        "planType": "savings",
+        "productName": "「匠X・传承」储蓄寿险计划2(尊尚版)",
+        "kind": "growth",
+        "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/01907ac5_ctf_v21img_pipeline/charts/1__匠X_传承_储蓄寿险计划2_尊尚版_growth.png"
+      },
+      {
+        "planType": "savings",
+        "productName": "「匠X・传承」储蓄寿险计划2(尊尚版)",
+        "kind": "stacked",
+        "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/01907ac5_ctf_v21img_pipeline/charts/1__匠X_传承_储蓄寿险计划2_尊尚版_stacked.png"
+      },
+      {
+        "planType": "savings",
+        "productName": "「匠X・传承」储蓄寿险计划2(尊尚版)",
+        "kind": "cashflow",
+        "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/01907ac5_ctf_v21img_pipeline/charts/1__匠X_传承_储蓄寿险计划2_尊尚版_cashflow.png"
+      },
+      {
+        "planType": "savings",
+        "productName": "「匠X・传承」储蓄寿险计划2(尊尚版)",
+        "kind": "radar",
+        "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/01907ac5_ctf_v21img_pipeline/charts/1__匠X_传承_储蓄寿险计划2_尊尚版_radar.png"
+      }
+    ]
+  },
+  "imageArtifact": {
+    "assetsDir": "/Users/soldier/free-code/packages/insurance-ppt/outputs/01907ac5_ctf_v21img_pipeline/assets",
+    "images": [
+      {
+        "slideId": "s1",
+        "pathOrUrl": "/Users/soldier/free-code/packages/insurance-ppt/outputs/01907ac5_ctf_v21img_pipeline/assets/s1.jpg",
+        "source": "whitelist"
+      },
+      {
+        "slideId": "s2",
+        "pathOrUrl": "/Users/soldier/free-code/packages/insurance-ppt/outputs/01907ac5_ctf_v21img_pipeline/assets/s2.jpg",
+        "source": "whitelist"
+      },
+      {
+        "slideId": "s3",
+        "pathOrUrl": "/Users/soldier/free-code/packages/insurance-ppt/outputs/01907ac5_ctf_v21img_pipeline/assets/s3.jpg",
+        "source": "whitelist"
+      },
+      {
+        "slideId": "s4",
+        "pathOrUrl": "/Users/soldier/free-code/packages/insurance-ppt/outputs/01907ac5_ctf_v21img_pipeline/assets/s4.jpg",
+        "source": "whitelist"
+      },
+      {
+        "slideId": "s5",
+        "pathOrUrl": "/Users/soldier/free-code/packages/insurance-ppt/outputs/01907ac5_ctf_v21img_pipeline/assets/s5.jpg",
+        "source": "whitelist"
+      },
+      {
+        "slideId": "s6",
+        "pathOrUrl": "/Users/soldier/free-code/packages/insurance-ppt/outputs/01907ac5_ctf_v21img_pipeline/assets/s6.jpg",
+        "source": "whitelist"
+      },
+      {
+        "slideId": "s7",
+        "pathOrUrl": "/Users/soldier/free-code/packages/insurance-ppt/outputs/01907ac5_ctf_v21img_pipeline/assets/s7.jpg",
+        "source": "whitelist"
+      },
+      {
+        "slideId": "s8",
+        "pathOrUrl": "/Users/soldier/free-code/packages/insurance-ppt/outputs/01907ac5_ctf_v21img_pipeline/assets/s8.jpg",
+        "source": "whitelist"
+      },
+      {
+        "slideId": "s9",
+        "pathOrUrl": "/Users/soldier/free-code/packages/insurance-ppt/outputs/01907ac5_ctf_v21img_pipeline/assets/s9.jpg",
+        "source": "whitelist"
+      },
+      {
+        "slideId": "s10",
+        "pathOrUrl": "/Users/soldier/free-code/packages/insurance-ppt/outputs/01907ac5_ctf_v21img_pipeline/assets/s10.jpg",
+        "source": "whitelist"
+      },
+      {
+        "slideId": "table-withdraw",
+        "pathOrUrl": "/Users/soldier/free-code/packages/insurance-ppt/outputs/01907ac5_ctf_v21img_pipeline/assets/table-withdraw.jpg",
+        "source": "whitelist"
+      },
+      {
+        "slideId": "table-nowithdraw",
+        "pathOrUrl": "/Users/soldier/free-code/packages/insurance-ppt/outputs/01907ac5_ctf_v21img_pipeline/assets/table-nowithdraw.jpg",
+        "source": "whitelist"
+      }
+    ]
+  },
+  "deck": {
+    "marpPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/01907ac5_ctf_v21img_pipeline/deck.marp.md",
+    "pptxPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/01907ac5_ctf_v21img_pipeline/deck.pptx"
+  },
+  "generatedAt": "2026-05-29T07:57:07.607Z"
+}

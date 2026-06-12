@@ -1,0 +1,1307 @@
+{
+  "kind": "savings",
+  "productName": "「匠X・传承」储蓄寿险计划2(尊尚版)",
+  "rawProductName": "「匠X・传承」储蓄寿险计划2(尊尚版)",
+  "insured": {
+    "name": "VIP 先生",
+    "age": 1,
+    "gender": "男"
+  },
+  "policy": {
+    "currency": "美元",
+    "annualPremium": 100000.04,
+    "annualPremiumWithLevy": 100012.86,
+    "payYears": 5,
+    "contractualTotalPremium": 500000.19999999995,
+    "coveragePeriod": "至128岁"
+  },
+  "benefitRows": [
+    {
+      "policyYear": 1,
+      "age": 2,
+      "totalPremiumPaid": 100000,
+      "guaranteedCashValue": 0,
+      "reversionaryBonus": 699,
+      "terminalDividend": 1944,
+      "totalSurrenderValue": 2643,
+      "deathBenefit": 101000
+    },
+    {
+      "policyYear": 2,
+      "age": 3,
+      "totalPremiumPaid": 200000,
+      "guaranteedCashValue": 699,
+      "reversionaryBonus": 2099,
+      "terminalDividend": 1944,
+      "totalSurrenderValue": 4742,
+      "deathBenefit": 202000
+    },
+    {
+      "policyYear": 3,
+      "age": 4,
+      "totalPremiumPaid": 300000,
+      "guaranteedCashValue": 27273,
+      "reversionaryBonus": 4204,
+      "terminalDividend": 4916,
+      "totalSurrenderValue": 36393,
+      "deathBenefit": 303000
+    },
+    {
+      "policyYear": 4,
+      "age": 5,
+      "totalPremiumPaid": 400000,
+      "guaranteedCashValue": 50350,
+      "reversionaryBonus": 7018,
+      "terminalDividend": 35958,
+      "totalSurrenderValue": 93326,
+      "deathBenefit": 404000
+    },
+    {
+      "policyYear": 5,
+      "age": 6,
+      "totalPremiumPaid": 500000,
+      "guaranteedCashValue": 99301,
+      "reversionaryBonus": 28207,
+      "terminalDividend": 107287,
+      "totalSurrenderValue": 234795,
+      "deathBenefit": 505000
+    },
+    {
+      "policyYear": 6,
+      "age": 7,
+      "totalPremiumPaid": 500000,
+      "guaranteedCashValue": 160839,
+      "reversionaryBonus": 48577,
+      "terminalDividend": 130385,
+      "totalSurrenderValue": 339801,
+      "deathBenefit": 505000
+    },
+    {
+      "policyYear": 7,
+      "age": 8,
+      "totalPremiumPaid": 500000,
+      "guaranteedCashValue": 316084,
+      "reversionaryBonus": 68022,
+      "terminalDividend": 130392,
+      "totalSurrenderValue": 514498,
+      "deathBenefit": 514498
+    },
+    {
+      "policyYear": 8,
+      "age": 9,
+      "totalPremiumPaid": 500000,
+      "guaranteedCashValue": 320979,
+      "reversionaryBonus": 86438,
+      "terminalDividend": 130399,
+      "totalSurrenderValue": 537816,
+      "deathBenefit": 537816
+    },
+    {
+      "policyYear": 9,
+      "age": 10,
+      "totalPremiumPaid": 500000,
+      "guaranteedCashValue": 333567,
+      "reversionaryBonus": 103724,
+      "terminalDividend": 133490,
+      "totalSurrenderValue": 570781,
+      "deathBenefit": 570781
+    },
+    {
+      "policyYear": 10,
+      "age": 11,
+      "totalPremiumPaid": 500000,
+      "guaranteedCashValue": 382518,
+      "reversionaryBonus": 119785,
+      "terminalDividend": 135930,
+      "totalSurrenderValue": 638233,
+      "deathBenefit": 638233
+    },
+    {
+      "policyYear": 11,
+      "age": 12,
+      "totalPremiumPaid": 500000,
+      "guaranteedCashValue": 395105,
+      "reversionaryBonus": 132071,
+      "terminalDividend": 140902,
+      "totalSurrenderValue": 668078,
+      "deathBenefit": 668078
+    },
+    {
+      "policyYear": 12,
+      "age": 13,
+      "totalPremiumPaid": 500000,
+      "guaranteedCashValue": 407692,
+      "reversionaryBonus": 144542,
+      "terminalDividend": 143469,
+      "totalSurrenderValue": 695703,
+      "deathBenefit": 695703
+    },
+    {
+      "policyYear": 13,
+      "age": 14,
+      "totalPremiumPaid": 500000,
+      "guaranteedCashValue": 502797,
+      "reversionaryBonus": 157199,
+      "terminalDividend": 161070,
+      "totalSurrenderValue": 821066,
+      "deathBenefit": 821066
+    },
+    {
+      "policyYear": 14,
+      "age": 15,
+      "totalPremiumPaid": 500000,
+      "guaranteedCashValue": 503497,
+      "reversionaryBonus": 164051,
+      "terminalDividend": 194161,
+      "totalSurrenderValue": 861709,
+      "deathBenefit": 861709
+    },
+    {
+      "policyYear": 15,
+      "age": 16,
+      "totalPremiumPaid": 500000,
+      "guaranteedCashValue": 504196,
+      "reversionaryBonus": 170958,
+      "terminalDividend": 256056,
+      "totalSurrenderValue": 931210,
+      "deathBenefit": 931210
+    },
+    {
+      "policyYear": 16,
+      "age": 17,
+      "totalPremiumPaid": 500000,
+      "guaranteedCashValue": 504895,
+      "reversionaryBonus": 177920,
+      "terminalDividend": 298049,
+      "totalSurrenderValue": 980864,
+      "deathBenefit": 980864
+    },
+    {
+      "policyYear": 17,
+      "age": 18,
+      "totalPremiumPaid": 500000,
+      "guaranteedCashValue": 505595,
+      "reversionaryBonus": 184938,
+      "terminalDividend": 367294,
+      "totalSurrenderValue": 1057827,
+      "deathBenefit": 1057827
+    },
+    {
+      "policyYear": 18,
+      "age": 19,
+      "totalPremiumPaid": 500000,
+      "guaranteedCashValue": 506294,
+      "reversionaryBonus": 192012,
+      "terminalDividend": 445797,
+      "totalSurrenderValue": 1144103,
+      "deathBenefit": 1144103
+    },
+    {
+      "policyYear": 19,
+      "age": 20,
+      "totalPremiumPaid": 500000,
+      "guaranteedCashValue": 506993,
+      "reversionaryBonus": 199142,
+      "terminalDividend": 545755,
+      "totalSurrenderValue": 1251890,
+      "deathBenefit": 1251890
+    },
+    {
+      "policyYear": 20,
+      "age": 21,
+      "totalPremiumPaid": 500000,
+      "guaranteedCashValue": 507693,
+      "reversionaryBonus": 206330,
+      "terminalDividend": 652322,
+      "totalSurrenderValue": 1366345,
+      "deathBenefit": 1366345
+    },
+    {
+      "policyYear": 21,
+      "age": 22,
+      "totalPremiumPaid": 500000,
+      "guaranteedCashValue": 508392,
+      "reversionaryBonus": 213575,
+      "terminalDividend": 729189,
+      "totalSurrenderValue": 1451156,
+      "deathBenefit": 1451156
+    },
+    {
+      "policyYear": 22,
+      "age": 23,
+      "totalPremiumPaid": 500000,
+      "guaranteedCashValue": 509091,
+      "reversionaryBonus": 220878,
+      "terminalDividend": 821902,
+      "totalSurrenderValue": 1551871,
+      "deathBenefit": 1551871
+    },
+    {
+      "policyYear": 23,
+      "age": 24,
+      "totalPremiumPaid": 500000,
+      "guaranteedCashValue": 509790,
+      "reversionaryBonus": 228239,
+      "terminalDividend": 933986,
+      "totalSurrenderValue": 1672015,
+      "deathBenefit": 1672015
+    },
+    {
+      "policyYear": 24,
+      "age": 25,
+      "totalPremiumPaid": 500000,
+      "guaranteedCashValue": 510490,
+      "reversionaryBonus": 235660,
+      "terminalDividend": 1051504,
+      "totalSurrenderValue": 1797654,
+      "deathBenefit": 1797654
+    },
+    {
+      "policyYear": 25,
+      "age": 26,
+      "totalPremiumPaid": 500000,
+      "guaranteedCashValue": 511189,
+      "reversionaryBonus": 243139,
+      "terminalDividend": 1180273,
+      "totalSurrenderValue": 1934601,
+      "deathBenefit": 1934601
+    },
+    {
+      "policyYear": 26,
+      "age": 27,
+      "totalPremiumPaid": 500000,
+      "guaranteedCashValue": 511888,
+      "reversionaryBonus": 250679,
+      "terminalDividend": 1328518,
+      "totalSurrenderValue": 2091085,
+      "deathBenefit": 2091085
+    },
+    {
+      "policyYear": 27,
+      "age": 28,
+      "totalPremiumPaid": 500000,
+      "guaranteedCashValue": 512588,
+      "reversionaryBonus": 258279,
+      "terminalDividend": 1483294,
+      "totalSurrenderValue": 2254161,
+      "deathBenefit": 2254161
+    },
+    {
+      "policyYear": 28,
+      "age": 29,
+      "totalPremiumPaid": 500000,
+      "guaranteedCashValue": 513287,
+      "reversionaryBonus": 265939,
+      "terminalDividend": 1661197,
+      "totalSurrenderValue": 2440423,
+      "deathBenefit": 2440423
+    },
+    {
+      "policyYear": 29,
+      "age": 30,
+      "totalPremiumPaid": 500000,
+      "guaranteedCashValue": 513986,
+      "reversionaryBonus": 273661,
+      "terminalDividend": 1817833,
+      "totalSurrenderValue": 2605480,
+      "deathBenefit": 2605480
+    },
+    {
+      "policyYear": 30,
+      "age": 31,
+      "totalPremiumPaid": 500000,
+      "guaranteedCashValue": 514686,
+      "reversionaryBonus": 281445,
+      "terminalDividend": 1986623,
+      "totalSurrenderValue": 2782754,
+      "deathBenefit": 2782754
+    },
+    {
+      "policyYear": 31,
+      "age": 32,
+      "totalPremiumPaid": 500000,
+      "guaranteedCashValue": 515385,
+      "reversionaryBonus": 289291,
+      "terminalDividend": 2158812,
+      "totalSurrenderValue": 2963488,
+      "deathBenefit": 2963488
+    },
+    {
+      "policyYear": 32,
+      "age": 33,
+      "totalPremiumPaid": 500000,
+      "guaranteedCashValue": 516084,
+      "reversionaryBonus": 297200,
+      "terminalDividend": 2368581,
+      "totalSurrenderValue": 3181865,
+      "deathBenefit": 3181865
+    },
+    {
+      "policyYear": 33,
+      "age": 34,
+      "totalPremiumPaid": 500000,
+      "guaranteedCashValue": 516783,
+      "reversionaryBonus": 305172,
+      "terminalDividend": 2582491,
+      "totalSurrenderValue": 3404446,
+      "deathBenefit": 3404446
+    },
+    {
+      "policyYear": 34,
+      "age": 35,
+      "totalPremiumPaid": 500000,
+      "guaranteedCashValue": 517483,
+      "reversionaryBonus": 313207,
+      "terminalDividend": 2798840,
+      "totalSurrenderValue": 3629530,
+      "deathBenefit": 3629530
+    },
+    {
+      "policyYear": 35,
+      "age": 36,
+      "totalPremiumPaid": 500000,
+      "guaranteedCashValue": 518182,
+      "reversionaryBonus": 321307,
+      "terminalDividend": 3031365,
+      "totalSurrenderValue": 3870854,
+      "deathBenefit": 3870854
+    },
+    {
+      "policyYear": 36,
+      "age": 37,
+      "totalPremiumPaid": 500000,
+      "guaranteedCashValue": 518881,
+      "reversionaryBonus": 329472,
+      "terminalDividend": 3281260,
+      "totalSurrenderValue": 4129613,
+      "deathBenefit": 4129613
+    },
+    {
+      "policyYear": 37,
+      "age": 38,
+      "totalPremiumPaid": 500000,
+      "guaranteedCashValue": 519581,
+      "reversionaryBonus": 337702,
+      "terminalDividend": 3549848,
+      "totalSurrenderValue": 4407131,
+      "deathBenefit": 4407131
+    },
+    {
+      "policyYear": 38,
+      "age": 39,
+      "totalPremiumPaid": 500000,
+      "guaranteedCashValue": 520280,
+      "reversionaryBonus": 345999,
+      "terminalDividend": 3838519,
+      "totalSurrenderValue": 4704798,
+      "deathBenefit": 4704798
+    },
+    {
+      "policyYear": 39,
+      "age": 40,
+      "totalPremiumPaid": 500000,
+      "guaranteedCashValue": 520979,
+      "reversionaryBonus": 354361,
+      "terminalDividend": 4234806,
+      "totalSurrenderValue": 5110146,
+      "deathBenefit": 5110146
+    },
+    {
+      "policyYear": 40,
+      "age": 41,
+      "totalPremiumPaid": 500000,
+      "guaranteedCashValue": 521679,
+      "reversionaryBonus": 362790,
+      "terminalDividend": 4573296,
+      "totalSurrenderValue": 5457765,
+      "deathBenefit": 5457765
+    },
+    {
+      "policyYear": 41,
+      "age": 42,
+      "totalPremiumPaid": 500000,
+      "guaranteedCashValue": 522378,
+      "reversionaryBonus": 371287,
+      "terminalDividend": 4958623,
+      "totalSurrenderValue": 5852288,
+      "deathBenefit": 5855681
+    },
+    {
+      "policyYear": 42,
+      "age": 43,
+      "totalPremiumPaid": 500000,
+      "guaranteedCashValue": 523077,
+      "reversionaryBonus": 379852,
+      "terminalDividend": 5329758,
+      "totalSurrenderValue": 6232687,
+      "deathBenefit": 6257064
+    },
+    {
+      "policyYear": 43,
+      "age": 44,
+      "totalPremiumPaid": 500000,
+      "guaranteedCashValue": 523776,
+      "reversionaryBonus": 388485,
+      "terminalDividend": 5725551,
+      "totalSurrenderValue": 6637812,
+      "deathBenefit": 6687648
+    },
+    {
+      "policyYear": 44,
+      "age": 45,
+      "totalPremiumPaid": 500000,
+      "guaranteedCashValue": 524476,
+      "reversionaryBonus": 397187,
+      "terminalDividend": 6147606,
+      "totalSurrenderValue": 7069269,
+      "deathBenefit": 7149603
+    },
+    {
+      "policyYear": 45,
+      "age": 46,
+      "totalPremiumPaid": 500000,
+      "guaranteedCashValue": 546154,
+      "reversionaryBonus": 405959,
+      "terminalDividend": 6576659,
+      "totalSurrenderValue": 7528772,
+      "deathBenefit": 7656368
+    },
+    {
+      "policyYear": 46,
+      "age": 47,
+      "totalPremiumPaid": 500000,
+      "guaranteedCashValue": 581119,
+      "reversionaryBonus": 414801,
+      "terminalDividend": 7022222,
+      "totalSurrenderValue": 8018142,
+      "deathBenefit": 8196469
+    },
+    {
+      "policyYear": 47,
+      "age": 48,
+      "totalPremiumPaid": 500000,
+      "guaranteedCashValue": 581818,
+      "reversionaryBonus": 423714,
+      "terminalDividend": 7533789,
+      "totalSurrenderValue": 8539321,
+      "deathBenefit": 8751088
+    },
+    {
+      "policyYear": 48,
+      "age": 49,
+      "totalPremiumPaid": 500000,
+      "guaranteedCashValue": 582518,
+      "reversionaryBonus": 432698,
+      "terminalDividend": 8079161,
+      "totalSurrenderValue": 9094377,
+      "deathBenefit": 9363660
+    },
+    {
+      "policyYear": 49,
+      "age": 50,
+      "totalPremiumPaid": 500000,
+      "guaranteedCashValue": 583217,
+      "reversionaryBonus": 441754,
+      "terminalDividend": 8660541,
+      "totalSurrenderValue": 9685512,
+      "deathBenefit": 10021206
+    },
+    {
+      "policyYear": 50,
+      "age": 51,
+      "totalPremiumPaid": 500000,
+      "guaranteedCashValue": 583916,
+      "reversionaryBonus": 450883,
+      "terminalDividend": 9280271,
+      "totalSurrenderValue": 10315070,
+      "deathBenefit": 10825076
+    },
+    {
+      "policyYear": 51,
+      "age": 52,
+      "totalPremiumPaid": 500000,
+      "guaranteedCashValue": 584616,
+      "reversionaryBonus": 460084,
+      "terminalDividend": 9940850,
+      "totalSurrenderValue": 10985550,
+      "deathBenefit": 11588124
+    },
+    {
+      "policyYear": 52,
+      "age": 53,
+      "totalPremiumPaid": 500000,
+      "guaranteedCashValue": 585315,
+      "reversionaryBonus": 469359,
+      "terminalDividend": 10644937,
+      "totalSurrenderValue": 11699611,
+      "deathBenefit": 12407217
+    },
+    {
+      "policyYear": 53,
+      "age": 54,
+      "totalPremiumPaid": 500000,
+      "guaranteedCashValue": 586014,
+      "reversionaryBonus": 478708,
+      "terminalDividend": 11395363,
+      "totalSurrenderValue": 12460085,
+      "deathBenefit": 13286538
+    },
+    {
+      "policyYear": 54,
+      "age": 55,
+      "totalPremiumPaid": 500000,
+      "guaranteedCashValue": 586714,
+      "reversionaryBonus": 488132,
+      "terminalDividend": 12195145,
+      "totalSurrenderValue": 13269991,
+      "deathBenefit": 14230607
+    },
+    {
+      "policyYear": 55,
+      "age": 56,
+      "totalPremiumPaid": 500000,
+      "guaranteedCashValue": 587413,
+      "reversionaryBonus": 497632,
+      "terminalDividend": 13047495,
+      "totalSurrenderValue": 14132540,
+      "deathBenefit": 15244254
+    },
+    {
+      "policyYear": 56,
+      "age": 57,
+      "totalPremiumPaid": 500000,
+      "guaranteedCashValue": 588112,
+      "reversionaryBonus": 507207,
+      "terminalDividend": 13955836,
+      "totalSurrenderValue": 15051155,
+      "deathBenefit": 16332535
+    },
+    {
+      "policyYear": 57,
+      "age": 58,
+      "totalPremiumPaid": 500000,
+      "guaranteedCashValue": 588811,
+      "reversionaryBonus": 516859,
+      "terminalDividend": 14923811,
+      "totalSurrenderValue": 16029481,
+      "deathBenefit": 17501188
+    },
+    {
+      "policyYear": 58,
+      "age": 59,
+      "totalPremiumPaid": 500000,
+      "guaranteedCashValue": 589511,
+      "reversionaryBonus": 526589,
+      "terminalDividend": 15955297,
+      "totalSurrenderValue": 17071397,
+      "deathBenefit": 18756240
+    },
+    {
+      "policyYear": 59,
+      "age": 60,
+      "totalPremiumPaid": 500000,
+      "guaranteedCashValue": 590210,
+      "reversionaryBonus": 536396,
+      "terminalDividend": 17054432,
+      "totalSurrenderValue": 18181038,
+      "deathBenefit": 20104181
+    },
+    {
+      "policyYear": 60,
+      "age": 61,
+      "totalPremiumPaid": 500000,
+      "guaranteedCashValue": 590909,
+      "reversionaryBonus": 546281,
+      "terminalDividend": 18225615,
+      "totalSurrenderValue": 19362805,
+      "deathBenefit": 21551989
+    },
+    {
+      "policyYear": 61,
+      "age": 62,
+      "totalPremiumPaid": 500000,
+      "guaranteedCashValue": 591609,
+      "reversionaryBonus": 556246,
+      "terminalDividend": 19473533,
+      "totalSurrenderValue": 20621388,
+      "deathBenefit": 23107046
+    },
+    {
+      "policyYear": 62,
+      "age": 63,
+      "totalPremiumPaid": 500000,
+      "guaranteedCashValue": 592308,
+      "reversionaryBonus": 566290,
+      "terminalDividend": 20803180,
+      "totalSurrenderValue": 21961778,
+      "deathBenefit": 24777587
+    },
+    {
+      "policyYear": 63,
+      "age": 64,
+      "totalPremiumPaid": 500000,
+      "guaranteedCashValue": 593007,
+      "reversionaryBonus": 576415,
+      "terminalDividend": 22219871,
+      "totalSurrenderValue": 23389293,
+      "deathBenefit": 26572356
+    },
+    {
+      "policyYear": 64,
+      "age": 65,
+      "totalPremiumPaid": 500000,
+      "guaranteedCashValue": 593707,
+      "reversionaryBonus": 586621,
+      "terminalDividend": 23729269,
+      "totalSurrenderValue": 24909597,
+      "deathBenefit": 28500801
+    },
+    {
+      "policyYear": 65,
+      "age": 66,
+      "totalPremiumPaid": 500000,
+      "guaranteedCashValue": 594406,
+      "reversionaryBonus": 596908,
+      "terminalDividend": 25337407,
+      "totalSurrenderValue": 26528721,
+      "deathBenefit": 30573033
+    },
+    {
+      "policyYear": 66,
+      "age": 67,
+      "totalPremiumPaid": 500000,
+      "guaranteedCashValue": 595105,
+      "reversionaryBonus": 607278,
+      "terminalDividend": 27050705,
+      "totalSurrenderValue": 28253088,
+      "deathBenefit": 32799432
+    },
+    {
+      "policyYear": 67,
+      "age": 68,
+      "totalPremiumPaid": 500000,
+      "guaranteedCashValue": 597902,
+      "reversionaryBonus": 617731,
+      "terminalDividend": 28873906,
+      "totalSurrenderValue": 30089539,
+      "deathBenefit": 35193053
+    },
+    {
+      "policyYear": 68,
+      "age": 69,
+      "totalPremiumPaid": 500000,
+      "guaranteedCashValue": 602797,
+      "reversionaryBonus": 628267,
+      "terminalDividend": 30814295,
+      "totalSurrenderValue": 32045359,
+      "deathBenefit": 37765590
+    },
+    {
+      "policyYear": 69,
+      "age": 70,
+      "totalPremiumPaid": 500000,
+      "guaranteedCashValue": 607693,
+      "reversionaryBonus": 638887,
+      "terminalDividend": 32881727,
+      "totalSurrenderValue": 34128307,
+      "deathBenefit": 40529646
+    },
+    {
+      "policyYear": 70,
+      "age": 71,
+      "totalPremiumPaid": 500000,
+      "guaranteedCashValue": 612588,
+      "reversionaryBonus": 649593,
+      "terminalDividend": 35084467,
+      "totalSurrenderValue": 36346648,
+      "deathBenefit": 43501080
+    },
+    {
+      "policyYear": 71,
+      "age": 72,
+      "totalPremiumPaid": 500000,
+      "guaranteedCashValue": 618182,
+      "reversionaryBonus": 660384,
+      "terminalDividend": 37430614,
+      "totalSurrenderValue": 38709180,
+      "deathBenefit": 46693893
+    },
+    {
+      "policyYear": 72,
+      "age": 73,
+      "totalPremiumPaid": 500000,
+      "guaranteedCashValue": 623077,
+      "reversionaryBonus": 671261,
+      "terminalDividend": 39930938,
+      "totalSurrenderValue": 41225276,
+      "deathBenefit": 50126387
+    },
+    {
+      "policyYear": 73,
+      "age": 74,
+      "totalPremiumPaid": 500000,
+      "guaranteedCashValue": 627972,
+      "reversionaryBonus": 682226,
+      "terminalDividend": 42594721,
+      "totalSurrenderValue": 43904919,
+      "deathBenefit": 53818542
+    },
+    {
+      "policyYear": 74,
+      "age": 75,
+      "totalPremiumPaid": 500000,
+      "guaranteedCashValue": 632867,
+      "reversionaryBonus": 693278,
+      "terminalDividend": 45432594,
+      "totalSurrenderValue": 46758739,
+      "deathBenefit": 57790687
+    },
+    {
+      "policyYear": 75,
+      "age": 76,
+      "totalPremiumPaid": 500000,
+      "guaranteedCashValue": 638462,
+      "reversionaryBonus": 704419,
+      "terminalDividend": 48455176,
+      "totalSurrenderValue": 49798057,
+      "deathBenefit": 62065753
+    },
+    {
+      "policyYear": 76,
+      "age": 77,
+      "totalPremiumPaid": 500000,
+      "guaranteedCashValue": 643357,
+      "reversionaryBonus": 715649,
+      "terminalDividend": 51675925,
+      "totalSurrenderValue": 53034931,
+      "deathBenefit": 66663139
+    },
+    {
+      "policyYear": 77,
+      "age": 78,
+      "totalPremiumPaid": 500000,
+      "guaranteedCashValue": 648951,
+      "reversionaryBonus": 726968,
+      "terminalDividend": 55106282,
+      "totalSurrenderValue": 56482201,
+      "deathBenefit": 71614159
+    },
+    {
+      "policyYear": 78,
+      "age": 79,
+      "totalPremiumPaid": 500000,
+      "guaranteedCashValue": 653846,
+      "reversionaryBonus": 738378,
+      "terminalDividend": 58761321,
+      "totalSurrenderValue": 60153545,
+      "deathBenefit": 76946711
+    },
+    {
+      "policyYear": 79,
+      "age": 80,
+      "totalPremiumPaid": 500000,
+      "guaranteedCashValue": 659441,
+      "reversionaryBonus": 749880,
+      "terminalDividend": 62654204,
+      "totalSurrenderValue": 64063525,
+      "deathBenefit": 82694258
+    },
+    {
+      "policyYear": 80,
+      "age": 81,
+      "totalPremiumPaid": 500000,
+      "guaranteedCashValue": 665035,
+      "reversionaryBonus": 761473,
+      "terminalDividend": 66801146,
+      "totalSurrenderValue": 68227654,
+      "deathBenefit": 88890671
+    },
+    {
+      "policyYear": 81,
+      "age": 82,
+      "totalPremiumPaid": 500000,
+      "guaranteedCashValue": 669930,
+      "reversionaryBonus": 773159,
+      "terminalDividend": 71219363,
+      "totalSurrenderValue": 72662452,
+      "deathBenefit": 95573913
+    },
+    {
+      "policyYear": 82,
+      "age": 83,
+      "totalPremiumPaid": 500000,
+      "guaranteedCashValue": 675525,
+      "reversionaryBonus": 784939,
+      "terminalDividend": 75925047,
+      "totalSurrenderValue": 77385511,
+      "deathBenefit": 102786347
+    },
+    {
+      "policyYear": 83,
+      "age": 84,
+      "totalPremiumPaid": 500000,
+      "guaranteedCashValue": 681119,
+      "reversionaryBonus": 796813,
+      "terminalDividend": 80937637,
+      "totalSurrenderValue": 82415569,
+      "deathBenefit": 110571937
+    },
+    {
+      "policyYear": 84,
+      "age": 85,
+      "totalPremiumPaid": 500000,
+      "guaranteedCashValue": 686714,
+      "reversionaryBonus": 808782,
+      "terminalDividend": 86277085,
+      "totalSurrenderValue": 87772581,
+      "deathBenefit": 118979924
+    },
+    {
+      "policyYear": 85,
+      "age": 86,
+      "totalPremiumPaid": 500000,
+      "guaranteedCashValue": 693007,
+      "reversionaryBonus": 820847,
+      "terminalDividend": 91963945,
+      "totalSurrenderValue": 93477799,
+      "deathBenefit": 128063804
+    },
+    {
+      "policyYear": 86,
+      "age": 87,
+      "totalPremiumPaid": 500000,
+      "guaranteedCashValue": 698602,
+      "reversionaryBonus": 833008,
+      "terminalDividend": 98022246,
+      "totalSurrenderValue": 99553856,
+      "deathBenefit": 137880277
+    },
+    {
+      "policyYear": 87,
+      "age": 88,
+      "totalPremiumPaid": 500000,
+      "guaranteedCashValue": 704196,
+      "reversionaryBonus": 845266,
+      "terminalDividend": 104475395,
+      "totalSurrenderValue": 106024857,
+      "deathBenefit": 148542273
+    },
+    {
+      "policyYear": 88,
+      "age": 89,
+      "totalPremiumPaid": 500000,
+      "guaranteedCashValue": 709791,
+      "reversionaryBonus": 857623,
+      "terminalDividend": 111349059,
+      "totalSurrenderValue": 112916473,
+      "deathBenefit": 160106608
+    },
+    {
+      "policyYear": 89,
+      "age": 90,
+      "totalPremiumPaid": 500000,
+      "guaranteedCashValue": 716084,
+      "reversionaryBonus": 870078,
+      "terminalDividend": 118669881,
+      "totalSurrenderValue": 120256043,
+      "deathBenefit": 172665886
+    },
+    {
+      "policyYear": 90,
+      "age": 91,
+      "totalPremiumPaid": 500000,
+      "guaranteedCashValue": 722378,
+      "reversionaryBonus": 882633,
+      "terminalDividend": 126467675,
+      "totalSurrenderValue": 128072686,
+      "deathBenefit": 186324188
+    },
+    {
+      "policyYear": 91,
+      "age": 92,
+      "totalPremiumPaid": 500000,
+      "guaranteedCashValue": 728672,
+      "reversionaryBonus": 895289,
+      "terminalDividend": 134773450,
+      "totalSurrenderValue": 136397411,
+      "deathBenefit": 201201529
+    },
+    {
+      "policyYear": 92,
+      "age": 93,
+      "totalPremiumPaid": 500000,
+      "guaranteedCashValue": 734965,
+      "reversionaryBonus": 908045,
+      "terminalDividend": 143620233,
+      "totalSurrenderValue": 145263243,
+      "deathBenefit": 217435075
+    },
+    {
+      "policyYear": 93,
+      "age": 94,
+      "totalPremiumPaid": 500000,
+      "guaranteedCashValue": 741259,
+      "reversionaryBonus": 920904,
+      "terminalDividend": 153043191,
+      "totalSurrenderValue": 154705354,
+      "deathBenefit": 235183347
+    },
+    {
+      "policyYear": 94,
+      "age": 95,
+      "totalPremiumPaid": 500000,
+      "guaranteedCashValue": 747553,
+      "reversionaryBonus": 933866,
+      "terminalDividend": 163079783,
+      "totalSurrenderValue": 164761202,
+      "deathBenefit": 254629954
+    },
+    {
+      "policyYear": 95,
+      "age": 96,
+      "totalPremiumPaid": 500000,
+      "guaranteedCashValue": 753846,
+      "reversionaryBonus": 946931,
+      "terminalDividend": 173769903,
+      "totalSurrenderValue": 175470680,
+      "deathBenefit": 275988818
+    },
+    {
+      "policyYear": 96,
+      "age": 97,
+      "totalPremiumPaid": 500000,
+      "guaranteedCashValue": 760839,
+      "reversionaryBonus": 960101,
+      "terminalDividend": 185155334,
+      "totalSurrenderValue": 186876274,
+      "deathBenefit": 299510942
+    },
+    {
+      "policyYear": 97,
+      "age": 98,
+      "totalPremiumPaid": 500000,
+      "guaranteedCashValue": 767833,
+      "reversionaryBonus": 973376,
+      "terminalDividend": 197282023,
+      "totalSurrenderValue": 199023232,
+      "deathBenefit": 325488775
+    },
+    {
+      "policyYear": 98,
+      "age": 99,
+      "totalPremiumPaid": 500000,
+      "guaranteedCashValue": 775525,
+      "reversionaryBonus": 986758,
+      "terminalDividend": 210197459,
+      "totalSurrenderValue": 211959742,
+      "deathBenefit": 354274253
+    },
+    {
+      "policyYear": 99,
+      "age": 100,
+      "totalPremiumPaid": 500000,
+      "guaranteedCashValue": 782518,
+      "reversionaryBonus": 1000246,
+      "terminalDividend": 223954361,
+      "totalSurrenderValue": 225737125,
+      "deathBenefit": 386282454
+    },
+    {
+      "policyYear": 100,
+      "age": 101,
+      "totalPremiumPaid": 500000,
+      "guaranteedCashValue": 790210,
+      "reversionaryBonus": 1013842,
+      "terminalDividend": 238605986,
+      "totalSurrenderValue": 240410038,
+      "deathBenefit": 422012233
+    },
+    {
+      "policyYear": 101,
+      "age": 102,
+      "totalPremiumPaid": 500000,
+      "guaranteedCashValue": 798602,
+      "reversionaryBonus": 1027548,
+      "terminalDividend": 254210541,
+      "totalSurrenderValue": 256036691,
+      "deathBenefit": 453837582
+    },
+    {
+      "policyYear": 102,
+      "age": 103,
+      "totalPremiumPaid": 500000,
+      "guaranteedCashValue": 802798,
+      "reversionaryBonus": 1041362,
+      "terminalDividend": 270834916,
+      "totalSurrenderValue": 272679076,
+      "deathBenefit": 485987361
+    },
+    {
+      "policyYear": 103,
+      "age": 104,
+      "totalPremiumPaid": 500000,
+      "guaranteedCashValue": 806294,
+      "reversionaryBonus": 1055288,
+      "terminalDividend": 288541634,
+      "totalSurrenderValue": 290403216,
+      "deathBenefit": 520420672
+    },
+    {
+      "policyYear": 104,
+      "age": 105,
+      "totalPremiumPaid": 500000,
+      "guaranteedCashValue": 810490,
+      "reversionaryBonus": 1069324,
+      "terminalDividend": 307399611,
+      "totalSurrenderValue": 309279425,
+      "deathBenefit": 557301291
+    },
+    {
+      "policyYear": 105,
+      "age": 106,
+      "totalPremiumPaid": 500000,
+      "guaranteedCashValue": 813986,
+      "reversionaryBonus": 1083473,
+      "terminalDividend": 327485128,
+      "totalSurrenderValue": 329382587,
+      "deathBenefit": 596801729
+    },
+    {
+      "policyYear": 106,
+      "age": 107,
+      "totalPremiumPaid": 500000,
+      "guaranteedCashValue": 817483,
+      "reversionaryBonus": 1097736,
+      "terminalDividend": 348877237,
+      "totalSurrenderValue": 350792456,
+      "deathBenefit": 639108969
+    },
+    {
+      "policyYear": 107,
+      "age": 108,
+      "totalPremiumPaid": 500000,
+      "guaranteedCashValue": 821679,
+      "reversionaryBonus": 1112112,
+      "terminalDividend": 371660174,
+      "totalSurrenderValue": 373593965,
+      "deathBenefit": 684423210
+    },
+    {
+      "policyYear": 108,
+      "age": 109,
+      "totalPremiumPaid": 500000,
+      "guaranteedCashValue": 825175,
+      "reversionaryBonus": 1126603,
+      "terminalDividend": 395925795,
+      "totalSurrenderValue": 397877573,
+      "deathBenefit": 732956764
+    },
+    {
+      "policyYear": 109,
+      "age": 110,
+      "totalPremiumPaid": 500000,
+      "guaranteedCashValue": 829371,
+      "reversionaryBonus": 1141210,
+      "terminalDividend": 421769034,
+      "totalSurrenderValue": 423739615,
+      "deathBenefit": 784939925
+    },
+    {
+      "policyYear": 110,
+      "age": 111,
+      "totalPremiumPaid": 500000,
+      "guaranteedCashValue": 833567,
+      "reversionaryBonus": 1155935,
+      "terminalDividend": 449293188,
+      "totalSurrenderValue": 451282690,
+      "deathBenefit": 840617149
+    },
+    {
+      "policyYear": 111,
+      "age": 112,
+      "totalPremiumPaid": 500000,
+      "guaranteedCashValue": 838462,
+      "reversionaryBonus": 1170776,
+      "terminalDividend": 478606827,
+      "totalSurrenderValue": 480616065,
+      "deathBenefit": 900251722
+    },
+    {
+      "policyYear": 112,
+      "age": 113,
+      "totalPremiumPaid": 500000,
+      "guaranteedCashValue": 842658,
+      "reversionaryBonus": 1185737,
+      "terminalDividend": 509827714,
+      "totalSurrenderValue": 511856109,
+      "deathBenefit": 964123508
+    },
+    {
+      "policyYear": 113,
+      "age": 114,
+      "totalPremiumPaid": 500000,
+      "guaranteedCashValue": 847553,
+      "reversionaryBonus": 1200817,
+      "terminalDividend": 543078387,
+      "totalSurrenderValue": 545126757,
+      "deathBenefit": 1032535156
+    },
+    {
+      "policyYear": 114,
+      "age": 115,
+      "totalPremiumPaid": 500000,
+      "guaranteedCashValue": 852448,
+      "reversionaryBonus": 1216018,
+      "terminalDividend": 578491530,
+      "totalSurrenderValue": 580559996,
+      "deathBenefit": 1105808626
+    },
+    {
+      "policyYear": 115,
+      "age": 116,
+      "totalPremiumPaid": 500000,
+      "guaranteedCashValue": 857343,
+      "reversionaryBonus": 1231341,
+      "terminalDividend": 616207712,
+      "totalSurrenderValue": 618296396,
+      "deathBenefit": 1184289514
+    },
+    {
+      "policyYear": 116,
+      "age": 117,
+      "totalPremiumPaid": 500000,
+      "guaranteedCashValue": 862238,
+      "reversionaryBonus": 1246786,
+      "terminalDividend": 656376637,
+      "totalSurrenderValue": 658485661,
+      "deathBenefit": 1268348002
+    },
+    {
+      "policyYear": 117,
+      "age": 118,
+      "totalPremiumPaid": 500000,
+      "guaranteedCashValue": 867833,
+      "reversionaryBonus": 1262355,
+      "terminalDividend": 699157041,
+      "totalSurrenderValue": 701287229,
+      "deathBenefit": 1358381261
+    },
+    {
+      "policyYear": 118,
+      "age": 119,
+      "totalPremiumPaid": 500000,
+      "guaranteedCashValue": 874126,
+      "reversionaryBonus": 1278048,
+      "terminalDividend": 744718725,
+      "totalSurrenderValue": 746870899,
+      "deathBenefit": 1454813959
+    },
+    {
+      "policyYear": 119,
+      "age": 120,
+      "totalPremiumPaid": 500000,
+      "guaranteedCashValue": 880420,
+      "reversionaryBonus": 1293867,
+      "terminalDividend": 793243221,
+      "totalSurrenderValue": 795417508,
+      "deathBenefit": 1558100257
+    },
+    {
+      "policyYear": 120,
+      "age": 121,
+      "totalPremiumPaid": 500000,
+      "guaranteedCashValue": 887413,
+      "reversionaryBonus": 1309812,
+      "terminalDividend": 844922421,
+      "totalSurrenderValue": 847119646,
+      "deathBenefit": 1668728040
+    },
+    {
+      "policyYear": 121,
+      "age": 122,
+      "totalPremiumPaid": 500000,
+      "guaranteedCashValue": 894406,
+      "reversionaryBonus": 1325885,
+      "terminalDividend": 899962132,
+      "totalSurrenderValue": 902182423,
+      "deathBenefit": 1787218415
+    },
+    {
+      "policyYear": 122,
+      "age": 123,
+      "totalPremiumPaid": 500000,
+      "guaranteedCashValue": 902098,
+      "reversionaryBonus": 1342086,
+      "terminalDividend": 958580096,
+      "totalSurrenderValue": 960824280,
+      "deathBenefit": 1914131013
+    },
+    {
+      "policyYear": 123,
+      "age": 124,
+      "totalPremiumPaid": 500000,
+      "guaranteedCashValue": 910490,
+      "reversionaryBonus": 1358418,
+      "terminalDividend": 1021008950,
+      "totalSurrenderValue": 1023277858,
+      "deathBenefit": 2050064481
+    },
+    {
+      "policyYear": 124,
+      "age": 125,
+      "totalPremiumPaid": 500000,
+      "guaranteedCashValue": 920979,
+      "reversionaryBonus": 1374879,
+      "terminalDividend": 1087495061,
+      "totalSurrenderValue": 1089790919,
+      "deathBenefit": 2195661403
+    },
+    {
+      "policyYear": 125,
+      "age": 126,
+      "totalPremiumPaid": 500000,
+      "guaranteedCashValue": 932868,
+      "reversionaryBonus": 1391473,
+      "terminalDividend": 1158302988,
+      "totalSurrenderValue": 1160627329,
+      "deathBenefit": 2351607869
+    },
+    {
+      "policyYear": 126,
+      "age": 127,
+      "totalPremiumPaid": 500000,
+      "guaranteedCashValue": 946854,
+      "reversionaryBonus": 1408199,
+      "terminalDividend": 1233713053,
+      "totalSurrenderValue": 1236068106,
+      "deathBenefit": 2518640184
+    },
+    {
+      "policyYear": 127,
+      "age": 128,
+      "totalPremiumPaid": 500000,
+      "guaranteedCashValue": 964336,
+      "reversionaryBonus": 1425059,
+      "terminalDividend": 1314023137,
+      "totalSurrenderValue": 1316412532,
+      "deathBenefit": 2697547631
+    },
+    {
+      "policyYear": 128,
+      "age": 129,
+      "totalPremiumPaid": 500000,
+      "guaranteedCashValue": 964336,
+      "reversionaryBonus": 1425059,
+      "terminalDividend": 1314023137,
+      "totalSurrenderValue": 1316412532,
+      "deathBenefit": 2697547631
+    }
+  ],
+  "withdrawalRows": [],
+  "withdrawalProvenance": "missing",
+  "source": {
+    "pdfHash": "",
+    "pdfPath": "",
+    "parser": "session-fixture"
+  }
+}

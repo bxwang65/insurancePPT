@@ -1,0 +1,29 @@
+{
+  "id": "savings-broker",
+  "planType": "savings",
+  "stylePreset": "broker",
+  "sourceTemplateAssetId": "broker",
+  "cloneReady": true,
+  "cloneRenderer": "savings-broker-v1",
+  "displayName": "储蓄险券商风",
+  "maxDisplayPolicyYear": 80,
+  "tableIntervalYears": 10,
+  "requiredPageTypes": [
+    "cover",
+    "company",
+    "narrative",
+    "chart",
+    "timeline",
+    "timeline",
+    "table",
+    "table",
+    "conclusion",
+    "conclusion"
+  ],
+  "qualityRules": {
+    "forbidPlaceholderImages": true,
+    "forbidSyntheticOfficialValues": true,
+    "requirePdfHash": true,
+    "requireSourcePagesForOfficialTables": true
+  }
+}

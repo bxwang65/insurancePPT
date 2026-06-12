@@ -1,0 +1,17 @@
+{
+  "id": "aia-genesis-iul",
+  "companyId": "aia",
+  "planType": "iul",
+  "displayName": "Genesis IUL 指数型寿险计划",
+  "aliases": ["Genesis", "IUL", "指数型寿险", "万能寿险", "index universal life"],
+  "requiredModules": [
+    "cover",
+    "company",
+    "index-account-configuration",
+    "guaranteed-floor-analysis",
+    "legacy-leverage-analysis",
+    "recommendation",
+    "closing"
+  ]
+}
+

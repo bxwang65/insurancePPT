@@ -1,0 +1,2048 @@
+{
+  "id": "5b61b5dd-31c0-4253-8099-e8aabfda5000",
+  "ownerId": "local",
+  "files": [
+    {
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/uploads/local/5b61b5dd-31c0-4253-8099-e8aabfda5000_宏挚家传承保险计划.pdf",
+      "name": "宏挚家传承保险计划.pdf",
+      "type": "savings"
+    },
+    {
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/uploads/local/5b61b5dd-31c0-4253-8099-e8aabfda5000_TA_GIUL3_M-46-N-CN-USD-S2m-5x_(coi)(SC).pdf",
+      "name": "TA_GIUL3_M-46-N-CN-USD-S2m-5x_(coi)(SC).pdf",
+      "type": "iul"
+    }
+  ],
+  "status": "parsed",
+  "extractions": [
+    {
+      "pdfName": "宏挚家传承保险计划.pdf",
+      "pdfPath": "/Users/soldier/free-code/packages/insurance-ppt/uploads/local/5b61b5dd-31c0-4253-8099-e8aabfda5000_宏挚家传承保险计划.pdf",
+      "planType": "savings",
+      "data": {
+        "product_name": "「宏家傳承保險計劃」",
+        "product_type": "savings",
+        "insured": {
+          "name": "VIP",
+          "age": 58,
+          "gender": "男",
+          "smoker": null
+        },
+        "policy": {
+          "product_name": "「宏家傳承保險計劃」",
+          "currency": "USD",
+          "sum_insured": null,
+          "basic_sum_insured": null,
+          "annual_premium": 400000,
+          "premium_payment_period": "5年",
+          "coverage_period": "终身",
+          "total_premium_with_levy": 368012.95
+        },
+        "benefit_illustration": [
+          {
+            "policy_year": 0,
+            "total_premium_paid": 400000,
+            "guaranteed_cash_value": 2,
+            "reversionary_bonus": 800000,
+            "terminal_dividend": 0,
+            "total_surrender_value": 800000,
+            "source_page": 33
+          },
+          {
+            "policy_year": 1,
+            "total_premium_paid": 400000,
+            "guaranteed_cash_value": 0,
+            "reversionary_bonus": 400000,
+            "terminal_dividend": 0,
+            "total_surrender_value": 400000,
+            "source_page": 33
+          },
+          {
+            "policy_year": 2,
+            "total_premium_paid": 800000,
+            "guaranteed_cash_value": 0,
+            "reversionary_bonus": 124180,
+            "terminal_dividend": 312620,
+            "total_surrender_value": 188440,
+            "source_page": 32
+          },
+          {
+            "policy_year": 3,
+            "total_premium_paid": 1200000,
+            "guaranteed_cash_value": 53000,
+            "reversionary_bonus": 1200000,
+            "terminal_dividend": 257909,
+            "total_surrender_value": 1457909,
+            "source_page": 33
+          },
+          {
+            "policy_year": 4,
+            "total_premium_paid": 1600000,
+            "guaranteed_cash_value": 145400,
+            "reversionary_bonus": 1600000,
+            "terminal_dividend": 401923,
+            "total_surrender_value": 2001923,
+            "source_page": 33
+          },
+          {
+            "policy_year": 5,
+            "total_premium_paid": 2000000,
+            "guaranteed_cash_value": 262600,
+            "reversionary_bonus": 2000000,
+            "terminal_dividend": 557011,
+            "total_surrender_value": 2557011,
+            "source_page": 33
+          },
+          {
+            "policy_year": 6,
+            "total_premium_paid": 7,
+            "guaranteed_cash_value": 44,
+            "reversionary_bonus": 2000000,
+            "terminal_dividend": 0,
+            "total_surrender_value": 0,
+            "source_page": 19
+          },
+          {
+            "policy_year": 7,
+            "total_premium_paid": 8,
+            "guaranteed_cash_value": 47,
+            "reversionary_bonus": 2000000,
+            "terminal_dividend": 0,
+            "total_surrender_value": 0,
+            "source_page": 19
+          },
+          {
+            "policy_year": 8,
+            "total_premium_paid": 9,
+            "guaranteed_cash_value": 50,
+            "reversionary_bonus": 2000000,
+            "terminal_dividend": 0,
+            "total_surrender_value": 0,
+            "source_page": 19
+          },
+          {
+            "policy_year": 9,
+            "total_premium_paid": 2000000,
+            "guaranteed_cash_value": 0,
+            "reversionary_bonus": 0,
+            "terminal_dividend": 0,
+            "total_surrender_value": 2000000,
+            "source_page": 18
+          },
+          {
+            "policy_year": 10,
+            "total_premium_paid": 2000000,
+            "guaranteed_cash_value": 1283780,
+            "reversionary_bonus": 2000000,
+            "terminal_dividend": 980075,
+            "total_surrender_value": 2980075,
+            "source_page": 33
+          },
+          {
+            "policy_year": 11,
+            "total_premium_paid": 13,
+            "guaranteed_cash_value": 56,
+            "reversionary_bonus": 2000000,
+            "terminal_dividend": 0,
+            "total_surrender_value": 0,
+            "source_page": 20
+          },
+          {
+            "policy_year": 12,
+            "total_premium_paid": 2000000,
+            "guaranteed_cash_value": 112702,
+            "reversionary_bonus": 87298,
+            "terminal_dividend": 200000,
+            "total_surrender_value": 1684228,
+            "source_page": 18
+          },
+          {
+            "policy_year": 13,
+            "total_premium_paid": 14,
+            "guaranteed_cash_value": 0,
+            "reversionary_bonus": 2000000,
+            "terminal_dividend": 0,
+            "total_surrender_value": 0,
+            "source_page": 18
+          },
+          {
+            "policy_year": 14,
+            "total_premium_paid": 15,
+            "guaranteed_cash_value": 59,
+            "reversionary_bonus": 2000000,
+            "terminal_dividend": 0,
+            "total_surrender_value": 0,
+            "source_page": 20
+          },
+          {
+            "policy_year": 15,
+            "total_premium_paid": 2000000,
+            "guaranteed_cash_value": 1853360,
+            "reversionary_bonus": 2000000,
+            "terminal_dividend": 1450278,
+            "total_surrender_value": 3450278,
+            "source_page": 33
+          },
+          {
+            "policy_year": 16,
+            "total_premium_paid": 18,
+            "guaranteed_cash_value": 62,
+            "reversionary_bonus": 2000000,
+            "terminal_dividend": 0,
+            "total_surrender_value": 0,
+            "source_page": 20
+          },
+          {
+            "policy_year": 17,
+            "total_premium_paid": 2000000,
+            "guaranteed_cash_value": 109717,
+            "reversionary_bonus": 90283,
+            "terminal_dividend": 200000,
+            "total_surrender_value": 1072323,
+            "source_page": 18
+          },
+          {
+            "policy_year": 18,
+            "total_premium_paid": 2000000,
+            "guaranteed_cash_value": 107163,
+            "reversionary_bonus": 92837,
+            "terminal_dividend": 200000,
+            "total_surrender_value": 970043,
+            "source_page": 18
+          },
+          {
+            "policy_year": 19,
+            "total_premium_paid": 2000000,
+            "guaranteed_cash_value": 104557,
+            "reversionary_bonus": 95443,
+            "terminal_dividend": 200000,
+            "total_surrender_value": 872332,
+            "source_page": 18
+          },
+          {
+            "policy_year": 20,
+            "total_premium_paid": 2000000,
+            "guaranteed_cash_value": 2160620,
+            "reversionary_bonus": 2160620,
+            "terminal_dividend": 2117687,
+            "total_surrender_value": 4278307,
+            "source_page": 33
+          },
+          {
+            "policy_year": 21,
+            "total_premium_paid": 2000000,
+            "guaranteed_cash_value": 96949,
+            "reversionary_bonus": 103051,
+            "terminal_dividend": 200000,
+            "total_surrender_value": 689704,
+            "source_page": 18
+          },
+          {
+            "policy_year": 22,
+            "total_premium_paid": 2000000,
+            "guaranteed_cash_value": 90861,
+            "reversionary_bonus": 109139,
+            "terminal_dividend": 200000,
+            "total_surrender_value": 606733,
+            "source_page": 18
+          },
+          {
+            "policy_year": 23,
+            "total_premium_paid": 2000000,
+            "guaranteed_cash_value": 84943,
+            "reversionary_bonus": 115057,
+            "terminal_dividend": 200000,
+            "total_surrender_value": 529692,
+            "source_page": 18
+          },
+          {
+            "policy_year": 24,
+            "total_premium_paid": 2000000,
+            "guaranteed_cash_value": 80333,
+            "reversionary_bonus": 119667,
+            "terminal_dividend": 200000,
+            "total_surrender_value": 457326,
+            "source_page": 18
+          },
+          {
+            "policy_year": 25,
+            "total_premium_paid": 2000000,
+            "guaranteed_cash_value": 2235320,
+            "reversionary_bonus": 2235320,
+            "terminal_dividend": 3653267,
+            "total_surrender_value": 5888587,
+            "source_page": 33
+          },
+          {
+            "policy_year": 26,
+            "total_premium_paid": 2000000,
+            "guaranteed_cash_value": 71775,
+            "reversionary_bonus": 128225,
+            "terminal_dividend": 200000,
+            "total_surrender_value": 325615,
+            "source_page": 19
+          },
+          {
+            "policy_year": 27,
+            "total_premium_paid": 2000000,
+            "guaranteed_cash_value": 66883,
+            "reversionary_bonus": 133117,
+            "terminal_dividend": 200000,
+            "total_surrender_value": 266581,
+            "source_page": 19
+          },
+          {
+            "policy_year": 28,
+            "total_premium_paid": 2000000,
+            "guaranteed_cash_value": 64168,
+            "reversionary_bonus": 135832,
+            "terminal_dividend": 200000,
+            "total_surrender_value": 210328,
+            "source_page": 19
+          },
+          {
+            "policy_year": 29,
+            "total_premium_paid": 2000000,
+            "guaranteed_cash_value": 61574,
+            "reversionary_bonus": 138426,
+            "terminal_dividend": 200000,
+            "total_surrender_value": 156715,
+            "source_page": 19
+          },
+          {
+            "policy_year": 30,
+            "total_premium_paid": 2000000,
+            "guaranteed_cash_value": 2312660,
+            "reversionary_bonus": 2312660,
+            "terminal_dividend": 5513999,
+            "total_surrender_value": 7826659,
+            "source_page": 33
+          },
+          {
+            "policy_year": 31,
+            "total_premium_paid": 2000000,
+            "guaranteed_cash_value": 56725,
+            "reversionary_bonus": 143275,
+            "terminal_dividend": 200000,
+            "total_surrender_value": 56879,
+            "source_page": 19
+          },
+          {
+            "policy_year": 32,
+            "total_premium_paid": 2000000,
+            "guaranteed_cash_value": 54459,
+            "reversionary_bonus": 145541,
+            "terminal_dividend": 200000,
+            "total_surrender_value": 10409,
+            "source_page": 19
+          },
+          {
+            "policy_year": 33,
+            "total_premium_paid": 2000000,
+            "guaranteed_cash_value": 33362,
+            "reversionary_bonus": 166638,
+            "terminal_dividend": 200000,
+            "total_surrender_value": 427672,
+            "source_page": 12
+          },
+          {
+            "policy_year": 34,
+            "total_premium_paid": 2000000,
+            "guaranteed_cash_value": 31536,
+            "reversionary_bonus": 168464,
+            "terminal_dividend": 200000,
+            "total_surrender_value": 401121,
+            "source_page": 12
+          },
+          {
+            "policy_year": 35,
+            "total_premium_paid": 2000000,
+            "guaranteed_cash_value": 29810,
+            "reversionary_bonus": 170190,
+            "terminal_dividend": 200000,
+            "total_surrender_value": 376189,
+            "source_page": 12
+          },
+          {
+            "policy_year": 36,
+            "total_premium_paid": 2000000,
+            "guaranteed_cash_value": 0,
+            "reversionary_bonus": 0,
+            "terminal_dividend": 0,
+            "total_surrender_value": 1,
+            "source_page": 19
+          },
+          {
+            "policy_year": 37,
+            "total_premium_paid": 2000000,
+            "guaranteed_cash_value": 26637,
+            "reversionary_bonus": 173363,
+            "terminal_dividend": 200000,
+            "total_surrender_value": 330799,
+            "source_page": 12
+          },
+          {
+            "policy_year": 38,
+            "total_premium_paid": 2000000,
+            "guaranteed_cash_value": 25179,
+            "reversionary_bonus": 174821,
+            "terminal_dividend": 200000,
+            "total_surrender_value": 310160,
+            "source_page": 12
+          },
+          {
+            "policy_year": 39,
+            "total_premium_paid": 2000000,
+            "guaranteed_cash_value": 0,
+            "reversionary_bonus": 0,
+            "terminal_dividend": 0,
+            "total_surrender_value": 1,
+            "source_page": 19
+          },
+          {
+            "policy_year": 40,
+            "total_premium_paid": 2000000,
+            "guaranteed_cash_value": 22499,
+            "reversionary_bonus": 177501,
+            "terminal_dividend": 200000,
+            "total_surrender_value": 272584,
+            "source_page": 12
+          },
+          {
+            "policy_year": 41,
+            "total_premium_paid": 2000000,
+            "guaranteed_cash_value": 21264,
+            "reversionary_bonus": 178736,
+            "terminal_dividend": 200000,
+            "total_surrender_value": 255499,
+            "source_page": 12
+          },
+          {
+            "policy_year": 42,
+            "total_premium_paid": 2000000,
+            "guaranteed_cash_value": 0,
+            "reversionary_bonus": 0,
+            "terminal_dividend": 0,
+            "total_surrender_value": 1,
+            "source_page": 19
+          },
+          {
+            "policy_year": 43,
+            "total_premium_paid": 2000000,
+            "guaranteed_cash_value": 18995,
+            "reversionary_bonus": 181006,
+            "terminal_dividend": 200000,
+            "total_surrender_value": 224392,
+            "source_page": 12
+          },
+          {
+            "policy_year": 44,
+            "total_premium_paid": 2000000,
+            "guaranteed_cash_value": 17939,
+            "reversionary_bonus": 182061,
+            "terminal_dividend": 200000,
+            "total_surrender_value": 210258,
+            "source_page": 12
+          },
+          {
+            "policy_year": 45,
+            "total_premium_paid": 2000000,
+            "guaranteed_cash_value": 0,
+            "reversionary_bonus": 0,
+            "terminal_dividend": 0,
+            "total_surrender_value": 1,
+            "source_page": 19
+          },
+          {
+            "policy_year": 46,
+            "total_premium_paid": 2000000,
+            "guaranteed_cash_value": 15961,
+            "reversionary_bonus": 184039,
+            "terminal_dividend": 200000,
+            "total_surrender_value": 184596,
+            "source_page": 12
+          },
+          {
+            "policy_year": 47,
+            "total_premium_paid": 2000000,
+            "guaranteed_cash_value": 15036,
+            "reversionary_bonus": 184964,
+            "terminal_dividend": 200000,
+            "total_surrender_value": 172979,
+            "source_page": 12
+          },
+          {
+            "policy_year": 48,
+            "total_premium_paid": 2000000,
+            "guaranteed_cash_value": 0,
+            "reversionary_bonus": 0,
+            "terminal_dividend": 0,
+            "total_surrender_value": 1,
+            "source_page": 19
+          },
+          {
+            "policy_year": 49,
+            "total_premium_paid": 2000000,
+            "guaranteed_cash_value": 13315,
+            "reversionary_bonus": 186685,
+            "terminal_dividend": 200000,
+            "total_surrender_value": 151962,
+            "source_page": 12
+          },
+          {
+            "policy_year": 50,
+            "total_premium_paid": 2000000,
+            "guaranteed_cash_value": 12517,
+            "reversionary_bonus": 187483,
+            "terminal_dividend": 200000,
+            "total_surrender_value": 142479,
+            "source_page": 12
+          },
+          {
+            "policy_year": 51,
+            "total_premium_paid": 2000000,
+            "guaranteed_cash_value": 0,
+            "reversionary_bonus": 0,
+            "terminal_dividend": 0,
+            "total_surrender_value": 1,
+            "source_page": 20
+          },
+          {
+            "policy_year": 52,
+            "total_premium_paid": 2000000,
+            "guaranteed_cash_value": 11048,
+            "reversionary_bonus": 188952,
+            "terminal_dividend": 200000,
+            "total_surrender_value": 125376,
+            "source_page": 13
+          },
+          {
+            "policy_year": 53,
+            "total_premium_paid": 2000000,
+            "guaranteed_cash_value": 0,
+            "reversionary_bonus": 0,
+            "terminal_dividend": 0,
+            "total_surrender_value": 1,
+            "source_page": 17
+          },
+          {
+            "policy_year": 54,
+            "total_premium_paid": 2000000,
+            "guaranteed_cash_value": 0,
+            "reversionary_bonus": 0,
+            "terminal_dividend": 0,
+            "total_surrender_value": 1,
+            "source_page": 20
+          },
+          {
+            "policy_year": 55,
+            "total_premium_paid": 2000000,
+            "guaranteed_cash_value": 0,
+            "reversionary_bonus": 0,
+            "terminal_dividend": 0,
+            "total_surrender_value": 1,
+            "source_page": 17
+          },
+          {
+            "policy_year": 56,
+            "total_premium_paid": 2000000,
+            "guaranteed_cash_value": 8555,
+            "reversionary_bonus": 191445,
+            "terminal_dividend": 200000,
+            "total_surrender_value": 97617,
+            "source_page": 13
+          },
+          {
+            "policy_year": 57,
+            "total_premium_paid": 2000000,
+            "guaranteed_cash_value": 0,
+            "reversionary_bonus": 0,
+            "terminal_dividend": 0,
+            "total_surrender_value": 1,
+            "source_page": 20
+          },
+          {
+            "policy_year": 58,
+            "total_premium_paid": 2000000,
+            "guaranteed_cash_value": 7509,
+            "reversionary_bonus": 192491,
+            "terminal_dividend": 200000,
+            "total_surrender_value": 86450,
+            "source_page": 13
+          },
+          {
+            "policy_year": 59,
+            "total_premium_paid": 2000000,
+            "guaranteed_cash_value": 0,
+            "reversionary_bonus": 0,
+            "terminal_dividend": 0,
+            "total_surrender_value": 1,
+            "source_page": 17
+          },
+          {
+            "policy_year": 60,
+            "total_premium_paid": 2000000,
+            "guaranteed_cash_value": 0,
+            "reversionary_bonus": 0,
+            "terminal_dividend": 0,
+            "total_surrender_value": 1,
+            "source_page": 20
+          },
+          {
+            "policy_year": 61,
+            "total_premium_paid": 2000000,
+            "guaranteed_cash_value": 0,
+            "reversionary_bonus": 0,
+            "terminal_dividend": 0,
+            "total_surrender_value": 1,
+            "source_page": 17
+          },
+          {
+            "policy_year": 62,
+            "total_premium_paid": 2000000,
+            "guaranteed_cash_value": 5763,
+            "reversionary_bonus": 194237,
+            "terminal_dividend": 200000,
+            "total_surrender_value": 68454,
+            "source_page": 13
+          },
+          {
+            "policy_year": 65,
+            "total_premium_paid": 2000000,
+            "guaranteed_cash_value": 1141020,
+            "reversionary_bonus": 2000000,
+            "terminal_dividend": 769049,
+            "total_surrender_value": 2769049,
+            "source_page": 33
+          },
+          {
+            "policy_year": 70,
+            "total_premium_paid": 2000000,
+            "guaranteed_cash_value": 1483600,
+            "reversionary_bonus": 2000000,
+            "terminal_dividend": 1149193,
+            "total_surrender_value": 3149193,
+            "source_page": 33
+          },
+          {
+            "policy_year": 75,
+            "total_premium_paid": 2000000,
+            "guaranteed_cash_value": 2048620,
+            "reversionary_bonus": 2048620,
+            "terminal_dividend": 1685739,
+            "total_surrender_value": 3734359,
+            "source_page": 33
+          },
+          {
+            "policy_year": 80,
+            "total_premium_paid": 2000000,
+            "guaranteed_cash_value": 2190200,
+            "reversionary_bonus": 2190200,
+            "terminal_dividend": 2630789,
+            "total_surrender_value": 4820989,
+            "source_page": 33
+          },
+          {
+            "policy_year": 85,
+            "total_premium_paid": 2000000,
+            "guaranteed_cash_value": 2265940,
+            "reversionary_bonus": 2265940,
+            "terminal_dividend": 4509897,
+            "total_surrender_value": 6775837,
+            "source_page": 33
+          },
+          {
+            "policy_year": 90,
+            "total_premium_paid": 2000000,
+            "guaranteed_cash_value": 2343840,
+            "reversionary_bonus": 2343840,
+            "terminal_dividend": 6263950,
+            "total_surrender_value": 8607790,
+            "source_page": 33
+          },
+          {
+            "policy_year": 95,
+            "total_premium_paid": 2000000,
+            "guaranteed_cash_value": 2423680,
+            "reversionary_bonus": 2423680,
+            "terminal_dividend": 8447939,
+            "total_surrender_value": 10871619,
+            "source_page": 33
+          },
+          {
+            "policy_year": 100,
+            "total_premium_paid": 2000000,
+            "guaranteed_cash_value": 2505440,
+            "reversionary_bonus": 2505440,
+            "terminal_dividend": 11115474,
+            "total_surrender_value": 13620914,
+            "source_page": 33
+          },
+          {
+            "policy_year": 105,
+            "total_premium_paid": 2000000,
+            "guaranteed_cash_value": 0,
+            "reversionary_bonus": 0,
+            "terminal_dividend": 0,
+            "total_surrender_value": 1,
+            "source_page": 15
+          },
+          {
+            "policy_year": 110,
+            "total_premium_paid": 2000000,
+            "guaranteed_cash_value": 0,
+            "reversionary_bonus": 0,
+            "terminal_dividend": 0,
+            "total_surrender_value": 1,
+            "source_page": 18
+          },
+          {
+            "policy_year": 115,
+            "total_premium_paid": 2000000,
+            "guaranteed_cash_value": 0,
+            "reversionary_bonus": 0,
+            "terminal_dividend": 0,
+            "total_surrender_value": 1,
+            "source_page": 15
+          },
+          {
+            "policy_year": 120,
+            "total_premium_paid": 2000000,
+            "guaranteed_cash_value": 5763,
+            "reversionary_bonus": 194237,
+            "terminal_dividend": 200000,
+            "total_surrender_value": 68454,
+            "source_page": 11
+          }
+        ],
+        "withdrawal_illustration": [
+          {
+            "policy_year": 2,
+            "total_premium_paid": 800000,
+            "annual_withdrawal": 0,
+            "total_withdrawn": 0,
+            "surrender_value_before": 0,
+            "surrender_value_after": 160000,
+            "source_page": 8
+          },
+          {
+            "policy_year": 3,
+            "total_premium_paid": 1200000,
+            "annual_withdrawal": 0,
+            "total_withdrawn": 0,
+            "surrender_value_before": 0,
+            "surrender_value_after": 387704,
+            "source_page": 8
+          },
+          {
+            "policy_year": 4,
+            "total_premium_paid": 1600000,
+            "annual_withdrawal": 0,
+            "total_withdrawn": 0,
+            "surrender_value_before": 0,
+            "surrender_value_after": 670863,
+            "source_page": 8
+          },
+          {
+            "policy_year": 5,
+            "total_premium_paid": 2000000,
+            "annual_withdrawal": 0,
+            "total_withdrawn": 0,
+            "surrender_value_before": 0,
+            "surrender_value_after": 996353,
+            "source_page": 8
+          },
+          {
+            "policy_year": 6,
+            "total_premium_paid": 2000000,
+            "annual_withdrawal": 0,
+            "total_withdrawn": 0,
+            "surrender_value_before": 0,
+            "surrender_value_after": 2000025,
+            "source_page": 8
+          },
+          {
+            "policy_year": 7,
+            "total_premium_paid": 2000000,
+            "annual_withdrawal": 0,
+            "total_withdrawn": 0,
+            "surrender_value_before": 0,
+            "surrender_value_after": 2176500,
+            "source_page": 8
+          },
+          {
+            "policy_year": 8,
+            "total_premium_paid": 2000000,
+            "annual_withdrawal": 0,
+            "total_withdrawn": 0,
+            "surrender_value_before": 0,
+            "surrender_value_after": 2326261,
+            "source_page": 8
+          },
+          {
+            "policy_year": 9,
+            "total_premium_paid": 2000000,
+            "annual_withdrawal": 0,
+            "total_withdrawn": 0,
+            "surrender_value_before": 0,
+            "surrender_value_after": 2486324,
+            "source_page": 8
+          },
+          {
+            "policy_year": 10,
+            "total_premium_paid": 2000000,
+            "annual_withdrawal": 0,
+            "total_withdrawn": 0,
+            "surrender_value_before": 0,
+            "surrender_value_after": 2657398,
+            "source_page": 8
+          },
+          {
+            "policy_year": 11,
+            "total_premium_paid": 2000000,
+            "annual_withdrawal": 95575,
+            "total_withdrawn": 95575,
+            "surrender_value_before": 0,
+            "surrender_value_after": 2687533,
+            "source_page": 8
+          },
+          {
+            "policy_year": 12,
+            "total_premium_paid": 2000000,
+            "annual_withdrawal": 94569,
+            "total_withdrawn": 190144,
+            "surrender_value_before": 0,
+            "surrender_value_after": 2720285,
+            "source_page": 8
+          },
+          {
+            "policy_year": 13,
+            "total_premium_paid": 2000000,
+            "annual_withdrawal": 93637,
+            "total_withdrawn": 283781,
+            "surrender_value_before": 0,
+            "surrender_value_after": 2755884,
+            "source_page": 8
+          },
+          {
+            "policy_year": 14,
+            "total_premium_paid": 2000000,
+            "annual_withdrawal": 92814,
+            "total_withdrawn": 376595,
+            "surrender_value_before": 0,
+            "surrender_value_after": 2794546,
+            "source_page": 8
+          },
+          {
+            "policy_year": 15,
+            "total_premium_paid": 2000000,
+            "annual_withdrawal": 92082,
+            "total_withdrawn": 468677,
+            "surrender_value_before": 0,
+            "surrender_value_after": 2836573,
+            "source_page": 8
+          },
+          {
+            "policy_year": 16,
+            "total_premium_paid": 2000000,
+            "annual_withdrawal": 91448,
+            "total_withdrawn": 560125,
+            "surrender_value_before": 0,
+            "surrender_value_after": 2882235,
+            "source_page": 8
+          },
+          {
+            "policy_year": 17,
+            "total_premium_paid": 2000000,
+            "annual_withdrawal": 88278,
+            "total_withdrawn": 648403,
+            "surrender_value_before": 0,
+            "surrender_value_after": 2858327,
+            "source_page": 8
+          },
+          {
+            "policy_year": 18,
+            "total_premium_paid": 2000000,
+            "annual_withdrawal": 85097,
+            "total_withdrawn": 733500,
+            "surrender_value_before": 0,
+            "surrender_value_after": 2832978,
+            "source_page": 8
+          },
+          {
+            "policy_year": 19,
+            "total_premium_paid": 2000000,
+            "annual_withdrawal": 81907,
+            "total_withdrawn": 815407,
+            "surrender_value_before": 0,
+            "surrender_value_after": 2806057,
+            "source_page": 8
+          },
+          {
+            "policy_year": 20,
+            "total_premium_paid": 2000000,
+            "annual_withdrawal": 77929,
+            "total_withdrawn": 893336,
+            "surrender_value_before": 0,
+            "surrender_value_after": 2777507,
+            "source_page": 8
+          },
+          {
+            "policy_year": 21,
+            "total_premium_paid": 2000000,
+            "annual_withdrawal": 73639,
+            "total_withdrawn": 966975,
+            "surrender_value_before": 0,
+            "surrender_value_after": 2759367,
+            "source_page": 8
+          },
+          {
+            "policy_year": 22,
+            "total_premium_paid": 2000000,
+            "annual_withdrawal": 67995,
+            "total_withdrawn": 1034970,
+            "surrender_value_before": 0,
+            "surrender_value_after": 2808819,
+            "source_page": 8
+          },
+          {
+            "policy_year": 23,
+            "total_premium_paid": 2000000,
+            "annual_withdrawal": 62670,
+            "total_withdrawn": 1097640,
+            "surrender_value_before": 0,
+            "surrender_value_after": 2868238,
+            "source_page": 8
+          },
+          {
+            "policy_year": 24,
+            "total_premium_paid": 2000000,
+            "annual_withdrawal": 58428,
+            "total_withdrawn": 1156068,
+            "surrender_value_before": 0,
+            "surrender_value_after": 2897498,
+            "source_page": 8
+          },
+          {
+            "policy_year": 25,
+            "total_premium_paid": 2000000,
+            "annual_withdrawal": 54452,
+            "total_withdrawn": 1210520,
+            "surrender_value_before": 0,
+            "surrender_value_after": 2930266,
+            "source_page": 8
+          },
+          {
+            "policy_year": 26,
+            "total_premium_paid": 2000000,
+            "annual_withdrawal": 50776,
+            "total_withdrawn": 1261296,
+            "surrender_value_before": 0,
+            "surrender_value_after": 2963862,
+            "source_page": 9
+          },
+          {
+            "policy_year": 27,
+            "total_premium_paid": 2000000,
+            "annual_withdrawal": 46749,
+            "total_withdrawn": 1308045,
+            "surrender_value_before": 0,
+            "surrender_value_after": 3041156,
+            "source_page": 9
+          },
+          {
+            "policy_year": 28,
+            "total_premium_paid": 2000000,
+            "annual_withdrawal": 44195,
+            "total_withdrawn": 1352240,
+            "surrender_value_before": 0,
+            "surrender_value_after": 3038838,
+            "source_page": 9
+          },
+          {
+            "policy_year": 29,
+            "total_premium_paid": 2000000,
+            "annual_withdrawal": 41780,
+            "total_withdrawn": 1394020,
+            "surrender_value_before": 0,
+            "surrender_value_after": 3036370,
+            "source_page": 9
+          },
+          {
+            "policy_year": 30,
+            "total_premium_paid": 2000000,
+            "annual_withdrawal": 39498,
+            "total_withdrawn": 1433518,
+            "surrender_value_before": 0,
+            "surrender_value_after": 3033747,
+            "source_page": 8
+          },
+          {
+            "policy_year": 31,
+            "total_premium_paid": 2000000,
+            "annual_withdrawal": 37337,
+            "total_withdrawn": 1470855,
+            "surrender_value_before": 0,
+            "surrender_value_after": 3030947,
+            "source_page": 9
+          },
+          {
+            "policy_year": 32,
+            "total_premium_paid": 2000000,
+            "annual_withdrawal": 35293,
+            "total_withdrawn": 1506148,
+            "surrender_value_before": 0,
+            "surrender_value_after": 3027972,
+            "source_page": 9
+          },
+          {
+            "policy_year": 33,
+            "total_premium_paid": 2000000,
+            "annual_withdrawal": 33362,
+            "total_withdrawn": 1539510,
+            "surrender_value_before": 0,
+            "surrender_value_after": 3024799,
+            "source_page": 9
+          },
+          {
+            "policy_year": 34,
+            "total_premium_paid": 2000000,
+            "annual_withdrawal": 31536,
+            "total_withdrawn": 1571046,
+            "surrender_value_before": 0,
+            "surrender_value_after": 3021423,
+            "source_page": 9
+          },
+          {
+            "policy_year": 35,
+            "total_premium_paid": 2000000,
+            "annual_withdrawal": 29810,
+            "total_withdrawn": 1600856,
+            "surrender_value_before": 0,
+            "surrender_value_after": 3017824,
+            "source_page": 9
+          },
+          {
+            "policy_year": 36,
+            "total_premium_paid": 2000000,
+            "annual_withdrawal": 28179,
+            "total_withdrawn": 1629035,
+            "surrender_value_before": 0,
+            "surrender_value_after": 3013996,
+            "source_page": 9
+          },
+          {
+            "policy_year": 37,
+            "total_premium_paid": 2000000,
+            "annual_withdrawal": 26637,
+            "total_withdrawn": 1655672,
+            "surrender_value_before": 0,
+            "surrender_value_after": 3009915,
+            "source_page": 9
+          },
+          {
+            "policy_year": 38,
+            "total_premium_paid": 2000000,
+            "annual_withdrawal": 25179,
+            "total_withdrawn": 1680851,
+            "surrender_value_before": 0,
+            "surrender_value_after": 3005571,
+            "source_page": 9
+          },
+          {
+            "policy_year": 39,
+            "total_premium_paid": 2000000,
+            "annual_withdrawal": 23801,
+            "total_withdrawn": 1704652,
+            "surrender_value_before": 0,
+            "surrender_value_after": 3000944,
+            "source_page": 9
+          },
+          {
+            "policy_year": 40,
+            "total_premium_paid": 2000000,
+            "annual_withdrawal": 22499,
+            "total_withdrawn": 1727151,
+            "surrender_value_before": 0,
+            "surrender_value_after": 2996015,
+            "source_page": 9
+          },
+          {
+            "policy_year": 41,
+            "total_premium_paid": 2000000,
+            "annual_withdrawal": 21264,
+            "total_withdrawn": 1748415,
+            "surrender_value_before": 0,
+            "surrender_value_after": 2990772,
+            "source_page": 9
+          },
+          {
+            "policy_year": 42,
+            "total_premium_paid": 2000000,
+            "annual_withdrawal": 20097,
+            "total_withdrawn": 1768512,
+            "surrender_value_before": 0,
+            "surrender_value_after": 2985183,
+            "source_page": 9
+          },
+          {
+            "policy_year": 43,
+            "total_premium_paid": 2000000,
+            "annual_withdrawal": 18995,
+            "total_withdrawn": 1787507,
+            "surrender_value_before": 0,
+            "surrender_value_after": 2979233,
+            "source_page": 9
+          },
+          {
+            "policy_year": 44,
+            "total_premium_paid": 2000000,
+            "annual_withdrawal": 17939,
+            "total_withdrawn": 1805446,
+            "surrender_value_before": 0,
+            "surrender_value_after": 2975227,
+            "source_page": 9
+          },
+          {
+            "policy_year": 45,
+            "total_premium_paid": 2000000,
+            "annual_withdrawal": 16928,
+            "total_withdrawn": 1822374,
+            "surrender_value_before": 0,
+            "surrender_value_after": 2973659,
+            "source_page": 9
+          },
+          {
+            "policy_year": 46,
+            "total_premium_paid": 2000000,
+            "annual_withdrawal": 15961,
+            "total_withdrawn": 1838335,
+            "surrender_value_before": 0,
+            "surrender_value_after": 2974475,
+            "source_page": 9
+          },
+          {
+            "policy_year": 47,
+            "total_premium_paid": 2000000,
+            "annual_withdrawal": 15036,
+            "total_withdrawn": 1853371,
+            "surrender_value_before": 0,
+            "surrender_value_after": 2978140,
+            "source_page": 9
+          },
+          {
+            "policy_year": 48,
+            "total_premium_paid": 2000000,
+            "annual_withdrawal": 14154,
+            "total_withdrawn": 1867525,
+            "surrender_value_before": 0,
+            "surrender_value_after": 2984425,
+            "source_page": 9
+          },
+          {
+            "policy_year": 49,
+            "total_premium_paid": 2000000,
+            "annual_withdrawal": 13315,
+            "total_withdrawn": 1880840,
+            "surrender_value_before": 0,
+            "surrender_value_after": 2993346,
+            "source_page": 9
+          },
+          {
+            "policy_year": 50,
+            "total_premium_paid": 2000000,
+            "annual_withdrawal": 12517,
+            "total_withdrawn": 1893357,
+            "surrender_value_before": 0,
+            "surrender_value_after": 3005187,
+            "source_page": 9
+          },
+          {
+            "policy_year": 51,
+            "total_premium_paid": 2000000,
+            "annual_withdrawal": 11763,
+            "total_withdrawn": 1905120,
+            "surrender_value_before": 0,
+            "surrender_value_after": 3020101,
+            "source_page": 10
+          },
+          {
+            "policy_year": 52,
+            "total_premium_paid": 2000000,
+            "annual_withdrawal": 11048,
+            "total_withdrawn": 1916168,
+            "surrender_value_before": 0,
+            "surrender_value_after": 3037834,
+            "source_page": 10
+          },
+          {
+            "policy_year": 53,
+            "total_premium_paid": 2000000,
+            "annual_withdrawal": 10371,
+            "total_withdrawn": 1926539,
+            "surrender_value_before": 0,
+            "surrender_value_after": 3058730,
+            "source_page": 10
+          },
+          {
+            "policy_year": 54,
+            "total_premium_paid": 2000000,
+            "annual_withdrawal": 9731,
+            "total_withdrawn": 1936270,
+            "surrender_value_before": 0,
+            "surrender_value_after": 3082637,
+            "source_page": 10
+          },
+          {
+            "policy_year": 55,
+            "total_premium_paid": 2000000,
+            "annual_withdrawal": 9126,
+            "total_withdrawn": 1945396,
+            "surrender_value_before": 0,
+            "surrender_value_after": 3109943,
+            "source_page": 10
+          },
+          {
+            "policy_year": 56,
+            "total_premium_paid": 2000000,
+            "annual_withdrawal": 8555,
+            "total_withdrawn": 1953951,
+            "surrender_value_before": 0,
+            "surrender_value_after": 3140524,
+            "source_page": 10
+          },
+          {
+            "policy_year": 57,
+            "total_premium_paid": 2000000,
+            "annual_withdrawal": 8017,
+            "total_withdrawn": 1961968,
+            "surrender_value_before": 0,
+            "surrender_value_after": 3174814,
+            "source_page": 10
+          },
+          {
+            "policy_year": 58,
+            "total_premium_paid": 2000000,
+            "annual_withdrawal": 7509,
+            "total_withdrawn": 1969477,
+            "surrender_value_before": 0,
+            "surrender_value_after": 3213012,
+            "source_page": 10
+          },
+          {
+            "policy_year": 59,
+            "total_premium_paid": 2000000,
+            "annual_withdrawal": 7032,
+            "total_withdrawn": 1976509,
+            "surrender_value_before": 0,
+            "surrender_value_after": 3255043,
+            "source_page": 10
+          },
+          {
+            "policy_year": 60,
+            "total_premium_paid": 2000000,
+            "annual_withdrawal": 6583,
+            "total_withdrawn": 1983092,
+            "surrender_value_before": 0,
+            "surrender_value_after": 3301423,
+            "source_page": 10
+          },
+          {
+            "policy_year": 61,
+            "total_premium_paid": 2000000,
+            "annual_withdrawal": 6160,
+            "total_withdrawn": 1989252,
+            "surrender_value_before": 0,
+            "surrender_value_after": 3352420,
+            "source_page": 10
+          },
+          {
+            "policy_year": 62,
+            "total_premium_paid": 2000000,
+            "annual_withdrawal": 5763,
+            "total_withdrawn": 1995015,
+            "surrender_value_before": 0,
+            "surrender_value_after": 3408347,
+            "source_page": 10
+          }
+        ],
+        "sales_insights": {
+          "target_customer": "本计划适合具备稳定供款能力、追求长期复利与传承规划的家庭。",
+          "key_selling_points": [
+            "保证现金价值保底",
+            "复归红利 + 终期分红双轮驱动",
+            "至128岁超长保障周期"
+          ],
+          "unique_advantages": "已通过 PDF 签名快路径完成提取，数字 100% 来自官方计划书。",
+          "suggested_narrative": "聚焦长期复利 + 灵活提领 + 代际传承。",
+          "highlight_numbers": [
+            {
+              "year": 5,
+              "label": "Y5",
+              "value": 996353,
+              "description": "本金累计中 (50%)"
+            },
+            {
+              "year": 7,
+              "label": "回本年",
+              "value": 2176500,
+              "description": "已达 1.09 倍本金"
+            },
+            {
+              "year": 10,
+              "label": "Y10",
+              "value": 2657398,
+              "description": "已达 1.33 倍本金"
+            },
+            {
+              "year": 20,
+              "label": "20年倍数",
+              "value": 5545082,
+              "description": "已达 2.77 倍本金"
+            },
+            {
+              "year": 30,
+              "label": "30年倍数",
+              "value": 11709541,
+              "description": "已达 5.85 倍本金"
+            }
+          ]
+        },
+        "_meta": {
+          "source": "signature_fast_path",
+          "signatureId": "manulife-lovehome-v1",
+          "parser": "signature-extractor/manulife-lovehome-v1",
+          "warnings": []
+        }
+      }
+    },
+    {
+      "pdfName": "TA_GIUL3_M-46-N-CN-USD-S2m-5x_(coi)(SC).pdf",
+      "pdfPath": "/Users/soldier/free-code/packages/insurance-ppt/uploads/local/5b61b5dd-31c0-4253-8099-e8aabfda5000_TA_GIUL3_M-46-N-CN-USD-S2m-5x_(coi)(SC).pdf",
+      "planType": "iul",
+      "data": {
+        "product_name": "Transamerica GIUL3",
+        "product_type": "iul",
+        "insured": {
+          "name": "Client",
+          "age": 46,
+          "gender": "男性",
+          "smoker": ""
+        },
+        "policy": {
+          "currency": "美元",
+          "sum_insured": 2000000,
+          "annual_premium": 66355,
+          "premium_payment_period": "5年",
+          "coverage_period": "终身"
+        },
+        "index_accounts": [
+          {
+            "name": "标普500指数账户",
+            "allocation": 100
+          }
+        ],
+        "benefit_illustration": [
+          {
+            "policy_year": 1,
+            "total_premium_paid": 66355,
+            "guaranteed_account_value": 46406,
+            "guaranteed_cash_value": 2536,
+            "non_guaranteed_account_value": 50300,
+            "non_guaranteed_cash_value": 5360,
+            "non_guaranteed_death_benefit": 2000000
+          },
+          {
+            "policy_year": 2,
+            "total_premium_paid": 132710,
+            "guaranteed_account_value": 96435,
+            "guaranteed_cash_value": 57809,
+            "non_guaranteed_account_value": 107975,
+            "non_guaranteed_cash_value": 66235,
+            "non_guaranteed_death_benefit": 2000000
+          },
+          {
+            "policy_year": 3,
+            "total_premium_paid": 199065,
+            "guaranteed_account_value": 145859,
+            "guaranteed_cash_value": 113510,
+            "non_guaranteed_account_value": 169132,
+            "non_guaranteed_cash_value": 130612,
+            "non_guaranteed_death_benefit": 2000000
+          },
+          {
+            "policy_year": 4,
+            "total_premium_paid": 265420,
+            "guaranteed_account_value": 194674,
+            "guaranteed_cash_value": 169594,
+            "non_guaranteed_account_value": 233981,
+            "non_guaranteed_cash_value": 198661,
+            "non_guaranteed_death_benefit": 2000000
+          },
+          {
+            "policy_year": 5,
+            "total_premium_paid": 331775,
+            "guaranteed_account_value": 243607,
+            "guaranteed_cash_value": 226834,
+            "non_guaranteed_account_value": 303508,
+            "non_guaranteed_cash_value": 271408,
+            "non_guaranteed_death_benefit": 2000000
+          },
+          {
+            "policy_year": 6,
+            "total_premium_paid": 331775,
+            "guaranteed_account_value": 229883,
+            "guaranteed_cash_value": 221185,
+            "non_guaranteed_account_value": 310920,
+            "non_guaranteed_cash_value": 282020,
+            "non_guaranteed_death_benefit": 2000000
+          },
+          {
+            "policy_year": 7,
+            "total_premium_paid": 331775,
+            "guaranteed_account_value": 216030,
+            "guaranteed_cash_value": 215210,
+            "non_guaranteed_account_value": 318574,
+            "non_guaranteed_cash_value": 292894,
+            "non_guaranteed_death_benefit": 2000000
+          },
+          {
+            "policy_year": 8,
+            "total_premium_paid": 331775,
+            "guaranteed_account_value": 202009,
+            "guaranteed_cash_value": 208827,
+            "non_guaranteed_account_value": 326469,
+            "non_guaranteed_cash_value": 303989,
+            "non_guaranteed_death_benefit": 2000000
+          },
+          {
+            "policy_year": 9,
+            "total_premium_paid": 331775,
+            "guaranteed_account_value": 187818,
+            "guaranteed_cash_value": 202069,
+            "non_guaranteed_account_value": 334606,
+            "non_guaranteed_cash_value": 315346,
+            "non_guaranteed_death_benefit": 2000000
+          },
+          {
+            "policy_year": 10,
+            "total_premium_paid": 331775,
+            "guaranteed_account_value": 173381,
+            "guaranteed_cash_value": 194815,
+            "non_guaranteed_account_value": 342950,
+            "non_guaranteed_cash_value": 326890,
+            "non_guaranteed_death_benefit": 2000000
+          },
+          {
+            "policy_year": 11,
+            "total_premium_paid": 331775,
+            "guaranteed_account_value": 158677,
+            "guaranteed_cash_value": 187079,
+            "non_guaranteed_account_value": 351500,
+            "non_guaranteed_cash_value": 338660,
+            "non_guaranteed_death_benefit": 2000000
+          },
+          {
+            "policy_year": 12,
+            "total_premium_paid": 331775,
+            "guaranteed_account_value": 143645,
+            "guaranteed_cash_value": 178754,
+            "non_guaranteed_account_value": 360223,
+            "non_guaranteed_cash_value": 350583,
+            "non_guaranteed_death_benefit": 2000000
+          },
+          {
+            "policy_year": 13,
+            "total_premium_paid": 331775,
+            "guaranteed_account_value": 128225,
+            "guaranteed_cash_value": 169813,
+            "non_guaranteed_account_value": 369080,
+            "non_guaranteed_cash_value": 362660,
+            "non_guaranteed_death_benefit": 2000000
+          },
+          {
+            "policy_year": 14,
+            "total_premium_paid": 331775,
+            "guaranteed_account_value": 112356,
+            "guaranteed_cash_value": 160146,
+            "non_guaranteed_account_value": 378052,
+            "non_guaranteed_cash_value": 374832,
+            "non_guaranteed_death_benefit": 2000000
+          },
+          {
+            "policy_year": 15,
+            "total_premium_paid": 331775,
+            "guaranteed_account_value": 95993,
+            "guaranteed_cash_value": 149740,
+            "non_guaranteed_account_value": 387118,
+            "non_guaranteed_cash_value": 387118,
+            "non_guaranteed_death_benefit": 2000000
+          },
+          {
+            "policy_year": 16,
+            "total_premium_paid": 331775,
+            "guaranteed_account_value": 88088,
+            "guaranteed_cash_value": 144392,
+            "non_guaranteed_account_value": 405608,
+            "non_guaranteed_cash_value": 405608,
+            "non_guaranteed_death_benefit": 2000000
+          },
+          {
+            "policy_year": 17,
+            "total_premium_paid": 331775,
+            "guaranteed_account_value": 79487,
+            "guaranteed_cash_value": 138241,
+            "non_guaranteed_account_value": 424731,
+            "non_guaranteed_cash_value": 424731,
+            "non_guaranteed_death_benefit": 2000000
+          },
+          {
+            "policy_year": 18,
+            "total_premium_paid": 331775,
+            "guaranteed_account_value": 70112,
+            "guaranteed_cash_value": 131195,
+            "non_guaranteed_account_value": 444476,
+            "non_guaranteed_cash_value": 444476,
+            "non_guaranteed_death_benefit": 2000000
+          },
+          {
+            "policy_year": 19,
+            "total_premium_paid": 331775,
+            "guaranteed_account_value": 59901,
+            "guaranteed_cash_value": 123180,
+            "non_guaranteed_account_value": 464852,
+            "non_guaranteed_cash_value": 464852,
+            "non_guaranteed_death_benefit": 2000000
+          },
+          {
+            "policy_year": 20,
+            "total_premium_paid": 331775,
+            "guaranteed_account_value": 49395,
+            "guaranteed_cash_value": 114079,
+            "non_guaranteed_account_value": 490561,
+            "non_guaranteed_cash_value": 490561,
+            "non_guaranteed_death_benefit": 2000000
+          },
+          {
+            "policy_year": 21,
+            "total_premium_paid": 331775,
+            "guaranteed_account_value": 37235,
+            "guaranteed_cash_value": 103273,
+            "non_guaranteed_account_value": 517084,
+            "non_guaranteed_cash_value": 517084,
+            "non_guaranteed_death_benefit": 2000000
+          },
+          {
+            "policy_year": 22,
+            "total_premium_paid": 331775,
+            "guaranteed_account_value": 23769,
+            "guaranteed_cash_value": 91083,
+            "non_guaranteed_account_value": 544807,
+            "non_guaranteed_cash_value": 544807,
+            "non_guaranteed_death_benefit": 2000000
+          },
+          {
+            "policy_year": 23,
+            "total_premium_paid": 331775,
+            "guaranteed_account_value": 8770,
+            "guaranteed_cash_value": 77277,
+            "non_guaranteed_account_value": 573701,
+            "non_guaranteed_cash_value": 573701,
+            "non_guaranteed_death_benefit": 2000000
+          },
+          {
+            "policy_year": 24,
+            "total_premium_paid": 331775,
+            "guaranteed_account_value": 0,
+            "guaranteed_cash_value": 61788,
+            "non_guaranteed_account_value": 603707,
+            "non_guaranteed_cash_value": 603707,
+            "non_guaranteed_death_benefit": 2000000
+          },
+          {
+            "policy_year": 25,
+            "total_premium_paid": 331775,
+            "guaranteed_account_value": 0,
+            "guaranteed_cash_value": 44198,
+            "non_guaranteed_account_value": 634731,
+            "non_guaranteed_cash_value": 634731,
+            "non_guaranteed_death_benefit": 2000000
+          },
+          {
+            "policy_year": 26,
+            "total_premium_paid": 331775,
+            "guaranteed_account_value": 0,
+            "guaranteed_cash_value": 23729,
+            "non_guaranteed_account_value": 666761,
+            "non_guaranteed_cash_value": 666761,
+            "non_guaranteed_death_benefit": 2000000
+          },
+          {
+            "policy_year": 27,
+            "total_premium_paid": 331775,
+            "guaranteed_account_value": 0,
+            "guaranteed_cash_value": 0,
+            "non_guaranteed_account_value": 699780,
+            "non_guaranteed_cash_value": 699780,
+            "non_guaranteed_death_benefit": 2000000
+          },
+          {
+            "policy_year": 28,
+            "total_premium_paid": 331775,
+            "guaranteed_account_value": 0,
+            "guaranteed_cash_value": 0,
+            "non_guaranteed_account_value": 733764,
+            "non_guaranteed_cash_value": 733764,
+            "non_guaranteed_death_benefit": 2000000
+          },
+          {
+            "policy_year": 29,
+            "total_premium_paid": 331775,
+            "guaranteed_account_value": 0,
+            "guaranteed_cash_value": 0,
+            "non_guaranteed_account_value": 768660,
+            "non_guaranteed_cash_value": 768660,
+            "non_guaranteed_death_benefit": 2000000
+          },
+          {
+            "policy_year": 30,
+            "total_premium_paid": 331775,
+            "guaranteed_account_value": 0,
+            "guaranteed_cash_value": 0,
+            "non_guaranteed_account_value": 804423,
+            "non_guaranteed_cash_value": 804423,
+            "non_guaranteed_death_benefit": 2000000
+          },
+          {
+            "policy_year": 31,
+            "total_premium_paid": 331775,
+            "guaranteed_account_value": 0,
+            "guaranteed_cash_value": 0,
+            "non_guaranteed_account_value": 840989,
+            "non_guaranteed_cash_value": 840989,
+            "non_guaranteed_death_benefit": 2000000
+          },
+          {
+            "policy_year": 32,
+            "total_premium_paid": 331775,
+            "guaranteed_account_value": 0,
+            "guaranteed_cash_value": 0,
+            "non_guaranteed_account_value": 878303,
+            "non_guaranteed_cash_value": 878303,
+            "non_guaranteed_death_benefit": 2000000
+          },
+          {
+            "policy_year": 33,
+            "total_premium_paid": 331775,
+            "guaranteed_account_value": 0,
+            "guaranteed_cash_value": 0,
+            "non_guaranteed_account_value": 916277,
+            "non_guaranteed_cash_value": 916277,
+            "non_guaranteed_death_benefit": 2000000
+          },
+          {
+            "policy_year": 34,
+            "total_premium_paid": 331775,
+            "guaranteed_account_value": 0,
+            "guaranteed_cash_value": 0,
+            "non_guaranteed_account_value": 956118,
+            "non_guaranteed_cash_value": 956118,
+            "non_guaranteed_death_benefit": 2000000
+          },
+          {
+            "policy_year": 35,
+            "total_premium_paid": 331775,
+            "guaranteed_account_value": 0,
+            "guaranteed_cash_value": 0,
+            "non_guaranteed_account_value": 996672,
+            "non_guaranteed_cash_value": 996672,
+            "non_guaranteed_death_benefit": 2000000
+          },
+          {
+            "policy_year": 36,
+            "total_premium_paid": 331775,
+            "guaranteed_account_value": 0,
+            "guaranteed_cash_value": 0,
+            "non_guaranteed_account_value": 1037903,
+            "non_guaranteed_cash_value": 1037903,
+            "non_guaranteed_death_benefit": 2000000
+          },
+          {
+            "policy_year": 37,
+            "total_premium_paid": 331775,
+            "guaranteed_account_value": 0,
+            "guaranteed_cash_value": 0,
+            "non_guaranteed_account_value": 1079744,
+            "non_guaranteed_cash_value": 1079744,
+            "non_guaranteed_death_benefit": 2000000
+          },
+          {
+            "policy_year": 38,
+            "total_premium_paid": 331775,
+            "guaranteed_account_value": 0,
+            "guaranteed_cash_value": 0,
+            "non_guaranteed_account_value": 1119854,
+            "non_guaranteed_cash_value": 1119854,
+            "non_guaranteed_death_benefit": 2000000
+          },
+          {
+            "policy_year": 39,
+            "total_premium_paid": 331775,
+            "guaranteed_account_value": 0,
+            "guaranteed_cash_value": 0,
+            "non_guaranteed_account_value": 1160486,
+            "non_guaranteed_cash_value": 1160486,
+            "non_guaranteed_death_benefit": 2000000
+          },
+          {
+            "policy_year": 40,
+            "total_premium_paid": 331775,
+            "guaranteed_account_value": 0,
+            "guaranteed_cash_value": 0,
+            "non_guaranteed_account_value": 1201620,
+            "non_guaranteed_cash_value": 1201620,
+            "non_guaranteed_death_benefit": 2000000
+          },
+          {
+            "policy_year": 41,
+            "total_premium_paid": 331775,
+            "guaranteed_account_value": 0,
+            "guaranteed_cash_value": 0,
+            "non_guaranteed_account_value": 1243271,
+            "non_guaranteed_cash_value": 1243271,
+            "non_guaranteed_death_benefit": 2000000
+          },
+          {
+            "policy_year": 42,
+            "total_premium_paid": 331775,
+            "guaranteed_account_value": 0,
+            "guaranteed_cash_value": 0,
+            "non_guaranteed_account_value": 1285485,
+            "non_guaranteed_cash_value": 1285485,
+            "non_guaranteed_death_benefit": 2000000
+          },
+          {
+            "policy_year": 43,
+            "total_premium_paid": 331775,
+            "guaranteed_account_value": 0,
+            "guaranteed_cash_value": 0,
+            "non_guaranteed_account_value": 1328374,
+            "non_guaranteed_cash_value": 1328374,
+            "non_guaranteed_death_benefit": 2000000
+          },
+          {
+            "policy_year": 44,
+            "total_premium_paid": 331775,
+            "guaranteed_account_value": 0,
+            "guaranteed_cash_value": 0,
+            "non_guaranteed_account_value": 1372094,
+            "non_guaranteed_cash_value": 1372094,
+            "non_guaranteed_death_benefit": 2000000
+          },
+          {
+            "policy_year": 45,
+            "total_premium_paid": 331775,
+            "guaranteed_account_value": 0,
+            "guaranteed_cash_value": 0,
+            "non_guaranteed_account_value": 1416880,
+            "non_guaranteed_cash_value": 1416880,
+            "non_guaranteed_death_benefit": 2000000
+          },
+          {
+            "policy_year": 46,
+            "total_premium_paid": 331775,
+            "guaranteed_account_value": 0,
+            "guaranteed_cash_value": 0,
+            "non_guaranteed_account_value": 1463094,
+            "non_guaranteed_cash_value": 1463094,
+            "non_guaranteed_death_benefit": 2000000
+          },
+          {
+            "policy_year": 47,
+            "total_premium_paid": 331775,
+            "guaranteed_account_value": 0,
+            "guaranteed_cash_value": 0,
+            "non_guaranteed_account_value": 1510578,
+            "non_guaranteed_cash_value": 1510578,
+            "non_guaranteed_death_benefit": 2000000
+          },
+          {
+            "policy_year": 48,
+            "total_premium_paid": 331775,
+            "guaranteed_account_value": 0,
+            "guaranteed_cash_value": 0,
+            "non_guaranteed_account_value": 1559934,
+            "non_guaranteed_cash_value": 1559934,
+            "non_guaranteed_death_benefit": 2000000
+          },
+          {
+            "policy_year": 49,
+            "total_premium_paid": 331775,
+            "guaranteed_account_value": 0,
+            "guaranteed_cash_value": 0,
+            "non_guaranteed_account_value": 1612083,
+            "non_guaranteed_cash_value": 1612083,
+            "non_guaranteed_death_benefit": 2000000
+          },
+          {
+            "policy_year": 50,
+            "total_premium_paid": 331775,
+            "guaranteed_account_value": 0,
+            "guaranteed_cash_value": 0,
+            "non_guaranteed_account_value": 1668413,
+            "non_guaranteed_cash_value": 1668413,
+            "non_guaranteed_death_benefit": 2000000
+          },
+          {
+            "policy_year": 51,
+            "total_premium_paid": 331775,
+            "guaranteed_account_value": 0,
+            "guaranteed_cash_value": 0,
+            "non_guaranteed_account_value": 1731071,
+            "non_guaranteed_cash_value": 1731071,
+            "non_guaranteed_death_benefit": 2000000
+          },
+          {
+            "policy_year": 52,
+            "total_premium_paid": 331775,
+            "guaranteed_account_value": 0,
+            "guaranteed_cash_value": 0,
+            "non_guaranteed_account_value": 1803371,
+            "non_guaranteed_cash_value": 1803371,
+            "non_guaranteed_death_benefit": 2000000
+          },
+          {
+            "policy_year": 53,
+            "total_premium_paid": 331775,
+            "guaranteed_account_value": 0,
+            "guaranteed_cash_value": 0,
+            "non_guaranteed_account_value": 1890553,
+            "non_guaranteed_cash_value": 1890553,
+            "non_guaranteed_death_benefit": 2000000
+          },
+          {
+            "policy_year": 54,
+            "total_premium_paid": 331775,
+            "guaranteed_account_value": 0,
+            "guaranteed_cash_value": 0,
+            "non_guaranteed_account_value": 2001077,
+            "non_guaranteed_cash_value": 2001077,
+            "non_guaranteed_death_benefit": 2001077
+          },
+          {
+            "policy_year": 55,
+            "total_premium_paid": 331775,
+            "guaranteed_account_value": 0,
+            "guaranteed_cash_value": 0,
+            "non_guaranteed_account_value": 2145588,
+            "non_guaranteed_cash_value": 2145588,
+            "non_guaranteed_death_benefit": 2145588
+          },
+          {
+            "policy_year": 56,
+            "total_premium_paid": 331775,
+            "guaranteed_account_value": 0,
+            "guaranteed_cash_value": 0,
+            "non_guaranteed_account_value": 2298958,
+            "non_guaranteed_cash_value": 2298958,
+            "non_guaranteed_death_benefit": 2298958
+          },
+          {
+            "policy_year": 57,
+            "total_premium_paid": 331775,
+            "guaranteed_account_value": 0,
+            "guaranteed_cash_value": 0,
+            "non_guaranteed_account_value": 2461860,
+            "non_guaranteed_cash_value": 2461860,
+            "non_guaranteed_death_benefit": 2461860
+          },
+          {
+            "policy_year": 58,
+            "total_premium_paid": 331775,
+            "guaranteed_account_value": 0,
+            "guaranteed_cash_value": 0,
+            "non_guaranteed_account_value": 2634887,
+            "non_guaranteed_cash_value": 2634887,
+            "non_guaranteed_death_benefit": 2634887
+          },
+          {
+            "policy_year": 59,
+            "total_premium_paid": 331775,
+            "guaranteed_account_value": 0,
+            "guaranteed_cash_value": 0,
+            "non_guaranteed_account_value": 2818668,
+            "non_guaranteed_cash_value": 2818668,
+            "non_guaranteed_death_benefit": 2818668
+          },
+          {
+            "policy_year": 60,
+            "total_premium_paid": 331775,
+            "guaranteed_account_value": 0,
+            "guaranteed_cash_value": 0,
+            "non_guaranteed_account_value": 3013873,
+            "non_guaranteed_cash_value": 3013873,
+            "non_guaranteed_death_benefit": 3013873
+          },
+          {
+            "policy_year": 61,
+            "total_premium_paid": 331775,
+            "guaranteed_account_value": 0,
+            "guaranteed_cash_value": 0,
+            "non_guaranteed_account_value": 3221210,
+            "non_guaranteed_cash_value": 3221210,
+            "non_guaranteed_death_benefit": 3221210
+          },
+          {
+            "policy_year": 62,
+            "total_premium_paid": 331775,
+            "guaranteed_account_value": 0,
+            "guaranteed_cash_value": 0,
+            "non_guaranteed_account_value": 3441434,
+            "non_guaranteed_cash_value": 3441434,
+            "non_guaranteed_death_benefit": 3441434
+          },
+          {
+            "policy_year": 63,
+            "total_premium_paid": 331775,
+            "guaranteed_account_value": 0,
+            "guaranteed_cash_value": 0,
+            "non_guaranteed_account_value": 3675345,
+            "non_guaranteed_cash_value": 3675345,
+            "non_guaranteed_death_benefit": 3675345
+          },
+          {
+            "policy_year": 64,
+            "total_premium_paid": 331775,
+            "guaranteed_account_value": 0,
+            "guaranteed_cash_value": 0,
+            "non_guaranteed_account_value": 3923796,
+            "non_guaranteed_cash_value": 3923796,
+            "non_guaranteed_death_benefit": 3923796
+          },
+          {
+            "policy_year": 65,
+            "total_premium_paid": 331775,
+            "guaranteed_account_value": 0,
+            "guaranteed_cash_value": 0,
+            "non_guaranteed_account_value": 4187688,
+            "non_guaranteed_cash_value": 4187688,
+            "non_guaranteed_death_benefit": 4187688
+          },
+          {
+            "policy_year": 66,
+            "total_premium_paid": 331775,
+            "guaranteed_account_value": 0,
+            "guaranteed_cash_value": 0,
+            "non_guaranteed_account_value": 4467983,
+            "non_guaranteed_cash_value": 4467983,
+            "non_guaranteed_death_benefit": 4467983
+          },
+          {
+            "policy_year": 67,
+            "total_premium_paid": 331775,
+            "guaranteed_account_value": 0,
+            "guaranteed_cash_value": 0,
+            "non_guaranteed_account_value": 4765699,
+            "non_guaranteed_cash_value": 4765699,
+            "non_guaranteed_death_benefit": 4765699
+          },
+          {
+            "policy_year": 68,
+            "total_premium_paid": 331775,
+            "guaranteed_account_value": 0,
+            "guaranteed_cash_value": 0,
+            "non_guaranteed_account_value": 5081919,
+            "non_guaranteed_cash_value": 5081919,
+            "non_guaranteed_death_benefit": 5081919
+          },
+          {
+            "policy_year": 69,
+            "total_premium_paid": 331775,
+            "guaranteed_account_value": 0,
+            "guaranteed_cash_value": 0,
+            "non_guaranteed_account_value": 5417794,
+            "non_guaranteed_cash_value": 5417794,
+            "non_guaranteed_death_benefit": 5417794
+          },
+          {
+            "policy_year": 70,
+            "total_premium_paid": 331775,
+            "guaranteed_account_value": 0,
+            "guaranteed_cash_value": 0,
+            "non_guaranteed_account_value": 5774545,
+            "non_guaranteed_cash_value": 5774545,
+            "non_guaranteed_death_benefit": 5774545
+          },
+          {
+            "policy_year": 71,
+            "total_premium_paid": 331775,
+            "guaranteed_account_value": 0,
+            "guaranteed_cash_value": 0,
+            "non_guaranteed_account_value": 6153469,
+            "non_guaranteed_cash_value": 6153469,
+            "non_guaranteed_death_benefit": 6153469
+          },
+          {
+            "policy_year": 72,
+            "total_premium_paid": 331775,
+            "guaranteed_account_value": 0,
+            "guaranteed_cash_value": 0,
+            "non_guaranteed_account_value": 6555945,
+            "non_guaranteed_cash_value": 6555945,
+            "non_guaranteed_death_benefit": 6555945
+          },
+          {
+            "policy_year": 73,
+            "total_premium_paid": 331775,
+            "guaranteed_account_value": 0,
+            "guaranteed_cash_value": 0,
+            "non_guaranteed_account_value": 6983437,
+            "non_guaranteed_cash_value": 6983437,
+            "non_guaranteed_death_benefit": 6983437
+          },
+          {
+            "policy_year": 74,
+            "total_premium_paid": 331775,
+            "guaranteed_account_value": 0,
+            "guaranteed_cash_value": 0,
+            "non_guaranteed_account_value": 7437499,
+            "non_guaranteed_cash_value": 7437499,
+            "non_guaranteed_death_benefit": 7437499
+          },
+          {
+            "policy_year": 75,
+            "total_premium_paid": 331775,
+            "guaranteed_account_value": 0,
+            "guaranteed_cash_value": 0,
+            "non_guaranteed_account_value": 7919783,
+            "non_guaranteed_cash_value": 7919783,
+            "non_guaranteed_death_benefit": 7919783
+          }
+        ],
+        "sales_insights": {
+          "target_customer": "高净值人士、需要遗产规划、追求指数增长潜力及高额身故保障的客户",
+          "key_selling_points": [
+            "高杠杆寿险（首年约30倍）",
+            "指数增长潜力（标普500指数）",
+            "税务优惠（香港/新加坡IUL产品特性）"
+          ],
+          "unique_advantages": "首日现金价值$12,877，首年保费$66,355即享有$2,000,000身故保障，具有保证最低派息率2%累计保证",
+          "suggested_narrative": "以较低保费撬动高额保障，同时享受标普500指数增长潜力，实现财富传承与增值",
+          "highlight_numbers": [
+            30,
+            2000000,
+            66355,
+            331775
+          ]
+        }
+      }
+    }
+  ],
+  "chatHistory": [
+    {
+      "role": "assistant",
+      "content": "✅ **AI 解析完成！**\n\n📄 **宏挚家传承保险计划.pdf** → **「宏家傳承保險計劃」**\n   - 储蓄计划 | 年缴: $400,000 | 5年\n   - 75年数据 | 期末倍数: 0.0x\n\n📄 **TA_GIUL3_M-46-N-CN-USD-S2m-5x_(coi)(SC).pdf** → **Transamerica GIUL3**\n   - 指数万用寿险 | 年缴: $66,355 | 5年\n   - 75年数据 | 期末倍数: 23.9x\n\n你可以在下方输入定制需求（如：教育金/养老金、提领起始年龄、公司页重点、图表页偏好），我会据此优化PPT。"
+    }
+  ],
+  "createdAt": "2026-06-12T03:18:47.697Z"
+}

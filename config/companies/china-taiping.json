@@ -1,0 +1,9 @@
+{
+  "id": "china-taiping",
+  "displayName": "中国太平",
+  "aliases": ["China Taiping", "中国太平", "中國太平", "太平"],
+  "tenantId": "default",
+  "knowledgeDirectories": ["新加坡-中国太平", "新加坡-太平"],
+  "evidenceRanking": ["简介", "fact", "财务", "实力", "概览", "投资"],
+  "companyIntro": "中国太平相关公司资料仅使用内部资料库中已索引、可追溯的文件。"
+}

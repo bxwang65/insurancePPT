@@ -1,0 +1,10 @@
+{
+  "status": "pass",
+  "checkedAt": "2026-06-08T02:42:44.929Z",
+  "workspace": "/Users/soldier/free-code/packages/insurance-ppt/outputs/d37d00ce-16c7-43b9-b63d-03010ccd90bf_api_pipeline/template-clone/broker-savings",
+  "mapPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/d37d00ce-16c7-43b9-b63d-03010ccd90bf_api_pipeline/template-clone/broker-savings/template-frame-map.json",
+  "inspectPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/d37d00ce-16c7-43b9-b63d-03010ccd90bf_api_pipeline/template-clone/broker-savings/template-inspect/template-inspect.ndjson",
+  "sourceSlideCount": 25,
+  "issueCount": 0,
+  "issues": []
+}

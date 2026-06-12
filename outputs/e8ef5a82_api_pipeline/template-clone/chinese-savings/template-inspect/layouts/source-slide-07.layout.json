@@ -1,0 +1,992 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/0z61032l",
+    "id": "0z61032l",
+    "slide": 8,
+    "layoutId": "/ppt/slideLayouts/slideLayout27.xml",
+    "layoutName": "正文页-30_18",
+    "masterLayoutId": "/ppt/slideMasters/slideMaster2.xml",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "Office",
+    "colors": {
+      "accent1": "#5B9BD5",
+      "accent2": "#ED7D31",
+      "accent3": "#A5A5A5",
+      "accent4": "#FFC000",
+      "accent5": "#4472C4",
+      "accent6": "#70AD47",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#44546A",
+      "lt2": "#E7E6E6",
+      "hlink": "#0563C1",
+      "folHlink": "#954F72"
+    },
+    "fontScheme": {
+      "name": "Aspect",
+      "majorFont": {
+        "latinTypeface": "微软雅黑"
+      },
+      "minorFont": {
+        "latinTypeface": "微软雅黑"
+      }
+    },
+    "typefaces": [
+      "微软雅黑",
+      "汉仪中宋简",
+      "汉仪书宋二简"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "/ppt/slideLayouts/slideLayout27.xml",
+      "name": "正文页-30_18",
+      "parentLayoutId": "/ppt/slideMasters/slideMaster2.xml",
+      "elements": [
+        {
+          "order": 1,
+          "kind": "shape",
+          "scope": "layout",
+          "aid": "template/layout//ppt/slideLayouts/slideLayout27.xml/8",
+          "id": "8",
+          "name": "日期占位符 7",
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "order": 2,
+          "kind": "shape",
+          "scope": "layout",
+          "aid": "template/layout//ppt/slideLayouts/slideLayout27.xml/9",
+          "id": "9",
+          "name": "页脚占位符 8",
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "order": 3,
+          "kind": "shape",
+          "scope": "layout",
+          "aid": "template/layout//ppt/slideLayouts/slideLayout27.xml/10",
+          "id": "10",
+          "name": "灯片编号占位符 9",
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "order": 4,
+          "kind": "shape",
+          "scope": "layout",
+          "aid": "template/layout//ppt/slideLayouts/slideLayout27.xml/11",
+          "id": "11",
+          "name": "标题 10",
+          "bbox": [
+            552,
+            56,
+            664,
+            64
+          ],
+          "resolvedTextStyle": {
+            "anchor": 1,
+            "verticalAlignment": "top",
+            "autoFit": "shrinkText",
+            "insets": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          }
+        },
+        {
+          "order": 5,
+          "kind": "shape",
+          "scope": "layout",
+          "aid": "template/layout//ppt/slideLayouts/slideLayout27.xml/12",
+          "id": "12",
+          "name": "内容占位符 11",
+          "bbox": [
+            64,
+            64,
+            424,
+            592
+          ],
+          "geometry": "custom",
+          "resolvedTextStyle": {
+            "autoFit": "shrinkText"
+          },
+          "fillColor": "#DDDDDD"
+        },
+        {
+          "order": 6,
+          "kind": "shape",
+          "scope": "layout",
+          "aid": "template/layout//ppt/slideLayouts/slideLayout27.xml/13",
+          "id": "13",
+          "name": "装饰  2",
+          "bbox": [
+            552,
+            229.33,
+            5.33,
+            181.33
+          ],
+          "geometry": "custom",
+          "resolvedTextStyle": {
+            "autoFit": "none"
+          },
+          "fillColor": "accent1",
+          "lineColor": "#000000"
+        },
+        {
+          "order": 7,
+          "kind": "shape",
+          "scope": "layout",
+          "aid": "template/layout//ppt/slideLayouts/slideLayout27.xml/14",
+          "id": "14",
+          "name": "文本占位符 13",
+          "bbox": [
+            568,
+            229.33,
+            648,
+            42.67
+          ],
+          "resolvedTextStyle": {
+            "anchor": 1,
+            "verticalAlignment": "top",
+            "autoFit": "shrinkText",
+            "insets": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          }
+        },
+        {
+          "order": 8,
+          "kind": "shape",
+          "scope": "layout",
+          "aid": "template/layout//ppt/slideLayouts/slideLayout27.xml/15",
+          "id": "15",
+          "name": "文本占位符 14",
+          "bbox": [
+            568,
+            282.67,
+            648,
+            128
+          ],
+          "resolvedTextStyle": {
+            "anchor": 1,
+            "verticalAlignment": "top",
+            "autoFit": "shrinkText",
+            "insets": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          }
+        },
+        {
+          "order": 9,
+          "kind": "shape",
+          "scope": "layout",
+          "aid": "template/layout//ppt/slideLayouts/slideLayout27.xml/16",
+          "id": "16",
+          "name": "装饰  5",
+          "bbox": [
+            552,
+            474.67,
+            5.33,
+            181.33
+          ],
+          "geometry": "custom",
+          "resolvedTextStyle": {
+            "autoFit": "none"
+          },
+          "fillColor": "accent1",
+          "lineColor": "#000000"
+        },
+        {
+          "order": 10,
+          "kind": "shape",
+          "scope": "layout",
+          "aid": "template/layout//ppt/slideLayouts/slideLayout27.xml/17",
+          "id": "17",
+          "name": "文本占位符 16",
+          "bbox": [
+            568,
+            474.67,
+            648,
+            42.67
+          ],
+          "resolvedTextStyle": {
+            "anchor": 1,
+            "verticalAlignment": "top",
+            "autoFit": "shrinkText",
+            "insets": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          }
+        },
+        {
+          "order": 11,
+          "kind": "shape",
+          "scope": "layout",
+          "aid": "template/layout//ppt/slideLayouts/slideLayout27.xml/18",
+          "id": "18",
+          "name": "文本占位符 17",
+          "bbox": [
+            568,
+            528,
+            648,
+            128
+          ],
+          "resolvedTextStyle": {
+            "anchor": 1,
+            "verticalAlignment": "top",
+            "autoFit": "shrinkText",
+            "insets": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "scope": "master",
+      "id": "/ppt/slideMasters/slideMaster2.xml",
+      "type": "master",
+      "elements": [
+        {
+          "order": 1,
+          "kind": "image",
+          "scope": "master",
+          "aid": "template/master//ppt/slideMasters/slideMaster2.xml/10",
+          "id": "10",
+          "name": "图片 7",
+          "bbox": [
+            306.67,
+            146.67,
+            973.33,
+            573.33
+          ],
+          "contentType": "image/png",
+          "asset": {
+            "assetId": "/ppt/media/image7.png",
+            "contentType": "image/png",
+            "byteLength": 655982
+          },
+          "fillImage": {
+            "assetId": "/ppt/media/image7.png",
+            "contentType": "image/png",
+            "byteLength": 655982
+          }
+        },
+        {
+          "order": 2,
+          "kind": "shape",
+          "scope": "master",
+          "aid": "template/master//ppt/slideMasters/slideMaster2.xml/2",
+          "id": "2",
+          "name": "标题占位符 1",
+          "bbox": [
+            63.87,
+            63.87,
+            1151.62,
+            74.08
+          ],
+          "geometry": "rect",
+          "resolvedTextStyle": {
+            "anchor": 2,
+            "vertical": 1,
+            "verticalAlignment": "middle",
+            "autoFit": "shrinkText",
+            "insets": {
+              "top": 4.93,
+              "right": 9.47,
+              "bottom": 4.93,
+              "left": 9.47
+            }
+          }
+        },
+        {
+          "order": 3,
+          "kind": "shape",
+          "scope": "master",
+          "aid": "template/master//ppt/slideMasters/slideMaster2.xml/3",
+          "id": "3",
+          "name": "文本占位符 2",
+          "bbox": [
+            63.87,
+            156.47,
+            1151.62,
+            499.65
+          ],
+          "geometry": "rect",
+          "resolvedTextStyle": {
+            "vertical": 1,
+            "autoFit": "shrinkText",
+            "insets": {
+              "top": 4.91,
+              "right": 9.45,
+              "bottom": 4.91,
+              "left": 9.45
+            }
+          }
+        },
+        {
+          "order": 4,
+          "kind": "shape",
+          "scope": "master",
+          "aid": "template/master//ppt/slideMasters/slideMaster2.xml/4",
+          "id": "4",
+          "name": "日期占位符 3",
+          "bbox": [
+            64.25,
+            662.93,
+            283.46,
+            33.26
+          ],
+          "geometry": "rect",
+          "resolvedTextStyle": {
+            "anchor": 2,
+            "vertical": 1,
+            "verticalAlignment": "middle",
+            "autoFit": "shrinkText",
+            "insets": {
+              "top": 4.8,
+              "right": 9.6,
+              "bottom": 4.8,
+              "left": 9.6
+            }
+          }
+        },
+        {
+          "order": 5,
+          "kind": "shape",
+          "scope": "master",
+          "aid": "template/master//ppt/slideMasters/slideMaster2.xml/5",
+          "id": "5",
+          "name": "页脚占位符 4",
+          "bbox": [
+            432.13,
+            662.93,
+            415.75,
+            33.26
+          ],
+          "geometry": "rect",
+          "resolvedTextStyle": {
+            "anchor": 2,
+            "vertical": 1,
+            "verticalAlignment": "middle",
+            "autoFit": "shrinkText",
+            "insets": {
+              "top": 4.8,
+              "right": 9.6,
+              "bottom": 4.8,
+              "left": 9.6
+            }
+          }
+        },
+        {
+          "order": 6,
+          "kind": "shape",
+          "scope": "master",
+          "aid": "template/master//ppt/slideMasters/slideMaster2.xml/6",
+          "id": "6",
+          "name": "灯片编号占位符 5",
+          "bbox": [
+            932.03,
+            662.93,
+            283.46,
+            33.26
+          ],
+          "geometry": "rect",
+          "resolvedTextStyle": {
+            "anchor": 2,
+            "vertical": 1,
+            "verticalAlignment": "middle",
+            "autoFit": "shrinkText",
+            "insets": {
+              "top": 4.8,
+              "right": 9.6,
+              "bottom": 4.8,
+              "left": 9.6
+            }
+          }
+        },
+        {
+          "order": 7,
+          "kind": "shape",
+          "scope": "master",
+          "aid": "template/master//ppt/slideMasters/slideMaster2.xml/9",
+          "id": "9",
+          "name": "KSO_TEMPLATE",
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "geometry": "rect",
+          "resolvedTextStyle": {
+            "anchor": 2,
+            "verticalAlignment": "middle"
+          }
+        }
+      ]
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/x4nap4r6",
+      "id": "2",
+      "name": "标题 1",
+      "bbox": [
+        552,
+        56,
+        664,
+        64
+      ],
+      "text": "机构定位与核心优势",
+      "textPreview": "机构定位与核心优势",
+      "resolvedFontSize": 48,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "vertical": 1,
+        "fontSize": 48,
+        "typeface": "微软雅黑",
+        "color": {
+          "type": "theme",
+          "value": "tx1",
+          "transform": {
+            "lighten": 0.15
+          }
+        },
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "textTransform": "none",
+        "autoFit": "shrinkText",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "机构定位与核心优势"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "机构定位与核心优势",
+          "lineSpacingPercent": 111000,
+          "resolvedTextStyle": {
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "机构定位与核心优势",
+              "typeface": "汉仪中宋简"
+            }
+          ],
+          "bulletCharacter": "",
+          "marginLeft": 0,
+          "indent": 0,
+          "spaceBefore": 0,
+          "spaceAfter": 0
+        }
+      ]
+    },
+    {
+      "order": 2,
+      "kind": "image",
+      "scope": "slide",
+      "aid": "im/bm58z25k",
+      "id": "10",
+      "name": "内容占位符 2",
+      "bbox": [
+        64,
+        64,
+        424,
+        592
+      ],
+      "contentType": "image/jpeg",
+      "imageCrop": {
+        "left": 0,
+        "top": 0.00271,
+        "right": 0,
+        "bottom": 0.00271
+      },
+      "asset": {
+        "assetId": "/ppt/media/image9.jpeg",
+        "contentType": "image/jpeg",
+        "byteLength": 228722
+      },
+      "fillImage": {
+        "assetId": "/ppt/media/image9.jpeg",
+        "contentType": "image/jpeg",
+        "byteLength": 228722
+      }
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/fa9w3m94",
+      "id": "4",
+      "name": "装饰  2",
+      "bbox": [
+        552,
+        229.33,
+        5.33,
+        181.33
+      ],
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "vertical": 1,
+        "fontSize": 24,
+        "typeface": "微软雅黑",
+        "color": {
+          "type": "theme",
+          "value": "tx1",
+          "transform": {
+            "lighten": 0.35
+          }
+        },
+        "alignment": "left",
+        "textTransform": "none",
+        "autoFit": "none",
+        "insets": {
+          "top": 4.91,
+          "right": 9.45,
+          "bottom": 4.91,
+          "left": 9.45
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": " "
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "runs": [
+            {
+              "index": 1,
+              "text": " ",
+              "typeface": "汉仪书宋二简"
+            }
+          ],
+          "bulletCharacter": "",
+          "marginLeft": 0,
+          "indent": 0,
+          "lineSpacingPercent": 130000,
+          "spaceBefore": 0,
+          "spaceAfter": 1000
+        }
+      ]
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/qpg3ex0n",
+      "id": "5",
+      "name": "文本占位符 4",
+      "bbox": [
+        568,
+        229.33,
+        648,
+        42.67
+      ],
+      "text": "家族财富守护者",
+      "textPreview": "家族财富守护者",
+      "resolvedFontSize": 32,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "vertical": 1,
+        "fontSize": 32,
+        "typeface": "微软雅黑",
+        "color": {
+          "type": "theme",
+          "value": "tx1",
+          "transform": {
+            "lighten": 0.35
+          }
+        },
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "textTransform": "none",
+        "autoFit": "shrinkText",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "家族财富守护者"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "家族财富守护者",
+          "lineSpacingPercent": 111000,
+          "resolvedTextStyle": {
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "家族财富守护者",
+              "typeface": "汉仪书宋二简"
+            }
+          ],
+          "bulletCharacter": "",
+          "marginLeft": 0,
+          "indent": 0,
+          "spaceBefore": 0,
+          "spaceAfter": 0
+        }
+      ]
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/xczed8v6",
+      "id": "6",
+      "name": "文本占位符 5",
+      "bbox": [
+        568,
+        282.67,
+        648,
+        128
+      ],
+      "text": "以“百年传承”为目标，为高净值家族提供资产配置、税务规划等定制服务，如为某浙江家族设立家族信托，实现资产代际传承。",
+      "textPreview": "以“百年传承”为目标，为高净值家族提供资产配置、税务规划等定制服务，如为某浙江家族设立家族信托，实现资产代际传承。",
+      "resolvedFontSize": 21.33,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "vertical": 1,
+        "fontSize": 21.33,
+        "typeface": "微软雅黑",
+        "color": {
+          "type": "theme",
+          "value": "tx1",
+          "transform": {
+            "lighten": 0.35
+          }
+        },
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "textTransform": "none",
+        "autoFit": "shrinkText",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "以“百年传承”为目标，为高净值家族提供资产配置、税务规划等定"
+          },
+          {
+            "index": 2,
+            "text": "制服务，如为某浙江家族设立家族信托，实现资产代际传承。"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "以“百年传承”为目标，为高净值家族提供资产配置、税务规划等定制服务，如为某浙江家族设立家族信托，实现资产代际传承。",
+          "lineSpacingPercent": 125000,
+          "resolvedTextStyle": {
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "以“百年传承”为目标，为高净值家族提供资产配置、税务规划等定制服务，如为某浙江家族设立家族信托，实现资产代际传承。",
+              "typeface": "汉仪书宋二简"
+            }
+          ],
+          "bulletCharacter": "",
+          "marginLeft": 0,
+          "indent": 0,
+          "spaceBefore": 0,
+          "spaceAfter": 0
+        }
+      ]
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/8v6psfil",
+      "id": "7",
+      "name": "装饰  5",
+      "bbox": [
+        552,
+        474.67,
+        5.33,
+        181.33
+      ],
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "vertical": 1,
+        "fontSize": 24,
+        "typeface": "微软雅黑",
+        "color": {
+          "type": "theme",
+          "value": "tx1",
+          "transform": {
+            "lighten": 0.35
+          }
+        },
+        "alignment": "left",
+        "textTransform": "none",
+        "autoFit": "none",
+        "insets": {
+          "top": 4.91,
+          "right": 9.45,
+          "bottom": 4.91,
+          "left": 9.45
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": " "
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "runs": [
+            {
+              "index": 1,
+              "text": " ",
+              "typeface": "汉仪书宋二简"
+            }
+          ],
+          "bulletCharacter": "",
+          "marginLeft": 0,
+          "indent": 0,
+          "lineSpacingPercent": 130000,
+          "spaceBefore": 0,
+          "spaceAfter": 1000
+        }
+      ]
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/je9cvixc",
+      "id": "8",
+      "name": "文本占位符 7",
+      "bbox": [
+        568,
+        474.67,
+        648,
+        42.67
+      ],
+      "text": "全球资源整合者",
+      "textPreview": "全球资源整合者",
+      "resolvedFontSize": 32,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "vertical": 1,
+        "fontSize": 32,
+        "typeface": "微软雅黑",
+        "color": {
+          "type": "theme",
+          "value": "tx1",
+          "transform": {
+            "lighten": 0.35
+          }
+        },
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "textTransform": "none",
+        "autoFit": "shrinkText",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "全球资源整合者"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "全球资源整合者",
+          "lineSpacingPercent": 111000,
+          "resolvedTextStyle": {
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "全球资源整合者",
+              "typeface": "汉仪书宋二简"
+            }
+          ],
+          "bulletCharacter": "",
+          "marginLeft": 0,
+          "indent": 0,
+          "spaceBefore": 0,
+          "spaceAfter": 0
+        }
+      ]
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/qtcj6tov",
+      "id": "9",
+      "name": "文本占位符 8",
+      "bbox": [
+        568,
+        528,
+        648,
+        128
+      ],
+      "text": "整合全球金融、法律、教育等资源，协助某山西煤老板家族子女赴海外顶尖学府深造，并配置海外不动产。",
+      "textPreview": "整合全球金融、法律、教育等资源，协助某山西煤老板家族子女赴海外顶尖学府深造，并配置海外不动产。",
+      "resolvedFontSize": 21.33,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "vertical": 1,
+        "fontSize": 21.33,
+        "typeface": "微软雅黑",
+        "color": {
+          "type": "theme",
+          "value": "tx1",
+          "transform": {
+            "lighten": 0.35
+          }
+        },
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "textTransform": "none",
+        "autoFit": "shrinkText",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "整合全球金融、法律、教育等资源，协助某山西煤老板家族子女赴"
+          },
+          {
+            "index": 2,
+            "text": "海外顶尖学府深造，并配置海外不动产。"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "整合全球金融、法律、教育等资源，协助某山西煤老板家族子女赴海外顶尖学府深造，并配置海外不动产。",
+          "lineSpacingPercent": 125000,
+          "resolvedTextStyle": {
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "整合全球金融、法律、教育等资源，协助某山西煤老板家族子女赴海外顶尖学府深造，并配置海外不动产。",
+              "typeface": "汉仪书宋二简"
+            }
+          ],
+          "bulletCharacter": "",
+          "marginLeft": 0,
+          "indent": 0,
+          "spaceBefore": 0,
+          "spaceAfter": 0
+        }
+      ]
+    }
+  ],
+  "composeRuns": []
+}

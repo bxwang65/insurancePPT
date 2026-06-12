@@ -1,0 +1,254 @@
+{
+  "templateId": "broker",
+  "slides": [
+    {
+      "outputSlide": 1,
+      "textRewrites": [
+        {
+          "shapeId": "6",
+          "text": "VIP 先生 家庭定制方案"
+        },
+        {
+          "shapeId": "20",
+          "text": "周大福人寿 · 「匠·传承」"
+        },
+        {
+          "shapeId": "35",
+          "text": "2026-06-07"
+        }
+      ],
+      "imageReplacements": [],
+      "deletions": []
+    },
+    {
+      "outputSlide": 2,
+      "textRewrites": [
+        {
+          "shapeId": "6",
+          "text": "周大福人寿公司介绍"
+        },
+        {
+          "shapeId": "35",
+          "text": "公司资料来自内部知识库（公开口径）"
+        },
+        {
+          "shapeId": "40",
+          "text": "以长期偿付与资产实力为核心筛选依据"
+        },
+        {
+          "shapeId": "45",
+          "text": "本页用于销售沟通，正式数值与官方计划书分层呈现"
+        }
+      ],
+      "imageReplacements": [
+        {
+          "imageId": "52",
+          "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/a79df7f0-2e90-4381-8965-a07609a562f2_api_pipeline/assets/company.jpg",
+          "fit": "cover"
+        }
+      ],
+      "deletions": []
+    },
+    {
+      "outputSlide": 3,
+      "textRewrites": [
+        {
+          "shapeId": "6",
+          "text": "产品亮点概览"
+        },
+        {
+          "shapeId": "14",
+          "text": "总缴保费约 US$500,000"
+        },
+        {
+          "shapeId": "19",
+          "text": "不提领：20年约 2.73 倍"
+        },
+        {
+          "shapeId": "24",
+          "text": "不提领：30年约 5.57 倍"
+        },
+        {
+          "shapeId": "39",
+          "text": "长期价值来源于保证底盘 + 非保证增值，图表用于结构化解释"
+        }
+      ],
+      "imageReplacements": [
+        {
+          "imageId": "49",
+          "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/a79df7f0-2e90-4381-8965-a07609a562f2_api_pipeline/charts/1__匠_传承_growth.png",
+          "fit": "cover"
+        }
+      ],
+      "deletions": []
+    },
+    {
+      "outputSlide": 4,
+      "textRewrites": [
+        {
+          "shapeId": "6",
+          "text": "现金流与风险准备并行"
+        },
+        {
+          "shapeId": "25",
+          "text": "第6年起每年领取 US$35,000"
+        },
+        {
+          "shapeId": "26",
+          "text": "第20年累计领取 US$525,006"
+        },
+        {
+          "shapeId": "30",
+          "text": "第30年累计领取 US$875,016"
+        },
+        {
+          "shapeId": "31",
+          "text": "第60年累计领取 US$1,925,212"
+        }
+      ],
+      "imageReplacements": [
+        {
+          "imageId": "49",
+          "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/a79df7f0-2e90-4381-8965-a07609a562f2_api_pipeline/charts/1__匠_传承_cashflow.png",
+          "fit": "cover"
+        },
+        {
+          "imageId": "50",
+          "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/a79df7f0-2e90-4381-8965-a07609a562f2_api_pipeline/charts/1__匠_传承_stacked.png",
+          "fit": "cover"
+        }
+      ],
+      "deletions": []
+    },
+    {
+      "outputSlide": 5,
+      "textRewrites": [
+        {
+          "shapeId": "6",
+          "text": "教育金领取路径（横向里程碑）"
+        },
+        {
+          "shapeId": "19",
+          "text": "第6年开始领取，每年约 US$35,000；第20年累计约 US$525,006。"
+        },
+        {
+          "shapeId": "31",
+          "text": "第30年累计约 US$875,016，同时保留退保价值。"
+        }
+      ],
+      "imageReplacements": [],
+      "deletions": []
+    },
+    {
+      "outputSlide": 6,
+      "textRewrites": [
+        {
+          "shapeId": "6",
+          "text": "养老金视角：领取与剩余价值"
+        },
+        {
+          "shapeId": "25",
+          "text": "第30年累计领取约 US$875,016"
+        },
+        {
+          "shapeId": "30",
+          "text": "第60年累计领取约 US$1,925,212"
+        },
+        {
+          "shapeId": "31",
+          "text": "领取后仍有保单价值，便于兼顾灵活性"
+        }
+      ],
+      "imageReplacements": [
+        {
+          "imageId": "49",
+          "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/a79df7f0-2e90-4381-8965-a07609a562f2_api_pipeline/assets/closing.jpg",
+          "fit": "cover"
+        }
+      ],
+      "deletions": []
+    },
+    {
+      "outputSlide": 7,
+      "textRewrites": [
+        {
+          "shapeId": "6",
+          "text": "提领方案数据表（每10年）"
+        },
+        {
+          "shapeId": "39",
+          "text": "字段包含：年龄、保单年度、已交总保费、领取金额、累计领取、退保现金价值、单利、复利。"
+        }
+      ],
+      "imageReplacements": [
+        {
+          "imageId": "49",
+          "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/a79df7f0-2e90-4381-8965-a07609a562f2_api_pipeline/template-clone/broker-savings/assets/withdrawal-table.png",
+          "fit": "cover"
+        }
+      ],
+      "deletions": []
+    },
+    {
+      "outputSlide": 8,
+      "textRewrites": [
+        {
+          "shapeId": "6",
+          "text": "不提领方案数据表（每10年）"
+        },
+        {
+          "shapeId": "39",
+          "text": "第20年约 2.73 倍，第30年约 5.57 倍。"
+        }
+      ],
+      "imageReplacements": [
+        {
+          "imageId": "50",
+          "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/a79df7f0-2e90-4381-8965-a07609a562f2_api_pipeline/template-clone/broker-savings/assets/no-withdrawal-table.png",
+          "fit": "cover"
+        }
+      ],
+      "deletions": []
+    },
+    {
+      "outputSlide": 9,
+      "textRewrites": [
+        {
+          "shapeId": "6",
+          "text": "方案结论"
+        },
+        {
+          "shapeId": "35",
+          "text": "通过“提领 / 不提领”双视角，兼顾教育金和长期现金流"
+        },
+        {
+          "shapeId": "40",
+          "text": "关键数字均可回溯到官方计划书对应年度"
+        }
+      ],
+      "imageReplacements": [
+        {
+          "imageId": "53",
+          "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/a79df7f0-2e90-4381-8965-a07609a562f2_api_pipeline/assets/closing.jpg",
+          "fit": "cover"
+        }
+      ],
+      "deletions": []
+    },
+    {
+      "outputSlide": 10,
+      "textRewrites": [
+        {
+          "shapeId": "6",
+          "text": "感谢聆听"
+        },
+        {
+          "shapeId": "20",
+          "text": "如需调整提领节奏，可基于同一模型自动重算"
+        }
+      ],
+      "imageReplacements": [],
+      "deletions": []
+    }
+  ]
+}

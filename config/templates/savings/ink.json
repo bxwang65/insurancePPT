@@ -1,0 +1,17 @@
+{
+  "id": "savings-ink",
+  "planType": "savings",
+  "stylePreset": "ink",
+  "sourceTemplateAssetId": "ink",
+  "cloneReady": true,
+  "cloneRenderer": "savings-ink-v1",
+  "displayName": "储蓄险水墨风",
+  "maxDisplayPolicyYear": 80,
+  "tableIntervalYears": 10,
+  "qualityRules": {
+    "forbidPlaceholderImages": true,
+    "forbidSyntheticOfficialValues": true,
+    "requirePdfHash": true,
+    "requireSourcePagesForOfficialTables": true
+  }
+}

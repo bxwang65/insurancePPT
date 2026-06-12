@@ -1,0 +1,525 @@
+{
+  "sourcePptx": "/Users/soldier/Downloads/财富保障方案——中国风 .pptx",
+  "workspace": "/Users/soldier/free-code/packages/insurance-ppt/outputs/formal_環宇盈活儲蓄保險計劃_1780301185635_pipeline/template-clone/chinese-savings",
+  "outDir": "/Users/soldier/free-code/packages/insurance-ppt/outputs/formal_環宇盈活儲蓄保險計劃_1780301185635_pipeline/template-clone/chinese-savings/template-inspect",
+  "generatedAt": "2026-06-01T08:07:04.287Z",
+  "slideCount": 27,
+  "slideArtifacts": [
+    {
+      "slide": 1,
+      "previewPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/formal_環宇盈活儲蓄保險計劃_1780301185635_pipeline/template-clone/chinese-savings/template-inspect/source-slides/source-slide-01.png",
+      "previewRelativePath": "template-inspect/source-slides/source-slide-01.png",
+      "layoutPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/formal_環宇盈活儲蓄保險計劃_1780301185635_pipeline/template-clone/chinese-savings/template-inspect/layouts/source-slide-01.layout.json",
+      "layoutRelativePath": "template-inspect/layouts/source-slide-01.layout.json"
+    },
+    {
+      "slide": 2,
+      "previewPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/formal_環宇盈活儲蓄保險計劃_1780301185635_pipeline/template-clone/chinese-savings/template-inspect/source-slides/source-slide-02.png",
+      "previewRelativePath": "template-inspect/source-slides/source-slide-02.png",
+      "layoutPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/formal_環宇盈活儲蓄保險計劃_1780301185635_pipeline/template-clone/chinese-savings/template-inspect/layouts/source-slide-02.layout.json",
+      "layoutRelativePath": "template-inspect/layouts/source-slide-02.layout.json"
+    },
+    {
+      "slide": 3,
+      "previewPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/formal_環宇盈活儲蓄保險計劃_1780301185635_pipeline/template-clone/chinese-savings/template-inspect/source-slides/source-slide-03.png",
+      "previewRelativePath": "template-inspect/source-slides/source-slide-03.png",
+      "layoutPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/formal_環宇盈活儲蓄保險計劃_1780301185635_pipeline/template-clone/chinese-savings/template-inspect/layouts/source-slide-03.layout.json",
+      "layoutRelativePath": "template-inspect/layouts/source-slide-03.layout.json"
+    },
+    {
+      "slide": 4,
+      "previewPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/formal_環宇盈活儲蓄保險計劃_1780301185635_pipeline/template-clone/chinese-savings/template-inspect/source-slides/source-slide-04.png",
+      "previewRelativePath": "template-inspect/source-slides/source-slide-04.png",
+      "layoutPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/formal_環宇盈活儲蓄保險計劃_1780301185635_pipeline/template-clone/chinese-savings/template-inspect/layouts/source-slide-04.layout.json",
+      "layoutRelativePath": "template-inspect/layouts/source-slide-04.layout.json"
+    },
+    {
+      "slide": 5,
+      "previewPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/formal_環宇盈活儲蓄保險計劃_1780301185635_pipeline/template-clone/chinese-savings/template-inspect/source-slides/source-slide-05.png",
+      "previewRelativePath": "template-inspect/source-slides/source-slide-05.png",
+      "layoutPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/formal_環宇盈活儲蓄保險計劃_1780301185635_pipeline/template-clone/chinese-savings/template-inspect/layouts/source-slide-05.layout.json",
+      "layoutRelativePath": "template-inspect/layouts/source-slide-05.layout.json"
+    },
+    {
+      "slide": 6,
+      "previewPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/formal_環宇盈活儲蓄保險計劃_1780301185635_pipeline/template-clone/chinese-savings/template-inspect/source-slides/source-slide-06.png",
+      "previewRelativePath": "template-inspect/source-slides/source-slide-06.png",
+      "layoutPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/formal_環宇盈活儲蓄保險計劃_1780301185635_pipeline/template-clone/chinese-savings/template-inspect/layouts/source-slide-06.layout.json",
+      "layoutRelativePath": "template-inspect/layouts/source-slide-06.layout.json"
+    },
+    {
+      "slide": 7,
+      "previewPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/formal_環宇盈活儲蓄保險計劃_1780301185635_pipeline/template-clone/chinese-savings/template-inspect/source-slides/source-slide-07.png",
+      "previewRelativePath": "template-inspect/source-slides/source-slide-07.png",
+      "layoutPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/formal_環宇盈活儲蓄保險計劃_1780301185635_pipeline/template-clone/chinese-savings/template-inspect/layouts/source-slide-07.layout.json",
+      "layoutRelativePath": "template-inspect/layouts/source-slide-07.layout.json"
+    },
+    {
+      "slide": 8,
+      "previewPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/formal_環宇盈活儲蓄保險計劃_1780301185635_pipeline/template-clone/chinese-savings/template-inspect/source-slides/source-slide-08.png",
+      "previewRelativePath": "template-inspect/source-slides/source-slide-08.png",
+      "layoutPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/formal_環宇盈活儲蓄保險計劃_1780301185635_pipeline/template-clone/chinese-savings/template-inspect/layouts/source-slide-08.layout.json",
+      "layoutRelativePath": "template-inspect/layouts/source-slide-08.layout.json"
+    },
+    {
+      "slide": 9,
+      "previewPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/formal_環宇盈活儲蓄保險計劃_1780301185635_pipeline/template-clone/chinese-savings/template-inspect/source-slides/source-slide-09.png",
+      "previewRelativePath": "template-inspect/source-slides/source-slide-09.png",
+      "layoutPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/formal_環宇盈活儲蓄保險計劃_1780301185635_pipeline/template-clone/chinese-savings/template-inspect/layouts/source-slide-09.layout.json",
+      "layoutRelativePath": "template-inspect/layouts/source-slide-09.layout.json"
+    },
+    {
+      "slide": 10,
+      "previewPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/formal_環宇盈活儲蓄保險計劃_1780301185635_pipeline/template-clone/chinese-savings/template-inspect/source-slides/source-slide-10.png",
+      "previewRelativePath": "template-inspect/source-slides/source-slide-10.png",
+      "layoutPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/formal_環宇盈活儲蓄保險計劃_1780301185635_pipeline/template-clone/chinese-savings/template-inspect/layouts/source-slide-10.layout.json",
+      "layoutRelativePath": "template-inspect/layouts/source-slide-10.layout.json"
+    },
+    {
+      "slide": 11,
+      "previewPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/formal_環宇盈活儲蓄保險計劃_1780301185635_pipeline/template-clone/chinese-savings/template-inspect/source-slides/source-slide-11.png",
+      "previewRelativePath": "template-inspect/source-slides/source-slide-11.png",
+      "layoutPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/formal_環宇盈活儲蓄保險計劃_1780301185635_pipeline/template-clone/chinese-savings/template-inspect/layouts/source-slide-11.layout.json",
+      "layoutRelativePath": "template-inspect/layouts/source-slide-11.layout.json"
+    },
+    {
+      "slide": 12,
+      "previewPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/formal_環宇盈活儲蓄保險計劃_1780301185635_pipeline/template-clone/chinese-savings/template-inspect/source-slides/source-slide-12.png",
+      "previewRelativePath": "template-inspect/source-slides/source-slide-12.png",
+      "layoutPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/formal_環宇盈活儲蓄保險計劃_1780301185635_pipeline/template-clone/chinese-savings/template-inspect/layouts/source-slide-12.layout.json",
+      "layoutRelativePath": "template-inspect/layouts/source-slide-12.layout.json"
+    },
+    {
+      "slide": 13,
+      "previewPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/formal_環宇盈活儲蓄保險計劃_1780301185635_pipeline/template-clone/chinese-savings/template-inspect/source-slides/source-slide-13.png",
+      "previewRelativePath": "template-inspect/source-slides/source-slide-13.png",
+      "layoutPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/formal_環宇盈活儲蓄保險計劃_1780301185635_pipeline/template-clone/chinese-savings/template-inspect/layouts/source-slide-13.layout.json",
+      "layoutRelativePath": "template-inspect/layouts/source-slide-13.layout.json"
+    },
+    {
+      "slide": 14,
+      "previewPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/formal_環宇盈活儲蓄保險計劃_1780301185635_pipeline/template-clone/chinese-savings/template-inspect/source-slides/source-slide-14.png",
+      "previewRelativePath": "template-inspect/source-slides/source-slide-14.png",
+      "layoutPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/formal_環宇盈活儲蓄保險計劃_1780301185635_pipeline/template-clone/chinese-savings/template-inspect/layouts/source-slide-14.layout.json",
+      "layoutRelativePath": "template-inspect/layouts/source-slide-14.layout.json"
+    },
+    {
+      "slide": 15,
+      "previewPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/formal_環宇盈活儲蓄保險計劃_1780301185635_pipeline/template-clone/chinese-savings/template-inspect/source-slides/source-slide-15.png",
+      "previewRelativePath": "template-inspect/source-slides/source-slide-15.png",
+      "layoutPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/formal_環宇盈活儲蓄保險計劃_1780301185635_pipeline/template-clone/chinese-savings/template-inspect/layouts/source-slide-15.layout.json",
+      "layoutRelativePath": "template-inspect/layouts/source-slide-15.layout.json"
+    },
+    {
+      "slide": 16,
+      "previewPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/formal_環宇盈活儲蓄保險計劃_1780301185635_pipeline/template-clone/chinese-savings/template-inspect/source-slides/source-slide-16.png",
+      "previewRelativePath": "template-inspect/source-slides/source-slide-16.png",
+      "layoutPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/formal_環宇盈活儲蓄保險計劃_1780301185635_pipeline/template-clone/chinese-savings/template-inspect/layouts/source-slide-16.layout.json",
+      "layoutRelativePath": "template-inspect/layouts/source-slide-16.layout.json"
+    },
+    {
+      "slide": 17,
+      "previewPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/formal_環宇盈活儲蓄保險計劃_1780301185635_pipeline/template-clone/chinese-savings/template-inspect/source-slides/source-slide-17.png",
+      "previewRelativePath": "template-inspect/source-slides/source-slide-17.png",
+      "layoutPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/formal_環宇盈活儲蓄保險計劃_1780301185635_pipeline/template-clone/chinese-savings/template-inspect/layouts/source-slide-17.layout.json",
+      "layoutRelativePath": "template-inspect/layouts/source-slide-17.layout.json"
+    },
+    {
+      "slide": 18,
+      "previewPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/formal_環宇盈活儲蓄保險計劃_1780301185635_pipeline/template-clone/chinese-savings/template-inspect/source-slides/source-slide-18.png",
+      "previewRelativePath": "template-inspect/source-slides/source-slide-18.png",
+      "layoutPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/formal_環宇盈活儲蓄保險計劃_1780301185635_pipeline/template-clone/chinese-savings/template-inspect/layouts/source-slide-18.layout.json",
+      "layoutRelativePath": "template-inspect/layouts/source-slide-18.layout.json"
+    },
+    {
+      "slide": 19,
+      "previewPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/formal_環宇盈活儲蓄保險計劃_1780301185635_pipeline/template-clone/chinese-savings/template-inspect/source-slides/source-slide-19.png",
+      "previewRelativePath": "template-inspect/source-slides/source-slide-19.png",
+      "layoutPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/formal_環宇盈活儲蓄保險計劃_1780301185635_pipeline/template-clone/chinese-savings/template-inspect/layouts/source-slide-19.layout.json",
+      "layoutRelativePath": "template-inspect/layouts/source-slide-19.layout.json"
+    },
+    {
+      "slide": 20,
+      "previewPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/formal_環宇盈活儲蓄保險計劃_1780301185635_pipeline/template-clone/chinese-savings/template-inspect/source-slides/source-slide-20.png",
+      "previewRelativePath": "template-inspect/source-slides/source-slide-20.png",
+      "layoutPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/formal_環宇盈活儲蓄保險計劃_1780301185635_pipeline/template-clone/chinese-savings/template-inspect/layouts/source-slide-20.layout.json",
+      "layoutRelativePath": "template-inspect/layouts/source-slide-20.layout.json"
+    },
+    {
+      "slide": 21,
+      "previewPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/formal_環宇盈活儲蓄保險計劃_1780301185635_pipeline/template-clone/chinese-savings/template-inspect/source-slides/source-slide-21.png",
+      "previewRelativePath": "template-inspect/source-slides/source-slide-21.png",
+      "layoutPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/formal_環宇盈活儲蓄保險計劃_1780301185635_pipeline/template-clone/chinese-savings/template-inspect/layouts/source-slide-21.layout.json",
+      "layoutRelativePath": "template-inspect/layouts/source-slide-21.layout.json"
+    },
+    {
+      "slide": 22,
+      "previewPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/formal_環宇盈活儲蓄保險計劃_1780301185635_pipeline/template-clone/chinese-savings/template-inspect/source-slides/source-slide-22.png",
+      "previewRelativePath": "template-inspect/source-slides/source-slide-22.png",
+      "layoutPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/formal_環宇盈活儲蓄保險計劃_1780301185635_pipeline/template-clone/chinese-savings/template-inspect/layouts/source-slide-22.layout.json",
+      "layoutRelativePath": "template-inspect/layouts/source-slide-22.layout.json"
+    },
+    {
+      "slide": 23,
+      "previewPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/formal_環宇盈活儲蓄保險計劃_1780301185635_pipeline/template-clone/chinese-savings/template-inspect/source-slides/source-slide-23.png",
+      "previewRelativePath": "template-inspect/source-slides/source-slide-23.png",
+      "layoutPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/formal_環宇盈活儲蓄保險計劃_1780301185635_pipeline/template-clone/chinese-savings/template-inspect/layouts/source-slide-23.layout.json",
+      "layoutRelativePath": "template-inspect/layouts/source-slide-23.layout.json"
+    },
+    {
+      "slide": 24,
+      "previewPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/formal_環宇盈活儲蓄保險計劃_1780301185635_pipeline/template-clone/chinese-savings/template-inspect/source-slides/source-slide-24.png",
+      "previewRelativePath": "template-inspect/source-slides/source-slide-24.png",
+      "layoutPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/formal_環宇盈活儲蓄保險計劃_1780301185635_pipeline/template-clone/chinese-savings/template-inspect/layouts/source-slide-24.layout.json",
+      "layoutRelativePath": "template-inspect/layouts/source-slide-24.layout.json"
+    },
+    {
+      "slide": 25,
+      "previewPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/formal_環宇盈活儲蓄保險計劃_1780301185635_pipeline/template-clone/chinese-savings/template-inspect/source-slides/source-slide-25.png",
+      "previewRelativePath": "template-inspect/source-slides/source-slide-25.png",
+      "layoutPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/formal_環宇盈活儲蓄保險計劃_1780301185635_pipeline/template-clone/chinese-savings/template-inspect/layouts/source-slide-25.layout.json",
+      "layoutRelativePath": "template-inspect/layouts/source-slide-25.layout.json"
+    },
+    {
+      "slide": 26,
+      "previewPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/formal_環宇盈活儲蓄保險計劃_1780301185635_pipeline/template-clone/chinese-savings/template-inspect/source-slides/source-slide-26.png",
+      "previewRelativePath": "template-inspect/source-slides/source-slide-26.png",
+      "layoutPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/formal_環宇盈活儲蓄保險計劃_1780301185635_pipeline/template-clone/chinese-savings/template-inspect/layouts/source-slide-26.layout.json",
+      "layoutRelativePath": "template-inspect/layouts/source-slide-26.layout.json"
+    },
+    {
+      "slide": 27,
+      "previewPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/formal_環宇盈活儲蓄保險計劃_1780301185635_pipeline/template-clone/chinese-savings/template-inspect/source-slides/source-slide-27.png",
+      "previewRelativePath": "template-inspect/source-slides/source-slide-27.png",
+      "layoutPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/formal_環宇盈活儲蓄保險計劃_1780301185635_pipeline/template-clone/chinese-savings/template-inspect/layouts/source-slide-27.layout.json",
+      "layoutRelativePath": "template-inspect/layouts/source-slide-27.layout.json"
+    }
+  ],
+  "inspectPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/formal_環宇盈活儲蓄保險計劃_1780301185635_pipeline/template-clone/chinese-savings/template-inspect/template-inspect.ndjson",
+  "inspectRelativePath": "template-inspect/template-inspect.ndjson",
+  "inspectTruncated": true,
+  "inspectMetadata": {
+    "revision": "euga1l",
+    "target": {
+      "id": "pr/d0baa1"
+    },
+    "kind": {
+      "requested": "slide,textbox,shape,image,table,chart",
+      "tokens": [
+        "slide",
+        "textbox",
+        "shape",
+        "image",
+        "table",
+        "chart"
+      ]
+    },
+    "include": {
+      "tokens": []
+    },
+    "exclude": {
+      "tokens": []
+    },
+    "notices": []
+  },
+  "extractedMedia": [
+    {
+      "entry": "ppt/media/",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/formal_環宇盈活儲蓄保險計劃_1780301185635_pipeline/template-clone/chinese-savings/template-inspect/assets/ppt/media/media",
+      "relativePath": "template-inspect/assets/ppt/media/media",
+      "bytes": 0
+    },
+    {
+      "entry": "ppt/media/image1.png",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/formal_環宇盈活儲蓄保險計劃_1780301185635_pipeline/template-clone/chinese-savings/template-inspect/assets/ppt/media/image1.png",
+      "relativePath": "template-inspect/assets/ppt/media/image1.png",
+      "bytes": 3454832
+    },
+    {
+      "entry": "ppt/media/image10.jpeg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/formal_環宇盈活儲蓄保險計劃_1780301185635_pipeline/template-clone/chinese-savings/template-inspect/assets/ppt/media/image10.jpeg",
+      "relativePath": "template-inspect/assets/ppt/media/image10.jpeg",
+      "bytes": 252180
+    },
+    {
+      "entry": "ppt/media/image11.jpeg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/formal_環宇盈活儲蓄保險計劃_1780301185635_pipeline/template-clone/chinese-savings/template-inspect/assets/ppt/media/image11.jpeg",
+      "relativePath": "template-inspect/assets/ppt/media/image11.jpeg",
+      "bytes": 173035
+    },
+    {
+      "entry": "ppt/media/image12.jpeg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/formal_環宇盈活儲蓄保險計劃_1780301185635_pipeline/template-clone/chinese-savings/template-inspect/assets/ppt/media/image12.jpeg",
+      "relativePath": "template-inspect/assets/ppt/media/image12.jpeg",
+      "bytes": 222052
+    },
+    {
+      "entry": "ppt/media/image13.jpeg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/formal_環宇盈活儲蓄保險計劃_1780301185635_pipeline/template-clone/chinese-savings/template-inspect/assets/ppt/media/image13.jpeg",
+      "relativePath": "template-inspect/assets/ppt/media/image13.jpeg",
+      "bytes": 945623
+    },
+    {
+      "entry": "ppt/media/image14.jpeg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/formal_環宇盈活儲蓄保險計劃_1780301185635_pipeline/template-clone/chinese-savings/template-inspect/assets/ppt/media/image14.jpeg",
+      "relativePath": "template-inspect/assets/ppt/media/image14.jpeg",
+      "bytes": 101238
+    },
+    {
+      "entry": "ppt/media/image15.jpeg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/formal_環宇盈活儲蓄保險計劃_1780301185635_pipeline/template-clone/chinese-savings/template-inspect/assets/ppt/media/image15.jpeg",
+      "relativePath": "template-inspect/assets/ppt/media/image15.jpeg",
+      "bytes": 171527
+    },
+    {
+      "entry": "ppt/media/image16.jpeg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/formal_環宇盈活儲蓄保險計劃_1780301185635_pipeline/template-clone/chinese-savings/template-inspect/assets/ppt/media/image16.jpeg",
+      "relativePath": "template-inspect/assets/ppt/media/image16.jpeg",
+      "bytes": 126920
+    },
+    {
+      "entry": "ppt/media/image17.jpeg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/formal_環宇盈活儲蓄保險計劃_1780301185635_pipeline/template-clone/chinese-savings/template-inspect/assets/ppt/media/image17.jpeg",
+      "relativePath": "template-inspect/assets/ppt/media/image17.jpeg",
+      "bytes": 142389
+    },
+    {
+      "entry": "ppt/media/image18.jpeg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/formal_環宇盈活儲蓄保險計劃_1780301185635_pipeline/template-clone/chinese-savings/template-inspect/assets/ppt/media/image18.jpeg",
+      "relativePath": "template-inspect/assets/ppt/media/image18.jpeg",
+      "bytes": 332383
+    },
+    {
+      "entry": "ppt/media/image19.jpeg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/formal_環宇盈活儲蓄保險計劃_1780301185635_pipeline/template-clone/chinese-savings/template-inspect/assets/ppt/media/image19.jpeg",
+      "relativePath": "template-inspect/assets/ppt/media/image19.jpeg",
+      "bytes": 301547
+    },
+    {
+      "entry": "ppt/media/image2.png",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/formal_環宇盈活儲蓄保險計劃_1780301185635_pipeline/template-clone/chinese-savings/template-inspect/assets/ppt/media/image2.png",
+      "relativePath": "template-inspect/assets/ppt/media/image2.png",
+      "bytes": 2064787
+    },
+    {
+      "entry": "ppt/media/image20.jpeg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/formal_環宇盈活儲蓄保險計劃_1780301185635_pipeline/template-clone/chinese-savings/template-inspect/assets/ppt/media/image20.jpeg",
+      "relativePath": "template-inspect/assets/ppt/media/image20.jpeg",
+      "bytes": 138103
+    },
+    {
+      "entry": "ppt/media/image21.jpeg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/formal_環宇盈活儲蓄保險計劃_1780301185635_pipeline/template-clone/chinese-savings/template-inspect/assets/ppt/media/image21.jpeg",
+      "relativePath": "template-inspect/assets/ppt/media/image21.jpeg",
+      "bytes": 184769
+    },
+    {
+      "entry": "ppt/media/image22.jpeg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/formal_環宇盈活儲蓄保險計劃_1780301185635_pipeline/template-clone/chinese-savings/template-inspect/assets/ppt/media/image22.jpeg",
+      "relativePath": "template-inspect/assets/ppt/media/image22.jpeg",
+      "bytes": 142247
+    },
+    {
+      "entry": "ppt/media/image23.jpeg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/formal_環宇盈活儲蓄保險計劃_1780301185635_pipeline/template-clone/chinese-savings/template-inspect/assets/ppt/media/image23.jpeg",
+      "relativePath": "template-inspect/assets/ppt/media/image23.jpeg",
+      "bytes": 855230
+    },
+    {
+      "entry": "ppt/media/image24.png",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/formal_環宇盈活儲蓄保險計劃_1780301185635_pipeline/template-clone/chinese-savings/template-inspect/assets/ppt/media/image24.png",
+      "relativePath": "template-inspect/assets/ppt/media/image24.png",
+      "bytes": 7076
+    },
+    {
+      "entry": "ppt/media/image25.svg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/formal_環宇盈活儲蓄保險計劃_1780301185635_pipeline/template-clone/chinese-savings/template-inspect/assets/ppt/media/image25.svg",
+      "relativePath": "template-inspect/assets/ppt/media/image25.svg",
+      "bytes": 1645
+    },
+    {
+      "entry": "ppt/media/image26.png",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/formal_環宇盈活儲蓄保險計劃_1780301185635_pipeline/template-clone/chinese-savings/template-inspect/assets/ppt/media/image26.png",
+      "relativePath": "template-inspect/assets/ppt/media/image26.png",
+      "bytes": 9709
+    },
+    {
+      "entry": "ppt/media/image27.svg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/formal_環宇盈活儲蓄保險計劃_1780301185635_pipeline/template-clone/chinese-savings/template-inspect/assets/ppt/media/image27.svg",
+      "relativePath": "template-inspect/assets/ppt/media/image27.svg",
+      "bytes": 4232
+    },
+    {
+      "entry": "ppt/media/image28.png",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/formal_環宇盈活儲蓄保險計劃_1780301185635_pipeline/template-clone/chinese-savings/template-inspect/assets/ppt/media/image28.png",
+      "relativePath": "template-inspect/assets/ppt/media/image28.png",
+      "bytes": 10469
+    },
+    {
+      "entry": "ppt/media/image29.svg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/formal_環宇盈活儲蓄保險計劃_1780301185635_pipeline/template-clone/chinese-savings/template-inspect/assets/ppt/media/image29.svg",
+      "relativePath": "template-inspect/assets/ppt/media/image29.svg",
+      "bytes": 8840
+    },
+    {
+      "entry": "ppt/media/image3.png",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/formal_環宇盈活儲蓄保險計劃_1780301185635_pipeline/template-clone/chinese-savings/template-inspect/assets/ppt/media/image3.png",
+      "relativePath": "template-inspect/assets/ppt/media/image3.png",
+      "bytes": 1241210
+    },
+    {
+      "entry": "ppt/media/image30.jpeg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/formal_環宇盈活儲蓄保險計劃_1780301185635_pipeline/template-clone/chinese-savings/template-inspect/assets/ppt/media/image30.jpeg",
+      "relativePath": "template-inspect/assets/ppt/media/image30.jpeg",
+      "bytes": 98457
+    },
+    {
+      "entry": "ppt/media/image31.jpeg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/formal_環宇盈活儲蓄保險計劃_1780301185635_pipeline/template-clone/chinese-savings/template-inspect/assets/ppt/media/image31.jpeg",
+      "relativePath": "template-inspect/assets/ppt/media/image31.jpeg",
+      "bytes": 141330
+    },
+    {
+      "entry": "ppt/media/image32.jpeg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/formal_環宇盈活儲蓄保險計劃_1780301185635_pipeline/template-clone/chinese-savings/template-inspect/assets/ppt/media/image32.jpeg",
+      "relativePath": "template-inspect/assets/ppt/media/image32.jpeg",
+      "bytes": 262002
+    },
+    {
+      "entry": "ppt/media/image33.jpeg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/formal_環宇盈活儲蓄保險計劃_1780301185635_pipeline/template-clone/chinese-savings/template-inspect/assets/ppt/media/image33.jpeg",
+      "relativePath": "template-inspect/assets/ppt/media/image33.jpeg",
+      "bytes": 197269
+    },
+    {
+      "entry": "ppt/media/image34.jpeg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/formal_環宇盈活儲蓄保險計劃_1780301185635_pipeline/template-clone/chinese-savings/template-inspect/assets/ppt/media/image34.jpeg",
+      "relativePath": "template-inspect/assets/ppt/media/image34.jpeg",
+      "bytes": 935058
+    },
+    {
+      "entry": "ppt/media/image35.svg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/formal_環宇盈活儲蓄保險計劃_1780301185635_pipeline/template-clone/chinese-savings/template-inspect/assets/ppt/media/image35.svg",
+      "relativePath": "template-inspect/assets/ppt/media/image35.svg",
+      "bytes": 1645
+    },
+    {
+      "entry": "ppt/media/image36.svg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/formal_環宇盈活儲蓄保險計劃_1780301185635_pipeline/template-clone/chinese-savings/template-inspect/assets/ppt/media/image36.svg",
+      "relativePath": "template-inspect/assets/ppt/media/image36.svg",
+      "bytes": 4232
+    },
+    {
+      "entry": "ppt/media/image37.svg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/formal_環宇盈活儲蓄保險計劃_1780301185635_pipeline/template-clone/chinese-savings/template-inspect/assets/ppt/media/image37.svg",
+      "relativePath": "template-inspect/assets/ppt/media/image37.svg",
+      "bytes": 8840
+    },
+    {
+      "entry": "ppt/media/image38.jpeg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/formal_環宇盈活儲蓄保險計劃_1780301185635_pipeline/template-clone/chinese-savings/template-inspect/assets/ppt/media/image38.jpeg",
+      "relativePath": "template-inspect/assets/ppt/media/image38.jpeg",
+      "bytes": 330701
+    },
+    {
+      "entry": "ppt/media/image39.jpeg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/formal_環宇盈活儲蓄保險計劃_1780301185635_pipeline/template-clone/chinese-savings/template-inspect/assets/ppt/media/image39.jpeg",
+      "relativePath": "template-inspect/assets/ppt/media/image39.jpeg",
+      "bytes": 331506
+    },
+    {
+      "entry": "ppt/media/image4.png",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/formal_環宇盈活儲蓄保險計劃_1780301185635_pipeline/template-clone/chinese-savings/template-inspect/assets/ppt/media/image4.png",
+      "relativePath": "template-inspect/assets/ppt/media/image4.png",
+      "bytes": 136306
+    },
+    {
+      "entry": "ppt/media/image5.png",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/formal_環宇盈活儲蓄保險計劃_1780301185635_pipeline/template-clone/chinese-savings/template-inspect/assets/ppt/media/image5.png",
+      "relativePath": "template-inspect/assets/ppt/media/image5.png",
+      "bytes": 37462
+    },
+    {
+      "entry": "ppt/media/image6.png",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/formal_環宇盈活儲蓄保險計劃_1780301185635_pipeline/template-clone/chinese-savings/template-inspect/assets/ppt/media/image6.png",
+      "relativePath": "template-inspect/assets/ppt/media/image6.png",
+      "bytes": 69219
+    },
+    {
+      "entry": "ppt/media/image7.png",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/formal_環宇盈活儲蓄保險計劃_1780301185635_pipeline/template-clone/chinese-savings/template-inspect/assets/ppt/media/image7.png",
+      "relativePath": "template-inspect/assets/ppt/media/image7.png",
+      "bytes": 655982
+    },
+    {
+      "entry": "ppt/media/image8.jpeg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/formal_環宇盈活儲蓄保險計劃_1780301185635_pipeline/template-clone/chinese-savings/template-inspect/assets/ppt/media/image8.jpeg",
+      "relativePath": "template-inspect/assets/ppt/media/image8.jpeg",
+      "bytes": 1070487
+    },
+    {
+      "entry": "ppt/media/image9.jpeg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/formal_環宇盈活儲蓄保險計劃_1780301185635_pipeline/template-clone/chinese-savings/template-inspect/assets/ppt/media/image9.jpeg",
+      "relativePath": "template-inspect/assets/ppt/media/image9.jpeg",
+      "bytes": 228722
+    }
+  ],
+  "fonts": [
+    "+mj-cs",
+    "+mj-ea",
+    "+mj-lt",
+    "+mn-cs",
+    "+mn-ea",
+    "+mn-lt",
+    "Angsana New",
+    "Arial",
+    "Calibri",
+    "Calibri Light",
+    "Cordia New",
+    "DaunPenh",
+    "DokChampa",
+    "Estrangelo Edessa",
+    "Euphemia",
+    "FreesiaUPC",
+    "Gautami",
+    "Iskoola Pota",
+    "Kalinga",
+    "Kartika",
+    "Latha",
+    "MV Boli",
+    "Mangal",
+    "Microsoft Himalaya",
+    "Microsoft Uighur",
+    "Microsoft YaHei UI",
+    "Microsoft Yi Baiti",
+    "Mongolian Baiti",
+    "MoolBoran",
+    "Nyala",
+    "Plantagenet Cherokee",
+    "Raavi",
+    "Shruti",
+    "Sylfaen",
+    "Tahoma",
+    "Times New Roman",
+    "Tunga",
+    "Verdana",
+    "Vrinda",
+    "Wingdings",
+    "宋体",
+    "微軟正黑體",
+    "微软雅黑",
+    "新細明體",
+    "汉仪中宋简",
+    "汉仪书宋二简",
+    "굴림",
+    "맑은 고딕",
+    "ＭＳ ゴシック",
+    "ＭＳ Ｐゴシック"
+  ],
+  "packageParts": {
+    "mediaCount": 40,
+    "slideXmlCount": 27,
+    "chartCount": 0,
+    "tableSlideCount": 0
+  }
+}

@@ -1,0 +1,1137 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/mlkjm1cf",
+    "id": "mlkjm1cf",
+    "slide": 6,
+    "layoutId": "/ppt/slideLayouts/slideLayout39.xml",
+    "layoutName": "上左标下左内后右背景-有背景-有间隙-1",
+    "masterLayoutId": "/ppt/slideMasters/slideMaster3.xml",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "Office",
+    "colors": {
+      "accent1": "#5B9BD5",
+      "accent2": "#ED7D31",
+      "accent3": "#A5A5A5",
+      "accent4": "#FFC000",
+      "accent5": "#4472C4",
+      "accent6": "#70AD47",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#44546A",
+      "lt2": "#E7E6E6",
+      "hlink": "#0563C1",
+      "folHlink": "#954F72"
+    },
+    "fontScheme": {
+      "name": "Aspect",
+      "majorFont": {
+        "latinTypeface": "微软雅黑"
+      },
+      "minorFont": {
+        "latinTypeface": "微软雅黑"
+      }
+    },
+    "typefaces": [
+      "微软雅黑",
+      "汉仪中宋简",
+      "汉仪书宋二简"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "/ppt/slideLayouts/slideLayout39.xml",
+      "name": "上左标下左内后右背景-有背景-有间隙-1",
+      "parentLayoutId": "/ppt/slideMasters/slideMaster3.xml",
+      "elements": [
+        {
+          "order": 1,
+          "kind": "image",
+          "scope": "layout",
+          "aid": "template/layout//ppt/slideLayouts/slideLayout39.xml/10",
+          "id": "10",
+          "name": "图片 4",
+          "bbox": [
+            0,
+            0,
+            1106.2,
+            720
+          ],
+          "horizontalFlip": true,
+          "contentType": "image/png",
+          "asset": {
+            "assetId": "/ppt/media/image1.png",
+            "contentType": "image/png",
+            "byteLength": 3454832
+          },
+          "fillImage": {
+            "assetId": "/ppt/media/image1.png",
+            "contentType": "image/png",
+            "byteLength": 3454832
+          }
+        },
+        {
+          "order": 2,
+          "kind": "image",
+          "scope": "layout",
+          "aid": "template/layout//ppt/slideLayouts/slideLayout39.xml/11",
+          "id": "11",
+          "name": "图片 5",
+          "bbox": [
+            858.67,
+            0,
+            421.33,
+            720
+          ],
+          "contentType": "image/png",
+          "asset": {
+            "assetId": "/ppt/media/image2.png",
+            "contentType": "image/png",
+            "byteLength": 2064787
+          },
+          "fillImage": {
+            "assetId": "/ppt/media/image2.png",
+            "contentType": "image/png",
+            "byteLength": 2064787
+          }
+        },
+        {
+          "order": 3,
+          "kind": "shape",
+          "scope": "layout",
+          "aid": "template/layout//ppt/slideLayouts/slideLayout39.xml/7",
+          "id": "7",
+          "name": "矩形 6",
+          "bbox": [
+            106.67,
+            540,
+            69.33,
+            2.67
+          ],
+          "geometry": "rect",
+          "resolvedTextStyle": {
+            "anchor": 2,
+            "verticalAlignment": "middle"
+          },
+          "fillColor": "accent1",
+          "lineWidth": 0
+        },
+        {
+          "order": 4,
+          "kind": "shape",
+          "scope": "layout",
+          "aid": "template/layout//ppt/slideLayouts/slideLayout39.xml/9",
+          "id": "9",
+          "name": "任意多边形 8",
+          "bbox": [
+            108.66,
+            137.6,
+            44.07,
+            36
+          ],
+          "geometry": "custom",
+          "resolvedTextStyle": {
+            "anchor": 2,
+            "verticalAlignment": "middle"
+          },
+          "fillColor": "accent1",
+          "lineWidth": 0
+        },
+        {
+          "order": 5,
+          "kind": "image",
+          "scope": "layout",
+          "aid": "template/layout//ppt/slideLayouts/slideLayout39.xml/2",
+          "id": "2",
+          "name": "图片占位符 1",
+          "bbox": [
+            448,
+            0,
+            832,
+            720
+          ]
+        },
+        {
+          "order": 6,
+          "kind": "shape",
+          "scope": "layout",
+          "aid": "template/layout//ppt/slideLayouts/slideLayout39.xml/3",
+          "id": "3",
+          "name": "标题 2",
+          "bbox": [
+            64,
+            50.66,
+            552,
+            74.66
+          ],
+          "resolvedTextStyle": {
+            "anchor": 1,
+            "verticalAlignment": "top",
+            "wrap": "square",
+            "autoFit": "none",
+            "insets": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          }
+        },
+        {
+          "order": 7,
+          "kind": "shape",
+          "scope": "layout",
+          "aid": "template/layout//ppt/slideLayouts/slideLayout39.xml/4",
+          "id": "4",
+          "name": "内容占位符 3",
+          "bbox": [
+            64,
+            159.97,
+            552,
+            496.03
+          ],
+          "resolvedTextStyle": {
+            "anchor": 1,
+            "verticalAlignment": "top",
+            "wrap": "square",
+            "autoFit": "none",
+            "insets": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "scope": "master",
+      "id": "/ppt/slideMasters/slideMaster3.xml",
+      "type": "master",
+      "elements": [
+        {
+          "order": 1,
+          "kind": "image",
+          "scope": "master",
+          "aid": "template/master//ppt/slideMasters/slideMaster3.xml/10",
+          "id": "10",
+          "name": "图片 7",
+          "bbox": [
+            306.67,
+            146.67,
+            973.33,
+            573.33
+          ],
+          "contentType": "image/png",
+          "asset": {
+            "assetId": "/ppt/media/image7.png",
+            "contentType": "image/png",
+            "byteLength": 655982
+          },
+          "fillImage": {
+            "assetId": "/ppt/media/image7.png",
+            "contentType": "image/png",
+            "byteLength": 655982
+          }
+        },
+        {
+          "order": 2,
+          "kind": "shape",
+          "scope": "master",
+          "aid": "template/master//ppt/slideMasters/slideMaster3.xml/2",
+          "id": "2",
+          "name": "标题占位符 1",
+          "bbox": [
+            63.87,
+            63.87,
+            1151.62,
+            74.08
+          ],
+          "geometry": "rect",
+          "resolvedTextStyle": {
+            "anchor": 2,
+            "vertical": 1,
+            "verticalAlignment": "middle",
+            "autoFit": "shrinkText",
+            "insets": {
+              "top": 4.93,
+              "right": 9.47,
+              "bottom": 4.93,
+              "left": 9.47
+            }
+          }
+        },
+        {
+          "order": 3,
+          "kind": "shape",
+          "scope": "master",
+          "aid": "template/master//ppt/slideMasters/slideMaster3.xml/3",
+          "id": "3",
+          "name": "文本占位符 2",
+          "bbox": [
+            63.87,
+            156.47,
+            1151.62,
+            499.65
+          ],
+          "geometry": "rect",
+          "resolvedTextStyle": {
+            "vertical": 1,
+            "autoFit": "shrinkText",
+            "insets": {
+              "top": 4.91,
+              "right": 9.45,
+              "bottom": 4.91,
+              "left": 9.45
+            }
+          }
+        },
+        {
+          "order": 4,
+          "kind": "shape",
+          "scope": "master",
+          "aid": "template/master//ppt/slideMasters/slideMaster3.xml/4",
+          "id": "4",
+          "name": "日期占位符 3",
+          "bbox": [
+            64.25,
+            662.93,
+            283.46,
+            33.26
+          ],
+          "geometry": "rect",
+          "resolvedTextStyle": {
+            "anchor": 2,
+            "vertical": 1,
+            "verticalAlignment": "middle",
+            "autoFit": "shrinkText",
+            "insets": {
+              "top": 4.8,
+              "right": 9.6,
+              "bottom": 4.8,
+              "left": 9.6
+            }
+          }
+        },
+        {
+          "order": 5,
+          "kind": "shape",
+          "scope": "master",
+          "aid": "template/master//ppt/slideMasters/slideMaster3.xml/5",
+          "id": "5",
+          "name": "页脚占位符 4",
+          "bbox": [
+            432.13,
+            662.93,
+            415.75,
+            33.26
+          ],
+          "geometry": "rect",
+          "resolvedTextStyle": {
+            "anchor": 2,
+            "vertical": 1,
+            "verticalAlignment": "middle",
+            "autoFit": "shrinkText",
+            "insets": {
+              "top": 4.8,
+              "right": 9.6,
+              "bottom": 4.8,
+              "left": 9.6
+            }
+          }
+        },
+        {
+          "order": 6,
+          "kind": "shape",
+          "scope": "master",
+          "aid": "template/master//ppt/slideMasters/slideMaster3.xml/6",
+          "id": "6",
+          "name": "灯片编号占位符 5",
+          "bbox": [
+            932.03,
+            662.93,
+            283.46,
+            33.26
+          ],
+          "geometry": "rect",
+          "resolvedTextStyle": {
+            "anchor": 2,
+            "vertical": 1,
+            "verticalAlignment": "middle",
+            "autoFit": "shrinkText",
+            "insets": {
+              "top": 4.8,
+              "right": 9.6,
+              "bottom": 4.8,
+              "left": 9.6
+            }
+          }
+        },
+        {
+          "order": 7,
+          "kind": "shape",
+          "scope": "master",
+          "aid": "template/master//ppt/slideMasters/slideMaster3.xml/9",
+          "id": "9",
+          "name": "KSO_TEMPLATE",
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "geometry": "rect",
+          "resolvedTextStyle": {
+            "anchor": 2,
+            "verticalAlignment": "middle"
+          }
+        }
+      ]
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "image",
+      "scope": "slide",
+      "aid": "im/4nap4r65",
+      "id": "21",
+      "name": "图片占位符 1",
+      "bbox": [
+        448,
+        0,
+        832,
+        720
+      ],
+      "contentType": "image/jpeg",
+      "imageCrop": {
+        "left": 0.00001,
+        "top": 0,
+        "right": 0.00001,
+        "bottom": 0
+      },
+      "asset": {
+        "assetId": "/ppt/media/image8.jpeg",
+        "contentType": "image/jpeg",
+        "byteLength": 1070487
+      },
+      "fillImage": {
+        "assetId": "/ppt/media/image8.jpeg",
+        "contentType": "image/jpeg",
+        "byteLength": 1070487
+      }
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/6dcbulwv",
+      "id": "8",
+      "name": "任意多边形 7",
+      "bbox": [
+        0,
+        0,
+        1280,
+        720
+      ],
+      "geometry": "custom",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 24,
+        "typeface": "微软雅黑",
+        "color": "lt1",
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": ""
+          }
+        ]
+      }
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/5wjudg7a",
+      "id": "12",
+      "name": "任意多边形 11",
+      "bbox": [
+        64,
+        159.93,
+        552,
+        151.13
+      ],
+      "geometry": "custom",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 24,
+        "typeface": "微软雅黑",
+        "color": "lt1",
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": ""
+          }
+        ]
+      },
+      "fillColor": {
+        "type": "theme",
+        "value": "accent1",
+        "transform": {
+          "lighten": 0.9
+        }
+      },
+      "lineColor": {
+        "type": "theme",
+        "value": "accent1",
+        "transform": {
+          "lighten": 0.8
+        }
+      },
+      "lineWidth": 2
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/gbq1oryt",
+      "id": "13",
+      "name": "文本框 12",
+      "bbox": [
+        88,
+        186.13,
+        504,
+        37.33
+      ],
+      "geometry": "rect",
+      "text": "家族标识与传承符号",
+      "textPreview": "家族标识与传承符号",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 24,
+        "typeface": "微软雅黑",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 1.87,
+          "bottom": 0,
+          "left": 1.87
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "家族标识与传承符号"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "家族标识与传承符号",
+          "resolvedTextStyle": {
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "家族标识与传承符号",
+              "fontSize": 28,
+              "typeface": "汉仪中宋简",
+              "color": "dk1"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/n29gr2p8",
+      "id": "14",
+      "name": "文本框 13",
+      "bbox": [
+        88,
+        228.8,
+        504,
+        56
+      ],
+      "geometry": "rect",
+      "text": "融入客户家族特有元素，如某百年家族在封面使用祖传纹章，搭配烫金工艺凸显尊贵感与历史厚重。",
+      "textPreview": "融入客户家族特有元素，如某百年家族在封面使用祖传纹章，搭配烫金工艺凸显尊贵感与历史厚重。",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 24,
+        "typeface": "微软雅黑",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 1.87,
+          "bottom": 0,
+          "left": 1.87
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "融入客户家族特有元素，如某百年家族在封面使用祖传纹章"
+          },
+          {
+            "index": 2,
+            "text": "，搭配烫金工艺凸显尊贵感与历史厚重。"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "融入客户家族特有元素，如某百年家族在封面使用祖传纹章，搭配烫金工艺凸显尊贵感与历史厚重。",
+          "lineSpacingPercent": 120000,
+          "resolvedTextStyle": {
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "融入客户家族特有元素，如某百年家族在封面使用祖传纹章，搭配烫金工艺凸显尊贵感与历史厚重。",
+              "fontSize": 18.67,
+              "typeface": "汉仪书宋二简",
+              "color": "dk1"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/yhgn29gr",
+      "id": "15",
+      "name": "任意多边形 14",
+      "bbox": [
+        64,
+        332.4,
+        552,
+        151.13
+      ],
+      "geometry": "custom",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 24,
+        "typeface": "微软雅黑",
+        "color": "lt1",
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": ""
+          }
+        ]
+      },
+      "fillColor": {
+        "type": "theme",
+        "value": "accent1",
+        "transform": {
+          "lighten": 0.9
+        }
+      },
+      "lineColor": {
+        "type": "theme",
+        "value": "accent1",
+        "transform": {
+          "lighten": 0.8
+        }
+      },
+      "lineWidth": 2
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/58z25kb6",
+      "id": "16",
+      "name": "文本框 15",
+      "bbox": [
+        88,
+        358.6,
+        504,
+        37.33
+      ],
+      "geometry": "rect",
+      "text": "核心传承主题文字",
+      "textPreview": "核心传承主题文字",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 24,
+        "typeface": "微软雅黑",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 1.87,
+          "bottom": 0,
+          "left": 1.87
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "核心传承主题文字"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "核心传承主题文字",
+          "resolvedTextStyle": {
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "核心传承主题文字",
+              "fontSize": 28,
+              "typeface": "汉仪中宋简",
+              "color": "dk1"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/gn29gr2p",
+      "id": "17",
+      "name": "文本框 16",
+      "bbox": [
+        88,
+        401.27,
+        504,
+        56
+      ],
+      "geometry": "rect",
+      "text": "采用书法字体呈现“XX家族传承规划建议书”，如参考香港李氏家族用毛笔字突出家族文化底蕴。",
+      "textPreview": "采用书法字体呈现“XX家族传承规划建议书”，如参考香港李氏家族用毛笔字突出家族文化底蕴。",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 24,
+        "typeface": "微软雅黑",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 1.87,
+          "bottom": 0,
+          "left": 1.87
+        }
+      },
+      "textLayout": {
+        "lineCount": 3,
+        "lines": [
+          {
+            "index": 1,
+            "text": "采用书法字体呈现“XX"
+          },
+          {
+            "index": 2,
+            "text": "家族传承规划建议书”，如参考香港李氏家族用毛笔字突出"
+          },
+          {
+            "index": 3,
+            "text": "家族文化底蕴。"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "采用书法字体呈现“XX家族传承规划建议书”，如参考香港李氏家族用毛笔字突出家族文化底蕴。",
+          "lineSpacingPercent": 120000,
+          "resolvedTextStyle": {
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "采用书法字体呈现“",
+              "fontSize": 18.67,
+              "typeface": "汉仪书宋二简",
+              "color": "dk1"
+            },
+            {
+              "index": 2,
+              "text": "XX",
+              "fontSize": 18.67,
+              "typeface": "汉仪书宋二简",
+              "color": "dk1"
+            },
+            {
+              "index": 3,
+              "text": "家族传承规划建议书”，如参考香港李氏家族用毛笔字突出家族文化底蕴。",
+              "fontSize": 18.67,
+              "typeface": "汉仪书宋二简",
+              "color": "dk1"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 9,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/neloj2t8",
+      "id": "18",
+      "name": "任意多边形 17",
+      "bbox": [
+        64,
+        504.87,
+        552,
+        151.13
+      ],
+      "geometry": "custom",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 24,
+        "typeface": "微软雅黑",
+        "color": "lt1",
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": ""
+          }
+        ]
+      },
+      "fillColor": {
+        "type": "theme",
+        "value": "accent1",
+        "transform": {
+          "lighten": 0.9
+        }
+      },
+      "lineColor": {
+        "type": "theme",
+        "value": "accent1",
+        "transform": {
+          "lighten": 0.8
+        }
+      },
+      "lineWidth": 2
+    },
+    {
+      "order": 10,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ytsvu9kn",
+      "id": "19",
+      "name": "文本框 18",
+      "bbox": [
+        88,
+        531.07,
+        504,
+        37.33
+      ],
+      "geometry": "rect",
+      "text": "时间与顾问信息标注",
+      "textPreview": "时间与顾问信息标注",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 24,
+        "typeface": "微软雅黑",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 1.87,
+          "bottom": 0,
+          "left": 1.87
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "时间与顾问信息标注"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "时间与顾问信息标注",
+          "resolvedTextStyle": {
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "时间与顾问信息标注",
+              "fontSize": 28,
+              "typeface": "汉仪中宋简",
+              "color": "dk1"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 11,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/2x4nap4r",
+      "id": "20",
+      "name": "文本框 19",
+      "bbox": [
+        88,
+        573.73,
+        504,
+        56
+      ],
+      "geometry": "rect",
+      "text": "右下角注明“2024年家族传承专项定制”及顾问团队名称，类似洛克菲勒家族顾问报告的规范格式。",
+      "textPreview": "右下角注明“2024年家族传承专项定制”及顾问团队名称，类似洛克菲勒家族顾问报告的规范格式。",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 24,
+        "typeface": "微软雅黑",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 1.87,
+          "bottom": 0,
+          "left": 1.87
+        }
+      },
+      "textLayout": {
+        "lineCount": 3,
+        "lines": [
+          {
+            "index": 1,
+            "text": "右下角注明“2024"
+          },
+          {
+            "index": 2,
+            "text": "年家族传承专项定制”及顾问团队名称，类似洛克菲勒家族"
+          },
+          {
+            "index": 3,
+            "text": "顾问报告的规范格式。"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "右下角注明“2024年家族传承专项定制”及顾问团队名称，类似洛克菲勒家族顾问报告的规范格式。",
+          "lineSpacingPercent": 120000,
+          "resolvedTextStyle": {
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "右下角注明“",
+              "fontSize": 18.67,
+              "typeface": "汉仪书宋二简",
+              "color": "dk1"
+            },
+            {
+              "index": 2,
+              "text": "2024",
+              "fontSize": 18.67,
+              "typeface": "汉仪书宋二简",
+              "color": "dk1"
+            },
+            {
+              "index": 3,
+              "text": "年家族传承专项定制”及顾问团队名称，类似洛克菲勒家族顾问报告的规范格式。",
+              "fontSize": 18.67,
+              "typeface": "汉仪书宋二简",
+              "color": "dk1"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 12,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/nuxc3ylc",
+      "id": "10",
+      "name": "标题 9",
+      "bbox": [
+        64,
+        50.66,
+        552,
+        74.66
+      ],
+      "text": "封面基础信息设计",
+      "textPreview": "封面基础信息设计",
+      "resolvedFontSize": 48,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "vertical": 1,
+        "fontSize": 48,
+        "typeface": "微软雅黑",
+        "color": {
+          "type": "theme",
+          "value": "tx1",
+          "transform": {
+            "lighten": 0.15
+          }
+        },
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "textTransform": "none",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "封面基础信息设计"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "封面基础信息设计",
+          "runs": [
+            {
+              "index": 1,
+              "text": "封面基础信息设计",
+              "typeface": "微软雅黑",
+              "color": {
+                "type": "theme",
+                "value": "tx1",
+                "transform": {
+                  "lighten": 1
+                }
+              }
+            }
+          ],
+          "bulletCharacter": "",
+          "lineSpacingPercent": 110000,
+          "spaceBefore": 0
+        }
+      ]
+    }
+  ],
+  "composeRuns": []
+}

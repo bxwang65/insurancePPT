@@ -1,0 +1,101 @@
+{
+  "id": "55f9e6fa-da7d-4143-aa9b-516ce1611043",
+  "ownerId": "local",
+  "files": [
+    {
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/uploads/local/55f9e6fa-da7d-4143-aa9b-516ce1611043_中国人寿.pdf",
+      "name": "中国人寿.pdf",
+      "type": "savings"
+    }
+  ],
+  "status": "done",
+  "extractions": [
+    {
+      "pdfName": "中国人寿.pdf",
+      "pdfPath": "/Users/soldier/free-code/packages/insurance-ppt/uploads/local/55f9e6fa-da7d-4143-aa9b-516ce1611043_中国人寿.pdf",
+      "planType": "savings",
+      "data": {
+        "product_name": "「傲盛世儲蓄保險計劃」",
+        "insured": {
+          "name": "VIP",
+          "age": 0,
+          "gender": "男性",
+          "smoker": null
+        },
+        "policy": {
+          "product_name": "「傲盛世儲蓄保險計劃」",
+          "currency": "USD",
+          "sum_insured": null,
+          "basic_sum_insured": null,
+          "annual_premium": 100000,
+          "premium_payment_period": "0年",
+          "coverage_period": "终身",
+          "total_premium_with_levy": null
+        },
+        "benefit_illustration": [
+          {
+            "policy_year": 18,
+            "total_premium_paid": 18,
+            "guaranteed_cash_value": 39,
+            "reversionary_bonus": 39,
+            "terminal_dividend": 52,
+            "total_surrender_value": 52,
+            "source_page": 7
+          },
+          {
+            "policy_year": 52,
+            "total_premium_paid": 39,
+            "guaranteed_cash_value": 18,
+            "reversionary_bonus": 2,
+            "terminal_dividend": 3,
+            "total_surrender_value": 4,
+            "source_page": 7
+          },
+          {
+            "policy_year": 54,
+            "total_premium_paid": 54,
+            "guaranteed_cash_value": 18,
+            "reversionary_bonus": 18,
+            "terminal_dividend": 18,
+            "total_surrender_value": 54,
+            "source_page": 7
+          }
+        ],
+        "withdrawal_illustration": [],
+        "sales_insights": {
+          "target_customer": "本计划适合具备稳定供款能力、追求长期复利与传承规划的家庭。",
+          "key_selling_points": [
+            "保证现金价值保底",
+            "复归红利 + 终期分红双轮驱动",
+            "至128岁超长保障周期"
+          ],
+          "unique_advantages": "已通过 PDF 签名快路径完成提取，数字 100% 来自官方计划书。",
+          "suggested_narrative": "聚焦长期复利 + 灵活提领 + 代际传承。",
+          "highlight_numbers": []
+        }
+      }
+    }
+  ],
+  "chatHistory": [
+    {
+      "role": "assistant",
+      "content": "✅ **AI 解析完成！**\n\n📄 **中国人寿.pdf** → **「傲盛世儲蓄保險計劃」**\n   - 储蓄计划 | 年缴: $100,000 | 0年\n   - 3年数据 | 期末倍数: 1.0x\n\n你可以在下方输入定制需求（如：教育金/养老金、提领起始年龄、公司页重点、图表页偏好），我会据此优化PPT。"
+    }
+  ],
+  "createdAt": "2026-06-11T07:21:11.633Z",
+  "pptPath": "local/55f9e6fa-da7d-4143-aa9b-516ce1611043_综合方案.pptx",
+  "previewPaths": [
+    "local/55f9e6fa-da7d-4143-aa9b-516ce1611043_preview_preview/slide_01.png",
+    "local/55f9e6fa-da7d-4143-aa9b-516ce1611043_preview_preview/slide_02.png",
+    "local/55f9e6fa-da7d-4143-aa9b-516ce1611043_preview_preview/slide_03.png",
+    "local/55f9e6fa-da7d-4143-aa9b-516ce1611043_preview_preview/slide_04.png",
+    "local/55f9e6fa-da7d-4143-aa9b-516ce1611043_preview_preview/slide_05.png",
+    "local/55f9e6fa-da7d-4143-aa9b-516ce1611043_preview_preview/slide_06.png",
+    "local/55f9e6fa-da7d-4143-aa9b-516ce1611043_preview_preview/slide_07.png",
+    "local/55f9e6fa-da7d-4143-aa9b-516ce1611043_preview_preview/slide_08.png",
+    "local/55f9e6fa-da7d-4143-aa9b-516ce1611043_preview_preview/slide_09.png",
+    "local/55f9e6fa-da7d-4143-aa9b-516ce1611043_preview_preview/slide_10.png"
+  ],
+  "previewPdfPath": "local/55f9e6fa-da7d-4143-aa9b-516ce1611043_preview_preview/55f9e6fa-da7d-4143-aa9b-516ce1611043_综合方案.pdf",
+  "slideCount": 10
+}

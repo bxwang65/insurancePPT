@@ -1,0 +1,13 @@
+{
+  "status": "pass",
+  "checkedAt": "2026-06-08T02:46:38.523Z",
+  "workspace": "/Users/soldier/free-code/packages/insurance-ppt/outputs/5b5b94c4-0bfc-484b-8a82-9798d9d45ab2_api_pipeline/template-clone/broker-savings",
+  "finalPptx": "/Users/soldier/free-code/packages/insurance-ppt/outputs/5b5b94c4-0bfc-484b-8a82-9798d9d45ab2_api_pipeline/deck.pptx",
+  "starterPptx": "/Users/soldier/free-code/packages/insurance-ppt/outputs/5b5b94c4-0bfc-484b-8a82-9798d9d45ab2_api_pipeline/template-clone/broker-savings/template-starter.pptx",
+  "mapPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/5b5b94c4-0bfc-484b-8a82-9798d9d45ab2_api_pipeline/template-clone/broker-savings/template-frame-map.json",
+  "starterLayoutDir": "/Users/soldier/free-code/packages/insurance-ppt/outputs/5b5b94c4-0bfc-484b-8a82-9798d9d45ab2_api_pipeline/template-clone/broker-savings/template-starter-layout",
+  "finalLayoutDir": "/Users/soldier/free-code/packages/insurance-ppt/outputs/5b5b94c4-0bfc-484b-8a82-9798d9d45ab2_api_pipeline/template-clone/broker-savings/final-layout",
+  "editDir": "/Users/soldier/free-code/packages/insurance-ppt/outputs/5b5b94c4-0bfc-484b-8a82-9798d9d45ab2_api_pipeline/template-clone/broker-savings/authoring-evidence",
+  "issueCount": 0,
+  "issues": []
+}

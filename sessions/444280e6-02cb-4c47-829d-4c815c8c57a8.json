@@ -1,0 +1,28 @@
+{
+  "id": "444280e6-02cb-4c47-829d-4c815c8c57a8",
+  "ownerId": "local",
+  "files": [
+    {
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/uploads/local/444280e6-02cb-4c47-829d-4c815c8c57a8_保诚.pdf",
+      "name": "保诚.pdf",
+      "type": "savings"
+    }
+  ],
+  "status": "parsed",
+  "extractions": [
+    {
+      "pdfName": "保诚.pdf",
+      "pdfPath": "/Users/soldier/free-code/packages/insurance-ppt/uploads/local/444280e6-02cb-4c47-829d-4c815c8c57a8_保诚.pdf",
+      "planType": "savings",
+      "data": null,
+      "error": "Data validation failed - unsupported format"
+    }
+  ],
+  "chatHistory": [
+    {
+      "role": "assistant",
+      "content": "✅ **AI 解析完成！**\n\n📄 **保诚.pdf**: ❌ Data validation failed - unsupported format\n\n你可以在下方输入定制需求（如：教育金/养老金、提领起始年龄、公司页重点、图表页偏好），我会据此优化PPT。"
+    }
+  ],
+  "createdAt": "2026-06-11T08:04:24.022Z"
+}

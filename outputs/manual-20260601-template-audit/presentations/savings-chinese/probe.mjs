@@ -1,0 +1,4 @@
+import { ensureArtifactToolWorkspace, importArtifactTool } from '/Users/soldier/.codex/plugins/cache/openai-primary-runtime/presentations/26.521.10419/skills/presentations/scripts/artifact_tool_utils.mjs';
+const ws=process.cwd(); await ensureArtifactToolWorkspace(ws); const {FileBlob,PresentationFile}=await importArtifactTool(ws); const p=await PresentationFile.importPptx(await FileBlob.load('/Users/soldier/Downloads/财富保障方案——中国风 .pptx')); const slide=p.slides.getItem(17); const im=slide.images.items[0]; const sh=slide.shapes.items.find(x=>x.id==='15');
+function props(x){let out=[]; for(let p=x;p;p=Object.getPrototypeOf(p)) out.push(...Object.getOwnPropertyNames(p)); return [...new Set(out)].sort();}
+console.log('image props',props(im)); console.log('shape props',props(sh)); console.log('image position props',props(im.position)); console.log('shape text props',props(sh.text));

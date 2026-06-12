@@ -1,0 +1,6 @@
+[build]
+builder = "bun"
+buildCommand = "bun install"
+
+[deploy]
+startCommand = "bun run src/api/server.ts"

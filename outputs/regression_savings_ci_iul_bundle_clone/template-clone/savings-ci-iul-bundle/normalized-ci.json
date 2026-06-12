@@ -1,0 +1,38 @@
+{
+  "kind": "ci",
+  "productName": "守护家危疾保障计划",
+  "insured": {
+    "name": "陈小姐",
+    "age": 32,
+    "gender": "女",
+    "smoker": "N"
+  },
+  "policy": {
+    "currency": "USD",
+    "sumInsured": 500000,
+    "annualPremium": 4949,
+    "payYears": 10,
+    "coveragePeriod": "至100岁"
+  },
+  "coverageItems": [
+    {
+      "name": "恶性肿瘤重度",
+      "amount": 500000,
+      "description": "首次确诊赔付",
+      "sourcePage": 9
+    },
+    {
+      "name": "严重疾病多重赔付",
+      "amount": 500000,
+      "description": "符合条款可多次赔付",
+      "sourcePage": 10
+    }
+  ],
+  "benefitRows": [],
+  "source": {
+    "parser": "fixture",
+    "extractedAt": "2026-06-02T00:03:09.391Z",
+    "pdfHash": "fixture-ci",
+    "pdfPath": "/tmp/ci.pdf"
+  }
+}

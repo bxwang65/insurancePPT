@@ -1,0 +1,211 @@
+{
+  "templateId": "business",
+  "slides": [
+    {
+      "outputSlide": 1,
+      "textRewrites": [
+        {
+          "shapeId": "6",
+          "text": "VIP 先生 家庭财富传承方案"
+        },
+        {
+          "shapeId": "10",
+          "text": "友邦保险 · 「匠X・传承」储蓄寿险计划2(尊尚版)"
+        },
+        {
+          "shapeId": "31",
+          "text": "2026-06-02"
+        }
+      ],
+      "imageReplacements": [],
+      "deletions": []
+    },
+    {
+      "outputSlide": 2,
+      "textRewrites": [
+        {
+          "shapeId": "6",
+          "text": "关于我们"
+        },
+        {
+          "shapeId": "10",
+          "text": "专注储蓄险定制与长期资产配置"
+        },
+        {
+          "shapeId": "14",
+          "text": "专业团队"
+        },
+        {
+          "shapeId": "15",
+          "text": "资深财富规划师、税务专家、法律顾问"
+        },
+        {
+          "shapeId": "20",
+          "text": "核心方案"
+        },
+        {
+          "shapeId": "21",
+          "text": "以官方计划书为依据，结构化输出客户沟通版计划书"
+        }
+      ],
+      "imageReplacements": [
+        {
+          "imageId": "60",
+          "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/formal_環宇盈活儲蓄保險計劃_1780289287599_pipeline/assets/company.jpg",
+          "fit": "cover"
+        }
+      ],
+      "deletions": []
+    },
+    {
+      "outputSlide": 3,
+      "textRewrites": [
+        {
+          "shapeId": "6",
+          "text": "产品核心亮点"
+        },
+        {
+          "shapeId": "12",
+          "text": "长期稳健增值"
+        },
+        {
+          "shapeId": "13",
+          "text": "基于官方利益演示，展示不提领与提领两种路径"
+        },
+        {
+          "shapeId": "14",
+          "text": "总缴保费约 US$500,000"
+        },
+        {
+          "shapeId": "19",
+          "text": "不提领：第20年约 2.73 倍"
+        },
+        {
+          "shapeId": "24",
+          "text": "不提领：第30年约 5.57 倍"
+        },
+        {
+          "shapeId": "30",
+          "text": "关键数字可回溯至官方保单表格与来源页码"
+        }
+      ],
+      "imageReplacements": [],
+      "deletions": []
+    },
+    {
+      "outputSlide": 4,
+      "textRewrites": [
+        {
+          "shapeId": "6",
+          "text": "现金价值增长曲线"
+        },
+        {
+          "shapeId": "10",
+          "text": "第20年"
+        },
+        {
+          "shapeId": "11",
+          "text": "退保价值约 US$1,366,345，约为本金 2.73 倍"
+        },
+        {
+          "shapeId": "13",
+          "text": "第30年"
+        },
+        {
+          "shapeId": "14",
+          "text": "退保价值约 US$2,782,754，约为本金 5.57 倍"
+        },
+        {
+          "shapeId": "18",
+          "text": "长期持有"
+        },
+        {
+          "shapeId": "19",
+          "text": "本页聚焦不提领视角，展示保单现金价值随时间增长"
+        }
+      ],
+      "imageReplacements": [],
+      "deletions": []
+    },
+    {
+      "outputSlide": 5,
+      "textRewrites": [
+        {
+          "shapeId": "6",
+          "text": "教育金 / 养老金规划视角"
+        },
+        {
+          "shapeId": "12",
+          "text": "若客户目标为教育金，可围绕成长节点重排现金流"
+        },
+        {
+          "shapeId": "13",
+          "text": "若客户目标为养老金，可围绕退休节点重排现金流"
+        },
+        {
+          "shapeId": "15",
+          "text": "家庭用途"
+        },
+        {
+          "shapeId": "16",
+          "text": "不提领时，重点观察20/30年复利倍数与长期现金价值"
+        },
+        {
+          "shapeId": "19",
+          "text": "长期持有"
+        },
+        {
+          "shapeId": "21",
+          "text": "所有数据均来自官方利益演示，不使用模拟正式数字"
+        },
+        {
+          "shapeId": "23",
+          "text": "客户沟通"
+        },
+        {
+          "shapeId": "24",
+          "text": "如需提领路径，可在后续拿到官方提领表后再生成正式版"
+        }
+      ],
+      "imageReplacements": [
+        {
+          "imageId": "63",
+          "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/formal_環宇盈活儲蓄保險計劃_1780289287599_pipeline/charts/1_环X盈活储蓄保险计划_5年缴费_growth.png",
+          "fit": "cover"
+        }
+      ],
+      "deletions": []
+    },
+    {
+      "outputSlide": 6,
+      "textRewrites": [
+        {
+          "shapeId": "6",
+          "text": "方案总结"
+        },
+        {
+          "shapeId": "12",
+          "text": "储蓄险定制输出"
+        },
+        {
+          "shapeId": "13",
+          "text": "公司资料 + 官方保单 + 不提领视角"
+        },
+        {
+          "shapeId": "18",
+          "text": "客户沟通重点"
+        },
+        {
+          "shapeId": "19",
+          "text": "数字可追溯、页面可解释、结构可复用"
+        },
+        {
+          "shapeId": "30",
+          "text": "后续可在补齐提领表后自动切换双路径叙事"
+        }
+      ],
+      "imageReplacements": [],
+      "deletions": []
+    }
+  ]
+}

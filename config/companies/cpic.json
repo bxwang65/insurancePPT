@@ -1,0 +1,9 @@
+{
+  "id": "cpic",
+  "displayName": "太平洋保险",
+  "aliases": ["CPIC", "太平洋保险", "太平洋保險", "太保"],
+  "tenantId": "default",
+  "knowledgeDirectories": ["CPIC-太平洋保险"],
+  "evidenceRanking": ["简介", "fact", "财务", "实力", "概览", "投资"],
+  "companyIntro": "太平洋保险相关公司资料仅使用内部资料库中已索引、可追溯的文件。"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "manulife-lovehome-savings",
+  "companyId": "manulife",
+  "planType": "savings",
+  "displayName": "宏挚家传承保险计划",
+  "aliases": ["宏挚家", "宏X家", "宏挚家傳承", "宏挚家传承", "MIAHJ", "LoveHomeLegacy", "ManulifeLoveHome"],
+  "requiredModules": [
+    "cover",
+    "company",
+    "scenario-by-insured-age",
+    "growth-chart",
+    "guaranteed-vs-non-guaranteed",
+    "withdrawal-timeline",
+    "withdrawal-table",
+    "no-withdrawal-table",
+    "closing"
+  ]
+}

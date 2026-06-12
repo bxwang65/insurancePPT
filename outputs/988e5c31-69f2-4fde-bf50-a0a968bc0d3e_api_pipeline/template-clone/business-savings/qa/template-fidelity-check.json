@@ -1,0 +1,13 @@
+{
+  "status": "pass",
+  "checkedAt": "2026-06-08T09:34:28.948Z",
+  "workspace": "/Users/soldier/free-code/packages/insurance-ppt/outputs/988e5c31-69f2-4fde-bf50-a0a968bc0d3e_api_pipeline/template-clone/business-savings",
+  "finalPptx": "/Users/soldier/free-code/packages/insurance-ppt/outputs/988e5c31-69f2-4fde-bf50-a0a968bc0d3e_api_pipeline/deck.pptx",
+  "starterPptx": "/Users/soldier/free-code/packages/insurance-ppt/outputs/988e5c31-69f2-4fde-bf50-a0a968bc0d3e_api_pipeline/template-clone/business-savings/template-starter.pptx",
+  "mapPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/988e5c31-69f2-4fde-bf50-a0a968bc0d3e_api_pipeline/template-clone/business-savings/template-frame-map.json",
+  "starterLayoutDir": "/Users/soldier/free-code/packages/insurance-ppt/outputs/988e5c31-69f2-4fde-bf50-a0a968bc0d3e_api_pipeline/template-clone/business-savings/template-starter-layout",
+  "finalLayoutDir": "/Users/soldier/free-code/packages/insurance-ppt/outputs/988e5c31-69f2-4fde-bf50-a0a968bc0d3e_api_pipeline/template-clone/business-savings/final-layout",
+  "editDir": "/Users/soldier/free-code/packages/insurance-ppt/outputs/988e5c31-69f2-4fde-bf50-a0a968bc0d3e_api_pipeline/template-clone/business-savings/authoring-evidence",
+  "issueCount": 0,
+  "issues": []
+}

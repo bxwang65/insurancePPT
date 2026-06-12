@@ -1,0 +1,9 @@
+{
+  "id": "chubb",
+  "displayName": "安达人寿",
+  "aliases": ["CHUBB", "Chubb", "安达", "安達"],
+  "tenantId": "default",
+  "knowledgeDirectories": ["CHUBB-安达人寿"],
+  "evidenceRanking": ["简介", "fact", "财务", "实力", "概览", "投资"],
+  "companyIntro": "安达人寿相关公司资料仅使用内部资料库中已索引、可追溯的文件。"
+}

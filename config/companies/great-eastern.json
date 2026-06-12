@@ -1,0 +1,9 @@
+{
+  "id": "great-eastern",
+  "displayName": "大东方人寿",
+  "aliases": ["Great Eastern", "大东方", "大東方"],
+  "tenantId": "default",
+  "knowledgeDirectories": ["新加坡-大东方"],
+  "evidenceRanking": ["简介", "fact", "财务", "实力", "概览", "指数"],
+  "companyIntro": "大东方人寿相关公司资料仅使用内部资料库中已索引、可追溯的文件。"
+}

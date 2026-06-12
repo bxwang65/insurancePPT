@@ -1,0 +1,1519 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/bh57xp",
+    "id": "bh57xp",
+    "slide": 7,
+    "layoutId": "/ppt/slideLayouts/slideLayout37.xml",
+    "layoutName": "正文页-42_17",
+    "masterLayoutId": "/ppt/slideMasters/slideMaster2.xml",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "Office",
+    "colors": {
+      "accent1": "#5B9BD5",
+      "accent2": "#ED7D31",
+      "accent3": "#A5A5A5",
+      "accent4": "#FFC000",
+      "accent5": "#4472C4",
+      "accent6": "#70AD47",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#44546A",
+      "lt2": "#E7E6E6",
+      "hlink": "#0563C1",
+      "folHlink": "#954F72"
+    },
+    "fontScheme": {
+      "name": "Aspect",
+      "majorFont": {
+        "latinTypeface": "微软雅黑"
+      },
+      "minorFont": {
+        "latinTypeface": "微软雅黑"
+      }
+    },
+    "typefaces": [
+      "微软雅黑",
+      "汉仪中宋简",
+      "汉仪书宋二简"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "/ppt/slideLayouts/slideLayout37.xml",
+      "name": "正文页-42_17",
+      "parentLayoutId": "/ppt/slideMasters/slideMaster2.xml",
+      "elements": [
+        {
+          "order": 1,
+          "kind": "shape",
+          "scope": "layout",
+          "aid": "template/layout//ppt/slideLayouts/slideLayout37.xml/8",
+          "id": "8",
+          "name": "日期占位符 7",
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "order": 2,
+          "kind": "shape",
+          "scope": "layout",
+          "aid": "template/layout//ppt/slideLayouts/slideLayout37.xml/9",
+          "id": "9",
+          "name": "页脚占位符 8",
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "order": 3,
+          "kind": "shape",
+          "scope": "layout",
+          "aid": "template/layout//ppt/slideLayouts/slideLayout37.xml/10",
+          "id": "10",
+          "name": "灯片编号占位符 9",
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "order": 4,
+          "kind": "shape",
+          "scope": "layout",
+          "aid": "template/layout//ppt/slideLayouts/slideLayout37.xml/11",
+          "id": "11",
+          "name": "标题 10",
+          "bbox": [
+            64,
+            56,
+            1152,
+            64
+          ],
+          "text": "单击此处添加标题",
+          "textPreview": "单击此处添加标题",
+          "resolvedTextStyle": {
+            "anchor": 1,
+            "verticalAlignment": "top",
+            "autoFit": "shrinkText",
+            "insets": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "单击此处添加标题",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "单击此处添加标题",
+                  "typeface": "汉仪中宋简"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "order": 5,
+          "kind": "shape",
+          "scope": "layout",
+          "aid": "template/layout//ppt/slideLayouts/slideLayout37.xml/12",
+          "id": "12",
+          "name": "内容占位符 11",
+          "bbox": [
+            64,
+            160,
+            1152,
+            234.67
+          ],
+          "geometry": "custom",
+          "resolvedTextStyle": {
+            "autoFit": "shrinkText"
+          },
+          "paragraphs": [
+            {
+              "index": 1,
+              "runs": [
+                {
+                  "index": 1,
+                  "text": " ",
+                  "typeface": "汉仪书宋二简"
+                }
+              ]
+            }
+          ],
+          "fillColor": "#DDDDDD"
+        },
+        {
+          "order": 6,
+          "kind": "shape",
+          "scope": "layout",
+          "aid": "template/layout//ppt/slideLayouts/slideLayout37.xml/13",
+          "id": "13",
+          "name": "装饰  2",
+          "bbox": [
+            64,
+            442.67,
+            5.33,
+            213.33
+          ],
+          "geometry": "custom",
+          "resolvedTextStyle": {
+            "autoFit": "none"
+          },
+          "paragraphs": [
+            {
+              "index": 1,
+              "runs": [
+                {
+                  "index": 1,
+                  "text": " ",
+                  "typeface": "汉仪书宋二简"
+                }
+              ]
+            }
+          ],
+          "fillColor": "accent1",
+          "lineColor": "#000000"
+        },
+        {
+          "order": 7,
+          "kind": "shape",
+          "scope": "layout",
+          "aid": "template/layout//ppt/slideLayouts/slideLayout37.xml/14",
+          "id": "14",
+          "name": "文本占位符 13",
+          "bbox": [
+            80,
+            442.67,
+            325.33,
+            42.67
+          ],
+          "text": "单击此处添加项标题",
+          "textPreview": "单击此处添加项标题",
+          "resolvedTextStyle": {
+            "anchor": 1,
+            "verticalAlignment": "top",
+            "autoFit": "shrinkText",
+            "insets": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "单击此处添加项标题",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "单击此处添加项标题",
+                  "typeface": "汉仪书宋二简"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "order": 8,
+          "kind": "shape",
+          "scope": "layout",
+          "aid": "template/layout//ppt/slideLayouts/slideLayout37.xml/15",
+          "id": "15",
+          "name": "文本占位符 14",
+          "bbox": [
+            80,
+            496,
+            325.33,
+            160
+          ],
+          "text": "单击此处添加项正文",
+          "textPreview": "单击此处添加项正文",
+          "resolvedTextStyle": {
+            "anchor": 1,
+            "verticalAlignment": "top",
+            "autoFit": "shrinkText",
+            "insets": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "单击此处添加项正文",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "单击此处添加项正文",
+                  "typeface": "汉仪书宋二简"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "order": 9,
+          "kind": "shape",
+          "scope": "layout",
+          "aid": "template/layout//ppt/slideLayouts/slideLayout37.xml/16",
+          "id": "16",
+          "name": "装饰  5",
+          "bbox": [
+            469.33,
+            442.67,
+            5.33,
+            213.33
+          ],
+          "geometry": "custom",
+          "resolvedTextStyle": {
+            "autoFit": "none"
+          },
+          "paragraphs": [
+            {
+              "index": 1,
+              "runs": [
+                {
+                  "index": 1,
+                  "text": " ",
+                  "typeface": "汉仪书宋二简"
+                }
+              ]
+            }
+          ],
+          "fillColor": "accent1",
+          "lineColor": "#000000"
+        },
+        {
+          "order": 10,
+          "kind": "shape",
+          "scope": "layout",
+          "aid": "template/layout//ppt/slideLayouts/slideLayout37.xml/17",
+          "id": "17",
+          "name": "文本占位符 16",
+          "bbox": [
+            485.33,
+            442.67,
+            325.33,
+            42.67
+          ],
+          "text": "单击此处添加项标题",
+          "textPreview": "单击此处添加项标题",
+          "resolvedTextStyle": {
+            "anchor": 1,
+            "verticalAlignment": "top",
+            "autoFit": "shrinkText",
+            "insets": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "单击此处添加项标题",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "单击此处添加项标题",
+                  "typeface": "汉仪书宋二简"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "order": 11,
+          "kind": "shape",
+          "scope": "layout",
+          "aid": "template/layout//ppt/slideLayouts/slideLayout37.xml/18",
+          "id": "18",
+          "name": "文本占位符 17",
+          "bbox": [
+            485.33,
+            496,
+            325.33,
+            160
+          ],
+          "text": "单击此处添加项正文",
+          "textPreview": "单击此处添加项正文",
+          "resolvedTextStyle": {
+            "anchor": 1,
+            "verticalAlignment": "top",
+            "autoFit": "shrinkText",
+            "insets": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "单击此处添加项正文",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "单击此处添加项正文",
+                  "typeface": "汉仪书宋二简"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "order": 12,
+          "kind": "shape",
+          "scope": "layout",
+          "aid": "template/layout//ppt/slideLayouts/slideLayout37.xml/19",
+          "id": "19",
+          "name": "装饰  8",
+          "bbox": [
+            874.67,
+            442.67,
+            5.33,
+            213.33
+          ],
+          "geometry": "custom",
+          "resolvedTextStyle": {
+            "autoFit": "none"
+          },
+          "paragraphs": [
+            {
+              "index": 1,
+              "runs": [
+                {
+                  "index": 1,
+                  "text": " ",
+                  "typeface": "汉仪书宋二简"
+                }
+              ]
+            }
+          ],
+          "fillColor": "accent1",
+          "lineColor": "#000000"
+        },
+        {
+          "order": 13,
+          "kind": "shape",
+          "scope": "layout",
+          "aid": "template/layout//ppt/slideLayouts/slideLayout37.xml/20",
+          "id": "20",
+          "name": "文本占位符 19",
+          "bbox": [
+            890.67,
+            442.67,
+            325.33,
+            42.67
+          ],
+          "text": "单击此处添加项标题",
+          "textPreview": "单击此处添加项标题",
+          "resolvedTextStyle": {
+            "anchor": 1,
+            "verticalAlignment": "top",
+            "autoFit": "shrinkText",
+            "insets": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "单击此处添加项标题",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "单击此处添加项标题",
+                  "typeface": "汉仪书宋二简"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "order": 14,
+          "kind": "shape",
+          "scope": "layout",
+          "aid": "template/layout//ppt/slideLayouts/slideLayout37.xml/21",
+          "id": "21",
+          "name": "文本占位符 20",
+          "bbox": [
+            890.67,
+            496,
+            325.33,
+            160
+          ],
+          "text": "单击此处添加项正文",
+          "textPreview": "单击此处添加项正文",
+          "resolvedTextStyle": {
+            "anchor": 1,
+            "verticalAlignment": "top",
+            "autoFit": "shrinkText",
+            "insets": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "单击此处添加项正文",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "单击此处添加项正文",
+                  "typeface": "汉仪书宋二简"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "scope": "master",
+      "id": "/ppt/slideMasters/slideMaster2.xml",
+      "type": "master",
+      "elements": [
+        {
+          "order": 1,
+          "kind": "image",
+          "scope": "master",
+          "aid": "template/master//ppt/slideMasters/slideMaster2.xml/10",
+          "id": "10",
+          "name": "图片 7",
+          "bbox": [
+            306.67,
+            146.67,
+            973.33,
+            573.33
+          ],
+          "contentType": "image/png",
+          "asset": {
+            "assetId": "/ppt/media/image7.png",
+            "contentType": "image/png",
+            "byteLength": 655982
+          },
+          "fillImage": {
+            "assetId": "/ppt/media/image7.png",
+            "contentType": "image/png",
+            "byteLength": 655982
+          }
+        },
+        {
+          "order": 2,
+          "kind": "shape",
+          "scope": "master",
+          "aid": "template/master//ppt/slideMasters/slideMaster2.xml/2",
+          "id": "2",
+          "name": "标题占位符 1",
+          "bbox": [
+            63.87,
+            63.87,
+            1151.62,
+            74.08
+          ],
+          "geometry": "rect",
+          "text": "单击此处编辑母版标题样式",
+          "textPreview": "单击此处编辑母版标题样式",
+          "resolvedTextStyle": {
+            "anchor": 2,
+            "vertical": 1,
+            "verticalAlignment": "middle",
+            "autoFit": "shrinkText",
+            "insets": {
+              "top": 4.93,
+              "right": 9.47,
+              "bottom": 4.93,
+              "left": 9.47
+            }
+          },
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "单击此处编辑母版标题样式",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "单击此处编辑母版标题样式",
+                  "typeface": "汉仪中宋简"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "order": 3,
+          "kind": "shape",
+          "scope": "master",
+          "aid": "template/master//ppt/slideMasters/slideMaster2.xml/3",
+          "id": "3",
+          "name": "文本占位符 2",
+          "bbox": [
+            63.87,
+            156.47,
+            1151.62,
+            499.65
+          ],
+          "geometry": "rect",
+          "text": "单击此处编辑母版文本样式\n第二级\n第三级\n第四级\n第五级",
+          "textPreview": "单击此处编辑母版文本样式 | 第二级 | 第三级 | 第四级 | 第五级",
+          "resolvedTextStyle": {
+            "vertical": 1,
+            "autoFit": "shrinkText",
+            "insets": {
+              "top": 4.91,
+              "right": 9.45,
+              "bottom": 4.91,
+              "left": 9.45
+            }
+          },
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "单击此处编辑母版文本样式",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "单击此处编辑母版文本样式",
+                  "typeface": "汉仪书宋二简"
+                }
+              ]
+            },
+            {
+              "index": 2,
+              "text": "第二级",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "第二级",
+                  "typeface": "汉仪书宋二简"
+                }
+              ]
+            },
+            {
+              "index": 3,
+              "text": "第三级",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "第三级",
+                  "typeface": "汉仪书宋二简"
+                }
+              ]
+            },
+            {
+              "index": 4,
+              "text": "第四级",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "第四级",
+                  "typeface": "汉仪书宋二简"
+                }
+              ]
+            },
+            {
+              "index": 5,
+              "text": "第五级",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "第五级",
+                  "typeface": "汉仪书宋二简"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "order": 4,
+          "kind": "shape",
+          "scope": "master",
+          "aid": "template/master//ppt/slideMasters/slideMaster2.xml/4",
+          "id": "4",
+          "name": "日期占位符 3",
+          "bbox": [
+            64.25,
+            662.93,
+            283.46,
+            33.26
+          ],
+          "geometry": "rect",
+          "resolvedTextStyle": {
+            "anchor": 2,
+            "vertical": 1,
+            "verticalAlignment": "middle",
+            "autoFit": "shrinkText",
+            "insets": {
+              "top": 4.8,
+              "right": 9.6,
+              "bottom": 4.8,
+              "left": 9.6
+            }
+          }
+        },
+        {
+          "order": 5,
+          "kind": "shape",
+          "scope": "master",
+          "aid": "template/master//ppt/slideMasters/slideMaster2.xml/5",
+          "id": "5",
+          "name": "页脚占位符 4",
+          "bbox": [
+            432.13,
+            662.93,
+            415.75,
+            33.26
+          ],
+          "geometry": "rect",
+          "resolvedTextStyle": {
+            "anchor": 2,
+            "vertical": 1,
+            "verticalAlignment": "middle",
+            "autoFit": "shrinkText",
+            "insets": {
+              "top": 4.8,
+              "right": 9.6,
+              "bottom": 4.8,
+              "left": 9.6
+            }
+          }
+        },
+        {
+          "order": 6,
+          "kind": "shape",
+          "scope": "master",
+          "aid": "template/master//ppt/slideMasters/slideMaster2.xml/6",
+          "id": "6",
+          "name": "灯片编号占位符 5",
+          "bbox": [
+            932.03,
+            662.93,
+            283.46,
+            33.26
+          ],
+          "geometry": "rect",
+          "resolvedTextStyle": {
+            "anchor": 2,
+            "vertical": 1,
+            "verticalAlignment": "middle",
+            "autoFit": "shrinkText",
+            "insets": {
+              "top": 4.8,
+              "right": 9.6,
+              "bottom": 4.8,
+              "left": 9.6
+            }
+          }
+        },
+        {
+          "order": 7,
+          "kind": "shape",
+          "scope": "master",
+          "aid": "template/master//ppt/slideMasters/slideMaster2.xml/9",
+          "id": "9",
+          "name": "KSO_TEMPLATE",
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "hidden": true,
+          "geometry": "rect",
+          "resolvedTextStyle": {
+            "anchor": 2,
+            "verticalAlignment": "middle"
+          }
+        }
+      ]
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/zed8v6ps",
+      "id": "2",
+      "name": "标题 1",
+      "bbox": [
+        64,
+        56,
+        1152,
+        64
+      ],
+      "text": "合家欢主题致辞",
+      "textPreview": "合家欢主题致辞",
+      "resolvedFontSize": 48,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "vertical": 1,
+        "fontSize": 48,
+        "typeface": "微软雅黑",
+        "color": {
+          "type": "theme",
+          "value": "tx1",
+          "transform": {
+            "lighten": 0.15
+          }
+        },
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "textTransform": "none",
+        "autoFit": "shrinkText",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "合家欢主题致辞"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "合家欢主题致辞",
+          "lineSpacingPercent": 111000,
+          "resolvedTextStyle": {
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "合家欢主题致辞",
+              "typeface": "汉仪中宋简"
+            }
+          ],
+          "bulletCharacter": "",
+          "marginLeft": 0,
+          "indent": 0,
+          "spaceBefore": 0,
+          "spaceAfter": 0
+        }
+      ]
+    },
+    {
+      "order": 2,
+      "kind": "image",
+      "scope": "slide",
+      "aid": "im/u18jqh0f",
+      "id": "13",
+      "name": "内容占位符 2",
+      "bbox": [
+        64,
+        160,
+        1152,
+        234.67
+      ],
+      "contentType": "image/jpeg",
+      "imageCrop": {
+        "left": 0,
+        "top": 0.00174,
+        "right": 0,
+        "bottom": 0.00174
+      },
+      "asset": {
+        "assetId": "/ppt/media/image39.jpeg",
+        "contentType": "image/jpeg",
+        "byteLength": 331506
+      },
+      "fillImage": {
+        "assetId": "/ppt/media/image39.jpeg",
+        "contentType": "image/jpeg",
+        "byteLength": 331506
+      }
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/hwfyxobm",
+      "id": "4",
+      "name": "装饰  2",
+      "bbox": [
+        64,
+        442.67,
+        5.33,
+        213.33
+      ],
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "vertical": 1,
+        "fontSize": 24,
+        "typeface": "微软雅黑",
+        "color": {
+          "type": "theme",
+          "value": "tx1",
+          "transform": {
+            "lighten": 0.35
+          }
+        },
+        "alignment": "left",
+        "textTransform": "none",
+        "autoFit": "none",
+        "insets": {
+          "top": 4.91,
+          "right": 9.45,
+          "bottom": 4.91,
+          "left": 9.45
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": " "
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "runs": [
+            {
+              "index": 1,
+              "text": " ",
+              "typeface": "汉仪书宋二简"
+            }
+          ],
+          "bulletCharacter": "",
+          "marginLeft": 228600,
+          "indent": -228600,
+          "lineSpacingPercent": 130000,
+          "spaceBefore": 0,
+          "spaceAfter": 1000
+        }
+      ]
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/obm58z25",
+      "id": "5",
+      "name": "文本占位符 4",
+      "bbox": [
+        80,
+        442.67,
+        325.33,
+        42.67
+      ],
+      "text": "家族团圆故事分享",
+      "textPreview": "家族团圆故事分享",
+      "resolvedFontSize": 32,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "vertical": 1,
+        "fontSize": 32,
+        "typeface": "微软雅黑",
+        "color": {
+          "type": "theme",
+          "value": "tx1",
+          "transform": {
+            "lighten": 0.35
+          }
+        },
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "textTransform": "none",
+        "autoFit": "shrinkText",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "家族团圆故事分享"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "家族团圆故事分享",
+          "lineSpacingPercent": 111000,
+          "resolvedTextStyle": {
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "家族团圆故事分享",
+              "typeface": "汉仪书宋二简"
+            }
+          ],
+          "bulletCharacter": "",
+          "marginLeft": 0,
+          "indent": 0,
+          "spaceBefore": 0,
+          "spaceAfter": 1000
+        }
+      ]
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/zqtcj6to",
+      "id": "6",
+      "name": "文本占位符 5",
+      "bbox": [
+        80,
+        496,
+        325.33,
+        160
+      ],
+      "text": "可讲述香港李锦记家族春节团聚，四代同堂共制蚝油，传承百年家训，凝聚家族情感的温馨场景。",
+      "textPreview": "可讲述香港李锦记家族春节团聚，四代同堂共制蚝油，传承百年家训，凝聚家族情感的温馨场景。",
+      "resolvedFontSize": 21.33,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "vertical": 1,
+        "fontSize": 21.33,
+        "typeface": "微软雅黑",
+        "color": {
+          "type": "theme",
+          "value": "tx1",
+          "transform": {
+            "lighten": 0.35
+          }
+        },
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "textTransform": "none",
+        "autoFit": "shrinkText",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 4,
+        "lines": [
+          {
+            "index": 1,
+            "text": "可讲述香港李锦记家族春节团聚"
+          },
+          {
+            "index": 2,
+            "text": "，四代同堂共制蚝油，传承百年"
+          },
+          {
+            "index": 3,
+            "text": "家训，凝聚家族情感的温馨场景"
+          },
+          {
+            "index": 4,
+            "text": "。"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "可讲述香港李锦记家族春节团聚，四代同堂共制蚝油，传承百年家训，凝聚家族情感的温馨场景。",
+          "lineSpacingPercent": 125000,
+          "resolvedTextStyle": {
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "可讲述香港李锦记家族春节团聚，四代同堂共制蚝油，传承百年家训，凝聚家族情感的温馨场景。",
+              "typeface": "汉仪书宋二简"
+            }
+          ],
+          "bulletCharacter": "",
+          "marginLeft": 0,
+          "indent": 0,
+          "spaceBefore": 0,
+          "spaceAfter": 1000
+        }
+      ]
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/65wjudg7",
+      "id": "7",
+      "name": "装饰  5",
+      "bbox": [
+        469.33,
+        442.67,
+        5.33,
+        213.33
+      ],
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "vertical": 1,
+        "fontSize": 24,
+        "typeface": "微软雅黑",
+        "color": {
+          "type": "theme",
+          "value": "tx1",
+          "transform": {
+            "lighten": 0.35
+          }
+        },
+        "alignment": "left",
+        "textTransform": "none",
+        "autoFit": "none",
+        "insets": {
+          "top": 4.91,
+          "right": 9.45,
+          "bottom": 4.91,
+          "left": 9.45
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": " "
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "runs": [
+            {
+              "index": 1,
+              "text": " ",
+              "typeface": "汉仪书宋二简"
+            }
+          ],
+          "bulletCharacter": "",
+          "marginLeft": 228600,
+          "indent": -228600,
+          "lineSpacingPercent": 130000,
+          "spaceBefore": 0,
+          "spaceAfter": 1000
+        }
+      ]
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/h0fepkzu",
+      "id": "8",
+      "name": "文本占位符 7",
+      "bbox": [
+        485.33,
+        442.67,
+        325.33,
+        42.67
+      ],
+      "text": "传统习俗传承倡议",
+      "textPreview": "传统习俗传承倡议",
+      "resolvedFontSize": 32,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "vertical": 1,
+        "fontSize": 32,
+        "typeface": "微软雅黑",
+        "color": {
+          "type": "theme",
+          "value": "tx1",
+          "transform": {
+            "lighten": 0.35
+          }
+        },
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "textTransform": "none",
+        "autoFit": "shrinkText",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "传统习俗传承倡议"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "传统习俗传承倡议",
+          "lineSpacingPercent": 111000,
+          "resolvedTextStyle": {
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "传统习俗传承倡议",
+              "typeface": "汉仪书宋二简"
+            }
+          ],
+          "bulletCharacter": "",
+          "marginLeft": 0,
+          "indent": 0,
+          "spaceBefore": 0,
+          "spaceAfter": 1000
+        }
+      ]
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/sfil0rqd",
+      "id": "9",
+      "name": "文本占位符 8",
+      "bbox": [
+        485.33,
+        496,
+        325.33,
+        160
+      ],
+      "text": "建议借鉴江南周氏家族中秋祭月仪式，全家共诵家训，让后代在习俗中感受家族文化底蕴与责任。",
+      "textPreview": "建议借鉴江南周氏家族中秋祭月仪式，全家共诵家训，让后代在习俗中感受家族文化底蕴与责任。",
+      "resolvedFontSize": 21.33,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "vertical": 1,
+        "fontSize": 21.33,
+        "typeface": "微软雅黑",
+        "color": {
+          "type": "theme",
+          "value": "tx1",
+          "transform": {
+            "lighten": 0.35
+          }
+        },
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "textTransform": "none",
+        "autoFit": "shrinkText",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 4,
+        "lines": [
+          {
+            "index": 1,
+            "text": "建议借鉴江南周氏家族中秋祭月"
+          },
+          {
+            "index": 2,
+            "text": "仪式，全家共诵家训，让后代在"
+          },
+          {
+            "index": 3,
+            "text": "习俗中感受家族文化底蕴与责任"
+          },
+          {
+            "index": 4,
+            "text": "。"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "建议借鉴江南周氏家族中秋祭月仪式，全家共诵家训，让后代在习俗中感受家族文化底蕴与责任。",
+          "lineSpacingPercent": 125000,
+          "resolvedTextStyle": {
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "建议借鉴江南周氏家族中秋祭月仪式，全家共诵家训，让后代在习俗中感受家族文化底蕴与责任。",
+              "typeface": "汉仪书宋二简"
+            }
+          ],
+          "bulletCharacter": "",
+          "marginLeft": 0,
+          "indent": 0,
+          "spaceBefore": 0,
+          "spaceAfter": 1000
+        }
+      ]
+    },
+    {
+      "order": 9,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/qtcj6tov",
+      "id": "10",
+      "name": "装饰  8",
+      "bbox": [
+        874.67,
+        442.67,
+        5.33,
+        213.33
+      ],
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "vertical": 1,
+        "fontSize": 24,
+        "typeface": "微软雅黑",
+        "color": {
+          "type": "theme",
+          "value": "tx1",
+          "transform": {
+            "lighten": 0.35
+          }
+        },
+        "alignment": "left",
+        "textTransform": "none",
+        "autoFit": "none",
+        "insets": {
+          "top": 4.91,
+          "right": 9.45,
+          "bottom": 4.91,
+          "left": 9.45
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": " "
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "runs": [
+            {
+              "index": 1,
+              "text": " ",
+              "typeface": "汉仪书宋二简"
+            }
+          ],
+          "bulletCharacter": "",
+          "marginLeft": 228600,
+          "indent": -228600,
+          "lineSpacingPercent": 130000,
+          "spaceBefore": 0,
+          "spaceAfter": 1000
+        }
+      ]
+    },
+    {
+      "order": 10,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/je9cvixc",
+      "id": "11",
+      "name": "文本占位符 10",
+      "bbox": [
+        890.67,
+        442.67,
+        325.33,
+        42.67
+      ],
+      "text": "未来传承寄语",
+      "textPreview": "未来传承寄语",
+      "resolvedFontSize": 32,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "vertical": 1,
+        "fontSize": 32,
+        "typeface": "微软雅黑",
+        "color": {
+          "type": "theme",
+          "value": "tx1",
+          "transform": {
+            "lighten": 0.35
+          }
+        },
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "textTransform": "none",
+        "autoFit": "shrinkText",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "未来传承寄语"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "未来传承寄语",
+          "lineSpacingPercent": 111000,
+          "resolvedTextStyle": {
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "未来传承寄语",
+              "typeface": "汉仪书宋二简"
+            }
+          ],
+          "bulletCharacter": "",
+          "marginLeft": 0,
+          "indent": 0,
+          "spaceBefore": 0,
+          "spaceAfter": 1000
+        }
+      ]
+    },
+    {
+      "order": 11,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/8z25kb6x",
+      "id": "12",
+      "name": "文本占位符 11",
+      "bbox": [
+        890.67,
+        496,
+        325.33,
+        160
+      ],
+      "text": "以福建陈氏家族设立“家族奖学金”为例，鼓励年轻一代勤学向善，延续家族精神，共筑美好未来。",
+      "textPreview": "以福建陈氏家族设立“家族奖学金”为例，鼓励年轻一代勤学向善，延续家族精神，共筑美好未来。",
+      "resolvedFontSize": 21.33,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "vertical": 1,
+        "fontSize": 21.33,
+        "typeface": "微软雅黑",
+        "color": {
+          "type": "theme",
+          "value": "tx1",
+          "transform": {
+            "lighten": 0.35
+          }
+        },
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "textTransform": "none",
+        "autoFit": "shrinkText",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 3,
+        "lines": [
+          {
+            "index": 1,
+            "text": "以福建陈氏家族设立“家族奖学金”"
+          },
+          {
+            "index": 2,
+            "text": "为例，鼓励年轻一代勤学向善，"
+          },
+          {
+            "index": 3,
+            "text": "延续家族精神，共筑美好未来。"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "以福建陈氏家族设立“家族奖学金”为例，鼓励年轻一代勤学向善，延续家族精神，共筑美好未来。",
+          "lineSpacingPercent": 125000,
+          "resolvedTextStyle": {
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "以福建陈氏家族设立“家族奖学金”为例，鼓励年轻一代勤学向善，延续家族精神，共筑美好未来。",
+              "typeface": "汉仪书宋二简"
+            }
+          ],
+          "bulletCharacter": "",
+          "marginLeft": 0,
+          "indent": 0,
+          "spaceBefore": 0,
+          "spaceAfter": 1000
+        }
+      ]
+    }
+  ],
+  "composeRuns": []
+}

@@ -1,0 +1,223 @@
+{
+  "templateId": "ink",
+  "slides": [
+    {
+      "outputSlide": 1,
+      "textRewrites": [
+        {
+          "shapeId": "6",
+          "text": "VIP 先生 家庭储蓄险定制建议书"
+        },
+        {
+          "shapeId": "7",
+          "text": "友邦保险 · 环X盈活储蓄保险计划(5年缴费)"
+        }
+      ],
+      "imageReplacements": [],
+      "deletions": [
+        {
+          "kind": "shape",
+          "id": "5"
+        },
+        {
+          "kind": "shape",
+          "id": "8"
+        },
+        {
+          "kind": "shape",
+          "id": "11"
+        },
+        {
+          "kind": "shape",
+          "id": "14"
+        }
+      ]
+    },
+    {
+      "outputSlide": 2,
+      "textRewrites": [
+        {
+          "shapeId": "2",
+          "text": "CONTENTS"
+        },
+        {
+          "shapeId": "3",
+          "text": "目录"
+        },
+        {
+          "shapeId": "6",
+          "text": "建议书封面"
+        },
+        {
+          "shapeId": "9",
+          "text": "家族办公室介绍"
+        },
+        {
+          "shapeId": "12",
+          "text": "产品核心亮点介绍"
+        },
+        {
+          "shapeId": "15",
+          "text": "产品收益核心说明"
+        }
+      ],
+      "imageReplacements": [],
+      "deletions": [
+        {
+          "kind": "shape",
+          "id": "5"
+        },
+        {
+          "kind": "shape",
+          "id": "8"
+        },
+        {
+          "kind": "shape",
+          "id": "11"
+        },
+        {
+          "kind": "shape",
+          "id": "14"
+        }
+      ]
+    },
+    {
+      "outputSlide": 3,
+      "textRewrites": [
+        {
+          "shapeId": "3",
+          "text": "CONTENTS"
+        },
+        {
+          "shapeId": "4",
+          "text": "财富提领规划路径 / 演示表 / 结束语"
+        }
+      ],
+      "imageReplacements": [],
+      "deletions": []
+    },
+    {
+      "outputSlide": 4,
+      "textRewrites": [
+        {
+          "shapeId": "2",
+          "text": "建议书基础信息"
+        },
+        {
+          "shapeId": "5",
+          "text": "客户家族核心成员信息"
+        },
+        {
+          "shapeId": "6",
+          "text": "受保人年龄 1 岁；总缴保费约 US$500,000。"
+        },
+        {
+          "shapeId": "8",
+          "text": "家族资产规模与构成"
+        },
+        {
+          "shapeId": "9",
+          "text": "不提领：20年约 2.72 倍；30年约 5.85 倍。"
+        },
+        {
+          "shapeId": "11",
+          "text": "传承目标与风险偏好"
+        },
+        {
+          "shapeId": "12",
+          "text": "目标是兼顾教育金/养老金与长期资产传承。"
+        }
+      ],
+      "imageReplacements": [
+        {
+          "imageId": "13",
+          "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/formal_環宇盈活儲蓄保險計劃_1780289287599_pipeline/charts/1_环X盈活储蓄保险计划_5年缴费_growth.png",
+          "fit": "cover"
+        }
+      ],
+      "deletions": [
+        {
+          "kind": "shape",
+          "id": "4"
+        },
+        {
+          "kind": "shape",
+          "id": "7"
+        },
+        {
+          "kind": "shape",
+          "id": "10"
+        }
+      ]
+    },
+    {
+      "outputSlide": 5,
+      "textRewrites": [
+        {
+          "shapeId": "3",
+          "text": "提领路径：第6年起年领，持续覆盖教育金/现金流场景"
+        },
+        {
+          "shapeId": "4",
+          "text": "第6年 US$35,000 / 第20年累计 US$525,000 / 第30年累计 US$875,000"
+        }
+      ],
+      "imageReplacements": [],
+      "deletions": []
+    },
+    {
+      "outputSlide": 6,
+      "textRewrites": [
+        {
+          "shapeId": "2",
+          "text": "结语"
+        },
+        {
+          "shapeId": "5",
+          "text": "关键数字全部来源于官方计划书并可追溯。"
+        },
+        {
+          "shapeId": "6",
+          "text": "可按客户目标切换教育金或养老金叙事。"
+        },
+        {
+          "shapeId": "8",
+          "text": "祝愿"
+        },
+        {
+          "shapeId": "9",
+          "text": "家业长青，规划顺利落地。"
+        },
+        {
+          "shapeId": "11",
+          "text": "正式版"
+        },
+        {
+          "shapeId": "12",
+          "text": "仅使用官方计划书数据与实图素材。"
+        }
+      ],
+      "imageReplacements": [
+        {
+          "imageId": "13",
+          "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/formal_環宇盈活儲蓄保險計劃_1780289287599_pipeline/charts/1_环X盈活储蓄保险计划_5年缴费_stacked.png",
+          "fit": "cover"
+        }
+      ],
+      "deletions": [
+        {
+          "kind": "shape",
+          "id": "4"
+        },
+        {
+          "kind": "shape",
+          "id": "7"
+        },
+        {
+          "kind": "shape",
+          "id": "10"
+        }
+      ]
+    }
+  ]
+}

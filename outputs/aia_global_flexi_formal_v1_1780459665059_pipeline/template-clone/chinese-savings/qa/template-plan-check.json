@@ -1,0 +1,10 @@
+{
+  "status": "pass",
+  "checkedAt": "2026-06-03T04:10:20.670Z",
+  "workspace": "/Users/soldier/free-code/packages/insurance-ppt/outputs/aia_global_flexi_formal_v1_1780459665059_pipeline/template-clone/chinese-savings",
+  "mapPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/aia_global_flexi_formal_v1_1780459665059_pipeline/template-clone/chinese-savings/template-frame-map.json",
+  "inspectPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/aia_global_flexi_formal_v1_1780459665059_pipeline/template-clone/chinese-savings/template-inspect/template-inspect.ndjson",
+  "sourceSlideCount": 27,
+  "issueCount": 0,
+  "issues": []
+}

@@ -1,0 +1,1126 @@
+{"kind":"slide","id":"sl/2x4nap4r","slide":2,"title":"2026/06/01","textShapes":3}
+{"kind":"textbox","id":"sh/cvixczed","slide":2,"textChars":10,"textLines":1}
+{"kind":"textbox","id":"sh/5gbq1ory","slide":2,"textChars":10,"textLines":1}
+{"kind":"textbox","id":"sh/udg7adsj","slide":2,"textChars":4,"textLines":1}
+{"kind":"slide","id":"sl/pg3ex0nu","slide":3,"title":"关于我们","textShapes":15}
+{"kind":"shape","id":"sh/g3ex0nux","slide":3,"name":"任意多边形 2","bbox":[56,40,1168,48]}
+{"kind":"shape","id":"sh/r65wjudg","slide":3,"name":"任意多边形 3","bbox":[56,40,4,48]}
+{"kind":"textbox","id":"sh/9cvixcze","slide":3,"textChars":4,"textLines":1}
+{"kind":"shape","id":"sh/gr2p8nqx","slide":3,"name":"任意多边形 6","bbox":[187,154.2,187.93,58.53]}
+{"kind":"textbox","id":"sh/rytsvu9k","slide":3,"textChars":3,"textLines":1}
+{"kind":"textbox","id":"sh/yd0z6103","slide":3,"textChars":4,"textLines":1}
+{"kind":"shape","id":"sh/wb2hwfyx","slide":3,"name":"任意多边形 9","bbox":[506,154.2,243.87,58.53]}
+{"kind":"textbox","id":"sh/lwval87e","slide":3,"textChars":5,"textLines":1}
+{"kind":"textbox","id":"sh/e9cvixcz","slide":3,"textChars":5,"textLines":1}
+{"kind":"shape","id":"sh/3q5o7qpg","slide":3,"name":"任意多边形 12","bbox":[880.93,154.2,212,58.53]}
+{"kind":"textbox","id":"sh/w3m94fu1","slide":3,"textChars":2,"textLines":1}
+{"kind":"textbox","id":"sh/loj2t83i","slide":3,"textChars":6,"textLines":1}
+{"kind":"shape","id":"sh/ex0nuxc3","slide":3,"name":"任意多边形 15","bbox":[60.47,275.47,569,191.53]}
+{"kind":"shape","id":"sh/3itgfmlk","slide":3,"name":"任意多边形 16","bbox":[81,349.2,44,44]}
+{"kind":"textbox","id":"sh/lkjm1cfa","slide":3,"textChars":4,"textLines":1}
+{"kind":"textbox","id":"sh/lc7u54zi","slide":3,"textChars":28,"textLines":1}
+{"kind":"shape","id":"sh/wra5gbq1","slide":3,"name":"任意多边形 20","bbox":[650.47,275.47,569,191.53]}
+{"kind":"shape","id":"sh/36hcrmhk","slide":3,"name":"任意多边形 21","bbox":[671,349.2,44,44]}
+{"kind":"textbox","id":"sh/l0rqd4vm","slide":3,"textChars":4,"textLines":1}
+{"kind":"textbox","id":"sh/wfyxobm5","slide":3,"textChars":23,"textLines":1}
+{"kind":"shape","id":"sh/7u54zido","slide":3,"name":"任意多边形 25","bbox":[60.47,488,569,191.47]}
+{"kind":"shape","id":"sh/ed8bat47","slide":3,"name":"任意多边形 26","bbox":[81,561.73,44,44]}
+{"kind":"textbox","id":"sh/w7mp0bi9","slide":3,"textChars":4,"textLines":1}
+{"kind":"textbox","id":"sh/65wjudg7","slide":3,"textChars":26,"textLines":1}
+{"kind":"shape","id":"sh/zqtcj6to","slide":3,"name":"任意多边形 30","bbox":[650.47,488,569,191.47]}
+{"kind":"shape","id":"sh/obm58z25","slide":3,"name":"任意多边形 31","bbox":[671,561.73,44,44]}
+{"kind":"textbox","id":"sh/6xkf6dcb","slide":3,"textChars":4,"textLines":1}
+{"kind":"textbox","id":"sh/zed8v6ps","slide":3,"textChars":26,"textLines":1}
+{"kind":"image","id":"im/rytsvu9k","slide":3,"name":"图片 17","bbox":[90.47,361.2,25,20]}
+{"kind":"image","id":"im/yd0z6103","slide":3,"name":"图片 22","bbox":[683,361.2,20,20]}
+{"kind":"image","id":"im/9cvixcze","slide":3,"name":"图片 27","bbox":[93,573.73,20,20]}
+{"kind":"image","id":"im/gr2p8nqx","slide":3,"name":"图片 32","bbox":[683,573.73,20,20]}
+{"kind":"slide","id":"sl/s72x4nap","slide":4,"title":"我们的服务体系","textShapes":22}
+{"kind":"shape","id":"sh/dsji5sne","slide":4,"name":"任意多边形 2","bbox":[56,40,1168,48]}
+{"kind":"shape","id":"sh/6dcbulwv","slide":4,"name":"任意多边形 3","bbox":[56,40,4,48]}
+{"kind":"textbox","id":"sh/oj2t83it","slide":4,"textChars":7,"textLines":1}
+{"kind":"textbox","id":"sh/i5sneloj","slide":4,"textChars":20,"textLines":1}
+{"kind":"shape","id":"sh/d4vmtwra","slide":4,"name":"任意多边形 6","bbox":[60.47,116.47,565,173.67]}
+{"kind":"shape","id":"sh/6hcrmhk3","slide":4,"name":"任意多边形 7","bbox":[81,138.4,104,34.47]}
+{"kind":"textbox","id":"sh/z25kb6xk","slide":4,"textChars":5,"textLines":1}
+{"kind":"textbox","id":"sh/vy90je9c","slide":4,"textChars":5,"textLines":1}
+{"kind":"shape","id":"sh/6dcbulwv","slide":4,"name":"任意多边形 10","bbox":[81,217.47,6,6]}
+{"kind":"textbox","id":"sh/d4vmtwra","slide":4,"textChars":16,"textLines":1}
+{"kind":"shape","id":"sh/oj2t83it","slide":4,"name":"任意多边形 12","bbox":[81,251.93,6,6]}
+{"kind":"textbox","id":"sh/vmtwra5g","slide":4,"textChars":13,"textLines":1}
+{"kind":"shape","id":"sh/61032lsz","slide":4,"name":"任意多边形 14","bbox":[60.47,311.13,565,173.67]}
+{"kind":"shape","id":"sh/dsji5sne","slide":4,"name":"任意多边形 15","bbox":[81,333.07,104,34.47]}
+{"kind":"textbox","id":"sh/o7qpg3ex","slide":4,"textChars":5,"textLines":1}
+{"kind":"textbox","id":"sh/vahoza1g","slide":4,"textChars":5,"textLines":1}
+{"kind":"shape","id":"sh/6tovahoz","slide":4,"name":"任意多边形 18","bbox":[81,412.13,6,6]}
+{"kind":"textbox","id":"sh/epkzupwb","slide":4,"textChars":14,"textLines":1}
+{"kind":"shape","id":"sh/7adsji5s","slide":4,"name":"任意多边形 20","bbox":[81,446.6,6,6]}
+{"kind":"textbox","id":"sh/wval87ed","slide":4,"textChars":16,"textLines":1}
+{"kind":"shape","id":"sh/pg3ex0nu","slide":4,"name":"任意多边形 22","bbox":[60.47,505.8,565,173.67]}
+{"kind":"shape","id":"sh/e1w7mp0b","slide":4,"name":"任意多边形 23","bbox":[81,527.73,104,34.47]}
+{"kind":"textbox","id":"sh/7mp0bi9s","slide":4,"textChars":5,"textLines":1}
+{"kind":"textbox","id":"sh/w7mp0bi9","slide":4,"textChars":5,"textLines":1}
+{"kind":"shape","id":"sh/psfil0rq","slide":4,"name":"任意多边形 26","bbox":[81,606.8,6,6]}
+{"kind":"textbox","id":"sh/ed8bat47","slide":4,"textChars":16,"textLines":1}
+{"kind":"shape","id":"sh/7u54zido","slide":4,"name":"任意多边形 28","bbox":[81,641.27,6,6]}
+{"kind":"textbox","id":"sh/twra5gbq","slide":4,"textChars":16,"textLines":1}
+{"kind":"shape","id":"sh/4byhgn29","slide":4,"name":"任意多边形 30","bbox":[654.47,116.47,565,107.4]}
+{"kind":"shape","id":"sh/bq1oryts","slide":4,"name":"任意多边形 31","bbox":[675,136.67,15,15]}
+{"kind":"textbox","id":"sh/t83itgfm","slide":4,"textChars":9,"textLines":1}
+{"kind":"textbox","id":"sh/4nap4r65","slide":4,"textChars":51,"textLines":1}
+{"kind":"shape","id":"sh/b2hwfyxo","slide":4,"name":"任意多边形 35","bbox":[654.47,244.87,565,107.33]}
+{"kind":"shape","id":"sh/mhk3q5o7","slide":4,"name":"任意多边形 36","bbox":[675,265,15,15]}
+{"kind":"textbox","id":"sh/4vmtwra5","slide":4,"textChars":10,"textLines":1}
+{"kind":"textbox","id":"sh/c3ylc7u5","slide":4,"textChars":50,"textLines":1}
+{"kind":"shape","id":"sh/1kre1w7m","slide":4,"name":"任意多边形 40","bbox":[654.47,373.2,565,107.4]}
+{"kind":"shape","id":"sh/uxc3ylc7","slide":4,"name":"任意多边形 41","bbox":[675,395.93,15,15]}
+{"kind":"textbox","id":"sh/crmhk3q5","slide":4,"textChars":8,"textLines":1}
+{"kind":"textbox","id":"sh/1cfa9w3m","slide":4,"textChars":48,"textLines":1}
+{"kind":"shape","id":"sh/ulwval87","slide":4,"name":"任意多边形 45","bbox":[654.47,501.6,565,107.4]}
+{"kind":"shape","id":"sh/j6tovaho","slide":4,"name":"任意多边形 46","bbox":[675,521.8,15,15]}
+{"kind":"textbox","id":"sh/18jqh0fe","slide":4,"textChars":7,"textLines":1}
+{"kind":"textbox","id":"sh/7qpg3ex0","slide":4,"textChars":49,"textLines":1}
+{"kind":"image","id":"im/eloj2t83","slide":4,"name":"图片 32","bbox":[677.47,138.67,11.53,10.47]}
+{"kind":"image","id":"im/36hcrmhk","slide":4,"name":"图片 37","bbox":[678,267,9,10.53]}
+{"kind":"image","id":"im/wfyxobm5","slide":4,"name":"图片 42","bbox":[678,397.93,9,10.53]}
+{"kind":"image","id":"im/l0rqd4vm","slide":4,"name":"图片 47","bbox":[678,523.8,9,10.47]}
+{"kind":"slide","id":"sl/val87ed8","slide":5,"title":"市场洞察：高净值家庭的传承挑战","textShapes":18}
+{"kind":"shape","id":"sh/je9cvixc","slide":5,"name":"任意多边形 2","bbox":[56,40,1168,48]}
+{"kind":"shape","id":"sh/87ed8bat","slide":5,"name":"任意多边形 3","bbox":[56,40,4,48]}
+{"kind":"textbox","id":"sh/q1orytsv","slide":5,"textChars":15,"textLines":1}
+{"kind":"shape","id":"sh/fmlkjm1c","slide":5,"name":"任意多边形 6","bbox":[60,116,1160,164.33]}
+{"kind":"shape","id":"sh/8jqh0fep","slide":5,"name":"任意多边形 7","bbox":[448,172.13,52,52]}
+{"kind":"textbox","id":"sh/1w7mp0bi","slide":5,"textChars":10,"textLines":1}
+{"kind":"shape","id":"sh/wval87ed","slide":5,"name":"任意多边形 36","bbox":[947,304.33,273,375.67]}
+{"kind":"textbox","id":"sh/36hcrmhk","slide":5,"textChars":6,"textLines":1}
+{"kind":"shape","id":"sh/eloj2t83","slide":5,"name":"任意多边形 38","bbox":[963,460.4,6,6]}
+{"kind":"textbox","id":"sh/yhgn29gr","slide":5,"textChars":15,"textLines":1}
+{"kind":"shape","id":"sh/n29gr2p8","slide":5,"name":"任意多边形 40","bbox":[963,521.4,6,6]}
+{"kind":"textbox","id":"sh/gn29gr2p","slide":5,"textChars":13,"textLines":1}
+{"kind":"textbox","id":"sh/58z25kb6","slide":5,"textChars":11,"textLines":1}
+{"kind":"shape","id":"sh/8bat47y1","slide":5,"name":"任意多边形 10","bbox":[60.47,304.87,567,374.6]}
+{"kind":"shape","id":"sh/jqh0fepk","slide":5,"name":"任意多边形 11","bbox":[81,433.13,44,44]}
+{"kind":"textbox","id":"sh/18jqh0fe","slide":5,"textChars":8,"textLines":1}
+{"kind":"textbox","id":"sh/8nqxs72x","slide":5,"textChars":26,"textLines":1}
+{"kind":"shape","id":"sh/j2t83itg","slide":5,"name":"任意多边形 15","bbox":[81,520.4,44,44]}
+{"kind":"textbox","id":"sh/1cfa9w3m","slide":5,"textChars":6,"textLines":1}
+{"kind":"textbox","id":"sh/crmhk3q5","slide":5,"textChars":22,"textLines":1}
+{"kind":"shape","id":"sh/sfil0rqd","slide":5,"name":"任意多边形 19","bbox":[652.47,304.87,274,374.6]}
+{"kind":"shape","id":"sh/h0fepkzu","slide":5,"name":"任意多边形 20","bbox":[669,339.07,44,44]}
+{"kind":"textbox","id":"sh/zupwb2hw","slide":5,"textChars":4,"textLines":1}
+{"kind":"textbox","id":"sh/orytsvu9","slide":5,"textChars":13,"textLines":1}
+{"kind":"shape","id":"sh/hcrmhk3q","slide":5,"name":"任意多边形 24","bbox":[669,426.47,44,44]}
+{"kind":"textbox","id":"sh/z61032ls","slide":5,"textChars":4,"textLines":1}
+{"kind":"textbox","id":"sh/oza1gvy9","slide":5,"textChars":12,"textLines":1}
+{"kind":"shape","id":"sh/hk3q5o7q","slide":5,"name":"任意多边形 28","bbox":[669,513.87,44,44]}
+{"kind":"textbox","id":"sh/e1w7mp0b","slide":5,"textChars":4,"textLines":1}
+{"kind":"textbox","id":"sh/psfil0rq","slide":5,"textChars":10,"textLines":1}
+{"kind":"shape","id":"sh/w7mp0bi9","slide":5,"name":"任意多边形 32","bbox":[669,601.27,44,44]}
+{"kind":"textbox","id":"sh/epkzupwb","slide":5,"textChars":4,"textLines":1}
+{"kind":"textbox","id":"sh/pg3ex0nu","slide":5,"textChars":13,"textLines":1}
+{"kind":"image","id":"im/18jqh0fe","slide":5,"name":"图片 8","bbox":[461.47,185.67,25,25]}
+{"kind":"image","id":"im/8nqxs72x","slide":5,"name":"图片 12","bbox":[91.73,445.13,22.47,20]}
+{"kind":"image","id":"im/j2t83itg","slide":5,"name":"图片 16","bbox":[90.47,532.4,25,20]}
+{"kind":"image","id":"im/qh0fepkz","slide":5,"name":"图片 21","bbox":[680.47,350.53,21,21]}
+{"kind":"image","id":"im/1cfa9w3m","slide":5,"name":"图片 25","bbox":[680.47,437.93,21,21]}
+{"kind":"image","id":"im/crmhk3q5","slide":5,"name":"图片 29","bbox":[680.47,525.33,21,21]}
+{"kind":"image","id":"im/mp0bi9s3","slide":5,"name":"图片 33","bbox":[680.47,612.73,21,21]}
+{"kind":"slide","id":"sl/mlkjm1cf","slide":6,"title":"产品定位：家族传承的智慧之选","textShapes":18}
+{"kind":"shape","id":"sh/dg7adsji","slide":6,"name":"任意多边形 2","bbox":[56,40,1168,48]}
+{"kind":"shape","id":"sh/6hcrmhk3","slide":6,"name":"任意多边形 3","bbox":[56,40,4,48]}
+{"kind":"textbox","id":"sh/onyd0z61","slide":6,"textChars":14,"textLines":1}
+{"kind":"textbox","id":"sh/n29gr2p8","slide":6,"textChars":6,"textLines":1}
+{"kind":"shape","id":"sh/d8v6psfi","slide":6,"name":"任意多边形 6","bbox":[60.47,116.47,331.4,563]}
+{"kind":"shape","id":"sh/6dcbulwv","slide":6,"name":"任意多边形 7","bbox":[200.13,226,52,52]}
+{"kind":"textbox","id":"sh/nuxc3ylc","slide":6,"textChars":4,"textLines":1}
+{"kind":"textbox","id":"sh/y90je9cv","slide":6,"textChars":43,"textLines":1}
+{"kind":"shape","id":"sh/5wjudg7a","slide":6,"name":"任意多边形 11","bbox":[154.13,517,144,53]}
+{"kind":"textbox","id":"sh/gbq1oryt","slide":6,"textChars":4,"textLines":1}
+{"kind":"shape","id":"sh/yhgn29gr","slide":6,"name":"任意多边形 14","bbox":[418.87,176,386.8,110.07]}
+{"kind":"shape","id":"sh/58z25kb6","slide":6,"name":"任意多边形 15","bbox":[439.33,196.47,44,44]}
+{"kind":"textbox","id":"sh/neloj2t8","slide":6,"textChars":5,"textLines":1}
+{"kind":"textbox","id":"sh/ytsvu9kn","slide":6,"textChars":17,"textLines":1}
+{"kind":"notice","message":"Truncated: omitted 866 lines. Increase maxChars or narrow target."}
+{"kind": "shape", "id": "2", "slide": 1, "name": "Text Placeholder 1", "text": "2026/06/01", "bbox": [106.67, 173.33, 640.11, 48]}
+{"kind": "shape", "id": "3", "slide": 1, "name": "标题 1", "text": "家族传承财富保障方案", "bbox": [106.67, 226.67, 666.94, 266.67]}
+{"kind": "shape", "id": "4", "slide": 1, "name": "署名占位符 10", "text": "汇报人：", "bbox": [106.67, 498.67, 266.76, 56]}
+{"kind": "shape", "id": "3", "slide": 2, "name": "任意多边形 2", "text": "", "bbox": [56, 40, 1168, 48]}
+{"kind": "shape", "id": "4", "slide": 2, "name": "任意多边形 3", "text": "", "bbox": [56, 40, 4, 48]}
+{"kind": "shape", "id": "6", "slide": 2, "name": "文本框 5", "text": "关于我们", "bbox": [74, 37.5, 1150, 52.5]}
+{"kind": "shape", "id": "7", "slide": 2, "name": "任意多边形 6", "text": "", "bbox": [187, 154.2, 187.93, 58.53]}
+{"kind": "shape", "id": "8", "slide": 2, "name": "文本框 7", "text": "15年", "bbox": [207.04, 162.25, 103.94, 42.5]}
+{"kind": "shape", "id": "9", "slide": 2, "name": "文本框 8", "text": "行业深耕", "bbox": [290.98, 173, 80.01, 21]}
+{"kind": "shape", "id": "10", "slide": 2, "name": "任意多边形 9", "text": "", "bbox": [506, 154.2, 243.87, 58.53]}
+{"kind": "shape", "id": "11", "slide": 2, "name": "文本框 10", "text": "5000位", "bbox": [526.02, 162.25, 143.87, 42.5]}
+{"kind": "shape", "id": "12", "slide": 2, "name": "文本框 11", "text": "高净值客户", "bbox": [649.9, 173, 96.01, 21]}
+{"kind": "shape", "id": "13", "slide": 2, "name": "任意多边形 12", "text": "", "bbox": [880.93, 154.2, 212, 58.53]}
+{"kind": "shape", "id": "14", "slide": 2, "name": "文本框 13", "text": "千亿", "bbox": [900.94, 162.25, 96, 42.5]}
+{"kind": "shape", "id": "15", "slide": 2, "name": "文本框 14", "text": "管理资产规模", "bbox": [976.94, 173, 112.01, 21]}
+{"kind": "shape", "id": "16", "slide": 2, "name": "任意多边形 15", "text": "", "bbox": [60.47, 275.47, 569, 191.53]}
+{"kind": "shape", "id": "17", "slide": 2, "name": "任意多边形 16", "text": "", "bbox": [81, 349.2, 44, 44]}
+{"kind": "image", "id": "36", "slide": 2, "name": "图片 17", "text": "", "bbox": [90.47, 361.2, 25, 20]}
+{"kind": "shape", "id": "19", "slide": 2, "name": "文本框 18", "text": "专业团队", "bbox": [141, 324.7, 468, 31.5]}
+{"kind": "shape", "id": "20", "slide": 2, "name": "文本框 19", "text": "由资深金融专家、税务筹划师、法律顾问组成的复合型服务团队", "bbox": [141, 358.6, 468.01, 60]}
+{"kind": "shape", "id": "21", "slide": 2, "name": "任意多边形 20", "text": "", "bbox": [650.47, 275.47, 569, 191.53]}
+{"kind": "shape", "id": "22", "slide": 2, "name": "任意多边形 21", "text": "", "bbox": [671, 349.2, 44, 44]}
+{"kind": "image", "id": "37", "slide": 2, "name": "图片 22", "text": "", "bbox": [683, 361.2, 20, 20]}
+{"kind": "shape", "id": "24", "slide": 2, "name": "文本框 23", "text": "严选产品", "bbox": [731, 339.1, 468, 31.5]}
+{"kind": "shape", "id": "25", "slide": 2, "name": "文本框 24", "text": "与国内外顶尖金融机构合作，精选优质财富管理工具", "bbox": [731, 373, 468, 31.2]}
+{"kind": "shape", "id": "26", "slide": 2, "name": "任意多边形 25", "text": "", "bbox": [60.47, 488, 569, 191.47]}
+{"kind": "shape", "id": "27", "slide": 2, "name": "任意多边形 26", "text": "", "bbox": [81, 561.73, 44, 44]}
+{"kind": "image", "id": "38", "slide": 2, "name": "图片 27", "text": "", "bbox": [93, 573.73, 20, 20]}
+{"kind": "shape", "id": "29", "slide": 2, "name": "文本框 28", "text": "定制方案", "bbox": [141, 551.6, 468, 31.5]}
+{"kind": "shape", "id": "30", "slide": 2, "name": "文本框 29", "text": "根据客户家庭结构、财富规模、传承需求量身定制解决方案", "bbox": [141, 585.5, 504.01, 31.2]}
+{"kind": "shape", "id": "31", "slide": 2, "name": "任意多边形 30", "text": "", "bbox": [650.47, 488, 569, 191.47]}
+{"kind": "shape", "id": "32", "slide": 2, "name": "任意多边形 31", "text": "", "bbox": [671, 561.73, 44, 44]}
+{"kind": "image", "id": "39", "slide": 2, "name": "图片 32", "text": "", "bbox": [683, 573.73, 20, 20]}
+{"kind": "shape", "id": "34", "slide": 2, "name": "文本框 33", "text": "服务理念", "bbox": [731, 551.6, 468, 31.5]}
+{"kind": "shape", "id": "35", "slide": 2, "name": "文本框 34", "text": "以客户利益为核心，以专业能力为基石，以长期陪伴为承诺", "bbox": [731, 585.5, 504.01, 31.2]}
+{"kind": "shape", "id": "3", "slide": 3, "name": "任意多边形 2", "text": "", "bbox": [56, 40, 1168, 48]}
+{"kind": "shape", "id": "4", "slide": 3, "name": "任意多边形 3", "text": "", "bbox": [56, 40, 4, 48]}
+{"kind": "shape", "id": "6", "slide": 3, "name": "文本框 5", "text": "我们的服务体系", "bbox": [74, 37.5, 1150, 52.5]}
+{"kind": "shape", "id": "51", "slide": 3, "name": "文本框 50", "text": "全周期陪伴 · 专业化服务 · 尊享体验", "bbox": [754, 641.5, 366, 26.5]}
+{"kind": "shape", "id": "7", "slide": 3, "name": "任意多边形 6", "text": "", "bbox": [60.47, 116.47, 565, 173.67]}
+{"kind": "shape", "id": "8", "slide": 3, "name": "任意多边形 7", "text": "", "bbox": [81, 138.4, 104, 34.47]}
+{"kind": "shape", "id": "9", "slide": 3, "name": "文本框 8", "text": "财富积累期", "bbox": [93, 146.41, 96.01, 21]}
+{"kind": "shape", "id": "10", "slide": 3, "name": "文本框 9", "text": "财富积累期", "bbox": [81, 174.33, 524, 31.5]}
+{"kind": "shape", "id": "11", "slide": 3, "name": "任意多边形 10", "text": "", "bbox": [81, 217.47, 6, 6]}
+{"kind": "shape", "id": "12", "slide": 3, "name": "文本框 11", "text": "科学资产配置，构建多元化投资组合", "bbox": [95, 207.24, 340, 26.5]}
+{"kind": "shape", "id": "13", "slide": 3, "name": "任意多边形 12", "text": "", "bbox": [81, 251.93, 6, 6]}
+{"kind": "shape", "id": "14", "slide": 3, "name": "文本框 13", "text": "专业投资规划，把握市场机遇", "bbox": [95, 241.74, 280, 26.5]}
+{"kind": "shape", "id": "15", "slide": 3, "name": "任意多边形 14", "text": "", "bbox": [60.47, 311.13, 565, 173.67]}
+{"kind": "shape", "id": "16", "slide": 3, "name": "任意多边形 15", "text": "", "bbox": [81, 333.07, 104, 34.47]}
+{"kind": "shape", "id": "17", "slide": 3, "name": "文本框 16", "text": "财富保值期", "bbox": [93, 341.08, 96.01, 21]}
+{"kind": "shape", "id": "18", "slide": 3, "name": "文本框 17", "text": "财富保值期", "bbox": [81, 368.99, 524, 31.5]}
+{"kind": "shape", "id": "19", "slide": 3, "name": "任意多边形 18", "text": "", "bbox": [81, 412.13, 6, 6]}
+{"kind": "shape", "id": "20", "slide": 3, "name": "文本框 19", "text": "稳健增值策略，平衡风险与收益", "bbox": [95, 401.91, 300, 26.5]}
+{"kind": "shape", "id": "21", "slide": 3, "name": "任意多边形 20", "text": "", "bbox": [81, 446.6, 6, 6]}
+{"kind": "shape", "id": "22", "slide": 3, "name": "文本框 21", "text": "税务优化与资产隔离，筑牢财富防线", "bbox": [95, 436.41, 340, 26.5]}
+{"kind": "shape", "id": "23", "slide": 3, "name": "任意多边形 22", "text": "", "bbox": [60.47, 505.8, 565, 173.67]}
+{"kind": "shape", "id": "24", "slide": 3, "name": "任意多边形 23", "text": "", "bbox": [81, 527.73, 104, 34.47]}
+{"kind": "shape", "id": "25", "slide": 3, "name": "文本框 24", "text": "财富传承期", "bbox": [93, 535.74, 96.01, 21]}
+{"kind": "shape", "id": "26", "slide": 3, "name": "文本框 25", "text": "财富传承期", "bbox": [81, 563.66, 524, 31.5]}
+{"kind": "shape", "id": "27", "slide": 3, "name": "任意多边形 26", "text": "", "bbox": [81, 606.8, 6, 6]}
+{"kind": "shape", "id": "28", "slide": 3, "name": "文本框 27", "text": "传承规划与家族治理，延续财富价值", "bbox": [95, 596.57, 340, 26.5]}
+{"kind": "shape", "id": "29", "slide": 3, "name": "任意多边形 28", "text": "", "bbox": [81, 641.27, 6, 6]}
+{"kind": "shape", "id": "30", "slide": 3, "name": "文本框 29", "text": "慈善安排，实现社会责任与家族愿景", "bbox": [95, 631.07, 340, 26.5]}
+{"kind": "shape", "id": "31", "slide": 3, "name": "任意多边形 30", "text": "", "bbox": [654.47, 116.47, 565, 107.4]}
+{"kind": "shape", "id": "32", "slide": 3, "name": "任意多边形 31", "text": "", "bbox": [675, 136.67, 15, 15]}
+{"kind": "image", "id": "52", "slide": 3, "name": "图片 32", "text": "", "bbox": [677.47, 138.67, 11.53, 10.47]}
+{"kind": "shape", "id": "34", "slide": 3, "name": "文本框 33", "text": "一对一专属客户经理", "bbox": [702, 130.93, 200, 26.5]}
+{"kind": "shape", "id": "35", "slide": 3, "name": "文本框 34", "text": "每位客户配备资深客户经理，深入了解您的财务状况与人生目标，提供量身定制的财富管理方案与全程陪伴式服务。", "bbox": [719, 149.86, 480, 98.5]}
+{"kind": "shape", "id": "36", "slide": 3, "name": "任意多边形 35", "text": "", "bbox": [654.47, 244.87, 565, 107.33]}
+{"kind": "shape", "id": "37", "slide": 3, "name": "任意多边形 36", "text": "", "bbox": [675, 265, 15, 15]}
+{"kind": "image", "id": "53", "slide": 3, "name": "图片 37", "text": "", "bbox": [678, 267, 9, 10.53]}
+{"kind": "shape", "id": "39", "slide": 3, "name": "文本框 38", "text": "7×24小时服务热线", "bbox": [702, 259.3, 189.92, 26.5]}
+{"kind": "shape", "id": "40", "slide": 3, "name": "文本框 39", "text": "全天候专业团队在线响应，无论市场波动还是紧急需求，第一时间为您提供专业咨询与解决方案，守护财富安全。", "bbox": [719, 278.23, 480, 98.5]}
+{"kind": "shape", "id": "41", "slide": 3, "name": "任意多边形 40", "text": "", "bbox": [654.47, 373.2, 565, 107.4]}
+{"kind": "shape", "id": "42", "slide": 3, "name": "任意多边形 41", "text": "", "bbox": [675, 395.93, 15, 15]}
+{"kind": "image", "id": "54", "slide": 3, "name": "图片 42", "text": "", "bbox": [678, 397.93, 9, 10.53]}
+{"kind": "shape", "id": "44", "slide": 3, "name": "文本框 43", "text": "定期财富健康检查", "bbox": [702, 390.22, 180, 26.5]}
+{"kind": "shape", "id": "45", "slide": 3, "name": "文本框 44", "text": "每季度全面评估您的资产配置、风险敞口与收益表现，动态调整策略，确保财富组合始终处于最优运行状态。", "bbox": [719, 411.69, 490, 66.5]}
+{"kind": "shape", "id": "46", "slide": 3, "name": "任意多边形 45", "text": "", "bbox": [654.47, 501.6, 565, 107.4]}
+{"kind": "shape", "id": "47", "slide": 3, "name": "任意多边形 46", "text": "", "bbox": [675, 521.8, 15, 15]}
+{"kind": "image", "id": "55", "slide": 3, "name": "图片 47", "text": "", "bbox": [678, 523.8, 9, 10.47]}
+{"kind": "shape", "id": "49", "slide": 3, "name": "文本框 48", "text": "年度策略报告会", "bbox": [702, 516.06, 160, 26.5]}
+{"kind": "shape", "id": "50", "slide": 3, "name": "文本框 49", "text": "汇聚顶级投研团队，深度解读宏观经济趋势与投资机会，与您共同制定下一年度财富增长蓝图，把握时代机遇。", "bbox": [719, 534.98, 480, 98.5]}
+{"kind": "shape", "id": "3", "slide": 4, "name": "任意多边形 2", "text": "", "bbox": [56, 40, 1168, 48]}
+{"kind": "shape", "id": "4", "slide": 4, "name": "任意多边形 3", "text": "", "bbox": [56, 40, 4, 48]}
+{"kind": "shape", "id": "6", "slide": 4, "name": "文本框 5", "text": "市场洞察：高净值家庭的传承挑战", "bbox": [74, 37.5, 1150, 52.5]}
+{"kind": "shape", "id": "7", "slide": 4, "name": "任意多边形 6", "text": "", "bbox": [60, 116, 1160, 164.33]}
+{"kind": "shape", "id": "8", "slide": 4, "name": "任意多边形 7", "text": "", "bbox": [448, 172.13, 52, 52]}
+{"kind": "image", "id": "44", "slide": 4, "name": "图片 8", "text": "", "bbox": [461.47, 185.67, 25, 25]}
+{"kind": "shape", "id": "10", "slide": 4, "name": "文本框 9", "text": "传承之路面临多重挑战", "bbox": [496, 176.94, 352, 42.5]}
+{"kind": "shape", "id": "37", "slide": 4, "name": "任意多边形 36", "text": "", "bbox": [947, 304.33, 273, 375.67]}
+{"kind": "shape", "id": "38", "slide": 4, "name": "文本框 37", "text": "亟需专业工具", "bbox": [963, 393.45, 241, 31.5]}
+{"kind": "shape", "id": "39", "slide": 4, "name": "任意多边形 38", "text": "", "bbox": [963, 460.4, 6, 6]}
+{"kind": "shape", "id": "40", "slide": 4, "name": "文本框 39", "text": "专业、稳健、灵活的财富传承方案", "bbox": [977, 436.94, 227, 53]}
+{"kind": "shape", "id": "41", "slide": 4, "name": "任意多边形 40", "text": "", "bbox": [963, 521.4, 6, 6]}
+{"kind": "shape", "id": "42", "slide": 4, "name": "文本框 41", "text": "实现资产保值增值与有序传承", "bbox": [977, 497.94, 227, 53]}
+{"kind": "shape", "id": "43", "slide": 4, "name": "文本框 42", "text": "双重目标 · 一站达成", "bbox": [987.65, 566.94, 191.7, 24]}
+{"kind": "shape", "id": "11", "slide": 4, "name": "任意多边形 10", "text": "", "bbox": [60.47, 304.87, 567, 374.6]}
+{"kind": "shape", "id": "12", "slide": 4, "name": "任意多边形 11", "text": "", "bbox": [81, 433.13, 44, 44]}
+{"kind": "image", "id": "45", "slide": 4, "name": "图片 12", "text": "", "bbox": [91.73, 445.13, 22.47, 20]}
+{"kind": "shape", "id": "14", "slide": 4, "name": "文本框 13", "text": "市场规模持续增长", "bbox": [137, 412.94, 470, 31.5]}
+{"kind": "shape", "id": "15", "slide": 4, "name": "文本框 14", "text": "中国高净值人群规模持续扩大，家族财富传承需求日益迫切", "bbox": [137, 444.45, 470, 53]}
+{"kind": "shape", "id": "16", "slide": 4, "name": "任意多边形 15", "text": "", "bbox": [81, 520.4, 44, 44]}
+{"kind": "image", "id": "46", "slide": 4, "name": "图片 16", "text": "", "bbox": [90.47, 532.4, 25, 20]}
+{"kind": "shape", "id": "18", "slide": 4, "name": "文本框 17", "text": "传承需求凸显", "bbox": [137, 513.45, 470, 31.5]}
+{"kind": "shape", "id": "19", "slide": 4, "name": "文本框 18", "text": "代际交接窗口期来临，财富有序传承成为核心议题", "bbox": [137, 544.94, 480, 26.5]}
+{"kind": "shape", "id": "20", "slide": 4, "name": "任意多边形 19", "text": "", "bbox": [652.47, 304.87, 274, 374.6]}
+{"kind": "shape", "id": "21", "slide": 4, "name": "任意多边形 20", "text": "", "bbox": [669, 339.07, 44, 44]}
+{"kind": "image", "id": "47", "slide": 4, "name": "图片 21", "text": "", "bbox": [680.47, 350.53, 21, 21]}
+{"kind": "shape", "id": "23", "slide": 4, "name": "文本框 22", "text": "税务风险", "bbox": [725, 328.09, 185, 24]}
+{"kind": "shape", "id": "24", "slide": 4, "name": "文本框 23", "text": "遗产税、赠与税政策不确定性", "bbox": [725, 352.09, 185, 42]}
+{"kind": "shape", "id": "25", "slide": 4, "name": "任意多边形 24", "text": "", "bbox": [669, 426.47, 44, 44]}
+{"kind": "image", "id": "48", "slide": 4, "name": "图片 25", "text": "", "bbox": [680.47, 437.93, 21, 21]}
+{"kind": "shape", "id": "27", "slide": 4, "name": "文本框 26", "text": "法律风险", "bbox": [725, 415.49, 185, 24]}
+{"kind": "shape", "id": "28", "slide": 4, "name": "文本框 27", "text": "婚姻、债务、继承纠纷频发", "bbox": [725, 439.49, 185, 42]}
+{"kind": "shape", "id": "29", "slide": 4, "name": "任意多边形 28", "text": "", "bbox": [669, 513.87, 44, 44]}
+{"kind": "image", "id": "49", "slide": 4, "name": "图片 29", "text": "", "bbox": [680.47, 525.33, 21, 21]}
+{"kind": "shape", "id": "31", "slide": 4, "name": "文本框 30", "text": "管理风险", "bbox": [725, 513.39, 160.01, 24]}
+{"kind": "shape", "id": "32", "slide": 4, "name": "文本框 31", "text": "后代缺乏财富管理能力", "bbox": [725, 537.39, 176.01, 21]}
+{"kind": "shape", "id": "33", "slide": 4, "name": "任意多边形 32", "text": "", "bbox": [669, 601.27, 44, 44]}
+{"kind": "image", "id": "50", "slide": 4, "name": "图片 33", "text": "", "bbox": [680.47, 612.73, 21, 21]}
+{"kind": "shape", "id": "35", "slide": 4, "name": "文本框 34", "text": "分散风险", "bbox": [725, 590.29, 185, 24]}
+{"kind": "shape", "id": "36", "slide": 4, "name": "文本框 35", "text": "资产配置分散，难以统一管理", "bbox": [725, 614.29, 185, 42]}
+{"kind": "shape", "id": "3", "slide": 5, "name": "任意多边形 2", "text": "", "bbox": [56, 40, 1168, 48]}
+{"kind": "shape", "id": "4", "slide": 5, "name": "任意多边形 3", "text": "", "bbox": [56, 40, 4, 48]}
+{"kind": "shape", "id": "6", "slide": 5, "name": "文本框 5", "text": "产品定位：家族传承的智慧之选", "bbox": [74, 37.5, 1150, 52.5]}
+{"kind": "shape", "id": "14", "slide": 5, "name": "文本框 13", "text": "核心价值主张", "bbox": [418.4, 116, 387.8, 31.5]}
+{"kind": "shape", "id": "7", "slide": 5, "name": "任意多边形 6", "text": "", "bbox": [60.47, 116.47, 331.4, 563]}
+{"kind": "shape", "id": "8", "slide": 5, "name": "任意多边形 7", "text": "", "bbox": [200.13, 226, 52, 52]}
+{"kind": "image", "id": "49", "slide": 5, "name": "图片 8", "text": "", "bbox": [213.13, 238.47, 26, 26.53]}
+{"kind": "shape", "id": "10", "slide": 5, "name": "文本框 9", "text": "产品本质", "bbox": [156.19, 292.3, 140, 38.4]}
+{"kind": "shape", "id": "11", "slide": 5, "name": "文本框 10", "text": "兼具保障与传承功能的终身寿险，通过科学精算设计，为高净值家庭提供长期稳定的财富管理工具", "bbox": [86.19, 343.5, 280, 146.5]}
+{"kind": "shape", "id": "12", "slide": 5, "name": "任意多边形 11", "text": "", "bbox": [154.13, 517, 144, 53]}
+{"kind": "shape", "id": "13", "slide": 5, "name": "文本框 12", "text": "终身寿险", "bbox": [156.19, 525, 140, 37]}
+{"kind": "shape", "id": "15", "slide": 5, "name": "任意多边形 14", "text": "", "bbox": [418.87, 176, 386.8, 110.07]}
+{"kind": "shape", "id": "16", "slide": 5, "name": "任意多边形 15", "text": "", "bbox": [439.33, 196.47, 44, 44]}
+{"kind": "image", "id": "50", "slide": 5, "name": "图片 16", "text": "", "bbox": [452.13, 208, 18.47, 21]}
+{"kind": "shape", "id": "18", "slide": 5, "name": "文本框 17", "text": "确定性利益", "bbox": [495.4, 196.5, 289.8, 26.5]}
+{"kind": "shape", "id": "19", "slide": 5, "name": "文本框 18", "text": "合同约定现金价值增长，锁定长期收益", "bbox": [495.4, 223, 289.8, 48]}
+{"kind": "shape", "id": "20", "slide": 5, "name": "任意多边形 19", "text": "", "bbox": [418.87, 307.07, 386.8, 110.13]}
+{"kind": "shape", "id": "21", "slide": 5, "name": "任意多边形 20", "text": "", "bbox": [439.33, 327.6, 44, 44]}
+{"kind": "image", "id": "51", "slide": 5, "name": "图片 21", "text": "", "bbox": [452.13, 339.07, 18.47, 21]}
+{"kind": "shape", "id": "23", "slide": 5, "name": "文本框 22", "text": "灵活性设计", "bbox": [495.4, 327.62, 289.8, 26.5]}
+{"kind": "shape", "id": "24", "slide": 5, "name": "文本框 23", "text": "支持多种提领方式，满足不同人生阶段需求", "bbox": [495.4, 354.13, 289.8, 48]}
+{"kind": "shape", "id": "25", "slide": 5, "name": "任意多边形 24", "text": "", "bbox": [418.87, 438.2, 386.8, 110.13]}
+{"kind": "shape", "id": "26", "slide": 5, "name": "任意多边形 25", "text": "", "bbox": [439.33, 458.73, 44, 44]}
+{"kind": "image", "id": "52", "slide": 5, "name": "图片 26", "text": "", "bbox": [452.13, 470.2, 18.47, 21]}
+{"kind": "shape", "id": "28", "slide": 5, "name": "文本框 27", "text": "传承性安排", "bbox": [495.4, 458.75, 289.8, 26.5]}
+{"kind": "shape", "id": "29", "slide": 5, "name": "文本框 28", "text": "指定受益人，实现定向传承，避免纠纷", "bbox": [495.4, 485.25, 289.8, 48]}
+{"kind": "shape", "id": "30", "slide": 5, "name": "任意多边形 29", "text": "", "bbox": [418.87, 569.33, 386.8, 110.13]}
+{"kind": "shape", "id": "31", "slide": 5, "name": "任意多边形 30", "text": "", "bbox": [439.33, 589.87, 44, 44]}
+{"kind": "image", "id": "53", "slide": 5, "name": "图片 31", "text": "", "bbox": [452.13, 601.33, 18.47, 21]}
+{"kind": "shape", "id": "33", "slide": 5, "name": "文本框 32", "text": "安全性保障", "bbox": [495.4, 589.87, 289.8, 26.5]}
+{"kind": "shape", "id": "34", "slide": 5, "name": "文本框 33", "text": "保险合同法律保护，资产隔离功能显著", "bbox": [495.4, 616.38, 289.8, 48]}
+{"kind": "shape", "id": "35", "slide": 5, "name": "任意多边形 34", "text": "", "bbox": [832.67, 116.47, 386.8, 563]}
+{"kind": "shape", "id": "36", "slide": 5, "name": "任意多边形 35", "text": "", "bbox": [1000.07, 235.47, 52, 52]}
+{"kind": "image", "id": "54", "slide": 5, "name": "图片 36", "text": "", "bbox": [1014.53, 248, 23, 26.47]}
+{"kind": "shape", "id": "38", "slide": 5, "name": "文本框 37", "text": "适用人群", "bbox": [956.09, 301.8, 140, 38.4]}
+{"kind": "shape", "id": "39", "slide": 5, "name": "文本框 38", "text": "追求长期稳健收益、重视家族财富传承、希望实现资产多元化配置的高净值客户", "bbox": [866.09, 353, 320, 98.5]}
+{"kind": "shape", "id": "40", "slide": 5, "name": "任意多边形 39", "text": "", "bbox": [910.07, 478.47, 112, 37]}
+{"kind": "image", "id": "55", "slide": 5, "name": "图片 40", "text": "", "bbox": [924.07, 489, 16, 16]}
+{"kind": "shape", "id": "42", "slide": 5, "name": "文本框 41", "text": "追求稳健", "bbox": [938.09, 486.5, 80.01, 21]}
+{"kind": "shape", "id": "43", "slide": 5, "name": "任意多边形 42", "text": "", "bbox": [1030.07, 478.47, 112, 37]}
+{"kind": "image", "id": "56", "slide": 5, "name": "图片 43", "text": "", "bbox": [1043.07, 489, 18, 16]}
+{"kind": "shape", "id": "45", "slide": 5, "name": "文本框 44", "text": "重视传承", "bbox": [1058.09, 486.5, 80.01, 21]}
+{"kind": "shape", "id": "46", "slide": 5, "name": "任意多边形 45", "text": "", "bbox": [970.07, 523.47, 112, 37]}
+{"kind": "image", "id": "57", "slide": 5, "name": "图片 46", "text": "", "bbox": [984.07, 534, 16, 16]}
+{"kind": "shape", "id": "48", "slide": 5, "name": "文本框 47", "text": "多元配置", "bbox": [998.09, 531.5, 80.01, 21]}
+{"kind": "shape", "id": "3", "slide": 6, "name": "任意多边形 2", "text": "", "bbox": [56, 40, 1168, 48]}
+{"kind": "shape", "id": "4", "slide": 6, "name": "任意多边形 3", "text": "", "bbox": [56, 40, 4, 48]}
+{"kind": "shape", "id": "6", "slide": 6, "name": "文本框 5", "text": "产品亮点一：确定性增长", "bbox": [74, 37.5, 1150, 52.5]}
+{"kind": "shape", "id": "7", "slide": 6, "name": "任意多边形 6", "text": "", "bbox": [60.47, 116.47, 621.6, 423]}
+{"kind": "shape", "id": "8", "slide": 6, "name": "文本框 7", "text": "现金价值三阶段增长趋势", "bbox": [81, 137, 580.6, 31.5]}
+{"kind": "image", "id": "32", "slide": 6, "name": "图片 8", "text": "", "bbox": [81, 180.47, 581, 339]}
+{"kind": "shape", "id": "11", "slide": 6, "name": "任意多边形 10", "text": "", "bbox": [60.47, 560.47, 193.2, 119]}
+{"kind": "shape", "id": "12", "slide": 6, "name": "文本框 11", "text": "前期特征", "bbox": [121.09, 587.5, 90.01, 24]}
+{"kind": "shape", "id": "13", "slide": 6, "name": "文本框 12", "text": "快速积累", "bbox": [101.1, 615.5, 140, 37]}
+{"kind": "shape", "id": "14", "slide": 6, "name": "任意多边形 13", "text": "", "bbox": [274.67, 560.47, 193.2, 119]}
+{"kind": "shape", "id": "15", "slide": 6, "name": "文本框 14", "text": "中期特征", "bbox": [335.3, 587.5, 90.01, 24]}
+{"kind": "shape", "id": "16", "slide": 6, "name": "文本框 15", "text": "复利效应", "bbox": [315.3, 615.5, 140, 37]}
+{"kind": "shape", "id": "17", "slide": 6, "name": "任意多边形 16", "text": "", "bbox": [488.87, 560.47, 193.2, 119]}
+{"kind": "shape", "id": "18", "slide": 6, "name": "文本框 17", "text": "后期特征", "bbox": [549.5, 587.5, 90.01, 24]}
+{"kind": "shape", "id": "19", "slide": 6, "name": "文本框 18", "text": "长期优势", "bbox": [529.51, 615.5, 140, 37]}
+{"kind": "shape", "id": "20", "slide": 6, "name": "任意多边形 19", "text": "", "bbox": [711.07, 116.47, 508.4, 173.67]}
+{"kind": "shape", "id": "21", "slide": 6, "name": "文本框 20", "text": "确定性收益成为稀缺资源", "bbox": [773.3, 181.03, 384, 44.1]}
+{"kind": "shape", "id": "22", "slide": 6, "name": "任意多边形 21", "text": "", "bbox": [711.07, 311.13, 508.4, 173.67]}
+{"kind": "shape", "id": "23", "slide": 6, "name": "任意多边形 22", "text": "", "bbox": [731.6, 375.93, 44, 44]}
+{"kind": "image", "id": "33", "slide": 6, "name": "图片 23", "text": "", "bbox": [743.6, 387.93, 20, 20]}
+{"kind": "shape", "id": "25", "slide": 6, "name": "文本框 24", "text": "合同约定，不受市场波动", "bbox": [787.6, 358.74, 411.4, 26.5]}
+{"kind": "shape", "id": "26", "slide": 6, "name": "文本框 25", "text": "现金价值按合同稳步增长，为客户提供确定的未来收益", "bbox": [787.6, 389.24, 411.4, 48]}
+{"kind": "shape", "id": "27", "slide": 6, "name": "任意多边形 26", "text": "", "bbox": [711.07, 505.8, 508.4, 173.67]}
+{"kind": "shape", "id": "28", "slide": 6, "name": "任意多边形 27", "text": "", "bbox": [731.6, 570.6, 44, 44]}
+{"kind": "image", "id": "34", "slide": 6, "name": "图片 28", "text": "", "bbox": [743.6, 582.6, 20, 20]}
+{"kind": "shape", "id": "30", "slide": 6, "name": "文本框 29", "text": "利率下行环境的安心保障", "bbox": [787.6, 565.41, 360.01, 26.5]}
+{"kind": "shape", "id": "31", "slide": 6, "name": "文本框 30", "text": "在市场不确定性增加时，确定性优势更加凸显", "bbox": [787.6, 595.91, 378.01, 24]}
+{"kind": "shape", "id": "3", "slide": 7, "name": "任意多边形 2", "text": "", "bbox": [56, 40, 1168, 48]}
+{"kind": "shape", "id": "4", "slide": 7, "name": "任意多边形 3", "text": "", "bbox": [56, 40, 4, 48]}
+{"kind": "shape", "id": "6", "slide": 7, "name": "文本框 5", "text": "产品亮点二：灵活提领", "bbox": [74, 37.5, 1150, 52.5]}
+{"kind": "shape", "id": "37", "slide": 7, "name": "任意多边形 36", "text": "", "bbox": [597.33, 584, 622.67, 96]}
+{"kind": "shape", "id": "38", "slide": 7, "name": "任意多边形 37", "text": "", "bbox": [617.33, 610, 44, 44]}
+{"kind": "image", "id": "41", "slide": 7, "name": "图片 38", "text": "", "bbox": [631.33, 621.47, 16, 21]}
+{"kind": "shape", "id": "40", "slide": 7, "name": "文本框 39", "text": "提领优势：规则清晰透明，客户可根据实际需求灵活安排，兼顾流动性与收益性", "bbox": [673.4, 598.5, 526.6, 66.5]}
+{"kind": "shape", "id": "7", "slide": 7, "name": "任意多边形 6", "text": "", "bbox": [60.47, 116.47, 508.4, 173.67]}
+{"kind": "shape", "id": "8", "slide": 7, "name": "任意多边形 7", "text": "", "bbox": [81, 134.13, 80, 34.53]}
+{"kind": "shape", "id": "9", "slide": 7, "name": "文本框 8", "text": "一次性", "bbox": [97, 142.17, 64.01, 21]}
+{"kind": "shape", "id": "10", "slide": 7, "name": "文本框 9", "text": "一次性提领", "bbox": [81, 177.84, 467.4, 31.5]}
+{"kind": "shape", "id": "11", "slide": 7, "name": "文本框 10", "text": "满足大额资金需求，适合购房、创业等一次性大额支出场景", "bbox": [81, 214.66, 467.4, 66.5]}
+{"kind": "shape", "id": "12", "slide": 7, "name": "任意多边形 11", "text": "", "bbox": [60.47, 311.13, 508.4, 173.67]}
+{"kind": "shape", "id": "13", "slide": 7, "name": "任意多边形 12", "text": "", "bbox": [81, 328.8, 64, 34.53]}
+{"kind": "shape", "id": "14", "slide": 7, "name": "文本框 13", "text": "分期", "bbox": [97, 336.84, 48.01, 21]}
+{"kind": "shape", "id": "15", "slide": 7, "name": "文本框 14", "text": "分期提领", "bbox": [81, 372.5, 467.4, 31.5]}
+{"kind": "shape", "id": "16", "slide": 7, "name": "文本框 15", "text": "稳定现金流，支持养老规划，按月/按年领取，保障生活品质", "bbox": [81, 409.33, 467.4, 66.5]}
+{"kind": "shape", "id": "17", "slide": 7, "name": "任意多边形 16", "text": "", "bbox": [60.47, 505.8, 508.4, 173.67]}
+{"kind": "shape", "id": "18", "slide": 7, "name": "任意多边形 17", "text": "", "bbox": [81, 523.47, 64, 34.53]}
+{"kind": "shape", "id": "19", "slide": 7, "name": "文本框 18", "text": "部分", "bbox": [97, 531.5, 48.01, 21]}
+{"kind": "shape", "id": "20", "slide": 7, "name": "文本框 19", "text": "部分提领", "bbox": [81, 567.16, 467.4, 31.5]}
+{"kind": "shape", "id": "21", "slide": 7, "name": "文本框 20", "text": "灵活应对人生各阶段需求，保留账户价值同时获取流动资金", "bbox": [81, 603.99, 467.4, 66.5]}
+{"kind": "shape", "id": "22", "slide": 7, "name": "任意多边形 21", "text": "", "bbox": [597.87, 116.47, 621.6, 135]}
+{"kind": "shape", "id": "23", "slide": 7, "name": "任意多边形 22", "text": "", "bbox": [618.33, 140, 44, 44]}
+{"kind": "image", "id": "42", "slide": 7, "name": "图片 23", "text": "", "bbox": [629.13, 152, 22.47, 20]}
+{"kind": "shape", "id": "25", "slide": 7, "name": "文本框 24", "text": "子女教育", "bbox": [674.4, 146.25, 120.01, 31.5]}
+{"kind": "shape", "id": "26", "slide": 7, "name": "文本框 25", "text": "支持子女海外留学、创业启动资金，为下一代成长保驾护航", "bbox": [618.4, 194.5, 580.6, 34.5]}
+{"kind": "shape", "id": "27", "slide": 7, "name": "任意多边形 26", "text": "", "bbox": [597.87, 272.47, 621.6, 135]}
+{"kind": "shape", "id": "28", "slide": 7, "name": "任意多边形 27", "text": "", "bbox": [618.33, 296, 44, 44]}
+{"kind": "image", "id": "43", "slide": 7, "name": "图片 28", "text": "", "bbox": [631.6, 308, 17.53, 20]}
+{"kind": "shape", "id": "30", "slide": 7, "name": "文本框 29", "text": "养老补充", "bbox": [674.4, 302.25, 120.01, 31.5]}
+{"kind": "shape", "id": "31", "slide": 7, "name": "文本框 30", "text": "提供稳定的退休收入来源，实现品质养老生活", "bbox": [618.4, 350.5, 580.6, 34.5]}
+{"kind": "shape", "id": "32", "slide": 7, "name": "任意多边形 31", "text": "", "bbox": [597.87, 428.47, 621.6, 135]}
+{"kind": "shape", "id": "33", "slide": 7, "name": "任意多边形 32", "text": "", "bbox": [618.33, 452, 44, 44]}
+{"kind": "image", "id": "44", "slide": 7, "name": "图片 33", "text": "", "bbox": [630.33, 464, 20, 20]}
+{"kind": "shape", "id": "35", "slide": 7, "name": "文本框 34", "text": "应急周转", "bbox": [674.4, 458.25, 120.01, 31.5]}
+{"kind": "shape", "id": "36", "slide": 7, "name": "文本框 35", "text": "应对突发资金需求，关键时刻快速响应", "bbox": [618.4, 506.5, 580.6, 34.5]}
+{"kind": "shape", "id": "3", "slide": 8, "name": "任意多边形 2", "text": "", "bbox": [56, 40, 1168, 48]}
+{"kind": "shape", "id": "4", "slide": 8, "name": "任意多边形 3", "text": "", "bbox": [56, 40, 4, 48]}
+{"kind": "shape", "id": "6", "slide": 8, "name": "文本框 5", "text": "产品亮点三：传承规划", "bbox": [74, 37.5, 1150, 52.5]}
+{"kind": "shape", "id": "7", "slide": 8, "name": "任意多边形 6", "text": "", "bbox": [295, 266, 96, 96]}
+{"kind": "image", "id": "27", "slide": 8, "name": "图片 7", "text": "", "bbox": [322, 290, 42, 48]}
+{"kind": "shape", "id": "9", "slide": 8, "name": "文本框 8", "text": "定向传承，避免纠纷\n确保财富按意愿传递", "bbox": [153, 391.5, 380, 104.5]}
+{"kind": "shape", "id": "10", "slide": 8, "name": "任意多边形 9", "text": "", "bbox": [311, 526, 64, 4]}
+{"kind": "shape", "id": "24", "slide": 8, "name": "任意多边形 23", "text": "", "bbox": [654, 608, 566, 72]}
+{"kind": "image", "id": "28", "slide": 8, "name": "图片 24", "text": "", "bbox": [672.2, 634.47, 18, 18.53]}
+{"kind": "shape", "id": "26", "slide": 8, "name": "文本框 25", "text": "传承灵活性：可随时调整受益人及受益比例，适应家庭结构变化", "bbox": [700.48, 620, 503.52, 48]}
+{"kind": "shape", "id": "11", "slide": 8, "name": "任意多边形 10", "text": "", "bbox": [654.47, 116.47, 565, 471]}
+{"kind": "shape", "id": "12", "slide": 8, "name": "任意多边形 11", "text": "", "bbox": [675, 195.6, 44, 44]}
+{"kind": "image", "id": "29", "slide": 8, "name": "图片 12", "text": "", "bbox": [687.73, 207.07, 18.47, 21]}
+{"kind": "shape", "id": "14", "slide": 8, "name": "文本框 13", "text": "法律保障", "bbox": [731, 195.62, 306.01, 26.5]}
+{"kind": "shape", "id": "15", "slide": 8, "name": "文本框 14", "text": "保险金不属于遗产，无需经过继承程序", "bbox": [731, 226.13, 324.01, 24]}
+{"kind": "shape", "id": "16", "slide": 8, "name": "任意多边形 15", "text": "", "bbox": [675, 324.73, 44, 44]}
+{"kind": "image", "id": "30", "slide": 8, "name": "图片 16", "text": "", "bbox": [687.73, 336.2, 18.47, 21]}
+{"kind": "shape", "id": "18", "slide": 8, "name": "文本框 17", "text": "隐私保护", "bbox": [731, 324.75, 324.01, 26.5]}
+{"kind": "shape", "id": "19", "slide": 8, "name": "文本框 18", "text": "传承安排私密性强，避免家庭矛盾公开化", "bbox": [731, 355.25, 342.01, 24]}
+{"kind": "shape", "id": "20", "slide": 8, "name": "任意多边形 19", "text": "", "bbox": [675, 453.87, 44, 44]}
+{"kind": "image", "id": "31", "slide": 8, "name": "图片 20", "text": "", "bbox": [687.73, 465.33, 18.47, 21]}
+{"kind": "shape", "id": "22", "slide": 8, "name": "文本框 21", "text": "税务优化", "bbox": [731, 453.87, 198.01, 26.5]}
+{"kind": "shape", "id": "23", "slide": 8, "name": "文本框 22", "text": "合理规划可降低税务成本", "bbox": [731, 484.38, 216.01, 24]}
+{"kind": "shape", "id": "3", "slide": 9, "name": "任意多边形 2", "text": "", "bbox": [56, 40, 1168, 48]}
+{"kind": "shape", "id": "4", "slide": 9, "name": "任意多边形 3", "text": "", "bbox": [56, 40, 4, 48]}
+{"kind": "shape", "id": "6", "slide": 9, "name": "文本框 5", "text": "现金价值曲线：稳健增长的财富轨迹", "bbox": [74, 37.5, 1150, 52.5]}
+{"kind": "shape", "id": "7", "slide": 9, "name": "任意多边形 6", "text": "", "bbox": [60.47, 116.47, 621.6, 563]}
+{"kind": "shape", "id": "8", "slide": 9, "name": "文本框 7", "text": "现金价值增长曲线", "bbox": [81, 137, 252, 37]}
+{"kind": "shape", "id": "9", "slide": 9, "name": "任意多边形 8", "text": "", "bbox": [493.53, 149.47, 12, 12]}
+{"kind": "shape", "id": "10", "slide": 9, "name": "文本框 9", "text": "现金价值", "bbox": [509.59, 145, 80.01, 21]}
+{"kind": "shape", "id": "11", "slide": 9, "name": "任意多边形 10", "text": "", "bbox": [581.53, 149.47, 12, 12]}
+{"kind": "shape", "id": "12", "slide": 9, "name": "文本框 11", "text": "已交保费", "bbox": [597.59, 145, 80.01, 21]}
+{"kind": "shape", "id": "15", "slide": 9, "name": "任意多边形 14", "text": "", "bbox": [81, 625, 580.6, 34]}
+{"kind": "shape", "id": "16", "slide": 9, "name": "任意多边形 15", "text": "", "bbox": [81, 625, 580.6, 1]}
+{"kind": "shape", "id": "18", "slide": 9, "name": "任意多边形 17", "text": "", "bbox": [163.73, 640.47, 16, 16]}
+{"kind": "shape", "id": "19", "slide": 9, "name": "文本框 18", "text": "积累期 1-10年", "bbox": [183.73, 638, 123, 21]}
+{"kind": "shape", "id": "20", "slide": 9, "name": "任意多边形 19", "text": "", "bbox": [306.73, 640.47, 16, 16]}
+{"kind": "shape", "id": "21", "slide": 9, "name": "文本框 20", "text": "增值期 11-20年", "bbox": [326.73, 638, 132.98, 21]}
+{"kind": "shape", "id": "22", "slide": 9, "name": "任意多边形 21", "text": "", "bbox": [459.67, 640.47, 16, 16]}
+{"kind": "shape", "id": "23", "slide": 9, "name": "文本框 22", "text": "收获期 21年+", "bbox": [479.71, 638, 115.16, 21]}
+{"kind": "image", "id": "42", "slide": 9, "name": "图片 12", "text": "", "bbox": [81, 186, 581, 427]}
+{"kind": "shape", "id": "24", "slide": 9, "name": "任意多边形 23", "text": "", "bbox": [711.07, 116.47, 508.4, 173.67]}
+{"kind": "shape", "id": "25", "slide": 9, "name": "任意多边形 24", "text": "", "bbox": [731.6, 138.33, 52, 52]}
+{"kind": "shape", "id": "26", "slide": 9, "name": "文本框 25", "text": "01", "bbox": [737.63, 146.05, 71.94, 36.1]}
+{"kind": "shape", "id": "27", "slide": 9, "name": "文本框 26", "text": "积累期", "bbox": [795.6, 136.1, 403.4, 31.5]}
+{"kind": "shape", "id": "28", "slide": 9, "name": "文本框 27", "text": "第1-10年", "bbox": [795.6, 171.6, 403.4, 21]}
+{"kind": "shape", "id": "29", "slide": 9, "name": "文本框 28", "text": "现金价值快速积累，逐步接近已交保费水平，为后续增值奠定坚实基础", "bbox": [731.6, 206.2, 467.4, 66.5]}
+{"kind": "shape", "id": "30", "slide": 9, "name": "任意多边形 29", "text": "", "bbox": [711.07, 311.13, 508.4, 173.67]}
+{"kind": "shape", "id": "31", "slide": 9, "name": "任意多边形 30", "text": "", "bbox": [731.6, 333, 52, 52]}
+{"kind": "shape", "id": "32", "slide": 9, "name": "文本框 31", "text": "02", "bbox": [737.63, 340.72, 71.94, 36.1]}
+{"kind": "shape", "id": "33", "slide": 9, "name": "文本框 32", "text": "增值期", "bbox": [795.6, 330.77, 403.4, 31.5]}
+{"kind": "shape", "id": "34", "slide": 9, "name": "文本框 33", "text": "第11-20年", "bbox": [795.6, 366.27, 403.4, 21]}
+{"kind": "shape", "id": "35", "slide": 9, "name": "文本框 34", "text": "复利效应开始显现，现金价值显著超越已交保费，财富增长进入加速通道", "bbox": [731.6, 400.87, 467.4, 66.5]}
+{"kind": "shape", "id": "36", "slide": 9, "name": "任意多边形 35", "text": "", "bbox": [711.07, 505.8, 508.4, 173.67]}
+{"kind": "shape", "id": "37", "slide": 9, "name": "任意多边形 36", "text": "", "bbox": [731.6, 527.67, 52, 52]}
+{"kind": "shape", "id": "38", "slide": 9, "name": "文本框 37", "text": "03", "bbox": [737.63, 535.38, 71.94, 36.1]}
+{"kind": "shape", "id": "39", "slide": 9, "name": "文本框 38", "text": "收获期", "bbox": [795.6, 525.43, 403.4, 31.5]}
+{"kind": "shape", "id": "40", "slide": 9, "name": "文本框 39", "text": "第21年及以上", "bbox": [795.6, 560.93, 403.4, 21]}
+{"kind": "shape", "id": "41", "slide": 9, "name": "文本框 40", "text": "长期持有优势充分凸显，现金价值达到较高水平，实现稳健的财富增值目标", "bbox": [731.6, 595.53, 467.4, 66.5]}
+{"kind": "shape", "id": "3", "slide": 10, "name": "任意多边形 2", "text": "", "bbox": [56, 40, 1168, 48]}
+{"kind": "shape", "id": "4", "slide": 10, "name": "任意多边形 3", "text": "", "bbox": [56, 40, 4, 48]}
+{"kind": "shape", "id": "6", "slide": 10, "name": "文本框 5", "text": "现金价值增长示例", "bbox": [74, 37.5, 1150, 52.5]}
+{"kind": "shape", "id": "37", "slide": 10, "name": "任意多边形 36", "text": "", "bbox": [710.6, 603, 509.4, 77]}
+{"kind": "shape", "id": "38", "slide": 10, "name": "文本框 37", "text": "长期持有时间越长，现金价值增长越显著， 充分体现复利的力量", "bbox": [732.7, 615, 465.2, 53]}
+{"kind": "shape", "id": "7", "slide": 10, "name": "任意多边形 6", "text": "", "bbox": [60.47, 116.47, 621.6, 563]}
+{"kind": "shape", "id": "8", "slide": 10, "name": "文本框 7", "text": "现金价值增长轨迹", "bbox": [81, 137, 580.6, 37]}
+{"kind": "image", "id": "39", "slide": 10, "name": "图片 8", "text": "", "bbox": [81, 182.73, 581, 476]}
+{"kind": "shape", "id": "11", "slide": 10, "name": "任意多边形 10", "text": "", "bbox": [711.07, 116.47, 508.4, 108.73]}
+{"kind": "shape", "id": "12", "slide": 10, "name": "任意多边形 11", "text": "", "bbox": [723.6, 152.33, 75.93, 37]}
+{"kind": "shape", "id": "13", "slide": 10, "name": "文本框 12", "text": "第10年", "bbox": [735.6, 160.38, 67.97, 21]}
+{"kind": "shape", "id": "14", "slide": 10, "name": "文本框 13", "text": "950万", "bbox": [815.57, 139.13, 108.42, 37]}
+{"kind": "shape", "id": "15", "slide": 10, "name": "文本框 14", "text": "累计交费1000万元，现金价值接近已交保费", "bbox": [815.57, 178.67, 386.93, 24.9]}
+{"kind": "shape", "id": "16", "slide": 10, "name": "任意多边形 15", "text": "", "bbox": [711.07, 238.2, 508.4, 108.8]}
+{"kind": "shape", "id": "17", "slide": 10, "name": "任意多边形 16", "text": "", "bbox": [723.6, 274.07, 75.93, 37]}
+{"kind": "shape", "id": "18", "slide": 10, "name": "文本框 17", "text": "第20年", "bbox": [735.6, 282.13, 67.97, 21]}
+{"kind": "shape", "id": "19", "slide": 10, "name": "文本框 18", "text": "1350万", "bbox": [815.57, 260.87, 125.89, 37]}
+{"kind": "shape", "id": "20", "slide": 10, "name": "任意多边形 19", "text": "", "bbox": [921.4, 266.87, 71.93, 25]}
+{"kind": "shape", "id": "21", "slide": 10, "name": "文本框 20", "text": "↑ 35%", "bbox": [929.46, 268.87, 71.89, 21]}
+{"kind": "shape", "id": "22", "slide": 10, "name": "文本框 21", "text": "较已交保费增长35%，复利效应开始显现", "bbox": [815.57, 300.42, 345.03, 24.9]}
+{"kind": "shape", "id": "23", "slide": 10, "name": "任意多边形 22", "text": "", "bbox": [711.07, 360, 508.4, 108.73]}
+{"kind": "shape", "id": "24", "slide": 10, "name": "任意多边形 23", "text": "", "bbox": [723.6, 395.87, 75.93, 37]}
+{"kind": "shape", "id": "25", "slide": 10, "name": "文本框 24", "text": "第30年", "bbox": [735.6, 403.87, 67.97, 21]}
+{"kind": "shape", "id": "26", "slide": 10, "name": "文本框 25", "text": "1850万", "bbox": [815.57, 382.62, 125.89, 37]}
+{"kind": "shape", "id": "27", "slide": 10, "name": "任意多边形 26", "text": "", "bbox": [921.4, 388.6, 71.93, 25]}
+{"kind": "shape", "id": "28", "slide": 10, "name": "文本框 27", "text": "↑ 85%", "bbox": [929.46, 390.62, 71.89, 21]}
+{"kind": "shape", "id": "29", "slide": 10, "name": "文本框 28", "text": "较已交保费增长85%，财富稳健增值", "bbox": [815.57, 422.18, 309.03, 24.9]}
+{"kind": "shape", "id": "30", "slide": 10, "name": "任意多边形 29", "text": "", "bbox": [711.07, 481.73, 508.4, 108.73]}
+{"kind": "shape", "id": "31", "slide": 10, "name": "任意多边形 30", "text": "", "bbox": [723.6, 517.6, 75.93, 37]}
+{"kind": "shape", "id": "32", "slide": 10, "name": "文本框 31", "text": "第40年", "bbox": [735.6, 525.62, 67.97, 21]}
+{"kind": "shape", "id": "33", "slide": 10, "name": "文本框 32", "text": "2500万", "bbox": [815.57, 504.38, 125.89, 37]}
+{"kind": "shape", "id": "34", "slide": 10, "name": "任意多边形 33", "text": "", "bbox": [921.4, 510.33, 81.93, 25]}
+{"kind": "shape", "id": "35", "slide": 10, "name": "文本框 34", "text": "↑ 150%", "bbox": [929.46, 512.38, 81.87, 21]}
+{"kind": "shape", "id": "36", "slide": 10, "name": "文本框 35", "text": "较已交保费增长150%，长期复利威力尽显", "bbox": [815.57, 543.93, 356.26, 24.9]}
+{"kind": "shape", "id": "3", "slide": 11, "name": "任意多边形 2", "text": "", "bbox": [56, 40, 1168, 48]}
+{"kind": "shape", "id": "4", "slide": 11, "name": "任意多边形 3", "text": "", "bbox": [56, 40, 4, 48]}
+{"kind": "shape", "id": "6", "slide": 11, "name": "文本框 5", "text": "提领路径：灵活应对人生各阶段需求", "bbox": [74, 37.5, 1150, 52.5]}
+{"kind": "shape", "id": "7", "slide": 11, "name": "任意多边形 6", "text": "", "bbox": [60.47, 116.47, 331.4, 563]}
+{"kind": "shape", "id": "8", "slide": 11, "name": "任意多边形 7", "text": "", "bbox": [200.13, 216.13, 52, 52]}
+{"kind": "image", "id": "57", "slide": 11, "name": "图片 8", "text": "", "bbox": [212.13, 229.6, 28, 25]}
+{"kind": "shape", "id": "10", "slide": 11, "name": "文本框 9", "text": "教育支持路径", "bbox": [128.19, 280.16, 196, 37]}
+{"kind": "shape", "id": "11", "slide": 11, "name": "任意多边形 10", "text": "", "bbox": [81, 396.27, 44, 44]}
+{"kind": "image", "id": "58", "slide": 11, "name": "图片 11", "text": "", "bbox": [93.73, 407.8, 18.47, 21]}
+{"kind": "shape", "id": "13", "slide": 11, "name": "文本框 12", "text": "提领年龄", "bbox": [137, 396.33, 143.75, 26.5]}
+{"kind": "shape", "id": "14", "slide": 11, "name": "文本框 13", "text": "子女18-25岁期间", "bbox": [137, 422.83, 161.75, 24]}
+{"kind": "shape", "id": "15", "slide": 11, "name": "任意多边形 14", "text": "", "bbox": [81, 462.8, 44, 44]}
+{"kind": "image", "id": "59", "slide": 11, "name": "图片 15", "text": "", "bbox": [92.47, 474.27, 21, 21]}
+{"kind": "shape", "id": "17", "slide": 11, "name": "文本框 16", "text": "年度提领", "bbox": [137, 462.83, 162.01, 26.5]}
+{"kind": "shape", "id": "18", "slide": 11, "name": "文本框 17", "text": "按教育需求灵活安排", "bbox": [137, 489.33, 180.01, 24]}
+{"kind": "shape", "id": "19", "slide": 11, "name": "任意多边形 18", "text": "", "bbox": [81, 529.27, 44, 44]}
+{"kind": "image", "id": "60", "slide": 11, "name": "图片 19", "text": "", "bbox": [92.47, 540.8, 21, 21]}
+{"kind": "shape", "id": "21", "slide": 11, "name": "文本框 20", "text": "用途说明", "bbox": [137, 529.33, 216.01, 26.5]}
+{"kind": "shape", "id": "22", "slide": 11, "name": "文本框 21", "text": "支持学费、生活等教育支出", "bbox": [137, 555.83, 234.01, 24]}
+{"kind": "shape", "id": "23", "slide": 11, "name": "任意多边形 22", "text": "", "bbox": [418.87, 116.47, 331.4, 563]}
+{"kind": "shape", "id": "24", "slide": 11, "name": "任意多边形 23", "text": "", "bbox": [558.53, 216.13, 52, 52]}
+{"kind": "image", "id": "61", "slide": 11, "name": "图片 24", "text": "", "bbox": [573.53, 229.6, 22, 25]}
+{"kind": "shape", "id": "26", "slide": 11, "name": "文本框 25", "text": "养老补充路径", "bbox": [486.59, 280.16, 196, 37]}
+{"kind": "shape", "id": "27", "slide": 11, "name": "任意多边形 26", "text": "", "bbox": [439.33, 396.27, 44, 44]}
+{"kind": "image", "id": "62", "slide": 11, "name": "图片 27", "text": "", "bbox": [450.87, 407.8, 21, 21]}
+{"kind": "shape", "id": "29", "slide": 11, "name": "文本框 28", "text": "退休起始", "bbox": [495.4, 396.33, 198.01, 26.5]}
+{"kind": "shape", "id": "30", "slide": 11, "name": "文本框 29", "text": "达到退休年龄后开始提领", "bbox": [495.4, 422.83, 216.01, 24]}
+{"kind": "shape", "id": "31", "slide": 11, "name": "任意多边形 30", "text": "", "bbox": [439.33, 462.8, 44, 44]}
+{"kind": "image", "id": "63", "slide": 11, "name": "图片 31", "text": "", "bbox": [449.6, 474.27, 23.53, 21]}
+{"kind": "shape", "id": "33", "slide": 11, "name": "文本框 32", "text": "年度提领", "bbox": [495.4, 462.83, 198.01, 26.5]}
+{"kind": "shape", "id": "34", "slide": 11, "name": "文本框 33", "text": "稳定现金流补充日常开支", "bbox": [495.4, 489.33, 216.01, 24]}
+{"kind": "shape", "id": "35", "slide": 11, "name": "任意多边形 34", "text": "", "bbox": [439.33, 529.27, 44, 44]}
+{"kind": "image", "id": "64", "slide": 11, "name": "图片 35", "text": "", "bbox": [450.87, 540.8, 21, 21]}
+{"kind": "shape", "id": "37", "slide": 11, "name": "文本框 36", "text": "补充缺口", "bbox": [495.4, 529.33, 216.01, 26.5]}
+{"kind": "shape", "id": "38", "slide": 11, "name": "文本框 37", "text": "弥补养老金不足，提升品质", "bbox": [495.4, 555.83, 234.01, 24]}
+{"kind": "shape", "id": "39", "slide": 11, "name": "任意多边形 38", "text": "", "bbox": [777.73, 117, 441.27, 562]}
+{"kind": "shape", "id": "40", "slide": 11, "name": "任意多边形 39", "text": "", "bbox": [944.33, 222, 36, 36]}
+{"kind": "image", "id": "65", "slide": 11, "name": "图片 40", "text": "", "bbox": [953.87, 231.47, 17, 17]}
+{"kind": "shape", "id": "42", "slide": 11, "name": "任意多边形 41", "text": "", "bbox": [988.33, 221.47, 64, 37]}
+{"kind": "shape", "id": "43", "slide": 11, "name": "文本框 42", "text": "推荐", "bbox": [996.39, 229.5, 48.01, 21]}
+{"kind": "shape", "id": "44", "slide": 11, "name": "文本框 43", "text": "传承保留路径", "bbox": [900.4, 270.5, 196, 37]}
+{"kind": "shape", "id": "45", "slide": 11, "name": "任意多边形 44", "text": "", "bbox": [798.73, 391, 44, 44]}
+{"kind": "image", "id": "66", "slide": 11, "name": "图片 45", "text": "", "bbox": [807.73, 402.47, 26.53, 21]}
+{"kind": "shape", "id": "47", "slide": 11, "name": "文本框 46", "text": "长期持有", "bbox": [854.8, 391, 216.01, 26.5]}
+{"kind": "shape", "id": "48", "slide": 11, "name": "文本框 47", "text": "保单持续复利增值，不提领", "bbox": [854.8, 417.5, 234.01, 24]}
+{"kind": "shape", "id": "49", "slide": 11, "name": "任意多边形 48", "text": "", "bbox": [798.73, 457.47, 44, 44]}
+{"kind": "image", "id": "67", "slide": 11, "name": "图片 49", "text": "", "bbox": [810.27, 469, 21, 21]}
+{"kind": "shape", "id": "51", "slide": 11, "name": "文本框 50", "text": "价值最大化", "bbox": [854.8, 457.5, 234.01, 26.5]}
+{"kind": "shape", "id": "52", "slide": 11, "name": "文本框 51", "text": "充分利用时间价值，累积丰厚", "bbox": [854.8, 484, 252.01, 24]}
+{"kind": "shape", "id": "53", "slide": 11, "name": "任意多边形 52", "text": "", "bbox": [798.73, 524, 44, 44]}
+{"kind": "image", "id": "68", "slide": 11, "name": "图片 53", "text": "", "bbox": [810.27, 535.47, 21, 21]}
+{"kind": "shape", "id": "55", "slide": 11, "name": "文本框 54", "text": "传承金额", "bbox": [854.8, 524, 216.01, 26.5]}
+{"kind": "shape", "id": "56", "slide": 11, "name": "文本框 55", "text": "后代获得最大化的财富传承", "bbox": [854.8, 550.5, 234.01, 24]}
+{"kind": "shape", "id": "3", "slide": 12, "name": "任意多边形 2", "text": "", "bbox": [56, 40, 1168, 48]}
+{"kind": "shape", "id": "4", "slide": 12, "name": "任意多边形 3", "text": "", "bbox": [56, 40, 4, 48]}
+{"kind": "shape", "id": "6", "slide": 12, "name": "文本框 5", "text": "提领路径示例", "bbox": [74, 37.5, 1150, 52.5]}
+{"kind": "shape", "id": "7", "slide": 12, "name": "任意多边形 6", "text": "", "bbox": [108.73, 116, 64, 64]}
+{"kind": "shape", "id": "8", "slide": 12, "name": "文本框 7", "text": "1", "bbox": [114.78, 126.75, 51.97, 42.5]}
+{"kind": "shape", "id": "14", "slide": 12, "name": "文本框 13", "text": "→", "bbox": [241.54, 379.75, 80, 52.5]}
+{"kind": "shape", "id": "15", "slide": 12, "name": "任意多边形 14", "text": "", "bbox": [350.27, 116, 64, 64]}
+{"kind": "shape", "id": "16", "slide": 12, "name": "文本框 15", "text": "2", "bbox": [356.32, 126.75, 51.97, 42.5]}
+{"kind": "shape", "id": "23", "slide": 12, "name": "文本框 22", "text": "→", "bbox": [483.08, 379.75, 80, 52.5]}
+{"kind": "shape", "id": "24", "slide": 12, "name": "任意多边形 23", "text": "", "bbox": [591.8, 116, 64, 64]}
+{"kind": "shape", "id": "25", "slide": 12, "name": "文本框 24", "text": "3", "bbox": [597.86, 126.75, 51.97, 42.5]}
+{"kind": "shape", "id": "32", "slide": 12, "name": "文本框 31", "text": "→", "bbox": [724.62, 379.75, 80, 52.5]}
+{"kind": "shape", "id": "33", "slide": 12, "name": "任意多边形 32", "text": "", "bbox": [833.33, 116, 64, 64]}
+{"kind": "shape", "id": "34", "slide": 12, "name": "文本框 33", "text": "4", "bbox": [839.4, 126.75, 51.97, 42.5]}
+{"kind": "shape", "id": "41", "slide": 12, "name": "文本框 40", "text": "→", "bbox": [966.16, 379.75, 80, 52.5]}
+{"kind": "shape", "id": "42", "slide": 12, "name": "任意多边形 41", "text": "", "bbox": [1091.07, 116, 64, 64]}
+{"kind": "image", "id": "49", "slide": 12, "name": "图片 42", "text": "", "bbox": [1109.07, 132, 28, 32]}
+{"kind": "shape", "id": "9", "slide": 12, "name": "任意多边形 8", "text": "", "bbox": [60.47, 192.47, 160.53, 487]}
+{"kind": "shape", "id": "10", "slide": 12, "name": "文本框 9", "text": "第1-15年", "bbox": [94.99, 365.25, 91.55, 21]}
+{"kind": "shape", "id": "11", "slide": 12, "name": "文本框 10", "text": "交费期", "bbox": [92.77, 394.25, 96.01, 31.5]}
+{"kind": "shape", "id": "12", "slide": 12, "name": "文本框 11", "text": "累计交费", "bbox": [90.77, 433.75, 100, 26.5]}
+{"kind": "shape", "id": "13", "slide": 12, "name": "文本框 12", "text": "1500万", "bbox": [68.83, 464.25, 143.87, 42.5]}
+{"kind": "shape", "id": "17", "slide": 12, "name": "任意多边形 16", "text": "", "bbox": [302, 192.47, 160.53, 487]}
+{"kind": "shape", "id": "18", "slide": 12, "name": "文本框 17", "text": "第16-22年", "bbox": [331.06, 335.5, 102.5, 21]}
+{"kind": "shape", "id": "19", "slide": 12, "name": "文本框 18", "text": "子女教育期", "bbox": [334.3, 364.5, 96.01, 63]}
+{"kind": "shape", "id": "20", "slide": 12, "name": "文本框 19", "text": "每年提领", "bbox": [332.3, 435.5, 100, 26.5]}
+{"kind": "shape", "id": "21", "slide": 12, "name": "文本框 20", "text": "50万/年", "bbox": [308.15, 466, 148.32, 42.5]}
+{"kind": "shape", "id": "22", "slide": 12, "name": "文本框 21", "text": "累计350万", "bbox": [329.45, 512.5, 105.7, 24]}
+{"kind": "shape", "id": "26", "slide": 12, "name": "任意多边形 25", "text": "", "bbox": [543.53, 192.47, 160.53, 487]}
+{"kind": "shape", "id": "27", "slide": 12, "name": "文本框 26", "text": "第23-30年", "bbox": [572.59, 338.25, 102.5, 21]}
+{"kind": "shape", "id": "28", "slide": 12, "name": "文本框 27", "text": "资金积累期", "bbox": [575.84, 367.25, 96.01, 63]}
+{"kind": "shape", "id": "29", "slide": 12, "name": "文本框 28", "text": "不提领", "bbox": [583.84, 438.25, 80, 26.5]}
+{"kind": "shape", "id": "30", "slide": 12, "name": "文本框 29", "text": "现金价值", "bbox": [553.84, 468.75, 140, 37]}
+{"kind": "shape", "id": "31", "slide": 12, "name": "文本框 30", "text": "持续增长", "bbox": [578.84, 509.75, 90.01, 24]}
+{"kind": "shape", "id": "35", "slide": 12, "name": "任意多边形 34", "text": "", "bbox": [785.07, 192.47, 160.53, 487]}
+{"kind": "shape", "id": "36", "slide": 12, "name": "文本框 35", "text": "第31年起", "bbox": [821, 335.5, 88.77, 21]}
+{"kind": "shape", "id": "37", "slide": 12, "name": "文本框 36", "text": "养老补充期", "bbox": [817.38, 364.5, 96.01, 63]}
+{"kind": "shape", "id": "38", "slide": 12, "name": "文本框 37", "text": "每年提领", "bbox": [815.38, 435.5, 100, 26.5]}
+{"kind": "shape", "id": "39", "slide": 12, "name": "文本框 38", "text": "30万/年", "bbox": [791.23, 466, 148.32, 42.5]}
+{"kind": "shape", "id": "40", "slide": 12, "name": "文本框 39", "text": "补充退休收入", "bbox": [802.38, 512.5, 126.01, 24]}
+{"kind": "shape", "id": "44", "slide": 12, "name": "任意多边形 43", "text": "", "bbox": [1026.6, 192.47, 192.87, 487]}
+{"kind": "shape", "id": "45", "slide": 12, "name": "文本框 44", "text": "方案效果", "bbox": [1063.07, 368.25, 120.01, 31.5]}
+{"kind": "shape", "id": "46", "slide": 12, "name": "文本框 45", "text": "子女教育", "bbox": [1073.08, 406.25, 100, 34.5]}
+{"kind": "shape", "id": "47", "slide": 12, "name": "文本框 46", "text": "养老品质", "bbox": [1073.08, 442.25, 100, 34.5]}
+{"kind": "shape", "id": "48", "slide": 12, "name": "文本框 47", "text": "传承保障", "bbox": [1078.07, 479.75, 90.01, 24]}
+{"kind": "shape", "id": "3", "slide": 13, "name": "任意多边形 2", "text": "", "bbox": [56, 40, 1168, 48]}
+{"kind": "shape", "id": "4", "slide": 13, "name": "任意多边形 3", "text": "", "bbox": [56, 40, 4, 48]}
+{"kind": "shape", "id": "6", "slide": 13, "name": "文本框 5", "text": "收益演示表", "bbox": [74, 37.5, 1150, 52.5]}
+{"kind": "shape", "id": "7", "slide": 13, "name": "任意多边形 6", "text": "", "bbox": [60.47, 116.47, 1159, 490]}
+{"kind": "shape", "id": "8", "slide": 13, "name": "任意多边形 7", "text": "", "bbox": [61, 117, 1158, 56.47]}
+{"kind": "shape", "id": "9", "slide": 13, "name": "任意多边形 8", "text": "", "bbox": [61, 172.47, 1158, 1]}
+{"kind": "shape", "id": "11", "slide": 13, "name": "文本框 10", "text": "保单年度", "bbox": [77, 129, 235.23, 31.5]}
+{"kind": "shape", "id": "12", "slide": 13, "name": "文本框 11", "text": "已交保费", "bbox": [344.23, 129, 190.7, 31.5]}
+{"kind": "shape", "id": "13", "slide": 13, "name": "文本框 12", "text": "现金价值", "bbox": [566.92, 129, 190.69, 31.5]}
+{"kind": "shape", "id": "14", "slide": 13, "name": "文本框 13", "text": "身故保障", "bbox": [789.61, 129, 190.7, 31.5]}
+{"kind": "shape", "id": "15", "slide": 13, "name": "文本框 14", "text": "增长率", "bbox": [1012.3, 129, 190.7, 31.5]}
+{"kind": "shape", "id": "16", "slide": 13, "name": "任意多边形 15", "text": "", "bbox": [61, 173.47, 1158, 432.53]}
+{"kind": "shape", "id": "17", "slide": 13, "name": "任意多边形 16", "text": "", "bbox": [61, 173.47, 1158, 108.13]}
+{"kind": "shape", "id": "18", "slide": 13, "name": "任意多边形 17", "text": "", "bbox": [61, 280.6, 1158, 1]}
+{"kind": "shape", "id": "20", "slide": 13, "name": "文本框 19", "text": "第10年", "bbox": [77, 213.81, 235.23, 26.5]}
+{"kind": "shape", "id": "21", "slide": 13, "name": "文本框 20", "text": "1000万", "bbox": [344.23, 213.81, 190.7, 26.5]}
+{"kind": "shape", "id": "22", "slide": 13, "name": "文本框 21", "text": "950万", "bbox": [566.92, 213.81, 190.69, 26.5]}
+{"kind": "shape", "id": "23", "slide": 13, "name": "文本框 22", "text": "1600万", "bbox": [789.61, 213.81, 190.7, 26.5]}
+{"kind": "shape", "id": "24", "slide": 13, "name": "文本框 23", "text": "-5%", "bbox": [1012.3, 213.81, 190.7, 26.5]}
+{"kind": "shape", "id": "25", "slide": 13, "name": "任意多边形 24", "text": "", "bbox": [61, 281.6, 1158, 108.13]}
+{"kind": "shape", "id": "26", "slide": 13, "name": "任意多边形 25", "text": "", "bbox": [61, 388.73, 1158, 1]}
+{"kind": "shape", "id": "28", "slide": 13, "name": "文本框 27", "text": "第20年", "bbox": [77, 321.94, 235.23, 26.5]}
+{"kind": "shape", "id": "29", "slide": 13, "name": "文本框 28", "text": "1000万", "bbox": [344.23, 321.94, 190.7, 26.5]}
+{"kind": "shape", "id": "30", "slide": 13, "name": "文本框 29", "text": "1350万", "bbox": [566.92, 321.94, 190.69, 26.5]}
+{"kind": "shape", "id": "31", "slide": 13, "name": "文本框 30", "text": "1600万", "bbox": [789.61, 321.94, 190.7, 26.5]}
+{"kind": "shape", "id": "32", "slide": 13, "name": "文本框 31", "text": "+35%", "bbox": [1012.3, 321.94, 190.7, 26.5]}
+{"kind": "shape", "id": "33", "slide": 13, "name": "任意多边形 32", "text": "", "bbox": [61, 389.73, 1158, 108.13]}
+{"kind": "shape", "id": "34", "slide": 13, "name": "任意多边形 33", "text": "", "bbox": [61, 496.87, 1158, 1]}
+{"kind": "shape", "id": "36", "slide": 13, "name": "文本框 35", "text": "第30年", "bbox": [77, 430.06, 235.23, 26.5]}
+{"kind": "shape", "id": "37", "slide": 13, "name": "文本框 36", "text": "1000万", "bbox": [344.23, 430.06, 190.7, 26.5]}
+{"kind": "shape", "id": "38", "slide": 13, "name": "文本框 37", "text": "1850万", "bbox": [566.92, 430.06, 190.69, 26.5]}
+{"kind": "shape", "id": "39", "slide": 13, "name": "文本框 38", "text": "1600万", "bbox": [789.61, 430.06, 190.7, 26.5]}
+{"kind": "shape", "id": "40", "slide": 13, "name": "文本框 39", "text": "+85%", "bbox": [1012.3, 430.06, 190.7, 26.5]}
+{"kind": "shape", "id": "41", "slide": 13, "name": "任意多边形 40", "text": "", "bbox": [61, 497.87, 1158, 108.13]}
+{"kind": "shape", "id": "42", "slide": 13, "name": "文本框 41", "text": "第40年", "bbox": [77, 538.69, 235.23, 26.5]}
+{"kind": "shape", "id": "43", "slide": 13, "name": "文本框 42", "text": "1000万", "bbox": [344.23, 538.69, 190.7, 26.5]}
+{"kind": "shape", "id": "44", "slide": 13, "name": "文本框 43", "text": "2500万", "bbox": [566.92, 538.69, 190.69, 26.5]}
+{"kind": "shape", "id": "45", "slide": 13, "name": "文本框 44", "text": "1600万", "bbox": [789.61, 538.69, 190.7, 26.5]}
+{"kind": "shape", "id": "46", "slide": 13, "name": "文本框 45", "text": "+150%", "bbox": [1012.3, 538.69, 190.7, 26.5]}
+{"kind": "shape", "id": "48", "slide": 13, "name": "任意多边形 47", "text": "", "bbox": [179, 619, 218.27, 61]}
+{"kind": "shape", "id": "49", "slide": 13, "name": "文本框 48", "text": "2.6倍", "bbox": [203.04, 631, 98.28, 37]}
+{"kind": "shape", "id": "50", "slide": 13, "name": "文本框 49", "text": "现金价值增长", "bbox": [277.32, 643, 112.01, 21]}
+{"kind": "shape", "id": "51", "slide": 13, "name": "任意多边形 50", "text": "", "bbox": [536.33, 619, 213.87, 61]}
+{"kind": "shape", "id": "52", "slide": 13, "name": "文本框 51", "text": "1600万", "bbox": [560.37, 631, 125.89, 37]}
+{"kind": "shape", "id": "53", "slide": 13, "name": "文本框 52", "text": "身故保障", "bbox": [662.26, 643, 80.01, 21]}
+{"kind": "shape", "id": "54", "slide": 13, "name": "任意多边形 53", "text": "", "bbox": [889.27, 619, 211.67, 61]}
+{"kind": "shape", "id": "55", "slide": 13, "name": "文本框 54", "text": "+150%", "bbox": [913.3, 631, 123.65, 37]}
+{"kind": "shape", "id": "56", "slide": 13, "name": "文本框 55", "text": "复利效应", "bbox": [1012.95, 643, 80.01, 21]}
+{"kind": "shape", "id": "3", "slide": 14, "name": "任意多边形 2", "text": "", "bbox": [56, 40, 1168, 48]}
+{"kind": "shape", "id": "4", "slide": 14, "name": "任意多边形 3", "text": "", "bbox": [56, 40, 4, 48]}
+{"kind": "shape", "id": "6", "slide": 14, "name": "文本框 5", "text": "提领影响对比表", "bbox": [74, 37.5, 1150, 52.5]}
+{"kind": "shape", "id": "7", "slide": 14, "name": "任意多边形 6", "text": "", "bbox": [60.47, 116.47, 1159, 403]}
+{"kind": "shape", "id": "8", "slide": 14, "name": "任意多边形 7", "text": "", "bbox": [61, 117, 1158, 56.47]}
+{"kind": "shape", "id": "9", "slide": 14, "name": "任意多边形 8", "text": "", "bbox": [61, 172.47, 1158, 1]}
+{"kind": "shape", "id": "11", "slide": 14, "name": "文本框 10", "text": "提领策略", "bbox": [77, 129, 315.4, 31.5]}
+{"kind": "shape", "id": "12", "slide": 14, "name": "文本框 11", "text": "提领总额", "bbox": [424.4, 129, 199.6, 31.5]}
+{"kind": "shape", "id": "13", "slide": 14, "name": "文本框 12", "text": "传承金额", "bbox": [656, 129, 199.59, 31.5]}
+{"kind": "shape", "id": "14", "slide": 14, "name": "文本框 13", "text": "适用场景", "bbox": [887.59, 129, 315.41, 31.5]}
+{"kind": "shape", "id": "15", "slide": 14, "name": "任意多边形 14", "text": "", "bbox": [61, 173.47, 1158, 345.53]}
+{"kind": "shape", "id": "16", "slide": 14, "name": "任意多边形 15", "text": "", "bbox": [61, 173.47, 1158, 86.4]}
+{"kind": "shape", "id": "17", "slide": 14, "name": "任意多边形 16", "text": "", "bbox": [61, 258.87, 1158, 1]}
+{"kind": "shape", "id": "19", "slide": 14, "name": "文本框 18", "text": "不提领", "bbox": [77, 202.94, 315.4, 26.5]}
+{"kind": "shape", "id": "20", "slide": 14, "name": "文本框 19", "text": "0", "bbox": [416.88, 202.94, 207.12, 26.5]}
+{"kind": "shape", "id": "21", "slide": 14, "name": "文本框 20", "text": "2500万", "bbox": [656, 197.69, 199.59, 37]}
+{"kind": "shape", "id": "22", "slide": 14, "name": "文本框 21", "text": "纯传承需求", "bbox": [887.59, 202.94, 315.41, 26.5]}
+{"kind": "shape", "id": "23", "slide": 14, "name": "任意多边形 22", "text": "", "bbox": [61, 259.87, 1158, 86.33]}
+{"kind": "shape", "id": "24", "slide": 14, "name": "任意多边形 23", "text": "", "bbox": [61, 345.2, 1158, 1]}
+{"kind": "shape", "id": "26", "slide": 14, "name": "文本框 25", "text": "教育提领", "bbox": [77, 289.31, 315.4, 26.5]}
+{"kind": "shape", "id": "27", "slide": 14, "name": "文本框 26", "text": "350万", "bbox": [424.4, 289.31, 199.6, 26.5]}
+{"kind": "shape", "id": "28", "slide": 14, "name": "文本框 27", "text": "1800万", "bbox": [656, 284.06, 199.59, 37]}
+{"kind": "shape", "id": "29", "slide": 14, "name": "文本框 28", "text": "子女教育支持", "bbox": [887.59, 289.31, 315.41, 26.5]}
+{"kind": "shape", "id": "30", "slide": 14, "name": "任意多边形 29", "text": "", "bbox": [61, 346.2, 1158, 86.4]}
+{"kind": "shape", "id": "31", "slide": 14, "name": "任意多边形 30", "text": "", "bbox": [61, 431.6, 1158, 1]}
+{"kind": "shape", "id": "33", "slide": 14, "name": "文本框 32", "text": "养老提领", "bbox": [77, 375.69, 315.4, 26.5]}
+{"kind": "shape", "id": "34", "slide": 14, "name": "文本框 33", "text": "600万", "bbox": [424.4, 375.69, 199.6, 26.5]}
+{"kind": "shape", "id": "35", "slide": 14, "name": "文本框 34", "text": "1200万", "bbox": [656, 370.44, 199.59, 37]}
+{"kind": "shape", "id": "36", "slide": 14, "name": "文本框 35", "text": "养老补充", "bbox": [887.59, 375.69, 315.41, 26.5]}
+{"kind": "shape", "id": "37", "slide": 14, "name": "文本框 36", "text": "灵活提领", "bbox": [77, 462.56, 315.4, 26.5]}
+{"kind": "shape", "id": "38", "slide": 14, "name": "文本框 37", "text": "500万", "bbox": [424.4, 462.56, 199.6, 26.5]}
+{"kind": "shape", "id": "39", "slide": 14, "name": "文本框 38", "text": "1500万", "bbox": [656, 457.31, 199.59, 37]}
+{"kind": "shape", "id": "40", "slide": 14, "name": "文本框 39", "text": "综合需求", "bbox": [887.59, 462.56, 315.41, 26.5]}
+{"kind": "shape", "id": "42", "slide": 14, "name": "任意多边形 41", "text": "", "bbox": [60.47, 540.47, 372.33, 139]}
+{"kind": "shape", "id": "43", "slide": 14, "name": "任意多边形 42", "text": "", "bbox": [81, 566.2, 25, 20]}
+{"kind": "image", "id": "63", "slide": 14, "name": "图片 43", "text": "", "bbox": [82.2, 566.2, 22.53, 20]}
+{"kind": "shape", "id": "45", "slide": 14, "name": "文本框 44", "text": "传承优先", "bbox": [110, 560.48, 120.01, 31.5]}
+{"kind": "shape", "id": "46", "slide": 14, "name": "文本框 45", "text": "选择不提领或少提领，最大化传承金额", "bbox": [81, 599.47, 331.34, 24]}
+{"kind": "shape", "id": "47", "slide": 14, "name": "任意多边形 46", "text": "", "bbox": [81, 630.67, 104, 28.33]}
+{"kind": "shape", "id": "48", "slide": 14, "name": "文本框 47", "text": "纯传承需求", "bbox": [93, 634.69, 96.01, 21]}
+{"kind": "shape", "id": "49", "slide": 14, "name": "任意多边形 48", "text": "", "bbox": [453.8, 540.47, 372.33, 139]}
+{"kind": "shape", "id": "50", "slide": 14, "name": "任意多边形 49", "text": "", "bbox": [474.33, 566.2, 25, 20]}
+{"kind": "image", "id": "64", "slide": 14, "name": "图片 50", "text": "", "bbox": [475.53, 566.2, 22.53, 20]}
+{"kind": "shape", "id": "52", "slide": 14, "name": "文本框 51", "text": "教育优先", "bbox": [503.34, 560.48, 120.01, 31.5]}
+{"kind": "shape", "id": "53", "slide": 14, "name": "文本框 52", "text": "子女教育期集中提领，后续保留传承", "bbox": [474.34, 599.47, 331.34, 24]}
+{"kind": "shape", "id": "54", "slide": 14, "name": "任意多边形 53", "text": "", "bbox": [474.33, 630.67, 120, 28.33]}
+{"kind": "shape", "id": "55", "slide": 14, "name": "文本框 54", "text": "子女教育支持", "bbox": [486.34, 634.69, 112.01, 21]}
+{"kind": "shape", "id": "56", "slide": 14, "name": "任意多边形 55", "text": "", "bbox": [847.13, 540.47, 372.33, 139]}
+{"kind": "shape", "id": "57", "slide": 14, "name": "任意多边形 56", "text": "", "bbox": [867.67, 566.2, 25, 20]}
+{"kind": "image", "id": "65", "slide": 14, "name": "图片 57", "text": "", "bbox": [870.13, 566.2, 20, 20]}
+{"kind": "shape", "id": "59", "slide": 14, "name": "文本框 58", "text": "养老优先", "bbox": [896.67, 560.48, 120.01, 31.5]}
+{"kind": "shape", "id": "60", "slide": 14, "name": "文本框 59", "text": "退休后稳定提领，兼顾生活品质与传承", "bbox": [867.67, 599.47, 331.34, 24]}
+{"kind": "shape", "id": "61", "slide": 14, "name": "任意多边形 60", "text": "", "bbox": [867.67, 630.67, 88, 28.33]}
+{"kind": "shape", "id": "62", "slide": 14, "name": "文本框 61", "text": "养老补充", "bbox": [879.67, 634.69, 80.01, 21]}
+{"kind": "shape", "id": "3", "slide": 15, "name": "任意多边形 2", "text": "", "bbox": [56, 40, 1168, 48]}
+{"kind": "shape", "id": "4", "slide": 15, "name": "任意多边形 3", "text": "", "bbox": [56, 40, 4, 48]}
+{"kind": "shape", "id": "6", "slide": 15, "name": "文本框 5", "text": "家族传承：让爱与责任代代相传", "bbox": [74, 37.5, 1150, 52.5]}
+{"kind": "shape", "id": "10", "slide": 15, "name": "文本框 9", "text": "家族传承不仅是财富的传递，更是家族精神、价值观和责任的延续", "bbox": [330, 260.65, 620, 26.5]}
+{"kind": "image", "id": "41", "slide": 15, "name": "图片 6", "text": "", "bbox": [374.93, 189.6, 42, 48]}
+{"kind": "shape", "id": "8", "slide": 15, "name": "文本框 7", "text": "让爱与责任代代相传", "bbox": [419.99, 187.05, 440.01, 60.2]}
+{"kind": "image", "id": "42", "slide": 15, "name": "图片 8", "text": "", "bbox": [863, 196.6, 42, 48]}
+{"kind": "shape", "id": "11", "slide": 15, "name": "任意多边形 10", "text": "", "bbox": [60.47, 385.27, 567, 294.2]}
+{"kind": "shape", "id": "12", "slide": 15, "name": "文本框 11", "text": "传承面临的挑战", "bbox": [81, 405.8, 526, 31.5]}
+{"kind": "shape", "id": "13", "slide": 15, "name": "任意多边形 12", "text": "", "bbox": [81, 453.47, 42, 42]}
+{"kind": "image", "id": "43", "slide": 15, "name": "图片 13", "text": "", "bbox": [89.47, 462, 25, 25]}
+{"kind": "shape", "id": "15", "slide": 15, "name": "文本框 14", "text": "财富稀释", "bbox": [135, 449.26, 162.01, 26.5]}
+{"kind": "shape", "id": "16", "slide": 15, "name": "文本框 15", "text": "多代传承后财富分散", "bbox": [135, 475.76, 180.01, 24]}
+{"kind": "shape", "id": "17", "slide": 15, "name": "任意多边形 16", "text": "", "bbox": [81, 507.87, 42, 42]}
+{"kind": "image", "id": "44", "slide": 15, "name": "图片 17", "text": "", "bbox": [89.47, 516.4, 25, 25]}
+{"kind": "shape", "id": "19", "slide": 15, "name": "文本框 18", "text": "能力断层", "bbox": [135, 503.68, 180.01, 26.5]}
+{"kind": "shape", "id": "20", "slide": 15, "name": "文本框 19", "text": "后代缺乏财富管理能力", "bbox": [135, 530.18, 198.01, 24]}
+{"kind": "shape", "id": "21", "slide": 15, "name": "任意多边形 20", "text": "", "bbox": [81, 562.33, 42, 42]}
+{"kind": "image", "id": "45", "slide": 15, "name": "图片 21", "text": "", "bbox": [89.47, 570.8, 25, 25]}
+{"kind": "shape", "id": "23", "slide": 15, "name": "文本框 22", "text": "家庭纠纷", "bbox": [135, 558.1, 144.01, 26.5]}
+{"kind": "shape", "id": "24", "slide": 15, "name": "文本框 23", "text": "继承分配引发矛盾", "bbox": [135, 584.6, 162.01, 24]}
+{"kind": "shape", "id": "25", "slide": 15, "name": "任意多边形 24", "text": "", "bbox": [81, 616.73, 42, 42]}
+{"kind": "image", "id": "46", "slide": 15, "name": "图片 25", "text": "", "bbox": [89.47, 625.27, 25, 25]}
+{"kind": "shape", "id": "27", "slide": 15, "name": "文本框 26", "text": "税务负担", "bbox": [135, 612.52, 108.01, 26.5]}
+{"kind": "shape", "id": "28", "slide": 15, "name": "文本框 27", "text": "传承成本高昂", "bbox": [135, 639.02, 126.01, 24]}
+{"kind": "shape", "id": "29", "slide": 15, "name": "任意多边形 28", "text": "", "bbox": [652.47, 385.27, 567, 294.2]}
+{"kind": "shape", "id": "30", "slide": 15, "name": "文本框 29", "text": "解决方案", "bbox": [673, 405.8, 526, 31.5]}
+{"kind": "shape", "id": "31", "slide": 15, "name": "文本框 30", "text": "通过科学的传承工具和规划，实现财富有序传递，保障家族基业长青。", "bbox": [673, 451.8, 526, 66.5]}
+{"kind": "shape", "id": "32", "slide": 15, "name": "任意多边形 31", "text": "", "bbox": [673, 533.27, 526, 33.87]}
+{"kind": "image", "id": "47", "slide": 15, "name": "图片 32", "text": "", "bbox": [691.47, 540.2, 20, 20]}
+{"kind": "shape", "id": "34", "slide": 15, "name": "文本框 33", "text": "科学规划传承路径", "bbox": [726, 537, 180, 26.5]}
+{"kind": "shape", "id": "35", "slide": 15, "name": "任意多边形 34", "text": "", "bbox": [673, 579.13, 526, 33.93]}
+{"kind": "image", "id": "48", "slide": 15, "name": "图片 35", "text": "", "bbox": [691.47, 586.13, 20, 20]}
+{"kind": "shape", "id": "37", "slide": 15, "name": "文本框 36", "text": "建立家族治理机制", "bbox": [726, 582.9, 180, 26.5]}
+{"kind": "shape", "id": "38", "slide": 15, "name": "任意多边形 37", "text": "", "bbox": [673, 625.07, 526, 33.87]}
+{"kind": "image", "id": "49", "slide": 15, "name": "图片 38", "text": "", "bbox": [691.47, 632, 20, 20]}
+{"kind": "shape", "id": "40", "slide": 15, "name": "文本框 39", "text": "培养后代财商能力", "bbox": [726, 628.8, 180, 26.5]}
+{"kind": "shape", "id": "3", "slide": 16, "name": "任意多边形 2", "text": "", "bbox": [56, 40, 1168, 48]}
+{"kind": "shape", "id": "4", "slide": 16, "name": "任意多边形 3", "text": "", "bbox": [56, 40, 4, 48]}
+{"kind": "shape", "id": "6", "slide": 16, "name": "文本框 5", "text": "产品传承优势", "bbox": [74, 37.5, 1150, 52.5]}
+{"kind": "shape", "id": "7", "slide": 16, "name": "任意多边形 6", "text": "", "bbox": [60.47, 116.47, 372.33, 563]}
+{"kind": "shape", "id": "8", "slide": 16, "name": "任意多边形 7", "text": "", "bbox": [220.6, 209.73, 52, 52]}
+{"kind": "image", "id": "37", "slide": 16, "name": "图片 8", "text": "", "bbox": [230.87, 223.2, 31.53, 25]}
+{"kind": "shape", "id": "10", "slide": 16, "name": "文本框 9", "text": "法律保障", "bbox": [176.66, 344.8, 140, 38.4]}
+{"kind": "shape", "id": "11", "slide": 16, "name": "任意多边形 10", "text": "", "bbox": [81, 479.2, 6, 6]}
+{"kind": "shape", "id": "12", "slide": 16, "name": "文本框 11", "text": "保险金不属于遗产，无需继承程序", "bbox": [85, 464.75, 320, 34.5]}
+{"kind": "shape", "id": "13", "slide": 16, "name": "任意多边形 12", "text": "", "bbox": [81, 523.2, 6, 6]}
+{"kind": "shape", "id": "14", "slide": 16, "name": "文本框 13", "text": "指定受益人，定向传承，避免纠纷", "bbox": [85, 508.75, 320, 34.5]}
+{"kind": "shape", "id": "15", "slide": 16, "name": "任意多边形 14", "text": "", "bbox": [81, 567.2, 6, 6]}
+{"kind": "shape", "id": "16", "slide": 16, "name": "文本框 15", "text": "合同约定，法律保护，安全可靠", "bbox": [85, 552.75, 300, 34.5]}
+{"kind": "shape", "id": "17", "slide": 16, "name": "任意多边形 16", "text": "", "bbox": [453.8, 116.47, 372.33, 563]}
+{"kind": "shape", "id": "18", "slide": 16, "name": "任意多边形 17", "text": "", "bbox": [614, 209.73, 52, 52]}
+{"kind": "image", "id": "38", "slide": 16, "name": "图片 18", "text": "", "bbox": [630.47, 223.2, 19, 25]}
+{"kind": "shape", "id": "20", "slide": 16, "name": "文本框 19", "text": "税务优化", "bbox": [570, 344.8, 140, 38.4]}
+{"kind": "shape", "id": "21", "slide": 16, "name": "任意多边形 20", "text": "", "bbox": [474.33, 479.2, 6, 6]}
+{"kind": "shape", "id": "22", "slide": 16, "name": "文本框 21", "text": "合理规划可降低传承税务成本", "bbox": [478.34, 464.75, 280, 34.5]}
+{"kind": "shape", "id": "23", "slide": 16, "name": "任意多边形 22", "text": "", "bbox": [474.33, 523.2, 6, 6]}
+{"kind": "shape", "id": "24", "slide": 16, "name": "文本框 23", "text": "利用保险工具实现税务递延", "bbox": [478.34, 508.75, 260, 34.5]}
+{"kind": "shape", "id": "25", "slide": 16, "name": "任意多边形 24", "text": "", "bbox": [474.33, 567.2, 6, 6]}
+{"kind": "shape", "id": "26", "slide": 16, "name": "文本框 25", "text": "专业团队提供税务筹划建议", "bbox": [478.34, 552.75, 260, 34.5]}
+{"kind": "shape", "id": "27", "slide": 16, "name": "任意多边形 26", "text": "", "bbox": [847.13, 116.47, 372.33, 563]}
+{"kind": "shape", "id": "28", "slide": 16, "name": "任意多边形 27", "text": "", "bbox": [1007.33, 209.73, 52, 52]}
+{"kind": "image", "id": "39", "slide": 16, "name": "图片 28", "text": "", "bbox": [1020.8, 223.2, 25, 25]}
+{"kind": "shape", "id": "30", "slide": 16, "name": "文本框 29", "text": "传承灵活性", "bbox": [949.34, 344.8, 168, 38.4]}
+{"kind": "shape", "id": "31", "slide": 16, "name": "任意多边形 30", "text": "", "bbox": [867.67, 479.2, 6, 6]}
+{"kind": "shape", "id": "32", "slide": 16, "name": "文本框 31", "text": "可随时调整受益人及受益比例", "bbox": [871.67, 464.75, 280, 34.5]}
+{"kind": "shape", "id": "33", "slide": 16, "name": "任意多边形 32", "text": "", "bbox": [867.67, 523.2, 6, 6]}
+{"kind": "shape", "id": "34", "slide": 16, "name": "文本框 33", "text": "支持多受益人分配安排", "bbox": [871.67, 508.75, 220, 34.5]}
+{"kind": "shape", "id": "35", "slide": 16, "name": "任意多边形 34", "text": "", "bbox": [867.67, 567.2, 6, 6]}
+{"kind": "shape", "id": "36", "slide": 16, "name": "文本框 35", "text": "适应家庭结构动态变化", "bbox": [871.67, 552.75, 220, 34.5]}
+{"kind": "shape", "id": "3", "slide": 17, "name": "任意多边形 2", "text": "", "bbox": [56, 40, 1168, 48]}
+{"kind": "shape", "id": "4", "slide": 17, "name": "任意多边形 3", "text": "", "bbox": [56, 40, 4, 48]}
+{"kind": "shape", "id": "6", "slide": 17, "name": "文本框 5", "text": "传承规划案例", "bbox": [74, 37.5, 1150, 52.5]}
+{"kind": "shape", "id": "7", "slide": 17, "name": "任意多边形 6", "text": "", "bbox": [60.47, 116.47, 372.33, 563]}
+{"kind": "shape", "id": "8", "slide": 17, "name": "任意多边形 7", "text": "", "bbox": [81, 137, 331.33, 44.47]}
+{"kind": "shape", "id": "9", "slide": 17, "name": "任意多边形 8", "text": "", "bbox": [81, 180.47, 331.33, 1]}
+{"kind": "shape", "id": "11", "slide": 17, "name": "任意多边形 10", "text": "", "bbox": [81, 142.73, 25, 20]}
+{"kind": "image", "id": "62", "slide": 17, "name": "图片 11", "text": "", "bbox": [84.73, 142.73, 17.47, 20]}
+{"kind": "shape", "id": "13", "slide": 17, "name": "文本框 12", "text": "案例背景", "bbox": [114, 137, 120.01, 31.5]}
+{"kind": "shape", "id": "14", "slide": 17, "name": "文本框 13", "text": "李先生，55岁，企业家，希望将财富传承给子女，同时支持子女创业。", "bbox": [81, 262.38, 331.34, 66.5]}
+{"kind": "shape", "id": "15", "slide": 17, "name": "任意多边形 14", "text": "", "bbox": [81, 419.2, 6, 6]}
+{"kind": "shape", "id": "16", "slide": 17, "name": "文本框 15", "text": "企业主身份，资产规模较大", "bbox": [91, 410.25, 234.01, 24]}
+{"kind": "shape", "id": "17", "slide": 17, "name": "任意多边形 16", "text": "", "bbox": [81, 451.2, 6, 6]}
+{"kind": "shape", "id": "18", "slide": 17, "name": "文本框 17", "text": "子女有创业意愿，需资金支持", "bbox": [91, 442.25, 252.01, 24]}
+{"kind": "shape", "id": "19", "slide": 17, "name": "任意多边形 18", "text": "", "bbox": [81, 548.6, 331.33, 40]}
+{"kind": "shape", "id": "20", "slide": 17, "name": "文本框 19", "text": "核心诉求：财富传承 + 子女创业支持", "bbox": [89, 556.62, 315.34, 24]}
+{"kind": "shape", "id": "21", "slide": 17, "name": "任意多边形 20", "text": "", "bbox": [453.8, 116.47, 372.33, 563]}
+{"kind": "shape", "id": "22", "slide": 17, "name": "任意多边形 21", "text": "", "bbox": [474.33, 137, 331.33, 44.47]}
+{"kind": "shape", "id": "23", "slide": 17, "name": "任意多边形 22", "text": "", "bbox": [474.33, 180.47, 331.33, 1]}
+{"kind": "shape", "id": "25", "slide": 17, "name": "任意多边形 24", "text": "", "bbox": [474.33, 142.73, 25, 20]}
+{"kind": "image", "id": "63", "slide": 17, "name": "图片 25", "text": "", "bbox": [474.33, 142.73, 25, 20]}
+{"kind": "shape", "id": "27", "slide": 17, "name": "文本框 26", "text": "传承方案", "bbox": [507.34, 137, 120.01, 31.5]}
+{"kind": "shape", "id": "28", "slide": 17, "name": "任意多边形 27", "text": "", "bbox": [474.33, 288.6, 6, 6]}
+{"kind": "shape", "id": "29", "slide": 17, "name": "文本框 28", "text": "投保人：李先生", "bbox": [484.34, 279.66, 144.02, 24]}
+{"kind": "shape", "id": "30", "slide": 17, "name": "任意多边形 29", "text": "", "bbox": [474.33, 320.6, 6, 6]}
+{"kind": "shape", "id": "31", "slide": 17, "name": "文本框 30", "text": "被保险人：李先生", "bbox": [484.34, 311.66, 162.02, 24]}
+{"kind": "shape", "id": "32", "slide": 17, "name": "任意多边形 31", "text": "", "bbox": [474.33, 352.6, 6, 6]}
+{"kind": "shape", "id": "33", "slide": 17, "name": "文本框 32", "text": "受益人：儿子（60%）、女儿（40%）", "bbox": [484.34, 343.66, 330.06, 24]}
+{"kind": "shape", "id": "34", "slide": 17, "name": "任意多边形 33", "text": "", "bbox": [474.33, 385.13, 6, 6]}
+{"kind": "shape", "id": "35", "slide": 17, "name": "文本框 34", "text": "交费期：5年，年交保费300万元", "bbox": [484.34, 375.66, 282.38, 25]}
+{"kind": "shape", "id": "36", "slide": 17, "name": "任意多边形 35", "text": "", "bbox": [474.33, 498.8, 331.33, 74]}
+{"kind": "shape", "id": "37", "slide": 17, "name": "文本框 36", "text": "1500万", "bbox": [540.55, 506.83, 125.89, 37]}
+{"kind": "shape", "id": "38", "slide": 17, "name": "文本框 37", "text": "总保费", "bbox": [571.49, 543.83, 64.01, 21]}
+{"kind": "shape", "id": "39", "slide": 17, "name": "矩形 38", "text": "", "bbox": [664.4, 519.8, 1, 32]}
+{"kind": "shape", "id": "40", "slide": 17, "name": "文本框 39", "text": "5年", "bbox": [664.71, 506.83, 73.48, 37]}
+{"kind": "shape", "id": "41", "slide": 17, "name": "文本框 40", "text": "交费期", "bbox": [669.45, 543.83, 64.01, 21]}
+{"kind": "shape", "id": "42", "slide": 17, "name": "任意多边形 41", "text": "", "bbox": [847.13, 116.47, 372.33, 563]}
+{"kind": "shape", "id": "43", "slide": 17, "name": "任意多边形 42", "text": "", "bbox": [867.67, 137, 331.33, 44.47]}
+{"kind": "shape", "id": "44", "slide": 17, "name": "任意多边形 43", "text": "", "bbox": [867.67, 180.47, 331.33, 1]}
+{"kind": "shape", "id": "46", "slide": 17, "name": "任意多边形 45", "text": "", "bbox": [867.67, 142.73, 25, 20]}
+{"kind": "image", "id": "64", "slide": 17, "name": "图片 46", "text": "", "bbox": [870.13, 142.73, 20, 20]}
+{"kind": "shape", "id": "48", "slide": 17, "name": "文本框 47", "text": "方案效果", "bbox": [900.67, 137, 120.01, 31.5]}
+{"kind": "shape", "id": "49", "slide": 17, "name": "任意多边形 48", "text": "", "bbox": [867.67, 296.6, 6, 6]}
+{"kind": "shape", "id": "50", "slide": 17, "name": "文本框 49", "text": "李先生身故后，保险金按比例传承给子女", "bbox": [877.67, 275.66, 321.34, 48]}
+{"kind": "shape", "id": "51", "slide": 17, "name": "任意多边形 50", "text": "", "bbox": [867.67, 340.6, 6, 6]}
+{"kind": "shape", "id": "52", "slide": 17, "name": "文本框 51", "text": "避免继承纠纷，传承安排私密安全", "bbox": [877.67, 331.66, 288.02, 24]}
+{"kind": "shape", "id": "53", "slide": 17, "name": "任意多边形 52", "text": "", "bbox": [867.67, 372.6, 6, 6]}
+{"kind": "shape", "id": "54", "slide": 17, "name": "文本框 53", "text": "子女获得创业启动资金，传承家族事业", "bbox": [877.67, 363.66, 324.02, 24]}
+{"kind": "shape", "id": "55", "slide": 17, "name": "任意多边形 54", "text": "", "bbox": [867.67, 481.8, 331.33, 95]}
+{"kind": "image", "id": "65", "slide": 17, "name": "图片 55", "text": "", "bbox": [877.87, 490.8, 18, 18.47]}
+{"kind": "shape", "id": "57", "slide": 17, "name": "文本框 56", "text": "定向传承，比例明确", "bbox": [902.17, 489.83, 160.01, 21]}
+{"kind": "image", "id": "66", "slide": 17, "name": "图片 57", "text": "", "bbox": [877.87, 519.8, 18, 18.47]}
+{"kind": "shape", "id": "59", "slide": 17, "name": "文本框 58", "text": "私密性强，避免家庭矛盾", "bbox": [902.17, 518.83, 192.01, 21]}
+{"kind": "image", "id": "67", "slide": 17, "name": "图片 59", "text": "", "bbox": [877.87, 548.8, 18, 18.47]}
+{"kind": "shape", "id": "61", "slide": 17, "name": "文本框 60", "text": "助力二代创业，延续家业", "bbox": [902.17, 547.83, 192.01, 21]}
+{"kind": "shape", "id": "3", "slide": 18, "name": "任意多边形 2", "text": "", "bbox": [56, 40, 1168, 48]}
+{"kind": "shape", "id": "4", "slide": 18, "name": "任意多边形 3", "text": "", "bbox": [56, 40, 4, 48]}
+{"kind": "shape", "id": "6", "slide": 18, "name": "文本框 5", "text": "客户案例：张先生的传承规划", "bbox": [74, 37.5, 1150, 52.5]}
+{"kind": "shape", "id": "7", "slide": 18, "name": "任意多边形 6", "text": "", "bbox": [60.47, 116.47, 279, 190.8]}
+{"kind": "shape", "id": "8", "slide": 18, "name": "任意多边形 7", "text": "", "bbox": [81, 189.87, 44, 44]}
+{"kind": "image", "id": "77", "slide": 18, "name": "图片 8", "text": "", "bbox": [94.2, 201.87, 17.53, 20]}
+{"kind": "shape", "id": "10", "slide": 18, "name": "文本框 9", "text": "客户画像", "bbox": [141, 173.65, 142.38, 24]}
+{"kind": "shape", "id": "11", "slide": 18, "name": "文本框 10", "text": "张先生", "bbox": [141, 197.65, 142.38, 31.5]}
+{"kind": "shape", "id": "12", "slide": 18, "name": "文本框 11", "text": "50岁 · 企业创始人", "bbox": [141, 229.15, 158.38, 21]}
+{"kind": "shape", "id": "13", "slide": 18, "name": "任意多边形 12", "text": "", "bbox": [360.47, 155.87, 272.33, 112]}
+{"kind": "shape", "id": "14", "slide": 18, "name": "任意多边形 13", "text": "", "bbox": [413.2, 185.87, 52, 52]}
+{"kind": "image", "id": "78", "slide": 18, "name": "图片 14", "text": "", "bbox": [426.67, 199.33, 25, 25]}
+{"kind": "shape", "id": "16", "slide": 18, "name": "文本框 15", "text": "200万", "bbox": [457.23, 173.9, 142.88, 54.5]}
+{"kind": "shape", "id": "17", "slide": 18, "name": "文本框 16", "text": "年交保费", "bbox": [488.66, 226.4, 80.01, 21]}
+{"kind": "shape", "id": "18", "slide": 18, "name": "任意多边形 17", "text": "", "bbox": [653.8, 155.87, 272.33, 112]}
+{"kind": "shape", "id": "19", "slide": 18, "name": "任意多边形 18", "text": "", "bbox": [719, 185.87, 52, 52]}
+{"kind": "image", "id": "79", "slide": 18, "name": "图片 19", "text": "", "bbox": [734, 199.33, 22, 25]}
+{"kind": "shape", "id": "21", "slide": 18, "name": "文本框 20", "text": "10年", "bbox": [763.04, 173.9, 117.92, 54.5]}
+{"kind": "shape", "id": "22", "slide": 18, "name": "文本框 21", "text": "交费期", "bbox": [789.99, 226.4, 64.01, 21]}
+{"kind": "shape", "id": "23", "slide": 18, "name": "任意多边形 22", "text": "", "bbox": [947.13, 155.87, 272.33, 112]}
+{"kind": "shape", "id": "24", "slide": 18, "name": "任意多边形 23", "text": "", "bbox": [1024.8, 185.87, 52, 52]}
+{"kind": "image", "id": "80", "slide": 18, "name": "图片 24", "text": "", "bbox": [1035.07, 199.33, 31.53, 25]}
+{"kind": "shape", "id": "26", "slide": 18, "name": "文本框 25", "text": "2人", "bbox": [1068.86, 173.9, 92.96, 54.5]}
+{"kind": "shape", "id": "27", "slide": 18, "name": "文本框 26", "text": "子女", "bbox": [1091.34, 226.4, 48.01, 21]}
+{"kind": "shape", "id": "28", "slide": 18, "name": "任意多边形 27", "text": "", "bbox": [60.47, 332.27, 273, 347.2]}
+{"kind": "shape", "id": "29", "slide": 18, "name": "任意多边形 28", "text": "", "bbox": [81, 352.73, 44, 44]}
+{"kind": "image", "id": "81", "slide": 18, "name": "图片 29", "text": "", "bbox": [95, 364.27, 16, 21]}
+{"kind": "shape", "id": "31", "slide": 18, "name": "文本框 30", "text": "需求分析", "bbox": [137, 359.05, 176, 31.5]}
+{"kind": "shape", "id": "32", "slide": 18, "name": "任意多边形 31", "text": "", "bbox": [81, 424.67, 44, 44]}
+{"kind": "image", "id": "82", "slide": 18, "name": "图片 32", "text": "", "bbox": [93.73, 436.2, 18.47, 21]}
+{"kind": "shape", "id": "34", "slide": 18, "name": "文本框 33", "text": "创业支持", "bbox": [137, 409.47, 176, 26.5]}
+{"kind": "shape", "id": "35", "slide": 18, "name": "文本框 34", "text": "为子女提供创业启动资金", "bbox": [137, 435.97, 176, 48]}
+{"kind": "shape", "id": "36", "slide": 18, "name": "任意多边形 35", "text": "", "bbox": [81, 511.87, 44, 44]}
+{"kind": "image", "id": "83", "slide": 18, "name": "图片 36", "text": "", "bbox": [93.73, 523.33, 18.47, 21]}
+{"kind": "shape", "id": "38", "slide": 18, "name": "文本框 37", "text": "养老保障", "bbox": [137, 496.64, 176, 26.5]}
+{"kind": "shape", "id": "39", "slide": 18, "name": "文本框 38", "text": "保障夫妇品质养老生活", "bbox": [137, 523.14, 176, 48]}
+{"kind": "shape", "id": "40", "slide": 18, "name": "任意多边形 39", "text": "", "bbox": [81, 599, 44, 44]}
+{"kind": "image", "id": "84", "slide": 18, "name": "图片 40", "text": "", "bbox": [93.73, 610.53, 18.47, 21]}
+{"kind": "shape", "id": "42", "slide": 18, "name": "文本框 41", "text": "财富传承", "bbox": [137, 583.81, 176, 26.5]}
+{"kind": "shape", "id": "43", "slide": 18, "name": "文本框 42", "text": "实现财富有序代际传递", "bbox": [137, 610.31, 176, 48]}
+{"kind": "shape", "id": "44", "slide": 18, "name": "任意多边形 43", "text": "", "bbox": [354.47, 332.27, 273, 347.2]}
+{"kind": "shape", "id": "45", "slide": 18, "name": "任意多边形 44", "text": "", "bbox": [375, 352.73, 44, 44]}
+{"kind": "image", "id": "85", "slide": 18, "name": "图片 45", "text": "", "bbox": [389, 364.27, 16, 21]}
+{"kind": "shape", "id": "47", "slide": 18, "name": "文本框 46", "text": "解决方案", "bbox": [431, 359.05, 176, 31.5]}
+{"kind": "shape", "id": "48", "slide": 18, "name": "任意多边形 47", "text": "", "bbox": [375, 447.33, 44, 44]}
+{"kind": "image", "id": "86", "slide": 18, "name": "图片 48", "text": "", "bbox": [386.47, 458.87, 21, 21]}
+{"kind": "shape", "id": "50", "slide": 18, "name": "文本框 49", "text": "家族传承产品投保方案", "bbox": [431, 442.9, 176, 53]}
+{"kind": "shape", "id": "51", "slide": 18, "name": "任意多边形 50", "text": "", "bbox": [375, 511.87, 44, 44]}
+{"kind": "image", "id": "87", "slide": 18, "name": "图片 51", "text": "", "bbox": [386.47, 523.33, 21, 21]}
+{"kind": "shape", "id": "53", "slide": 18, "name": "文本框 52", "text": "灵活提领路径设计", "bbox": [431, 520.65, 180, 26.5]}
+{"kind": "shape", "id": "54", "slide": 18, "name": "任意多边形 53", "text": "", "bbox": [375, 576.33, 44, 44]}
+{"kind": "image", "id": "88", "slide": 18, "name": "图片 54", "text": "", "bbox": [386.47, 587.87, 21, 21]}
+{"kind": "shape", "id": "56", "slide": 18, "name": "文本框 55", "text": "兼顾教育·养老·传承三重目标", "bbox": [431, 571.9, 176, 53]}
+{"kind": "shape", "id": "57", "slide": 18, "name": "任意多边形 56", "text": "", "bbox": [652.47, 332.27, 273, 347.2]}
+{"kind": "shape", "id": "58", "slide": 18, "name": "任意多边形 57", "text": "", "bbox": [673, 352.73, 44, 44]}
+{"kind": "image", "id": "89", "slide": 18, "name": "图片 58", "text": "", "bbox": [683.2, 364.27, 23.53, 21]}
+{"kind": "shape", "id": "60", "slide": 18, "name": "文本框 59", "text": "子女受益", "bbox": [729, 359.05, 176, 31.5]}
+{"kind": "shape", "id": "61", "slide": 18, "name": "任意多边形 60", "text": "", "bbox": [673, 477.33, 44, 44]}
+{"kind": "image", "id": "90", "slide": 18, "name": "图片 61", "text": "", "bbox": [683.2, 488.87, 23.53, 21]}
+{"kind": "shape", "id": "63", "slide": 18, "name": "文本框 62", "text": "获得教育支持资金保障", "bbox": [729, 472.9, 176, 53]}
+{"kind": "shape", "id": "64", "slide": 18, "name": "任意多边形 63", "text": "", "bbox": [673, 546.33, 44, 44]}
+{"kind": "image", "id": "91", "slide": 18, "name": "图片 64", "text": "", "bbox": [683.2, 557.87, 23.53, 21]}
+{"kind": "shape", "id": "66", "slide": 18, "name": "文本框 65", "text": "获取创业启动专项资金", "bbox": [729, 541.9, 176, 53]}
+{"kind": "shape", "id": "67", "slide": 18, "name": "任意多边形 66", "text": "", "bbox": [946.47, 332.27, 273, 347.2]}
+{"kind": "shape", "id": "68", "slide": 18, "name": "任意多边形 67", "text": "", "bbox": [967, 352.73, 44, 44]}
+{"kind": "image", "id": "92", "slide": 18, "name": "图片 68", "text": "", "bbox": [976, 364.27, 26.47, 21]}
+{"kind": "shape", "id": "70", "slide": 18, "name": "文本框 69", "text": "夫妇受益", "bbox": [1023, 359.05, 176, 31.5]}
+{"kind": "shape", "id": "71", "slide": 18, "name": "任意多边形 70", "text": "", "bbox": [967, 481.87, 44, 44]}
+{"kind": "image", "id": "93", "slide": 18, "name": "图片 71", "text": "", "bbox": [977.2, 493.33, 23.53, 21]}
+{"kind": "shape", "id": "73", "slide": 18, "name": "文本框 72", "text": "享受品质养老生活", "bbox": [1023, 490.65, 180, 26.5]}
+{"kind": "shape", "id": "74", "slide": 18, "name": "任意多边形 73", "text": "", "bbox": [967, 541.87, 44, 44]}
+{"kind": "image", "id": "94", "slide": 18, "name": "图片 74", "text": "", "bbox": [977.2, 553.33, 23.53, 21]}
+{"kind": "shape", "id": "76", "slide": 18, "name": "文本框 75", "text": "剩余财富顺利传承", "bbox": [1023, 550.65, 180, 26.5]}
+{"kind": "shape", "id": "3", "slide": 19, "name": "任意多边形 2", "text": "", "bbox": [56, 40, 1168, 48]}
+{"kind": "shape", "id": "4", "slide": 19, "name": "任意多边形 3", "text": "", "bbox": [56, 40, 4, 48]}
+{"kind": "shape", "id": "6", "slide": 19, "name": "文本框 5", "text": "客户案例：王女士的养老规划", "bbox": [74, 37.5, 1150, 52.5]}
+{"kind": "shape", "id": "7", "slide": 19, "name": "任意多边形 6", "text": "", "bbox": [60.47, 116.47, 451.8, 194.33]}
+{"kind": "shape", "id": "8", "slide": 19, "name": "任意多边形 7", "text": "", "bbox": [81, 137, 49, 49]}
+{"kind": "image", "id": "51", "slide": 19, "name": "图片 8", "text": "", "bbox": [92.73, 147, 25.47, 29]}
+{"kind": "shape", "id": "10", "slide": 19, "name": "文本框 9", "text": "王女士", "bbox": [142, 128.3, 112, 38.4]}
+{"kind": "shape", "id": "11", "slide": 19, "name": "文本框 10", "text": "客户画像", "bbox": [142, 169, 90.01, 24]}
+{"kind": "shape", "id": "12", "slide": 19, "name": "任意多边形 11", "text": "", "bbox": [81, 202, 59.93, 29]}
+{"kind": "shape", "id": "13", "slide": 19, "name": "文本框 12", "text": "45岁", "bbox": [93, 206, 51.97, 21]}
+{"kind": "shape", "id": "14", "slide": 19, "name": "任意多边形 13", "text": "", "bbox": [148.93, 202, 88, 29]}
+{"kind": "shape", "id": "15", "slide": 19, "name": "文本框 14", "text": "企业高管", "bbox": [160.97, 206, 80.01, 21]}
+{"kind": "shape", "id": "16", "slide": 19, "name": "任意多边形 15", "text": "", "bbox": [244.93, 202, 56, 29]}
+{"kind": "shape", "id": "17", "slide": 19, "name": "文本框 16", "text": "单身", "bbox": [256.98, 206, 48.01, 21]}
+{"kind": "shape", "id": "18", "slide": 19, "name": "文本框 17", "text": "希望提前规划养老，确保退休生活品质，同时考虑财富传承安排。", "bbox": [81, 239.06, 410.8, 66.5]}
+{"kind": "shape", "id": "19", "slide": 19, "name": "任意多边形 18", "text": "", "bbox": [60.47, 331.8, 451.8, 347.67]}
+{"kind": "shape", "id": "20", "slide": 19, "name": "文本框 19", "text": "需求分析", "bbox": [81, 389.39, 410.8, 31.5]}
+{"kind": "shape", "id": "21", "slide": 19, "name": "任意多边形 20", "text": "", "bbox": [81, 497.93, 8, 8]}
+{"kind": "shape", "id": "22", "slide": 19, "name": "文本框 21", "text": "保障退休后生活品质，维持现有生活水平不下降", "bbox": [101, 468.45, 390.8, 66.5]}
+{"kind": "shape", "id": "23", "slide": 19, "name": "任意多边形 22", "text": "", "bbox": [81, 557.93, 8, 8]}
+{"kind": "shape", "id": "24", "slide": 19, "name": "文本框 23", "text": "应对长寿风险，确保资金覆盖全生命周期", "bbox": [101, 544.45, 380, 34.5]}
+{"kind": "shape", "id": "25", "slide": 19, "name": "任意多边形 24", "text": "", "bbox": [81, 601.93, 8, 8]}
+{"kind": "shape", "id": "26", "slide": 19, "name": "文本框 25", "text": "财富传承给父母或慈善机构，实现人生价值", "bbox": [101, 588.45, 400, 34.5]}
+{"kind": "shape", "id": "27", "slide": 19, "name": "任意多边形 26", "text": "", "bbox": [541.27, 116.47, 678.2, 271]}
+{"kind": "shape", "id": "28", "slide": 19, "name": "文本框 27", "text": "解决方案", "bbox": [832.39, 141.85, 120.01, 31.5]}
+{"kind": "shape", "id": "29", "slide": 19, "name": "文本框 28", "text": "150万", "bbox": [788.62, 185.25, 215.81, 87.7]}
+{"kind": "shape", "id": "30", "slide": 19, "name": "文本框 29", "text": "/年", "bbox": [944.43, 229.35, 47.74, 26.5]}
+{"kind": "shape", "id": "31", "slide": 19, "name": "任意多边形 30", "text": "", "bbox": [750.13, 285.33, 116.47, 32]}
+{"kind": "shape", "id": "32", "slide": 19, "name": "文本框 31", "text": "交费期", "bbox": [762.15, 290.85, 64.01, 21]}
+{"kind": "shape", "id": "33", "slide": 19, "name": "文本框 32", "text": "10年", "bbox": [814.16, 289.35, 58.47, 24]}
+{"kind": "shape", "id": "34", "slide": 19, "name": "任意多边形 33", "text": "", "bbox": [878.6, 285.33, 132, 32]}
+{"kind": "shape", "id": "35", "slide": 19, "name": "文本框 34", "text": "产品", "bbox": [890.63, 290.85, 48.01, 21]}
+{"kind": "shape", "id": "36", "slide": 19, "name": "文本框 35", "text": "家族传承", "bbox": [926.63, 289.35, 90.01, 24]}
+{"kind": "shape", "id": "37", "slide": 19, "name": "文本框 36", "text": "规划退休后每年提领，补充养老金缺口", "bbox": [718.39, 331.75, 324.01, 31.2]}
+{"kind": "shape", "id": "38", "slide": 19, "name": "任意多边形 37", "text": "", "bbox": [541.27, 408.47, 678.2, 271]}
+{"kind": "shape", "id": "39", "slide": 19, "name": "文本框 38", "text": "实施效果", "bbox": [820.39, 429, 120.01, 31.5]}
+{"kind": "shape", "id": "40", "slide": 19, "name": "任意多边形 39", "text": "", "bbox": [561.73, 472.53, 308.6, 145.27]}
+{"kind": "shape", "id": "41", "slide": 19, "name": "任意多边形 40", "text": "", "bbox": [690.07, 488.53, 52, 52]}
+{"kind": "image", "id": "52", "slide": 19, "name": "图片 41", "text": "", "bbox": [703.53, 502, 25, 25]}
+{"kind": "shape", "id": "43", "slide": 19, "name": "文本框 42", "text": "稳定现金流", "bbox": [632.09, 552.56, 168, 37]}
+{"kind": "shape", "id": "44", "slide": 19, "name": "文本框 43", "text": "退休后生活品质有保障", "bbox": [628.09, 588.32, 176.01, 21]}
+{"kind": "shape", "id": "45", "slide": 19, "name": "任意多边形 44", "text": "", "bbox": [890.33, 472.53, 308.67, 145.27]}
+{"kind": "shape", "id": "46", "slide": 19, "name": "任意多边形 45", "text": "", "bbox": [1018.67, 488.53, 52, 52]}
+{"kind": "image", "id": "53", "slide": 19, "name": "图片 46", "text": "", "bbox": [1030.67, 502, 28, 25]}
+{"kind": "shape", "id": "48", "slide": 19, "name": "文本框 47", "text": "传承安排", "bbox": [974.7, 552.56, 140, 37]}
+{"kind": "shape", "id": "49", "slide": 19, "name": "文本框 48", "text": "剩余资金传承父母或慈善", "bbox": [948.7, 588.32, 192.01, 21]}
+{"kind": "shape", "id": "50", "slide": 19, "name": "文本框 49", "text": "实现人生价值，达成财富与精神的双重传承", "bbox": [700.39, 632.21, 360.01, 31.2]}
+{"kind": "shape", "id": "3", "slide": 20, "name": "任意多边形 2", "text": "", "bbox": [56, 40, 1168, 48]}
+{"kind": "shape", "id": "4", "slide": 20, "name": "任意多边形 3", "text": "", "bbox": [56, 40, 4, 48]}
+{"kind": "shape", "id": "6", "slide": 20, "name": "文本框 5", "text": "服务保障：专业团队全程陪伴", "bbox": [74, 37.5, 1150, 52.5]}
+{"kind": "shape", "id": "7", "slide": 20, "name": "任意多边形 6", "text": "", "bbox": [60.47, 116.47, 331.4, 134]}
+{"kind": "shape", "id": "8", "slide": 20, "name": "任意多边形 7", "text": "", "bbox": [204.13, 129, 44, 44]}
+{"kind": "image", "id": "54", "slide": 20, "name": "图片 8", "text": "", "bbox": [217.4, 141, 17.53, 20]}
+{"kind": "shape", "id": "10", "slide": 20, "name": "文本框 9", "text": "客户经理", "bbox": [166.19, 181, 120.01, 31.5]}
+{"kind": "shape", "id": "11", "slide": 20, "name": "文本框 10", "text": "一对一服务，全程跟进", "bbox": [138.19, 218.07, 176.01, 21.8]}
+{"kind": "shape", "id": "12", "slide": 20, "name": "任意多边形 11", "text": "", "bbox": [60.47, 259.47, 331.4, 134]}
+{"kind": "shape", "id": "13", "slide": 20, "name": "任意多边形 12", "text": "", "bbox": [204.13, 272, 44, 44]}
+{"kind": "image", "id": "55", "slide": 20, "name": "图片 13", "text": "", "bbox": [216.13, 284, 20, 20]}
+{"kind": "shape", "id": "15", "slide": 20, "name": "文本框 14", "text": "理财顾问", "bbox": [166.19, 324, 120.01, 31.5]}
+{"kind": "shape", "id": "16", "slide": 20, "name": "文本框 15", "text": "提供专业投资建议", "bbox": [154.19, 361.07, 144.01, 21.8]}
+{"kind": "shape", "id": "17", "slide": 20, "name": "任意多边形 16", "text": "", "bbox": [60.47, 402.47, 331.4, 134]}
+{"kind": "shape", "id": "18", "slide": 20, "name": "任意多边形 17", "text": "", "bbox": [204.13, 415, 44, 44]}
+{"kind": "image", "id": "56", "slide": 20, "name": "图片 18", "text": "", "bbox": [218.67, 427, 15, 20]}
+{"kind": "shape", "id": "20", "slide": 20, "name": "文本框 19", "text": "税务专家", "bbox": [166.19, 467, 120.01, 31.5]}
+{"kind": "shape", "id": "21", "slide": 20, "name": "文本框 20", "text": "优化税务筹划方案", "bbox": [154.19, 504.07, 144.01, 21.8]}
+{"kind": "shape", "id": "22", "slide": 20, "name": "任意多边形 21", "text": "", "bbox": [60.47, 545.47, 331.4, 134]}
+{"kind": "shape", "id": "23", "slide": 20, "name": "任意多边形 22", "text": "", "bbox": [204.13, 558, 44, 44]}
+{"kind": "image", "id": "57", "slide": 20, "name": "图片 23", "text": "", "bbox": [213.67, 570, 25, 20]}
+{"kind": "shape", "id": "25", "slide": 20, "name": "文本框 24", "text": "法律顾问", "bbox": [166.19, 610, 120.01, 31.5]}
+{"kind": "shape", "id": "26", "slide": 20, "name": "文本框 25", "text": "保障合法权益", "bbox": [170.19, 647.07, 112.01, 21.8]}
+{"kind": "shape", "id": "27", "slide": 20, "name": "任意多边形 26", "text": "", "bbox": [418.87, 116.47, 386.8, 134]}
+{"kind": "shape", "id": "28", "slide": 20, "name": "任意多边形 27", "text": "", "bbox": [590.27, 129, 44, 44]}
+{"kind": "image", "id": "58", "slide": 20, "name": "图片 28", "text": "", "bbox": [602.27, 141, 20, 20]}
+{"kind": "shape", "id": "30", "slide": 20, "name": "文本框 29", "text": "7×24小时服务热线", "bbox": [498.34, 181, 227.91, 31.5]}
+{"kind": "shape", "id": "31", "slide": 20, "name": "文本框 30", "text": "全天候响应您的需求", "bbox": [532.29, 218.07, 160.01, 21.8]}
+{"kind": "shape", "id": "32", "slide": 20, "name": "任意多边形 31", "text": "", "bbox": [418.87, 259.47, 386.8, 134]}
+{"kind": "shape", "id": "33", "slide": 20, "name": "任意多边形 32", "text": "", "bbox": [590.27, 272, 44, 44]}
+{"kind": "image", "id": "59", "slide": 20, "name": "图片 33", "text": "", "bbox": [599.73, 284, 25, 20]}
+{"kind": "shape", "id": "35", "slide": 20, "name": "文本框 34", "text": "定期保单检视", "bbox": [528.29, 324, 168.01, 31.5]}
+{"kind": "shape", "id": "36", "slide": 20, "name": "文本框 35", "text": "动态调整建议", "bbox": [556.29, 361.07, 112.01, 21.8]}
+{"kind": "shape", "id": "37", "slide": 20, "name": "任意多边形 36", "text": "", "bbox": [418.87, 402.47, 386.8, 134]}
+{"kind": "shape", "id": "38", "slide": 20, "name": "任意多边形 37", "text": "", "bbox": [590.27, 415, 44, 44]}
+{"kind": "image", "id": "60", "slide": 20, "name": "图片 38", "text": "", "bbox": [604.73, 427, 15, 20]}
+{"kind": "shape", "id": "40", "slide": 20, "name": "文本框 39", "text": "年度财富策略报告会", "bbox": [492.29, 467, 240.01, 31.5]}
+{"kind": "shape", "id": "41", "slide": 20, "name": "文本框 40", "text": "前瞻市场洞察", "bbox": [556.29, 504.07, 112.01, 21.8]}
+{"kind": "shape", "id": "42", "slide": 20, "name": "任意多边形 41", "text": "", "bbox": [418.87, 545.47, 386.8, 134]}
+{"kind": "shape", "id": "43", "slide": 20, "name": "任意多边形 42", "text": "", "bbox": [590.27, 558, 44, 44]}
+{"kind": "image", "id": "61", "slide": 20, "name": "图片 43", "text": "", "bbox": [603.53, 570, 17.47, 20]}
+{"kind": "shape", "id": "45", "slide": 20, "name": "文本框 44", "text": "理赔绿色通道", "bbox": [528.29, 610, 168.01, 31.5]}
+{"kind": "shape", "id": "46", "slide": 20, "name": "文本框 45", "text": "快速高效理赔", "bbox": [556.29, 647.07, 112.01, 21.8]}
+{"kind": "shape", "id": "47", "slide": 20, "name": "任意多边形 46", "text": "", "bbox": [832.67, 116.47, 386.8, 563]}
+{"kind": "shape", "id": "48", "slide": 20, "name": "任意多边形 47", "text": "", "bbox": [1000.07, 257.47, 52, 52]}
+{"kind": "image", "id": "62", "slide": 20, "name": "图片 48", "text": "", "bbox": [1014.53, 270, 23, 26.47]}
+{"kind": "shape", "id": "50", "slide": 20, "name": "文本框 49", "text": "以客户为中心，以专业为基石，以长期陪伴为承诺，为客户财富保驾护航", "bbox": [882.09, 323.2, 288, 164.1]}
+{"kind": "shape", "id": "51", "slide": 20, "name": "任意多边形 50", "text": "", "bbox": [950.07, 501.47, 152, 37]}
+{"kind": "image", "id": "63", "slide": 20, "name": "图片 51", "text": "", "bbox": [968.07, 512, 16, 16]}
+{"kind": "shape", "id": "53", "slide": 20, "name": "文本框 52", "text": "长期陪伴承诺", "bbox": [990.09, 509.5, 112.01, 21]}
+{"kind": "shape", "id": "3", "slide": 21, "name": "任意多边形 2", "text": "", "bbox": [56, 40, 1168, 48]}
+{"kind": "shape", "id": "4", "slide": 21, "name": "任意多边形 3", "text": "", "bbox": [56, 40, 4, 48]}
+{"kind": "shape", "id": "6", "slide": 21, "name": "文本框 5", "text": "合作机构：强强联合，值得信赖", "bbox": [74, 37.5, 1150, 52.5]}
+{"kind": "shape", "id": "7", "slide": 21, "name": "任意多边形 6", "text": "", "bbox": [60.47, 116.47, 569, 271]}
+{"kind": "shape", "id": "8", "slide": 21, "name": "任意多边形 7", "text": "", "bbox": [81, 137, 52, 52]}
+{"kind": "image", "id": "47", "slide": 21, "name": "图片 8", "text": "", "bbox": [94.47, 150.47, 25, 25]}
+{"kind": "shape", "id": "10", "slide": 21, "name": "文本框 9", "text": "保险公司", "bbox": [145, 144.5, 140, 37]}
+{"kind": "shape", "id": "11", "slide": 21, "name": "任意多边形 10", "text": "", "bbox": [81, 228.87, 6, 6]}
+{"kind": "shape", "id": "12", "slide": 21, "name": "文本框 11", "text": "偿付能力充足，财务稳健可靠", "bbox": [95, 218.62, 280, 26.5]}
+{"kind": "shape", "id": "13", "slide": 21, "name": "任意多边形 12", "text": "", "bbox": [81, 281, 6, 6]}
+{"kind": "shape", "id": "14", "slide": 21, "name": "文本框 13", "text": "信誉卓著，行业口碑领先", "bbox": [95, 270.75, 240, 26.5]}
+{"kind": "shape", "id": "15", "slide": 21, "name": "任意多边形 14", "text": "", "bbox": [81, 333.07, 6, 6]}
+{"kind": "shape", "id": "16", "slide": 21, "name": "文本框 15", "text": "服务网络覆盖全国，响应及时", "bbox": [95, 322.87, 280, 26.5]}
+{"kind": "shape", "id": "17", "slide": 21, "name": "任意多边形 16", "text": "", "bbox": [650.47, 116.47, 569, 271]}
+{"kind": "shape", "id": "18", "slide": 21, "name": "任意多边形 17", "text": "", "bbox": [671, 137, 52, 52]}
+{"kind": "image", "id": "48", "slide": 21, "name": "图片 18", "text": "", "bbox": [684.47, 150.47, 25, 25]}
+{"kind": "shape", "id": "20", "slide": 21, "name": "文本框 19", "text": "投资团队", "bbox": [735, 144.5, 140, 37]}
+{"kind": "shape", "id": "21", "slide": 21, "name": "任意多边形 20", "text": "", "bbox": [671, 228.87, 6, 6]}
+{"kind": "shape", "id": "22", "slide": 21, "name": "文本框 21", "text": "资深投资专家组成，专业实力雄厚", "bbox": [685, 218.62, 320, 26.5]}
+{"kind": "shape", "id": "23", "slide": 21, "name": "任意多边形 22", "text": "", "bbox": [671, 281, 6, 6]}
+{"kind": "shape", "id": "24", "slide": 21, "name": "文本框 23", "text": "投资经验丰富，历史业绩优秀", "bbox": [685, 270.75, 280, 26.5]}
+{"kind": "shape", "id": "25", "slide": 21, "name": "任意多边形 24", "text": "", "bbox": [671, 333.07, 6, 6]}
+{"kind": "shape", "id": "26", "slide": 21, "name": "文本框 25", "text": "风险控制严格，稳健运营", "bbox": [685, 322.87, 240, 26.5]}
+{"kind": "shape", "id": "27", "slide": 21, "name": "任意多边形 26", "text": "", "bbox": [60.47, 408.47, 569, 271]}
+{"kind": "shape", "id": "28", "slide": 21, "name": "任意多边形 27", "text": "", "bbox": [81, 429, 52, 52]}
+{"kind": "image", "id": "49", "slide": 21, "name": "图片 28", "text": "", "bbox": [93, 442.47, 28, 25]}
+{"kind": "shape", "id": "30", "slide": 21, "name": "文本框 29", "text": "合作伙伴", "bbox": [145, 436.5, 140, 37]}
+{"kind": "shape", "id": "31", "slide": 21, "name": "任意多边形 30", "text": "", "bbox": [81, 520.87, 6, 6]}
+{"kind": "shape", "id": "32", "slide": 21, "name": "文本框 31", "text": "国内外知名金融机构深度合作", "bbox": [95, 510.62, 280, 26.5]}
+{"kind": "shape", "id": "33", "slide": 21, "name": "任意多边形 32", "text": "", "bbox": [81, 573, 6, 6]}
+{"kind": "shape", "id": "34", "slide": 21, "name": "文本框 33", "text": "顶级律师事务所专业支持", "bbox": [95, 562.75, 240, 26.5]}
+{"kind": "shape", "id": "35", "slide": 21, "name": "任意多边形 34", "text": "", "bbox": [81, 625.07, 6, 6]}
+{"kind": "shape", "id": "36", "slide": 21, "name": "文本框 35", "text": "税务师事务所协同服务", "bbox": [95, 614.87, 220, 26.5]}
+{"kind": "shape", "id": "37", "slide": 21, "name": "任意多边形 36", "text": "", "bbox": [650.47, 408.47, 569, 271]}
+{"kind": "shape", "id": "38", "slide": 21, "name": "任意多边形 37", "text": "", "bbox": [671, 429, 52, 52]}
+{"kind": "image", "id": "50", "slide": 21, "name": "图片 38", "text": "", "bbox": [681.2, 442.47, 31.53, 25]}
+{"kind": "shape", "id": "40", "slide": 21, "name": "文本框 39", "text": "监管保障", "bbox": [735, 436.5, 140, 37]}
+{"kind": "shape", "id": "41", "slide": 21, "name": "任意多边形 40", "text": "", "bbox": [671, 520.87, 6, 6]}
+{"kind": "shape", "id": "42", "slide": 21, "name": "文本框 41", "text": "产品经监管部门严格审批备案", "bbox": [685, 510.62, 280, 26.5]}
+{"kind": "shape", "id": "43", "slide": 21, "name": "任意多边形 42", "text": "", "bbox": [671, 573, 6, 6]}
+{"kind": "shape", "id": "44", "slide": 21, "name": "文本框 43", "text": "合同条款清晰透明，无隐藏条款", "bbox": [685, 562.75, 300, 26.5]}
+{"kind": "shape", "id": "45", "slide": 21, "name": "任意多边形 44", "text": "", "bbox": [671, 625.07, 6, 6]}
+{"kind": "shape", "id": "46", "slide": 21, "name": "文本框 45", "text": "客户权益受法律保护，安心无忧", "bbox": [685, 614.87, 300, 26.5]}
+{"kind": "shape", "id": "3", "slide": 22, "name": "任意多边形 2", "text": "", "bbox": [56, 40, 1168, 48]}
+{"kind": "shape", "id": "4", "slide": 22, "name": "任意多边形 3", "text": "", "bbox": [56, 40, 4, 48]}
+{"kind": "shape", "id": "6", "slide": 22, "name": "文本框 5", "text": "投保流程：简单便捷", "bbox": [74, 37.5, 1150, 52.5]}
+{"kind": "shape", "id": "7", "slide": 22, "name": "任意多边形 6", "text": "", "bbox": [60.47, 116.47, 1159, 353]}
+{"kind": "shape", "id": "8", "slide": 22, "name": "任意多边形 7", "text": "", "bbox": [174.47, 137, 64, 64]}
+{"kind": "shape", "id": "9", "slide": 22, "name": "文本框 8", "text": "01", "bbox": [175.02, 150.5, 62.94, 37]}
+{"kind": "shape", "id": "10", "slide": 22, "name": "文本框 9", "text": "咨询沟通", "bbox": [156.5, 205.5, 100, 27.5]}
+{"kind": "shape", "id": "11", "slide": 22, "name": "文本框 10", "text": "了解客户需求\n推荐合适方案", "bbox": [147.99, 234.4, 117.01, 60]}
+{"kind": "image", "id": "49", "slide": 22, "name": "图片 11", "text": "", "bbox": [343.47, 147, 15, 24]}
+{"kind": "shape", "id": "13", "slide": 22, "name": "任意多边形 12", "text": "", "bbox": [463.47, 137, 64, 64]}
+{"kind": "shape", "id": "14", "slide": 22, "name": "文本框 13", "text": "02", "bbox": [464.02, 150.5, 62.94, 37]}
+{"kind": "shape", "id": "15", "slide": 22, "name": "文本框 14", "text": "健康告知", "bbox": [445.5, 205.5, 100, 27.5]}
+{"kind": "shape", "id": "16", "slide": 22, "name": "文本框 15", "text": "如实填写健康问卷\n确保合同有效", "bbox": [418.99, 234.4, 153.01, 60]}
+{"kind": "image", "id": "50", "slide": 22, "name": "图片 16", "text": "", "bbox": [632.47, 147, 15, 24]}
+{"kind": "shape", "id": "18", "slide": 22, "name": "任意多边形 17", "text": "", "bbox": [752.47, 137, 64, 64]}
+{"kind": "shape", "id": "19", "slide": 22, "name": "文本框 18", "text": "03", "bbox": [753.02, 150.5, 62.94, 37]}
+{"kind": "shape", "id": "20", "slide": 22, "name": "文本框 19", "text": "核保审核", "bbox": [734.5, 205.5, 100, 27.5]}
+{"kind": "shape", "id": "21", "slide": 22, "name": "文本框 20", "text": "保险公司审核\n出具保单", "bbox": [725.99, 234.4, 117.01, 60]}
+{"kind": "image", "id": "51", "slide": 22, "name": "图片 21", "text": "", "bbox": [921.47, 147, 15, 24]}
+{"kind": "shape", "id": "23", "slide": 22, "name": "任意多边形 22", "text": "", "bbox": [1041.47, 137, 64, 64]}
+{"kind": "shape", "id": "24", "slide": 22, "name": "文本框 23", "text": "04", "bbox": [1042.02, 150.5, 62.94, 37]}
+{"kind": "shape", "id": "25", "slide": 22, "name": "文本框 24", "text": "合同签署", "bbox": [1023.5, 205.5, 100, 27.5]}
+{"kind": "shape", "id": "26", "slide": 22, "name": "文本框 25", "text": "签署保险合同\n正式生效", "bbox": [1014.99, 234.4, 117.01, 60]}
+{"kind": "shape", "id": "27", "slide": 22, "name": "任意多边形 26", "text": "", "bbox": [60.47, 472.47, 745, 207]}
+{"kind": "shape", "id": "28", "slide": 22, "name": "文本框 27", "text": "所需材料", "bbox": [81, 493, 704, 26.5]}
+{"kind": "shape", "id": "29", "slide": 22, "name": "任意多边形 28", "text": "", "bbox": [81, 525.4, 32, 32]}
+{"kind": "image", "id": "52", "slide": 22, "name": "图片 29", "text": "", "bbox": [87.47, 531.93, 21.53, 19]}
+{"kind": "shape", "id": "31", "slide": 22, "name": "文本框 30", "text": "投保人、被保险人身份证明", "bbox": [121, 528.19, 260, 26.5]}
+{"kind": "shape", "id": "32", "slide": 22, "name": "任意多边形 31", "text": "", "bbox": [81, 559.27, 32, 32]}
+{"kind": "image", "id": "53", "slide": 22, "name": "图片 32", "text": "", "bbox": [89.73, 565.8, 14.47, 19]}
+{"kind": "shape", "id": "34", "slide": 22, "name": "文本框 33", "text": "健康告知书", "bbox": [121, 562.06, 120, 26.5]}
+{"kind": "shape", "id": "35", "slide": 22, "name": "任意多边形 34", "text": "", "bbox": [81, 593.13, 32, 32]}
+{"kind": "image", "id": "54", "slide": 22, "name": "图片 35", "text": "", "bbox": [87.47, 599.67, 19, 19]}
+{"kind": "shape", "id": "37", "slide": 22, "name": "文本框 36", "text": "银行账户信息", "bbox": [121, 595.94, 140, 26.5]}
+{"kind": "shape", "id": "38", "slide": 22, "name": "任意多边形 37", "text": "", "bbox": [81, 627, 32, 32]}
+{"kind": "image", "id": "55", "slide": 22, "name": "图片 38", "text": "", "bbox": [87.47, 633.53, 21.53, 19]}
+{"kind": "shape", "id": "40", "slide": 22, "name": "文本框 39", "text": "受益人信息", "bbox": [121, 629.81, 120, 26.5]}
+{"kind": "shape", "id": "41", "slide": 22, "name": "任意多边形 40", "text": "", "bbox": [826.47, 472.47, 393, 207]}
+{"kind": "shape", "id": "42", "slide": 22, "name": "任意多边形 41", "text": "", "bbox": [987, 493, 72, 56.87]}
+{"kind": "image", "id": "56", "slide": 22, "name": "图片 42", "text": "", "bbox": [1007, 505.4, 32, 32]}
+{"kind": "shape", "id": "44", "slide": 22, "name": "文本框 43", "text": "时效承诺", "bbox": [973, 555.92, 100, 26.5]}
+{"kind": "shape", "id": "45", "slide": 22, "name": "任意多边形 44", "text": "", "bbox": [959.07, 580.87, 127.8, 26.6]}
+{"kind": "shape", "id": "46", "slide": 22, "name": "文本框 45", "text": "3-5", "bbox": [967.09, 585.87, 43.81, 21]}
+{"kind": "shape", "id": "47", "slide": 22, "name": "文本框 46", "text": "个工作日", "bbox": [998.9, 585.87, 80.01, 21]}
+{"kind": "shape", "id": "48", "slide": 22, "name": "文本框 47", "text": "核保审核完成\n签署后即时生效", "bbox": [955.49, 611.88, 135.01, 60]}
+{"kind": "shape", "id": "3", "slide": 23, "name": "任意多边形 2", "text": "", "bbox": [56, 40, 1168, 48]}
+{"kind": "shape", "id": "4", "slide": 23, "name": "任意多边形 3", "text": "", "bbox": [56, 40, 4, 48]}
+{"kind": "shape", "id": "6", "slide": 23, "name": "文本框 5", "text": "常见问题解答", "bbox": [74, 37.5, 1150, 52.5]}
+{"kind": "shape", "id": "7", "slide": 23, "name": "任意多边形 6", "text": "", "bbox": [60, 116, 1160, 50.47]}
+{"kind": "shape", "id": "8", "slide": 23, "name": "任意多边形 7", "text": "", "bbox": [76, 129.2, 24, 24]}
+{"kind": "image", "id": "39", "slide": 23, "name": "图片 8", "text": "", "bbox": [81, 133.73, 14, 14.47]}
+{"kind": "shape", "id": "10", "slide": 23, "name": "文本框 9", "text": "产品是否安全可靠？", "bbox": [112, 128, 200, 26.5]}
+{"kind": "shape", "id": "15", "slide": 23, "name": "任意多边形 14", "text": "", "bbox": [60, 248.53, 1160, 55]}
+{"kind": "shape", "id": "16", "slide": 23, "name": "任意多边形 15", "text": "", "bbox": [76, 260.53, 31, 31]}
+{"kind": "image", "id": "40", "slide": 23, "name": "图片 16", "text": "", "bbox": [82, 266.53, 19, 19]}
+{"kind": "shape", "id": "18", "slide": 23, "name": "文本框 17", "text": "现金价值如何保证？", "bbox": [119, 262.81, 200, 26.5]}
+{"kind": "shape", "id": "23", "slide": 23, "name": "任意多边形 22", "text": "", "bbox": [60, 387.73, 1160, 62]}
+{"kind": "shape", "id": "24", "slide": 23, "name": "任意多边形 23", "text": "", "bbox": [76, 399.73, 38, 38]}
+{"kind": "image", "id": "41", "slide": 23, "name": "图片 24", "text": "", "bbox": [83.47, 407.27, 23, 23]}
+{"kind": "shape", "id": "26", "slide": 23, "name": "文本框 25", "text": "提领是否灵活？", "bbox": [126, 405.53, 160, 26.5]}
+{"kind": "shape", "id": "31", "slide": 23, "name": "任意多边形 30", "text": "", "bbox": [60, 540.87, 1160, 65]}
+{"kind": "shape", "id": "32", "slide": 23, "name": "任意多边形 31", "text": "", "bbox": [76, 552.87, 41, 41]}
+{"kind": "image", "id": "42", "slide": 23, "name": "图片 32", "text": "", "bbox": [84, 560.87, 25, 25]}
+{"kind": "shape", "id": "34", "slide": 23, "name": "文本框 33", "text": "如何指定受益人？", "bbox": [129, 560.16, 180, 26.5]}
+{"kind": "shape", "id": "11", "slide": 23, "name": "任意多边形 10", "text": "", "bbox": [60.47, 175, 1159, 53]}
+{"kind": "shape", "id": "12", "slide": 23, "name": "任意多边形 11", "text": "", "bbox": [81, 189.47, 24, 24]}
+{"kind": "image", "id": "43", "slide": 23, "name": "图片 12", "text": "", "bbox": [86, 194, 14, 14.47]}
+{"kind": "shape", "id": "14", "slide": 23, "name": "文本框 13", "text": "产品由正规保险公司承保，经监管部门审批，合同条款清晰透明，客户权益受法律保护。", "bbox": [117, 185.53, 738.01, 31.2]}
+{"kind": "shape", "id": "19", "slide": 23, "name": "任意多边形 18", "text": "", "bbox": [60.47, 312, 1159, 55.27]}
+{"kind": "shape", "id": "20", "slide": 23, "name": "任意多边形 19", "text": "", "bbox": [81, 324.13, 31, 31]}
+{"kind": "image", "id": "44", "slide": 23, "name": "图片 20", "text": "", "bbox": [87, 330.13, 19, 19]}
+{"kind": "shape", "id": "22", "slide": 23, "name": "文本框 21", "text": "现金价值写入保险合同，具有法律效力，保险公司必须按合同约定履行。", "bbox": [124, 323.67, 612.01, 31.2]}
+{"kind": "shape", "id": "27", "slide": 23, "name": "任意多边形 26", "text": "", "bbox": [60.47, 458.27, 1159, 62.13]}
+{"kind": "shape", "id": "28", "slide": 23, "name": "任意多边形 27", "text": "", "bbox": [81, 470.33, 38, 38]}
+{"kind": "image", "id": "45", "slide": 23, "name": "图片 28", "text": "", "bbox": [88.47, 477.8, 23, 23]}
+{"kind": "shape", "id": "30", "slide": 23, "name": "文本框 29", "text": "产品支持多种提领方式，客户可根据需求灵活安排，提领规则清晰透明。", "bbox": [131, 473.34, 612.01, 31.2]}
+{"kind": "shape", "id": "35", "slide": 23, "name": "任意多边形 34", "text": "", "bbox": [60.47, 614.4, 1159, 65.07]}
+{"kind": "shape", "id": "36", "slide": 23, "name": "任意多边形 35", "text": "", "bbox": [81, 626.4, 41, 41]}
+{"kind": "image", "id": "46", "slide": 23, "name": "图片 36", "text": "", "bbox": [89, 634.4, 25, 25]}
+{"kind": "shape", "id": "38", "slide": 23, "name": "文本框 37", "text": "投保时可指定受益人及受益比例，后续可随时申请变更，流程简单便捷。", "bbox": [134, 630.96, 612.01, 31.2]}
+{"kind": "shape", "id": "3", "slide": 24, "name": "任意多边形 2", "text": "", "bbox": [56, 40, 1168, 48]}
+{"kind": "shape", "id": "4", "slide": 24, "name": "任意多边形 3", "text": "", "bbox": [56, 40, 4, 48]}
+{"kind": "shape", "id": "6", "slide": 24, "name": "文本框 5", "text": "行动建议：把握当下，规划未来", "bbox": [74, 37.5, 1150, 52.5]}
+{"kind": "shape", "id": "7", "slide": 24, "name": "任意多边形 6", "text": "", "bbox": [60.47, 116.47, 386.8, 173.67]}
+{"kind": "shape", "id": "8", "slide": 24, "name": "任意多边形 7", "text": "", "bbox": [227.87, 139.87, 52, 52]}
+{"kind": "image", "id": "42", "slide": 24, "name": "图片 8", "text": "", "bbox": [241.33, 153.4, 25, 25]}
+{"kind": "shape", "id": "10", "slide": 24, "name": "文本框 9", "text": "年龄优势", "bbox": [183.9, 194.83, 140, 37]}
+{"kind": "shape", "id": "11", "slide": 24, "name": "文本框 10", "text": "年龄越小，保费越低，杠杆越高", "bbox": [103.9, 233.24, 300, 34.5]}
+{"kind": "shape", "id": "12", "slide": 24, "name": "任意多边形 11", "text": "", "bbox": [60.47, 311.13, 386.8, 173.67]}
+{"kind": "shape", "id": "13", "slide": 24, "name": "任意多边形 12", "text": "", "bbox": [227.87, 334.53, 52, 52]}
+{"kind": "image", "id": "43", "slide": 24, "name": "图片 13", "text": "", "bbox": [241.33, 348.07, 25, 25]}
+{"kind": "shape", "id": "15", "slide": 24, "name": "文本框 14", "text": "健康优势", "bbox": [183.9, 389.49, 140, 37]}
+{"kind": "shape", "id": "16", "slide": 24, "name": "文本框 15", "text": "健康状况良好，核保更容易通过", "bbox": [103.9, 427.91, 300, 34.5]}
+{"kind": "shape", "id": "17", "slide": 24, "name": "任意多边形 16", "text": "", "bbox": [60.47, 505.8, 386.8, 173.67]}
+{"kind": "shape", "id": "18", "slide": 24, "name": "任意多边形 17", "text": "", "bbox": [227.87, 529.2, 52, 52]}
+{"kind": "image", "id": "44", "slide": 24, "name": "图片 18", "text": "", "bbox": [244.33, 542.73, 19, 25]}
+{"kind": "shape", "id": "20", "slide": 24, "name": "文本框 19", "text": "时间优势", "bbox": [183.9, 584.16, 140, 37]}
+{"kind": "shape", "id": "21", "slide": 24, "name": "文本框 20", "text": "越早投保，现金价值积累时间越长", "bbox": [93.9, 622.57, 320, 34.5]}
+{"kind": "shape", "id": "22", "slide": 24, "name": "任意多边形 21", "text": "", "bbox": [474.27, 116.47, 386.8, 173.67]}
+{"kind": "shape", "id": "23", "slide": 24, "name": "任意多边形 22", "text": "", "bbox": [641.67, 139.87, 52, 52]}
+{"kind": "shape", "id": "24", "slide": 24, "name": "文本框 23", "text": "1", "bbox": [641.71, 147.61, 51.97, 36.1]}
+{"kind": "shape", "id": "25", "slide": 24, "name": "文本框 24", "text": "预约专业顾问", "bbox": [569.7, 194.83, 196, 37]}
+{"kind": "shape", "id": "26", "slide": 24, "name": "文本框 25", "text": "深入了解产品详情与保障方案", "bbox": [527.7, 233.24, 280, 34.5]}
+{"kind": "shape", "id": "27", "slide": 24, "name": "任意多边形 26", "text": "", "bbox": [474.27, 311.13, 386.8, 173.67]}
+{"kind": "shape", "id": "28", "slide": 24, "name": "任意多边形 27", "text": "", "bbox": [641.67, 334.53, 52, 52]}
+{"kind": "shape", "id": "29", "slide": 24, "name": "文本框 28", "text": "2", "bbox": [641.71, 342.28, 51.97, 36.1]}
+{"kind": "shape", "id": "30", "slide": 24, "name": "文本框 29", "text": "提供个人信息", "bbox": [569.7, 389.49, 196, 37]}
+{"kind": "shape", "id": "31", "slide": 24, "name": "文本框 30", "text": "获取量身定制的专属保障方案", "bbox": [527.7, 427.91, 280, 34.5]}
+{"kind": "shape", "id": "32", "slide": 24, "name": "任意多边形 31", "text": "", "bbox": [474.27, 505.8, 386.8, 173.67]}
+{"kind": "shape", "id": "33", "slide": 24, "name": "任意多边形 32", "text": "", "bbox": [641.67, 529.2, 52, 52]}
+{"kind": "shape", "id": "34", "slide": 24, "name": "文本框 33", "text": "3", "bbox": [641.71, 536.94, 51.97, 36.1]}
+{"kind": "shape", "id": "35", "slide": 24, "name": "文本框 34", "text": "确认方案投保", "bbox": [569.7, 584.16, 196, 37]}
+{"kind": "shape", "id": "36", "slide": 24, "name": "文本框 35", "text": "完成投保流程，开启保障之旅", "bbox": [527.7, 622.57, 280, 34.5]}
+{"kind": "shape", "id": "37", "slide": 24, "name": "任意多边形 36", "text": "", "bbox": [888.07, 116.47, 331.4, 563]}
+{"kind": "shape", "id": "38", "slide": 24, "name": "任意多边形 37", "text": "", "bbox": [1027.73, 300, 52, 52]}
+{"kind": "image", "id": "45", "slide": 24, "name": "图片 38", "text": "", "bbox": [1040.73, 312.47, 26, 26.53]}
+{"kind": "shape", "id": "40", "slide": 24, "name": "文本框 39", "text": "家族传承规划\n宜早不宜迟", "bbox": [949.79, 365.7, 208, 84.1]}
+{"kind": "shape", "id": "41", "slide": 24, "name": "文本框 40", "text": "把握当下，为家人未来保驾护航", "bbox": [903.79, 462.5, 300, 34.5]}
+{"kind": "shape", "id": "2", "slide": 25, "name": "副标题 2", "text": "THE END", "bbox": [601.22, 280, 572.11, 48]}
+{"kind": "shape", "id": "3", "slide": 25, "name": "标题 1", "text": "感谢您的信任", "bbox": [601.04, 333.33, 572.3, 106.67]}

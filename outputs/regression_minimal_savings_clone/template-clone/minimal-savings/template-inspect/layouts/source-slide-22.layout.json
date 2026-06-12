@@ -1,0 +1,1283 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/5wjudg7a",
+    "id": "5wjudg7a",
+    "slide": 23,
+    "layoutId": "/ppt/slideLayouts/slideLayout37.xml",
+    "layoutName": "正文页-42_16",
+    "masterLayoutId": "/ppt/slideMasters/slideMaster2.xml",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "Office",
+    "colors": {
+      "accent1": "#5B9BD5",
+      "accent2": "#ED7D31",
+      "accent3": "#A5A5A5",
+      "accent4": "#FFC000",
+      "accent5": "#4472C4",
+      "accent6": "#70AD47",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#44546A",
+      "lt2": "#E7E6E6",
+      "hlink": "#0563C1",
+      "folHlink": "#954F72"
+    },
+    "fontScheme": {
+      "name": "Aspect",
+      "majorFont": {
+        "latinTypeface": "微软雅黑"
+      },
+      "minorFont": {
+        "latinTypeface": "微软雅黑"
+      }
+    },
+    "typefaces": [
+      "微软雅黑"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "/ppt/slideLayouts/slideLayout37.xml",
+      "name": "正文页-42_16",
+      "parentLayoutId": "/ppt/slideMasters/slideMaster2.xml",
+      "elements": [
+        {
+          "order": 1,
+          "kind": "shape",
+          "scope": "layout",
+          "aid": "template/layout//ppt/slideLayouts/slideLayout37.xml/7",
+          "id": "7",
+          "name": "日期占位符 6",
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "resolvedTextStyle": {
+            "wrap": "square",
+            "autoFit": "shrinkText"
+          }
+        },
+        {
+          "order": 2,
+          "kind": "shape",
+          "scope": "layout",
+          "aid": "template/layout//ppt/slideLayouts/slideLayout37.xml/8",
+          "id": "8",
+          "name": "页脚占位符 7",
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "order": 3,
+          "kind": "shape",
+          "scope": "layout",
+          "aid": "template/layout//ppt/slideLayouts/slideLayout37.xml/9",
+          "id": "9",
+          "name": "灯片编号占位符 8",
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "resolvedTextStyle": {
+            "wrap": "square",
+            "autoFit": "shrinkText"
+          }
+        },
+        {
+          "order": 4,
+          "kind": "shape",
+          "scope": "layout",
+          "aid": "template/layout//ppt/slideLayouts/slideLayout37.xml/11",
+          "id": "11",
+          "name": "标题 10",
+          "bbox": [
+            64,
+            56,
+            1152,
+            64
+          ],
+          "resolvedTextStyle": {
+            "anchor": 1,
+            "verticalAlignment": "top",
+            "autoFit": "shrinkText",
+            "insets": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          }
+        },
+        {
+          "order": 5,
+          "kind": "shape",
+          "scope": "layout",
+          "aid": "template/layout//ppt/slideLayouts/slideLayout37.xml/12",
+          "id": "12",
+          "name": "内容占位符 11",
+          "bbox": [
+            64,
+            160,
+            1152,
+            266.67
+          ],
+          "geometry": "custom",
+          "resolvedTextStyle": {
+            "autoFit": "shrinkText"
+          },
+          "fillColor": "#DDDDDD"
+        },
+        {
+          "order": 6,
+          "kind": "shape",
+          "scope": "layout",
+          "aid": "template/layout//ppt/slideLayouts/slideLayout37.xml/13",
+          "id": "13",
+          "name": "装饰  2",
+          "bbox": [
+            64,
+            474.67,
+            5.33,
+            181.33
+          ],
+          "geometry": "custom",
+          "resolvedTextStyle": {
+            "autoFit": "none"
+          },
+          "fillColor": "accent1",
+          "lineColor": "#000000"
+        },
+        {
+          "order": 7,
+          "kind": "shape",
+          "scope": "layout",
+          "aid": "template/layout//ppt/slideLayouts/slideLayout37.xml/14",
+          "id": "14",
+          "name": "文本占位符 13",
+          "bbox": [
+            80,
+            474.67,
+            325.33,
+            42.67
+          ],
+          "resolvedTextStyle": {
+            "anchor": 1,
+            "verticalAlignment": "top",
+            "autoFit": "shrinkText",
+            "insets": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          }
+        },
+        {
+          "order": 8,
+          "kind": "shape",
+          "scope": "layout",
+          "aid": "template/layout//ppt/slideLayouts/slideLayout37.xml/15",
+          "id": "15",
+          "name": "文本占位符 14",
+          "bbox": [
+            80,
+            528,
+            325.33,
+            128
+          ],
+          "resolvedTextStyle": {
+            "anchor": 1,
+            "verticalAlignment": "top",
+            "autoFit": "shrinkText",
+            "insets": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          }
+        },
+        {
+          "order": 9,
+          "kind": "shape",
+          "scope": "layout",
+          "aid": "template/layout//ppt/slideLayouts/slideLayout37.xml/16",
+          "id": "16",
+          "name": "装饰  5",
+          "bbox": [
+            469.33,
+            474.67,
+            5.33,
+            181.33
+          ],
+          "geometry": "custom",
+          "resolvedTextStyle": {
+            "autoFit": "none"
+          },
+          "fillColor": "accent1",
+          "lineColor": "#000000"
+        },
+        {
+          "order": 10,
+          "kind": "shape",
+          "scope": "layout",
+          "aid": "template/layout//ppt/slideLayouts/slideLayout37.xml/17",
+          "id": "17",
+          "name": "文本占位符 16",
+          "bbox": [
+            485.33,
+            474.67,
+            325.33,
+            42.67
+          ],
+          "resolvedTextStyle": {
+            "anchor": 1,
+            "verticalAlignment": "top",
+            "autoFit": "shrinkText",
+            "insets": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          }
+        },
+        {
+          "order": 11,
+          "kind": "shape",
+          "scope": "layout",
+          "aid": "template/layout//ppt/slideLayouts/slideLayout37.xml/18",
+          "id": "18",
+          "name": "文本占位符 17",
+          "bbox": [
+            485.33,
+            528,
+            325.33,
+            128
+          ],
+          "resolvedTextStyle": {
+            "anchor": 1,
+            "verticalAlignment": "top",
+            "autoFit": "shrinkText",
+            "insets": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          }
+        },
+        {
+          "order": 12,
+          "kind": "shape",
+          "scope": "layout",
+          "aid": "template/layout//ppt/slideLayouts/slideLayout37.xml/19",
+          "id": "19",
+          "name": "装饰  8",
+          "bbox": [
+            874.67,
+            474.67,
+            5.33,
+            181.33
+          ],
+          "geometry": "custom",
+          "resolvedTextStyle": {
+            "autoFit": "none"
+          },
+          "fillColor": "accent1",
+          "lineColor": "#000000"
+        },
+        {
+          "order": 13,
+          "kind": "shape",
+          "scope": "layout",
+          "aid": "template/layout//ppt/slideLayouts/slideLayout37.xml/20",
+          "id": "20",
+          "name": "文本占位符 19",
+          "bbox": [
+            890.67,
+            474.67,
+            325.33,
+            42.67
+          ],
+          "resolvedTextStyle": {
+            "anchor": 1,
+            "verticalAlignment": "top",
+            "autoFit": "shrinkText",
+            "insets": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          }
+        },
+        {
+          "order": 14,
+          "kind": "shape",
+          "scope": "layout",
+          "aid": "template/layout//ppt/slideLayouts/slideLayout37.xml/21",
+          "id": "21",
+          "name": "文本占位符 20",
+          "bbox": [
+            890.67,
+            528,
+            325.33,
+            128
+          ],
+          "resolvedTextStyle": {
+            "anchor": 1,
+            "verticalAlignment": "top",
+            "autoFit": "shrinkText",
+            "insets": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "scope": "master",
+      "id": "/ppt/slideMasters/slideMaster2.xml",
+      "type": "master",
+      "elements": [
+        {
+          "order": 1,
+          "kind": "shape",
+          "scope": "master",
+          "aid": "template/master//ppt/slideMasters/slideMaster2.xml/8",
+          "id": "8",
+          "name": "矩形 7",
+          "bbox": [
+            0.4,
+            0,
+            1279.6,
+            719.93
+          ],
+          "geometry": "rect",
+          "resolvedTextStyle": {
+            "anchor": 2,
+            "verticalAlignment": "middle"
+          }
+        },
+        {
+          "order": 2,
+          "kind": "shape",
+          "scope": "master",
+          "aid": "template/master//ppt/slideMasters/slideMaster2.xml/2",
+          "id": "2",
+          "name": "标题占位符 1",
+          "bbox": [
+            73.07,
+            37.8,
+            1133.86,
+            75.59
+          ],
+          "geometry": "rect",
+          "resolvedTextStyle": {
+            "anchor": 3,
+            "vertical": 1,
+            "verticalAlignment": "bottom",
+            "wrap": "square",
+            "autoFit": "shrinkText",
+            "insets": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          }
+        },
+        {
+          "order": 3,
+          "kind": "shape",
+          "scope": "master",
+          "aid": "template/master//ppt/slideMasters/slideMaster2.xml/3",
+          "id": "3",
+          "name": "文本占位符 2",
+          "bbox": [
+            73.07,
+            136.67,
+            1133.86,
+            511.67
+          ],
+          "geometry": "rect",
+          "resolvedTextStyle": {
+            "vertical": 1,
+            "wrap": "square",
+            "autoFit": "shrinkText",
+            "insets": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          }
+        },
+        {
+          "order": 4,
+          "kind": "shape",
+          "scope": "master",
+          "aid": "template/master//ppt/slideMasters/slideMaster2.xml/9",
+          "id": "9",
+          "name": "矩形 8",
+          "bbox": [
+            5.27,
+            698.6,
+            1274.53,
+            21.33
+          ],
+          "geometry": "rect",
+          "resolvedTextStyle": {
+            "anchor": 2,
+            "verticalAlignment": "middle"
+          }
+        },
+        {
+          "order": 5,
+          "kind": "shape",
+          "scope": "master",
+          "aid": "template/master//ppt/slideMasters/slideMaster2.xml/5",
+          "id": "5",
+          "name": "页脚占位符 4",
+          "bbox": [
+            424,
+            667.33,
+            432,
+            38.33
+          ],
+          "geometry": "rect",
+          "resolvedTextStyle": {
+            "anchor": 2,
+            "vertical": 1,
+            "verticalAlignment": "middle",
+            "autoFit": "shrinkText",
+            "insets": {
+              "top": 4.8,
+              "right": 9.6,
+              "bottom": 4.8,
+              "left": 9.6
+            }
+          }
+        },
+        {
+          "order": 6,
+          "kind": "shape",
+          "scope": "master",
+          "aid": "template/master//ppt/slideMasters/slideMaster2.xml/6",
+          "id": "6",
+          "name": "灯片编号占位符 5",
+          "bbox": [
+            919.05,
+            667.33,
+            288,
+            38.33
+          ],
+          "geometry": "rect",
+          "resolvedTextStyle": {
+            "anchor": 2,
+            "vertical": 1,
+            "verticalAlignment": "middle",
+            "wrap": "square",
+            "autoFit": "shrinkText",
+            "insets": {
+              "top": 4.8,
+              "right": 9.6,
+              "bottom": 4.8,
+              "left": 9.6
+            }
+          }
+        },
+        {
+          "order": 7,
+          "kind": "shape",
+          "scope": "master",
+          "aid": "template/master//ppt/slideMasters/slideMaster2.xml/4",
+          "id": "4",
+          "name": "日期占位符 3",
+          "bbox": [
+            73.07,
+            667.33,
+            288,
+            38.33
+          ],
+          "geometry": "rect",
+          "resolvedTextStyle": {
+            "anchor": 2,
+            "vertical": 1,
+            "verticalAlignment": "middle",
+            "wrap": "square",
+            "autoFit": "shrinkText",
+            "insets": {
+              "top": 4.8,
+              "right": 9.6,
+              "bottom": 4.8,
+              "left": 9.6
+            }
+          }
+        },
+        {
+          "order": 8,
+          "kind": "shape",
+          "scope": "master",
+          "aid": "template/master//ppt/slideMasters/slideMaster2.xml/7",
+          "id": "7",
+          "name": "KSO_TEMPLATE",
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "geometry": "rect",
+          "resolvedTextStyle": {
+            "anchor": 2,
+            "verticalAlignment": "middle"
+          }
+        }
+      ]
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/5o7qpg3e",
+      "id": "2",
+      "name": "标题 1",
+      "bbox": [
+        64,
+        56,
+        1152,
+        64
+      ],
+      "text": "不同缴费期收益对比",
+      "textPreview": "不同缴费期收益对比",
+      "resolvedFontSize": 48,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "vertical": 1,
+        "fontSize": 48,
+        "typeface": "微软雅黑",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "shrinkText",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "不同缴费期收益对比"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "不同缴费期收益对比",
+          "lineSpacingPercent": 111000,
+          "resolvedTextStyle": {
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "不同缴费期收益对比",
+              "alignment": "left"
+            }
+          ],
+          "bulletCharacter": "",
+          "marginLeft": 0,
+          "indent": 0,
+          "spaceBefore": 0,
+          "spaceAfter": 0
+        }
+      ]
+    },
+    {
+      "order": 2,
+      "kind": "image",
+      "scope": "slide",
+      "aid": "im/oza1gvy9",
+      "id": "13",
+      "name": "内容占位符 2",
+      "bbox": [
+        64,
+        160,
+        1152,
+        266.67
+      ],
+      "contentType": "image/jpeg",
+      "imageCrop": {
+        "left": 0,
+        "top": 0.18933,
+        "right": 0,
+        "bottom": 0.18933
+      },
+      "asset": {
+        "assetId": "/ppt/media/image37.jpeg",
+        "contentType": "image/jpeg",
+        "byteLength": 244712
+      },
+      "fillImage": {
+        "assetId": "/ppt/media/image37.jpeg",
+        "contentType": "image/jpeg",
+        "byteLength": 244712
+      }
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/r65wjudg",
+      "id": "4",
+      "name": "装饰  2",
+      "bbox": [
+        64,
+        474.67,
+        5.33,
+        181.33
+      ],
+      "resolvedFontSize": 32,
+      "resolvedTextStyle": {
+        "vertical": 1,
+        "fontSize": 32,
+        "typeface": "微软雅黑",
+        "color": "tx1",
+        "alignment": "left",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": ""
+          },
+          {
+            "index": 2,
+            "text": " "
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "runs": [
+            {
+              "index": 1,
+              "text": " "
+            }
+          ],
+          "bulletCharacter": "",
+          "marginLeft": 228600,
+          "indent": -228600,
+          "lineSpacingPercent": 130000,
+          "spaceBefore": 1000
+        }
+      ]
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ylc7u54z",
+      "id": "5",
+      "name": "文本占位符 4",
+      "bbox": [
+        80,
+        474.67,
+        325.33,
+        42.67
+      ],
+      "text": "3年缴现金价值增长曲线",
+      "textPreview": "3年缴现金价值增长曲线",
+      "resolvedFontSize": 32,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "vertical": 1,
+        "fontSize": 32,
+        "typeface": "微软雅黑",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "shrinkText",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": ""
+          },
+          {
+            "index": 2,
+            "text": "3年缴现金价值增长曲线"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "3年缴现金价值增长曲线",
+          "lineSpacingPercent": 111000,
+          "resolvedTextStyle": {
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "3年缴现金价值增长曲线",
+              "fontSize": 22.67
+            }
+          ],
+          "bulletCharacter": "",
+          "marginLeft": 0,
+          "indent": 0,
+          "spaceBefore": 1000
+        }
+      ]
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/9cvixcze",
+      "id": "6",
+      "name": "文本占位符 5",
+      "bbox": [
+        80,
+        528,
+        325.33,
+        128
+      ],
+      "text": "以某高净值客户投保为例，3年缴1000万，第5年现金价值达1200万，第20年增至2800万，传承时点收益显著。",
+      "textPreview": "以某高净值客户投保为例，3年缴1000万，第5年现金价值达1200万，第20年增至2800万，传承时点收益显著。",
+      "resolvedFontSize": 21.33,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "vertical": 1,
+        "fontSize": 21.33,
+        "typeface": "微软雅黑",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "shrinkText",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 5,
+        "lines": [
+          {
+            "index": 1,
+            "text": ""
+          },
+          {
+            "index": 2,
+            "text": "以某高净值客户投保为例，3年缴"
+          },
+          {
+            "index": 3,
+            "text": "1000万，第5年现金价值达1200万"
+          },
+          {
+            "index": 4,
+            "text": "，第20年增至2800万，传承时点"
+          },
+          {
+            "index": 5,
+            "text": "收益显著。"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "以某高净值客户投保为例，3年缴1000万，第5年现金价值达1200万，第20年增至2800万，传承时点收益显著。",
+          "lineSpacingPercent": 125000,
+          "resolvedTextStyle": {
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "以某高净值客户投保为例，3年缴1000万，第5年现金价值达1200万，第20年增至2800万，传承时点收益显著。",
+              "alignment": "left"
+            }
+          ],
+          "bulletCharacter": "",
+          "marginLeft": 0,
+          "indent": 0,
+          "spaceBefore": 1000
+        }
+      ]
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/gr2p8nqx",
+      "id": "7",
+      "name": "装饰  5",
+      "bbox": [
+        469.33,
+        474.67,
+        5.33,
+        181.33
+      ],
+      "resolvedFontSize": 32,
+      "resolvedTextStyle": {
+        "vertical": 1,
+        "fontSize": 32,
+        "typeface": "微软雅黑",
+        "color": "tx1",
+        "alignment": "left",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": ""
+          },
+          {
+            "index": 2,
+            "text": " "
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "runs": [
+            {
+              "index": 1,
+              "text": " "
+            }
+          ],
+          "bulletCharacter": "",
+          "marginLeft": 228600,
+          "indent": -228600,
+          "lineSpacingPercent": 130000,
+          "spaceBefore": 1000
+        }
+      ]
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/rytsvu9k",
+      "id": "8",
+      "name": "文本占位符 7",
+      "bbox": [
+        485.33,
+        474.67,
+        325.33,
+        42.67
+      ],
+      "text": "5年缴长期收益稳定性分析",
+      "textPreview": "5年缴长期收益稳定性分析",
+      "resolvedFontSize": 32,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "vertical": 1,
+        "fontSize": 32,
+        "typeface": "微软雅黑",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "shrinkText",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": ""
+          },
+          {
+            "index": 2,
+            "text": "5年缴长期收益稳定性分析"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "5年缴长期收益稳定性分析",
+          "lineSpacingPercent": 111000,
+          "resolvedTextStyle": {
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "5年缴长期收益稳定性分析",
+              "fontSize": 22.67
+            }
+          ],
+          "bulletCharacter": "",
+          "marginLeft": 0,
+          "indent": 0,
+          "spaceBefore": 1000
+        }
+      ]
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/yd0z6103",
+      "id": "9",
+      "name": "文本占位符 8",
+      "bbox": [
+        485.33,
+        528,
+        325.33,
+        128
+      ],
+      "text": "参考某家族信托案例，5年缴800万，第10年现金价值超已缴保费1.5倍，60岁后每年可提取50万作为生活补充。",
+      "textPreview": "参考某家族信托案例，5年缴800万，第10年现金价值超已缴保费1.5倍，60岁后每年可提取50万作为生活补充。",
+      "resolvedFontSize": 21.33,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "vertical": 1,
+        "fontSize": 21.33,
+        "typeface": "微软雅黑",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "shrinkText",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 5,
+        "lines": [
+          {
+            "index": 1,
+            "text": ""
+          },
+          {
+            "index": 2,
+            "text": "参考某家族信托案例，5年缴800"
+          },
+          {
+            "index": 3,
+            "text": "万，第10年现金价值超已缴保费1."
+          },
+          {
+            "index": 4,
+            "text": "5倍，60岁后每年可提取50万作为"
+          },
+          {
+            "index": 5,
+            "text": "生活补充。"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "参考某家族信托案例，5年缴800万，第10年现金价值超已缴保费1.5倍，60岁后每年可提取50万作为生活补充。",
+          "lineSpacingPercent": 125000,
+          "resolvedTextStyle": {
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "参考某家族信托案例，5年缴800万，第10年现金价值超已缴保费1.5倍，60岁后每年可提取50万作为生活补充。",
+              "alignment": "left"
+            }
+          ],
+          "bulletCharacter": "",
+          "marginLeft": 0,
+          "indent": 0,
+          "spaceBefore": 1000
+        }
+      ]
+    },
+    {
+      "order": 9,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/wb2hwfyx",
+      "id": "10",
+      "name": "装饰  8",
+      "bbox": [
+        874.67,
+        474.67,
+        5.33,
+        181.33
+      ],
+      "resolvedFontSize": 32,
+      "resolvedTextStyle": {
+        "vertical": 1,
+        "fontSize": 32,
+        "typeface": "微软雅黑",
+        "color": "tx1",
+        "alignment": "left",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": ""
+          },
+          {
+            "index": 2,
+            "text": " "
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "runs": [
+            {
+              "index": 1,
+              "text": " "
+            }
+          ],
+          "bulletCharacter": "",
+          "marginLeft": 228600,
+          "indent": -228600,
+          "lineSpacingPercent": 130000,
+          "spaceBefore": 1000
+        }
+      ]
+    },
+    {
+      "order": 10,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/lwval87e",
+      "id": "11",
+      "name": "文本占位符 10",
+      "bbox": [
+        890.67,
+        474.67,
+        325.33,
+        42.67
+      ],
+      "text": "10年缴流动性与收益平衡方案",
+      "textPreview": "10年缴流动性与收益平衡方案",
+      "resolvedFontSize": 22.4,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "vertical": 1,
+        "fontSize": 32,
+        "typeface": "微软雅黑",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "shrinkText",
+        "autoFitScale": 0.7,
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": ""
+          },
+          {
+            "index": 2,
+            "text": "10年缴流动性与收益平衡方案"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "10年缴流动性与收益平衡方案",
+          "lineSpacingPercent": 111000,
+          "resolvedTextStyle": {
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "10年缴流动性与收益平衡方案",
+              "alignment": "left"
+            }
+          ],
+          "bulletCharacter": "",
+          "marginLeft": 0,
+          "indent": 0,
+          "spaceBefore": 1000
+        }
+      ]
+    },
+    {
+      "order": 11,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/e9cvixcz",
+      "id": "12",
+      "name": "文本占位符 11",
+      "bbox": [
+        890.67,
+        528,
+        325.33,
+        128
+      ],
+      "text": "某企业主选择10年缴500万，第15年现金价值突破1000万，可通过保单贷款解决企业短期资金周转需求。",
+      "textPreview": "某企业主选择10年缴500万，第15年现金价值突破1000万，可通过保单贷款解决企业短期资金周转需求。",
+      "resolvedFontSize": 21.33,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "vertical": 1,
+        "fontSize": 21.33,
+        "typeface": "微软雅黑",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "shrinkText",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 5,
+        "lines": [
+          {
+            "index": 1,
+            "text": ""
+          },
+          {
+            "index": 2,
+            "text": "某企业主选择10年缴500万，第15"
+          },
+          {
+            "index": 3,
+            "text": "年现金价值突破1000万，可通过"
+          },
+          {
+            "index": 4,
+            "text": "保单贷款解决企业短期资金周转"
+          },
+          {
+            "index": 5,
+            "text": "需求。"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "某企业主选择10年缴500万，第15年现金价值突破1000万，可通过保单贷款解决企业短期资金周转需求。",
+          "lineSpacingPercent": 125000,
+          "resolvedTextStyle": {
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "某企业主选择10年缴500万，第15年现金价值突破1000万，可通过保单贷款解决企业短期资金周转需求。",
+              "alignment": "left"
+            }
+          ],
+          "bulletCharacter": "",
+          "marginLeft": 0,
+          "indent": 0,
+          "spaceBefore": 1000
+        }
+      ]
+    }
+  ],
+  "composeRuns": []
+}

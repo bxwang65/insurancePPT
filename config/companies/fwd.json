@@ -1,0 +1,15 @@
+{
+  "id": "fwd",
+  "displayName": "富卫",
+  "aliases": ["FWD", "富卫", "富衛", "FWDGroup"],
+  "tenantId": "default",
+  "knowledgeDirectories": ["FWD-富卫", "新加坡-富卫", "百慕大-富卫"],
+  "evidenceRanking": ["简介", "fact", "年报", "财务", "实力", "概览", "投资"],
+  "companyIntro": "富卫保险业务覆盖亚洲多个市场，定位多元化保障与财富管理。",
+  "companyHighlights": [
+    {
+      "text": "富卫保险为泛亚洲人寿保险公司，业务遍及香港、澳门、泰国、印尼、菲律宾、马来西亚、越南、日本等市场。",
+      "sourceFile": "FWD-富卫简介.pdf"
+    }
+  ]
+}

@@ -1,0 +1,801 @@
+{
+  "kind": "iul",
+  "productName": "GIUL III Indexed Universal Life",
+  "insured": {
+    "name": "Client",
+    "age": 46,
+    "gender": "男性",
+    "smoker": "標準，非吸煙者"
+  },
+  "policy": {
+    "currency": "USD",
+    "sumInsured": 2000000,
+    "initialPremium": 66355,
+    "annualPremium": 66355,
+    "paymentPeriod": "5年",
+    "coveragePeriod": "終身"
+  },
+  "indexAccounts": [
+    {
+      "name": "標普500指數戶口",
+      "allocation": 100,
+      "assumedRate": "7.25%",
+      "floorRate": "0.00%",
+      "capRate": "11.20%",
+      "participationRate": "100%"
+    },
+    {
+      "name": "環球指數戶口",
+      "allocation": 0,
+      "assumedRate": "5.70%",
+      "floorRate": "0.00%",
+      "capRate": "8.20%-10.40%",
+      "participationRate": "100%"
+    },
+    {
+      "name": "VC無上限指數戶口",
+      "allocation": 0,
+      "assumedRate": "7.50%",
+      "floorRate": "0.00%",
+      "capRate": "無上限",
+      "participationRate": "100%"
+    }
+  ],
+  "benefitRows": [
+    {
+      "policyYear": 1,
+      "age": 47,
+      "totalPremiumPaid": 66355,
+      "guaranteedCashValue": 2536,
+      "nonGuaranteedCashValue": 5360,
+      "guaranteedDeathBenefit": 2000000,
+      "nonGuaranteedDeathBenefit": 2000000,
+      "sourcePage": 2
+    },
+    {
+      "policyYear": 2,
+      "age": 48,
+      "totalPremiumPaid": 132710,
+      "guaranteedCashValue": 57809,
+      "nonGuaranteedCashValue": 66235,
+      "guaranteedDeathBenefit": 2000000,
+      "nonGuaranteedDeathBenefit": 2000000,
+      "sourcePage": 2
+    },
+    {
+      "policyYear": 3,
+      "age": 49,
+      "totalPremiumPaid": 199065,
+      "guaranteedCashValue": 113510,
+      "nonGuaranteedCashValue": 130612,
+      "guaranteedDeathBenefit": 2000000,
+      "nonGuaranteedDeathBenefit": 2000000,
+      "sourcePage": 2
+    },
+    {
+      "policyYear": 4,
+      "age": 50,
+      "totalPremiumPaid": 265420,
+      "guaranteedCashValue": 169594,
+      "nonGuaranteedCashValue": 198661,
+      "guaranteedDeathBenefit": 2000000,
+      "nonGuaranteedDeathBenefit": 2000000,
+      "sourcePage": 2
+    },
+    {
+      "policyYear": 5,
+      "age": 51,
+      "totalPremiumPaid": 331775,
+      "guaranteedCashValue": 226834,
+      "nonGuaranteedCashValue": 271408,
+      "guaranteedDeathBenefit": 2000000,
+      "nonGuaranteedDeathBenefit": 2000000,
+      "sourcePage": 2
+    },
+    {
+      "policyYear": 6,
+      "age": 52,
+      "totalPremiumPaid": 331775,
+      "guaranteedCashValue": 221185,
+      "nonGuaranteedCashValue": 282020,
+      "guaranteedDeathBenefit": 2000000,
+      "nonGuaranteedDeathBenefit": 2000000,
+      "sourcePage": 2
+    },
+    {
+      "policyYear": 7,
+      "age": 53,
+      "totalPremiumPaid": 331775,
+      "guaranteedCashValue": 215210,
+      "nonGuaranteedCashValue": 292894,
+      "guaranteedDeathBenefit": 2000000,
+      "nonGuaranteedDeathBenefit": 2000000,
+      "sourcePage": 2
+    },
+    {
+      "policyYear": 8,
+      "age": 54,
+      "totalPremiumPaid": 331775,
+      "guaranteedCashValue": 208827,
+      "nonGuaranteedCashValue": 303989,
+      "guaranteedDeathBenefit": 2000000,
+      "nonGuaranteedDeathBenefit": 2000000,
+      "sourcePage": 2
+    },
+    {
+      "policyYear": 9,
+      "age": 55,
+      "totalPremiumPaid": 331775,
+      "guaranteedCashValue": 202069,
+      "nonGuaranteedCashValue": 315346,
+      "guaranteedDeathBenefit": 2000000,
+      "nonGuaranteedDeathBenefit": 2000000,
+      "sourcePage": 2
+    },
+    {
+      "policyYear": 10,
+      "age": 56,
+      "totalPremiumPaid": 331775,
+      "guaranteedCashValue": 194815,
+      "nonGuaranteedCashValue": 326890,
+      "guaranteedDeathBenefit": 2000000,
+      "nonGuaranteedDeathBenefit": 2000000,
+      "sourcePage": 2
+    },
+    {
+      "policyYear": 11,
+      "age": 57,
+      "totalPremiumPaid": 331775,
+      "guaranteedCashValue": 187079,
+      "nonGuaranteedCashValue": 338660,
+      "guaranteedDeathBenefit": 2000000,
+      "nonGuaranteedDeathBenefit": 2000000,
+      "sourcePage": 2
+    },
+    {
+      "policyYear": 12,
+      "age": 58,
+      "totalPremiumPaid": 331775,
+      "guaranteedCashValue": 178754,
+      "nonGuaranteedCashValue": 350583,
+      "guaranteedDeathBenefit": 2000000,
+      "nonGuaranteedDeathBenefit": 2000000,
+      "sourcePage": 2
+    },
+    {
+      "policyYear": 13,
+      "age": 59,
+      "totalPremiumPaid": 331775,
+      "guaranteedCashValue": 169813,
+      "nonGuaranteedCashValue": 362660,
+      "guaranteedDeathBenefit": 2000000,
+      "nonGuaranteedDeathBenefit": 2000000,
+      "sourcePage": 2
+    },
+    {
+      "policyYear": 14,
+      "age": 60,
+      "totalPremiumPaid": 331775,
+      "guaranteedCashValue": 160146,
+      "nonGuaranteedCashValue": 374832,
+      "guaranteedDeathBenefit": 2000000,
+      "nonGuaranteedDeathBenefit": 2000000,
+      "sourcePage": 2
+    },
+    {
+      "policyYear": 15,
+      "age": 61,
+      "totalPremiumPaid": 331775,
+      "guaranteedCashValue": 149740,
+      "nonGuaranteedCashValue": 387118,
+      "guaranteedDeathBenefit": 2000000,
+      "nonGuaranteedDeathBenefit": 2000000,
+      "sourcePage": 2
+    },
+    {
+      "policyYear": 16,
+      "age": 62,
+      "totalPremiumPaid": 331775,
+      "guaranteedCashValue": 144392,
+      "nonGuaranteedCashValue": 405608,
+      "guaranteedDeathBenefit": 2000000,
+      "nonGuaranteedDeathBenefit": 2000000,
+      "sourcePage": 2
+    },
+    {
+      "policyYear": 17,
+      "age": 63,
+      "totalPremiumPaid": 331775,
+      "guaranteedCashValue": 138241,
+      "nonGuaranteedCashValue": 424731,
+      "guaranteedDeathBenefit": 2000000,
+      "nonGuaranteedDeathBenefit": 2000000,
+      "sourcePage": 2
+    },
+    {
+      "policyYear": 18,
+      "age": 64,
+      "totalPremiumPaid": 331775,
+      "guaranteedCashValue": 131195,
+      "nonGuaranteedCashValue": 444476,
+      "guaranteedDeathBenefit": 2000000,
+      "nonGuaranteedDeathBenefit": 2000000,
+      "sourcePage": 2
+    },
+    {
+      "policyYear": 19,
+      "age": 65,
+      "totalPremiumPaid": 331775,
+      "guaranteedCashValue": 123180,
+      "nonGuaranteedCashValue": 464852,
+      "guaranteedDeathBenefit": 2000000,
+      "nonGuaranteedDeathBenefit": 2000000,
+      "sourcePage": 2
+    },
+    {
+      "policyYear": 20,
+      "age": 66,
+      "totalPremiumPaid": 331775,
+      "guaranteedCashValue": 114079,
+      "nonGuaranteedCashValue": 490561,
+      "guaranteedDeathBenefit": 2000000,
+      "nonGuaranteedDeathBenefit": 2000000,
+      "sourcePage": 2
+    },
+    {
+      "policyYear": 21,
+      "age": 67,
+      "totalPremiumPaid": 331775,
+      "guaranteedCashValue": 103273,
+      "nonGuaranteedCashValue": 517084,
+      "guaranteedDeathBenefit": 2000000,
+      "nonGuaranteedDeathBenefit": 2000000,
+      "sourcePage": 2
+    },
+    {
+      "policyYear": 22,
+      "age": 68,
+      "totalPremiumPaid": 331775,
+      "guaranteedCashValue": 91083,
+      "nonGuaranteedCashValue": 544807,
+      "guaranteedDeathBenefit": 2000000,
+      "nonGuaranteedDeathBenefit": 2000000,
+      "sourcePage": 2
+    },
+    {
+      "policyYear": 23,
+      "age": 69,
+      "totalPremiumPaid": 331775,
+      "guaranteedCashValue": 77277,
+      "nonGuaranteedCashValue": 573701,
+      "guaranteedDeathBenefit": 2000000,
+      "nonGuaranteedDeathBenefit": 2000000,
+      "sourcePage": 2
+    },
+    {
+      "policyYear": 24,
+      "age": 70,
+      "totalPremiumPaid": 331775,
+      "guaranteedCashValue": 61788,
+      "nonGuaranteedCashValue": 603707,
+      "guaranteedDeathBenefit": 2000000,
+      "nonGuaranteedDeathBenefit": 2000000,
+      "sourcePage": 2
+    },
+    {
+      "policyYear": 25,
+      "age": 71,
+      "totalPremiumPaid": 331775,
+      "guaranteedCashValue": 44198,
+      "nonGuaranteedCashValue": 634731,
+      "guaranteedDeathBenefit": 2000000,
+      "nonGuaranteedDeathBenefit": 2000000,
+      "sourcePage": 2
+    },
+    {
+      "policyYear": 26,
+      "age": 72,
+      "totalPremiumPaid": 331775,
+      "guaranteedCashValue": 23729,
+      "nonGuaranteedCashValue": 666761,
+      "guaranteedDeathBenefit": 2000000,
+      "nonGuaranteedDeathBenefit": 2000000,
+      "sourcePage": 2
+    },
+    {
+      "policyYear": 27,
+      "age": 73,
+      "totalPremiumPaid": 331775,
+      "guaranteedCashValue": 0,
+      "nonGuaranteedCashValue": 699780,
+      "guaranteedDeathBenefit": 0,
+      "nonGuaranteedDeathBenefit": 2000000,
+      "sourcePage": 2
+    },
+    {
+      "policyYear": 28,
+      "age": 74,
+      "totalPremiumPaid": 331775,
+      "guaranteedCashValue": 0,
+      "nonGuaranteedCashValue": 733764,
+      "guaranteedDeathBenefit": 0,
+      "nonGuaranteedDeathBenefit": 2000000,
+      "sourcePage": 2
+    },
+    {
+      "policyYear": 29,
+      "age": 75,
+      "totalPremiumPaid": 331775,
+      "guaranteedCashValue": 0,
+      "nonGuaranteedCashValue": 768660,
+      "guaranteedDeathBenefit": 0,
+      "nonGuaranteedDeathBenefit": 2000000,
+      "sourcePage": 2
+    },
+    {
+      "policyYear": 30,
+      "age": 76,
+      "totalPremiumPaid": 331775,
+      "guaranteedCashValue": 0,
+      "nonGuaranteedCashValue": 804423,
+      "guaranteedDeathBenefit": 0,
+      "nonGuaranteedDeathBenefit": 2000000,
+      "sourcePage": 2
+    },
+    {
+      "policyYear": 31,
+      "age": 77,
+      "totalPremiumPaid": 331775,
+      "guaranteedCashValue": 0,
+      "nonGuaranteedCashValue": 840989,
+      "guaranteedDeathBenefit": 0,
+      "nonGuaranteedDeathBenefit": 2000000,
+      "sourcePage": 3
+    },
+    {
+      "policyYear": 32,
+      "age": 78,
+      "totalPremiumPaid": 331775,
+      "guaranteedCashValue": 0,
+      "nonGuaranteedCashValue": 878303,
+      "guaranteedDeathBenefit": 0,
+      "nonGuaranteedDeathBenefit": 2000000,
+      "sourcePage": 3
+    },
+    {
+      "policyYear": 33,
+      "age": 79,
+      "totalPremiumPaid": 331775,
+      "guaranteedCashValue": 0,
+      "nonGuaranteedCashValue": 916277,
+      "guaranteedDeathBenefit": 0,
+      "nonGuaranteedDeathBenefit": 2000000,
+      "sourcePage": 3
+    },
+    {
+      "policyYear": 34,
+      "age": 80,
+      "totalPremiumPaid": 331775,
+      "guaranteedCashValue": 0,
+      "nonGuaranteedCashValue": 956118,
+      "guaranteedDeathBenefit": 0,
+      "nonGuaranteedDeathBenefit": 2000000,
+      "sourcePage": 3
+    },
+    {
+      "policyYear": 35,
+      "age": 81,
+      "totalPremiumPaid": 331775,
+      "guaranteedCashValue": 0,
+      "nonGuaranteedCashValue": 996672,
+      "guaranteedDeathBenefit": 0,
+      "nonGuaranteedDeathBenefit": 2000000,
+      "sourcePage": 3
+    },
+    {
+      "policyYear": 36,
+      "age": 82,
+      "totalPremiumPaid": 331775,
+      "guaranteedCashValue": 0,
+      "nonGuaranteedCashValue": 1037903,
+      "guaranteedDeathBenefit": 0,
+      "nonGuaranteedDeathBenefit": 2000000,
+      "sourcePage": 3
+    },
+    {
+      "policyYear": 37,
+      "age": 83,
+      "totalPremiumPaid": 331775,
+      "guaranteedCashValue": 0,
+      "nonGuaranteedCashValue": 1079744,
+      "guaranteedDeathBenefit": 0,
+      "nonGuaranteedDeathBenefit": 2000000,
+      "sourcePage": 3
+    },
+    {
+      "policyYear": 38,
+      "age": 84,
+      "totalPremiumPaid": 331775,
+      "guaranteedCashValue": 0,
+      "nonGuaranteedCashValue": 1119854,
+      "guaranteedDeathBenefit": 0,
+      "nonGuaranteedDeathBenefit": 2000000,
+      "sourcePage": 3
+    },
+    {
+      "policyYear": 39,
+      "age": 85,
+      "totalPremiumPaid": 331775,
+      "guaranteedCashValue": 0,
+      "nonGuaranteedCashValue": 1160486,
+      "guaranteedDeathBenefit": 0,
+      "nonGuaranteedDeathBenefit": 2000000,
+      "sourcePage": 3
+    },
+    {
+      "policyYear": 40,
+      "age": 86,
+      "totalPremiumPaid": 331775,
+      "guaranteedCashValue": 0,
+      "nonGuaranteedCashValue": 1201620,
+      "guaranteedDeathBenefit": 0,
+      "nonGuaranteedDeathBenefit": 2000000,
+      "sourcePage": 3
+    },
+    {
+      "policyYear": 41,
+      "age": 87,
+      "totalPremiumPaid": 331775,
+      "guaranteedCashValue": 0,
+      "nonGuaranteedCashValue": 1243271,
+      "guaranteedDeathBenefit": 0,
+      "nonGuaranteedDeathBenefit": 2000000,
+      "sourcePage": 3
+    },
+    {
+      "policyYear": 42,
+      "age": 88,
+      "totalPremiumPaid": 331775,
+      "guaranteedCashValue": 0,
+      "nonGuaranteedCashValue": 1285485,
+      "guaranteedDeathBenefit": 0,
+      "nonGuaranteedDeathBenefit": 2000000,
+      "sourcePage": 3
+    },
+    {
+      "policyYear": 43,
+      "age": 89,
+      "totalPremiumPaid": 331775,
+      "guaranteedCashValue": 0,
+      "nonGuaranteedCashValue": 1328374,
+      "guaranteedDeathBenefit": 0,
+      "nonGuaranteedDeathBenefit": 2000000,
+      "sourcePage": 3
+    },
+    {
+      "policyYear": 44,
+      "age": 90,
+      "totalPremiumPaid": 331775,
+      "guaranteedCashValue": 0,
+      "nonGuaranteedCashValue": 1372094,
+      "guaranteedDeathBenefit": 0,
+      "nonGuaranteedDeathBenefit": 2000000,
+      "sourcePage": 3
+    },
+    {
+      "policyYear": 45,
+      "age": 91,
+      "totalPremiumPaid": 331775,
+      "guaranteedCashValue": 0,
+      "nonGuaranteedCashValue": 1416880,
+      "guaranteedDeathBenefit": 0,
+      "nonGuaranteedDeathBenefit": 2000000,
+      "sourcePage": 3
+    },
+    {
+      "policyYear": 46,
+      "age": 92,
+      "totalPremiumPaid": 331775,
+      "guaranteedCashValue": 0,
+      "nonGuaranteedCashValue": 1463094,
+      "guaranteedDeathBenefit": 0,
+      "nonGuaranteedDeathBenefit": 2000000,
+      "sourcePage": 3
+    },
+    {
+      "policyYear": 47,
+      "age": 93,
+      "totalPremiumPaid": 331775,
+      "guaranteedCashValue": 0,
+      "nonGuaranteedCashValue": 1510578,
+      "guaranteedDeathBenefit": 0,
+      "nonGuaranteedDeathBenefit": 2000000,
+      "sourcePage": 3
+    },
+    {
+      "policyYear": 48,
+      "age": 94,
+      "totalPremiumPaid": 331775,
+      "guaranteedCashValue": 0,
+      "nonGuaranteedCashValue": 1559934,
+      "guaranteedDeathBenefit": 0,
+      "nonGuaranteedDeathBenefit": 2000000,
+      "sourcePage": 3
+    },
+    {
+      "policyYear": 49,
+      "age": 95,
+      "totalPremiumPaid": 331775,
+      "guaranteedCashValue": 0,
+      "nonGuaranteedCashValue": 1612083,
+      "guaranteedDeathBenefit": 0,
+      "nonGuaranteedDeathBenefit": 2000000,
+      "sourcePage": 3
+    },
+    {
+      "policyYear": 50,
+      "age": 96,
+      "totalPremiumPaid": 331775,
+      "guaranteedCashValue": 0,
+      "nonGuaranteedCashValue": 1668413,
+      "guaranteedDeathBenefit": 0,
+      "nonGuaranteedDeathBenefit": 2000000,
+      "sourcePage": 3
+    },
+    {
+      "policyYear": 51,
+      "age": 97,
+      "totalPremiumPaid": 331775,
+      "guaranteedCashValue": 0,
+      "nonGuaranteedCashValue": 1731071,
+      "guaranteedDeathBenefit": 0,
+      "nonGuaranteedDeathBenefit": 2000000,
+      "sourcePage": 3
+    },
+    {
+      "policyYear": 52,
+      "age": 98,
+      "totalPremiumPaid": 331775,
+      "guaranteedCashValue": 0,
+      "nonGuaranteedCashValue": 1803371,
+      "guaranteedDeathBenefit": 0,
+      "nonGuaranteedDeathBenefit": 2000000,
+      "sourcePage": 3
+    },
+    {
+      "policyYear": 53,
+      "age": 99,
+      "totalPremiumPaid": 331775,
+      "guaranteedCashValue": 0,
+      "nonGuaranteedCashValue": 1890553,
+      "guaranteedDeathBenefit": 0,
+      "nonGuaranteedDeathBenefit": 2000000,
+      "sourcePage": 3
+    },
+    {
+      "policyYear": 54,
+      "age": 100,
+      "totalPremiumPaid": 331775,
+      "guaranteedCashValue": 0,
+      "nonGuaranteedCashValue": 2001077,
+      "guaranteedDeathBenefit": 0,
+      "nonGuaranteedDeathBenefit": 2001077,
+      "sourcePage": 3
+    },
+    {
+      "policyYear": 55,
+      "age": 101,
+      "totalPremiumPaid": 331775,
+      "guaranteedCashValue": 0,
+      "nonGuaranteedCashValue": 2145588,
+      "guaranteedDeathBenefit": 0,
+      "nonGuaranteedDeathBenefit": 2145588,
+      "sourcePage": 3
+    },
+    {
+      "policyYear": 56,
+      "age": 102,
+      "totalPremiumPaid": 331775,
+      "guaranteedCashValue": 0,
+      "nonGuaranteedCashValue": 2298958,
+      "guaranteedDeathBenefit": 0,
+      "nonGuaranteedDeathBenefit": 2298958,
+      "sourcePage": 3
+    },
+    {
+      "policyYear": 57,
+      "age": 103,
+      "totalPremiumPaid": 331775,
+      "guaranteedCashValue": 0,
+      "nonGuaranteedCashValue": 2461860,
+      "guaranteedDeathBenefit": 0,
+      "nonGuaranteedDeathBenefit": 2461860,
+      "sourcePage": 3
+    },
+    {
+      "policyYear": 58,
+      "age": 104,
+      "totalPremiumPaid": 331775,
+      "guaranteedCashValue": 0,
+      "nonGuaranteedCashValue": 2634887,
+      "guaranteedDeathBenefit": 0,
+      "nonGuaranteedDeathBenefit": 2634887,
+      "sourcePage": 3
+    },
+    {
+      "policyYear": 59,
+      "age": 105,
+      "totalPremiumPaid": 331775,
+      "guaranteedCashValue": 0,
+      "nonGuaranteedCashValue": 2818668,
+      "guaranteedDeathBenefit": 0,
+      "nonGuaranteedDeathBenefit": 2818668,
+      "sourcePage": 3
+    },
+    {
+      "policyYear": 60,
+      "age": 106,
+      "totalPremiumPaid": 331775,
+      "guaranteedCashValue": 0,
+      "nonGuaranteedCashValue": 3013873,
+      "guaranteedDeathBenefit": 0,
+      "nonGuaranteedDeathBenefit": 3013873,
+      "sourcePage": 3
+    },
+    {
+      "policyYear": 61,
+      "age": 107,
+      "totalPremiumPaid": 331775,
+      "guaranteedCashValue": 0,
+      "nonGuaranteedCashValue": 3221210,
+      "guaranteedDeathBenefit": 0,
+      "nonGuaranteedDeathBenefit": 3221210,
+      "sourcePage": 4
+    },
+    {
+      "policyYear": 62,
+      "age": 108,
+      "totalPremiumPaid": 331775,
+      "guaranteedCashValue": 0,
+      "nonGuaranteedCashValue": 3441434,
+      "guaranteedDeathBenefit": 0,
+      "nonGuaranteedDeathBenefit": 3441434,
+      "sourcePage": 4
+    },
+    {
+      "policyYear": 63,
+      "age": 109,
+      "totalPremiumPaid": 331775,
+      "guaranteedCashValue": 0,
+      "nonGuaranteedCashValue": 3675345,
+      "guaranteedDeathBenefit": 0,
+      "nonGuaranteedDeathBenefit": 3675345,
+      "sourcePage": 4
+    },
+    {
+      "policyYear": 64,
+      "age": 110,
+      "totalPremiumPaid": 331775,
+      "guaranteedCashValue": 0,
+      "nonGuaranteedCashValue": 3923796,
+      "guaranteedDeathBenefit": 0,
+      "nonGuaranteedDeathBenefit": 3923796,
+      "sourcePage": 4
+    },
+    {
+      "policyYear": 65,
+      "age": 111,
+      "totalPremiumPaid": 331775,
+      "guaranteedCashValue": 0,
+      "nonGuaranteedCashValue": 4187688,
+      "guaranteedDeathBenefit": 0,
+      "nonGuaranteedDeathBenefit": 4187688,
+      "sourcePage": 4
+    },
+    {
+      "policyYear": 66,
+      "age": 112,
+      "totalPremiumPaid": 331775,
+      "guaranteedCashValue": 0,
+      "nonGuaranteedCashValue": 4467983,
+      "guaranteedDeathBenefit": 0,
+      "nonGuaranteedDeathBenefit": 4467983,
+      "sourcePage": 4
+    },
+    {
+      "policyYear": 67,
+      "age": 113,
+      "totalPremiumPaid": 331775,
+      "guaranteedCashValue": 0,
+      "nonGuaranteedCashValue": 4765699,
+      "guaranteedDeathBenefit": 0,
+      "nonGuaranteedDeathBenefit": 4765699,
+      "sourcePage": 4
+    },
+    {
+      "policyYear": 68,
+      "age": 114,
+      "totalPremiumPaid": 331775,
+      "guaranteedCashValue": 0,
+      "nonGuaranteedCashValue": 5081919,
+      "guaranteedDeathBenefit": 0,
+      "nonGuaranteedDeathBenefit": 5081919,
+      "sourcePage": 4
+    },
+    {
+      "policyYear": 69,
+      "age": 115,
+      "totalPremiumPaid": 331775,
+      "guaranteedCashValue": 0,
+      "nonGuaranteedCashValue": 5417794,
+      "guaranteedDeathBenefit": 0,
+      "nonGuaranteedDeathBenefit": 5417794,
+      "sourcePage": 4
+    },
+    {
+      "policyYear": 70,
+      "age": 116,
+      "totalPremiumPaid": 331775,
+      "guaranteedCashValue": 0,
+      "nonGuaranteedCashValue": 5774545,
+      "guaranteedDeathBenefit": 0,
+      "nonGuaranteedDeathBenefit": 5774545,
+      "sourcePage": 4
+    },
+    {
+      "policyYear": 71,
+      "age": 117,
+      "totalPremiumPaid": 331775,
+      "guaranteedCashValue": 0,
+      "nonGuaranteedCashValue": 6153469,
+      "guaranteedDeathBenefit": 0,
+      "nonGuaranteedDeathBenefit": 6153469,
+      "sourcePage": 4
+    },
+    {
+      "policyYear": 72,
+      "age": 118,
+      "totalPremiumPaid": 331775,
+      "guaranteedCashValue": 0,
+      "nonGuaranteedCashValue": 6555945,
+      "guaranteedDeathBenefit": 0,
+      "nonGuaranteedDeathBenefit": 6555945,
+      "sourcePage": 4
+    },
+    {
+      "policyYear": 73,
+      "age": 119,
+      "totalPremiumPaid": 331775,
+      "guaranteedCashValue": 0,
+      "nonGuaranteedCashValue": 6983437,
+      "guaranteedDeathBenefit": 0,
+      "nonGuaranteedDeathBenefit": 6983437,
+      "sourcePage": 4
+    },
+    {
+      "policyYear": 74,
+      "age": 120,
+      "totalPremiumPaid": 331775,
+      "guaranteedCashValue": 0,
+      "nonGuaranteedCashValue": 7437499,
+      "guaranteedDeathBenefit": 0,
+      "nonGuaranteedDeathBenefit": 7437499,
+      "sourcePage": 4
+    },
+    {
+      "policyYear": 75,
+      "age": 121,
+      "totalPremiumPaid": 331775,
+      "guaranteedCashValue": 0,
+      "nonGuaranteedCashValue": 7919783,
+      "guaranteedDeathBenefit": 0,
+      "nonGuaranteedDeathBenefit": 7919783,
+      "sourcePage": 4
+    }
+  ],
+  "source": {
+    "pdfHash": "f3d9f7dd1b6a0bc640dd2da54c76ca028168a32e941a4223f354002f7f39bbcd",
+    "pdfPath": "/Users/soldier/Downloads/官方计划书案例/TA_GIUL3+M-46-N-CN-USD-S2m-5x+(coi)(SC).pdf",
+    "parser": "transamerica-iul-lines-v1"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "iul-business",
+  "planType": "iul",
+  "stylePreset": "business",
+  "sourceTemplateAssetId": "business",
+  "cloneReady": true,
+  "cloneRenderer": "iul-business-v1",
+  "displayName": "IUL商务风",
+  "requiredPageTypes": [
+    "cover",
+    "company",
+    "narrative",
+    "chart",
+    "compare",
+    "table",
+    "conclusion"
+  ],
+  "qualityRules": {
+    "forbidPlaceholderImages": true,
+    "forbidSyntheticOfficialValues": true,
+    "requirePdfHash": true,
+    "requireSourcePagesForOfficialTables": true
+  }
+}

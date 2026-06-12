@@ -1,0 +1,1045 @@
+{
+  "templateId": "business",
+  "templatePath": "/Users/soldier/Downloads/财富保障方案——商务风 .pptx",
+  "generatedAt": "2026-06-01T16:27:33.572Z",
+  "inspectTruncated": true,
+  "maxSlides": 6,
+  "sourceIdSpace": [
+    {
+      "slide": 1,
+      "textboxIds": [],
+      "imageIds": []
+    },
+    {
+      "slide": 2,
+      "textboxIds": [
+        "sh/cvixczed",
+        "sh/5gbq1ory",
+        "sh/udg7adsj"
+      ],
+      "imageIds": []
+    },
+    {
+      "slide": 3,
+      "textboxIds": [
+        "sh/9cvixcze",
+        "sh/wb2hwfyx",
+        "sh/w3m94fu1",
+        "sh/loj2t83i",
+        "sh/ex0nuxc3",
+        "sh/lc7u54zi",
+        "sh/wra5gbq1",
+        "sh/36hcrmhk",
+        "sh/7u54zido",
+        "sh/ed8bat47",
+        "sh/psfil0rq",
+        "sh/zqtcj6to"
+      ],
+      "imageIds": [
+        "im/rmhk3q5o",
+        "im/y1kre1w7",
+        "im/90je9cvi",
+        "im/gfmlkjm1",
+        "im/rytsvu9k",
+        "im/yd0z6103"
+      ]
+    },
+    {
+      "slide": 4,
+      "textboxIds": [
+        "sh/oj2t83it",
+        "sh/6hcrmhk3",
+        "sh/d4vmtwra",
+        "sh/oj2t83it",
+        "sh/vmtwra5g",
+        "sh/61032lsz",
+        "sh/6tovahoz",
+        "sh/epkzupwb",
+        "sh/7adsji5s",
+        "sh/wval87ed",
+        "sh/pg3ex0nu",
+        "sh/e1w7mp0b",
+        "sh/7mp0bi9s",
+        "sh/7u54zido",
+        "sh/twra5gbq",
+        "sh/4byhgn29",
+        "sh/bq1oryts",
+        "sh/m58z25kb",
+        "sh/mhk3q5o7",
+        "sh/tgfmlkjm",
+        "sh/4vmtwra5",
+        "sh/c3ylc7u5",
+        "sh/1kre1w7m",
+        "sh/18jqh0fe",
+        "sh/i5sneloj",
+        "sh/pwb2hwfy",
+        "sh/0bi9s36h",
+        "sh/7y1kre1w",
+        "sh/p4r65wju",
+        "sh/wjudg7ad",
+        "sh/72x4nap4",
+        "sh/ih4byhgn"
+      ],
+      "imageIds": [
+        "im/9w3m94fu",
+        "im/kb6xkf6d",
+        "im/rqd4vmtw",
+        "im/25kb6xkf",
+        "im/9knih4by"
+      ]
+    },
+    {
+      "slide": 5,
+      "textboxIds": [
+        "sh/q1orytsv",
+        "sh/fmlkjm1c",
+        "sh/8jqh0fep",
+        "sh/1w7mp0bi",
+        "sh/8bat47y1",
+        "sh/q5o7qpg3",
+        "sh/18jqh0fe",
+        "sh/j2t83itg",
+        "sh/qh0fepkz",
+        "sh/crmhk3q5",
+        "sh/h0fepkzu",
+        "sh/a9w3m94f",
+        "sh/orytsvu9",
+        "sh/hcrmhk3q",
+        "sh/z61032ls",
+        "sh/oza1gvy9",
+        "sh/7mp0bi9s",
+        "sh/psfil0rq",
+        "sh/7adsji5s",
+        "sh/pg3ex0nu"
+      ],
+      "imageIds": []
+    },
+    {
+      "slide": 6,
+      "textboxIds": [
+        "sh/onyd0z61",
+        "sh/vy90je9c",
+        "sh/y90je9cv",
+        "sh/5wjudg7a",
+        "sh/gbq1oryt",
+        "sh/yhgn29gr",
+        "sh/gn29gr2p",
+        "sh/2x4nap4r",
+        "sh/vixczed8",
+        "sh/k3q5o7qp",
+        "sh/6psfil0r",
+        "sh/kre1w7mp",
+        "sh/2lszqtcj",
+        "sh/sji5snel",
+        "sh/3ylc7u54",
+        "sh/adsji5sn",
+        "sh/s72x4nap",
+        "sh/a5gbq1or",
+        "sh/wval87ed",
+        "sh/epkzupwb",
+        "sh/psfil0rq",
+        "sh/wfyxobm5",
+        "sh/mhk3q5o7",
+        "sh/m58z25kb"
+      ],
+      "imageIds": [
+        "im/q1orytsv",
+        "im/fmlkjm1c",
+        "im/8jqh0fep"
+      ]
+    }
+  ],
+  "editableIdSpace": [
+    {
+      "slide": 1,
+      "shapes": [
+        {
+          "id": "2",
+          "textPreview": "2026/06/01"
+        },
+        {
+          "id": "3",
+          "textPreview": "家族财富传承方案"
+        },
+        {
+          "id": "4",
+          "textPreview": "汇报人："
+        }
+      ],
+      "images": []
+    },
+    {
+      "slide": 2,
+      "shapes": [
+        {
+          "id": "3",
+          "textPreview": ""
+        },
+        {
+          "id": "4",
+          "textPreview": ""
+        },
+        {
+          "id": "6",
+          "textPreview": "关于我们"
+        },
+        {
+          "id": "7",
+          "textPreview": ""
+        },
+        {
+          "id": "8",
+          "textPreview": ""
+        },
+        {
+          "id": "10",
+          "textPreview": "专注高净值家族财富管理 · 15年深耕 · 500亿+资产管理规模"
+        },
+        {
+          "id": "11",
+          "textPreview": ""
+        },
+        {
+          "id": "12",
+          "textPreview": ""
+        },
+        {
+          "id": "14",
+          "textPreview": "专业团队"
+        },
+        {
+          "id": "15",
+          "textPreview": "资深财富规划师、税务专家、法律顾问"
+        },
+        {
+          "id": "16",
+          "textPreview": "12年+平均经验"
+        },
+        {
+          "id": "17",
+          "textPreview": ""
+        },
+        {
+          "id": "18",
+          "textPreview": ""
+        },
+        {
+          "id": "20",
+          "textPreview": "服务理念"
+        },
+        {
+          "id": "21",
+          "textPreview": "以家族长远利益为核心"
+        },
+        {
+          "id": "22",
+          "textPreview": "全生命周期解决方案"
+        },
+        {
+          "id": "23",
+          "textPreview": ""
+        },
+        {
+          "id": "24",
+          "textPreview": ""
+        },
+        {
+          "id": "26",
+          "textPreview": "成功案例"
+        },
+        {
+          "id": "27",
+          "textPreview": "200+家族财富传承规划"
+        },
+        {
+          "id": "28",
+          "textPreview": "98%执行率"
+        },
+        {
+          "id": "29",
+          "textPreview": ""
+        },
+        {
+          "id": "31",
+          "textPreview": "我们深知家族财富传承不仅是资产的传递，更是家族价值观与精神的延续。我们将以最大的专业性和责任感，守护您家族的财富与未来。"
+        }
+      ],
+      "images": [
+        "32",
+        "33",
+        "34",
+        "35",
+        "36",
+        "37"
+      ]
+    },
+    {
+      "slide": 3,
+      "shapes": [
+        {
+          "id": "3",
+          "textPreview": ""
+        },
+        {
+          "id": "4",
+          "textPreview": ""
+        },
+        {
+          "id": "6",
+          "textPreview": "产品核心亮点"
+        },
+        {
+          "id": "7",
+          "textPreview": ""
+        },
+        {
+          "id": "8",
+          "textPreview": "核心优势"
+        },
+        {
+          "id": "9",
+          "textPreview": ""
+        },
+        {
+          "id": "10",
+          "textPreview": ""
+        },
+        {
+          "id": "12",
+          "textPreview": "长期稳健增值"
+        },
+        {
+          "id": "13",
+          "textPreview": "产品设计以长期稳健增长为核心目标，通过多元化资产配置策略，在控制风险的前提下实现资产的持续增值。"
+        },
+        {
+          "id": "14",
+          "textPreview": "5%-7%"
+        },
+        {
+          "id": "15",
+          "textPreview": "历史年化收益率"
+        },
+        {
+          "id": "16",
+          "textPreview": ""
+        },
+        {
+          "id": "17",
+          "textPreview": ""
+        },
+        {
+          "id": "19",
+          "textPreview": "灵活提领机制"
+        },
+        {
+          "id": "20",
+          "textPreview": "提供多种提领选择，支持定期提领、弹性提领及紧急资金调用，满足家族不同阶段的现金流需求。"
+        },
+        {
+          "id": "21",
+          "textPreview": "定期提领"
+        },
+        {
+          "id": "22",
+          "textPreview": "•"
+        },
+        {
+          "id": "23",
+          "textPreview": "弹性提领"
+        },
+        {
+          "id": "24",
+          "textPreview": "•"
+        },
+        {
+          "id": "25",
+          "textPreview": "紧急调用"
+        },
+        {
+          "id": "26",
+          "textPreview": ""
+        },
+        {
+          "id": "27",
+          "textPreview": ""
+        },
+        {
+          "id": "29",
+          "textPreview": "税务优化优势"
+        },
+        {
+          "id": "30",
+          "textPreview": "充分利用保险产品的税收优惠政策，通过合理的架构设计，有效降低遗产税、赠与税等税务成本。"
+        },
+        {
+          "id": "31",
+          "textPreview": "遗产税优化"
+        },
+        {
+          "id": "32",
+          "textPreview": "•"
+        },
+        {
+          "id": "33",
+          "textPreview": "赠与税减免"
+        },
+        {
+          "id": "34",
+          "textPreview": ""
+        },
+        {
+          "id": "35",
+          "textPreview": ""
+        },
+        {
+          "id": "37",
+          "textPreview": "资产隔离保护"
+        },
+        {
+          "id": "38",
+          "textPreview": "保险资产具有独立的法律地位，可有效实现家庭资产与企业经营风险隔离，构建坚实的法律保护屏障。"
+        },
+        {
+          "id": "39",
+          "textPreview": "法律独立"
+        },
+        {
+          "id": "40",
+          "textPreview": "•"
+        },
+        {
+          "id": "41",
+          "textPreview": "风险隔离"
+        },
+        {
+          "id": "42",
+          "textPreview": ""
+        },
+        {
+          "id": "43",
+          "textPreview": ""
+        },
+        {
+          "id": "44",
+          "textPreview": ""
+        },
+        {
+          "id": "46",
+          "textPreview": ""
+        },
+        {
+          "id": "48",
+          "textPreview": ""
+        },
+        {
+          "id": "49",
+          "textPreview": "最受关注"
+        },
+        {
+          "id": "50",
+          "textPreview": ""
+        },
+        {
+          "id": "51",
+          "textPreview": "财富传承效率"
+        },
+        {
+          "id": "52",
+          "textPreview": "通过税务优化与法律架构设计，最大化家族财富代际传承效率，降低资产损耗。"
+        },
+        {
+          "id": "53",
+          "textPreview": "最大化"
+        },
+        {
+          "id": "54",
+          "textPreview": "传承效率"
+        },
+        {
+          "id": "55",
+          "textPreview": ""
+        },
+        {
+          "id": "56",
+          "textPreview": "风险保障等级"
+        },
+        {
+          "id": "57",
+          "textPreview": "多重法律保障机制叠加，为家族核心资产提供全周期、全方位的安全防护体系。"
+        },
+        {
+          "id": "58",
+          "textPreview": "全周期"
+        },
+        {
+          "id": "59",
+          "textPreview": "安全防护"
+        }
+      ],
+      "images": [
+        "60",
+        "61",
+        "62",
+        "63",
+        "64"
+      ]
+    },
+    {
+      "slide": 4,
+      "shapes": [
+        {
+          "id": "3",
+          "textPreview": ""
+        },
+        {
+          "id": "4",
+          "textPreview": ""
+        },
+        {
+          "id": "6",
+          "textPreview": "现金价值增长曲线"
+        },
+        {
+          "id": "7",
+          "textPreview": "3倍+"
+        },
+        {
+          "id": "8",
+          "textPreview": "长期增值"
+        },
+        {
+          "id": "9",
+          "textPreview": ""
+        },
+        {
+          "id": "10",
+          "textPreview": "第10年"
+        },
+        {
+          "id": "11",
+          "textPreview": "85%+"
+        },
+        {
+          "id": "12",
+          "textPreview": ""
+        },
+        {
+          "id": "13",
+          "textPreview": "第25年"
+        },
+        {
+          "id": "14",
+          "textPreview": "2.1倍"
+        },
+        {
+          "id": "15",
+          "textPreview": ""
+        },
+        {
+          "id": "16",
+          "textPreview": "长期持有"
+        },
+        {
+          "id": "17",
+          "textPreview": "3倍+"
+        },
+        {
+          "id": "18",
+          "textPreview": ""
+        },
+        {
+          "id": "19",
+          "textPreview": "价值增长曲线"
+        },
+        {
+          "id": "20",
+          "textPreview": ""
+        },
+        {
+          "id": "21",
+          "textPreview": "积累期（第1-10年）"
+        },
+        {
+          "id": "22",
+          "textPreview": "稳步积累，第10年末达已交保费85%以上"
+        },
+        {
+          "id": "23",
+          "textPreview": ""
+        },
+        {
+          "id": "24",
+          "textPreview": "增长期（第11-25年）"
+        },
+        {
+          "id": "25",
+          "textPreview": "复利效应显著，第25年末达2.1倍"
+        },
+        {
+          "id": "26",
+          "textPreview": ""
+        },
+        {
+          "id": "27",
+          "textPreview": "传承期（第26年及以后）"
+        },
+        {
+          "id": "28",
+          "textPreview": "持续稳健增长，长期可达3倍以上"
+        },
+        {
+          "id": "29",
+          "textPreview": ""
+        },
+        {
+          "id": "30",
+          "textPreview": "核心优势"
+        },
+        {
+          "id": "31",
+          "textPreview": ""
+        },
+        {
+          "id": "32",
+          "textPreview": "时间复利的力量让财富跨越式增长"
+        },
+        {
+          "id": "33",
+          "textPreview": ""
+        },
+        {
+          "id": "34",
+          "textPreview": "为家族传承奠定坚实物质基础"
+        },
+        {
+          "id": "35",
+          "textPreview": ""
+        },
+        {
+          "id": "36",
+          "textPreview": "\"时间复利的力量让您的财富在稳健中实现跨越式增长，为家族传承奠定坚实的物质基础。\""
+        }
+      ],
+      "images": []
+    },
+    {
+      "slide": 5,
+      "shapes": [
+        {
+          "id": "3",
+          "textPreview": ""
+        },
+        {
+          "id": "4",
+          "textPreview": ""
+        },
+        {
+          "id": "6",
+          "textPreview": "灵活提领路径"
+        },
+        {
+          "id": "7",
+          "textPreview": ""
+        },
+        {
+          "id": "8",
+          "textPreview": ""
+        },
+        {
+          "id": "9",
+          "textPreview": "方案一"
+        },
+        {
+          "id": "10",
+          "textPreview": ""
+        },
+        {
+          "id": "11",
+          "textPreview": "推荐"
+        },
+        {
+          "id": "12",
+          "textPreview": "定期定额提领"
+        },
+        {
+          "id": "13",
+          "textPreview": "适合有稳定现金流需求的家族，可按月、季度或年度提取固定金额，用于家族日常开支、教育支出等。提领不影响保单核心保障功能。"
+        },
+        {
+          "id": "14",
+          "textPreview": ""
+        },
+        {
+          "id": "15",
+          "textPreview": "日常开支"
+        },
+        {
+          "id": "16",
+          "textPreview": ""
+        },
+        {
+          "id": "17",
+          "textPreview": "教育支出"
+        },
+        {
+          "id": "18",
+          "textPreview": ""
+        },
+        {
+          "id": "19",
+          "textPreview": ""
+        },
+        {
+          "id": "20",
+          "textPreview": "方案二"
+        },
+        {
+          "id": "21",
+          "textPreview": "阶段性大额提领"
+        },
+        {
+          "id": "22",
+          "textPreview": "针对家族重大事件（如子女婚嫁、创业支持、房产购置等），可申请大额提领，灵活应对家族重要节点的资金需求。"
+        },
+        {
+          "id": "23",
+          "textPreview": ""
+        },
+        {
+          "id": "24",
+          "textPreview": "婚嫁支持"
+        },
+        {
+          "id": "25",
+          "textPreview": ""
+        },
+        {
+          "id": "26",
+          "textPreview": "创业资金"
+        },
+        {
+          "id": "27",
+          "textPreview": ""
+        },
+        {
+          "id": "28",
+          "textPreview": "房产购置"
+        },
+        {
+          "id": "29",
+          "textPreview": ""
+        },
+        {
+          "id": "30",
+          "textPreview": ""
+        },
+        {
+          "id": "31",
+          "textPreview": "方案三"
+        },
+        {
+          "id": "32",
+          "textPreview": "应急资金调用"
+        },
+        {
+          "id": "33",
+          "textPreview": "设立应急提领通道，在家族遭遇突发情况时，可快速调用部分现金价值，解决燃眉之急，体现家族办公室的人性化服务。"
+        },
+        {
+          "id": "34",
+          "textPreview": ""
+        },
+        {
+          "id": "35",
+          "textPreview": "快速通道"
+        },
+        {
+          "id": "36",
+          "textPreview": ""
+        },
+        {
+          "id": "37",
+          "textPreview": "突发应对"
+        },
+        {
+          "id": "39",
+          "textPreview": ""
+        },
+        {
+          "id": "40",
+          "textPreview": "提领策略建议"
+        },
+        {
+          "id": "41",
+          "textPreview": ""
+        },
+        {
+          "id": "42",
+          "textPreview": "\"保留不低于现金价值60%的余额，确保保单持续有效并享受长期增值收益\""
+        },
+        {
+          "id": "43",
+          "textPreview": ""
+        },
+        {
+          "id": "45",
+          "textPreview": "定期评估现金流需求，根据家族实际支出情况调整提领频率与金额，避免过度提领影响保单价值"
+        },
+        {
+          "id": "46",
+          "textPreview": ""
+        },
+        {
+          "id": "48",
+          "textPreview": "重大事件提前规划，子女婚嫁、创业等大额支出应提前6-12个月与顾问沟通，制定最优提领方案"
+        },
+        {
+          "id": "49",
+          "textPreview": ""
+        },
+        {
+          "id": "51",
+          "textPreview": "应急通道常备不懈，建议预留10%-15%现金价值作为应急储备，确保突发情况下快速响应"
+        },
+        {
+          "id": "52",
+          "textPreview": ""
+        },
+        {
+          "id": "53",
+          "textPreview": ""
+        },
+        {
+          "id": "55",
+          "textPreview": "专业顾问将根据家族实际情况，综合考虑现金流需求、税务优化与长期增值目标，为您制定最优提领策略"
+        }
+      ],
+      "images": [
+        "56",
+        "57",
+        "58"
+      ]
+    },
+    {
+      "slide": 6,
+      "shapes": [
+        {
+          "id": "3",
+          "textPreview": ""
+        },
+        {
+          "id": "4",
+          "textPreview": ""
+        },
+        {
+          "id": "6",
+          "textPreview": "方案对比分析（一）"
+        },
+        {
+          "id": "7",
+          "textPreview": ""
+        },
+        {
+          "id": "8",
+          "textPreview": ""
+        },
+        {
+          "id": "9",
+          "textPreview": ""
+        },
+        {
+          "id": "11",
+          "textPreview": "传承工具"
+        },
+        {
+          "id": "12",
+          "textPreview": "资产隔离"
+        },
+        {
+          "id": "13",
+          "textPreview": "税务优化"
+        },
+        {
+          "id": "14",
+          "textPreview": "流动性"
+        },
+        {
+          "id": "15",
+          "textPreview": "传承确定性"
+        },
+        {
+          "id": "16",
+          "textPreview": "成本控制"
+        },
+        {
+          "id": "17",
+          "textPreview": ""
+        },
+        {
+          "id": "18",
+          "textPreview": ""
+        },
+        {
+          "id": "19",
+          "textPreview": ""
+        },
+        {
+          "id": "21",
+          "textPreview": "家族信托"
+        },
+        {
+          "id": "22",
+          "textPreview": "优秀"
+        },
+        {
+          "id": "23",
+          "textPreview": "优秀"
+        },
+        {
+          "id": "24",
+          "textPreview": "较低"
+        },
+        {
+          "id": "25",
+          "textPreview": "高"
+        },
+        {
+          "id": "26",
+          "textPreview": ""
+        },
+        {
+          "id": "27",
+          "textPreview": "较高"
+        },
+        {
+          "id": "28",
+          "textPreview": ""
+        },
+        {
+          "id": "29",
+          "textPreview": ""
+        },
+        {
+          "id": "31",
+          "textPreview": "人寿保险"
+        },
+        {
+          "id": "32",
+          "textPreview": "优秀"
+        },
+        {
+          "id": "33",
+          "textPreview": "优秀"
+        },
+        {
+          "id": "34",
+          "textPreview": "较高"
+        },
+        {
+          "id": "35",
+          "textPreview": "高"
+        },
+        {
+          "id": "36",
+          "textPreview": ""
+        },
+        {
+          "id": "37",
+          "textPreview": "适中"
+        },
+        {
+          "id": "38",
+          "textPreview": ""
+        },
+        {
+          "id": "39",
+          "textPreview": ""
+        },
+        {
+          "id": "41",
+          "textPreview": "遗嘱继承"
+        },
+        {
+          "id": "42",
+          "textPreview": "较弱"
+        },
+        {
+          "id": "43",
+          "textPreview": "较弱"
+        },
+        {
+          "id": "44",
+          "textPreview": "高"
+        },
+        {
+          "id": "45",
+          "textPreview": "较低"
+        },
+        {
+          "id": "46",
+          "textPreview": ""
+        },
+        {
+          "id": "47",
+          "textPreview": "低"
+        },
+        {
+          "id": "48",
+          "textPreview": ""
+        },
+        {
+          "id": "49",
+          "textPreview": "赠与传承"
+        },
+        {
+          "id": "50",
+          "textPreview": "较弱"
+        },
+        {
+          "id": "51",
+          "textPreview": "较弱"
+        },
+        {
+          "id": "52",
+          "textPreview": "高"
+        },
+        {
+          "id": "53",
+          "textPreview": "较低"
+        },
+        {
+          "id": "54",
+          "textPreview": ""
+        },
+        {
+          "id": "55",
+          "textPreview": "适中"
+        },
+        {
+          "id": "57",
+          "textPreview": ""
+        },
+        {
+          "id": "58",
+          "textPreview": ""
+        },
+        {
+          "id": "60",
+          "textPreview": "人寿保险在资产隔离、税务优化、流动性和传承确定性方面表现均衡，是家族财富传承的理想工具之一。结合家族信托使用，可构建更完善的传承架构。"
+        },
+        {
+          "id": "61",
+          "textPreview": ""
+        },
+        {
+          "id": "62",
+          "textPreview": "理想工具"
+        }
+      ],
+      "images": [
+        "63"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+/* @theme savings-case */
+@import 'default';
+section { background: linear-gradient(145deg,#f6efe3 0%,#f8fbff 50%,#eef4fb 100%); color:#10253b; font-family: 'Avenir Next','PingFang SC','Microsoft YaHei',sans-serif; padding:38px 48px; }
+section.cover { background: linear-gradient(135deg,rgba(10,30,46,.88),rgba(16,57,87,.84)), url('https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?auto=format&fit=crop&w=1800&q=80'); background-size: cover; color:#fff; }
+h1 { font-size:52px; color:#f4d08a; margin:0 0 8px; }
+h2 { font-size:34px; color:#12304c; margin:0 0 10px; }
+section.cover h2 { color:#e8f3ff; }
+.sub { color:#d9e9ff; font-size:20px; }
+.split { display:flex; gap:16px; align-items:stretch; }
+.media { width:48%; background:#fff; border:1.5px solid #d6c199; border-radius:16px; padding:10px; box-shadow: 0 8px 20px rgba(18,41,64,.08); }
+.media img { width:100%; height:100%; object-fit:cover; border-radius:12px; }
+.chart-slide .media { width:56%; }
+.panel { width:52%; background:#fff; border:1.5px solid #d6c199; border-radius:16px; padding:14px 16px; box-shadow: 0 8px 20px rgba(18,41,64,.08); }
+.chart-slide .panel { width:44%; }
+.grid4 { display:grid; grid-template-columns:repeat(2,1fr); gap:12px; }
+.kpi { background:#fff; border:1.5px solid #d6c199; border-radius:14px; padding:12px 14px; }
+.kpi span { display:block; color:#5c6f81; font-size:16px; }
+.kpi b { color:#142f4a; font-size:24px; }
+h3 { margin:0 0 8px; color:#12304c; font-size:25px; }
+li { font-size:19px; line-height:1.42; margin:4px 0; }
+.note { margin-top:10px; font-size:18px; color:#3b546d; }
+.explain { margin-top:8px; font-size:16px; line-height:1.45; color:#47627f; background:#f6f9fd; border-left:4px solid #c59a49; padding:8px 10px; border-radius:8px; }
+.timeline { display:flex; gap:10px; margin-bottom:8px; }
+.mile { flex:1; background:#fff; border:1.5px solid #d6c199; border-radius:12px; padding:10px; box-shadow: 0 4px 14px rgba(18,41,64,.06); }
+.mile .age { font-size:24px; color:#12304c; font-weight:800; margin-bottom:6px; }
+.mile .line1 { font-size:15px; color:#21425f; }
+.mile .line2 { font-size:14px; color:#48637e; margin-top:2px; }
+.data-table { width:100%; border-collapse:collapse; background:#fff; border-radius:12px; overflow:hidden; font-size:14px; }
+.data-table th { background:#12304c; color:#fff; padding:6px 8px; text-align:center; }
+.data-table td { border-bottom:1px solid #e5edf5; padding:6px 8px; text-align:center; color:#1e3b56; }
+.split.wide { align-items:flex-start; }
+.table-wrap { width:74%; }
+.side-note { width:26%; }

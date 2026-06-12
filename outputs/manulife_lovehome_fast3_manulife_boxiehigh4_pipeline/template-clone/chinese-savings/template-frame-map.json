@@ -1,0 +1,446 @@
+{
+  "outputSlides": [
+    {
+      "outputSlide": 1,
+      "sourceSlide": 1,
+      "narrativeRole": "opening thesis",
+      "reuseMode": "duplicate-slide",
+      "editTargets": [
+        {
+          "action": "rewrite",
+          "sourceElementId": "5"
+        },
+        {
+          "action": "rewrite",
+          "sourceElementId": "7"
+        }
+      ]
+    },
+    {
+      "outputSlide": 2,
+      "sourceSlide": 7,
+      "narrativeRole": "company evidence",
+      "reuseMode": "duplicate-slide",
+      "editTargets": [
+        {
+          "action": "rewrite",
+          "sourceElementId": "2"
+        },
+        {
+          "action": "rewrite",
+          "sourceElementId": "4"
+        },
+        {
+          "action": "rewrite",
+          "sourceElementId": "5"
+        },
+        {
+          "action": "rewrite",
+          "sourceElementId": "6"
+        },
+        {
+          "action": "rewrite",
+          "sourceElementId": "7"
+        },
+        {
+          "action": "rewrite",
+          "sourceElementId": "8"
+        },
+        {
+          "action": "rewrite",
+          "sourceElementId": "9"
+        },
+        {
+          "action": "replace",
+          "sourceElementId": "10"
+        }
+      ]
+    },
+    {
+      "outputSlide": 3,
+      "sourceSlide": 11,
+      "narrativeRole": "product highlights",
+      "reuseMode": "duplicate-slide",
+      "editTargets": [
+        {
+          "action": "rewrite",
+          "sourceElementId": "2"
+        },
+        {
+          "action": "rewrite",
+          "sourceElementId": "3"
+        },
+        {
+          "action": "rewrite",
+          "sourceElementId": "5"
+        },
+        {
+          "action": "rewrite",
+          "sourceElementId": "6"
+        },
+        {
+          "action": "rewrite",
+          "sourceElementId": "7"
+        },
+        {
+          "action": "rewrite",
+          "sourceElementId": "9"
+        },
+        {
+          "action": "rewrite",
+          "sourceElementId": "10"
+        },
+        {
+          "action": "rewrite",
+          "sourceElementId": "11"
+        },
+        {
+          "action": "rewrite",
+          "sourceElementId": "13"
+        },
+        {
+          "action": "rewrite",
+          "sourceElementId": "14"
+        },
+        {
+          "action": "replace",
+          "sourceElementId": "15"
+        },
+        {
+          "action": "replace",
+          "sourceElementId": "16"
+        },
+        {
+          "action": "replace",
+          "sourceElementId": "17"
+        }
+      ]
+    },
+    {
+      "outputSlide": 4,
+      "sourceSlide": 16,
+      "narrativeRole": "growth proof",
+      "reuseMode": "duplicate-slide",
+      "editTargets": [
+        {
+          "action": "rewrite",
+          "sourceElementId": "2"
+        },
+        {
+          "action": "rewrite",
+          "sourceElementId": "3"
+        },
+        {
+          "action": "rewrite",
+          "sourceElementId": "5"
+        },
+        {
+          "action": "rewrite",
+          "sourceElementId": "6"
+        },
+        {
+          "action": "rewrite",
+          "sourceElementId": "7"
+        },
+        {
+          "action": "rewrite",
+          "sourceElementId": "9"
+        },
+        {
+          "action": "rewrite",
+          "sourceElementId": "10"
+        },
+        {
+          "action": "rewrite",
+          "sourceElementId": "11"
+        },
+        {
+          "action": "rewrite",
+          "sourceElementId": "13"
+        },
+        {
+          "action": "rewrite",
+          "sourceElementId": "14"
+        },
+        {
+          "action": "replace",
+          "sourceElementId": "15"
+        },
+        {
+          "action": "replace",
+          "sourceElementId": "16"
+        },
+        {
+          "action": "replace",
+          "sourceElementId": "17"
+        }
+      ]
+    },
+    {
+      "outputSlide": 5,
+      "sourceSlide": 18,
+      "narrativeRole": "withdrawal timeline retirement",
+      "reuseMode": "duplicate-slide",
+      "editTargets": [
+        {
+          "action": "rewrite",
+          "sourceElementId": "10"
+        },
+        {
+          "action": "rewrite",
+          "sourceElementId": "15"
+        },
+        {
+          "action": "rewrite",
+          "sourceElementId": "16"
+        },
+        {
+          "action": "rewrite",
+          "sourceElementId": "20"
+        },
+        {
+          "action": "rewrite",
+          "sourceElementId": "21"
+        },
+        {
+          "action": "rewrite",
+          "sourceElementId": "25"
+        },
+        {
+          "action": "rewrite",
+          "sourceElementId": "26"
+        },
+        {
+          "action": "replace",
+          "sourceElementId": "27"
+        }
+      ]
+    },
+    {
+      "outputSlide": 6,
+      "sourceSlide": 21,
+      "narrativeRole": "official withdrawal table",
+      "reuseMode": "duplicate-slide",
+      "editTargets": [
+        {
+          "action": "rewrite",
+          "sourceElementId": "2"
+        },
+        {
+          "action": "rewrite",
+          "sourceElementId": "4"
+        },
+        {
+          "action": "rewrite",
+          "sourceElementId": "5"
+        },
+        {
+          "action": "rewrite",
+          "sourceElementId": "6"
+        },
+        {
+          "action": "rewrite",
+          "sourceElementId": "7"
+        },
+        {
+          "action": "rewrite",
+          "sourceElementId": "8"
+        },
+        {
+          "action": "rewrite",
+          "sourceElementId": "9"
+        },
+        {
+          "action": "rewrite",
+          "sourceElementId": "10"
+        },
+        {
+          "action": "rewrite",
+          "sourceElementId": "11"
+        },
+        {
+          "action": "rewrite",
+          "sourceElementId": "12"
+        },
+        {
+          "action": "replace",
+          "sourceElementId": "13"
+        }
+      ]
+    },
+    {
+      "outputSlide": 7,
+      "sourceSlide": 26,
+      "narrativeRole": "official no withdrawal table",
+      "reuseMode": "duplicate-slide",
+      "editTargets": [
+        {
+          "action": "rewrite",
+          "sourceElementId": "2"
+        },
+        {
+          "action": "rewrite",
+          "sourceElementId": "4"
+        },
+        {
+          "action": "rewrite",
+          "sourceElementId": "5"
+        },
+        {
+          "action": "rewrite",
+          "sourceElementId": "6"
+        },
+        {
+          "action": "rewrite",
+          "sourceElementId": "7"
+        },
+        {
+          "action": "rewrite",
+          "sourceElementId": "8"
+        },
+        {
+          "action": "rewrite",
+          "sourceElementId": "9"
+        },
+        {
+          "action": "rewrite",
+          "sourceElementId": "10"
+        },
+        {
+          "action": "rewrite",
+          "sourceElementId": "11"
+        },
+        {
+          "action": "rewrite",
+          "sourceElementId": "12"
+        },
+        {
+          "action": "replace",
+          "sourceElementId": "13"
+        }
+      ]
+    },
+    {
+      "outputSlide": 8,
+      "sourceSlide": 24,
+      "narrativeRole": "closing wish",
+      "reuseMode": "duplicate-slide",
+      "editTargets": [
+        {
+          "action": "rewrite",
+          "sourceElementId": "2"
+        },
+        {
+          "action": "rewrite",
+          "sourceElementId": "4"
+        },
+        {
+          "action": "rewrite",
+          "sourceElementId": "5"
+        },
+        {
+          "action": "rewrite",
+          "sourceElementId": "6"
+        },
+        {
+          "action": "rewrite",
+          "sourceElementId": "7"
+        },
+        {
+          "action": "replace",
+          "sourceElementId": "8"
+        }
+      ]
+    },
+    {
+      "outputSlide": 9,
+      "sourceSlide": 27,
+      "narrativeRole": "thank you",
+      "reuseMode": "duplicate-slide",
+      "editTargets": [
+        {
+          "action": "rewrite",
+          "sourceElementId": "3"
+        },
+        {
+          "action": "rewrite",
+          "sourceElementId": "4"
+        }
+      ]
+    }
+  ],
+  "omittedSourceSlides": [
+    {
+      "sourceSlide": 2,
+      "reason": "not selected for savings formal narrative"
+    },
+    {
+      "sourceSlide": 3,
+      "reason": "not selected for savings formal narrative"
+    },
+    {
+      "sourceSlide": 4,
+      "reason": "not selected for savings formal narrative"
+    },
+    {
+      "sourceSlide": 5,
+      "reason": "not selected for savings formal narrative"
+    },
+    {
+      "sourceSlide": 6,
+      "reason": "not selected for savings formal narrative"
+    },
+    {
+      "sourceSlide": 8,
+      "reason": "not selected for savings formal narrative"
+    },
+    {
+      "sourceSlide": 9,
+      "reason": "not selected for savings formal narrative"
+    },
+    {
+      "sourceSlide": 10,
+      "reason": "not selected for savings formal narrative"
+    },
+    {
+      "sourceSlide": 12,
+      "reason": "not selected for savings formal narrative"
+    },
+    {
+      "sourceSlide": 13,
+      "reason": "not selected for savings formal narrative"
+    },
+    {
+      "sourceSlide": 14,
+      "reason": "not selected for savings formal narrative"
+    },
+    {
+      "sourceSlide": 15,
+      "reason": "not selected for savings formal narrative"
+    },
+    {
+      "sourceSlide": 17,
+      "reason": "not selected for savings formal narrative"
+    },
+    {
+      "sourceSlide": 19,
+      "reason": "not selected for savings formal narrative"
+    },
+    {
+      "sourceSlide": 20,
+      "reason": "not selected for savings formal narrative"
+    },
+    {
+      "sourceSlide": 22,
+      "reason": "not selected for savings formal narrative"
+    },
+    {
+      "sourceSlide": 23,
+      "reason": "not selected for savings formal narrative"
+    },
+    {
+      "sourceSlide": 25,
+      "reason": "not selected for savings formal narrative"
+    }
+  ]
+}

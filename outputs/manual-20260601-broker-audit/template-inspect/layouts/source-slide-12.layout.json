@@ -1,0 +1,4020 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/4fu18jqh",
+    "id": "4fu18jqh",
+    "slide": 13,
+    "layoutId": "/ppt/slideLayouts/slideLayout16.xml",
+    "layoutName": "空白",
+    "layoutType": "blank",
+    "masterLayoutId": "/ppt/slideMasters/slideMaster2.xml",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "WPS",
+    "colors": {
+      "accent1": "#4874CB",
+      "accent2": "#EE822F",
+      "accent3": "#F2BA02",
+      "accent4": "#75BD42",
+      "accent5": "#30C0B4",
+      "accent6": "#E54C5E",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#44546A",
+      "lt2": "#E7E6E6",
+      "hlink": "#0026E5",
+      "folHlink": "#7E1FAD"
+    },
+    "fontScheme": {
+      "name": "WPS",
+      "majorFont": {
+        "latinTypeface": "Calibri Light"
+      },
+      "minorFont": {
+        "latinTypeface": "Calibri"
+      }
+    },
+    "typefaces": [
+      "Calibri",
+      "Calibri Light",
+      "微软雅黑"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "/ppt/slideLayouts/slideLayout16.xml",
+      "name": "空白",
+      "type": "blank",
+      "parentLayoutId": "/ppt/slideMasters/slideMaster2.xml",
+      "elements": [
+        {
+          "order": 1,
+          "kind": "shape",
+          "scope": "layout",
+          "aid": "template/layout//ppt/slideLayouts/slideLayout16.xml/2",
+          "id": "2",
+          "name": "日期占位符 1",
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "resolvedTextStyle": {
+            "wrap": "square",
+            "autoFit": "shrinkText"
+          }
+        },
+        {
+          "order": 2,
+          "kind": "shape",
+          "scope": "layout",
+          "aid": "template/layout//ppt/slideLayouts/slideLayout16.xml/3",
+          "id": "3",
+          "name": "页脚占位符 2",
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "order": 3,
+          "kind": "shape",
+          "scope": "layout",
+          "aid": "template/layout//ppt/slideLayouts/slideLayout16.xml/4",
+          "id": "4",
+          "name": "灯片编号占位符 3",
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "resolvedTextStyle": {
+            "wrap": "square",
+            "autoFit": "shrinkText"
+          }
+        }
+      ]
+    },
+    {
+      "scope": "master",
+      "id": "/ppt/slideMasters/slideMaster2.xml",
+      "type": "master",
+      "elements": [
+        {
+          "order": 1,
+          "kind": "shape",
+          "scope": "master",
+          "aid": "template/master//ppt/slideMasters/slideMaster2.xml/14",
+          "id": "14",
+          "name": "矩形 13",
+          "bbox": [
+            -0.06,
+            0,
+            1280.13,
+            720
+          ],
+          "geometry": "rect",
+          "resolvedTextStyle": {
+            "anchor": 2,
+            "vertical": 1,
+            "verticalAlignment": "middle",
+            "wrap": "square",
+            "autoFit": "none"
+          },
+          "fillColor": "bg2"
+        },
+        {
+          "order": 2,
+          "kind": "shape",
+          "scope": "master",
+          "aid": "template/master//ppt/slideMasters/slideMaster2.xml/7",
+          "id": "7",
+          "name": "任意多边形: 形状 15",
+          "bbox": [
+            1019,
+            380.33,
+            205.47,
+            214.47
+          ],
+          "geometry": "custom",
+          "resolvedTextStyle": {
+            "anchor": 2,
+            "verticalAlignment": "middle",
+            "wrap": "square",
+            "autoFit": "none"
+          },
+          "lineColor": {
+            "type": "theme",
+            "value": "accent1",
+            "transform": {
+              "opacity": 0.69804
+            }
+          }
+        },
+        {
+          "order": 3,
+          "kind": "shape",
+          "scope": "master",
+          "aid": "template/master//ppt/slideMasters/slideMaster2.xml/10",
+          "id": "10",
+          "name": "任意多边形: 形状 16",
+          "bbox": [
+            1140.93,
+            502.27,
+            38.13,
+            40.07
+          ],
+          "geometry": "custom",
+          "resolvedTextStyle": {
+            "anchor": 2,
+            "verticalAlignment": "middle",
+            "wrap": "square",
+            "autoFit": "none"
+          },
+          "lineColor": {
+            "type": "theme",
+            "value": "accent1",
+            "transform": {
+              "opacity": 0.69804
+            }
+          }
+        },
+        {
+          "order": 4,
+          "kind": "shape",
+          "scope": "master",
+          "aid": "template/master//ppt/slideMasters/slideMaster2.xml/15",
+          "id": "15",
+          "name": "任意多边形: 形状 18",
+          "bbox": [
+            765.33,
+            143.13,
+            126.8,
+            134.73
+          ],
+          "geometry": "custom",
+          "resolvedTextStyle": {
+            "anchor": 2,
+            "verticalAlignment": "middle",
+            "wrap": "square",
+            "autoFit": "none"
+          },
+          "lineColor": {
+            "type": "theme",
+            "value": "accent1",
+            "transform": {
+              "opacity": 0.69804
+            }
+          }
+        },
+        {
+          "order": 5,
+          "kind": "shape",
+          "scope": "master",
+          "aid": "template/master//ppt/slideMasters/slideMaster2.xml/21",
+          "id": "21",
+          "name": "任意多边形: 形状 20",
+          "bbox": [
+            779,
+            144.93,
+            309.2,
+            329.53
+          ],
+          "geometry": "custom",
+          "resolvedTextStyle": {
+            "anchor": 2,
+            "verticalAlignment": "middle",
+            "wrap": "square",
+            "autoFit": "none"
+          },
+          "lineColor": {
+            "type": "theme",
+            "value": "accent1",
+            "transform": {
+              "opacity": 0.69804
+            }
+          }
+        },
+        {
+          "order": 6,
+          "kind": "shape",
+          "scope": "master",
+          "aid": "template/master//ppt/slideMasters/slideMaster2.xml/22",
+          "id": "22",
+          "name": "任意多边形: 形状 21",
+          "bbox": [
+            791.93,
+            156.47,
+            318.13,
+            338.93
+          ],
+          "geometry": "custom",
+          "resolvedTextStyle": {
+            "anchor": 2,
+            "verticalAlignment": "middle",
+            "wrap": "square",
+            "autoFit": "none"
+          },
+          "lineColor": {
+            "type": "theme",
+            "value": "accent1",
+            "transform": {
+              "opacity": 0.69804
+            }
+          }
+        },
+        {
+          "order": 7,
+          "kind": "shape",
+          "scope": "master",
+          "aid": "template/master//ppt/slideMasters/slideMaster2.xml/23",
+          "id": "23",
+          "name": "任意多边形: 形状 22",
+          "bbox": [
+            835.13,
+            196.73,
+            325.4,
+            346.47
+          ],
+          "geometry": "custom",
+          "resolvedTextStyle": {
+            "anchor": 2,
+            "verticalAlignment": "middle",
+            "wrap": "square",
+            "autoFit": "none"
+          },
+          "lineColor": {
+            "type": "theme",
+            "value": "accent1",
+            "transform": {
+              "opacity": 0.69804
+            }
+          }
+        },
+        {
+          "order": 8,
+          "kind": "shape",
+          "scope": "master",
+          "aid": "template/master//ppt/slideMasters/slideMaster2.xml/25",
+          "id": "25",
+          "name": "任意多边形: 形状 24",
+          "bbox": [
+            849.13,
+            210.47,
+            323.73,
+            343.87
+          ],
+          "geometry": "custom",
+          "resolvedTextStyle": {
+            "anchor": 2,
+            "verticalAlignment": "middle",
+            "wrap": "square",
+            "autoFit": "none"
+          },
+          "lineColor": {
+            "type": "theme",
+            "value": "accent1",
+            "transform": {
+              "opacity": 0.69804
+            }
+          }
+        },
+        {
+          "order": 9,
+          "kind": "shape",
+          "scope": "master",
+          "aid": "template/master//ppt/slideMasters/slideMaster2.xml/26",
+          "id": "26",
+          "name": "任意多边形: 形状 25",
+          "bbox": [
+            751.4,
+            123.13,
+            245.2,
+            261.6
+          ],
+          "geometry": "custom",
+          "resolvedTextStyle": {
+            "anchor": 2,
+            "verticalAlignment": "middle",
+            "wrap": "square",
+            "autoFit": "none"
+          },
+          "lineColor": {
+            "type": "theme",
+            "value": "accent1",
+            "transform": {
+              "opacity": 0.69804
+            }
+          }
+        },
+        {
+          "order": 10,
+          "kind": "shape",
+          "scope": "master",
+          "aid": "template/master//ppt/slideMasters/slideMaster2.xml/27",
+          "id": "27",
+          "name": "任意多边形: 形状 26",
+          "bbox": [
+            751.4,
+            126.4,
+            196.2,
+            210.07
+          ],
+          "geometry": "custom",
+          "resolvedTextStyle": {
+            "anchor": 2,
+            "verticalAlignment": "middle",
+            "wrap": "square",
+            "autoFit": "none"
+          },
+          "lineColor": {
+            "type": "theme",
+            "value": "accent1",
+            "transform": {
+              "opacity": 0.69804
+            }
+          }
+        },
+        {
+          "order": 11,
+          "kind": "shape",
+          "scope": "master",
+          "aid": "template/master//ppt/slideMasters/slideMaster2.xml/28",
+          "id": "28",
+          "name": "任意多边形: 形状 27",
+          "bbox": [
+            757.6,
+            126.87,
+            274.33,
+            292
+          ],
+          "geometry": "custom",
+          "resolvedTextStyle": {
+            "anchor": 2,
+            "verticalAlignment": "middle",
+            "wrap": "square",
+            "autoFit": "none"
+          },
+          "lineColor": {
+            "type": "theme",
+            "value": "accent1",
+            "transform": {
+              "opacity": 0.69804
+            }
+          }
+        },
+        {
+          "order": 12,
+          "kind": "shape",
+          "scope": "master",
+          "aid": "template/master//ppt/slideMasters/slideMaster2.xml/29",
+          "id": "29",
+          "name": "任意多边形: 形状 28",
+          "bbox": [
+            767.4,
+            134.87,
+            295.6,
+            314.6
+          ],
+          "geometry": "custom",
+          "resolvedTextStyle": {
+            "anchor": 2,
+            "verticalAlignment": "middle",
+            "wrap": "square",
+            "autoFit": "none"
+          },
+          "lineColor": {
+            "type": "theme",
+            "value": "accent1",
+            "transform": {
+              "opacity": 0.69804
+            }
+          }
+        },
+        {
+          "order": 13,
+          "kind": "shape",
+          "scope": "master",
+          "aid": "template/master//ppt/slideMasters/slideMaster2.xml/30",
+          "id": "30",
+          "name": "任意多边形: 形状 29",
+          "bbox": [
+            805.13,
+            168.6,
+            323.2,
+            344.4
+          ],
+          "geometry": "custom",
+          "resolvedTextStyle": {
+            "anchor": 2,
+            "verticalAlignment": "middle",
+            "wrap": "square",
+            "autoFit": "none"
+          },
+          "lineColor": {
+            "type": "theme",
+            "value": "accent1",
+            "transform": {
+              "opacity": 0.69804
+            }
+          }
+        },
+        {
+          "order": 14,
+          "kind": "shape",
+          "scope": "master",
+          "aid": "template/master//ppt/slideMasters/slideMaster2.xml/31",
+          "id": "31",
+          "name": "任意多边形: 形状 30",
+          "bbox": [
+            819.2,
+            181.6,
+            325.47,
+            346.87
+          ],
+          "geometry": "custom",
+          "resolvedTextStyle": {
+            "anchor": 2,
+            "verticalAlignment": "middle",
+            "wrap": "square",
+            "autoFit": "none"
+          },
+          "lineColor": {
+            "type": "theme",
+            "value": "accent1",
+            "transform": {
+              "opacity": 0.69804
+            }
+          }
+        },
+        {
+          "order": 15,
+          "kind": "shape",
+          "scope": "master",
+          "aid": "template/master//ppt/slideMasters/slideMaster2.xml/32",
+          "id": "32",
+          "name": "任意多边形: 形状 31",
+          "bbox": [
+            863.67,
+            225,
+            320.27,
+            339.4
+          ],
+          "geometry": "custom",
+          "resolvedTextStyle": {
+            "anchor": 2,
+            "verticalAlignment": "middle",
+            "wrap": "square",
+            "autoFit": "none"
+          },
+          "lineColor": {
+            "type": "theme",
+            "value": "accent1",
+            "transform": {
+              "opacity": 0.69804
+            }
+          }
+        },
+        {
+          "order": 16,
+          "kind": "shape",
+          "scope": "master",
+          "aid": "template/master//ppt/slideMasters/slideMaster2.xml/33",
+          "id": "33",
+          "name": "任意多边形: 形状 32",
+          "bbox": [
+            878.27,
+            239.6,
+            315.33,
+            333.73
+          ],
+          "geometry": "custom",
+          "resolvedTextStyle": {
+            "anchor": 2,
+            "verticalAlignment": "middle",
+            "wrap": "square",
+            "autoFit": "none"
+          },
+          "lineColor": {
+            "type": "theme",
+            "value": "accent1",
+            "transform": {
+              "opacity": 0.69804
+            }
+          }
+        },
+        {
+          "order": 17,
+          "kind": "shape",
+          "scope": "master",
+          "aid": "template/master//ppt/slideMasters/slideMaster2.xml/34",
+          "id": "34",
+          "name": "任意多边形: 形状 33",
+          "bbox": [
+            892.8,
+            254.13,
+            308.87,
+            326.67
+          ],
+          "geometry": "custom",
+          "resolvedTextStyle": {
+            "anchor": 2,
+            "verticalAlignment": "middle",
+            "wrap": "square",
+            "autoFit": "none"
+          },
+          "lineColor": {
+            "type": "theme",
+            "value": "accent1",
+            "transform": {
+              "opacity": 0.69804
+            }
+          }
+        },
+        {
+          "order": 18,
+          "kind": "shape",
+          "scope": "master",
+          "aid": "template/master//ppt/slideMasters/slideMaster2.xml/35",
+          "id": "35",
+          "name": "任意多边形: 形状 34",
+          "bbox": [
+            906,
+            267.33,
+            302.4,
+            318.6
+          ],
+          "geometry": "custom",
+          "resolvedTextStyle": {
+            "anchor": 2,
+            "verticalAlignment": "middle",
+            "wrap": "square",
+            "autoFit": "none"
+          },
+          "lineColor": {
+            "type": "theme",
+            "value": "accent1",
+            "transform": {
+              "opacity": 0.69804
+            }
+          }
+        },
+        {
+          "order": 19,
+          "kind": "shape",
+          "scope": "master",
+          "aid": "template/master//ppt/slideMasters/slideMaster2.xml/36",
+          "id": "36",
+          "name": "任意多边形: 形状 35",
+          "bbox": [
+            921.13,
+            282.47,
+            293.2,
+            308.47
+          ],
+          "geometry": "custom",
+          "resolvedTextStyle": {
+            "anchor": 2,
+            "verticalAlignment": "middle",
+            "wrap": "square",
+            "autoFit": "none"
+          },
+          "lineColor": {
+            "type": "theme",
+            "value": "accent1",
+            "transform": {
+              "opacity": 0.69804
+            }
+          }
+        },
+        {
+          "order": 20,
+          "kind": "shape",
+          "scope": "master",
+          "aid": "template/master//ppt/slideMasters/slideMaster2.xml/37",
+          "id": "37",
+          "name": "任意多边形: 形状 36",
+          "bbox": [
+            934.73,
+            296.07,
+            283.67,
+            298.47
+          ],
+          "geometry": "custom",
+          "resolvedTextStyle": {
+            "anchor": 2,
+            "verticalAlignment": "middle",
+            "wrap": "square",
+            "autoFit": "none"
+          },
+          "lineColor": {
+            "type": "theme",
+            "value": "accent1",
+            "transform": {
+              "opacity": 0.69804
+            }
+          }
+        },
+        {
+          "order": 21,
+          "kind": "shape",
+          "scope": "master",
+          "aid": "template/master//ppt/slideMasters/slideMaster2.xml/38",
+          "id": "38",
+          "name": "任意多边形: 形状 37",
+          "bbox": [
+            947.4,
+            308.73,
+            274.4,
+            287.87
+          ],
+          "geometry": "custom",
+          "resolvedTextStyle": {
+            "anchor": 2,
+            "verticalAlignment": "middle",
+            "wrap": "square",
+            "autoFit": "none"
+          },
+          "lineColor": {
+            "type": "theme",
+            "value": "accent1",
+            "transform": {
+              "opacity": 0.69804
+            }
+          }
+        },
+        {
+          "order": 22,
+          "kind": "shape",
+          "scope": "master",
+          "aid": "template/master//ppt/slideMasters/slideMaster2.xml/39",
+          "id": "39",
+          "name": "任意多边形: 形状 38",
+          "bbox": [
+            960.73,
+            322.07,
+            263.27,
+            276
+          ],
+          "geometry": "custom",
+          "resolvedTextStyle": {
+            "anchor": 2,
+            "verticalAlignment": "middle",
+            "wrap": "square",
+            "autoFit": "none"
+          },
+          "lineColor": {
+            "type": "theme",
+            "value": "accent1",
+            "transform": {
+              "opacity": 0.69804
+            }
+          }
+        },
+        {
+          "order": 23,
+          "kind": "shape",
+          "scope": "master",
+          "aid": "template/master//ppt/slideMasters/slideMaster2.xml/40",
+          "id": "40",
+          "name": "任意多边形: 形状 39",
+          "bbox": [
+            972.73,
+            334.07,
+            252.73,
+            264.67
+          ],
+          "geometry": "custom",
+          "resolvedTextStyle": {
+            "anchor": 2,
+            "verticalAlignment": "middle",
+            "wrap": "square",
+            "autoFit": "none"
+          },
+          "lineColor": {
+            "type": "theme",
+            "value": "accent1",
+            "transform": {
+              "opacity": 0.69804
+            }
+          }
+        },
+        {
+          "order": 24,
+          "kind": "shape",
+          "scope": "master",
+          "aid": "template/master//ppt/slideMasters/slideMaster2.xml/41",
+          "id": "41",
+          "name": "任意多边形: 形状 40",
+          "bbox": [
+            983.87,
+            345.2,
+            242.13,
+            253.4
+          ],
+          "geometry": "custom",
+          "resolvedTextStyle": {
+            "anchor": 2,
+            "verticalAlignment": "middle",
+            "wrap": "square",
+            "autoFit": "none"
+          },
+          "lineColor": {
+            "type": "theme",
+            "value": "accent1",
+            "transform": {
+              "opacity": 0.69804
+            }
+          }
+        },
+        {
+          "order": 25,
+          "kind": "shape",
+          "scope": "master",
+          "aid": "template/master//ppt/slideMasters/slideMaster2.xml/42",
+          "id": "42",
+          "name": "任意多边形: 形状 41",
+          "bbox": [
+            995.2,
+            356.53,
+            231,
+            241.47
+          ],
+          "geometry": "custom",
+          "resolvedTextStyle": {
+            "anchor": 2,
+            "verticalAlignment": "middle",
+            "wrap": "square",
+            "autoFit": "none"
+          },
+          "lineColor": {
+            "type": "theme",
+            "value": "accent1",
+            "transform": {
+              "opacity": 0.69804
+            }
+          }
+        },
+        {
+          "order": 26,
+          "kind": "shape",
+          "scope": "master",
+          "aid": "template/master//ppt/slideMasters/slideMaster2.xml/43",
+          "id": "43",
+          "name": "任意多边形: 形状 42",
+          "bbox": [
+            1007.47,
+            368.8,
+            218.07,
+            227.8
+          ],
+          "geometry": "custom",
+          "resolvedTextStyle": {
+            "anchor": 2,
+            "verticalAlignment": "middle",
+            "wrap": "square",
+            "autoFit": "none"
+          },
+          "lineColor": {
+            "type": "theme",
+            "value": "accent1",
+            "transform": {
+              "opacity": 0.69804
+            }
+          }
+        },
+        {
+          "order": 27,
+          "kind": "shape",
+          "scope": "master",
+          "aid": "template/master//ppt/slideMasters/slideMaster2.xml/44",
+          "id": "44",
+          "name": "任意多边形: 形状 43",
+          "bbox": [
+            1030.33,
+            391.67,
+            192.4,
+            200.67
+          ],
+          "geometry": "custom",
+          "resolvedTextStyle": {
+            "anchor": 2,
+            "verticalAlignment": "middle",
+            "wrap": "square",
+            "autoFit": "none"
+          },
+          "lineColor": {
+            "type": "theme",
+            "value": "accent1",
+            "transform": {
+              "opacity": 0.69804
+            }
+          }
+        },
+        {
+          "order": 28,
+          "kind": "shape",
+          "scope": "master",
+          "aid": "template/master//ppt/slideMasters/slideMaster2.xml/45",
+          "id": "45",
+          "name": "任意多边形: 形状 44",
+          "bbox": [
+            1041.33,
+            402.67,
+            179.47,
+            186.93
+          ],
+          "geometry": "custom",
+          "resolvedTextStyle": {
+            "anchor": 2,
+            "verticalAlignment": "middle",
+            "wrap": "square",
+            "autoFit": "none"
+          },
+          "lineColor": {
+            "type": "theme",
+            "value": "accent1",
+            "transform": {
+              "opacity": 0.69804
+            }
+          }
+        },
+        {
+          "order": 29,
+          "kind": "shape",
+          "scope": "master",
+          "aid": "template/master//ppt/slideMasters/slideMaster2.xml/46",
+          "id": "46",
+          "name": "任意多边形: 形状 45",
+          "bbox": [
+            1118.53,
+            479.87,
+            73.47,
+            76.67
+          ],
+          "geometry": "custom",
+          "resolvedTextStyle": {
+            "anchor": 2,
+            "verticalAlignment": "middle",
+            "wrap": "square",
+            "autoFit": "none"
+          },
+          "lineColor": {
+            "type": "theme",
+            "value": "accent1",
+            "transform": {
+              "opacity": 0.69804
+            }
+          }
+        },
+        {
+          "order": 30,
+          "kind": "shape",
+          "scope": "master",
+          "aid": "template/master//ppt/slideMasters/slideMaster2.xml/47",
+          "id": "47",
+          "name": "任意多边形: 形状 46",
+          "bbox": [
+            1130.87,
+            492.2,
+            54.47,
+            56.8
+          ],
+          "geometry": "custom",
+          "resolvedTextStyle": {
+            "anchor": 2,
+            "verticalAlignment": "middle",
+            "wrap": "square",
+            "autoFit": "none"
+          },
+          "lineColor": {
+            "type": "theme",
+            "value": "accent1",
+            "transform": {
+              "opacity": 0.69804
+            }
+          }
+        },
+        {
+          "order": 31,
+          "kind": "shape",
+          "scope": "master",
+          "aid": "template/master//ppt/slideMasters/slideMaster2.xml/20",
+          "id": "20",
+          "name": "任意多边形: 形状 47",
+          "bbox": [
+            1095,
+            456.33,
+            108.27,
+            112.67
+          ],
+          "geometry": "custom",
+          "resolvedTextStyle": {
+            "anchor": 2,
+            "verticalAlignment": "middle",
+            "wrap": "square",
+            "autoFit": "none"
+          },
+          "lineColor": {
+            "type": "theme",
+            "value": "accent1",
+            "transform": {
+              "opacity": 0.69804
+            }
+          }
+        },
+        {
+          "order": 32,
+          "kind": "shape",
+          "scope": "master",
+          "aid": "template/master//ppt/slideMasters/slideMaster2.xml/49",
+          "id": "49",
+          "name": "任意多边形: 形状 48",
+          "bbox": [
+            1106.4,
+            467.73,
+            91.87,
+            95.33
+          ],
+          "geometry": "custom",
+          "resolvedTextStyle": {
+            "anchor": 2,
+            "verticalAlignment": "middle",
+            "wrap": "square",
+            "autoFit": "none"
+          },
+          "lineColor": {
+            "type": "theme",
+            "value": "accent1",
+            "transform": {
+              "opacity": 0.69804
+            }
+          }
+        },
+        {
+          "order": 33,
+          "kind": "shape",
+          "scope": "master",
+          "aid": "template/master//ppt/slideMasters/slideMaster2.xml/50",
+          "id": "50",
+          "name": "任意多边形: 形状 49",
+          "bbox": [
+            1073.8,
+            435.13,
+            137.67,
+            143.33
+          ],
+          "geometry": "custom",
+          "resolvedTextStyle": {
+            "anchor": 2,
+            "verticalAlignment": "middle",
+            "wrap": "square",
+            "autoFit": "none"
+          },
+          "lineColor": {
+            "type": "theme",
+            "value": "accent1",
+            "transform": {
+              "opacity": 0.69804
+            }
+          }
+        },
+        {
+          "order": 34,
+          "kind": "shape",
+          "scope": "master",
+          "aid": "template/master//ppt/slideMasters/slideMaster2.xml/24",
+          "id": "24",
+          "name": "任意多边形: 形状 50",
+          "bbox": [
+            1084.6,
+            445.93,
+            123.13,
+            127.8
+          ],
+          "geometry": "custom",
+          "resolvedTextStyle": {
+            "anchor": 2,
+            "verticalAlignment": "middle",
+            "wrap": "square",
+            "autoFit": "none"
+          },
+          "lineColor": {
+            "type": "theme",
+            "value": "accent1",
+            "transform": {
+              "opacity": 0.69804
+            }
+          }
+        },
+        {
+          "order": 35,
+          "kind": "shape",
+          "scope": "master",
+          "aid": "template/master//ppt/slideMasters/slideMaster2.xml/52",
+          "id": "52",
+          "name": "任意多边形: 形状 51",
+          "bbox": [
+            1052.47,
+            413.8,
+            165.53,
+            172.4
+          ],
+          "geometry": "custom",
+          "resolvedTextStyle": {
+            "anchor": 2,
+            "verticalAlignment": "middle",
+            "wrap": "square",
+            "autoFit": "none"
+          },
+          "lineColor": {
+            "type": "theme",
+            "value": "accent1",
+            "transform": {
+              "opacity": 0.69804
+            }
+          }
+        },
+        {
+          "order": 36,
+          "kind": "shape",
+          "scope": "master",
+          "aid": "template/master//ppt/slideMasters/slideMaster2.xml/53",
+          "id": "53",
+          "name": "任意多边形: 形状 52",
+          "bbox": [
+            1063.13,
+            424.47,
+            152,
+            158.07
+          ],
+          "geometry": "custom",
+          "resolvedTextStyle": {
+            "anchor": 2,
+            "verticalAlignment": "middle",
+            "wrap": "square",
+            "autoFit": "none"
+          },
+          "lineColor": {
+            "type": "theme",
+            "value": "accent1",
+            "transform": {
+              "opacity": 0.69804
+            }
+          }
+        },
+        {
+          "order": 37,
+          "kind": "shape",
+          "scope": "master",
+          "aid": "template/master//ppt/slideMasters/slideMaster2.xml/55",
+          "id": "55",
+          "name": "任意多边形: 形状 14",
+          "bbox": [
+            1152.67,
+            514.4,
+            21.47,
+            22.47
+          ],
+          "geometry": "custom",
+          "resolvedTextStyle": {
+            "anchor": 2,
+            "verticalAlignment": "middle",
+            "wrap": "square",
+            "autoFit": "none"
+          },
+          "lineColor": {
+            "type": "theme",
+            "value": "accent1",
+            "transform": {
+              "opacity": 0.69804
+            }
+          }
+        },
+        {
+          "order": 38,
+          "kind": "shape",
+          "scope": "master",
+          "aid": "template/master//ppt/slideMasters/slideMaster2.xml/56",
+          "id": "56",
+          "name": "任意多边形: 形状 54",
+          "bbox": [
+            1123.64,
+            198.58,
+            156.36,
+            322.85
+          ],
+          "geometry": "custom",
+          "resolvedTextStyle": {
+            "anchor": 2,
+            "verticalAlignment": "middle",
+            "wrap": "square",
+            "autoFit": "none"
+          },
+          "fillColor": {
+            "type": "theme",
+            "value": "accent1",
+            "transform": {
+              "lighten": 0.8
+            }
+          }
+        },
+        {
+          "order": 39,
+          "kind": "shape",
+          "scope": "master",
+          "aid": "template/master//ppt/slideMasters/slideMaster2.xml/57",
+          "id": "57",
+          "name": "矩形 56",
+          "bbox": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "geometry": "rect",
+          "resolvedTextStyle": {
+            "anchor": 2,
+            "verticalAlignment": "middle"
+          },
+          "fillColor": {
+            "type": "theme",
+            "value": "bg2",
+            "transform": {
+              "opacity": 0.9
+            }
+          },
+          "lineWidth": 1.33
+        },
+        {
+          "order": 40,
+          "kind": "shape",
+          "scope": "master",
+          "aid": "template/master//ppt/slideMasters/slideMaster2.xml/2",
+          "id": "2",
+          "name": "标题占位符 1",
+          "bbox": [
+            73.07,
+            37.8,
+            1133.86,
+            75.59
+          ],
+          "geometry": "rect",
+          "resolvedTextStyle": {
+            "anchor": 3,
+            "vertical": 1,
+            "verticalAlignment": "bottom",
+            "wrap": "square",
+            "autoFit": "shrinkText",
+            "insets": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          }
+        },
+        {
+          "order": 41,
+          "kind": "shape",
+          "scope": "master",
+          "aid": "template/master//ppt/slideMasters/slideMaster2.xml/3",
+          "id": "3",
+          "name": "文本占位符 2",
+          "bbox": [
+            73.07,
+            136.67,
+            1133.86,
+            511.67
+          ],
+          "geometry": "rect",
+          "resolvedTextStyle": {
+            "vertical": 1,
+            "wrap": "square",
+            "autoFit": "shrinkText",
+            "insets": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          }
+        },
+        {
+          "order": 42,
+          "kind": "shape",
+          "scope": "master",
+          "aid": "template/master//ppt/slideMasters/slideMaster2.xml/4",
+          "id": "4",
+          "name": "日期占位符 3",
+          "bbox": [
+            73.07,
+            667.33,
+            288,
+            38.33
+          ],
+          "geometry": "rect",
+          "resolvedTextStyle": {
+            "anchor": 2,
+            "vertical": 1,
+            "verticalAlignment": "middle",
+            "wrap": "square",
+            "autoFit": "shrinkText",
+            "insets": {
+              "top": 4.8,
+              "right": 9.6,
+              "bottom": 4.8,
+              "left": 9.6
+            }
+          }
+        },
+        {
+          "order": 43,
+          "kind": "shape",
+          "scope": "master",
+          "aid": "template/master//ppt/slideMasters/slideMaster2.xml/5",
+          "id": "5",
+          "name": "页脚占位符 4",
+          "bbox": [
+            424,
+            667.33,
+            432,
+            38.33
+          ],
+          "geometry": "rect",
+          "resolvedTextStyle": {
+            "anchor": 2,
+            "vertical": 1,
+            "verticalAlignment": "middle",
+            "autoFit": "shrinkText",
+            "insets": {
+              "top": 4.8,
+              "right": 9.6,
+              "bottom": 4.8,
+              "left": 9.6
+            }
+          }
+        },
+        {
+          "order": 44,
+          "kind": "shape",
+          "scope": "master",
+          "aid": "template/master//ppt/slideMasters/slideMaster2.xml/6",
+          "id": "6",
+          "name": "灯片编号占位符 5",
+          "bbox": [
+            919.05,
+            667.33,
+            288,
+            38.33
+          ],
+          "geometry": "rect",
+          "resolvedTextStyle": {
+            "anchor": 2,
+            "vertical": 1,
+            "verticalAlignment": "middle",
+            "wrap": "square",
+            "autoFit": "shrinkText",
+            "insets": {
+              "top": 4.8,
+              "right": 9.6,
+              "bottom": 4.8,
+              "left": 9.6
+            }
+          }
+        },
+        {
+          "order": 45,
+          "kind": "shape",
+          "scope": "master",
+          "aid": "template/master//ppt/slideMasters/slideMaster2.xml/9",
+          "id": "9",
+          "name": "KSO_TEMPLATE",
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "geometry": "rect",
+          "resolvedTextStyle": {
+            "anchor": 2,
+            "verticalAlignment": "middle"
+          }
+        }
+      ]
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/lszqtcj6",
+      "id": "3",
+      "name": "任意多边形 2",
+      "bbox": [
+        56,
+        40,
+        1168,
+        48
+      ],
+      "rotation": 0,
+      "geometry": "custom",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 24,
+        "typeface": "Calibri",
+        "color": "lt1",
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": ""
+          }
+        ]
+      }
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/adsji5sn",
+      "id": "4",
+      "name": "任意多边形 3",
+      "bbox": [
+        56,
+        40,
+        4,
+        48
+      ],
+      "rotation": 0,
+      "geometry": "custom",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 24,
+        "typeface": "Calibri",
+        "color": "lt1",
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": ""
+          }
+        ]
+      },
+      "fillColor": "#8D624F"
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/sji5snel",
+      "id": "6",
+      "name": "文本框 5",
+      "bbox": [
+        74,
+        37.5,
+        1150,
+        52.5
+      ],
+      "geometry": "rect",
+      "text": "提领路径示例",
+      "textPreview": "提领路径示例",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 24,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "提领路径示例"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "提领路径示例",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "提领路径示例",
+              "fontSize": 40,
+              "typeface": "微软雅黑",
+              "color": "#332825",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/h4byhgn2",
+      "id": "7",
+      "name": "任意多边形 6",
+      "bbox": [
+        108.73,
+        116,
+        64,
+        64
+      ],
+      "geometry": "custom",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 24,
+        "typeface": "Calibri",
+        "color": "lt1",
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": ""
+          }
+        ]
+      },
+      "fillColor": "#8D624F"
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ap4r65wj",
+      "id": "8",
+      "name": "文本框 7",
+      "bbox": [
+        114.78,
+        126.75,
+        51.97,
+        42.5
+      ],
+      "geometry": "rect",
+      "text": "1",
+      "textPreview": "1",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 24,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "1"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "1",
+          "resolvedTextStyle": {
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "1",
+              "fontSize": 32,
+              "typeface": "微软雅黑",
+              "color": "#FFFFFF",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/zupwb2hw",
+      "id": "14",
+      "name": "文本框 13",
+      "bbox": [
+        241.54,
+        379.75,
+        80,
+        52.5
+      ],
+      "geometry": "rect",
+      "text": "→",
+      "textPreview": "→",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 24,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "→"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "→",
+          "resolvedTextStyle": {
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "→",
+              "fontSize": 40,
+              "typeface": "微软雅黑",
+              "color": "#8D624F"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/a9w3m94f",
+      "id": "15",
+      "name": "任意多边形 14",
+      "bbox": [
+        350.27,
+        116,
+        64,
+        64
+      ],
+      "geometry": "custom",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 24,
+        "typeface": "Calibri",
+        "color": "lt1",
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": ""
+          }
+        ]
+      },
+      "fillColor": "#8D624F"
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/h0fepkzu",
+      "id": "16",
+      "name": "文本框 15",
+      "bbox": [
+        356.32,
+        126.75,
+        51.97,
+        42.5
+      ],
+      "geometry": "rect",
+      "text": "2",
+      "textPreview": "2",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 24,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "2"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "2",
+          "resolvedTextStyle": {
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "2",
+              "fontSize": 32,
+              "typeface": "微软雅黑",
+              "color": "#FFFFFF",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 9,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/l0rqd4vm",
+      "id": "23",
+      "name": "文本框 22",
+      "bbox": [
+        483.08,
+        379.75,
+        80,
+        52.5
+      ],
+      "geometry": "rect",
+      "text": "→",
+      "textPreview": "→",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 24,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "→"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "→",
+          "resolvedTextStyle": {
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "→",
+              "fontSize": 40,
+              "typeface": "微软雅黑",
+              "color": "#8D624F"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 10,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/eloj2t83",
+      "id": "24",
+      "name": "任意多边形 23",
+      "bbox": [
+        591.8,
+        116,
+        64,
+        64
+      ],
+      "geometry": "custom",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 24,
+        "typeface": "Calibri",
+        "color": "lt1",
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": ""
+          }
+        ]
+      },
+      "fillColor": "#8D624F"
+    },
+    {
+      "order": 11,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/36hcrmhk",
+      "id": "25",
+      "name": "文本框 24",
+      "bbox": [
+        597.86,
+        126.75,
+        51.97,
+        42.5
+      ],
+      "geometry": "rect",
+      "text": "3",
+      "textPreview": "3",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 24,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "3"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "3",
+          "resolvedTextStyle": {
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "3",
+              "fontSize": 32,
+              "typeface": "微软雅黑",
+              "color": "#FFFFFF",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 12,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/bat47y1k",
+      "id": "32",
+      "name": "文本框 31",
+      "bbox": [
+        724.62,
+        379.75,
+        80,
+        52.5
+      ],
+      "geometry": "rect",
+      "text": "→",
+      "textPreview": "→",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 24,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "→"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "→",
+          "resolvedTextStyle": {
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "→",
+              "fontSize": 40,
+              "typeface": "微软雅黑",
+              "color": "#8D624F"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 13,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/mp0bi9s3",
+      "id": "33",
+      "name": "任意多边形 32",
+      "bbox": [
+        833.33,
+        116,
+        64,
+        64
+      ],
+      "geometry": "custom",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 24,
+        "typeface": "Calibri",
+        "color": "lt1",
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": ""
+          }
+        ]
+      },
+      "fillColor": "#8D624F"
+    },
+    {
+      "order": 14,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/tsvu9kni",
+      "id": "34",
+      "name": "文本框 33",
+      "bbox": [
+        839.4,
+        126.75,
+        51.97,
+        42.5
+      ],
+      "geometry": "rect",
+      "text": "4",
+      "textPreview": "4",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 24,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "4"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "4",
+          "resolvedTextStyle": {
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "4",
+              "fontSize": 32,
+              "typeface": "微软雅黑",
+              "color": "#FFFFFF",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 15,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/18jqh0fe",
+      "id": "41",
+      "name": "文本框 40",
+      "bbox": [
+        966.16,
+        379.75,
+        80,
+        52.5
+      ],
+      "geometry": "rect",
+      "text": "→",
+      "textPreview": "→",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 24,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "→"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "→",
+          "resolvedTextStyle": {
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "→",
+              "fontSize": 40,
+              "typeface": "微软雅黑",
+              "color": "#8D624F"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 16,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/qh0fepkz",
+      "id": "42",
+      "name": "任意多边形 41",
+      "bbox": [
+        1091.07,
+        116,
+        64,
+        64
+      ],
+      "geometry": "custom",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 24,
+        "typeface": "Calibri",
+        "color": "lt1",
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": ""
+          }
+        ]
+      },
+      "fillColor": "#5C3F32"
+    },
+    {
+      "order": 17,
+      "kind": "image",
+      "scope": "slide",
+      "aid": "im/ap4r65wj",
+      "id": "49",
+      "name": "图片 42",
+      "bbox": [
+        1109.07,
+        132,
+        28,
+        32
+      ],
+      "contentType": "image/svg+xml",
+      "imageCrop": {
+        "left": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0
+      },
+      "asset": {
+        "assetId": "/ppt/media/image76.svg",
+        "contentType": "image/svg+xml",
+        "byteLength": 644
+      },
+      "fillImage": {
+        "assetId": "/ppt/media/image76.svg",
+        "contentType": "image/svg+xml",
+        "byteLength": 644
+      }
+    },
+    {
+      "order": 18,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/za1gvy90",
+      "id": "9",
+      "name": "任意多边形 8",
+      "bbox": [
+        60.47,
+        192.47,
+        160.53,
+        487
+      ],
+      "geometry": "custom",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 24,
+        "typeface": "Calibri",
+        "color": "lt1",
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": ""
+          }
+        ]
+      },
+      "fillColor": "#FEFCF7",
+      "lineColor": "#FBF9F6",
+      "lineWidth": 1
+    },
+    {
+      "order": 19,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/z61032ls",
+      "id": "10",
+      "name": "文本框 9",
+      "bbox": [
+        94.99,
+        365.25,
+        91.55,
+        21
+      ],
+      "geometry": "rect",
+      "text": "第1-15年",
+      "textPreview": "第1-15年",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 24,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "第1-15年"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "第1-15年",
+          "resolvedTextStyle": {
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "第",
+              "fontSize": 16,
+              "typeface": "微软雅黑",
+              "color": "#837B74"
+            },
+            {
+              "index": 2,
+              "text": "1-15",
+              "fontSize": 16,
+              "typeface": "微软雅黑",
+              "color": "#837B74"
+            },
+            {
+              "index": 3,
+              "text": "年",
+              "fontSize": 16,
+              "typeface": "微软雅黑",
+              "color": "#837B74"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 20,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/al87ed8b",
+      "id": "11",
+      "name": "文本框 10",
+      "bbox": [
+        92.77,
+        394.25,
+        96.01,
+        31.5
+      ],
+      "geometry": "rect",
+      "text": "交费期",
+      "textPreview": "交费期",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 24,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "交费期"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "交费期",
+          "resolvedTextStyle": {
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "交费期",
+              "typeface": "微软雅黑",
+              "color": "#332825",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 21,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/hcrmhk3q",
+      "id": "12",
+      "name": "文本框 11",
+      "bbox": [
+        90.77,
+        433.75,
+        100,
+        26.5
+      ],
+      "geometry": "rect",
+      "text": "累计交费",
+      "textPreview": "累计交费",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 24,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "累计交费"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "累计交费",
+          "resolvedTextStyle": {
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "累计交费",
+              "fontSize": 20,
+              "typeface": "微软雅黑",
+              "color": "#5A514A"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 22,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/orytsvu9",
+      "id": "13",
+      "name": "文本框 12",
+      "bbox": [
+        68.83,
+        464.25,
+        143.87,
+        42.5
+      ],
+      "geometry": "rect",
+      "text": "1500万",
+      "textPreview": "1500万",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 24,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "1500万"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "1500万",
+          "resolvedTextStyle": {
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "1500",
+              "fontSize": 32,
+              "typeface": "微软雅黑",
+              "color": "#8D624F",
+              "bold": true
+            },
+            {
+              "index": 2,
+              "text": "万",
+              "fontSize": 32,
+              "typeface": "微软雅黑",
+              "color": "#8D624F",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 23,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/sfil0rqd",
+      "id": "17",
+      "name": "任意多边形 16",
+      "bbox": [
+        302,
+        192.47,
+        160.53,
+        487
+      ],
+      "geometry": "custom",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 24,
+        "typeface": "Calibri",
+        "color": "lt1",
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": ""
+          }
+        ]
+      },
+      "fillColor": "#FEFCF7",
+      "lineColor": "#FBF9F6",
+      "lineWidth": 1
+    },
+    {
+      "order": 24,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/zqtcj6to",
+      "id": "18",
+      "name": "文本框 17",
+      "bbox": [
+        331.06,
+        335.5,
+        102.5,
+        21
+      ],
+      "geometry": "rect",
+      "text": "第16-22年",
+      "textPreview": "第16-22年",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 24,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "第16-22年"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "第16-22年",
+          "resolvedTextStyle": {
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "第",
+              "fontSize": 16,
+              "typeface": "微软雅黑",
+              "color": "#837B74"
+            },
+            {
+              "index": 2,
+              "text": "16-22",
+              "fontSize": 16,
+              "typeface": "微软雅黑",
+              "color": "#837B74"
+            },
+            {
+              "index": 3,
+              "text": "年",
+              "fontSize": 16,
+              "typeface": "微软雅黑",
+              "color": "#837B74"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 25,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/65wjudg7",
+      "id": "19",
+      "name": "文本框 18",
+      "bbox": [
+        334.3,
+        364.5,
+        96.01,
+        63
+      ],
+      "geometry": "rect",
+      "text": "子女教育期",
+      "textPreview": "子女教育期",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 24,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "子女教"
+          },
+          {
+            "index": 2,
+            "text": "育期"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "子女教育期",
+          "resolvedTextStyle": {
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "子女教育期",
+              "typeface": "微软雅黑",
+              "color": "#332825",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 26,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ed8bat47",
+      "id": "20",
+      "name": "文本框 19",
+      "bbox": [
+        332.3,
+        435.5,
+        100,
+        26.5
+      ],
+      "geometry": "rect",
+      "text": "每年提领",
+      "textPreview": "每年提领",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 24,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "每年提领"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "每年提领",
+          "resolvedTextStyle": {
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "每年提领",
+              "fontSize": 20,
+              "typeface": "微软雅黑",
+              "color": "#5A514A"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 27,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/7u54zido",
+      "id": "21",
+      "name": "文本框 20",
+      "bbox": [
+        308.15,
+        466,
+        148.32,
+        42.5
+      ],
+      "geometry": "rect",
+      "text": "50万/年",
+      "textPreview": "50万/年",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 24,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "50万/年"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "50万/年",
+          "resolvedTextStyle": {
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "50",
+              "fontSize": 32,
+              "typeface": "微软雅黑",
+              "color": "#8D624F",
+              "bold": true
+            },
+            {
+              "index": 2,
+              "text": "万",
+              "fontSize": 32,
+              "typeface": "微软雅黑",
+              "color": "#8D624F",
+              "bold": true
+            },
+            {
+              "index": 3,
+              "text": "/",
+              "fontSize": 32,
+              "typeface": "微软雅黑",
+              "color": "#8D624F",
+              "bold": true
+            },
+            {
+              "index": 4,
+              "text": "年",
+              "fontSize": 32,
+              "typeface": "微软雅黑",
+              "color": "#8D624F",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 28,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/wfyxobm5",
+      "id": "22",
+      "name": "文本框 21",
+      "bbox": [
+        329.45,
+        512.5,
+        105.7,
+        24
+      ],
+      "geometry": "rect",
+      "text": "累计350万",
+      "textPreview": "累计350万",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 24,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "累计350万"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "累计350万",
+          "resolvedTextStyle": {
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "累计",
+              "fontSize": 18,
+              "typeface": "微软雅黑",
+              "color": "#837B74"
+            },
+            {
+              "index": 2,
+              "text": "350",
+              "fontSize": 18,
+              "typeface": "微软雅黑",
+              "color": "#837B74"
+            },
+            {
+              "index": 3,
+              "text": "万",
+              "fontSize": 18,
+              "typeface": "微软雅黑",
+              "color": "#837B74"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 29,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/wra5gbq1",
+      "id": "26",
+      "name": "任意多边形 25",
+      "bbox": [
+        543.53,
+        192.47,
+        160.53,
+        487
+      ],
+      "geometry": "custom",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 24,
+        "typeface": "Calibri",
+        "color": "lt1",
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": ""
+          }
+        ]
+      },
+      "fillColor": "#FEFCF7",
+      "lineColor": "#FBF9F6",
+      "lineWidth": 1
+    },
+    {
+      "order": 30,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/lc7u54zi",
+      "id": "27",
+      "name": "文本框 26",
+      "bbox": [
+        572.59,
+        338.25,
+        102.5,
+        21
+      ],
+      "geometry": "rect",
+      "text": "第23-30年",
+      "textPreview": "第23-30年",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 24,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "第23-30年"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "第23-30年",
+          "resolvedTextStyle": {
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "第",
+              "fontSize": 16,
+              "typeface": "微软雅黑",
+              "color": "#837B74"
+            },
+            {
+              "index": 2,
+              "text": "23-30",
+              "fontSize": 16,
+              "typeface": "微软雅黑",
+              "color": "#837B74"
+            },
+            {
+              "index": 3,
+              "text": "年",
+              "fontSize": 16,
+              "typeface": "微软雅黑",
+              "color": "#837B74"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 31,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/epkzupwb",
+      "id": "28",
+      "name": "文本框 27",
+      "bbox": [
+        575.84,
+        367.25,
+        96.01,
+        63
+      ],
+      "geometry": "rect",
+      "text": "资金积累期",
+      "textPreview": "资金积累期",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 24,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "资金积"
+          },
+          {
+            "index": 2,
+            "text": "累期"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "资金积累期",
+          "resolvedTextStyle": {
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "资金积累期",
+              "typeface": "微软雅黑",
+              "color": "#332825",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 32,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/7adsji5s",
+      "id": "29",
+      "name": "文本框 28",
+      "bbox": [
+        583.84,
+        438.25,
+        80,
+        26.5
+      ],
+      "geometry": "rect",
+      "text": "不提领",
+      "textPreview": "不提领",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 24,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "不提领"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "不提领",
+          "resolvedTextStyle": {
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "不提领",
+              "fontSize": 20,
+              "typeface": "微软雅黑",
+              "color": "#5A514A"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 33,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/tgfmlkjm",
+      "id": "30",
+      "name": "文本框 29",
+      "bbox": [
+        553.84,
+        468.75,
+        140,
+        37
+      ],
+      "geometry": "rect",
+      "text": "现金价值",
+      "textPreview": "现金价值",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 24,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "现金价值"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "现金价值",
+          "resolvedTextStyle": {
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "现金价值",
+              "fontSize": 28,
+              "typeface": "微软雅黑",
+              "color": "#8D624F",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 34,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/4vmtwra5",
+      "id": "31",
+      "name": "文本框 30",
+      "bbox": [
+        578.84,
+        509.75,
+        90.01,
+        24
+      ],
+      "geometry": "rect",
+      "text": "持续增长",
+      "textPreview": "持续增长",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 24,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "持续增长"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "持续增长",
+          "resolvedTextStyle": {
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "持续增长",
+              "fontSize": 18,
+              "typeface": "微软雅黑",
+              "color": "#837B74"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 35,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/47y1kre1",
+      "id": "35",
+      "name": "任意多边形 34",
+      "bbox": [
+        785.07,
+        192.47,
+        160.53,
+        487
+      ],
+      "geometry": "custom",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 24,
+        "typeface": "Calibri",
+        "color": "lt1",
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": ""
+          }
+        ]
+      },
+      "fillColor": "#FEFCF7",
+      "lineColor": "#FBF9F6",
+      "lineWidth": 1
+    },
+    {
+      "order": 36,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/bm58z25k",
+      "id": "36",
+      "name": "文本框 35",
+      "bbox": [
+        821,
+        335.5,
+        88.77,
+        21
+      ],
+      "geometry": "rect",
+      "text": "第31年起",
+      "textPreview": "第31年起",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 24,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "第31年起"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "第31年起",
+          "resolvedTextStyle": {
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "第",
+              "fontSize": 16,
+              "typeface": "微软雅黑",
+              "color": "#837B74"
+            },
+            {
+              "index": 2,
+              "text": "31",
+              "fontSize": 16,
+              "typeface": "微软雅黑",
+              "color": "#837B74"
+            },
+            {
+              "index": 3,
+              "text": "年起",
+              "fontSize": 16,
+              "typeface": "微软雅黑",
+              "color": "#837B74"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 37,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/m1cfa9w3",
+      "id": "37",
+      "name": "文本框 36",
+      "bbox": [
+        817.38,
+        364.5,
+        96.01,
+        63
+      ],
+      "geometry": "rect",
+      "text": "养老补充期",
+      "textPreview": "养老补充期",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 24,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "养老补"
+          },
+          {
+            "index": 2,
+            "text": "充期"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "养老补充期",
+          "resolvedTextStyle": {
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "养老补充期",
+              "typeface": "微软雅黑",
+              "color": "#332825",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 38,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/twra5gbq",
+      "id": "38",
+      "name": "文本框 37",
+      "bbox": [
+        815.38,
+        435.5,
+        100,
+        26.5
+      ],
+      "geometry": "rect",
+      "text": "每年提领",
+      "textPreview": "每年提领",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 24,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "每年提领"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "每年提领",
+          "resolvedTextStyle": {
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "每年提领",
+              "fontSize": 20,
+              "typeface": "微软雅黑",
+              "color": "#5A514A"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 39,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/4byhgn29",
+      "id": "39",
+      "name": "文本框 38",
+      "bbox": [
+        791.23,
+        466,
+        148.32,
+        42.5
+      ],
+      "geometry": "rect",
+      "text": "30万/年",
+      "textPreview": "30万/年",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 24,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "30万/年"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "30万/年",
+          "resolvedTextStyle": {
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "30",
+              "fontSize": 32,
+              "typeface": "微软雅黑",
+              "color": "#8D624F",
+              "bold": true
+            },
+            {
+              "index": 2,
+              "text": "万",
+              "fontSize": 32,
+              "typeface": "微软雅黑",
+              "color": "#8D624F",
+              "bold": true
+            },
+            {
+              "index": 3,
+              "text": "/",
+              "fontSize": 32,
+              "typeface": "微软雅黑",
+              "color": "#8D624F",
+              "bold": true
+            },
+            {
+              "index": 4,
+              "text": "年",
+              "fontSize": 32,
+              "typeface": "微软雅黑",
+              "color": "#8D624F",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 40,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/8nqxs72x",
+      "id": "40",
+      "name": "文本框 39",
+      "bbox": [
+        802.38,
+        512.5,
+        126.01,
+        24
+      ],
+      "geometry": "rect",
+      "text": "补充退休收入",
+      "textPreview": "补充退休收入",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 24,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "补充退休收入"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "补充退休收入",
+          "resolvedTextStyle": {
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "补充退休收入",
+              "fontSize": 18,
+              "typeface": "微软雅黑",
+              "color": "#837B74"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 41,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/8bat47y1",
+      "id": "44",
+      "name": "任意多边形 43",
+      "bbox": [
+        1026.6,
+        192.47,
+        192.87,
+        487
+      ],
+      "geometry": "custom",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 24,
+        "typeface": "Calibri",
+        "color": "lt1",
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": ""
+          }
+        ]
+      },
+      "fillColor": "#5C3F32",
+      "lineColor": "#FBF9F6",
+      "lineWidth": 1
+    },
+    {
+      "order": 42,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/1w7mp0bi",
+      "id": "45",
+      "name": "文本框 44",
+      "bbox": [
+        1063.07,
+        368.25,
+        120.01,
+        31.5
+      ],
+      "geometry": "rect",
+      "text": "方案效果",
+      "textPreview": "方案效果",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 24,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "方案效果"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "方案效果",
+          "resolvedTextStyle": {
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "方案效果",
+              "typeface": "微软雅黑",
+              "color": "#FFFFFF",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 43,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/q5o7qpg3",
+      "id": "46",
+      "name": "文本框 45",
+      "bbox": [
+        1073.08,
+        406.25,
+        100,
+        34.5
+      ],
+      "geometry": "rect",
+      "text": "子女教育",
+      "textPreview": "子女教育",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 24,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "子女教育"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "子女教育",
+          "lineSpacingPercent": 133000,
+          "resolvedTextStyle": {
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "子女教育",
+              "fontSize": 20,
+              "typeface": "微软雅黑",
+              "color": "#FFFFFF"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 44,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/jqh0fepk",
+      "id": "47",
+      "name": "文本框 46",
+      "bbox": [
+        1073.08,
+        442.25,
+        100,
+        34.5
+      ],
+      "geometry": "rect",
+      "text": "养老品质",
+      "textPreview": "养老品质",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 24,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "养老品质"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "养老品质",
+          "lineSpacingPercent": 133000,
+          "resolvedTextStyle": {
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "养老品质",
+              "fontSize": 20,
+              "typeface": "微软雅黑",
+              "color": "#FFFFFF"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 45,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/c3ylc7u5",
+      "id": "48",
+      "name": "文本框 47",
+      "bbox": [
+        1078.07,
+        479.75,
+        90.01,
+        24
+      ],
+      "geometry": "rect",
+      "text": "传承保障",
+      "textPreview": "传承保障",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 24,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "传承保障"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "传承保障",
+          "resolvedTextStyle": {
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "传承保障",
+              "fontSize": 18,
+              "typeface": "微软雅黑",
+              "color": "#D4B878",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    }
+  ],
+  "composeRuns": []
+}

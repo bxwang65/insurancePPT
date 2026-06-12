@@ -1,0 +1,1485 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/ivw6d8",
+    "id": "ivw6d8",
+    "slide": 5,
+    "layoutId": "/ppt/slideLayouts/slideLayout41.xml",
+    "layoutName": "上左标下左内后右背景-有背景-有间隙-2",
+    "masterLayoutId": "/ppt/slideMasters/slideMaster3.xml",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "Office",
+    "colors": {
+      "accent1": "#5B9BD5",
+      "accent2": "#ED7D31",
+      "accent3": "#A5A5A5",
+      "accent4": "#FFC000",
+      "accent5": "#4472C4",
+      "accent6": "#70AD47",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#44546A",
+      "lt2": "#E7E6E6",
+      "hlink": "#0563C1",
+      "folHlink": "#954F72"
+    },
+    "fontScheme": {
+      "name": "Aspect",
+      "majorFont": {
+        "latinTypeface": "微软雅黑"
+      },
+      "minorFont": {
+        "latinTypeface": "微软雅黑"
+      }
+    },
+    "typefaces": [
+      "微软雅黑",
+      "汉仪中宋简",
+      "汉仪书宋二简"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "/ppt/slideLayouts/slideLayout41.xml",
+      "name": "上左标下左内后右背景-有背景-有间隙-2",
+      "parentLayoutId": "/ppt/slideMasters/slideMaster3.xml",
+      "elements": [
+        {
+          "order": 1,
+          "kind": "image",
+          "scope": "layout",
+          "aid": "template/layout//ppt/slideLayouts/slideLayout41.xml/10",
+          "id": "10",
+          "name": "图片 4",
+          "bbox": [
+            0,
+            0,
+            1106.2,
+            720
+          ],
+          "horizontalFlip": true,
+          "contentType": "image/png",
+          "asset": {
+            "assetId": "/ppt/media/image1.png",
+            "contentType": "image/png",
+            "byteLength": 3454832
+          },
+          "fillImage": {
+            "assetId": "/ppt/media/image1.png",
+            "contentType": "image/png",
+            "byteLength": 3454832
+          }
+        },
+        {
+          "order": 2,
+          "kind": "image",
+          "scope": "layout",
+          "aid": "template/layout//ppt/slideLayouts/slideLayout41.xml/11",
+          "id": "11",
+          "name": "图片 5",
+          "bbox": [
+            858.67,
+            0,
+            421.33,
+            720
+          ],
+          "contentType": "image/png",
+          "asset": {
+            "assetId": "/ppt/media/image2.png",
+            "contentType": "image/png",
+            "byteLength": 2064787
+          },
+          "fillImage": {
+            "assetId": "/ppt/media/image2.png",
+            "contentType": "image/png",
+            "byteLength": 2064787
+          }
+        },
+        {
+          "order": 3,
+          "kind": "shape",
+          "scope": "layout",
+          "aid": "template/layout//ppt/slideLayouts/slideLayout41.xml/7",
+          "id": "7",
+          "name": "矩形 6",
+          "bbox": [
+            106.67,
+            540,
+            69.33,
+            2.67
+          ],
+          "geometry": "rect",
+          "resolvedTextStyle": {
+            "anchor": 2,
+            "verticalAlignment": "middle"
+          },
+          "fillColor": "accent1",
+          "lineWidth": 0
+        },
+        {
+          "order": 4,
+          "kind": "shape",
+          "scope": "layout",
+          "aid": "template/layout//ppt/slideLayouts/slideLayout41.xml/9",
+          "id": "9",
+          "name": "任意多边形 8",
+          "bbox": [
+            108.66,
+            137.6,
+            44.07,
+            36
+          ],
+          "geometry": "custom",
+          "resolvedTextStyle": {
+            "anchor": 2,
+            "verticalAlignment": "middle"
+          },
+          "fillColor": "accent1",
+          "lineWidth": 0
+        },
+        {
+          "order": 5,
+          "kind": "shape",
+          "scope": "layout",
+          "aid": "template/layout//ppt/slideLayouts/slideLayout41.xml/2",
+          "id": "2",
+          "name": "图片占位符 1",
+          "bbox": [
+            640,
+            0,
+            640,
+            720
+          ]
+        },
+        {
+          "order": 6,
+          "kind": "shape",
+          "scope": "layout",
+          "aid": "template/layout//ppt/slideLayouts/slideLayout41.xml/3",
+          "id": "3",
+          "name": "标题 2",
+          "bbox": [
+            64,
+            50.66,
+            720,
+            74.66
+          ],
+          "text": "单击此处添加标题",
+          "textPreview": "单击此处添加标题",
+          "resolvedTextStyle": {
+            "anchor": 1,
+            "verticalAlignment": "top",
+            "wrap": "square",
+            "autoFit": "none",
+            "insets": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "单击此处添加标题",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "单击此处添加标题"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "order": 7,
+          "kind": "shape",
+          "scope": "layout",
+          "aid": "template/layout//ppt/slideLayouts/slideLayout41.xml/4",
+          "id": "4",
+          "name": "内容占位符 3",
+          "bbox": [
+            64,
+            159.97,
+            720,
+            496.03
+          ],
+          "text": "单击此处添加文本",
+          "textPreview": "单击此处添加文本",
+          "resolvedTextStyle": {
+            "anchor": 1,
+            "verticalAlignment": "top",
+            "wrap": "square",
+            "autoFit": "none",
+            "insets": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "单击此处添加文本",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "单击此处添加文本"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "scope": "master",
+      "id": "/ppt/slideMasters/slideMaster3.xml",
+      "type": "master",
+      "elements": [
+        {
+          "order": 1,
+          "kind": "shape",
+          "scope": "master",
+          "aid": "template/master//ppt/slideMasters/slideMaster3.xml/2",
+          "id": "2",
+          "name": "标题占位符 1",
+          "bbox": [
+            63.87,
+            63.87,
+            1151.62,
+            74.08
+          ],
+          "geometry": "rect",
+          "text": "单击此处编辑母版标题样式",
+          "textPreview": "单击此处编辑母版标题样式",
+          "resolvedTextStyle": {
+            "anchor": 2,
+            "vertical": 1,
+            "verticalAlignment": "middle",
+            "autoFit": "shrinkText",
+            "insets": {
+              "top": 4.93,
+              "right": 9.47,
+              "bottom": 4.93,
+              "left": 9.47
+            }
+          },
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "单击此处编辑母版标题样式",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "单击此处编辑母版标题样式"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "order": 2,
+          "kind": "shape",
+          "scope": "master",
+          "aid": "template/master//ppt/slideMasters/slideMaster3.xml/3",
+          "id": "3",
+          "name": "文本占位符 2",
+          "bbox": [
+            63.87,
+            156.47,
+            1151.62,
+            499.65
+          ],
+          "geometry": "rect",
+          "text": "单击此处编辑母版文本样式\n第二级\n第三级\n第四级\n第五级",
+          "textPreview": "单击此处编辑母版文本样式 | 第二级 | 第三级 | 第四级 | 第五级",
+          "resolvedTextStyle": {
+            "vertical": 1,
+            "autoFit": "shrinkText",
+            "insets": {
+              "top": 4.91,
+              "right": 9.45,
+              "bottom": 4.91,
+              "left": 9.45
+            }
+          },
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "单击此处编辑母版文本样式",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "单击此处编辑母版文本样式"
+                }
+              ]
+            },
+            {
+              "index": 2,
+              "text": "第二级",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "第二级"
+                }
+              ]
+            },
+            {
+              "index": 3,
+              "text": "第三级",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "第三级"
+                }
+              ]
+            },
+            {
+              "index": 4,
+              "text": "第四级",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "第四级"
+                }
+              ]
+            },
+            {
+              "index": 5,
+              "text": "第五级",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "第五级"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "order": 3,
+          "kind": "shape",
+          "scope": "master",
+          "aid": "template/master//ppt/slideMasters/slideMaster3.xml/4",
+          "id": "4",
+          "name": "日期占位符 3",
+          "bbox": [
+            64.25,
+            662.93,
+            283.46,
+            33.26
+          ],
+          "geometry": "rect",
+          "resolvedTextStyle": {
+            "anchor": 2,
+            "vertical": 1,
+            "verticalAlignment": "middle",
+            "autoFit": "shrinkText",
+            "insets": {
+              "top": 4.8,
+              "right": 9.6,
+              "bottom": 4.8,
+              "left": 9.6
+            }
+          }
+        },
+        {
+          "order": 4,
+          "kind": "shape",
+          "scope": "master",
+          "aid": "template/master//ppt/slideMasters/slideMaster3.xml/5",
+          "id": "5",
+          "name": "页脚占位符 4",
+          "bbox": [
+            432.13,
+            662.93,
+            415.75,
+            33.26
+          ],
+          "geometry": "rect",
+          "resolvedTextStyle": {
+            "anchor": 2,
+            "vertical": 1,
+            "verticalAlignment": "middle",
+            "autoFit": "shrinkText",
+            "insets": {
+              "top": 4.8,
+              "right": 9.6,
+              "bottom": 4.8,
+              "left": 9.6
+            }
+          }
+        },
+        {
+          "order": 5,
+          "kind": "shape",
+          "scope": "master",
+          "aid": "template/master//ppt/slideMasters/slideMaster3.xml/6",
+          "id": "6",
+          "name": "灯片编号占位符 5",
+          "bbox": [
+            932.03,
+            662.93,
+            283.46,
+            33.26
+          ],
+          "geometry": "rect",
+          "resolvedTextStyle": {
+            "anchor": 2,
+            "vertical": 1,
+            "verticalAlignment": "middle",
+            "autoFit": "shrinkText",
+            "insets": {
+              "top": 4.8,
+              "right": 9.6,
+              "bottom": 4.8,
+              "left": 9.6
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "image",
+      "scope": "slide",
+      "aid": "im/bq1oryts",
+      "id": "27",
+      "name": "图片占位符 1",
+      "bbox": [
+        640,
+        0,
+        640,
+        720
+      ],
+      "contentType": "image/jpeg",
+      "imageCrop": {
+        "left": 0.00009,
+        "top": 0,
+        "right": 0.00009,
+        "bottom": 0
+      },
+      "asset": {
+        "assetId": "/ppt/media/image23.jpeg",
+        "contentType": "image/jpeg",
+        "byteLength": 855230
+      },
+      "fillImage": {
+        "assetId": "/ppt/media/image23.jpeg",
+        "contentType": "image/jpeg",
+        "byteLength": 855230
+      }
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/l0rqd4vm",
+      "id": "8",
+      "name": "任意多边形 7",
+      "bbox": [
+        0,
+        0,
+        1280,
+        720
+      ],
+      "geometry": "custom",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 24,
+        "typeface": "微软雅黑",
+        "color": "lt1",
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": ""
+          }
+        ]
+      }
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/032lszqt",
+      "id": "12",
+      "name": "任意多边形 11",
+      "bbox": [
+        64,
+        159.93,
+        720,
+        151.13
+      ],
+      "geometry": "custom",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 24,
+        "typeface": "微软雅黑",
+        "color": "lt1",
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": ""
+          }
+        ]
+      },
+      "fillColor": {
+        "type": "theme",
+        "value": "accent1",
+        "transform": {
+          "lighten": 0.9
+        }
+      },
+      "lineColor": {
+        "type": "theme",
+        "value": "accent1",
+        "transform": {
+          "lighten": 0.8
+        }
+      },
+      "lineWidth": 2
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/i9s36hcr",
+      "id": "14",
+      "name": "任意多边形 13",
+      "bbox": [
+        88,
+        192.8,
+        85.33,
+        85.33
+      ],
+      "geometry": "custom",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 24,
+        "typeface": "微软雅黑",
+        "color": "lt1",
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": ""
+          }
+        ]
+      },
+      "fillColor": "accent1",
+      "lineColor": {
+        "type": "theme",
+        "value": "accent1",
+        "transform": {
+          "lighten": 0.8
+        }
+      },
+      "lineWidth": 1
+    },
+    {
+      "order": 5,
+      "kind": "image",
+      "scope": "slide",
+      "aid": "im/47y1kre1",
+      "id": "28",
+      "name": "图片 12",
+      "bbox": [
+        109.33,
+        214.2,
+        42.67,
+        42.67
+      ],
+      "contentType": "image/svg+xml",
+      "asset": {
+        "assetId": "/ppt/media/image25.svg",
+        "contentType": "image/svg+xml",
+        "byteLength": 1645
+      },
+      "fillImage": {
+        "assetId": "/ppt/media/image25.svg",
+        "contentType": "image/svg+xml",
+        "byteLength": 1645
+      }
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/bulwval8",
+      "id": "15",
+      "name": "文本框 14",
+      "bbox": [
+        194.67,
+        186.13,
+        565.33,
+        37.33
+      ],
+      "geometry": "rect",
+      "text": "教育阶段提领",
+      "textPreview": "教育阶段提领",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 24,
+        "typeface": "微软雅黑",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 1.87,
+          "bottom": 0,
+          "left": 1.87
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "教育阶段提领"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "教育阶段提领",
+          "resolvedTextStyle": {
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "教育阶段提领",
+              "fontSize": 28,
+              "typeface": "汉仪中宋简",
+              "color": "dk1"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/0fepkzup",
+      "id": "16",
+      "name": "文本框 15",
+      "bbox": [
+        194.67,
+        228.8,
+        565.33,
+        56
+      ],
+      "geometry": "rect",
+      "text": "子女18-22岁大学期间，可每年提取教育金10万元，如上海张先生为女儿设立专项账户，覆盖学费及海外交流费用。",
+      "textPreview": "子女18-22岁大学期间，可每年提取教育金10万元，如上海张先生为女儿设立专项账户，覆盖学费及海外交流费用。",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 24,
+        "typeface": "微软雅黑",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 1.87,
+          "bottom": 0,
+          "left": 1.87
+        }
+      },
+      "textLayout": {
+        "lineCount": 3,
+        "lines": [
+          {
+            "index": 1,
+            "text": "子女18-22岁大学期间，可每年提取教育金10"
+          },
+          {
+            "index": 2,
+            "text": "万元，如上海张先生为女儿设立专项账户，覆盖学费及海外交流费"
+          },
+          {
+            "index": 3,
+            "text": "用。"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "子女18-22岁大学期间，可每年提取教育金10万元，如上海张先生为女儿设立专项账户，覆盖学费及海外交流费用。",
+          "lineSpacingPercent": 120000,
+          "resolvedTextStyle": {
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "子女",
+              "fontSize": 18.67,
+              "typeface": "汉仪书宋二简",
+              "color": "dk1"
+            },
+            {
+              "index": 2,
+              "text": "18-22",
+              "fontSize": 18.67,
+              "typeface": "汉仪书宋二简",
+              "color": "dk1"
+            },
+            {
+              "index": 3,
+              "text": "岁大学期间，可每年提取教育金",
+              "fontSize": 18.67,
+              "typeface": "汉仪书宋二简",
+              "color": "dk1"
+            },
+            {
+              "index": 4,
+              "text": "10",
+              "fontSize": 18.67,
+              "typeface": "汉仪书宋二简",
+              "color": "dk1"
+            },
+            {
+              "index": 5,
+              "text": "万元，如上海张先生为女儿设立专项账户，覆盖学费及海外交流费用。",
+              "fontSize": 18.67,
+              "typeface": "汉仪书宋二简",
+              "color": "dk1"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/p0bi9s36",
+      "id": "17",
+      "name": "任意多边形 16",
+      "bbox": [
+        64,
+        332.4,
+        720,
+        151.13
+      ],
+      "geometry": "custom",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 24,
+        "typeface": "微软雅黑",
+        "color": "lt1",
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": ""
+          }
+        ]
+      },
+      "fillColor": {
+        "type": "theme",
+        "value": "accent1",
+        "transform": {
+          "lighten": 0.9
+        }
+      },
+      "lineColor": {
+        "type": "theme",
+        "value": "accent1",
+        "transform": {
+          "lighten": 0.8
+        }
+      },
+      "lineWidth": 2
+    },
+    {
+      "order": 9,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/byhgn29g",
+      "id": "19",
+      "name": "任意多边形 18",
+      "bbox": [
+        88,
+        365.27,
+        85.33,
+        85.33
+      ],
+      "geometry": "custom",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 24,
+        "typeface": "微软雅黑",
+        "color": "lt1",
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": ""
+          }
+        ]
+      },
+      "fillColor": "accent1",
+      "lineColor": {
+        "type": "theme",
+        "value": "accent1",
+        "transform": {
+          "lighten": 0.8
+        }
+      },
+      "lineWidth": 1
+    },
+    {
+      "order": 10,
+      "kind": "image",
+      "scope": "slide",
+      "aid": "im/tsvu9kni",
+      "id": "29",
+      "name": "图片 17",
+      "bbox": [
+        109.33,
+        386.65,
+        42.67,
+        42.67
+      ],
+      "contentType": "image/svg+xml",
+      "asset": {
+        "assetId": "/ppt/media/image27.svg",
+        "contentType": "image/svg+xml",
+        "byteLength": 4232
+      },
+      "fillImage": {
+        "assetId": "/ppt/media/image27.svg",
+        "contentType": "image/svg+xml",
+        "byteLength": 4232
+      }
+    },
+    {
+      "order": 11,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/3q5o7qpg",
+      "id": "20",
+      "name": "文本框 19",
+      "bbox": [
+        194.67,
+        358.6,
+        565.33,
+        37.33
+      ],
+      "geometry": "rect",
+      "text": "创业阶段提领",
+      "textPreview": "创业阶段提领",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 24,
+        "typeface": "微软雅黑",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 1.87,
+          "bottom": 0,
+          "left": 1.87
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "创业阶段提领"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "创业阶段提领",
+          "resolvedTextStyle": {
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "创业阶段提领",
+              "fontSize": 28,
+              "typeface": "汉仪中宋简",
+              "color": "dk1"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 12,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/e9cvixcz",
+      "id": "21",
+      "name": "文本框 20",
+      "bbox": [
+        194.67,
+        401.27,
+        565.33,
+        56
+      ],
+      "geometry": "rect",
+      "text": "子女25-30岁创业期，可申请50万元启动资金，参考浙江李氏家族支持子辈创办科技公司，分3年拨付。",
+      "textPreview": "子女25-30岁创业期，可申请50万元启动资金，参考浙江李氏家族支持子辈创办科技公司，分3年拨付。",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 24,
+        "typeface": "微软雅黑",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 1.87,
+          "bottom": 0,
+          "left": 1.87
+        }
+      },
+      "textLayout": {
+        "lineCount": 3,
+        "lines": [
+          {
+            "index": 1,
+            "text": "子女25-30岁创业期，可申请50"
+          },
+          {
+            "index": 2,
+            "text": "万元启动资金，参考浙江李氏家族支持子辈创办科技公司，分3"
+          },
+          {
+            "index": 3,
+            "text": "年拨付。"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "子女25-30岁创业期，可申请50万元启动资金，参考浙江李氏家族支持子辈创办科技公司，分3年拨付。",
+          "lineSpacingPercent": 120000,
+          "resolvedTextStyle": {
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "子女",
+              "fontSize": 18.67,
+              "typeface": "汉仪书宋二简",
+              "color": "dk1"
+            },
+            {
+              "index": 2,
+              "text": "25-30",
+              "fontSize": 18.67,
+              "typeface": "汉仪书宋二简",
+              "color": "dk1"
+            },
+            {
+              "index": 3,
+              "text": "岁创业期，可申请",
+              "fontSize": 18.67,
+              "typeface": "汉仪书宋二简",
+              "color": "dk1"
+            },
+            {
+              "index": 4,
+              "text": "50",
+              "fontSize": 18.67,
+              "typeface": "汉仪书宋二简",
+              "color": "dk1"
+            },
+            {
+              "index": 5,
+              "text": "万元启动资金，参考浙江李氏家族支持子辈创办科技公司，分",
+              "fontSize": 18.67,
+              "typeface": "汉仪书宋二简",
+              "color": "dk1"
+            },
+            {
+              "index": 6,
+              "text": "3",
+              "fontSize": 18.67,
+              "typeface": "汉仪书宋二简",
+              "color": "dk1"
+            },
+            {
+              "index": 7,
+              "text": "年拨付。",
+              "fontSize": 18.67,
+              "typeface": "汉仪书宋二简",
+              "color": "dk1"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 13,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/lwval87e",
+      "id": "22",
+      "name": "任意多边形 21",
+      "bbox": [
+        64,
+        504.87,
+        720,
+        151.13
+      ],
+      "geometry": "custom",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 24,
+        "typeface": "微软雅黑",
+        "color": "lt1",
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": ""
+          }
+        ]
+      },
+      "fillColor": {
+        "type": "theme",
+        "value": "accent1",
+        "transform": {
+          "lighten": 0.9
+        }
+      },
+      "lineColor": {
+        "type": "theme",
+        "value": "accent1",
+        "transform": {
+          "lighten": 0.8
+        }
+      },
+      "lineWidth": 2
+    },
+    {
+      "order": 14,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/3itgfmlk",
+      "id": "24",
+      "name": "任意多边形 23",
+      "bbox": [
+        88,
+        537.73,
+        85.33,
+        85.33
+      ],
+      "geometry": "custom",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 24,
+        "typeface": "微软雅黑",
+        "color": "lt1",
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": ""
+          }
+        ]
+      },
+      "fillColor": "accent1",
+      "lineColor": {
+        "type": "theme",
+        "value": "accent1",
+        "transform": {
+          "lighten": 0.8
+        }
+      },
+      "lineWidth": 1
+    },
+    {
+      "order": 15,
+      "kind": "image",
+      "scope": "slide",
+      "aid": "im/jqh0fepk",
+      "id": "30",
+      "name": "图片 22",
+      "bbox": [
+        109.33,
+        559.11,
+        42.67,
+        42.67
+      ],
+      "contentType": "image/svg+xml",
+      "asset": {
+        "assetId": "/ppt/media/image29.svg",
+        "contentType": "image/svg+xml",
+        "byteLength": 8840
+      },
+      "fillImage": {
+        "assetId": "/ppt/media/image29.svg",
+        "contentType": "image/svg+xml",
+        "byteLength": 8840
+      }
+    },
+    {
+      "order": 16,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ex0nuxc3",
+      "id": "25",
+      "name": "文本框 24",
+      "bbox": [
+        194.67,
+        531.07,
+        565.33,
+        37.33
+      ],
+      "geometry": "rect",
+      "text": "养老阶段提领",
+      "textPreview": "养老阶段提领",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 24,
+        "typeface": "微软雅黑",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 1.87,
+          "bottom": 0,
+          "left": 1.87
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "养老阶段提领"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "养老阶段提领",
+          "resolvedTextStyle": {
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "养老阶段提领",
+              "fontSize": 28,
+              "typeface": "汉仪中宋简",
+              "color": "dk1"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 17,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/loj2t83i",
+      "id": "26",
+      "name": "文本框 25",
+      "bbox": [
+        194.67,
+        573.73,
+        565.33,
+        56
+      ],
+      "geometry": "rect",
+      "text": "父母60岁后，每月提取养老金2万元，如北京王家通过家族信托，确保父母医疗及旅居需求持续覆盖。",
+      "textPreview": "父母60岁后，每月提取养老金2万元，如北京王家通过家族信托，确保父母医疗及旅居需求持续覆盖。",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 24,
+        "typeface": "微软雅黑",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 1.87,
+          "bottom": 0,
+          "left": 1.87
+        }
+      },
+      "textLayout": {
+        "lineCount": 3,
+        "lines": [
+          {
+            "index": 1,
+            "text": "父母60岁后，每月提取养老金2"
+          },
+          {
+            "index": 2,
+            "text": "万元，如北京王家通过家族信托，确保父母医疗及旅居需求持续覆"
+          },
+          {
+            "index": 3,
+            "text": "盖。"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "父母60岁后，每月提取养老金2万元，如北京王家通过家族信托，确保父母医疗及旅居需求持续覆盖。",
+          "lineSpacingPercent": 120000,
+          "resolvedTextStyle": {
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "父母",
+              "fontSize": 18.67,
+              "typeface": "汉仪书宋二简",
+              "color": "dk1"
+            },
+            {
+              "index": 2,
+              "text": "60",
+              "fontSize": 18.67,
+              "typeface": "汉仪书宋二简",
+              "color": "dk1"
+            },
+            {
+              "index": 3,
+              "text": "岁后，每月提取养老金",
+              "fontSize": 18.67,
+              "typeface": "汉仪书宋二简",
+              "color": "dk1"
+            },
+            {
+              "index": 4,
+              "text": "2",
+              "fontSize": 18.67,
+              "typeface": "汉仪书宋二简",
+              "color": "dk1"
+            },
+            {
+              "index": 5,
+              "text": "万元，如北京王家通过家族信托，确保父母医疗及旅居需求持续覆盖。",
+              "fontSize": 18.67,
+              "typeface": "汉仪书宋二简",
+              "color": "dk1"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 18,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ixczed8v",
+      "id": "10",
+      "name": "标题 9",
+      "bbox": [
+        64,
+        50.66,
+        720,
+        74.66
+      ],
+      "text": "不同阶段提领路径",
+      "textPreview": "不同阶段提领路径",
+      "resolvedFontSize": 48,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "vertical": 1,
+        "fontSize": 48,
+        "typeface": "微软雅黑",
+        "color": {
+          "type": "theme",
+          "value": "tx1",
+          "transform": {
+            "lighten": 0.15
+          }
+        },
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "textTransform": "none",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "不同阶段提领路径"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "不同阶段提领路径",
+          "runs": [
+            {
+              "index": 1,
+              "text": "不同阶段提领路径",
+              "typeface": "微软雅黑",
+              "color": {
+                "type": "theme",
+                "value": "tx1",
+                "transform": {
+                  "lighten": 1
+                }
+              }
+            }
+          ],
+          "bulletCharacter": "",
+          "lineSpacingPercent": 110000,
+          "spaceBefore": 0
+        }
+      ]
+    }
+  ],
+  "composeRuns": []
+}

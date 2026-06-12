@@ -1,0 +1,565 @@
+{
+  "source": {
+    "pdfHash": "2fefe785e22606d3c4c3db9b7764a2f8fdd0fd0b7698efacdc1b6db7b1837b4c",
+    "pdfPath": "/Users/soldier/Downloads/宏挚家传承保险计划.pdf",
+    "parser": "fitz-table-v1+llm-json"
+  },
+  "benefitRows": [
+    {
+      "policyYear": 1,
+      "sourcePage": 4
+    },
+    {
+      "policyYear": 2,
+      "sourcePage": 4
+    },
+    {
+      "policyYear": 3,
+      "sourcePage": 4
+    },
+    {
+      "policyYear": 4,
+      "sourcePage": 4
+    },
+    {
+      "policyYear": 5,
+      "sourcePage": 4
+    },
+    {
+      "policyYear": 6,
+      "sourcePage": 4
+    },
+    {
+      "policyYear": 7,
+      "sourcePage": 4
+    },
+    {
+      "policyYear": 8,
+      "sourcePage": 4
+    },
+    {
+      "policyYear": 9,
+      "sourcePage": 4
+    },
+    {
+      "policyYear": 10,
+      "sourcePage": 4
+    },
+    {
+      "policyYear": 11,
+      "sourcePage": 4
+    },
+    {
+      "policyYear": 12,
+      "sourcePage": 4
+    },
+    {
+      "policyYear": 13,
+      "sourcePage": 4
+    },
+    {
+      "policyYear": 14,
+      "sourcePage": 4
+    },
+    {
+      "policyYear": 15,
+      "sourcePage": 4
+    },
+    {
+      "policyYear": 16,
+      "sourcePage": 4
+    },
+    {
+      "policyYear": 17,
+      "sourcePage": 4
+    },
+    {
+      "policyYear": 18,
+      "sourcePage": 4
+    },
+    {
+      "policyYear": 19,
+      "sourcePage": 4
+    },
+    {
+      "policyYear": 20,
+      "sourcePage": 4
+    },
+    {
+      "policyYear": 21,
+      "sourcePage": 4
+    },
+    {
+      "policyYear": 22,
+      "sourcePage": 4
+    },
+    {
+      "policyYear": 23,
+      "sourcePage": 4
+    },
+    {
+      "policyYear": 24,
+      "sourcePage": 4
+    },
+    {
+      "policyYear": 25,
+      "sourcePage": 4
+    },
+    {
+      "policyYear": 26,
+      "sourcePage": 5
+    },
+    {
+      "policyYear": 27,
+      "sourcePage": 5
+    },
+    {
+      "policyYear": 28,
+      "sourcePage": 5
+    },
+    {
+      "policyYear": 29,
+      "sourcePage": 5
+    },
+    {
+      "policyYear": 30,
+      "sourcePage": 4
+    },
+    {
+      "policyYear": 31,
+      "sourcePage": 5
+    },
+    {
+      "policyYear": 32,
+      "sourcePage": 5
+    },
+    {
+      "policyYear": 33,
+      "sourcePage": 5
+    },
+    {
+      "policyYear": 34,
+      "sourcePage": 5
+    },
+    {
+      "policyYear": 35,
+      "sourcePage": 5
+    },
+    {
+      "policyYear": 36,
+      "sourcePage": 5
+    },
+    {
+      "policyYear": 37,
+      "sourcePage": 5
+    },
+    {
+      "policyYear": 38,
+      "sourcePage": 5
+    },
+    {
+      "policyYear": 39,
+      "sourcePage": 5
+    },
+    {
+      "policyYear": 40,
+      "sourcePage": 5
+    },
+    {
+      "policyYear": 41,
+      "sourcePage": 5
+    },
+    {
+      "policyYear": 42,
+      "sourcePage": 5
+    },
+    {
+      "policyYear": 43,
+      "sourcePage": 5
+    },
+    {
+      "policyYear": 44,
+      "sourcePage": 5
+    },
+    {
+      "policyYear": 45,
+      "sourcePage": 5
+    },
+    {
+      "policyYear": 46,
+      "sourcePage": 5
+    },
+    {
+      "policyYear": 47,
+      "sourcePage": 5
+    },
+    {
+      "policyYear": 48,
+      "sourcePage": 5
+    },
+    {
+      "policyYear": 49,
+      "sourcePage": 5
+    },
+    {
+      "policyYear": 50,
+      "sourcePage": 5
+    },
+    {
+      "policyYear": 51,
+      "sourcePage": 6
+    },
+    {
+      "policyYear": 52,
+      "sourcePage": 6
+    },
+    {
+      "policyYear": 53,
+      "sourcePage": 6
+    },
+    {
+      "policyYear": 54,
+      "sourcePage": 6
+    },
+    {
+      "policyYear": 55,
+      "sourcePage": 6
+    },
+    {
+      "policyYear": 56,
+      "sourcePage": 6
+    },
+    {
+      "policyYear": 57,
+      "sourcePage": 6
+    },
+    {
+      "policyYear": 58,
+      "sourcePage": 6
+    },
+    {
+      "policyYear": 59,
+      "sourcePage": 6
+    },
+    {
+      "policyYear": 60,
+      "sourcePage": 6
+    },
+    {
+      "policyYear": 61,
+      "sourcePage": 6
+    },
+    {
+      "policyYear": 62,
+      "sourcePage": 6
+    }
+  ],
+  "withdrawalRows": [
+    {
+      "policyYear": 2,
+      "sourcePage": 8
+    },
+    {
+      "policyYear": 3,
+      "sourcePage": 8
+    },
+    {
+      "policyYear": 4,
+      "sourcePage": 8
+    },
+    {
+      "policyYear": 5,
+      "sourcePage": 8
+    },
+    {
+      "policyYear": 6,
+      "sourcePage": 8
+    },
+    {
+      "policyYear": 7,
+      "sourcePage": 8
+    },
+    {
+      "policyYear": 8,
+      "sourcePage": 8
+    },
+    {
+      "policyYear": 9,
+      "sourcePage": 8
+    },
+    {
+      "policyYear": 10,
+      "sourcePage": 8
+    },
+    {
+      "policyYear": 11,
+      "sourcePage": 8
+    },
+    {
+      "policyYear": 12,
+      "sourcePage": 8
+    },
+    {
+      "policyYear": 13,
+      "sourcePage": 8
+    },
+    {
+      "policyYear": 14,
+      "sourcePage": 8
+    },
+    {
+      "policyYear": 15,
+      "sourcePage": 8
+    },
+    {
+      "policyYear": 16,
+      "sourcePage": 8
+    },
+    {
+      "policyYear": 17,
+      "sourcePage": 8
+    },
+    {
+      "policyYear": 18,
+      "sourcePage": 8
+    },
+    {
+      "policyYear": 19,
+      "sourcePage": 8
+    },
+    {
+      "policyYear": 20,
+      "sourcePage": 8
+    },
+    {
+      "policyYear": 21,
+      "sourcePage": 8
+    },
+    {
+      "policyYear": 22,
+      "sourcePage": 8
+    },
+    {
+      "policyYear": 23,
+      "sourcePage": 8
+    },
+    {
+      "policyYear": 24,
+      "sourcePage": 8
+    },
+    {
+      "policyYear": 25,
+      "sourcePage": 8
+    },
+    {
+      "policyYear": 26,
+      "sourcePage": 9
+    },
+    {
+      "policyYear": 27,
+      "sourcePage": 9
+    },
+    {
+      "policyYear": 28,
+      "sourcePage": 9
+    },
+    {
+      "policyYear": 29,
+      "sourcePage": 9
+    },
+    {
+      "policyYear": 30,
+      "sourcePage": 8
+    },
+    {
+      "policyYear": 31,
+      "sourcePage": 9
+    },
+    {
+      "policyYear": 32,
+      "sourcePage": 9
+    },
+    {
+      "policyYear": 33,
+      "sourcePage": 9
+    },
+    {
+      "policyYear": 34,
+      "sourcePage": 9
+    },
+    {
+      "policyYear": 35,
+      "sourcePage": 9
+    },
+    {
+      "policyYear": 36,
+      "sourcePage": 9
+    },
+    {
+      "policyYear": 37,
+      "sourcePage": 9
+    },
+    {
+      "policyYear": 38,
+      "sourcePage": 9
+    },
+    {
+      "policyYear": 39,
+      "sourcePage": 9
+    },
+    {
+      "policyYear": 40,
+      "sourcePage": 9
+    },
+    {
+      "policyYear": 41,
+      "sourcePage": 9
+    },
+    {
+      "policyYear": 42,
+      "sourcePage": 9
+    },
+    {
+      "policyYear": 43,
+      "sourcePage": 9
+    },
+    {
+      "policyYear": 44,
+      "sourcePage": 9
+    },
+    {
+      "policyYear": 45,
+      "sourcePage": 9
+    },
+    {
+      "policyYear": 46,
+      "sourcePage": 9
+    },
+    {
+      "policyYear": 47,
+      "sourcePage": 9
+    },
+    {
+      "policyYear": 48,
+      "sourcePage": 9
+    },
+    {
+      "policyYear": 49,
+      "sourcePage": 9
+    },
+    {
+      "policyYear": 50,
+      "sourcePage": 9
+    },
+    {
+      "policyYear": 51,
+      "sourcePage": 10
+    },
+    {
+      "policyYear": 52,
+      "sourcePage": 10
+    },
+    {
+      "policyYear": 53,
+      "sourcePage": 10
+    },
+    {
+      "policyYear": 54,
+      "sourcePage": 10
+    },
+    {
+      "policyYear": 55,
+      "sourcePage": 10
+    },
+    {
+      "policyYear": 56,
+      "sourcePage": 10
+    },
+    {
+      "policyYear": 57,
+      "sourcePage": 10
+    },
+    {
+      "policyYear": 58,
+      "sourcePage": 10
+    },
+    {
+      "policyYear": 59,
+      "sourcePage": 10
+    },
+    {
+      "policyYear": 60,
+      "sourcePage": 10
+    },
+    {
+      "policyYear": 61,
+      "sourcePage": 10
+    },
+    {
+      "policyYear": 62,
+      "sourcePage": 10
+    }
+  ],
+  "images": [
+    {
+      "slideId": "cover",
+      "pathOrUrl": "/Users/soldier/free-code/packages/insurance-ppt/outputs/manulife_lovehome_high_manulife_boxiefast_pipeline/assets/cover.jpg",
+      "source": "whitelist"
+    },
+    {
+      "slideId": "company",
+      "pathOrUrl": "/Users/soldier/free-code/packages/insurance-ppt/outputs/manulife_lovehome_high_manulife_boxiefast_pipeline/assets/company.jpg",
+      "source": "whitelist"
+    },
+    {
+      "slideId": "scenario",
+      "pathOrUrl": "/Users/soldier/free-code/packages/insurance-ppt/outputs/manulife_lovehome_high_manulife_boxiefast_pipeline/assets/scenario.jpg",
+      "source": "whitelist"
+    },
+    {
+      "slideId": "chart-growth",
+      "pathOrUrl": "/Users/soldier/free-code/packages/insurance-ppt/outputs/manulife_lovehome_high_manulife_boxiefast_pipeline/assets/chart-growth.jpg",
+      "source": "whitelist"
+    },
+    {
+      "slideId": "chart-stacked",
+      "pathOrUrl": "/Users/soldier/free-code/packages/insurance-ppt/outputs/manulife_lovehome_high_manulife_boxiefast_pipeline/assets/chart-stacked.jpg",
+      "source": "whitelist"
+    },
+    {
+      "slideId": "timeline-a",
+      "pathOrUrl": "/Users/soldier/free-code/packages/insurance-ppt/outputs/manulife_lovehome_high_manulife_boxiefast_pipeline/assets/timeline-a.jpg",
+      "source": "whitelist"
+    },
+    {
+      "slideId": "timeline-b",
+      "pathOrUrl": "/Users/soldier/free-code/packages/insurance-ppt/outputs/manulife_lovehome_high_manulife_boxiefast_pipeline/assets/timeline-b.jpg",
+      "source": "whitelist"
+    },
+    {
+      "slideId": "table-withdraw",
+      "pathOrUrl": "/Users/soldier/free-code/packages/insurance-ppt/outputs/manulife_lovehome_high_manulife_boxiefast_pipeline/assets/table-withdraw.jpg",
+      "source": "whitelist"
+    },
+    {
+      "slideId": "table-nowithdraw",
+      "pathOrUrl": "/Users/soldier/free-code/packages/insurance-ppt/outputs/manulife_lovehome_high_manulife_boxiefast_pipeline/assets/table-nowithdraw.jpg",
+      "source": "whitelist"
+    },
+    {
+      "slideId": "closing",
+      "pathOrUrl": "/Users/soldier/free-code/packages/insurance-ppt/outputs/manulife_lovehome_high_manulife_boxiefast_pipeline/assets/closing.jpg",
+      "source": "whitelist"
+    }
+  ],
+  "companyEvidence": [
+    "/Users/soldier/Desktop/公司介绍/ManuLife-宏利/Manulife 宏利业务简介202408.pdf",
+    "/Users/soldier/Desktop/公司介绍/ManuLife-宏利/宏利香港及澳門業務簡介Manulife Fact Sheet-2512.pdf",
+    "/Users/soldier/Desktop/公司介绍/ManuLife-宏利/分红实现率/2025-分红实现率和总现金价值比率概览.pdf",
+    "/Users/soldier/Desktop/公司介绍/ManuLife-宏利/宏利保險-年度回顧.pdf",
+    "/Users/soldier/Desktop/公司介绍/ManuLife-宏利/公司概览/宏利投資概覽2025.pdf",
+    "/Users/soldier/Desktop/公司介绍/ManuLife-宏利/分红实现率/2024申報年度之總現金價值比率及分紅實現率-202506.pdf",
+    "/Users/soldier/Desktop/公司介绍/ManuLife-宏利/分红实现率/分紅保險產品之總現金價值比率2025_clean.pdf",
+    "/Users/soldier/Desktop/公司介绍/ManuLife-宏利/分红实现率/2024申報年度之總現金價值比率公佈_2024_clean.pdf"
+  ]
+}

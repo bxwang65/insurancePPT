@@ -1,0 +1,338 @@
+{
+  "templateId": "minimal",
+  "templatePath": "/Users/soldier/Downloads/财富保障方案——简洁风 .pptx",
+  "generatedAt": "2026-06-01T16:27:33.864Z",
+  "inspectTruncated": true,
+  "maxSlides": 6,
+  "sourceIdSpace": [
+    {
+      "slide": 1,
+      "textboxIds": [],
+      "imageIds": []
+    },
+    {
+      "slide": 2,
+      "textboxIds": [
+        "sh/cvixczed",
+        "sh/5gbq1ory",
+        "sh/udg7adsj"
+      ],
+      "imageIds": []
+    },
+    {
+      "slide": 3,
+      "textboxIds": [
+        "sh/5o7qpg3e",
+        "sh/g3ex0nux",
+        "sh/r65wjudg",
+        "sh/9cvixcze",
+        "sh/gr2p8nqx",
+        "sh/yd0z6103",
+        "sh/wb2hwfyx",
+        "sh/e9cvixcz",
+        "sh/3q5o7qpg",
+        "sh/loj2t83i",
+        "sh/ex0nuxc3",
+        "sh/szqtcj6t"
+      ],
+      "imageIds": []
+    },
+    {
+      "slide": 4,
+      "textboxIds": [
+        "sh/o7qpg3ex",
+        "sh/dsji5sne",
+        "sh/6dcbulwv",
+        "sh/oj2t83it",
+        "sh/d4vmtwra",
+        "sh/z25kb6xk",
+        "sh/vy90je9c",
+        "sh/d4vmtwra",
+        "sh/oj2t83it",
+        "sh/61032lsz"
+      ],
+      "imageIds": []
+    },
+    {
+      "slide": 5,
+      "textboxIds": [
+        "sh/qtcj6tov",
+        "sh/je9cvixc"
+      ],
+      "imageIds": []
+    },
+    {
+      "slide": 6,
+      "textboxIds": [
+        "sh/5wjudg7a",
+        "sh/gbq1oryt",
+        "sh/yhgn29gr",
+        "sh/58z25kb6",
+        "sh/vy90je9c"
+      ],
+      "imageIds": [
+        "im/r65wjudg"
+      ]
+    }
+  ],
+  "editableIdSpace": [
+    {
+      "slide": 1,
+      "shapes": [
+        {
+          "id": "2",
+          "textPreview": "2026/06/01"
+        },
+        {
+          "id": "3",
+          "textPreview": "专业券商风格家族传承保险客户建议书"
+        },
+        {
+          "id": "4",
+          "textPreview": "汇报人:"
+        }
+      ],
+      "images": []
+    },
+    {
+      "slide": 2,
+      "shapes": [
+        {
+          "id": "2",
+          "textPreview": "CONTENTS"
+        },
+        {
+          "id": "3",
+          "textPreview": "目录"
+        },
+        {
+          "id": "4",
+          "textPreview": "01"
+        },
+        {
+          "id": "5",
+          "textPreview": ""
+        },
+        {
+          "id": "6",
+          "textPreview": "封面"
+        },
+        {
+          "id": "7",
+          "textPreview": "02"
+        },
+        {
+          "id": "8",
+          "textPreview": ""
+        },
+        {
+          "id": "9",
+          "textPreview": "保险公司介绍"
+        },
+        {
+          "id": "10",
+          "textPreview": "03"
+        },
+        {
+          "id": "11",
+          "textPreview": ""
+        },
+        {
+          "id": "12",
+          "textPreview": "产品设计理念"
+        },
+        {
+          "id": "13",
+          "textPreview": "04"
+        },
+        {
+          "id": "14",
+          "textPreview": ""
+        },
+        {
+          "id": "15",
+          "textPreview": "产品核心亮点"
+        },
+        {
+          "id": "16",
+          "textPreview": "05"
+        },
+        {
+          "id": "17",
+          "textPreview": ""
+        },
+        {
+          "id": "18",
+          "textPreview": "现金价值收益展示"
+        }
+      ],
+      "images": []
+    },
+    {
+      "slide": 3,
+      "shapes": [
+        {
+          "id": "2",
+          "textPreview": "CONTENTS"
+        },
+        {
+          "id": "3",
+          "textPreview": "目录"
+        },
+        {
+          "id": "4",
+          "textPreview": "06"
+        },
+        {
+          "id": "5",
+          "textPreview": ""
+        },
+        {
+          "id": "6",
+          "textPreview": "保险金提领路径规划"
+        },
+        {
+          "id": "7",
+          "textPreview": "07"
+        },
+        {
+          "id": "8",
+          "textPreview": ""
+        },
+        {
+          "id": "9",
+          "textPreview": "现金价值信息表（第一页）"
+        },
+        {
+          "id": "10",
+          "textPreview": "08"
+        },
+        {
+          "id": "11",
+          "textPreview": ""
+        },
+        {
+          "id": "12",
+          "textPreview": "现金价值信息表（第二页）"
+        },
+        {
+          "id": "13",
+          "textPreview": "09"
+        },
+        {
+          "id": "14",
+          "textPreview": ""
+        },
+        {
+          "id": "15",
+          "textPreview": "合家欢传承结束语"
+        }
+      ],
+      "images": []
+    },
+    {
+      "slide": 4,
+      "shapes": [
+        {
+          "id": "2",
+          "textPreview": "封面"
+        },
+        {
+          "id": "3",
+          "textPreview": "01"
+        }
+      ],
+      "images": []
+    },
+    {
+      "slide": 5,
+      "shapes": [
+        {
+          "id": "7",
+          "textPreview": ""
+        },
+        {
+          "id": "11",
+          "textPreview": ""
+        },
+        {
+          "id": "12",
+          "textPreview": "主标题：财富永续·家业长青——XX家族传承保险规划建议书"
+        },
+        {
+          "id": "13",
+          "textPreview": "标题采用烫金立体字设计，突出\"永续\"与\"长青\"，背景搭配家族徽标与金融元素，彰显专业券商风格。"
+        },
+        {
+          "id": "14",
+          "textPreview": ""
+        },
+        {
+          "id": "15",
+          "textPreview": "核心产品：XX传世尊享终身寿险（分红型）"
+        },
+        {
+          "id": "16",
+          "textPreview": "该产品由XX保险公司承保，近五年分红实现率达92%，支持保额递增与保单贷款，贴合高净值客户传承需求。"
+        },
+        {
+          "id": "9",
+          "textPreview": "建议书标题与产品名"
+        }
+      ],
+      "images": [
+        "17"
+      ]
+    },
+    {
+      "slide": 6,
+      "shapes": [
+        {
+          "id": "2",
+          "textPreview": "券商机构信息"
+        },
+        {
+          "id": "3",
+          "textPreview": ""
+        },
+        {
+          "id": "5",
+          "textPreview": "家族传承服务经验"
+        },
+        {
+          "id": "6",
+          "textPreview": "近五年累计为30+高净值家族提供保险传承方案，如为浙江某上市企业主设计股权+保险金信托架构，实现资产隔离。"
+        },
+        {
+          "id": "7",
+          "textPreview": ""
+        },
+        {
+          "id": "9",
+          "textPreview": "行业资质与荣誉"
+        },
+        {
+          "id": "10",
+          "textPreview": "拥有保监会批准的保险兼业代理资质，连续三年获“中国家族财富管理机构TOP10”，2023年服务客户资产规模超500亿。"
+        },
+        {
+          "id": "11",
+          "textPreview": ""
+        },
+        {
+          "id": "13",
+          "textPreview": "专属服务团队配置"
+        },
+        {
+          "id": "14",
+          "textPreview": "组建由投行、法律、税务专家构成的10人专项小组，如前中金公司家族信托负责人张博士带队，提供一对一方案定制。"
+        }
+      ],
+      "images": [
+        "15",
+        "16",
+        "17"
+      ]
+    }
+  ]
+}

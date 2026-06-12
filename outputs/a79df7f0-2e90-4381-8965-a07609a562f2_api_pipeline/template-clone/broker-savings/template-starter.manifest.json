@@ -1,0 +1,122 @@
+{
+  "sourcePptx": "/Users/soldier/Downloads/财富保障方案——券商风 .pptx",
+  "mapPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/a79df7f0-2e90-4381-8965-a07609a562f2_api_pipeline/template-clone/broker-savings/template-frame-map.json",
+  "output": "/Users/soldier/free-code/packages/insurance-ppt/outputs/a79df7f0-2e90-4381-8965-a07609a562f2_api_pipeline/template-clone/broker-savings/template-starter.pptx",
+  "outputBytes": 178352,
+  "sourceSlideCount": 25,
+  "slideCount": 10,
+  "previewDir": "/Users/soldier/free-code/packages/insurance-ppt/outputs/a79df7f0-2e90-4381-8965-a07609a562f2_api_pipeline/template-clone/broker-savings/template-starter-preview",
+  "layoutDir": "/Users/soldier/free-code/packages/insurance-ppt/outputs/a79df7f0-2e90-4381-8965-a07609a562f2_api_pipeline/template-clone/broker-savings/template-starter-layout",
+  "slides": [
+    {
+      "outputSlide": 1,
+      "sourceSlide": 2,
+      "narrativeRole": "cover",
+      "reuseMode": "duplicate-slide",
+      "editTargetCount": 1,
+      "previewPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/a79df7f0-2e90-4381-8965-a07609a562f2_api_pipeline/template-clone/broker-savings/template-starter-preview/starter-slide-01.png",
+      "previewRelativePath": "template-starter-preview/starter-slide-01.png",
+      "layoutPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/a79df7f0-2e90-4381-8965-a07609a562f2_api_pipeline/template-clone/broker-savings/template-starter-layout/starter-slide-01.layout.json",
+      "layoutRelativePath": "template-starter-layout/starter-slide-01.layout.json"
+    },
+    {
+      "outputSlide": 2,
+      "sourceSlide": 3,
+      "narrativeRole": "company",
+      "reuseMode": "duplicate-slide",
+      "editTargetCount": 1,
+      "previewPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/a79df7f0-2e90-4381-8965-a07609a562f2_api_pipeline/template-clone/broker-savings/template-starter-preview/starter-slide-02.png",
+      "previewRelativePath": "template-starter-preview/starter-slide-02.png",
+      "layoutPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/a79df7f0-2e90-4381-8965-a07609a562f2_api_pipeline/template-clone/broker-savings/template-starter-layout/starter-slide-02.layout.json",
+      "layoutRelativePath": "template-starter-layout/starter-slide-02.layout.json"
+    },
+    {
+      "outputSlide": 3,
+      "sourceSlide": 4,
+      "narrativeRole": "highlights",
+      "reuseMode": "duplicate-slide",
+      "editTargetCount": 1,
+      "previewPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/a79df7f0-2e90-4381-8965-a07609a562f2_api_pipeline/template-clone/broker-savings/template-starter-preview/starter-slide-03.png",
+      "previewRelativePath": "template-starter-preview/starter-slide-03.png",
+      "layoutPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/a79df7f0-2e90-4381-8965-a07609a562f2_api_pipeline/template-clone/broker-savings/template-starter-layout/starter-slide-03.layout.json",
+      "layoutRelativePath": "template-starter-layout/starter-slide-03.layout.json"
+    },
+    {
+      "outputSlide": 4,
+      "sourceSlide": 5,
+      "narrativeRole": "analysis",
+      "reuseMode": "duplicate-slide",
+      "editTargetCount": 1,
+      "previewPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/a79df7f0-2e90-4381-8965-a07609a562f2_api_pipeline/template-clone/broker-savings/template-starter-preview/starter-slide-04.png",
+      "previewRelativePath": "template-starter-preview/starter-slide-04.png",
+      "layoutPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/a79df7f0-2e90-4381-8965-a07609a562f2_api_pipeline/template-clone/broker-savings/template-starter-layout/starter-slide-04.layout.json",
+      "layoutRelativePath": "template-starter-layout/starter-slide-04.layout.json"
+    },
+    {
+      "outputSlide": 5,
+      "sourceSlide": 6,
+      "narrativeRole": "analysis",
+      "reuseMode": "duplicate-slide",
+      "editTargetCount": 1,
+      "previewPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/a79df7f0-2e90-4381-8965-a07609a562f2_api_pipeline/template-clone/broker-savings/template-starter-preview/starter-slide-05.png",
+      "previewRelativePath": "template-starter-preview/starter-slide-05.png",
+      "layoutPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/a79df7f0-2e90-4381-8965-a07609a562f2_api_pipeline/template-clone/broker-savings/template-starter-layout/starter-slide-05.layout.json",
+      "layoutRelativePath": "template-starter-layout/starter-slide-05.layout.json"
+    },
+    {
+      "outputSlide": 6,
+      "sourceSlide": 5,
+      "narrativeRole": "analysis",
+      "reuseMode": "duplicate-slide",
+      "editTargetCount": 1,
+      "previewPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/a79df7f0-2e90-4381-8965-a07609a562f2_api_pipeline/template-clone/broker-savings/template-starter-preview/starter-slide-06.png",
+      "previewRelativePath": "template-starter-preview/starter-slide-06.png",
+      "layoutPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/a79df7f0-2e90-4381-8965-a07609a562f2_api_pipeline/template-clone/broker-savings/template-starter-layout/starter-slide-06.layout.json",
+      "layoutRelativePath": "template-starter-layout/starter-slide-06.layout.json"
+    },
+    {
+      "outputSlide": 7,
+      "sourceSlide": 4,
+      "narrativeRole": "analysis",
+      "reuseMode": "duplicate-slide",
+      "editTargetCount": 1,
+      "previewPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/a79df7f0-2e90-4381-8965-a07609a562f2_api_pipeline/template-clone/broker-savings/template-starter-preview/starter-slide-07.png",
+      "previewRelativePath": "template-starter-preview/starter-slide-07.png",
+      "layoutPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/a79df7f0-2e90-4381-8965-a07609a562f2_api_pipeline/template-clone/broker-savings/template-starter-layout/starter-slide-07.layout.json",
+      "layoutRelativePath": "template-starter-layout/starter-slide-07.layout.json"
+    },
+    {
+      "outputSlide": 8,
+      "sourceSlide": 4,
+      "narrativeRole": "analysis",
+      "reuseMode": "duplicate-slide",
+      "editTargetCount": 1,
+      "previewPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/a79df7f0-2e90-4381-8965-a07609a562f2_api_pipeline/template-clone/broker-savings/template-starter-preview/starter-slide-08.png",
+      "previewRelativePath": "template-starter-preview/starter-slide-08.png",
+      "layoutPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/a79df7f0-2e90-4381-8965-a07609a562f2_api_pipeline/template-clone/broker-savings/template-starter-layout/starter-slide-08.layout.json",
+      "layoutRelativePath": "template-starter-layout/starter-slide-08.layout.json"
+    },
+    {
+      "outputSlide": 9,
+      "sourceSlide": 3,
+      "narrativeRole": "conclusion",
+      "reuseMode": "duplicate-slide",
+      "editTargetCount": 1,
+      "previewPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/a79df7f0-2e90-4381-8965-a07609a562f2_api_pipeline/template-clone/broker-savings/template-starter-preview/starter-slide-09.png",
+      "previewRelativePath": "template-starter-preview/starter-slide-09.png",
+      "layoutPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/a79df7f0-2e90-4381-8965-a07609a562f2_api_pipeline/template-clone/broker-savings/template-starter-layout/starter-slide-09.layout.json",
+      "layoutRelativePath": "template-starter-layout/starter-slide-09.layout.json"
+    },
+    {
+      "outputSlide": 10,
+      "sourceSlide": 2,
+      "narrativeRole": "ending",
+      "reuseMode": "duplicate-slide",
+      "editTargetCount": 1,
+      "previewPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/a79df7f0-2e90-4381-8965-a07609a562f2_api_pipeline/template-clone/broker-savings/template-starter-preview/starter-slide-10.png",
+      "previewRelativePath": "template-starter-preview/starter-slide-10.png",
+      "layoutPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/a79df7f0-2e90-4381-8965-a07609a562f2_api_pipeline/template-clone/broker-savings/template-starter-layout/starter-slide-10.layout.json",
+      "layoutRelativePath": "template-starter-layout/starter-slide-10.layout.json"
+    }
+  ]
+}

@@ -1,0 +1,383 @@
+{
+  "sourcePptx": "/Users/soldier/Downloads/财富保障方案——商务风 .pptx",
+  "workspace": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_iul_business_clone/template-clone/business-iul",
+  "outDir": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_iul_business_clone/template-clone/business-iul/template-inspect",
+  "generatedAt": "2026-06-01T21:58:39.881Z",
+  "slideCount": 9,
+  "slideArtifacts": [
+    {
+      "slide": 1,
+      "previewPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_iul_business_clone/template-clone/business-iul/template-inspect/source-slides/source-slide-01.png",
+      "previewRelativePath": "template-inspect/source-slides/source-slide-01.png",
+      "layoutPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_iul_business_clone/template-clone/business-iul/template-inspect/layouts/source-slide-01.layout.json",
+      "layoutRelativePath": "template-inspect/layouts/source-slide-01.layout.json"
+    },
+    {
+      "slide": 2,
+      "previewPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_iul_business_clone/template-clone/business-iul/template-inspect/source-slides/source-slide-02.png",
+      "previewRelativePath": "template-inspect/source-slides/source-slide-02.png",
+      "layoutPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_iul_business_clone/template-clone/business-iul/template-inspect/layouts/source-slide-02.layout.json",
+      "layoutRelativePath": "template-inspect/layouts/source-slide-02.layout.json"
+    },
+    {
+      "slide": 3,
+      "previewPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_iul_business_clone/template-clone/business-iul/template-inspect/source-slides/source-slide-03.png",
+      "previewRelativePath": "template-inspect/source-slides/source-slide-03.png",
+      "layoutPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_iul_business_clone/template-clone/business-iul/template-inspect/layouts/source-slide-03.layout.json",
+      "layoutRelativePath": "template-inspect/layouts/source-slide-03.layout.json"
+    },
+    {
+      "slide": 4,
+      "previewPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_iul_business_clone/template-clone/business-iul/template-inspect/source-slides/source-slide-04.png",
+      "previewRelativePath": "template-inspect/source-slides/source-slide-04.png",
+      "layoutPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_iul_business_clone/template-clone/business-iul/template-inspect/layouts/source-slide-04.layout.json",
+      "layoutRelativePath": "template-inspect/layouts/source-slide-04.layout.json"
+    },
+    {
+      "slide": 5,
+      "previewPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_iul_business_clone/template-clone/business-iul/template-inspect/source-slides/source-slide-05.png",
+      "previewRelativePath": "template-inspect/source-slides/source-slide-05.png",
+      "layoutPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_iul_business_clone/template-clone/business-iul/template-inspect/layouts/source-slide-05.layout.json",
+      "layoutRelativePath": "template-inspect/layouts/source-slide-05.layout.json"
+    },
+    {
+      "slide": 6,
+      "previewPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_iul_business_clone/template-clone/business-iul/template-inspect/source-slides/source-slide-06.png",
+      "previewRelativePath": "template-inspect/source-slides/source-slide-06.png",
+      "layoutPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_iul_business_clone/template-clone/business-iul/template-inspect/layouts/source-slide-06.layout.json",
+      "layoutRelativePath": "template-inspect/layouts/source-slide-06.layout.json"
+    },
+    {
+      "slide": 7,
+      "previewPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_iul_business_clone/template-clone/business-iul/template-inspect/source-slides/source-slide-07.png",
+      "previewRelativePath": "template-inspect/source-slides/source-slide-07.png",
+      "layoutPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_iul_business_clone/template-clone/business-iul/template-inspect/layouts/source-slide-07.layout.json",
+      "layoutRelativePath": "template-inspect/layouts/source-slide-07.layout.json"
+    },
+    {
+      "slide": 8,
+      "previewPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_iul_business_clone/template-clone/business-iul/template-inspect/source-slides/source-slide-08.png",
+      "previewRelativePath": "template-inspect/source-slides/source-slide-08.png",
+      "layoutPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_iul_business_clone/template-clone/business-iul/template-inspect/layouts/source-slide-08.layout.json",
+      "layoutRelativePath": "template-inspect/layouts/source-slide-08.layout.json"
+    },
+    {
+      "slide": 9,
+      "previewPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_iul_business_clone/template-clone/business-iul/template-inspect/source-slides/source-slide-09.png",
+      "previewRelativePath": "template-inspect/source-slides/source-slide-09.png",
+      "layoutPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_iul_business_clone/template-clone/business-iul/template-inspect/layouts/source-slide-09.layout.json",
+      "layoutRelativePath": "template-inspect/layouts/source-slide-09.layout.json"
+    }
+  ],
+  "inspectPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_iul_business_clone/template-clone/business-iul/template-inspect/template-inspect.ndjson",
+  "inspectRelativePath": "template-inspect/template-inspect.ndjson",
+  "inspectTruncated": true,
+  "inspectMetadata": {
+    "revision": "wrjwy5",
+    "target": {
+      "id": "pr/zfs0jb"
+    },
+    "kind": {
+      "requested": "slide,textbox,shape,image,table,chart",
+      "tokens": [
+        "slide",
+        "textbox",
+        "shape",
+        "image",
+        "table",
+        "chart"
+      ]
+    },
+    "include": {
+      "tokens": []
+    },
+    "exclude": {
+      "tokens": []
+    },
+    "notices": []
+  },
+  "extractedMedia": [
+    {
+      "entry": "ppt/media/",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_iul_business_clone/template-clone/business-iul/template-inspect/assets/ppt/media/media",
+      "relativePath": "template-inspect/assets/ppt/media/media",
+      "bytes": 0
+    },
+    {
+      "entry": "ppt/media/image1.png",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_iul_business_clone/template-clone/business-iul/template-inspect/assets/ppt/media/image1.png",
+      "relativePath": "template-inspect/assets/ppt/media/image1.png",
+      "bytes": 3107515
+    },
+    {
+      "entry": "ppt/media/image10.png",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_iul_business_clone/template-clone/business-iul/template-inspect/assets/ppt/media/image10.png",
+      "relativePath": "template-inspect/assets/ppt/media/image10.png",
+      "bytes": 2204
+    },
+    {
+      "entry": "ppt/media/image11.svg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_iul_business_clone/template-clone/business-iul/template-inspect/assets/ppt/media/image11.svg",
+      "relativePath": "template-inspect/assets/ppt/media/image11.svg",
+      "bytes": 1391
+    },
+    {
+      "entry": "ppt/media/image12.png",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_iul_business_clone/template-clone/business-iul/template-inspect/assets/ppt/media/image12.png",
+      "relativePath": "template-inspect/assets/ppt/media/image12.png",
+      "bytes": 2166
+    },
+    {
+      "entry": "ppt/media/image13.svg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_iul_business_clone/template-clone/business-iul/template-inspect/assets/ppt/media/image13.svg",
+      "relativePath": "template-inspect/assets/ppt/media/image13.svg",
+      "bytes": 911
+    },
+    {
+      "entry": "ppt/media/image14.png",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_iul_business_clone/template-clone/business-iul/template-inspect/assets/ppt/media/image14.png",
+      "relativePath": "template-inspect/assets/ppt/media/image14.png",
+      "bytes": 2188
+    },
+    {
+      "entry": "ppt/media/image15.svg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_iul_business_clone/template-clone/business-iul/template-inspect/assets/ppt/media/image15.svg",
+      "relativePath": "template-inspect/assets/ppt/media/image15.svg",
+      "bytes": 931
+    },
+    {
+      "entry": "ppt/media/image16.png",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_iul_business_clone/template-clone/business-iul/template-inspect/assets/ppt/media/image16.png",
+      "relativePath": "template-inspect/assets/ppt/media/image16.png",
+      "bytes": 1757
+    },
+    {
+      "entry": "ppt/media/image17.svg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_iul_business_clone/template-clone/business-iul/template-inspect/assets/ppt/media/image17.svg",
+      "relativePath": "template-inspect/assets/ppt/media/image17.svg",
+      "bytes": 935
+    },
+    {
+      "entry": "ppt/media/image18.png",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_iul_business_clone/template-clone/business-iul/template-inspect/assets/ppt/media/image18.png",
+      "relativePath": "template-inspect/assets/ppt/media/image18.png",
+      "bytes": 1002
+    },
+    {
+      "entry": "ppt/media/image19.svg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_iul_business_clone/template-clone/business-iul/template-inspect/assets/ppt/media/image19.svg",
+      "relativePath": "template-inspect/assets/ppt/media/image19.svg",
+      "bytes": 799
+    },
+    {
+      "entry": "ppt/media/image2.png",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_iul_business_clone/template-clone/business-iul/template-inspect/assets/ppt/media/image2.png",
+      "relativePath": "template-inspect/assets/ppt/media/image2.png",
+      "bytes": 1053
+    },
+    {
+      "entry": "ppt/media/image20.png",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_iul_business_clone/template-clone/business-iul/template-inspect/assets/ppt/media/image20.png",
+      "relativePath": "template-inspect/assets/ppt/media/image20.png",
+      "bytes": 1984
+    },
+    {
+      "entry": "ppt/media/image21.svg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_iul_business_clone/template-clone/business-iul/template-inspect/assets/ppt/media/image21.svg",
+      "relativePath": "template-inspect/assets/ppt/media/image21.svg",
+      "bytes": 1932
+    },
+    {
+      "entry": "ppt/media/image22.png",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_iul_business_clone/template-clone/business-iul/template-inspect/assets/ppt/media/image22.png",
+      "relativePath": "template-inspect/assets/ppt/media/image22.png",
+      "bytes": 2335
+    },
+    {
+      "entry": "ppt/media/image23.svg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_iul_business_clone/template-clone/business-iul/template-inspect/assets/ppt/media/image23.svg",
+      "relativePath": "template-inspect/assets/ppt/media/image23.svg",
+      "bytes": 724
+    },
+    {
+      "entry": "ppt/media/image24.png",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_iul_business_clone/template-clone/business-iul/template-inspect/assets/ppt/media/image24.png",
+      "relativePath": "template-inspect/assets/ppt/media/image24.png",
+      "bytes": 1650
+    },
+    {
+      "entry": "ppt/media/image25.svg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_iul_business_clone/template-clone/business-iul/template-inspect/assets/ppt/media/image25.svg",
+      "relativePath": "template-inspect/assets/ppt/media/image25.svg",
+      "bytes": 963
+    },
+    {
+      "entry": "ppt/media/image26.png",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_iul_business_clone/template-clone/business-iul/template-inspect/assets/ppt/media/image26.png",
+      "relativePath": "template-inspect/assets/ppt/media/image26.png",
+      "bytes": 878
+    },
+    {
+      "entry": "ppt/media/image27.svg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_iul_business_clone/template-clone/business-iul/template-inspect/assets/ppt/media/image27.svg",
+      "relativePath": "template-inspect/assets/ppt/media/image27.svg",
+      "bytes": 692
+    },
+    {
+      "entry": "ppt/media/image28.png",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_iul_business_clone/template-clone/business-iul/template-inspect/assets/ppt/media/image28.png",
+      "relativePath": "template-inspect/assets/ppt/media/image28.png",
+      "bytes": 1561
+    },
+    {
+      "entry": "ppt/media/image29.svg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_iul_business_clone/template-clone/business-iul/template-inspect/assets/ppt/media/image29.svg",
+      "relativePath": "template-inspect/assets/ppt/media/image29.svg",
+      "bytes": 898
+    },
+    {
+      "entry": "ppt/media/image3.svg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_iul_business_clone/template-clone/business-iul/template-inspect/assets/ppt/media/image3.svg",
+      "relativePath": "template-inspect/assets/ppt/media/image3.svg",
+      "bytes": 993
+    },
+    {
+      "entry": "ppt/media/image30.png",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_iul_business_clone/template-clone/business-iul/template-inspect/assets/ppt/media/image30.png",
+      "relativePath": "template-inspect/assets/ppt/media/image30.png",
+      "bytes": 2015
+    },
+    {
+      "entry": "ppt/media/image31.svg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_iul_business_clone/template-clone/business-iul/template-inspect/assets/ppt/media/image31.svg",
+      "relativePath": "template-inspect/assets/ppt/media/image31.svg",
+      "bytes": 936
+    },
+    {
+      "entry": "ppt/media/image32.png",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_iul_business_clone/template-clone/business-iul/template-inspect/assets/ppt/media/image32.png",
+      "relativePath": "template-inspect/assets/ppt/media/image32.png",
+      "bytes": 1875
+    },
+    {
+      "entry": "ppt/media/image33.svg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_iul_business_clone/template-clone/business-iul/template-inspect/assets/ppt/media/image33.svg",
+      "relativePath": "template-inspect/assets/ppt/media/image33.svg",
+      "bytes": 966
+    },
+    {
+      "entry": "ppt/media/image34.png",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_iul_business_clone/template-clone/business-iul/template-inspect/assets/ppt/media/image34.png",
+      "relativePath": "template-inspect/assets/ppt/media/image34.png",
+      "bytes": 1257
+    },
+    {
+      "entry": "ppt/media/image35.svg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_iul_business_clone/template-clone/business-iul/template-inspect/assets/ppt/media/image35.svg",
+      "relativePath": "template-inspect/assets/ppt/media/image35.svg",
+      "bytes": 743
+    },
+    {
+      "entry": "ppt/media/image36.png",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_iul_business_clone/template-clone/business-iul/template-inspect/assets/ppt/media/image36.png",
+      "relativePath": "template-inspect/assets/ppt/media/image36.png",
+      "bytes": 1925
+    },
+    {
+      "entry": "ppt/media/image37.svg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_iul_business_clone/template-clone/business-iul/template-inspect/assets/ppt/media/image37.svg",
+      "relativePath": "template-inspect/assets/ppt/media/image37.svg",
+      "bytes": 679
+    },
+    {
+      "entry": "ppt/media/image4.png",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_iul_business_clone/template-clone/business-iul/template-inspect/assets/ppt/media/image4.png",
+      "relativePath": "template-inspect/assets/ppt/media/image4.png",
+      "bytes": 1921
+    },
+    {
+      "entry": "ppt/media/image5.svg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_iul_business_clone/template-clone/business-iul/template-inspect/assets/ppt/media/image5.svg",
+      "relativePath": "template-inspect/assets/ppt/media/image5.svg",
+      "bytes": 1421
+    },
+    {
+      "entry": "ppt/media/image6.png",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_iul_business_clone/template-clone/business-iul/template-inspect/assets/ppt/media/image6.png",
+      "relativePath": "template-inspect/assets/ppt/media/image6.png",
+      "bytes": 2741
+    },
+    {
+      "entry": "ppt/media/image7.svg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_iul_business_clone/template-clone/business-iul/template-inspect/assets/ppt/media/image7.svg",
+      "relativePath": "template-inspect/assets/ppt/media/image7.svg",
+      "bytes": 1577
+    },
+    {
+      "entry": "ppt/media/image8.png",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_iul_business_clone/template-clone/business-iul/template-inspect/assets/ppt/media/image8.png",
+      "relativePath": "template-inspect/assets/ppt/media/image8.png",
+      "bytes": 1918
+    },
+    {
+      "entry": "ppt/media/image9.svg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_iul_business_clone/template-clone/business-iul/template-inspect/assets/ppt/media/image9.svg",
+      "relativePath": "template-inspect/assets/ppt/media/image9.svg",
+      "bytes": 648
+    }
+  ],
+  "fonts": [
+    "+mj-cs",
+    "+mj-ea",
+    "+mj-lt",
+    "+mn-cs",
+    "+mn-ea",
+    "+mn-lt",
+    "Angsana New",
+    "Arial",
+    "Calibri",
+    "Calibri Light",
+    "Cordia New",
+    "DaunPenh",
+    "DokChampa",
+    "Estrangelo Edessa",
+    "Euphemia",
+    "Gautami",
+    "Iskoola Pota",
+    "Kalinga",
+    "Kartika",
+    "Latha",
+    "MV Boli",
+    "Mangal",
+    "MiSans",
+    "MiSans Medium",
+    "MiSans Normal",
+    "Microsoft Himalaya",
+    "Microsoft Uighur",
+    "Microsoft Yi Baiti",
+    "Mongolian Baiti",
+    "MoolBoran",
+    "Nyala",
+    "Plantagenet Cherokee",
+    "Raavi",
+    "Shruti",
+    "Sylfaen",
+    "Times New Roman",
+    "Tunga",
+    "Vrinda",
+    "宋体",
+    "新細明體",
+    "游ゴシック",
+    "游ゴシック Light",
+    "맑은 고딕",
+    "ＭＳ Ｐゴシック"
+  ],
+  "packageParts": {
+    "mediaCount": 38,
+    "slideXmlCount": 9,
+    "chartCount": 0,
+    "tableSlideCount": 0
+  },
+  "inspectRefreshedAt": "2026-06-01T21:58:49.932Z",
+  "inspectMaxChars": 1200000
+}

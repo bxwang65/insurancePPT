@@ -1,0 +1,473 @@
+{
+  "kind": "ci",
+  "productName": "「守X家倍198」危疾保障计划",
+  "insured": {
+    "name": "VIP￿小姐",
+    "age": 32,
+    "gender": "女",
+    "smoker": ""
+  },
+  "policy": {
+    "currency": "USD",
+    "sumInsured": 100000,
+    "baseSumInsured": 100000,
+    "upgradeBenefitAmount": 30000,
+    "upgradeBenefitYears": 10,
+    "annualPremium": 4949,
+    "annualPremiumWithLevy": 4949,
+    "payYears": 10,
+    "totalPremium": 49490,
+    "coveragePeriod": "至100岁"
+  },
+  "coverageSummary": {
+    "majorCiCount": 100,
+    "earlyCiCount": 50
+  },
+  "coverageItems": [
+    {
+      "label": "严重疾病保障",
+      "name": "严重疾病保障",
+      "amount": 100000,
+      "percentage": 100,
+      "description": "首次确诊严重疾病",
+      "sourcePage": 2,
+      "source_page": 2
+    },
+    {
+      "label": "早期危疾保障",
+      "name": "早期危疾保障",
+      "amount": 50000,
+      "percentage": 50,
+      "description": "首次确诊早期危疾",
+      "sourcePage": 2,
+      "source_page": 2
+    },
+    {
+      "label": "保费豁免",
+      "name": "保费豁免",
+      "amount": 0,
+      "percentage": 100,
+      "description": "确诊后豁免后续保费",
+      "sourcePage": 2,
+      "source_page": 2
+    }
+  ],
+  "icuBenefitRules": [],
+  "multiClaimRules": [],
+  "premiumWaiverRiders": [],
+  "benefitRows": [
+    {
+      "policyYear": 1,
+      "totalPremiumPaid": 4949,
+      "guaranteedCashValue": 0,
+      "reversionaryBonus": 0,
+      "terminalDividend": 0,
+      "totalSurrenderValue": 160000,
+      "deathBenefit": 160000,
+      "ciBenefit": 160000,
+      "sourcePage": 1
+    },
+    {
+      "policyYear": 2,
+      "totalPremiumPaid": 9898,
+      "guaranteedCashValue": 0,
+      "reversionaryBonus": 0,
+      "terminalDividend": 0,
+      "totalSurrenderValue": 160000,
+      "deathBenefit": 160000,
+      "ciBenefit": 160000,
+      "sourcePage": 1
+    },
+    {
+      "policyYear": 3,
+      "totalPremiumPaid": 14847,
+      "guaranteedCashValue": 0,
+      "reversionaryBonus": 0,
+      "terminalDividend": 0,
+      "totalSurrenderValue": 160000,
+      "deathBenefit": 160000,
+      "ciBenefit": 160000,
+      "sourcePage": 1
+    },
+    {
+      "policyYear": 4,
+      "totalPremiumPaid": 19796,
+      "guaranteedCashValue": 0,
+      "reversionaryBonus": 0,
+      "terminalDividend": 0,
+      "totalSurrenderValue": 160000,
+      "deathBenefit": 160000,
+      "ciBenefit": 160000,
+      "sourcePage": 1
+    },
+    {
+      "policyYear": 5,
+      "totalPremiumPaid": 24745,
+      "guaranteedCashValue": 0,
+      "reversionaryBonus": 1968,
+      "terminalDividend": 0,
+      "totalSurrenderValue": 160000,
+      "deathBenefit": 160000,
+      "ciBenefit": 160000,
+      "sourcePage": 1
+    },
+    {
+      "policyYear": 6,
+      "totalPremiumPaid": 29694,
+      "guaranteedCashValue": 0,
+      "reversionaryBonus": 2182,
+      "terminalDividend": 0,
+      "totalSurrenderValue": 160000,
+      "deathBenefit": 160000,
+      "ciBenefit": 160000,
+      "sourcePage": 1
+    },
+    {
+      "policyYear": 7,
+      "totalPremiumPaid": 34643,
+      "guaranteedCashValue": 0,
+      "reversionaryBonus": 2430,
+      "terminalDividend": 0,
+      "totalSurrenderValue": 160000,
+      "deathBenefit": 160000,
+      "ciBenefit": 160000,
+      "sourcePage": 1
+    },
+    {
+      "policyYear": 8,
+      "totalPremiumPaid": 39592,
+      "guaranteedCashValue": 0,
+      "reversionaryBonus": 2710,
+      "terminalDividend": 0,
+      "totalSurrenderValue": 160000,
+      "deathBenefit": 160000,
+      "ciBenefit": 160000,
+      "sourcePage": 1
+    },
+    {
+      "policyYear": 9,
+      "totalPremiumPaid": 44541,
+      "guaranteedCashValue": 0,
+      "reversionaryBonus": 4864,
+      "terminalDividend": 0,
+      "totalSurrenderValue": 160000,
+      "deathBenefit": 160000,
+      "ciBenefit": 160000,
+      "sourcePage": 1
+    },
+    {
+      "policyYear": 10,
+      "totalPremiumPaid": 49490,
+      "guaranteedCashValue": 2475,
+      "reversionaryBonus": 13571,
+      "terminalDividend": 0,
+      "totalSurrenderValue": 160000,
+      "deathBenefit": 160000,
+      "ciBenefit": 160000,
+      "sourcePage": 1
+    },
+    {
+      "policyYear": 11,
+      "totalPremiumPaid": 49490,
+      "guaranteedCashValue": 2475,
+      "reversionaryBonus": 17807,
+      "terminalDividend": 0,
+      "totalSurrenderValue": 100000,
+      "deathBenefit": 100000,
+      "ciBenefit": 100000,
+      "sourcePage": 1
+    },
+    {
+      "policyYear": 12,
+      "totalPremiumPaid": 49490,
+      "guaranteedCashValue": 2475,
+      "reversionaryBonus": 21189,
+      "terminalDividend": 0,
+      "totalSurrenderValue": 100000,
+      "deathBenefit": 100000,
+      "ciBenefit": 100000,
+      "sourcePage": 1
+    },
+    {
+      "policyYear": 13,
+      "totalPremiumPaid": 49490,
+      "guaranteedCashValue": 2475,
+      "reversionaryBonus": 24645,
+      "terminalDividend": 0,
+      "totalSurrenderValue": 100000,
+      "deathBenefit": 100000,
+      "ciBenefit": 100000,
+      "sourcePage": 1
+    },
+    {
+      "policyYear": 14,
+      "totalPremiumPaid": 49490,
+      "guaranteedCashValue": 2475,
+      "reversionaryBonus": 28173,
+      "terminalDividend": 0,
+      "totalSurrenderValue": 100000,
+      "deathBenefit": 100000,
+      "ciBenefit": 100000,
+      "sourcePage": 1
+    },
+    {
+      "policyYear": 15,
+      "totalPremiumPaid": 49490,
+      "guaranteedCashValue": 14847,
+      "reversionaryBonus": 56415,
+      "terminalDividend": 0,
+      "totalSurrenderValue": 100000,
+      "deathBenefit": 100000,
+      "ciBenefit": 100000,
+      "sourcePage": 1
+    },
+    {
+      "policyYear": 16,
+      "totalPremiumPaid": 49490,
+      "guaranteedCashValue": 14847,
+      "reversionaryBonus": 85743,
+      "terminalDividend": 0,
+      "totalSurrenderValue": 100000,
+      "deathBenefit": 100000,
+      "ciBenefit": 100000,
+      "sourcePage": 1
+    },
+    {
+      "policyYear": 17,
+      "totalPremiumPaid": 49490,
+      "guaranteedCashValue": 14847,
+      "reversionaryBonus": 90481,
+      "terminalDividend": 0,
+      "totalSurrenderValue": 100000,
+      "deathBenefit": 100000,
+      "ciBenefit": 100000,
+      "sourcePage": 1
+    },
+    {
+      "policyYear": 18,
+      "totalPremiumPaid": 49490,
+      "guaranteedCashValue": 24745,
+      "reversionaryBonus": 88413,
+      "terminalDividend": 0,
+      "totalSurrenderValue": 100000,
+      "deathBenefit": 100000,
+      "ciBenefit": 100000,
+      "sourcePage": 1
+    },
+    {
+      "policyYear": 19,
+      "totalPremiumPaid": 49490,
+      "guaranteedCashValue": 24745,
+      "reversionaryBonus": 96505,
+      "terminalDividend": 0,
+      "totalSurrenderValue": 100000,
+      "deathBenefit": 100000,
+      "ciBenefit": 100000,
+      "sourcePage": 1
+    },
+    {
+      "policyYear": 20,
+      "totalPremiumPaid": 49490,
+      "guaranteedCashValue": 49490,
+      "reversionaryBonus": 89236,
+      "terminalDividend": 0,
+      "totalSurrenderValue": 100000,
+      "deathBenefit": 100000,
+      "ciBenefit": 100000,
+      "sourcePage": 1
+    },
+    {
+      "policyYear": 21,
+      "totalPremiumPaid": 49490,
+      "guaranteedCashValue": 49490,
+      "reversionaryBonus": 95230,
+      "terminalDividend": 0,
+      "totalSurrenderValue": 100000,
+      "deathBenefit": 100000,
+      "ciBenefit": 100000,
+      "sourcePage": 1
+    },
+    {
+      "policyYear": 22,
+      "totalPremiumPaid": 49490,
+      "guaranteedCashValue": 49490,
+      "reversionaryBonus": 100554,
+      "terminalDividend": 0,
+      "totalSurrenderValue": 100000,
+      "deathBenefit": 100000,
+      "ciBenefit": 100000,
+      "sourcePage": 1
+    },
+    {
+      "policyYear": 23,
+      "totalPremiumPaid": 49490,
+      "guaranteedCashValue": 49490,
+      "reversionaryBonus": 107020,
+      "terminalDividend": 0,
+      "totalSurrenderValue": 100000,
+      "deathBenefit": 100000,
+      "ciBenefit": 100000,
+      "sourcePage": 1
+    },
+    {
+      "policyYear": 24,
+      "totalPremiumPaid": 49490,
+      "guaranteedCashValue": 49490,
+      "reversionaryBonus": 114888,
+      "terminalDividend": 0,
+      "totalSurrenderValue": 100000,
+      "deathBenefit": 100000,
+      "ciBenefit": 100000,
+      "sourcePage": 1
+    },
+    {
+      "policyYear": 25,
+      "totalPremiumPaid": 49490,
+      "guaranteedCashValue": 49490,
+      "reversionaryBonus": 123516,
+      "terminalDividend": 0,
+      "totalSurrenderValue": 100000,
+      "deathBenefit": 100000,
+      "ciBenefit": 100000,
+      "sourcePage": 1
+    },
+    {
+      "policyYear": 26,
+      "totalPremiumPaid": 49490,
+      "guaranteedCashValue": 49490,
+      "reversionaryBonus": 132958,
+      "terminalDividend": 0,
+      "totalSurrenderValue": 100000,
+      "deathBenefit": 100000,
+      "ciBenefit": 100000,
+      "sourcePage": 1
+    },
+    {
+      "policyYear": 27,
+      "totalPremiumPaid": 49490,
+      "guaranteedCashValue": 49490,
+      "reversionaryBonus": 143260,
+      "terminalDividend": 0,
+      "totalSurrenderValue": 100000,
+      "deathBenefit": 100000,
+      "ciBenefit": 100000,
+      "sourcePage": 1
+    },
+    {
+      "policyYear": 28,
+      "totalPremiumPaid": 49490,
+      "guaranteedCashValue": 49490,
+      "reversionaryBonus": 154456,
+      "terminalDividend": 0,
+      "totalSurrenderValue": 100000,
+      "deathBenefit": 100000,
+      "ciBenefit": 100000,
+      "sourcePage": 1
+    },
+    {
+      "policyYear": 29,
+      "totalPremiumPaid": 49490,
+      "guaranteedCashValue": 49490,
+      "reversionaryBonus": 166210,
+      "terminalDividend": 0,
+      "totalSurrenderValue": 100000,
+      "deathBenefit": 100000,
+      "ciBenefit": 100000,
+      "sourcePage": 1
+    },
+    {
+      "policyYear": 30,
+      "totalPremiumPaid": 49490,
+      "guaranteedCashValue": 49490,
+      "reversionaryBonus": 187426,
+      "terminalDividend": 0,
+      "totalSurrenderValue": 100000,
+      "deathBenefit": 100000,
+      "ciBenefit": 100000,
+      "sourcePage": 1
+    },
+    {
+      "policyYear": 31,
+      "totalPremiumPaid": 49490,
+      "guaranteedCashValue": 49490,
+      "reversionaryBonus": 198672,
+      "terminalDividend": 0,
+      "totalSurrenderValue": 100000,
+      "deathBenefit": 100000,
+      "ciBenefit": 100000,
+      "sourcePage": 1
+    },
+    {
+      "policyYear": 32,
+      "totalPremiumPaid": 49490,
+      "guaranteedCashValue": 49490,
+      "reversionaryBonus": 210590,
+      "terminalDividend": 0,
+      "totalSurrenderValue": 100000,
+      "deathBenefit": 100000,
+      "ciBenefit": 100000,
+      "sourcePage": 1
+    },
+    {
+      "policyYear": 33,
+      "totalPremiumPaid": 49490,
+      "guaranteedCashValue": 49490,
+      "reversionaryBonus": 223198,
+      "terminalDividend": 0,
+      "totalSurrenderValue": 100000,
+      "deathBenefit": 100000,
+      "ciBenefit": 100000,
+      "sourcePage": 1
+    },
+    {
+      "policyYear": 34,
+      "totalPremiumPaid": 49490,
+      "guaranteedCashValue": 49490,
+      "reversionaryBonus": 236582,
+      "terminalDividend": 0,
+      "totalSurrenderValue": 100000,
+      "deathBenefit": 100000,
+      "ciBenefit": 100000,
+      "sourcePage": 1
+    },
+    {
+      "policyYear": 35,
+      "totalPremiumPaid": 49490,
+      "guaranteedCashValue": 49490,
+      "reversionaryBonus": 250778,
+      "terminalDividend": 0,
+      "totalSurrenderValue": 100000,
+      "deathBenefit": 100000,
+      "ciBenefit": 100000,
+      "sourcePage": 1
+    },
+    {
+      "policyYear": 36,
+      "totalPremiumPaid": 49490,
+      "guaranteedCashValue": 49490,
+      "reversionaryBonus": 265486,
+      "terminalDividend": 0,
+      "totalSurrenderValue": 100000,
+      "deathBenefit": 100000,
+      "ciBenefit": 100000,
+      "sourcePage": 1
+    },
+    {
+      "policyYear": 37,
+      "totalPremiumPaid": 49490,
+      "guaranteedCashValue": 49490,
+      "reversionaryBonus": 286428,
+      "terminalDividend": 0,
+      "totalSurrenderValue": 100000,
+      "deathBenefit": 100000,
+      "ciBenefit": 100000,
+      "sourcePage": 1
+    }
+  ],
+  "cashValueMilestones": [],
+  "source": {
+    "pdfHash": "c452861a0c97e3628e4755a8c61b33290ec2573deb9aac8d6391b05b3adfa067",
+    "pdfPath": "/Users/soldier/free-code/packages/insurance-ppt/uploads/local/cec1efd3-ce2b-46bf-a58e-111d44671b9e_061ec0ec_9e0b3eb1_守護家倍198.pdf",
+    "parser": "llm-json"
+  }
+}

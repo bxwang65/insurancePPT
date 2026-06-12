@@ -1,0 +1,15 @@
+{
+  "id": "aia",
+  "displayName": "友邦保险",
+  "aliases": ["AIA", "友邦"],
+  "tenantId": "aia",
+  "knowledgeDirectories": ["AIA-友邦", "新加坡-友邦", "新加坡友邦"],
+  "evidenceRanking": ["简介", "一图", "fact", "年报", "财务", "实力", "概览"],
+  "companyIntro": "友邦保险提供长期储蓄、保障与财富传承方案。公司介绍页仅使用已入库资料和可追溯公开来源。",
+  "companyHighlights": [
+    {
+      "text": "业务发源可追溯至 1919 年，屹立亚洲逾 100 年。",
+      "sourceFile": "友邦-一图简介.pdf"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "status": "pass",
+  "checkedAt": "2026-06-01T23:05:23.175Z",
+  "workspace": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_savings_ci_bundle_clone/template-clone/savings-ci-bundle",
+  "finalPptx": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_savings_ci_bundle_clone/deck.pptx",
+  "starterPptx": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_savings_ci_bundle_clone/template-clone/savings-ci-bundle/template-starter.pptx",
+  "mapPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_savings_ci_bundle_clone/template-clone/savings-ci-bundle/template-frame-map.json",
+  "starterLayoutDir": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_savings_ci_bundle_clone/template-clone/savings-ci-bundle/template-starter-layout",
+  "finalLayoutDir": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_savings_ci_bundle_clone/template-clone/savings-ci-bundle/final-layout",
+  "editDir": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_savings_ci_bundle_clone/template-clone/savings-ci-bundle/authoring-evidence",
+  "issueCount": 0,
+  "issues": []
+}

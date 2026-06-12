@@ -1,0 +1,120 @@
+{
+  "outputSlides": [
+    {
+      "outputSlide": 1,
+      "sourceSlide": 2,
+      "narrativeRole": "cover",
+      "reuseMode": "duplicate-slide",
+      "editTargets": [
+        {
+          "action": "rewrite",
+          "sourceElementId": "sh/nyd0z610"
+        }
+      ]
+    },
+    {
+      "outputSlide": 2,
+      "sourceSlide": 3,
+      "narrativeRole": "outline",
+      "reuseMode": "duplicate-slide",
+      "editTargets": [
+        {
+          "action": "rewrite",
+          "sourceElementId": "sh/5o7qpg3e"
+        },
+        {
+          "action": "rewrite",
+          "sourceElementId": "sh/ylc7u54z"
+        },
+        {
+          "action": "rewrite",
+          "sourceElementId": "sh/rytsvu9k"
+        },
+        {
+          "action": "rewrite",
+          "sourceElementId": "sh/lwval87e"
+        },
+        {
+          "action": "rewrite",
+          "sourceElementId": "sh/w3m94fu1"
+        }
+      ]
+    },
+    {
+      "outputSlide": 3,
+      "sourceSlide": 4,
+      "narrativeRole": "outline",
+      "reuseMode": "duplicate-slide",
+      "editTargets": [
+        {
+          "action": "rewrite",
+          "sourceElementId": "sh/o7qpg3ex"
+        },
+        {
+          "action": "rewrite",
+          "sourceElementId": "sh/vy90je9c"
+        },
+        {
+          "action": "rewrite",
+          "sourceElementId": "sh/6hcrmhk3"
+        },
+        {
+          "action": "rewrite",
+          "sourceElementId": "sh/6dcbulwv"
+        },
+        {
+          "action": "rewrite",
+          "sourceElementId": "sh/vmtwra5g"
+        }
+      ]
+    },
+    {
+      "outputSlide": 4,
+      "sourceSlide": 5,
+      "narrativeRole": "highlights",
+      "reuseMode": "duplicate-slide",
+      "editTargets": [
+        {
+          "action": "rewrite",
+          "sourceElementId": "sh/je9cvixc"
+        }
+      ]
+    },
+    {
+      "outputSlide": 5,
+      "sourceSlide": 6,
+      "narrativeRole": "withdrawal",
+      "reuseMode": "duplicate-slide",
+      "editTargets": [
+        {
+          "action": "rewrite",
+          "sourceElementId": "sh/ovahoza1"
+        },
+        {
+          "action": "rewrite",
+          "sourceElementId": "sh/6hcrmhk3"
+        },
+        {
+          "action": "rewrite",
+          "sourceElementId": "sh/d8v6psfi"
+        },
+        {
+          "action": "rewrite",
+          "sourceElementId": "sh/nuxc3ylc"
+        }
+      ]
+    },
+    {
+      "outputSlide": 6,
+      "sourceSlide": 5,
+      "narrativeRole": "closing",
+      "reuseMode": "duplicate-slide",
+      "editTargets": [
+        {
+          "action": "rewrite",
+          "sourceElementId": "sh/je9cvixc"
+        }
+      ]
+    }
+  ]
+}

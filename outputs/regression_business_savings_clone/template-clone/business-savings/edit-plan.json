@@ -1,0 +1,227 @@
+{
+  "templateId": "business",
+  "slides": [
+    {
+      "outputSlide": 1,
+      "textRewrites": [
+        {
+          "shapeId": "6",
+          "text": "VIP 先生 家庭财富传承方案"
+        },
+        {
+          "shapeId": "10",
+          "text": "友邦保险 · 环X盈活储蓄保险计划(5年缴费)"
+        },
+        {
+          "shapeId": "31",
+          "text": "2026-06-01"
+        }
+      ],
+      "imageReplacements": [],
+      "deletions": []
+    },
+    {
+      "outputSlide": 2,
+      "textRewrites": [
+        {
+          "shapeId": "6",
+          "text": "关于我们"
+        },
+        {
+          "shapeId": "10",
+          "text": "专注储蓄险定制与长期资产配置"
+        },
+        {
+          "shapeId": "14",
+          "text": "专业团队"
+        },
+        {
+          "shapeId": "15",
+          "text": "资深财富规划师、税务专家、法律顾问"
+        },
+        {
+          "shapeId": "20",
+          "text": "核心方案"
+        },
+        {
+          "shapeId": "21",
+          "text": "以官方计划书为依据，结构化输出客户沟通版计划书"
+        }
+      ],
+      "imageReplacements": [
+        {
+          "imageId": "60",
+          "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/formal_環宇盈活儲蓄保險計劃_1780289287599_pipeline/assets/company.jpg",
+          "fit": "cover"
+        }
+      ],
+      "deletions": []
+    },
+    {
+      "outputSlide": 3,
+      "textRewrites": [
+        {
+          "shapeId": "6",
+          "text": "产品核心亮点"
+        },
+        {
+          "shapeId": "12",
+          "text": "长期稳健增值"
+        },
+        {
+          "shapeId": "13",
+          "text": "基于官方利益演示，展示不提领与提领两种路径"
+        },
+        {
+          "shapeId": "14",
+          "text": "总缴保费约 US$500,000"
+        },
+        {
+          "shapeId": "19",
+          "text": "不提领：第20年约 2.72 倍"
+        },
+        {
+          "shapeId": "24",
+          "text": "不提领：第30年约 5.85 倍"
+        },
+        {
+          "shapeId": "30",
+          "text": "关键数字可回溯至官方保单表格与来源页码"
+        }
+      ],
+      "imageReplacements": [],
+      "deletions": []
+    },
+    {
+      "outputSlide": 4,
+      "textRewrites": [
+        {
+          "shapeId": "6",
+          "text": "现金价值增长曲线"
+        },
+        {
+          "shapeId": "10",
+          "text": "第10年"
+        },
+        {
+          "shapeId": "11",
+          "text": "现金价值增长进入可见区间"
+        },
+        {
+          "shapeId": "13",
+          "text": "第25年"
+        },
+        {
+          "shapeId": "14",
+          "text": "复利效应逐步体现"
+        },
+        {
+          "shapeId": "18",
+          "text": "第60年"
+        },
+        {
+          "shapeId": "19",
+          "text": "长期价值与现金流能力并行"
+        },
+        {
+          "shapeId": "25",
+          "text": "第6年起可年领 US$35,000"
+        },
+        {
+          "shapeId": "26",
+          "text": "第20年累计领取 US$525,000"
+        },
+        {
+          "shapeId": "30",
+          "text": "第30年累计领取 US$875,000"
+        },
+        {
+          "shapeId": "31",
+          "text": "第60年累计领取 US$1,925,000"
+        }
+      ],
+      "imageReplacements": [],
+      "deletions": []
+    },
+    {
+      "outputSlide": 5,
+      "textRewrites": [
+        {
+          "shapeId": "6",
+          "text": "灵活提领路径"
+        },
+        {
+          "shapeId": "12",
+          "text": "定期定额提领"
+        },
+        {
+          "shapeId": "13",
+          "text": "适合教育金与家庭现金流安排"
+        },
+        {
+          "shapeId": "15",
+          "text": "日常开支"
+        },
+        {
+          "shapeId": "16",
+          "text": "第6年起每年领取 US$35,000"
+        },
+        {
+          "shapeId": "19",
+          "text": "阶段提领"
+        },
+        {
+          "shapeId": "21",
+          "text": "第20年累计 US$525,000，第30年累计 US$875,000"
+        },
+        {
+          "shapeId": "23",
+          "text": "养老补充"
+        },
+        {
+          "shapeId": "24",
+          "text": "长期领取后仍保有退保价值与灵活性"
+        }
+      ],
+      "imageReplacements": [
+        {
+          "imageId": "63",
+          "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/formal_環宇盈活儲蓄保險計劃_1780289287599_pipeline/charts/1_环X盈活储蓄保险计划_5年缴费_cashflow.png",
+          "fit": "cover"
+        }
+      ],
+      "deletions": []
+    },
+    {
+      "outputSlide": 6,
+      "textRewrites": [
+        {
+          "shapeId": "6",
+          "text": "方案总结"
+        },
+        {
+          "shapeId": "12",
+          "text": "储蓄险定制输出"
+        },
+        {
+          "shapeId": "13",
+          "text": "公司资料 + 官方保单 + 双路径分析"
+        },
+        {
+          "shapeId": "18",
+          "text": "客户沟通重点"
+        },
+        {
+          "shapeId": "19",
+          "text": "数字可追溯、页面可解释、结构可复用"
+        },
+        {
+          "shapeId": "30",
+          "text": "后续可按客户目标自动切换教育金/养老金叙事"
+        }
+      ],
+      "imageReplacements": [],
+      "deletions": []
+    }
+  ]
+}

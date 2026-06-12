@@ -1,0 +1,14 @@
+{
+  "id": "savings-iul",
+  "displayName": "储蓄险加IUL组合方案",
+  "products": ["savings", "iul"],
+  "templateFamily": "bundle",
+  "status": "active",
+  "modules": [
+    "education-fund-layer",
+    "savings-growth-analysis",
+    "iul-legacy-leverage",
+    "family-timeline",
+    "recommendation"
+  ]
+}

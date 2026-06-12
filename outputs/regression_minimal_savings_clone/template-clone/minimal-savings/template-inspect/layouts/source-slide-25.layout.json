@@ -1,0 +1,1308 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/61032lsz",
+    "id": "61032lsz",
+    "slide": 26,
+    "layoutId": "/ppt/slideLayouts/slideLayout33.xml",
+    "layoutName": "上左标下左内后右背景-有背景-有间隙-2",
+    "masterLayoutId": "/ppt/slideMasters/slideMaster2.xml",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "Office",
+    "colors": {
+      "accent1": "#5B9BD5",
+      "accent2": "#ED7D31",
+      "accent3": "#A5A5A5",
+      "accent4": "#FFC000",
+      "accent5": "#4472C4",
+      "accent6": "#70AD47",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#44546A",
+      "lt2": "#E7E6E6",
+      "hlink": "#0563C1",
+      "folHlink": "#954F72"
+    },
+    "fontScheme": {
+      "name": "Aspect",
+      "majorFont": {
+        "latinTypeface": "微软雅黑"
+      },
+      "minorFont": {
+        "latinTypeface": "微软雅黑"
+      }
+    },
+    "typefaces": [
+      "微软雅黑"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "/ppt/slideLayouts/slideLayout33.xml",
+      "name": "上左标下左内后右背景-有背景-有间隙-2",
+      "parentLayoutId": "/ppt/slideMasters/slideMaster2.xml",
+      "elements": [
+        {
+          "order": 1,
+          "kind": "image",
+          "scope": "layout",
+          "aid": "template/layout//ppt/slideLayouts/slideLayout33.xml/2",
+          "id": "2",
+          "name": "图片占位符 1",
+          "bbox": [
+            640,
+            0,
+            640,
+            720
+          ]
+        },
+        {
+          "order": 2,
+          "kind": "shape",
+          "scope": "layout",
+          "aid": "template/layout//ppt/slideLayouts/slideLayout33.xml/3",
+          "id": "3",
+          "name": "标题 2",
+          "bbox": [
+            64,
+            50.66,
+            720,
+            74.66
+          ],
+          "resolvedTextStyle": {
+            "anchor": 1,
+            "verticalAlignment": "top",
+            "wrap": "square",
+            "autoFit": "none",
+            "insets": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          }
+        },
+        {
+          "order": 3,
+          "kind": "shape",
+          "scope": "layout",
+          "aid": "template/layout//ppt/slideLayouts/slideLayout33.xml/4",
+          "id": "4",
+          "name": "内容占位符 3",
+          "bbox": [
+            64,
+            159.97,
+            720,
+            496.03
+          ],
+          "resolvedTextStyle": {
+            "anchor": 1,
+            "verticalAlignment": "top",
+            "wrap": "square",
+            "autoFit": "none",
+            "insets": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "scope": "master",
+      "id": "/ppt/slideMasters/slideMaster2.xml",
+      "type": "master",
+      "elements": [
+        {
+          "order": 1,
+          "kind": "shape",
+          "scope": "master",
+          "aid": "template/master//ppt/slideMasters/slideMaster2.xml/8",
+          "id": "8",
+          "name": "矩形 7",
+          "bbox": [
+            0.4,
+            0,
+            1279.6,
+            719.93
+          ],
+          "geometry": "rect",
+          "resolvedTextStyle": {
+            "anchor": 2,
+            "verticalAlignment": "middle"
+          }
+        },
+        {
+          "order": 2,
+          "kind": "shape",
+          "scope": "master",
+          "aid": "template/master//ppt/slideMasters/slideMaster2.xml/2",
+          "id": "2",
+          "name": "标题占位符 1",
+          "bbox": [
+            73.07,
+            37.8,
+            1133.86,
+            75.59
+          ],
+          "geometry": "rect",
+          "resolvedTextStyle": {
+            "anchor": 3,
+            "vertical": 1,
+            "verticalAlignment": "bottom",
+            "wrap": "square",
+            "autoFit": "shrinkText",
+            "insets": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          }
+        },
+        {
+          "order": 3,
+          "kind": "shape",
+          "scope": "master",
+          "aid": "template/master//ppt/slideMasters/slideMaster2.xml/3",
+          "id": "3",
+          "name": "文本占位符 2",
+          "bbox": [
+            73.07,
+            136.67,
+            1133.86,
+            511.67
+          ],
+          "geometry": "rect",
+          "resolvedTextStyle": {
+            "vertical": 1,
+            "wrap": "square",
+            "autoFit": "shrinkText",
+            "insets": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          }
+        },
+        {
+          "order": 4,
+          "kind": "shape",
+          "scope": "master",
+          "aid": "template/master//ppt/slideMasters/slideMaster2.xml/9",
+          "id": "9",
+          "name": "矩形 8",
+          "bbox": [
+            5.27,
+            698.6,
+            1274.53,
+            21.33
+          ],
+          "geometry": "rect",
+          "resolvedTextStyle": {
+            "anchor": 2,
+            "verticalAlignment": "middle"
+          }
+        },
+        {
+          "order": 5,
+          "kind": "shape",
+          "scope": "master",
+          "aid": "template/master//ppt/slideMasters/slideMaster2.xml/5",
+          "id": "5",
+          "name": "页脚占位符 4",
+          "bbox": [
+            424,
+            667.33,
+            432,
+            38.33
+          ],
+          "geometry": "rect",
+          "resolvedTextStyle": {
+            "anchor": 2,
+            "vertical": 1,
+            "verticalAlignment": "middle",
+            "autoFit": "shrinkText",
+            "insets": {
+              "top": 4.8,
+              "right": 9.6,
+              "bottom": 4.8,
+              "left": 9.6
+            }
+          }
+        },
+        {
+          "order": 6,
+          "kind": "shape",
+          "scope": "master",
+          "aid": "template/master//ppt/slideMasters/slideMaster2.xml/6",
+          "id": "6",
+          "name": "灯片编号占位符 5",
+          "bbox": [
+            919.05,
+            667.33,
+            288,
+            38.33
+          ],
+          "geometry": "rect",
+          "resolvedTextStyle": {
+            "anchor": 2,
+            "vertical": 1,
+            "verticalAlignment": "middle",
+            "wrap": "square",
+            "autoFit": "shrinkText",
+            "insets": {
+              "top": 4.8,
+              "right": 9.6,
+              "bottom": 4.8,
+              "left": 9.6
+            }
+          }
+        },
+        {
+          "order": 7,
+          "kind": "shape",
+          "scope": "master",
+          "aid": "template/master//ppt/slideMasters/slideMaster2.xml/4",
+          "id": "4",
+          "name": "日期占位符 3",
+          "bbox": [
+            73.07,
+            667.33,
+            288,
+            38.33
+          ],
+          "geometry": "rect",
+          "resolvedTextStyle": {
+            "anchor": 2,
+            "vertical": 1,
+            "verticalAlignment": "middle",
+            "wrap": "square",
+            "autoFit": "shrinkText",
+            "insets": {
+              "top": 4.8,
+              "right": 9.6,
+              "bottom": 4.8,
+              "left": 9.6
+            }
+          }
+        },
+        {
+          "order": 8,
+          "kind": "shape",
+          "scope": "master",
+          "aid": "template/master//ppt/slideMasters/slideMaster2.xml/7",
+          "id": "7",
+          "name": "KSO_TEMPLATE",
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "geometry": "rect",
+          "resolvedTextStyle": {
+            "anchor": 2,
+            "verticalAlignment": "middle"
+          }
+        }
+      ]
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "image",
+      "scope": "slide",
+      "aid": "im/7ed8bat4",
+      "id": "26",
+      "name": "图片占位符 1",
+      "bbox": [
+        640,
+        0,
+        640,
+        720
+      ],
+      "contentType": "image/jpeg",
+      "imageCrop": {
+        "left": 0.00009,
+        "top": 0,
+        "right": 0.00009,
+        "bottom": 0
+      },
+      "asset": {
+        "assetId": "/ppt/media/image41.jpeg",
+        "contentType": "image/jpeg",
+        "byteLength": 859592
+      },
+      "fillImage": {
+        "assetId": "/ppt/media/image41.jpeg",
+        "contentType": "image/jpeg",
+        "byteLength": 859592
+      }
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/tcj6tova",
+      "id": "7",
+      "name": "任意多边形 6",
+      "bbox": [
+        0,
+        0,
+        1280,
+        720
+      ],
+      "geometry": "custom",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 24,
+        "typeface": "微软雅黑",
+        "color": "lt1",
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": ""
+          }
+        ]
+      }
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/yd0z6103",
+      "id": "11",
+      "name": "任意多边形 10",
+      "bbox": [
+        64,
+        159.93,
+        720,
+        151.13
+      ],
+      "geometry": "custom",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 24,
+        "typeface": "微软雅黑",
+        "color": "lt1",
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": ""
+          }
+        ]
+      },
+      "fillColor": {
+        "type": "theme",
+        "value": "accent1",
+        "transform": {
+          "lighten": 0.9
+        }
+      },
+      "lineColor": {
+        "type": "theme",
+        "value": "accent1",
+        "transform": {
+          "lighten": 0.8
+        }
+      },
+      "lineWidth": 2
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/gfmlkjm1",
+      "id": "13",
+      "name": "任意多边形 12",
+      "bbox": [
+        88,
+        192.8,
+        85.33,
+        85.33
+      ],
+      "geometry": "custom",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 24,
+        "typeface": "微软雅黑",
+        "color": "lt1",
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": ""
+          }
+        ]
+      },
+      "fillColor": "accent1",
+      "lineColor": {
+        "type": "theme",
+        "value": "accent1",
+        "transform": {
+          "lighten": 0.8
+        }
+      },
+      "lineWidth": 1
+    },
+    {
+      "order": 5,
+      "kind": "image",
+      "scope": "slide",
+      "aid": "im/itgfmlkj",
+      "id": "27",
+      "name": "图片 11",
+      "bbox": [
+        109.33,
+        214.2,
+        42.67,
+        42.67
+      ],
+      "contentType": "image/svg+xml",
+      "asset": {
+        "assetId": "/ppt/media/image42.svg",
+        "contentType": "image/svg+xml",
+        "byteLength": 1645
+      },
+      "fillImage": {
+        "assetId": "/ppt/media/image42.svg",
+        "contentType": "image/svg+xml",
+        "byteLength": 1645
+      }
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/rmhk3q5o",
+      "id": "14",
+      "name": "文本框 13",
+      "bbox": [
+        194.67,
+        186.13,
+        565.33,
+        37.33
+      ],
+      "geometry": "rect",
+      "text": "受益人资格认定规则",
+      "textPreview": "受益人资格认定规则",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 24,
+        "typeface": "微软雅黑",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 1.87,
+          "bottom": 0,
+          "left": 1.87
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "受益人资格认定规则"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "受益人资格认定规则",
+          "resolvedTextStyle": {
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "受益人资格认定规则",
+              "fontSize": 28,
+              "typeface": "微软雅黑",
+              "color": "dk1"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/y1kre1w7",
+      "id": "15",
+      "name": "文本框 14",
+      "bbox": [
+        194.67,
+        228.8,
+        565.33,
+        56
+      ],
+      "geometry": "rect",
+      "text": "需提供受益人身份证明、与被保险人关系证明（如户口簿），2023年某家族案例中因未及时更新受益人信息导致提领延迟3个月。",
+      "textPreview": "需提供受益人身份证明、与被保险人关系证明（如户口簿），2023年某家族案例中因未及时更新受益人信息导致提领延迟3个月。",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 24,
+        "typeface": "微软雅黑",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 1.87,
+          "bottom": 0,
+          "left": 1.87
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "需提供受益人身份证明、与被保险人关系证明（如户口簿），2023"
+          },
+          {
+            "index": 2,
+            "text": "年某家族案例中因未及时更新受益人信息导致提领延迟3个月。"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "需提供受益人身份证明、与被保险人关系证明（如户口簿），2023年某家族案例中因未及时更新受益人信息导致提领延迟3个月。",
+          "lineSpacingPercent": 120000,
+          "resolvedTextStyle": {
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "需提供受益人身份证明、与被保险人关系证明（如户口簿），",
+              "fontSize": 18.67,
+              "typeface": "微软雅黑",
+              "color": "dk1"
+            },
+            {
+              "index": 2,
+              "text": "2023",
+              "fontSize": 18.67,
+              "typeface": "微软雅黑",
+              "color": "dk1"
+            },
+            {
+              "index": 3,
+              "text": "年某家族案例中因未及时更新受益人信息导致提领延迟",
+              "fontSize": 18.67,
+              "typeface": "微软雅黑",
+              "color": "dk1"
+            },
+            {
+              "index": 4,
+              "text": "3",
+              "fontSize": 18.67,
+              "typeface": "微软雅黑",
+              "color": "dk1"
+            },
+            {
+              "index": 5,
+              "text": "个月。",
+              "fontSize": 18.67,
+              "typeface": "微软雅黑",
+              "color": "dk1"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/9s36hcrm",
+      "id": "16",
+      "name": "任意多边形 15",
+      "bbox": [
+        64,
+        332.4,
+        720,
+        151.13
+      ],
+      "geometry": "custom",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 24,
+        "typeface": "微软雅黑",
+        "color": "lt1",
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": ""
+          }
+        ]
+      },
+      "fillColor": {
+        "type": "theme",
+        "value": "accent1",
+        "transform": {
+          "lighten": 0.9
+        }
+      },
+      "lineColor": {
+        "type": "theme",
+        "value": "accent1",
+        "transform": {
+          "lighten": 0.8
+        }
+      },
+      "lineWidth": 2
+    },
+    {
+      "order": 9,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/nih4byhg",
+      "id": "18",
+      "name": "任意多边形 17",
+      "bbox": [
+        88,
+        365.27,
+        85.33,
+        85.33
+      ],
+      "geometry": "custom",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 24,
+        "typeface": "微软雅黑",
+        "color": "lt1",
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": ""
+          }
+        ]
+      },
+      "fillColor": "accent1",
+      "lineColor": {
+        "type": "theme",
+        "value": "accent1",
+        "transform": {
+          "lighten": 0.8
+        }
+      },
+      "lineWidth": 1
+    },
+    {
+      "order": 10,
+      "kind": "image",
+      "scope": "slide",
+      "aid": "im/pwb2hwfy",
+      "id": "28",
+      "name": "图片 16",
+      "bbox": [
+        109.33,
+        386.65,
+        42.67,
+        42.67
+      ],
+      "contentType": "image/svg+xml",
+      "asset": {
+        "assetId": "/ppt/media/image43.svg",
+        "contentType": "image/svg+xml",
+        "byteLength": 4232
+      },
+      "fillImage": {
+        "assetId": "/ppt/media/image43.svg",
+        "contentType": "image/svg+xml",
+        "byteLength": 4232
+      }
+    },
+    {
+      "order": 11,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/yxobm58z",
+      "id": "19",
+      "name": "文本框 18",
+      "bbox": [
+        194.67,
+        358.6,
+        565.33,
+        37.33
+      ],
+      "geometry": "rect",
+      "text": "提领时效与频次限制",
+      "textPreview": "提领时效与频次限制",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 24,
+        "typeface": "微软雅黑",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 1.87,
+          "bottom": 0,
+          "left": 1.87
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "提领时效与频次限制"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "提领时效与频次限制",
+          "resolvedTextStyle": {
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "提领时效与频次限制",
+              "fontSize": 28,
+              "typeface": "微软雅黑",
+              "color": "dk1"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 12,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/61032lsz",
+      "id": "20",
+      "name": "文本框 19",
+      "bbox": [
+        194.67,
+        401.27,
+        565.33,
+        56
+      ],
+      "geometry": "rect",
+      "text": "保险金到账后需在6个月内提交提领申请，每年最多提领2次，某上市公司股东通过季度提领实现子女教育金阶梯式规划。",
+      "textPreview": "保险金到账后需在6个月内提交提领申请，每年最多提领2次，某上市公司股东通过季度提领实现子女教育金阶梯式规划。",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 24,
+        "typeface": "微软雅黑",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 1.87,
+          "bottom": 0,
+          "left": 1.87
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "保险金到账后需在6个月内提交提领申请，每年最多提领2"
+          },
+          {
+            "index": 2,
+            "text": "次，某上市公司股东通过季度提领实现子女教育金阶梯式规划。"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "保险金到账后需在6个月内提交提领申请，每年最多提领2次，某上市公司股东通过季度提领实现子女教育金阶梯式规划。",
+          "lineSpacingPercent": 120000,
+          "resolvedTextStyle": {
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "保险金到账后需在",
+              "fontSize": 18.67,
+              "typeface": "微软雅黑",
+              "color": "dk1"
+            },
+            {
+              "index": 2,
+              "text": "6",
+              "fontSize": 18.67,
+              "typeface": "微软雅黑",
+              "color": "dk1"
+            },
+            {
+              "index": 3,
+              "text": "个月内提交提领申请，每年最多提领",
+              "fontSize": 18.67,
+              "typeface": "微软雅黑",
+              "color": "dk1"
+            },
+            {
+              "index": 4,
+              "text": "2",
+              "fontSize": 18.67,
+              "typeface": "微软雅黑",
+              "color": "dk1"
+            },
+            {
+              "index": 5,
+              "text": "次，某上市公司股东通过季度提领实现子女教育金阶梯式规划。",
+              "fontSize": 18.67,
+              "typeface": "微软雅黑",
+              "color": "dk1"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 13,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/vmtwra5g",
+      "id": "21",
+      "name": "任意多边形 20",
+      "bbox": [
+        64,
+        504.87,
+        720,
+        151.13
+      ],
+      "geometry": "custom",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 24,
+        "typeface": "微软雅黑",
+        "color": "lt1",
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": ""
+          }
+        ]
+      },
+      "fillColor": {
+        "type": "theme",
+        "value": "accent1",
+        "transform": {
+          "lighten": 0.9
+        }
+      },
+      "lineColor": {
+        "type": "theme",
+        "value": "accent1",
+        "transform": {
+          "lighten": 0.8
+        }
+      },
+      "lineWidth": 2
+    },
+    {
+      "order": 14,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/dsji5sne",
+      "id": "23",
+      "name": "任意多边形 22",
+      "bbox": [
+        88,
+        537.73,
+        85.33,
+        85.33
+      ],
+      "geometry": "custom",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 24,
+        "typeface": "微软雅黑",
+        "color": "lt1",
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": ""
+          }
+        ]
+      },
+      "fillColor": "accent1",
+      "lineColor": {
+        "type": "theme",
+        "value": "accent1",
+        "transform": {
+          "lighten": 0.8
+        }
+      },
+      "lineWidth": 1
+    },
+    {
+      "order": 15,
+      "kind": "image",
+      "scope": "slide",
+      "aid": "im/0bi9s36h",
+      "id": "29",
+      "name": "图片 21",
+      "bbox": [
+        109.33,
+        559.11,
+        42.67,
+        42.67
+      ],
+      "contentType": "image/svg+xml",
+      "asset": {
+        "assetId": "/ppt/media/image44.svg",
+        "contentType": "image/svg+xml",
+        "byteLength": 8840
+      },
+      "fillImage": {
+        "assetId": "/ppt/media/image44.svg",
+        "contentType": "image/svg+xml",
+        "byteLength": 8840
+      }
+    },
+    {
+      "order": 16,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/6dcbulwv",
+      "id": "24",
+      "name": "文本框 23",
+      "bbox": [
+        194.67,
+        531.07,
+        565.33,
+        37.33
+      ],
+      "geometry": "rect",
+      "text": "资金用途合规要求",
+      "textPreview": "资金用途合规要求",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 24,
+        "typeface": "微软雅黑",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 1.87,
+          "bottom": 0,
+          "left": 1.87
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "资金用途合规要求"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "资金用途合规要求",
+          "resolvedTextStyle": {
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "资金用途合规要求",
+              "fontSize": 28,
+              "typeface": "微软雅黑",
+              "color": "dk1"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 17,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/vy90je9c",
+      "id": "25",
+      "name": "文本框 24",
+      "bbox": [
+        194.67,
+        573.73,
+        565.33,
+        56
+      ],
+      "geometry": "rect",
+      "text": "传承金需用于约定用途（如教育、医疗），2022年上海某案例中因挪用资金至投资领域被保险公司暂缓支付。",
+      "textPreview": "传承金需用于约定用途（如教育、医疗），2022年上海某案例中因挪用资金至投资领域被保险公司暂缓支付。",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 24,
+        "typeface": "微软雅黑",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 1.87,
+          "bottom": 0,
+          "left": 1.87
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "传承金需用于约定用途（如教育、医疗），2022"
+          },
+          {
+            "index": 2,
+            "text": "年上海某案例中因挪用资金至投资领域被保险公司暂缓支付。"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "传承金需用于约定用途（如教育、医疗），2022年上海某案例中因挪用资金至投资领域被保险公司暂缓支付。",
+          "lineSpacingPercent": 120000,
+          "resolvedTextStyle": {
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "传承金需用于约定用途（如教育、医疗），",
+              "fontSize": 18.67,
+              "typeface": "微软雅黑",
+              "color": "dk1"
+            },
+            {
+              "index": 2,
+              "text": "2022",
+              "fontSize": 18.67,
+              "typeface": "微软雅黑",
+              "color": "dk1"
+            },
+            {
+              "index": 3,
+              "text": "年上海某案例中因挪用资金至投资领域被保险公司暂缓支付。",
+              "fontSize": 18.67,
+              "typeface": "微软雅黑",
+              "color": "dk1"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 18,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/bi9s36hc",
+      "id": "9",
+      "name": "标题 8",
+      "bbox": [
+        64,
+        50.66,
+        720,
+        74.66
+      ],
+      "text": "传承提领规则说明",
+      "textPreview": "传承提领规则说明",
+      "resolvedFontSize": 48,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "vertical": 1,
+        "fontSize": 48,
+        "typeface": "微软雅黑",
+        "color": "tx1",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "传承提领规则说明"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "传承提领规则说明",
+          "runs": [
+            {
+              "index": 1,
+              "text": "传承提领规则说明",
+              "typeface": "微软雅黑",
+              "color": {
+                "type": "theme",
+                "value": "tx1",
+                "transform": {
+                  "lighten": 1
+                }
+              }
+            }
+          ],
+          "bulletCharacter": "",
+          "lineSpacingPercent": 110000,
+          "spaceBefore": 0
+        }
+      ]
+    }
+  ],
+  "composeRuns": []
+}

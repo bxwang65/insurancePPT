@@ -1,0 +1,215 @@
+{
+  "templateId": "business",
+  "slides": [
+    {
+      "outputSlide": 1,
+      "textRewrites": [
+        {
+          "shapeId": "6",
+          "text": "陈小姐 家庭重疾保障方案"
+        },
+        {
+          "shapeId": "10",
+          "text": "友邦保险 · 守护家危疾保障计划"
+        },
+        {
+          "shapeId": "31",
+          "text": "Critical Illness Plan"
+        }
+      ],
+      "imageReplacements": [],
+      "deletions": []
+    },
+    {
+      "outputSlide": 2,
+      "textRewrites": [
+        {
+          "shapeId": "6",
+          "text": "公司与服务"
+        },
+        {
+          "shapeId": "10",
+          "text": "友邦保险 公开资料与保障理念"
+        },
+        {
+          "shapeId": "14",
+          "text": "正式资料来源"
+        },
+        {
+          "shapeId": "15",
+          "text": "公司介绍资料库 + 官方计划书 + 来源页码"
+        },
+        {
+          "shapeId": "20",
+          "text": "方案定位"
+        },
+        {
+          "shapeId": "21",
+          "text": "重疾保障优先，兼顾现金价值与长期可持续缴费"
+        }
+      ],
+      "imageReplacements": [],
+      "deletions": []
+    },
+    {
+      "outputSlide": 3,
+      "textRewrites": [
+        {
+          "shapeId": "6",
+          "text": "核心保障概览"
+        },
+        {
+          "shapeId": "12",
+          "text": "基础保额"
+        },
+        {
+          "shapeId": "13",
+          "text": "约 US$500,000"
+        },
+        {
+          "shapeId": "14",
+          "text": "年缴保费"
+        },
+        {
+          "shapeId": "19",
+          "text": "约 US$4,949 / 年"
+        },
+        {
+          "shapeId": "24",
+          "text": "缴费期约 10 年"
+        },
+        {
+          "shapeId": "30",
+          "text": "保障责任共 3 项（官方条款可追溯）"
+        }
+      ],
+      "imageReplacements": [],
+      "deletions": []
+    },
+    {
+      "outputSlide": 4,
+      "textRewrites": [
+        {
+          "shapeId": "6",
+          "text": "保障与现金价值路径"
+        },
+        {
+          "shapeId": "10",
+          "text": "第1年"
+        },
+        {
+          "shapeId": "11",
+          "text": "累计保费约 US$4,949"
+        },
+        {
+          "shapeId": "13",
+          "text": "第20年"
+        },
+        {
+          "shapeId": "14",
+          "text": "累计保费约 US$49,490"
+        },
+        {
+          "shapeId": "18",
+          "text": "重疾保障"
+        },
+        {
+          "shapeId": "19",
+          "text": "重疾赔付约 US$500,000"
+        },
+        {
+          "shapeId": "25",
+          "text": "保单仍可保留长期保障结构"
+        },
+        {
+          "shapeId": "26",
+          "text": "用于家庭重大风险事件的现金与责任缓冲"
+        },
+        {
+          "shapeId": "30",
+          "text": "关键数字全部可回溯至官方页码"
+        },
+        {
+          "shapeId": "31",
+          "text": "避免以历史客户数据代替本单结果"
+        }
+      ],
+      "imageReplacements": [],
+      "deletions": []
+    },
+    {
+      "outputSlide": 5,
+      "textRewrites": [
+        {
+          "shapeId": "6",
+          "text": "保障责任重点"
+        },
+        {
+          "shapeId": "12",
+          "text": "保障责任一"
+        },
+        {
+          "shapeId": "13",
+          "text": "恶性肿瘤重度"
+        },
+        {
+          "shapeId": "15",
+          "text": "保障责任二"
+        },
+        {
+          "shapeId": "16",
+          "text": "严重疾病多重赔付"
+        },
+        {
+          "shapeId": "19",
+          "text": "保障责任三"
+        },
+        {
+          "shapeId": "21",
+          "text": "身故保障"
+        },
+        {
+          "shapeId": "23",
+          "text": "适用场景"
+        },
+        {
+          "shapeId": "24",
+          "text": "用于家庭高负债或育儿阶段的风险对冲"
+        }
+      ],
+      "imageReplacements": [],
+      "deletions": []
+    },
+    {
+      "outputSlide": 6,
+      "textRewrites": [
+        {
+          "shapeId": "6",
+          "text": "方案总结"
+        },
+        {
+          "shapeId": "12",
+          "text": "重疾险定制输出"
+        },
+        {
+          "shapeId": "13",
+          "text": "保额、保费、责任、现金价值四维可追溯"
+        },
+        {
+          "shapeId": "18",
+          "text": "客户沟通重点"
+        },
+        {
+          "shapeId": "19",
+          "text": "把复杂条款转成可执行的家庭保障策略"
+        },
+        {
+          "shapeId": "30",
+          "text": "后续可叠加储蓄险与IUL形成组合方案"
+        }
+      ],
+      "imageReplacements": [],
+      "deletions": []
+    }
+  ]
+}

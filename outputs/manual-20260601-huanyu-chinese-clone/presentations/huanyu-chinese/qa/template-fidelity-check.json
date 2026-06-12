@@ -1,0 +1,13 @@
+{
+  "status": "pass",
+  "checkedAt": "2026-06-01T08:02:35.943Z",
+  "workspace": "/Users/soldier/free-code/packages/insurance-ppt/outputs/manual-20260601-huanyu-chinese-clone/presentations/huanyu-chinese",
+  "finalPptx": "/Users/soldier/free-code/packages/insurance-ppt/outputs/manual-20260601-huanyu-chinese-clone/presentations/huanyu-chinese/环球盈活储蓄保险计划_中国风正式验证版.pptx",
+  "starterPptx": "/Users/soldier/free-code/packages/insurance-ppt/outputs/manual-20260601-huanyu-chinese-clone/presentations/huanyu-chinese/template-starter.pptx",
+  "mapPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/manual-20260601-huanyu-chinese-clone/presentations/huanyu-chinese/template-frame-map.json",
+  "starterLayoutDir": "/Users/soldier/free-code/packages/insurance-ppt/outputs/manual-20260601-huanyu-chinese-clone/presentations/huanyu-chinese/template-starter-layout",
+  "finalLayoutDir": "/Users/soldier/free-code/packages/insurance-ppt/outputs/manual-20260601-huanyu-chinese-clone/presentations/huanyu-chinese/final-layout",
+  "editDir": "/Users/soldier/free-code/packages/insurance-ppt/outputs/manual-20260601-huanyu-chinese-clone/presentations/huanyu-chinese/authoring-evidence",
+  "issueCount": 0,
+  "issues": []
+}

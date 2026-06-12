@@ -1,0 +1,215 @@
+{
+  "templateId": "business",
+  "slides": [
+    {
+      "outputSlide": 1,
+      "textRewrites": [
+        {
+          "shapeId": "6",
+          "text": "VIP 先生 家庭资产保障综合方案"
+        },
+        {
+          "shapeId": "10",
+          "text": "友邦保险 · 储蓄险 + 重疾险"
+        },
+        {
+          "shapeId": "31",
+          "text": "Savings + CI Bundle"
+        }
+      ],
+      "imageReplacements": [],
+      "deletions": []
+    },
+    {
+      "outputSlide": 2,
+      "textRewrites": [
+        {
+          "shapeId": "6",
+          "text": "方案结构"
+        },
+        {
+          "shapeId": "10",
+          "text": "储蓄资产增长 + 重疾风险保障双轮驱动"
+        },
+        {
+          "shapeId": "14",
+          "text": "资料来源"
+        },
+        {
+          "shapeId": "15",
+          "text": "官方计划书 + 公司公开资料 + 可追溯页码"
+        },
+        {
+          "shapeId": "20",
+          "text": "客户目标"
+        },
+        {
+          "shapeId": "21",
+          "text": "在保障突发风险基础上，实现长期稳健增值"
+        }
+      ],
+      "imageReplacements": [],
+      "deletions": []
+    },
+    {
+      "outputSlide": 3,
+      "textRewrites": [
+        {
+          "shapeId": "6",
+          "text": "储蓄险核心价值"
+        },
+        {
+          "shapeId": "12",
+          "text": "总缴保费约 US$500,000"
+        },
+        {
+          "shapeId": "13",
+          "text": "20年现金价值约 2.72 倍"
+        },
+        {
+          "shapeId": "14",
+          "text": "30年现金价值约 5.85 倍"
+        },
+        {
+          "shapeId": "19",
+          "text": "兼顾教育金/养老金与家庭现金流弹性"
+        },
+        {
+          "shapeId": "24",
+          "text": "关键数字均可追溯到官方利益演示"
+        },
+        {
+          "shapeId": "30",
+          "text": "长期资产端提供复利增长底盘"
+        }
+      ],
+      "imageReplacements": [],
+      "deletions": []
+    },
+    {
+      "outputSlide": 4,
+      "textRewrites": [
+        {
+          "shapeId": "6",
+          "text": "重疾险核心价值"
+        },
+        {
+          "shapeId": "10",
+          "text": "保额约 US$500,000"
+        },
+        {
+          "shapeId": "11",
+          "text": "年缴约 US$4,949 / 缴费 10 年"
+        },
+        {
+          "shapeId": "13",
+          "text": "核心保障责任"
+        },
+        {
+          "shapeId": "14",
+          "text": "恶性肿瘤重度"
+        },
+        {
+          "shapeId": "18",
+          "text": "严重疾病多重赔付"
+        },
+        {
+          "shapeId": "19",
+          "text": "用于覆盖家庭重大健康风险冲击"
+        },
+        {
+          "shapeId": "25",
+          "text": "保障端降低突发事件对资产计划的侵蚀"
+        },
+        {
+          "shapeId": "26",
+          "text": "与储蓄险形成风险-收益互补结构"
+        },
+        {
+          "shapeId": "30",
+          "text": "责任条款均可回溯至官方保障页"
+        },
+        {
+          "shapeId": "31",
+          "text": "正式版禁用模拟数字与历史客户回填"
+        }
+      ],
+      "imageReplacements": [],
+      "deletions": []
+    },
+    {
+      "outputSlide": 5,
+      "textRewrites": [
+        {
+          "shapeId": "6",
+          "text": "组合配置建议"
+        },
+        {
+          "shapeId": "12",
+          "text": "资产端"
+        },
+        {
+          "shapeId": "13",
+          "text": "储蓄险承担长期增值与现金流规划"
+        },
+        {
+          "shapeId": "15",
+          "text": "保障端"
+        },
+        {
+          "shapeId": "16",
+          "text": "重疾险覆盖突发风险与医疗财务冲击"
+        },
+        {
+          "shapeId": "19",
+          "text": "协同策略"
+        },
+        {
+          "shapeId": "21",
+          "text": "先保障家庭底线，再放大长期复利效率"
+        },
+        {
+          "shapeId": "23",
+          "text": "执行建议"
+        },
+        {
+          "shapeId": "24",
+          "text": "按年度复盘保额、保费与现金价值进度"
+        }
+      ],
+      "imageReplacements": [],
+      "deletions": []
+    },
+    {
+      "outputSlide": 6,
+      "textRewrites": [
+        {
+          "shapeId": "6",
+          "text": "方案总结"
+        },
+        {
+          "shapeId": "12",
+          "text": "储蓄 + 重疾双产品定制输出"
+        },
+        {
+          "shapeId": "13",
+          "text": "数字可追溯、逻辑可解释、组合可执行"
+        },
+        {
+          "shapeId": "18",
+          "text": "下一步"
+        },
+        {
+          "shapeId": "19",
+          "text": "可在此基础上叠加 IUL 构建传承杠杆"
+        },
+        {
+          "shapeId": "30",
+          "text": "祝愿家庭资产稳健增长、保障长期有效"
+        }
+      ],
+      "imageReplacements": [],
+      "deletions": []
+    }
+  ]
+}

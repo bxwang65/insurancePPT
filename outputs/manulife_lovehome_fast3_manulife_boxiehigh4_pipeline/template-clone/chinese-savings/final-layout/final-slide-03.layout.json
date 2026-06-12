@@ -1,0 +1,1661 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/s72x4nap",
+    "id": "s72x4nap",
+    "slide": 4,
+    "layoutId": "/ppt/slideLayouts/slideLayout29.xml",
+    "layoutName": "正文页-26_16",
+    "masterLayoutId": "/ppt/slideMasters/slideMaster2.xml",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "Office",
+    "colors": {
+      "accent1": "#5B9BD5",
+      "accent2": "#ED7D31",
+      "accent3": "#A5A5A5",
+      "accent4": "#FFC000",
+      "accent5": "#4472C4",
+      "accent6": "#70AD47",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#44546A",
+      "lt2": "#E7E6E6",
+      "hlink": "#0563C1",
+      "folHlink": "#954F72"
+    },
+    "fontScheme": {
+      "name": "Aspect",
+      "majorFont": {
+        "latinTypeface": "微软雅黑"
+      },
+      "minorFont": {
+        "latinTypeface": "微软雅黑"
+      }
+    },
+    "typefaces": [
+      "微软雅黑",
+      "汉仪中宋简",
+      "汉仪书宋二简"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "/ppt/slideLayouts/slideLayout29.xml",
+      "name": "正文页-26_16",
+      "parentLayoutId": "/ppt/slideMasters/slideMaster2.xml",
+      "elements": [
+        {
+          "order": 1,
+          "kind": "shape",
+          "scope": "layout",
+          "aid": "template/layout//ppt/slideLayouts/slideLayout29.xml/8",
+          "id": "8",
+          "name": "日期占位符 7",
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "order": 2,
+          "kind": "shape",
+          "scope": "layout",
+          "aid": "template/layout//ppt/slideLayouts/slideLayout29.xml/9",
+          "id": "9",
+          "name": "页脚占位符 8",
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "order": 3,
+          "kind": "shape",
+          "scope": "layout",
+          "aid": "template/layout//ppt/slideLayouts/slideLayout29.xml/10",
+          "id": "10",
+          "name": "灯片编号占位符 9",
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "order": 4,
+          "kind": "shape",
+          "scope": "layout",
+          "aid": "template/layout//ppt/slideLayouts/slideLayout29.xml/11",
+          "id": "11",
+          "name": "标题 10",
+          "bbox": [
+            64,
+            56,
+            1152,
+            64
+          ],
+          "geometry": "rect",
+          "text": "单击此处添加标题",
+          "textPreview": "单击此处添加标题",
+          "resolvedTextStyle": {
+            "anchor": 1,
+            "verticalAlignment": "top",
+            "autoFit": "shrinkText",
+            "insets": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "单击此处添加标题",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "单击此处添加标题",
+                  "typeface": "汉仪中宋简"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "order": 5,
+          "kind": "shape",
+          "scope": "layout",
+          "aid": "template/layout//ppt/slideLayouts/slideLayout29.xml/12",
+          "id": "12",
+          "name": "装饰  1",
+          "bbox": [
+            64,
+            410.67,
+            362.67,
+            245.33
+          ],
+          "geometry": "custom",
+          "resolvedTextStyle": {
+            "autoFit": "none"
+          },
+          "paragraphs": [
+            {
+              "index": 1,
+              "runs": [
+                {
+                  "index": 1,
+                  "text": " ",
+                  "typeface": "汉仪书宋二简"
+                }
+              ]
+            }
+          ],
+          "lineColor": "#000000"
+        },
+        {
+          "order": 6,
+          "kind": "shape",
+          "scope": "layout",
+          "aid": "template/layout//ppt/slideLayouts/slideLayout29.xml/13",
+          "id": "13",
+          "name": "图片占位符 12",
+          "bbox": [
+            64,
+            160,
+            362.67,
+            250.67
+          ],
+          "geometry": "custom",
+          "resolvedTextStyle": {
+            "autoFit": "none"
+          },
+          "paragraphs": [
+            {
+              "index": 1,
+              "runs": [
+                {
+                  "index": 1,
+                  "text": " ",
+                  "typeface": "汉仪书宋二简"
+                }
+              ]
+            }
+          ],
+          "fillColor": "#DDDDDD"
+        },
+        {
+          "order": 7,
+          "kind": "shape",
+          "scope": "layout",
+          "aid": "template/layout//ppt/slideLayouts/slideLayout29.xml/14",
+          "id": "14",
+          "name": "文本占位符 13",
+          "bbox": [
+            96,
+            442.67,
+            298.67,
+            42.67
+          ],
+          "geometry": "rect",
+          "text": "项标题",
+          "textPreview": "项标题",
+          "resolvedTextStyle": {
+            "anchor": 1,
+            "verticalAlignment": "top",
+            "autoFit": "shrinkText",
+            "insets": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "项标题",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "项标题",
+                  "typeface": "汉仪书宋二简"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "order": 8,
+          "kind": "shape",
+          "scope": "layout",
+          "aid": "template/layout//ppt/slideLayouts/slideLayout29.xml/15",
+          "id": "15",
+          "name": "文本占位符 14",
+          "bbox": [
+            96,
+            496,
+            298.67,
+            128
+          ],
+          "geometry": "rect",
+          "text": "单击此处添加项正文",
+          "textPreview": "单击此处添加项正文",
+          "resolvedTextStyle": {
+            "anchor": 1,
+            "verticalAlignment": "top",
+            "autoFit": "shrinkText",
+            "insets": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "单击此处添加项正文",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "单击此处添加项正文",
+                  "typeface": "汉仪书宋二简"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "order": 9,
+          "kind": "shape",
+          "scope": "layout",
+          "aid": "template/layout//ppt/slideLayouts/slideLayout29.xml/16",
+          "id": "16",
+          "name": "装饰  5",
+          "bbox": [
+            458.67,
+            160,
+            362.67,
+            245.33
+          ],
+          "geometry": "custom",
+          "resolvedTextStyle": {
+            "autoFit": "none"
+          },
+          "paragraphs": [
+            {
+              "index": 1,
+              "runs": [
+                {
+                  "index": 1,
+                  "text": " ",
+                  "typeface": "汉仪书宋二简"
+                }
+              ]
+            }
+          ],
+          "lineColor": "#000000"
+        },
+        {
+          "order": 10,
+          "kind": "shape",
+          "scope": "layout",
+          "aid": "template/layout//ppt/slideLayouts/slideLayout29.xml/17",
+          "id": "17",
+          "name": "图片占位符 16",
+          "bbox": [
+            458.67,
+            405.33,
+            362.67,
+            250.67
+          ],
+          "geometry": "custom",
+          "resolvedTextStyle": {
+            "autoFit": "none"
+          },
+          "paragraphs": [
+            {
+              "index": 1,
+              "runs": [
+                {
+                  "index": 1,
+                  "text": " ",
+                  "typeface": "汉仪书宋二简"
+                }
+              ]
+            }
+          ],
+          "fillColor": "#DDDDDD"
+        },
+        {
+          "order": 11,
+          "kind": "shape",
+          "scope": "layout",
+          "aid": "template/layout//ppt/slideLayouts/slideLayout29.xml/18",
+          "id": "18",
+          "name": "文本占位符 17",
+          "bbox": [
+            490.67,
+            192,
+            298.67,
+            42.67
+          ],
+          "geometry": "rect",
+          "text": "项标题",
+          "textPreview": "项标题",
+          "resolvedTextStyle": {
+            "anchor": 1,
+            "verticalAlignment": "top",
+            "autoFit": "shrinkText",
+            "insets": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "项标题",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "项标题",
+                  "typeface": "汉仪书宋二简"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "order": 12,
+          "kind": "shape",
+          "scope": "layout",
+          "aid": "template/layout//ppt/slideLayouts/slideLayout29.xml/19",
+          "id": "19",
+          "name": "文本占位符 18",
+          "bbox": [
+            490.67,
+            245.33,
+            298.67,
+            128
+          ],
+          "geometry": "rect",
+          "text": "单击此处添加项正文",
+          "textPreview": "单击此处添加项正文",
+          "resolvedTextStyle": {
+            "anchor": 1,
+            "verticalAlignment": "top",
+            "autoFit": "shrinkText",
+            "insets": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "单击此处添加项正文",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "单击此处添加项正文",
+                  "typeface": "汉仪书宋二简"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "order": 13,
+          "kind": "shape",
+          "scope": "layout",
+          "aid": "template/layout//ppt/slideLayouts/slideLayout29.xml/20",
+          "id": "20",
+          "name": "装饰  9",
+          "bbox": [
+            853.33,
+            410.67,
+            362.67,
+            245.33
+          ],
+          "geometry": "custom",
+          "resolvedTextStyle": {
+            "autoFit": "none"
+          },
+          "paragraphs": [
+            {
+              "index": 1,
+              "runs": [
+                {
+                  "index": 1,
+                  "text": " ",
+                  "typeface": "汉仪书宋二简"
+                }
+              ]
+            }
+          ],
+          "lineColor": "#000000"
+        },
+        {
+          "order": 14,
+          "kind": "shape",
+          "scope": "layout",
+          "aid": "template/layout//ppt/slideLayouts/slideLayout29.xml/21",
+          "id": "21",
+          "name": "图片占位符 20",
+          "bbox": [
+            853.33,
+            160,
+            362.67,
+            250.67
+          ],
+          "geometry": "custom",
+          "resolvedTextStyle": {
+            "autoFit": "none"
+          },
+          "paragraphs": [
+            {
+              "index": 1,
+              "runs": [
+                {
+                  "index": 1,
+                  "text": " ",
+                  "typeface": "汉仪书宋二简"
+                }
+              ]
+            }
+          ],
+          "fillColor": "#DDDDDD"
+        },
+        {
+          "order": 15,
+          "kind": "shape",
+          "scope": "layout",
+          "aid": "template/layout//ppt/slideLayouts/slideLayout29.xml/22",
+          "id": "22",
+          "name": "文本占位符 21",
+          "bbox": [
+            885.33,
+            442.67,
+            298.67,
+            42.67
+          ],
+          "geometry": "rect",
+          "text": "项标题",
+          "textPreview": "项标题",
+          "resolvedTextStyle": {
+            "anchor": 1,
+            "verticalAlignment": "top",
+            "autoFit": "shrinkText",
+            "insets": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "项标题",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "项标题",
+                  "typeface": "汉仪书宋二简"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "order": 16,
+          "kind": "shape",
+          "scope": "layout",
+          "aid": "template/layout//ppt/slideLayouts/slideLayout29.xml/23",
+          "id": "23",
+          "name": "文本占位符 22",
+          "bbox": [
+            885.33,
+            496,
+            298.67,
+            128
+          ],
+          "geometry": "rect",
+          "text": "单击此处添加项正文",
+          "textPreview": "单击此处添加项正文",
+          "resolvedTextStyle": {
+            "anchor": 1,
+            "verticalAlignment": "top",
+            "autoFit": "shrinkText",
+            "insets": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "单击此处添加项正文",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "单击此处添加项正文",
+                  "typeface": "汉仪书宋二简"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "scope": "master",
+      "id": "/ppt/slideMasters/slideMaster2.xml",
+      "type": "master",
+      "elements": [
+        {
+          "order": 1,
+          "kind": "image",
+          "scope": "master",
+          "aid": "template/master//ppt/slideMasters/slideMaster2.xml/10",
+          "id": "10",
+          "name": "图片 7",
+          "bbox": [
+            306.67,
+            146.67,
+            973.33,
+            573.33
+          ],
+          "contentType": "image/png",
+          "asset": {
+            "assetId": "/ppt/media/image.png",
+            "contentType": "image/png",
+            "byteLength": 655982
+          },
+          "fillImage": {
+            "assetId": "/ppt/media/image.png",
+            "contentType": "image/png",
+            "byteLength": 655982
+          }
+        },
+        {
+          "order": 2,
+          "kind": "shape",
+          "scope": "master",
+          "aid": "template/master//ppt/slideMasters/slideMaster2.xml/2",
+          "id": "2",
+          "name": "标题占位符 1",
+          "bbox": [
+            63.87,
+            63.87,
+            1151.62,
+            74.08
+          ],
+          "geometry": "rect",
+          "text": "单击此处编辑母版标题样式",
+          "textPreview": "单击此处编辑母版标题样式",
+          "resolvedTextStyle": {
+            "anchor": 2,
+            "vertical": 1,
+            "verticalAlignment": "middle",
+            "autoFit": "shrinkText",
+            "insets": {
+              "top": 4.93,
+              "right": 9.47,
+              "bottom": 4.93,
+              "left": 9.47
+            }
+          },
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "单击此处编辑母版标题样式",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "单击此处编辑母版标题样式",
+                  "typeface": "汉仪中宋简"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "order": 3,
+          "kind": "shape",
+          "scope": "master",
+          "aid": "template/master//ppt/slideMasters/slideMaster2.xml/3",
+          "id": "3",
+          "name": "文本占位符 2",
+          "bbox": [
+            63.87,
+            156.47,
+            1151.62,
+            499.65
+          ],
+          "geometry": "rect",
+          "text": "单击此处编辑母版文本样式\n第二级\n第三级\n第四级\n第五级",
+          "textPreview": "单击此处编辑母版文本样式 | 第二级 | 第三级 | 第四级 | 第五级",
+          "resolvedTextStyle": {
+            "vertical": 1,
+            "autoFit": "shrinkText",
+            "insets": {
+              "top": 4.91,
+              "right": 9.45,
+              "bottom": 4.91,
+              "left": 9.45
+            }
+          },
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "单击此处编辑母版文本样式",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "单击此处编辑母版文本样式",
+                  "typeface": "汉仪书宋二简"
+                }
+              ]
+            },
+            {
+              "index": 2,
+              "text": "第二级",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "第二级",
+                  "typeface": "汉仪书宋二简"
+                }
+              ]
+            },
+            {
+              "index": 3,
+              "text": "第三级",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "第三级",
+                  "typeface": "汉仪书宋二简"
+                }
+              ]
+            },
+            {
+              "index": 4,
+              "text": "第四级",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "第四级",
+                  "typeface": "汉仪书宋二简"
+                }
+              ]
+            },
+            {
+              "index": 5,
+              "text": "第五级",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "第五级",
+                  "typeface": "汉仪书宋二简"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "order": 4,
+          "kind": "shape",
+          "scope": "master",
+          "aid": "template/master//ppt/slideMasters/slideMaster2.xml/4",
+          "id": "4",
+          "name": "日期占位符 3",
+          "bbox": [
+            64.25,
+            662.93,
+            283.46,
+            33.26
+          ],
+          "geometry": "rect",
+          "resolvedTextStyle": {
+            "anchor": 2,
+            "vertical": 1,
+            "verticalAlignment": "middle",
+            "autoFit": "shrinkText",
+            "insets": {
+              "top": 4.8,
+              "right": 9.6,
+              "bottom": 4.8,
+              "left": 9.6
+            }
+          }
+        },
+        {
+          "order": 5,
+          "kind": "shape",
+          "scope": "master",
+          "aid": "template/master//ppt/slideMasters/slideMaster2.xml/5",
+          "id": "5",
+          "name": "页脚占位符 4",
+          "bbox": [
+            432.13,
+            662.93,
+            415.75,
+            33.26
+          ],
+          "geometry": "rect",
+          "resolvedTextStyle": {
+            "anchor": 2,
+            "vertical": 1,
+            "verticalAlignment": "middle",
+            "autoFit": "shrinkText",
+            "insets": {
+              "top": 4.8,
+              "right": 9.6,
+              "bottom": 4.8,
+              "left": 9.6
+            }
+          }
+        },
+        {
+          "order": 6,
+          "kind": "shape",
+          "scope": "master",
+          "aid": "template/master//ppt/slideMasters/slideMaster2.xml/6",
+          "id": "6",
+          "name": "灯片编号占位符 5",
+          "bbox": [
+            932.03,
+            662.93,
+            283.46,
+            33.26
+          ],
+          "geometry": "rect",
+          "resolvedTextStyle": {
+            "anchor": 2,
+            "vertical": 1,
+            "verticalAlignment": "middle",
+            "autoFit": "shrinkText",
+            "insets": {
+              "top": 4.8,
+              "right": 9.6,
+              "bottom": 4.8,
+              "left": 9.6
+            }
+          }
+        },
+        {
+          "order": 7,
+          "kind": "shape",
+          "scope": "master",
+          "aid": "template/master//ppt/slideMasters/slideMaster2.xml/9",
+          "id": "9",
+          "name": "KSO_TEMPLATE",
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "hidden": true,
+          "geometry": "rect",
+          "resolvedTextStyle": {
+            "anchor": 2,
+            "verticalAlignment": "middle"
+          }
+        }
+      ]
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/o7qpg3ex",
+      "id": "2",
+      "name": "标题 1",
+      "bbox": [
+        64,
+        56,
+        1152,
+        64
+      ],
+      "text": "一份保单，兼顾退休现金流与家族传承",
+      "textPreview": "一份保单，兼顾退休现金流与家族传承",
+      "resolvedFontSize": 48,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "vertical": 1,
+        "fontSize": 48,
+        "typeface": "微软雅黑",
+        "color": {
+          "type": "theme",
+          "value": "tx1",
+          "transform": {
+            "lighten": 0.15
+          }
+        },
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "textTransform": "none",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "一份保单，兼顾退休现金流与家族传承"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "一份保单，兼顾退休现金流与家族传承",
+          "lineSpacingPercent": 111000,
+          "resolvedTextStyle": {
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "一份保单，兼顾退休现金流与家族传承",
+              "typeface": "汉仪中宋简"
+            }
+          ],
+          "bulletCharacter": "",
+          "marginLeft": 0,
+          "indent": 0,
+          "spaceBefore": 0,
+          "spaceAfter": 0
+        }
+      ]
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/dsji5sne",
+      "id": "3",
+      "name": "装饰  1",
+      "bbox": [
+        64,
+        410.67,
+        362.67,
+        245.33
+      ],
+      "text": "⁠",
+      "textPreview": "⁠",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "vertical": 1,
+        "fontSize": 24,
+        "typeface": "微软雅黑",
+        "color": {
+          "type": "theme",
+          "value": "tx1",
+          "transform": {
+            "lighten": 0.35
+          }
+        },
+        "alignment": "left",
+        "textTransform": "none",
+        "autoFit": "none",
+        "insets": {
+          "top": 4.91,
+          "right": 9.45,
+          "bottom": 4.91,
+          "left": 9.45
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "⁠"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "⁠",
+          "runs": [
+            {
+              "index": 1,
+              "text": "⁠",
+              "typeface": "汉仪书宋二简"
+            }
+          ],
+          "bulletCharacter": "",
+          "marginLeft": 0,
+          "indent": 0,
+          "lineSpacingPercent": 130000,
+          "spaceBefore": 0,
+          "spaceAfter": 1000
+        }
+      ]
+    },
+    {
+      "order": 3,
+      "kind": "image",
+      "scope": "slide",
+      "aid": "im/dg7adsji",
+      "id": "15",
+      "name": "图片占位符 3",
+      "bbox": [
+        64,
+        160,
+        362.67,
+        250.67
+      ],
+      "alt": "cover.jpg",
+      "contentType": "image/jpeg",
+      "imageCrop": {
+        "left": 0,
+        "top": 0.0082,
+        "right": 0,
+        "bottom": 0.0082
+      },
+      "imageFit": "cover",
+      "asset": {
+        "assetId": "/ppt/media/image2.jpeg",
+        "contentType": "image/jpeg",
+        "byteLength": 144068
+      },
+      "fillImage": {
+        "assetId": "/ppt/media/image2.jpeg",
+        "contentType": "image/jpeg",
+        "byteLength": 144068
+      }
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/vy90je9c",
+      "id": "5",
+      "name": "文本占位符 4",
+      "bbox": [
+        96,
+        442.67,
+        298.67,
+        42.67
+      ],
+      "text": "本金投入清晰",
+      "textPreview": "本金投入清晰",
+      "resolvedFontSize": 22.02,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "vertical": 1,
+        "fontSize": 32,
+        "typeface": "微软雅黑",
+        "color": {
+          "type": "theme",
+          "value": "tx1",
+          "transform": {
+            "lighten": 0.35
+          }
+        },
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "textTransform": "none",
+        "autoFit": "shrinkText",
+        "autoFitScale": 0.69,
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "本金投入清晰"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "本金投入清晰",
+          "lineSpacingPercent": 111000,
+          "resolvedTextStyle": {
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "本金投入清晰",
+              "typeface": "汉仪书宋二简"
+            }
+          ],
+          "bulletCharacter": "",
+          "marginLeft": 0,
+          "indent": 0,
+          "spaceBefore": 0,
+          "spaceAfter": 0
+        }
+      ]
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/oj2t83it",
+      "id": "6",
+      "name": "文本占位符 5",
+      "bbox": [
+        96,
+        496,
+        298.67,
+        128
+      ],
+      "text": "合同总缴保费约 US$2,000,000，缴费期为 5 年。",
+      "textPreview": "合同总缴保费约 US$2,000,000，缴费期为 5 年。",
+      "resolvedFontSize": 21.33,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "vertical": 1,
+        "fontSize": 21.33,
+        "typeface": "微软雅黑",
+        "color": {
+          "type": "theme",
+          "value": "tx1",
+          "transform": {
+            "lighten": 0.35
+          }
+        },
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "textTransform": "none",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 3,
+        "lines": [
+          {
+            "index": 1,
+            "text": "合同总缴保费约"
+          },
+          {
+            "index": 2,
+            "text": "US$2,000,000，缴费期为 5"
+          },
+          {
+            "index": 3,
+            "text": "年。"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "合同总缴保费约 US$2,000,000，缴费期为 5 年。",
+          "lineSpacingPercent": 125000,
+          "resolvedTextStyle": {
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "合同总缴保费约 US$2,000,000，缴费期为 5 年。",
+              "typeface": "汉仪书宋二简"
+            }
+          ],
+          "bulletCharacter": "",
+          "marginLeft": 0,
+          "indent": 0,
+          "spaceBefore": 0,
+          "spaceAfter": 0
+        }
+      ]
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/d4vmtwra",
+      "id": "7",
+      "name": "装饰  5",
+      "bbox": [
+        458.67,
+        160,
+        362.67,
+        245.33
+      ],
+      "text": "⁠",
+      "textPreview": "⁠",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "vertical": 1,
+        "fontSize": 24,
+        "typeface": "微软雅黑",
+        "color": {
+          "type": "theme",
+          "value": "tx1",
+          "transform": {
+            "lighten": 0.35
+          }
+        },
+        "alignment": "left",
+        "textTransform": "none",
+        "autoFit": "none",
+        "insets": {
+          "top": 4.91,
+          "right": 9.45,
+          "bottom": 4.91,
+          "left": 9.45
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "⁠"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "⁠",
+          "runs": [
+            {
+              "index": 1,
+              "text": "⁠",
+              "typeface": "汉仪书宋二简"
+            }
+          ],
+          "bulletCharacter": "",
+          "marginLeft": 0,
+          "indent": 0,
+          "lineSpacingPercent": 130000,
+          "spaceBefore": 0,
+          "spaceAfter": 1000
+        }
+      ]
+    },
+    {
+      "order": 7,
+      "kind": "image",
+      "scope": "slide",
+      "aid": "im/6tovahoz",
+      "id": "16",
+      "name": "图片占位符 7",
+      "bbox": [
+        458.67,
+        405.33,
+        362.67,
+        250.67
+      ],
+      "alt": "scenario.jpg",
+      "contentType": "image/jpeg",
+      "imageCrop": {
+        "left": 0,
+        "top": 0.00156,
+        "right": 0,
+        "bottom": 0.00156
+      },
+      "imageFit": "cover",
+      "asset": {
+        "assetId": "/ppt/media/image3.jpeg",
+        "contentType": "image/jpeg",
+        "byteLength": 119701
+      },
+      "fillImage": {
+        "assetId": "/ppt/media/image3.jpeg",
+        "contentType": "image/jpeg",
+        "byteLength": 119701
+      }
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/z25kb6xk",
+      "id": "9",
+      "name": "文本占位符 8",
+      "bbox": [
+        490.67,
+        192,
+        298.67,
+        42.67
+      ],
+      "text": "长期价值可验证",
+      "textPreview": "长期价值可验证",
+      "resolvedFontSize": 22.02,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "vertical": 1,
+        "fontSize": 32,
+        "typeface": "微软雅黑",
+        "color": {
+          "type": "theme",
+          "value": "tx1",
+          "transform": {
+            "lighten": 0.35
+          }
+        },
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "textTransform": "none",
+        "autoFit": "shrinkText",
+        "autoFitScale": 0.69,
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "长期价值可验证"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "长期价值可验证",
+          "lineSpacingPercent": 111000,
+          "resolvedTextStyle": {
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "长期价值可验证",
+              "typeface": "汉仪书宋二简"
+            }
+          ],
+          "bulletCharacter": "",
+          "marginLeft": 0,
+          "indent": 0,
+          "spaceBefore": 0,
+          "spaceAfter": 0
+        }
+      ]
+    },
+    {
+      "order": 9,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/vy90je9c",
+      "id": "10",
+      "name": "文本占位符 9",
+      "bbox": [
+        490.67,
+        245.33,
+        298.67,
+        128
+      ],
+      "text": "不提领情景：第20年退保价值约 US$5,545,082；第30年约 US$11,709,541。",
+      "textPreview": "不提领情景：第20年退保价值约 US$5,545,082；第30年约 US$11,709,541。",
+      "resolvedFontSize": 21.33,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "vertical": 1,
+        "fontSize": 21.33,
+        "typeface": "微软雅黑",
+        "color": {
+          "type": "theme",
+          "value": "tx1",
+          "transform": {
+            "lighten": 0.35
+          }
+        },
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "textTransform": "none",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 3,
+        "lines": [
+          {
+            "index": 1,
+            "text": "不提领情景：第20年退保价值"
+          },
+          {
+            "index": 2,
+            "text": "约 US$5,545,082；第30年约"
+          },
+          {
+            "index": 3,
+            "text": "US$11,709,541。"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "不提领情景：第20年退保价值约 US$5,545,082；第30年约 US$11,709,541。",
+          "lineSpacingPercent": 125000,
+          "resolvedTextStyle": {
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "不提领情景：第20年退保价值约 US$5,545,082；第30年约 US$11,709,541。",
+              "typeface": "汉仪书宋二简"
+            }
+          ],
+          "bulletCharacter": "",
+          "marginLeft": 0,
+          "indent": 0,
+          "spaceBefore": 0,
+          "spaceAfter": 0
+        }
+      ]
+    },
+    {
+      "order": 10,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/6dcbulwv",
+      "id": "11",
+      "name": "装饰  9",
+      "bbox": [
+        853.33,
+        410.67,
+        362.67,
+        245.33
+      ],
+      "text": "⁠",
+      "textPreview": "⁠",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "vertical": 1,
+        "fontSize": 24,
+        "typeface": "微软雅黑",
+        "color": {
+          "type": "theme",
+          "value": "tx1",
+          "transform": {
+            "lighten": 0.35
+          }
+        },
+        "alignment": "left",
+        "textTransform": "none",
+        "autoFit": "none",
+        "insets": {
+          "top": 4.91,
+          "right": 9.45,
+          "bottom": 4.91,
+          "left": 9.45
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "⁠"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "⁠",
+          "runs": [
+            {
+              "index": 1,
+              "text": "⁠",
+              "typeface": "汉仪书宋二简"
+            }
+          ],
+          "bulletCharacter": "",
+          "marginLeft": 0,
+          "indent": 0,
+          "lineSpacingPercent": 130000,
+          "spaceBefore": 0,
+          "spaceAfter": 1000
+        }
+      ]
+    },
+    {
+      "order": 11,
+      "kind": "image",
+      "scope": "slide",
+      "aid": "im/vahoza1g",
+      "id": "17",
+      "name": "图片占位符 11",
+      "bbox": [
+        853.33,
+        160,
+        362.67,
+        250.67
+      ],
+      "alt": "1__宏家傳承保險計劃_cashflow.png",
+      "contentType": "image/png",
+      "imageCrop": {
+        "left": 0,
+        "top": 0.0082,
+        "right": 0,
+        "bottom": 0.0082
+      },
+      "imageFit": "cover",
+      "asset": {
+        "assetId": "/ppt/media/image4.jpeg",
+        "contentType": "image/png",
+        "byteLength": 31154
+      },
+      "fillImage": {
+        "assetId": "/ppt/media/image4.jpeg",
+        "contentType": "image/png",
+        "byteLength": 31154
+      }
+    },
+    {
+      "order": 12,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/oj2t83it",
+      "id": "13",
+      "name": "文本占位符 12",
+      "bbox": [
+        885.33,
+        442.67,
+        298.67,
+        42.67
+      ],
+      "text": "提领后仍保留账户价值",
+      "textPreview": "提领后仍保留账户价值",
+      "resolvedFontSize": 22.02,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "vertical": 1,
+        "fontSize": 32,
+        "typeface": "微软雅黑",
+        "color": {
+          "type": "theme",
+          "value": "tx1",
+          "transform": {
+            "lighten": 0.35
+          }
+        },
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "textTransform": "none",
+        "autoFit": "shrinkText",
+        "autoFitScale": 0.69,
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "提领后仍保留账户价值"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "提领后仍保留账户价值",
+          "lineSpacingPercent": 111000,
+          "resolvedTextStyle": {
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "提领后仍保留账户价值",
+              "typeface": "汉仪书宋二简"
+            }
+          ],
+          "bulletCharacter": "",
+          "marginLeft": 0,
+          "indent": 0,
+          "spaceBefore": 0,
+          "spaceAfter": 0
+        }
+      ]
+    },
+    {
+      "order": 13,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/vmtwra5g",
+      "id": "14",
+      "name": "文本占位符 13",
+      "bbox": [
+        885.33,
+        496,
+        298.67,
+        128
+      ],
+      "text": "现时假设下，自保单第11年起每年领取 US$95,575，第20年累计领取 US$893,336。",
+      "textPreview": "现时假设下，自保单第11年起每年领取 US$95,575，第20年累计领取 US$893,336。",
+      "resolvedFontSize": 19.19,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "vertical": 1,
+        "fontSize": 21.33,
+        "typeface": "微软雅黑",
+        "color": {
+          "type": "theme",
+          "value": "tx1",
+          "transform": {
+            "lighten": 0.35
+          }
+        },
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "textTransform": "none",
+        "autoFit": "shrinkText",
+        "autoFitScale": 0.9,
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 3,
+        "lines": [
+          {
+            "index": 1,
+            "text": "现时假设下，自保单第11年起每年"
+          },
+          {
+            "index": 2,
+            "text": "领取 US$95,575，第20年累计领取"
+          },
+          {
+            "index": 3,
+            "text": "US$893,336。"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "现时假设下，自保单第11年起每年领取 US$95,575，第20年累计领取 US$893,336。",
+          "lineSpacingPercent": 125000,
+          "resolvedTextStyle": {
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "现时假设下，自保单第11年起每年领取 US$95,575，第20年累计领取 US$893,336。",
+              "typeface": "汉仪书宋二简"
+            }
+          ],
+          "bulletCharacter": "",
+          "marginLeft": 0,
+          "indent": 0,
+          "spaceBefore": 0,
+          "spaceAfter": 0
+        }
+      ]
+    }
+  ],
+  "composeRuns": []
+}

@@ -1,0 +1,20 @@
+{
+  "renderMode": "artifact-tool-exact-clone-edit",
+  "starter": "/Users/soldier/free-code/packages/insurance-ppt/outputs/e990aeff-00d0-4bf5-a58d-a17ea245062e_api_pipeline/template-clone/broker-savings/template-starter.pptx",
+  "editPlanPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/e990aeff-00d0-4bf5-a58d-a17ea245062e_api_pipeline/template-clone/broker-savings/edit-plan.json",
+  "out": "/Users/soldier/free-code/packages/insurance-ppt/outputs/e990aeff-00d0-4bf5-a58d-a17ea245062e_api_pipeline/deck.pptx",
+  "slideCount": 10,
+  "previews": [
+    "/Users/soldier/free-code/packages/insurance-ppt/outputs/e990aeff-00d0-4bf5-a58d-a17ea245062e_api_pipeline/template-clone/broker-savings/final-preview/final-slide-01.png",
+    "/Users/soldier/free-code/packages/insurance-ppt/outputs/e990aeff-00d0-4bf5-a58d-a17ea245062e_api_pipeline/template-clone/broker-savings/final-preview/final-slide-02.png",
+    "/Users/soldier/free-code/packages/insurance-ppt/outputs/e990aeff-00d0-4bf5-a58d-a17ea245062e_api_pipeline/template-clone/broker-savings/final-preview/final-slide-03.png",
+    "/Users/soldier/free-code/packages/insurance-ppt/outputs/e990aeff-00d0-4bf5-a58d-a17ea245062e_api_pipeline/template-clone/broker-savings/final-preview/final-slide-04.png",
+    "/Users/soldier/free-code/packages/insurance-ppt/outputs/e990aeff-00d0-4bf5-a58d-a17ea245062e_api_pipeline/template-clone/broker-savings/final-preview/final-slide-05.png",
+    "/Users/soldier/free-code/packages/insurance-ppt/outputs/e990aeff-00d0-4bf5-a58d-a17ea245062e_api_pipeline/template-clone/broker-savings/final-preview/final-slide-06.png",
+    "/Users/soldier/free-code/packages/insurance-ppt/outputs/e990aeff-00d0-4bf5-a58d-a17ea245062e_api_pipeline/template-clone/broker-savings/final-preview/final-slide-07.png",
+    "/Users/soldier/free-code/packages/insurance-ppt/outputs/e990aeff-00d0-4bf5-a58d-a17ea245062e_api_pipeline/template-clone/broker-savings/final-preview/final-slide-08.png",
+    "/Users/soldier/free-code/packages/insurance-ppt/outputs/e990aeff-00d0-4bf5-a58d-a17ea245062e_api_pipeline/template-clone/broker-savings/final-preview/final-slide-09.png",
+    "/Users/soldier/free-code/packages/insurance-ppt/outputs/e990aeff-00d0-4bf5-a58d-a17ea245062e_api_pipeline/template-clone/broker-savings/final-preview/final-slide-10.png"
+  ],
+  "generatedAt": "2026-06-08T09:12:36.783Z"
+}

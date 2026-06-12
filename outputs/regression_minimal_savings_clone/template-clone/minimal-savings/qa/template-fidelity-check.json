@@ -1,0 +1,13 @@
+{
+  "status": "pass",
+  "checkedAt": "2026-06-01T18:15:55.396Z",
+  "workspace": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings",
+  "finalPptx": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/deck.pptx",
+  "starterPptx": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-starter.pptx",
+  "mapPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-frame-map.json",
+  "starterLayoutDir": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-starter-layout",
+  "finalLayoutDir": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/final-layout",
+  "editDir": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/authoring-evidence",
+  "issueCount": 0,
+  "issues": []
+}

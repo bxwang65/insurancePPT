@@ -1,0 +1,14 @@
+{
+  "id": "ci-single",
+  "displayName": "单一重疾险定制方案",
+  "products": ["ci"],
+  "templateFamily": "ci",
+  "status": "active",
+  "modules": [
+    "company-profile",
+    "critical-illness-coverage-summary",
+    "multi-claim-analysis",
+    "cash-value-analysis",
+    "recommendation"
+  ]
+}

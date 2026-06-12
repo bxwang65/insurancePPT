@@ -1,0 +1,9 @@
+{
+  "id": "zurich",
+  "displayName": "苏黎世",
+  "aliases": ["Zurich", "苏黎世", "蘇黎世"],
+  "tenantId": "default",
+  "knowledgeDirectories": ["ZURICH-苏黎世"],
+  "evidenceRanking": ["简介", "fact", "财务", "实力", "概览"],
+  "companyIntro": "苏黎世相关公司资料仅使用内部资料库中已索引、可追溯的文件。"
+}

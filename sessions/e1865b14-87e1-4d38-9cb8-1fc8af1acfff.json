@@ -1,0 +1,1178 @@
+{
+  "id": "e1865b14-87e1-4d38-9cb8-1fc8af1acfff",
+  "ownerId": "local",
+  "files": [
+    {
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/uploads/local/e1865b14-87e1-4d38-9cb8-1fc8af1acfff_世代悅享3.pdf",
+      "name": "世代悅享3.pdf",
+      "type": "savings"
+    }
+  ],
+  "status": "done",
+  "extractions": [
+    {
+      "pdfName": "世代悅享3.pdf",
+      "pdfPath": "/Users/soldier/free-code/packages/insurance-ppt/uploads/local/e1865b14-87e1-4d38-9cb8-1fc8af1acfff_世代悅享3.pdf",
+      "planType": "savings",
+      "data": {
+        "product_name": "「世悅享儲蓄保險計劃」",
+        "product_type": "savings",
+        "insured": {
+          "name": "VIP",
+          "age": 0,
+          "gender": "男",
+          "smoker": null
+        },
+        "policy": {
+          "product_name": "「世悅享儲蓄保險計劃」",
+          "currency": "USD",
+          "sum_insured": null,
+          "basic_sum_insured": null,
+          "annual_premium": 100000,
+          "premium_payment_period": "0年",
+          "coverage_period": "至128岁",
+          "total_premium_with_levy": null
+        },
+        "benefit_illustration": [
+          {
+            "policy_year": 1,
+            "total_premium_paid": 100000,
+            "guaranteed_cash_value": 0,
+            "reversionary_bonus": 0,
+            "terminal_dividend": 0,
+            "total_surrender_value": 0,
+            "source_page": 2
+          },
+          {
+            "policy_year": 2,
+            "total_premium_paid": 200000,
+            "guaranteed_cash_value": 0,
+            "reversionary_bonus": 0,
+            "terminal_dividend": 0,
+            "total_surrender_value": 0,
+            "source_page": 2
+          },
+          {
+            "policy_year": 3,
+            "total_premium_paid": 300000,
+            "guaranteed_cash_value": 25000,
+            "reversionary_bonus": 0,
+            "terminal_dividend": 0,
+            "total_surrender_value": 25000,
+            "source_page": 2
+          },
+          {
+            "policy_year": 4,
+            "total_premium_paid": 400000,
+            "guaranteed_cash_value": 125000,
+            "reversionary_bonus": 0,
+            "terminal_dividend": 0,
+            "total_surrender_value": 125000,
+            "source_page": 2
+          },
+          {
+            "policy_year": 5,
+            "total_premium_paid": 500000,
+            "guaranteed_cash_value": 275000,
+            "reversionary_bonus": 42500,
+            "terminal_dividend": 7810,
+            "total_surrender_value": 325310,
+            "source_page": 2
+          },
+          {
+            "policy_year": 6,
+            "total_premium_paid": 500000,
+            "guaranteed_cash_value": 400000,
+            "reversionary_bonus": 83188,
+            "terminal_dividend": 16815,
+            "total_surrender_value": 500003,
+            "source_page": 2
+          },
+          {
+            "policy_year": 7,
+            "total_premium_paid": 500000,
+            "guaranteed_cash_value": 425000,
+            "reversionary_bonus": 86103,
+            "terminal_dividend": 24995,
+            "total_surrender_value": 536098,
+            "source_page": 2
+          },
+          {
+            "policy_year": 8,
+            "total_premium_paid": 500000,
+            "guaranteed_cash_value": 450000,
+            "reversionary_bonus": 89034,
+            "terminal_dividend": 37750,
+            "total_surrender_value": 576784,
+            "source_page": 2
+          },
+          {
+            "policy_year": 9,
+            "total_premium_paid": 500000,
+            "guaranteed_cash_value": 475000,
+            "reversionary_bonus": 91979,
+            "terminal_dividend": 48495,
+            "total_surrender_value": 615474,
+            "source_page": 2
+          },
+          {
+            "policy_year": 10,
+            "total_premium_paid": 500000,
+            "guaranteed_cash_value": 481250,
+            "reversionary_bonus": 94939,
+            "terminal_dividend": 82995,
+            "total_surrender_value": 659184,
+            "source_page": 2
+          },
+          {
+            "policy_year": 11,
+            "total_premium_paid": 500000,
+            "guaranteed_cash_value": 487500,
+            "reversionary_bonus": 97914,
+            "terminal_dividend": 121140,
+            "total_surrender_value": 706554,
+            "source_page": 2
+          },
+          {
+            "policy_year": 12,
+            "total_premium_paid": 500000,
+            "guaranteed_cash_value": 493750,
+            "reversionary_bonus": 100903,
+            "terminal_dividend": 161105,
+            "total_surrender_value": 755758,
+            "source_page": 2
+          },
+          {
+            "policy_year": 13,
+            "total_premium_paid": 500000,
+            "guaranteed_cash_value": 500000,
+            "reversionary_bonus": 103908,
+            "terminal_dividend": 209090,
+            "total_surrender_value": 812998,
+            "source_page": 2
+          },
+          {
+            "policy_year": 14,
+            "total_premium_paid": 500000,
+            "guaranteed_cash_value": 501965,
+            "reversionary_bonus": 106927,
+            "terminal_dividend": 270655,
+            "total_surrender_value": 879547,
+            "source_page": 2
+          },
+          {
+            "policy_year": 15,
+            "total_premium_paid": 500000,
+            "guaranteed_cash_value": 503925,
+            "reversionary_bonus": 109962,
+            "terminal_dividend": 333545,
+            "total_surrender_value": 947432,
+            "source_page": 2
+          },
+          {
+            "policy_year": 16,
+            "total_premium_paid": 500000,
+            "guaranteed_cash_value": 505890,
+            "reversionary_bonus": 113012,
+            "terminal_dividend": 400405,
+            "total_surrender_value": 1019307,
+            "source_page": 2
+          },
+          {
+            "policy_year": 17,
+            "total_premium_paid": 500000,
+            "guaranteed_cash_value": 507850,
+            "reversionary_bonus": 116077,
+            "terminal_dividend": 479590,
+            "total_surrender_value": 1103517,
+            "source_page": 2
+          },
+          {
+            "policy_year": 18,
+            "total_premium_paid": 500000,
+            "guaranteed_cash_value": 509815,
+            "reversionary_bonus": 119157,
+            "terminal_dividend": 570200,
+            "total_surrender_value": 1199172,
+            "source_page": 2
+          },
+          {
+            "policy_year": 19,
+            "total_premium_paid": 500000,
+            "guaranteed_cash_value": 511775,
+            "reversionary_bonus": 122253,
+            "terminal_dividend": 673965,
+            "total_surrender_value": 1307993,
+            "source_page": 2
+          },
+          {
+            "policy_year": 20,
+            "total_premium_paid": 500000,
+            "guaranteed_cash_value": 513740,
+            "reversionary_bonus": 125364,
+            "terminal_dividend": 799000,
+            "total_surrender_value": 1438104,
+            "source_page": 2
+          },
+          {
+            "policy_year": 25,
+            "total_premium_paid": 500000,
+            "guaranteed_cash_value": 528215,
+            "reversionary_bonus": 141156,
+            "terminal_dividend": 1332355,
+            "total_surrender_value": 2001726,
+            "source_page": 2
+          },
+          {
+            "policy_year": 30,
+            "total_premium_paid": 500000,
+            "guaranteed_cash_value": 543100,
+            "reversionary_bonus": 157346,
+            "terminal_dividend": 2226930,
+            "total_surrender_value": 2927376,
+            "source_page": 2
+          },
+          {
+            "policy_year": 65,
+            "total_premium_paid": 500000,
+            "guaranteed_cash_value": 656055,
+            "reversionary_bonus": 278825,
+            "terminal_dividend": 23974560,
+            "total_surrender_value": 24909440,
+            "source_page": 2
+          },
+          {
+            "policy_year": 70,
+            "total_premium_paid": 500000,
+            "guaranteed_cash_value": 674540,
+            "reversionary_bonus": 298491,
+            "terminal_dividend": 33155045,
+            "total_surrender_value": 34128076,
+            "source_page": 2
+          },
+          {
+            "policy_year": 75,
+            "total_premium_paid": 500000,
+            "guaranteed_cash_value": 693550,
+            "reversionary_bonus": 318654,
+            "terminal_dividend": 45746200,
+            "total_surrender_value": 46758404,
+            "source_page": 2
+          },
+          {
+            "policy_year": 80,
+            "total_premium_paid": 500000,
+            "guaranteed_cash_value": 713090,
+            "reversionary_bonus": 339326,
+            "terminal_dividend": 63010615,
+            "total_surrender_value": 64063031,
+            "source_page": 2
+          },
+          {
+            "policy_year": 85,
+            "total_premium_paid": 500000,
+            "guaranteed_cash_value": 733185,
+            "reversionary_bonus": 360520,
+            "terminal_dividend": 86678160,
+            "total_surrender_value": 87771865,
+            "source_page": 2
+          },
+          {
+            "policy_year": 90,
+            "total_premium_paid": 500000,
+            "guaranteed_cash_value": 753840,
+            "reversionary_bonus": 382249,
+            "terminal_dividend": 119118920,
+            "total_surrender_value": 120255009,
+            "source_page": 2
+          },
+          {
+            "policy_year": 95,
+            "total_premium_paid": 500000,
+            "guaranteed_cash_value": 775085,
+            "reversionary_bonus": 404527,
+            "terminal_dividend": 163580095,
+            "total_surrender_value": 164759707,
+            "source_page": 2
+          },
+          {
+            "policy_year": 100,
+            "total_premium_paid": 500000,
+            "guaranteed_cash_value": 796925,
+            "reversionary_bonus": 427368,
+            "terminal_dividend": 224510680,
+            "total_surrender_value": 225734973,
+            "source_page": 2
+          },
+          {
+            "policy_year": 105,
+            "total_premium_paid": 500000,
+            "guaranteed_cash_value": 819380,
+            "reversionary_bonus": 450785,
+            "terminal_dividend": 308006170,
+            "total_surrender_value": 309276335,
+            "source_page": 2
+          },
+          {
+            "policy_year": 110,
+            "total_premium_paid": 500000,
+            "guaranteed_cash_value": 842465,
+            "reversionary_bonus": 474793,
+            "terminal_dividend": 422417925,
+            "total_surrender_value": 423735183,
+            "source_page": 2
+          },
+          {
+            "policy_year": 115,
+            "total_premium_paid": 500000,
+            "guaranteed_cash_value": 866205,
+            "reversionary_bonus": 499408,
+            "terminal_dividend": 579188035,
+            "total_surrender_value": 580553648,
+            "source_page": 2
+          },
+          {
+            "policy_year": 120,
+            "total_premium_paid": 500000,
+            "guaranteed_cash_value": 890610,
+            "reversionary_bonus": 524645,
+            "terminal_dividend": 793993185,
+            "total_surrender_value": 795408440,
+            "source_page": 2
+          },
+          {
+            "policy_year": 125,
+            "total_premium_paid": 500000,
+            "guaranteed_cash_value": 915705,
+            "reversionary_bonus": 550518,
+            "terminal_dividend": 1088311760,
+            "total_surrender_value": 1089777983,
+            "source_page": 2
+          },
+          {
+            "policy_year": 130,
+            "total_premium_paid": 500000,
+            "guaranteed_cash_value": 941510,
+            "reversionary_bonus": 577045,
+            "terminal_dividend": 1491571030,
+            "total_surrender_value": 1493089585,
+            "source_page": 2
+          }
+        ],
+        "withdrawal_illustration": [
+          {
+            "policy_year": 1,
+            "annual_withdrawal": 0,
+            "surrender_value_after": 0,
+            "total_withdrawn": 0
+          },
+          {
+            "policy_year": 2,
+            "annual_withdrawal": 0,
+            "surrender_value_after": 0,
+            "total_withdrawn": 0
+          },
+          {
+            "policy_year": 3,
+            "annual_withdrawal": 0,
+            "surrender_value_after": 25000,
+            "total_withdrawn": 0
+          },
+          {
+            "policy_year": 4,
+            "annual_withdrawal": 0,
+            "surrender_value_after": 125000,
+            "total_withdrawn": 0
+          },
+          {
+            "policy_year": 5,
+            "annual_withdrawal": 0,
+            "surrender_value_after": 325310,
+            "total_withdrawn": 0
+          },
+          {
+            "policy_year": 6,
+            "annual_withdrawal": 35000,
+            "surrender_value_after": 465003,
+            "total_withdrawn": 35000
+          },
+          {
+            "policy_year": 7,
+            "annual_withdrawal": 35000,
+            "surrender_value_after": 465923,
+            "total_withdrawn": 70000
+          },
+          {
+            "policy_year": 8,
+            "annual_withdrawal": 35000,
+            "surrender_value_after": 471257,
+            "total_withdrawn": 105000
+          },
+          {
+            "policy_year": 9,
+            "annual_withdrawal": 35000,
+            "surrender_value_after": 473208,
+            "total_withdrawn": 140000
+          },
+          {
+            "policy_year": 10,
+            "annual_withdrawal": 35000,
+            "surrender_value_after": 477303,
+            "total_withdrawn": 175000
+          },
+          {
+            "policy_year": 11,
+            "annual_withdrawal": 35000,
+            "surrender_value_after": 481971,
+            "total_withdrawn": 210000
+          },
+          {
+            "policy_year": 12,
+            "annual_withdrawal": 35000,
+            "surrender_value_after": 485547,
+            "total_withdrawn": 245000
+          },
+          {
+            "policy_year": 13,
+            "annual_withdrawal": 35000,
+            "surrender_value_after": 492613,
+            "total_withdrawn": 280000
+          },
+          {
+            "policy_year": 14,
+            "annual_withdrawal": 35000,
+            "surrender_value_after": 503484,
+            "total_withdrawn": 315000
+          },
+          {
+            "policy_year": 15,
+            "annual_withdrawal": 35000,
+            "surrender_value_after": 512373,
+            "total_withdrawn": 350000
+          },
+          {
+            "policy_year": 16,
+            "annual_withdrawal": 35000,
+            "surrender_value_after": 521009,
+            "total_withdrawn": 385000
+          },
+          {
+            "policy_year": 17,
+            "annual_withdrawal": 35000,
+            "surrender_value_after": 534094,
+            "total_withdrawn": 420000
+          },
+          {
+            "policy_year": 18,
+            "annual_withdrawal": 35000,
+            "surrender_value_after": 550518,
+            "total_withdrawn": 455000
+          },
+          {
+            "policy_year": 19,
+            "annual_withdrawal": 35000,
+            "surrender_value_after": 570682,
+            "total_withdrawn": 490000
+          },
+          {
+            "policy_year": 20,
+            "annual_withdrawal": 35000,
+            "surrender_value_after": 598008,
+            "total_withdrawn": 525000
+          },
+          {
+            "policy_year": 21,
+            "annual_withdrawal": 35000,
+            "surrender_value_after": 604097,
+            "total_withdrawn": 560000
+          },
+          {
+            "policy_year": 22,
+            "annual_withdrawal": 35000,
+            "surrender_value_after": 613977,
+            "total_withdrawn": 595000
+          },
+          {
+            "policy_year": 23,
+            "annual_withdrawal": 35000,
+            "surrender_value_after": 624970,
+            "total_withdrawn": 630000
+          },
+          {
+            "policy_year": 24,
+            "annual_withdrawal": 35000,
+            "surrender_value_after": 637168,
+            "total_withdrawn": 665000
+          },
+          {
+            "policy_year": 25,
+            "annual_withdrawal": 35000,
+            "surrender_value_after": 650679,
+            "total_withdrawn": 700000
+          },
+          {
+            "policy_year": 26,
+            "annual_withdrawal": 35000,
+            "surrender_value_after": 669029,
+            "total_withdrawn": 735000
+          },
+          {
+            "policy_year": 27,
+            "annual_withdrawal": 35000,
+            "surrender_value_after": 689558,
+            "total_withdrawn": 770000
+          },
+          {
+            "policy_year": 28,
+            "annual_withdrawal": 35000,
+            "surrender_value_after": 712481,
+            "total_withdrawn": 805000
+          },
+          {
+            "policy_year": 29,
+            "annual_withdrawal": 35000,
+            "surrender_value_after": 738046,
+            "total_withdrawn": 840000
+          },
+          {
+            "policy_year": 30,
+            "annual_withdrawal": 35000,
+            "surrender_value_after": 766523,
+            "total_withdrawn": 875000
+          },
+          {
+            "policy_year": 31,
+            "annual_withdrawal": 35000,
+            "surrender_value_after": 783953,
+            "total_withdrawn": 910000
+          },
+          {
+            "policy_year": 32,
+            "annual_withdrawal": 35000,
+            "surrender_value_after": 802462,
+            "total_withdrawn": 945000
+          },
+          {
+            "policy_year": 33,
+            "annual_withdrawal": 35000,
+            "surrender_value_after": 822118,
+            "total_withdrawn": 980000
+          },
+          {
+            "policy_year": 34,
+            "annual_withdrawal": 35000,
+            "surrender_value_after": 843000,
+            "total_withdrawn": 1015000
+          },
+          {
+            "policy_year": 35,
+            "annual_withdrawal": 35000,
+            "surrender_value_after": 865193,
+            "total_withdrawn": 1050000
+          },
+          {
+            "policy_year": 36,
+            "annual_withdrawal": 35000,
+            "surrender_value_after": 888780,
+            "total_withdrawn": 1085000
+          },
+          {
+            "policy_year": 37,
+            "annual_withdrawal": 35000,
+            "surrender_value_after": 913861,
+            "total_withdrawn": 1120000
+          },
+          {
+            "policy_year": 38,
+            "annual_withdrawal": 35000,
+            "surrender_value_after": 940526,
+            "total_withdrawn": 1155000
+          },
+          {
+            "policy_year": 39,
+            "annual_withdrawal": 35000,
+            "surrender_value_after": 968888,
+            "total_withdrawn": 1190000
+          },
+          {
+            "policy_year": 40,
+            "annual_withdrawal": 35000,
+            "surrender_value_after": 999052,
+            "total_withdrawn": 1225000
+          },
+          {
+            "policy_year": 41,
+            "annual_withdrawal": 35000,
+            "surrender_value_after": 1031142,
+            "total_withdrawn": 1260000
+          },
+          {
+            "policy_year": 42,
+            "annual_withdrawal": 35000,
+            "surrender_value_after": 1065282,
+            "total_withdrawn": 1295000
+          },
+          {
+            "policy_year": 43,
+            "annual_withdrawal": 35000,
+            "surrender_value_after": 1101616,
+            "total_withdrawn": 1330000
+          },
+          {
+            "policy_year": 44,
+            "annual_withdrawal": 35000,
+            "surrender_value_after": 1140278,
+            "total_withdrawn": 1365000
+          },
+          {
+            "policy_year": 45,
+            "annual_withdrawal": 35000,
+            "surrender_value_after": 1181427,
+            "total_withdrawn": 1400000
+          },
+          {
+            "policy_year": 46,
+            "annual_withdrawal": 35000,
+            "surrender_value_after": 1225238,
+            "total_withdrawn": 1435000
+          },
+          {
+            "policy_year": 47,
+            "annual_withdrawal": 35000,
+            "surrender_value_after": 1271872,
+            "total_withdrawn": 1470000
+          },
+          {
+            "policy_year": 48,
+            "annual_withdrawal": 35000,
+            "surrender_value_after": 1321506,
+            "total_withdrawn": 1505000
+          },
+          {
+            "policy_year": 49,
+            "annual_withdrawal": 35000,
+            "surrender_value_after": 1374355,
+            "total_withdrawn": 1540000
+          },
+          {
+            "policy_year": 50,
+            "annual_withdrawal": 35000,
+            "surrender_value_after": 1430621,
+            "total_withdrawn": 1575000
+          },
+          {
+            "policy_year": 51,
+            "annual_withdrawal": 35000,
+            "surrender_value_after": 1490528,
+            "total_withdrawn": 1610000
+          },
+          {
+            "policy_year": 52,
+            "annual_withdrawal": 35000,
+            "surrender_value_after": 1554304,
+            "total_withdrawn": 1645000
+          },
+          {
+            "policy_year": 53,
+            "annual_withdrawal": 35000,
+            "surrender_value_after": 1622230,
+            "total_withdrawn": 1680000
+          },
+          {
+            "policy_year": 54,
+            "annual_withdrawal": 35000,
+            "surrender_value_after": 1694550,
+            "total_withdrawn": 1715000
+          },
+          {
+            "policy_year": 55,
+            "annual_withdrawal": 35000,
+            "surrender_value_after": 1771559,
+            "total_withdrawn": 1750000
+          },
+          {
+            "policy_year": 56,
+            "annual_withdrawal": 35000,
+            "surrender_value_after": 1853566,
+            "total_withdrawn": 1785000
+          },
+          {
+            "policy_year": 57,
+            "annual_withdrawal": 35000,
+            "surrender_value_after": 1940890,
+            "total_withdrawn": 1820000
+          },
+          {
+            "policy_year": 58,
+            "annual_withdrawal": 35000,
+            "surrender_value_after": 2033894,
+            "total_withdrawn": 1855000
+          },
+          {
+            "policy_year": 59,
+            "annual_withdrawal": 35000,
+            "surrender_value_after": 2132920,
+            "total_withdrawn": 1890000
+          },
+          {
+            "policy_year": 60,
+            "annual_withdrawal": 35000,
+            "surrender_value_after": 2238394,
+            "total_withdrawn": 1925000
+          },
+          {
+            "policy_year": 61,
+            "annual_withdrawal": 35000,
+            "surrender_value_after": 2350725,
+            "total_withdrawn": 1960000
+          },
+          {
+            "policy_year": 62,
+            "annual_withdrawal": 35000,
+            "surrender_value_after": 2470337,
+            "total_withdrawn": 1995000
+          },
+          {
+            "policy_year": 63,
+            "annual_withdrawal": 35000,
+            "surrender_value_after": 2597759,
+            "total_withdrawn": 2030000
+          },
+          {
+            "policy_year": 64,
+            "annual_withdrawal": 35000,
+            "surrender_value_after": 2733456,
+            "total_withdrawn": 2065000
+          },
+          {
+            "policy_year": 65,
+            "annual_withdrawal": 35000,
+            "surrender_value_after": 2877961,
+            "total_withdrawn": 2100000
+          },
+          {
+            "policy_year": 66,
+            "annual_withdrawal": 35000,
+            "surrender_value_after": 3031879,
+            "total_withdrawn": 2135000
+          },
+          {
+            "policy_year": 67,
+            "annual_withdrawal": 35000,
+            "surrender_value_after": 3195799,
+            "total_withdrawn": 2170000
+          },
+          {
+            "policy_year": 68,
+            "annual_withdrawal": 35000,
+            "surrender_value_after": 3370392,
+            "total_withdrawn": 2205000
+          },
+          {
+            "policy_year": 69,
+            "annual_withdrawal": 35000,
+            "surrender_value_after": 3556301,
+            "total_withdrawn": 2240000
+          },
+          {
+            "policy_year": 70,
+            "annual_withdrawal": 35000,
+            "surrender_value_after": 3754334,
+            "total_withdrawn": 2275000
+          },
+          {
+            "policy_year": 71,
+            "annual_withdrawal": 35000,
+            "surrender_value_after": 3965203,
+            "total_withdrawn": 2310000
+          },
+          {
+            "policy_year": 72,
+            "annual_withdrawal": 35000,
+            "surrender_value_after": 4189804,
+            "total_withdrawn": 2345000
+          },
+          {
+            "policy_year": 73,
+            "annual_withdrawal": 35000,
+            "surrender_value_after": 4429008,
+            "total_withdrawn": 2380000
+          },
+          {
+            "policy_year": 74,
+            "annual_withdrawal": 35000,
+            "surrender_value_after": 4683727,
+            "total_withdrawn": 2415000
+          },
+          {
+            "policy_year": 75,
+            "annual_withdrawal": 35000,
+            "surrender_value_after": 4955015,
+            "total_withdrawn": 2450000
+          },
+          {
+            "policy_year": 76,
+            "annual_withdrawal": 35000,
+            "surrender_value_after": 5243993,
+            "total_withdrawn": 2485000
+          },
+          {
+            "policy_year": 77,
+            "annual_withdrawal": 35000,
+            "surrender_value_after": 5551740,
+            "total_withdrawn": 2520000
+          },
+          {
+            "policy_year": 78,
+            "annual_withdrawal": 35000,
+            "surrender_value_after": 5879505,
+            "total_withdrawn": 2555000
+          },
+          {
+            "policy_year": 79,
+            "annual_withdrawal": 35000,
+            "surrender_value_after": 6228610,
+            "total_withdrawn": 2590000
+          },
+          {
+            "policy_year": 80,
+            "annual_withdrawal": 35000,
+            "surrender_value_after": 6600458,
+            "total_withdrawn": 2625000
+          },
+          {
+            "policy_year": 81,
+            "annual_withdrawal": 35000,
+            "surrender_value_after": 6996393,
+            "total_withdrawn": 2660000
+          },
+          {
+            "policy_year": 82,
+            "annual_withdrawal": 35000,
+            "surrender_value_after": 7418116,
+            "total_withdrawn": 2695000
+          },
+          {
+            "policy_year": 83,
+            "annual_withdrawal": 35000,
+            "surrender_value_after": 7867293,
+            "total_withdrawn": 2730000
+          },
+          {
+            "policy_year": 84,
+            "annual_withdrawal": 35000,
+            "surrender_value_after": 8345686,
+            "total_withdrawn": 2765000
+          },
+          {
+            "policy_year": 85,
+            "annual_withdrawal": 35000,
+            "surrender_value_after": 8855157,
+            "total_withdrawn": 2800000
+          },
+          {
+            "policy_year": 86,
+            "annual_withdrawal": 35000,
+            "surrender_value_after": 9397673,
+            "total_withdrawn": 2835000
+          },
+          {
+            "policy_year": 87,
+            "annual_withdrawal": 35000,
+            "surrender_value_after": 9975518,
+            "total_withdrawn": 2870000
+          },
+          {
+            "policy_year": 88,
+            "annual_withdrawal": 35000,
+            "surrender_value_after": 10590918,
+            "total_withdrawn": 2905000
+          },
+          {
+            "policy_year": 89,
+            "annual_withdrawal": 35000,
+            "surrender_value_after": 11246223,
+            "total_withdrawn": 2940000
+          },
+          {
+            "policy_year": 90,
+            "annual_withdrawal": 35000,
+            "surrender_value_after": 11944158,
+            "total_withdrawn": 2975000
+          },
+          {
+            "policy_year": 44854,
+            "annual_withdrawal": 84461,
+            "surrender_value_after": 138195539,
+            "total_withdrawn": 3059461
+          },
+          {
+            "policy_year": 44867,
+            "annual_withdrawal": 83551,
+            "surrender_value_after": 122344706,
+            "total_withdrawn": 3143012
+          },
+          {
+            "policy_year": 44881,
+            "annual_withdrawal": 83114,
+            "surrender_value_after": 115135247,
+            "total_withdrawn": 3226126
+          },
+          {
+            "policy_year": 44896,
+            "annual_withdrawal": 82681,
+            "surrender_value_after": 108363899,
+            "total_withdrawn": 3308807
+          },
+          {
+            "policy_year": 44911,
+            "annual_withdrawal": 82250,
+            "surrender_value_after": 102001589,
+            "total_withdrawn": 3391057
+          },
+          {
+            "policy_year": 44927,
+            "annual_withdrawal": 81824,
+            "surrender_value_after": 96025530,
+            "total_withdrawn": 3472881
+          },
+          {
+            "policy_year": 44944,
+            "annual_withdrawal": 81401,
+            "surrender_value_after": 90412016,
+            "total_withdrawn": 3554282
+          },
+          {
+            "policy_year": 44963,
+            "annual_withdrawal": 80984,
+            "surrender_value_after": 85140613,
+            "total_withdrawn": 3635266
+          },
+          {
+            "policy_year": 44983,
+            "annual_withdrawal": 80571,
+            "surrender_value_after": 80188429,
+            "total_withdrawn": 3715837
+          },
+          {
+            "policy_year": 45004,
+            "annual_withdrawal": 80162,
+            "surrender_value_after": 75535901,
+            "total_withdrawn": 3795999
+          },
+          {
+            "policy_year": 45026,
+            "annual_withdrawal": 79757,
+            "surrender_value_after": 71164672,
+            "total_withdrawn": 3875756
+          },
+          {
+            "policy_year": 45050,
+            "annual_withdrawal": 79357,
+            "surrender_value_after": 67058917,
+            "total_withdrawn": 3955113
+          },
+          {
+            "policy_year": 45075,
+            "annual_withdrawal": 78961,
+            "surrender_value_after": 63200897,
+            "total_withdrawn": 4034074
+          },
+          {
+            "policy_year": 45102,
+            "annual_withdrawal": 78570,
+            "surrender_value_after": 59576694,
+            "total_withdrawn": 4112644
+          },
+          {
+            "policy_year": 45131,
+            "annual_withdrawal": 78185,
+            "surrender_value_after": 56171856,
+            "total_withdrawn": 4190829
+          },
+          {
+            "policy_year": 45161,
+            "annual_withdrawal": 77804,
+            "surrender_value_after": 52971747,
+            "total_withdrawn": 4268633
+          },
+          {
+            "policy_year": 45193,
+            "annual_withdrawal": 77427,
+            "surrender_value_after": 49964886,
+            "total_withdrawn": 4346060
+          },
+          {
+            "policy_year": 45227,
+            "annual_withdrawal": 77056,
+            "surrender_value_after": 47139352,
+            "total_withdrawn": 4423116
+          },
+          {
+            "policy_year": 45264,
+            "annual_withdrawal": 76692,
+            "surrender_value_after": 44484865,
+            "total_withdrawn": 4499808
+          },
+          {
+            "policy_year": 45303,
+            "annual_withdrawal": 76332,
+            "surrender_value_after": 41989931,
+            "total_withdrawn": 4576140
+          },
+          {
+            "policy_year": 45345,
+            "annual_withdrawal": 75980,
+            "surrender_value_after": 39645524,
+            "total_withdrawn": 4652120
+          },
+          {
+            "policy_year": 45389,
+            "annual_withdrawal": 75632,
+            "surrender_value_after": 37441542,
+            "total_withdrawn": 4727752
+          },
+          {
+            "policy_year": 45436,
+            "annual_withdrawal": 75291,
+            "surrender_value_after": 35370057,
+            "total_withdrawn": 4803043
+          },
+          {
+            "policy_year": 45486,
+            "annual_withdrawal": 74956,
+            "surrender_value_after": 33422849,
+            "total_withdrawn": 4877999
+          },
+          {
+            "policy_year": 45539,
+            "annual_withdrawal": 74627,
+            "surrender_value_after": 31592213,
+            "total_withdrawn": 4952626
+          },
+          {
+            "policy_year": 45596,
+            "annual_withdrawal": 74306,
+            "surrender_value_after": 29871511,
+            "total_withdrawn": 5026932
+          },
+          {
+            "policy_year": 45656,
+            "annual_withdrawal": 73992,
+            "surrender_value_after": 28253327,
+            "total_withdrawn": 5100924
+          },
+          {
+            "policy_year": 45720,
+            "annual_withdrawal": 73685,
+            "surrender_value_after": 26731839,
+            "total_withdrawn": 5174609
+          },
+          {
+            "policy_year": 45789,
+            "annual_withdrawal": 73387,
+            "surrender_value_after": 25301496,
+            "total_withdrawn": 5247996
+          },
+          {
+            "policy_year": 45862,
+            "annual_withdrawal": 73097,
+            "surrender_value_after": 23956115,
+            "total_withdrawn": 5321093
+          },
+          {
+            "policy_year": 45940,
+            "annual_withdrawal": 72815,
+            "surrender_value_after": 22690835,
+            "total_withdrawn": 5393908
+          },
+          {
+            "policy_year": 46023,
+            "annual_withdrawal": 72543,
+            "surrender_value_after": 21500631,
+            "total_withdrawn": 5466451
+          },
+          {
+            "policy_year": 46111,
+            "annual_withdrawal": 72279,
+            "surrender_value_after": 20380802,
+            "total_withdrawn": 5538730
+          },
+          {
+            "policy_year": 46205,
+            "annual_withdrawal": 72024,
+            "surrender_value_after": 19327297,
+            "total_withdrawn": 5610754
+          },
+          {
+            "policy_year": 46305,
+            "annual_withdrawal": 71781,
+            "surrender_value_after": 18335933,
+            "total_withdrawn": 5682535
+          },
+          {
+            "policy_year": 46411,
+            "annual_withdrawal": 71546,
+            "surrender_value_after": 17402800,
+            "total_withdrawn": 5754081
+          },
+          {
+            "policy_year": 46524,
+            "annual_withdrawal": 71323,
+            "surrender_value_after": 16524529,
+            "total_withdrawn": 5825404
+          },
+          {
+            "policy_year": 46644,
+            "annual_withdrawal": 71111,
+            "surrender_value_after": 15697646,
+            "total_withdrawn": 5896515
+          }
+        ],
+        "sales_insights": {
+          "target_customer": "本计划适合具备稳定供款能力、追求长期复利与传承规划的家庭。",
+          "key_selling_points": [
+            "保证现金价值保底",
+            "复归红利 + 终期分红双轮驱动",
+            "至128岁超长保障周期"
+          ],
+          "unique_advantages": "已通过 PDF 签名快路径完成提取，数字 100% 来自官方计划书。",
+          "suggested_narrative": "聚焦长期复利 + 灵活提领 + 代际传承。",
+          "highlight_numbers": []
+        },
+        "_meta": {
+          "source": "signature_fast_path",
+          "signatureId": "cpic-aarj31u-v1",
+          "parser": "signature-extractor/cpic-aarj31u-v1",
+          "warnings": [
+            "不提领表仅 0 行，预期 ≥20"
+          ]
+        }
+      }
+    }
+  ],
+  "chatHistory": [
+    {
+      "role": "assistant",
+      "content": "✅ **AI 解析完成！**\n\n📄 **世代悅享3.pdf** → **「世悅享儲蓄保險計劃」**\n   - 储蓄计划 | 年缴: $100,000 | 0年\n   - 36年数据 | 期末倍数: 2986.2x\n\n你可以在下方输入定制需求（如：教育金/养老金、提领起始年龄、公司页重点、图表页偏好），我会据此优化PPT。"
+    }
+  ],
+  "createdAt": "2026-06-11T06:04:13.161Z",
+  "pptPath": "local/e1865b14-87e1-4d38-9cb8-1fc8af1acfff_综合方案.pptx",
+  "previewPaths": [
+    "local/e1865b14-87e1-4d38-9cb8-1fc8af1acfff_preview_preview/slide_01.png",
+    "local/e1865b14-87e1-4d38-9cb8-1fc8af1acfff_preview_preview/slide_02.png",
+    "local/e1865b14-87e1-4d38-9cb8-1fc8af1acfff_preview_preview/slide_03.png",
+    "local/e1865b14-87e1-4d38-9cb8-1fc8af1acfff_preview_preview/slide_04.png",
+    "local/e1865b14-87e1-4d38-9cb8-1fc8af1acfff_preview_preview/slide_05.png",
+    "local/e1865b14-87e1-4d38-9cb8-1fc8af1acfff_preview_preview/slide_06.png",
+    "local/e1865b14-87e1-4d38-9cb8-1fc8af1acfff_preview_preview/slide_07.png",
+    "local/e1865b14-87e1-4d38-9cb8-1fc8af1acfff_preview_preview/slide_08.png",
+    "local/e1865b14-87e1-4d38-9cb8-1fc8af1acfff_preview_preview/slide_09.png",
+    "local/e1865b14-87e1-4d38-9cb8-1fc8af1acfff_preview_preview/slide_10.png",
+    "local/e1865b14-87e1-4d38-9cb8-1fc8af1acfff_preview_preview/slide_11.png",
+    "local/e1865b14-87e1-4d38-9cb8-1fc8af1acfff_preview_preview/slide_12.png"
+  ],
+  "previewPdfPath": "local/e1865b14-87e1-4d38-9cb8-1fc8af1acfff_preview_preview/e1865b14-87e1-4d38-9cb8-1fc8af1acfff_综合方案.pdf",
+  "slideCount": 12
+}

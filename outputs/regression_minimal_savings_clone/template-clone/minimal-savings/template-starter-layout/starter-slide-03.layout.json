@@ -1,0 +1,958 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/ynrb4x",
+    "id": "ynrb4x",
+    "slide": 3,
+    "layoutId": "/ppt/slideLayouts/slideLayout25.xml",
+    "layoutName": "上左标下左内后右背景-有背景-有间隙-3",
+    "masterLayoutId": "/ppt/slideMasters/slideMaster2.xml",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "Office",
+    "colors": {
+      "accent1": "#5B9BD5",
+      "accent2": "#ED7D31",
+      "accent3": "#A5A5A5",
+      "accent4": "#FFC000",
+      "accent5": "#4472C4",
+      "accent6": "#70AD47",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#44546A",
+      "lt2": "#E7E6E6",
+      "hlink": "#0563C1",
+      "folHlink": "#954F72"
+    },
+    "fontScheme": {
+      "name": "Aspect",
+      "majorFont": {
+        "latinTypeface": "微软雅黑"
+      },
+      "minorFont": {
+        "latinTypeface": "微软雅黑"
+      }
+    },
+    "typefaces": [
+      "微软雅黑"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "/ppt/slideLayouts/slideLayout25.xml",
+      "name": "上左标下左内后右背景-有背景-有间隙-3",
+      "parentLayoutId": "/ppt/slideMasters/slideMaster2.xml",
+      "elements": [
+        {
+          "order": 1,
+          "kind": "image",
+          "scope": "layout",
+          "aid": "template/layout//ppt/slideLayouts/slideLayout25.xml/2",
+          "id": "2",
+          "name": "图片占位符 1",
+          "bbox": [
+            832,
+            0,
+            448,
+            720
+          ]
+        },
+        {
+          "order": 2,
+          "kind": "shape",
+          "scope": "layout",
+          "aid": "template/layout//ppt/slideLayouts/slideLayout25.xml/3",
+          "id": "3",
+          "name": "标题 2",
+          "bbox": [
+            64,
+            50.66,
+            896,
+            74.66
+          ],
+          "resolvedTextStyle": {
+            "anchor": 1,
+            "verticalAlignment": "top",
+            "wrap": "square",
+            "autoFit": "none",
+            "insets": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          }
+        },
+        {
+          "order": 3,
+          "kind": "shape",
+          "scope": "layout",
+          "aid": "template/layout//ppt/slideLayouts/slideLayout25.xml/4",
+          "id": "4",
+          "name": "内容占位符 3",
+          "bbox": [
+            64,
+            159.97,
+            896,
+            496.03
+          ],
+          "resolvedTextStyle": {
+            "anchor": 1,
+            "verticalAlignment": "top",
+            "wrap": "square",
+            "autoFit": "none",
+            "insets": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "scope": "master",
+      "id": "/ppt/slideMasters/slideMaster2.xml",
+      "type": "master",
+      "elements": [
+        {
+          "order": 1,
+          "kind": "shape",
+          "scope": "master",
+          "aid": "template/master//ppt/slideMasters/slideMaster2.xml/8",
+          "id": "8",
+          "name": "矩形 7",
+          "bbox": [
+            0.4,
+            0,
+            1279.6,
+            719.93
+          ],
+          "geometry": "rect",
+          "resolvedTextStyle": {
+            "anchor": 2,
+            "verticalAlignment": "middle"
+          }
+        },
+        {
+          "order": 2,
+          "kind": "shape",
+          "scope": "master",
+          "aid": "template/master//ppt/slideMasters/slideMaster2.xml/2",
+          "id": "2",
+          "name": "标题占位符 1",
+          "bbox": [
+            73.07,
+            37.8,
+            1133.86,
+            75.59
+          ],
+          "geometry": "rect",
+          "resolvedTextStyle": {
+            "anchor": 3,
+            "vertical": 1,
+            "verticalAlignment": "bottom",
+            "wrap": "square",
+            "autoFit": "shrinkText",
+            "insets": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          }
+        },
+        {
+          "order": 3,
+          "kind": "shape",
+          "scope": "master",
+          "aid": "template/master//ppt/slideMasters/slideMaster2.xml/3",
+          "id": "3",
+          "name": "文本占位符 2",
+          "bbox": [
+            73.07,
+            136.67,
+            1133.86,
+            511.67
+          ],
+          "geometry": "rect",
+          "resolvedTextStyle": {
+            "vertical": 1,
+            "wrap": "square",
+            "autoFit": "shrinkText",
+            "insets": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          }
+        },
+        {
+          "order": 4,
+          "kind": "shape",
+          "scope": "master",
+          "aid": "template/master//ppt/slideMasters/slideMaster2.xml/9",
+          "id": "9",
+          "name": "矩形 8",
+          "bbox": [
+            5.27,
+            698.6,
+            1274.53,
+            21.33
+          ],
+          "geometry": "rect",
+          "resolvedTextStyle": {
+            "anchor": 2,
+            "verticalAlignment": "middle"
+          }
+        },
+        {
+          "order": 5,
+          "kind": "shape",
+          "scope": "master",
+          "aid": "template/master//ppt/slideMasters/slideMaster2.xml/5",
+          "id": "5",
+          "name": "页脚占位符 4",
+          "bbox": [
+            424,
+            667.33,
+            432,
+            38.33
+          ],
+          "geometry": "rect",
+          "resolvedTextStyle": {
+            "anchor": 2,
+            "vertical": 1,
+            "verticalAlignment": "middle",
+            "autoFit": "shrinkText",
+            "insets": {
+              "top": 4.8,
+              "right": 9.6,
+              "bottom": 4.8,
+              "left": 9.6
+            }
+          }
+        },
+        {
+          "order": 6,
+          "kind": "shape",
+          "scope": "master",
+          "aid": "template/master//ppt/slideMasters/slideMaster2.xml/6",
+          "id": "6",
+          "name": "灯片编号占位符 5",
+          "bbox": [
+            919.05,
+            667.33,
+            288,
+            38.33
+          ],
+          "geometry": "rect",
+          "resolvedTextStyle": {
+            "anchor": 2,
+            "vertical": 1,
+            "verticalAlignment": "middle",
+            "wrap": "square",
+            "autoFit": "shrinkText",
+            "insets": {
+              "top": 4.8,
+              "right": 9.6,
+              "bottom": 4.8,
+              "left": 9.6
+            }
+          }
+        },
+        {
+          "order": 7,
+          "kind": "shape",
+          "scope": "master",
+          "aid": "template/master//ppt/slideMasters/slideMaster2.xml/4",
+          "id": "4",
+          "name": "日期占位符 3",
+          "bbox": [
+            73.07,
+            667.33,
+            288,
+            38.33
+          ],
+          "geometry": "rect",
+          "resolvedTextStyle": {
+            "anchor": 2,
+            "vertical": 1,
+            "verticalAlignment": "middle",
+            "wrap": "square",
+            "autoFit": "shrinkText",
+            "insets": {
+              "top": 4.8,
+              "right": 9.6,
+              "bottom": 4.8,
+              "left": 9.6
+            }
+          }
+        },
+        {
+          "order": 8,
+          "kind": "shape",
+          "scope": "master",
+          "aid": "template/master//ppt/slideMasters/slideMaster2.xml/7",
+          "id": "7",
+          "name": "KSO_TEMPLATE",
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "geometry": "rect",
+          "resolvedTextStyle": {
+            "anchor": 2,
+            "verticalAlignment": "middle"
+          }
+        }
+      ]
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "image",
+      "scope": "slide",
+      "aid": "im/jm1cfa9w",
+      "id": "17",
+      "name": "图片占位符 1",
+      "bbox": [
+        832,
+        0,
+        448,
+        720
+      ],
+      "contentType": "image/jpeg",
+      "imageCrop": {
+        "left": 0.00029,
+        "top": 0,
+        "right": 0.00029,
+        "bottom": 0
+      },
+      "asset": {
+        "assetId": "/ppt/media/image4.jpeg",
+        "contentType": "image/jpeg",
+        "byteLength": 1051371
+      },
+      "fillImage": {
+        "assetId": "/ppt/media/image4.jpeg",
+        "contentType": "image/jpeg",
+        "byteLength": 1051371
+      }
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/xobm58z2",
+      "id": "7",
+      "name": "任意多边形 6",
+      "bbox": [
+        0,
+        0,
+        1280,
+        720
+      ],
+      "geometry": "custom",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 24,
+        "typeface": "微软雅黑",
+        "color": "lt1",
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": ""
+          }
+        ]
+      }
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/epkzupwb",
+      "id": "11",
+      "name": "任意多边形 10",
+      "bbox": [
+        64,
+        159.93,
+        896,
+        237.33
+      ],
+      "geometry": "custom",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 24,
+        "typeface": "微软雅黑",
+        "color": "lt1",
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": ""
+          }
+        ]
+      },
+      "fillColor": {
+        "type": "theme",
+        "value": "accent1",
+        "transform": {
+          "lighten": 0.9
+        }
+      },
+      "lineColor": {
+        "type": "theme",
+        "value": "accent1",
+        "transform": {
+          "lighten": 0.8
+        }
+      },
+      "lineWidth": 2
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/pg3ex0nu",
+      "id": "12",
+      "name": "文本框 11",
+      "bbox": [
+        88,
+        229.27,
+        848,
+        37.33
+      ],
+      "geometry": "rect",
+      "text": "主标题：财富永续·家业长青——XX家族传承保险规划建议书",
+      "textPreview": "主标题：财富永续·家业长青——XX家族传承保险规划建议书",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 24,
+        "typeface": "微软雅黑",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 1.87,
+          "bottom": 0,
+          "left": 1.87
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "主标题：财富永续·家业长青——XX家族传承保险规划建议书"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "主标题：财富永续·家业长青——XX家族传承保险规划建议书",
+          "resolvedTextStyle": {
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "主标题：财富永续",
+              "fontSize": 28,
+              "typeface": "微软雅黑",
+              "color": "dk1"
+            },
+            {
+              "index": 2,
+              "text": "·",
+              "fontSize": 28,
+              "typeface": "微软雅黑",
+              "color": "dk1"
+            },
+            {
+              "index": 3,
+              "text": "家业长青",
+              "fontSize": 28,
+              "typeface": "微软雅黑",
+              "color": "dk1"
+            },
+            {
+              "index": 4,
+              "text": "——XX",
+              "fontSize": 28,
+              "typeface": "微软雅黑",
+              "color": "dk1"
+            },
+            {
+              "index": 5,
+              "text": "家族传承保险规划建议书",
+              "fontSize": 28,
+              "typeface": "微软雅黑",
+              "color": "dk1"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/wval87ed",
+      "id": "13",
+      "name": "文本框 12",
+      "bbox": [
+        88,
+        271.93,
+        848,
+        56
+      ],
+      "geometry": "rect",
+      "text": "标题采用烫金立体字设计，突出\"永续\"与\"长青\"，背景搭配家族徽标与金融元素，彰显专业券商风格。",
+      "textPreview": "标题采用烫金立体字设计，突出\"永续\"与\"长青\"，背景搭配家族徽标与金融元素，彰显专业券商风格。",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 24,
+        "typeface": "微软雅黑",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 1.87,
+          "bottom": 0,
+          "left": 1.87
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "标题采用烫金立体字设计，突出\"永续\"与\"长青\""
+          },
+          {
+            "index": 2,
+            "text": "，背景搭配家族徽标与金融元素，彰显专业券商风格。"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "标题采用烫金立体字设计，突出\"永续\"与\"长青\"，背景搭配家族徽标与金融元素，彰显专业券商风格。",
+          "lineSpacingPercent": 120000,
+          "resolvedTextStyle": {
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "标题采用烫金立体字设计，突出",
+              "fontSize": 18.67,
+              "typeface": "微软雅黑",
+              "color": "dk1"
+            },
+            {
+              "index": 2,
+              "text": "\"",
+              "fontSize": 18.67,
+              "typeface": "微软雅黑",
+              "color": "dk1"
+            },
+            {
+              "index": 3,
+              "text": "永续",
+              "fontSize": 18.67,
+              "typeface": "微软雅黑",
+              "color": "dk1"
+            },
+            {
+              "index": 4,
+              "text": "\"",
+              "fontSize": 18.67,
+              "typeface": "微软雅黑",
+              "color": "dk1"
+            },
+            {
+              "index": 5,
+              "text": "与",
+              "fontSize": 18.67,
+              "typeface": "微软雅黑",
+              "color": "dk1"
+            },
+            {
+              "index": 6,
+              "text": "\"",
+              "fontSize": 18.67,
+              "typeface": "微软雅黑",
+              "color": "dk1"
+            },
+            {
+              "index": 7,
+              "text": "长青",
+              "fontSize": 18.67,
+              "typeface": "微软雅黑",
+              "color": "dk1"
+            },
+            {
+              "index": 8,
+              "text": "\"",
+              "fontSize": 18.67,
+              "typeface": "微软雅黑",
+              "color": "dk1"
+            },
+            {
+              "index": 9,
+              "text": "，背景搭配家族徽标与金融元素，彰显专业券商风格。",
+              "fontSize": 18.67,
+              "typeface": "微软雅黑",
+              "color": "dk1"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/7mp0bi9s",
+      "id": "14",
+      "name": "任意多边形 13",
+      "bbox": [
+        64,
+        418.6,
+        896,
+        237.4
+      ],
+      "geometry": "custom",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 24,
+        "typeface": "微软雅黑",
+        "color": "lt1",
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": ""
+          }
+        ]
+      },
+      "fillColor": {
+        "type": "theme",
+        "value": "accent1",
+        "transform": {
+          "lighten": 0.9
+        }
+      },
+      "lineColor": {
+        "type": "theme",
+        "value": "accent1",
+        "transform": {
+          "lighten": 0.8
+        }
+      },
+      "lineWidth": 2
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/e1w7mp0b",
+      "id": "15",
+      "name": "文本框 14",
+      "bbox": [
+        88,
+        487.93,
+        848,
+        37.33
+      ],
+      "geometry": "rect",
+      "text": "核心产品：XX传世尊享终身寿险（分红型）",
+      "textPreview": "核心产品：XX传世尊享终身寿险（分红型）",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 24,
+        "typeface": "微软雅黑",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 1.87,
+          "bottom": 0,
+          "left": 1.87
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "核心产品：XX传世尊享终身寿险（分红型）"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "核心产品：XX传世尊享终身寿险（分红型）",
+          "resolvedTextStyle": {
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "核心产品：",
+              "fontSize": 28,
+              "typeface": "微软雅黑",
+              "color": "dk1"
+            },
+            {
+              "index": 2,
+              "text": "XX",
+              "fontSize": 28,
+              "typeface": "微软雅黑",
+              "color": "dk1"
+            },
+            {
+              "index": 3,
+              "text": "传世尊享终身寿险（分红型）",
+              "fontSize": 28,
+              "typeface": "微软雅黑",
+              "color": "dk1"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/psfil0rq",
+      "id": "16",
+      "name": "文本框 15",
+      "bbox": [
+        88,
+        530.6,
+        848,
+        56
+      ],
+      "geometry": "rect",
+      "text": "该产品由XX保险公司承保，近五年分红实现率达92%，支持保额递增与保单贷款，贴合高净值客户传承需求。",
+      "textPreview": "该产品由XX保险公司承保，近五年分红实现率达92%，支持保额递增与保单贷款，贴合高净值客户传承需求。",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 24,
+        "typeface": "微软雅黑",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 1.87,
+          "bottom": 0,
+          "left": 1.87
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "该产品由XX保险公司承保，近五年分红实现率达92%"
+          },
+          {
+            "index": 2,
+            "text": "，支持保额递增与保单贷款，贴合高净值客户传承需求。"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "该产品由XX保险公司承保，近五年分红实现率达92%，支持保额递增与保单贷款，贴合高净值客户传承需求。",
+          "lineSpacingPercent": 120000,
+          "resolvedTextStyle": {
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "该产品由",
+              "fontSize": 18.67,
+              "typeface": "微软雅黑",
+              "color": "dk1"
+            },
+            {
+              "index": 2,
+              "text": "XX",
+              "fontSize": 18.67,
+              "typeface": "微软雅黑",
+              "color": "dk1"
+            },
+            {
+              "index": 3,
+              "text": "保险公司承保，近五年分红实现率达",
+              "fontSize": 18.67,
+              "typeface": "微软雅黑",
+              "color": "dk1"
+            },
+            {
+              "index": 4,
+              "text": "92%",
+              "fontSize": 18.67,
+              "typeface": "微软雅黑",
+              "color": "dk1"
+            },
+            {
+              "index": 5,
+              "text": "，支持保额递增与保单贷款，贴合高净值客户传承需求。",
+              "fontSize": 18.67,
+              "typeface": "微软雅黑",
+              "color": "dk1"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 9,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/fepkzupw",
+      "id": "9",
+      "name": "标题 8",
+      "bbox": [
+        64,
+        50.66,
+        896,
+        74.66
+      ],
+      "text": "建议书标题与产品名",
+      "textPreview": "建议书标题与产品名",
+      "resolvedFontSize": 48,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "vertical": 1,
+        "fontSize": 48,
+        "typeface": "微软雅黑",
+        "color": "tx1",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "建议书标题与产品名"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "建议书标题与产品名",
+          "runs": [
+            {
+              "index": 1,
+              "text": "建议书标题与产品名",
+              "typeface": "微软雅黑",
+              "color": {
+                "type": "theme",
+                "value": "tx1",
+                "transform": {
+                  "lighten": 1
+                }
+              }
+            }
+          ],
+          "bulletCharacter": "",
+          "lineSpacingPercent": 110000,
+          "spaceBefore": 0
+        }
+      ]
+    }
+  ],
+  "composeRuns": []
+}

@@ -1,0 +1,19 @@
+{
+  "renderMode": "artifact-tool-exact-clone-edit",
+  "starter": "/Users/soldier/free-code/packages/insurance-ppt/outputs/manulife_lovehome_fast3_manulife_boxiehigh4_pipeline/template-clone/chinese-savings/template-starter.pptx",
+  "editPlanPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/manulife_lovehome_fast3_manulife_boxiehigh4_pipeline/template-clone/chinese-savings/edit-plan.json",
+  "out": "/Users/soldier/free-code/packages/insurance-ppt/outputs/manulife_lovehome_fast3_manulife_boxiehigh4_pipeline/deck.pptx",
+  "slideCount": 9,
+  "previews": [
+    "/Users/soldier/free-code/packages/insurance-ppt/outputs/manulife_lovehome_fast3_manulife_boxiehigh4_pipeline/template-clone/chinese-savings/final-preview/final-slide-01.png",
+    "/Users/soldier/free-code/packages/insurance-ppt/outputs/manulife_lovehome_fast3_manulife_boxiehigh4_pipeline/template-clone/chinese-savings/final-preview/final-slide-02.png",
+    "/Users/soldier/free-code/packages/insurance-ppt/outputs/manulife_lovehome_fast3_manulife_boxiehigh4_pipeline/template-clone/chinese-savings/final-preview/final-slide-03.png",
+    "/Users/soldier/free-code/packages/insurance-ppt/outputs/manulife_lovehome_fast3_manulife_boxiehigh4_pipeline/template-clone/chinese-savings/final-preview/final-slide-04.png",
+    "/Users/soldier/free-code/packages/insurance-ppt/outputs/manulife_lovehome_fast3_manulife_boxiehigh4_pipeline/template-clone/chinese-savings/final-preview/final-slide-05.png",
+    "/Users/soldier/free-code/packages/insurance-ppt/outputs/manulife_lovehome_fast3_manulife_boxiehigh4_pipeline/template-clone/chinese-savings/final-preview/final-slide-06.png",
+    "/Users/soldier/free-code/packages/insurance-ppt/outputs/manulife_lovehome_fast3_manulife_boxiehigh4_pipeline/template-clone/chinese-savings/final-preview/final-slide-07.png",
+    "/Users/soldier/free-code/packages/insurance-ppt/outputs/manulife_lovehome_fast3_manulife_boxiehigh4_pipeline/template-clone/chinese-savings/final-preview/final-slide-08.png",
+    "/Users/soldier/free-code/packages/insurance-ppt/outputs/manulife_lovehome_fast3_manulife_boxiehigh4_pipeline/template-clone/chinese-savings/final-preview/final-slide-09.png"
+  ],
+  "generatedAt": "2026-06-04T06:01:05.494Z"
+}

@@ -1,0 +1,293 @@
+{
+  "templateId": "ink",
+  "templatePath": "/Users/soldier/Downloads/财富保障方案——水墨风 .pptx",
+  "generatedAt": "2026-06-01T16:27:33.796Z",
+  "inspectTruncated": true,
+  "maxSlides": 6,
+  "sourceIdSpace": [
+    {
+      "slide": 1,
+      "textboxIds": [],
+      "imageIds": []
+    },
+    {
+      "slide": 2,
+      "textboxIds": [
+        "sh/nyd0z610",
+        "sh/cj6tovah"
+      ],
+      "imageIds": []
+    },
+    {
+      "slide": 3,
+      "textboxIds": [
+        "sh/5o7qpg3e",
+        "sh/g3ex0nux",
+        "sh/r65wjudg",
+        "sh/9cvixcze",
+        "sh/gr2p8nqx",
+        "sh/yd0z6103",
+        "sh/wb2hwfyx",
+        "sh/e9cvixcz",
+        "sh/3q5o7qpg",
+        "sh/loj2t83i"
+      ],
+      "imageIds": []
+    },
+    {
+      "slide": 4,
+      "textboxIds": [
+        "sh/o7qpg3ex",
+        "sh/dsji5sne",
+        "sh/6dcbulwv",
+        "sh/oj2t83it",
+        "sh/d4vmtwra",
+        "sh/z25kb6xk",
+        "sh/vy90je9c",
+        "sh/d4vmtwra",
+        "sh/oj2t83it",
+        "sh/61032lsz"
+      ],
+      "imageIds": []
+    },
+    {
+      "slide": 5,
+      "textboxIds": [
+        "sh/je9cvixc",
+        "sh/87ed8bat"
+      ],
+      "imageIds": []
+    },
+    {
+      "slide": 6,
+      "textboxIds": [
+        "sh/ovahoza1",
+        "sh/z25kb6xk",
+        "sh/onyd0z61",
+        "sh/6dcbulwv",
+        "sh/vy90je9c",
+        "sh/y90je9cv",
+        "sh/5wjudg7a"
+      ],
+      "imageIds": [
+        "im/nih4byhg"
+      ]
+    }
+  ],
+  "editableIdSpace": [
+    {
+      "slide": 1,
+      "shapes": [
+        {
+          "id": "5",
+          "textPreview": "您专属客户经理"
+        },
+        {
+          "id": "6",
+          "textPreview": "家族办公室客户传承建议书"
+        }
+      ],
+      "images": []
+    },
+    {
+      "slide": 2,
+      "shapes": [
+        {
+          "id": "2",
+          "textPreview": "CONTENTS"
+        },
+        {
+          "id": "3",
+          "textPreview": "目录"
+        },
+        {
+          "id": "4",
+          "textPreview": "01"
+        },
+        {
+          "id": "5",
+          "textPreview": ""
+        },
+        {
+          "id": "6",
+          "textPreview": "建议书封面"
+        },
+        {
+          "id": "7",
+          "textPreview": "02"
+        },
+        {
+          "id": "8",
+          "textPreview": ""
+        },
+        {
+          "id": "9",
+          "textPreview": "家族办公室介绍"
+        },
+        {
+          "id": "10",
+          "textPreview": "03"
+        },
+        {
+          "id": "11",
+          "textPreview": ""
+        },
+        {
+          "id": "12",
+          "textPreview": "产品核心亮点介绍"
+        },
+        {
+          "id": "13",
+          "textPreview": "04"
+        },
+        {
+          "id": "14",
+          "textPreview": ""
+        },
+        {
+          "id": "15",
+          "textPreview": "产品收益核心说明"
+        }
+      ],
+      "images": []
+    },
+    {
+      "slide": 3,
+      "shapes": [
+        {
+          "id": "2",
+          "textPreview": "CONTENTS"
+        },
+        {
+          "id": "3",
+          "textPreview": "目录"
+        },
+        {
+          "id": "4",
+          "textPreview": "05"
+        },
+        {
+          "id": "5",
+          "textPreview": ""
+        },
+        {
+          "id": "6",
+          "textPreview": "财富提领规划路径"
+        },
+        {
+          "id": "7",
+          "textPreview": "06"
+        },
+        {
+          "id": "8",
+          "textPreview": ""
+        },
+        {
+          "id": "9",
+          "textPreview": "产品核心信息演示表"
+        },
+        {
+          "id": "10",
+          "textPreview": "07"
+        },
+        {
+          "id": "11",
+          "textPreview": ""
+        },
+        {
+          "id": "12",
+          "textPreview": "家族传承功能解读"
+        },
+        {
+          "id": "13",
+          "textPreview": "08"
+        },
+        {
+          "id": "14",
+          "textPreview": ""
+        },
+        {
+          "id": "15",
+          "textPreview": "合家欢结束语"
+        }
+      ],
+      "images": []
+    },
+    {
+      "slide": 4,
+      "shapes": [
+        {
+          "id": "3",
+          "textPreview": "建议书封面"
+        },
+        {
+          "id": "4",
+          "textPreview": "01"
+        }
+      ],
+      "images": []
+    },
+    {
+      "slide": 5,
+      "shapes": [
+        {
+          "id": "2",
+          "textPreview": "建议书基础信息"
+        },
+        {
+          "id": "4",
+          "textPreview": ""
+        },
+        {
+          "id": "5",
+          "textPreview": "客户家族核心成员信息"
+        },
+        {
+          "id": "6",
+          "textPreview": "需包含家族成员姓名、年龄、职业及持股比例，如某家族企业创始人之子持股35%，担任副董事长。"
+        },
+        {
+          "id": "7",
+          "textPreview": ""
+        },
+        {
+          "id": "8",
+          "textPreview": "家族资产规模与构成"
+        },
+        {
+          "id": "9",
+          "textPreview": "需列明金融资产（如股票、债券）、不动产（如北京CBD写字楼）及企业股权等，参考某案例总资产达8.2亿元。"
+        },
+        {
+          "id": "10",
+          "textPreview": ""
+        },
+        {
+          "id": "11",
+          "textPreview": "传承目标与风险偏好"
+        },
+        {
+          "id": "12",
+          "textPreview": "需明确传承周期（如20年）、核心资产保留要求（如家族企业控股权），某客户要求规避跨境税务风险。"
+        }
+      ],
+      "images": [
+        "13"
+      ]
+    },
+    {
+      "slide": 6,
+      "shapes": [
+        {
+          "id": "3",
+          "textPreview": "家族办公室介绍"
+        },
+        {
+          "id": "4",
+          "textPreview": "02"
+        }
+      ],
+      "images": []
+    }
+  ]
+}

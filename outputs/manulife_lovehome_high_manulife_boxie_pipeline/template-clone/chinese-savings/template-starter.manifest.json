@@ -1,0 +1,122 @@
+{
+  "sourcePptx": "/Users/soldier/Downloads/财富保障方案——中国风 .pptx",
+  "mapPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/manulife_lovehome_high_manulife_boxie_pipeline/template-clone/chinese-savings/template-frame-map.json",
+  "output": "/Users/soldier/free-code/packages/insurance-ppt/outputs/manulife_lovehome_high_manulife_boxie_pipeline/template-clone/chinese-savings/template-starter.pptx",
+  "outputBytes": 11218658,
+  "sourceSlideCount": 27,
+  "slideCount": 10,
+  "previewDir": "/Users/soldier/free-code/packages/insurance-ppt/outputs/manulife_lovehome_high_manulife_boxie_pipeline/template-clone/chinese-savings/template-starter-preview",
+  "layoutDir": "/Users/soldier/free-code/packages/insurance-ppt/outputs/manulife_lovehome_high_manulife_boxie_pipeline/template-clone/chinese-savings/template-starter-layout",
+  "slides": [
+    {
+      "outputSlide": 1,
+      "sourceSlide": 1,
+      "narrativeRole": "opening thesis",
+      "reuseMode": "duplicate-slide",
+      "editTargetCount": 2,
+      "previewPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/manulife_lovehome_high_manulife_boxie_pipeline/template-clone/chinese-savings/template-starter-preview/starter-slide-01.png",
+      "previewRelativePath": "template-starter-preview/starter-slide-01.png",
+      "layoutPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/manulife_lovehome_high_manulife_boxie_pipeline/template-clone/chinese-savings/template-starter-layout/starter-slide-01.layout.json",
+      "layoutRelativePath": "template-starter-layout/starter-slide-01.layout.json"
+    },
+    {
+      "outputSlide": 2,
+      "sourceSlide": 7,
+      "narrativeRole": "company evidence",
+      "reuseMode": "duplicate-slide",
+      "editTargetCount": 8,
+      "previewPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/manulife_lovehome_high_manulife_boxie_pipeline/template-clone/chinese-savings/template-starter-preview/starter-slide-02.png",
+      "previewRelativePath": "template-starter-preview/starter-slide-02.png",
+      "layoutPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/manulife_lovehome_high_manulife_boxie_pipeline/template-clone/chinese-savings/template-starter-layout/starter-slide-02.layout.json",
+      "layoutRelativePath": "template-starter-layout/starter-slide-02.layout.json"
+    },
+    {
+      "outputSlide": 3,
+      "sourceSlide": 11,
+      "narrativeRole": "product highlights",
+      "reuseMode": "duplicate-slide",
+      "editTargetCount": 13,
+      "previewPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/manulife_lovehome_high_manulife_boxie_pipeline/template-clone/chinese-savings/template-starter-preview/starter-slide-03.png",
+      "previewRelativePath": "template-starter-preview/starter-slide-03.png",
+      "layoutPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/manulife_lovehome_high_manulife_boxie_pipeline/template-clone/chinese-savings/template-starter-layout/starter-slide-03.layout.json",
+      "layoutRelativePath": "template-starter-layout/starter-slide-03.layout.json"
+    },
+    {
+      "outputSlide": 4,
+      "sourceSlide": 16,
+      "narrativeRole": "growth proof",
+      "reuseMode": "duplicate-slide",
+      "editTargetCount": 13,
+      "previewPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/manulife_lovehome_high_manulife_boxie_pipeline/template-clone/chinese-savings/template-starter-preview/starter-slide-04.png",
+      "previewRelativePath": "template-starter-preview/starter-slide-04.png",
+      "layoutPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/manulife_lovehome_high_manulife_boxie_pipeline/template-clone/chinese-savings/template-starter-layout/starter-slide-04.layout.json",
+      "layoutRelativePath": "template-starter-layout/starter-slide-04.layout.json"
+    },
+    {
+      "outputSlide": 5,
+      "sourceSlide": 18,
+      "narrativeRole": "withdrawal timeline retirement",
+      "reuseMode": "duplicate-slide",
+      "editTargetCount": 8,
+      "previewPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/manulife_lovehome_high_manulife_boxie_pipeline/template-clone/chinese-savings/template-starter-preview/starter-slide-05.png",
+      "previewRelativePath": "template-starter-preview/starter-slide-05.png",
+      "layoutPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/manulife_lovehome_high_manulife_boxie_pipeline/template-clone/chinese-savings/template-starter-layout/starter-slide-05.layout.json",
+      "layoutRelativePath": "template-starter-layout/starter-slide-05.layout.json"
+    },
+    {
+      "outputSlide": 6,
+      "sourceSlide": 23,
+      "narrativeRole": "withdrawal timeline long term",
+      "reuseMode": "duplicate-slide",
+      "editTargetCount": 8,
+      "previewPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/manulife_lovehome_high_manulife_boxie_pipeline/template-clone/chinese-savings/template-starter-preview/starter-slide-06.png",
+      "previewRelativePath": "template-starter-preview/starter-slide-06.png",
+      "layoutPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/manulife_lovehome_high_manulife_boxie_pipeline/template-clone/chinese-savings/template-starter-layout/starter-slide-06.layout.json",
+      "layoutRelativePath": "template-starter-layout/starter-slide-06.layout.json"
+    },
+    {
+      "outputSlide": 7,
+      "sourceSlide": 21,
+      "narrativeRole": "official withdrawal table",
+      "reuseMode": "duplicate-slide",
+      "editTargetCount": 11,
+      "previewPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/manulife_lovehome_high_manulife_boxie_pipeline/template-clone/chinese-savings/template-starter-preview/starter-slide-07.png",
+      "previewRelativePath": "template-starter-preview/starter-slide-07.png",
+      "layoutPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/manulife_lovehome_high_manulife_boxie_pipeline/template-clone/chinese-savings/template-starter-layout/starter-slide-07.layout.json",
+      "layoutRelativePath": "template-starter-layout/starter-slide-07.layout.json"
+    },
+    {
+      "outputSlide": 8,
+      "sourceSlide": 26,
+      "narrativeRole": "official no withdrawal table",
+      "reuseMode": "duplicate-slide",
+      "editTargetCount": 11,
+      "previewPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/manulife_lovehome_high_manulife_boxie_pipeline/template-clone/chinese-savings/template-starter-preview/starter-slide-08.png",
+      "previewRelativePath": "template-starter-preview/starter-slide-08.png",
+      "layoutPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/manulife_lovehome_high_manulife_boxie_pipeline/template-clone/chinese-savings/template-starter-layout/starter-slide-08.layout.json",
+      "layoutRelativePath": "template-starter-layout/starter-slide-08.layout.json"
+    },
+    {
+      "outputSlide": 9,
+      "sourceSlide": 24,
+      "narrativeRole": "closing wish",
+      "reuseMode": "duplicate-slide",
+      "editTargetCount": 6,
+      "previewPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/manulife_lovehome_high_manulife_boxie_pipeline/template-clone/chinese-savings/template-starter-preview/starter-slide-09.png",
+      "previewRelativePath": "template-starter-preview/starter-slide-09.png",
+      "layoutPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/manulife_lovehome_high_manulife_boxie_pipeline/template-clone/chinese-savings/template-starter-layout/starter-slide-09.layout.json",
+      "layoutRelativePath": "template-starter-layout/starter-slide-09.layout.json"
+    },
+    {
+      "outputSlide": 10,
+      "sourceSlide": 27,
+      "narrativeRole": "thank you",
+      "reuseMode": "duplicate-slide",
+      "editTargetCount": 2,
+      "previewPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/manulife_lovehome_high_manulife_boxie_pipeline/template-clone/chinese-savings/template-starter-preview/starter-slide-10.png",
+      "previewRelativePath": "template-starter-preview/starter-slide-10.png",
+      "layoutPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/manulife_lovehome_high_manulife_boxie_pipeline/template-clone/chinese-savings/template-starter-layout/starter-slide-10.layout.json",
+      "layoutRelativePath": "template-starter-layout/starter-slide-10.layout.json"
+    }
+  ]
+}

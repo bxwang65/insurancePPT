@@ -1,0 +1,9 @@
+{
+  "id": "wll",
+  "displayName": "立桥人寿",
+  "aliases": ["WLL", "立桥", "立橋"],
+  "tenantId": "default",
+  "knowledgeDirectories": ["WLL-立桥人寿"],
+  "evidenceRanking": ["简介", "fact", "财务", "实力", "概览", "投资"],
+  "companyIntro": "立桥人寿相关公司资料仅使用内部资料库中已索引、可追溯的文件。"
+}

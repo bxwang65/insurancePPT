@@ -1,0 +1,28 @@
+{
+  "id": "9d066227-b3cc-46f3-aff0-ca51c703c823",
+  "ownerId": "local",
+  "files": [
+    {
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/uploads/local/9d066227-b3cc-46f3-aff0-ca51c703c823_B0F85256951A427E876B6610ACD5E4C6.pdf",
+      "name": "B0F85256951A427E876B6610ACD5E4C6.pdf",
+      "type": "iul"
+    }
+  ],
+  "status": "parsed",
+  "extractions": [
+    {
+      "pdfName": "B0F85256951A427E876B6610ACD5E4C6.pdf",
+      "pdfPath": "/Users/soldier/free-code/packages/insurance-ppt/uploads/local/9d066227-b3cc-46f3-aff0-ca51c703c823_B0F85256951A427E876B6610ACD5E4C6.pdf",
+      "planType": "iul",
+      "data": null,
+      "error": "Data validation failed - unsupported format"
+    }
+  ],
+  "chatHistory": [
+    {
+      "role": "assistant",
+      "content": "✅ **AI 解析完成！**\n\n📄 **B0F85256951A427E876B6610ACD5E4C6.pdf**: ❌ Data validation failed - unsupported format\n\n你可以在下方输入定制需求（如：教育金/养老金、提领起始年龄、公司页重点、图表页偏好），我会据此优化PPT。"
+    }
+  ],
+  "createdAt": "2026-06-10T02:11:27.551Z"
+}

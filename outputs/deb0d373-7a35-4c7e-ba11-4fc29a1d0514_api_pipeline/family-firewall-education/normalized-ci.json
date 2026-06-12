@@ -1,0 +1,354 @@
+{
+  "kind": "ci",
+  "productName": "「守X家倍198」危疾保障计划",
+  "insured": {
+    "name": "VIP￿小姐",
+    "age": 32,
+    "gender": "女",
+    "smoker": ""
+  },
+  "policy": {
+    "currency": "USD",
+    "sumInsured": 100000,
+    "baseSumInsured": 100000,
+    "upgradeBenefitAmount": 30000,
+    "upgradeBenefitYears": 10,
+    "annualPremium": 4949,
+    "annualPremiumWithLevy": 4949,
+    "payYears": 10,
+    "totalPremium": 49490,
+    "coveragePeriod": "至100岁"
+  },
+  "coverageSummary": {
+    "majorCiCount": 100,
+    "earlyCiCount": 50
+  },
+  "coverageItems": [
+    {
+      "label": "严重疾病保障",
+      "name": "严重疾病保障",
+      "amount": 100000,
+      "percentage": 100,
+      "description": "首次确诊严重疾病",
+      "sourcePage": 2,
+      "source_page": 2
+    },
+    {
+      "label": "早期危疾保障",
+      "name": "早期危疾保障",
+      "amount": 50000,
+      "percentage": 50,
+      "description": "首次确诊早期危疾",
+      "sourcePage": 2,
+      "source_page": 2
+    },
+    {
+      "label": "保费豁免",
+      "name": "保费豁免",
+      "amount": 0,
+      "percentage": 100,
+      "description": "确诊后豁免后续保费",
+      "sourcePage": 2,
+      "source_page": 2
+    }
+  ],
+  "icuBenefitRules": [],
+  "multiClaimRules": [],
+  "premiumWaiverRiders": [],
+  "benefitRows": [
+    {
+      "policyYear": 33,
+      "totalPremiumPaid": 49490,
+      "guaranteedCashValue": 49490,
+      "totalSurrenderValue": 168536,
+      "deathBenefit": 168536,
+      "ciBenefit": 0
+    },
+    {
+      "policyYear": 34,
+      "totalPremiumPaid": 49490,
+      "guaranteedCashValue": 49490,
+      "totalSurrenderValue": 183912,
+      "deathBenefit": 183912,
+      "ciBenefit": 0
+    },
+    {
+      "policyYear": 35,
+      "totalPremiumPaid": 49490,
+      "guaranteedCashValue": 49490,
+      "totalSurrenderValue": 200507,
+      "deathBenefit": 200507,
+      "ciBenefit": 0
+    },
+    {
+      "policyYear": 36,
+      "totalPremiumPaid": 49490,
+      "guaranteedCashValue": 49490,
+      "totalSurrenderValue": 218420,
+      "deathBenefit": 218420,
+      "ciBenefit": 0
+    },
+    {
+      "policyYear": 37,
+      "totalPremiumPaid": 49490,
+      "guaranteedCashValue": 49490,
+      "totalSurrenderValue": 240892,
+      "deathBenefit": 240892,
+      "ciBenefit": 0
+    },
+    {
+      "policyYear": 38,
+      "totalPremiumPaid": 49490,
+      "guaranteedCashValue": 49490,
+      "totalSurrenderValue": 270443,
+      "deathBenefit": 270443,
+      "ciBenefit": 0
+    },
+    {
+      "policyYear": 39,
+      "totalPremiumPaid": 49490,
+      "guaranteedCashValue": 49490,
+      "totalSurrenderValue": 303019,
+      "deathBenefit": 303019,
+      "ciBenefit": 0
+    },
+    {
+      "policyYear": 40,
+      "totalPremiumPaid": 49490,
+      "guaranteedCashValue": 49490,
+      "totalSurrenderValue": 340479,
+      "deathBenefit": 340479,
+      "ciBenefit": 0
+    },
+    {
+      "policyYear": 41,
+      "totalPremiumPaid": 49490,
+      "guaranteedCashValue": 49490,
+      "totalSurrenderValue": 369160,
+      "deathBenefit": 369160,
+      "ciBenefit": 0
+    },
+    {
+      "policyYear": 42,
+      "totalPremiumPaid": 49490,
+      "guaranteedCashValue": 49490,
+      "totalSurrenderValue": 400263,
+      "deathBenefit": 400263,
+      "ciBenefit": 0
+    },
+    {
+      "policyYear": 43,
+      "totalPremiumPaid": 49490,
+      "guaranteedCashValue": 49490,
+      "totalSurrenderValue": 433807,
+      "deathBenefit": 433807,
+      "ciBenefit": 0
+    },
+    {
+      "policyYear": 44,
+      "totalPremiumPaid": 49490,
+      "guaranteedCashValue": 49490,
+      "totalSurrenderValue": 469755,
+      "deathBenefit": 469755,
+      "ciBenefit": 0
+    },
+    {
+      "policyYear": 45,
+      "totalPremiumPaid": 49490,
+      "guaranteedCashValue": 49490,
+      "totalSurrenderValue": 508966,
+      "deathBenefit": 508966,
+      "ciBenefit": 0
+    },
+    {
+      "policyYear": 46,
+      "totalPremiumPaid": 49490,
+      "guaranteedCashValue": 49490,
+      "totalSurrenderValue": 551772,
+      "deathBenefit": 551772,
+      "ciBenefit": 0
+    },
+    {
+      "policyYear": 47,
+      "totalPremiumPaid": 49490,
+      "guaranteedCashValue": 49490,
+      "totalSurrenderValue": 598582,
+      "deathBenefit": 598582,
+      "ciBenefit": 0
+    },
+    {
+      "policyYear": 48,
+      "totalPremiumPaid": 49490,
+      "guaranteedCashValue": 49490,
+      "totalSurrenderValue": 649854,
+      "deathBenefit": 649854,
+      "ciBenefit": 0
+    },
+    {
+      "policyYear": 49,
+      "totalPremiumPaid": 49490,
+      "guaranteedCashValue": 49490,
+      "totalSurrenderValue": 714217,
+      "deathBenefit": 714217,
+      "ciBenefit": 0
+    },
+    {
+      "policyYear": 50,
+      "totalPremiumPaid": 49490,
+      "guaranteedCashValue": 49490,
+      "totalSurrenderValue": 803407,
+      "deathBenefit": 803407,
+      "ciBenefit": 0
+    },
+    {
+      "policyYear": 51,
+      "totalPremiumPaid": 49490,
+      "guaranteedCashValue": 49490,
+      "totalSurrenderValue": 871715,
+      "deathBenefit": 871715,
+      "ciBenefit": 0
+    },
+    {
+      "policyYear": 52,
+      "totalPremiumPaid": 49490,
+      "guaranteedCashValue": 49490,
+      "totalSurrenderValue": 946748,
+      "deathBenefit": 946748,
+      "ciBenefit": 0
+    },
+    {
+      "policyYear": 53,
+      "totalPremiumPaid": 49490,
+      "guaranteedCashValue": 49490,
+      "totalSurrenderValue": 1017239,
+      "deathBenefit": 1017239,
+      "ciBenefit": 0
+    },
+    {
+      "policyYear": 54,
+      "totalPremiumPaid": 49490,
+      "guaranteedCashValue": 49490,
+      "totalSurrenderValue": 1086577,
+      "deathBenefit": 1086577,
+      "ciBenefit": 0
+    },
+    {
+      "policyYear": 55,
+      "totalPremiumPaid": 49490,
+      "guaranteedCashValue": 49490,
+      "totalSurrenderValue": 1160421,
+      "deathBenefit": 1160421,
+      "ciBenefit": 0
+    },
+    {
+      "policyYear": 56,
+      "totalPremiumPaid": 49490,
+      "guaranteedCashValue": 49490,
+      "totalSurrenderValue": 1239066,
+      "deathBenefit": 1239066,
+      "ciBenefit": 0
+    },
+    {
+      "policyYear": 57,
+      "totalPremiumPaid": 49490,
+      "guaranteedCashValue": 49490,
+      "totalSurrenderValue": 1322822,
+      "deathBenefit": 1322822,
+      "ciBenefit": 0
+    },
+    {
+      "policyYear": 58,
+      "totalPremiumPaid": 49490,
+      "guaranteedCashValue": 49490,
+      "totalSurrenderValue": 1412022,
+      "deathBenefit": 1412022,
+      "ciBenefit": 0
+    },
+    {
+      "policyYear": 59,
+      "totalPremiumPaid": 49490,
+      "guaranteedCashValue": 49490,
+      "totalSurrenderValue": 1507020,
+      "deathBenefit": 1507020,
+      "ciBenefit": 0
+    },
+    {
+      "policyYear": 60,
+      "totalPremiumPaid": 49490,
+      "guaranteedCashValue": 49490,
+      "totalSurrenderValue": 1608194,
+      "deathBenefit": 1608194,
+      "ciBenefit": 0
+    },
+    {
+      "policyYear": 61,
+      "totalPremiumPaid": 49490,
+      "guaranteedCashValue": 49490,
+      "totalSurrenderValue": 1715943,
+      "deathBenefit": 1715943,
+      "ciBenefit": 0
+    },
+    {
+      "policyYear": 62,
+      "totalPremiumPaid": 49490,
+      "guaranteedCashValue": 49490,
+      "totalSurrenderValue": 1830696,
+      "deathBenefit": 1830696,
+      "ciBenefit": 0
+    },
+    {
+      "policyYear": 63,
+      "totalPremiumPaid": 49490,
+      "guaranteedCashValue": 49490,
+      "totalSurrenderValue": 1952908,
+      "deathBenefit": 1952908,
+      "ciBenefit": 0
+    },
+    {
+      "policyYear": 64,
+      "totalPremiumPaid": 49490,
+      "guaranteedCashValue": 49490,
+      "totalSurrenderValue": 2083064,
+      "deathBenefit": 2083064,
+      "ciBenefit": 0
+    },
+    {
+      "policyYear": 65,
+      "totalPremiumPaid": 49490,
+      "guaranteedCashValue": 49490,
+      "totalSurrenderValue": 2221680,
+      "deathBenefit": 2221680,
+      "ciBenefit": 0
+    },
+    {
+      "policyYear": 66,
+      "totalPremiumPaid": 49490,
+      "guaranteedCashValue": 49490,
+      "totalSurrenderValue": 2369306,
+      "deathBenefit": 2369306,
+      "ciBenefit": 0
+    },
+    {
+      "policyYear": 67,
+      "totalPremiumPaid": 49490,
+      "guaranteedCashValue": 49490,
+      "totalSurrenderValue": 2526528,
+      "deathBenefit": 2526528,
+      "ciBenefit": 0
+    },
+    {
+      "policyYear": 68,
+      "totalPremiumPaid": 49490,
+      "guaranteedCashValue": 100000,
+      "totalSurrenderValue": 2643459,
+      "deathBenefit": 2643459,
+      "ciBenefit": 0
+    }
+  ],
+  "cashValueMilestones": [],
+  "source": {
+    "pdfHash": "c452861a0c97e3628e4755a8c61b33290ec2573deb9aac8d6391b05b3adfa067",
+    "pdfPath": "/Users/soldier/free-code/packages/insurance-ppt/uploads/local/deb0d373-7a35-4c7e-ba11-4fc29a1d0514_061ec0ec_9e0b3eb1_守護家倍198.pdf",
+    "parser": "llm-json"
+  }
+}

@@ -1,0 +1,433 @@
+{
+  "request": {
+    "tenantId": "default",
+    "userId": "afb78cf4",
+    "sessionId": "afb78cf4",
+    "customerName": "VIP 先生",
+    "outputStem": "afb78cf4_api",
+    "quality": "standard",
+    "format": "pptx",
+    "stylePreset": "chinese",
+    "companyContext": {
+      "companyId": "aia",
+      "companyName": "友邦保险",
+      "evidenceFiles": [
+        "/Users/soldier/Desktop/公司介绍/CTF-周大福人寿/CTFLife_Market Insight_2024年周大福人壽分紅實現率表現全攻略_2507_(TradChi).pdf",
+        "/Users/soldier/Desktop/公司介绍/CTF-周大福人寿/周大福人壽醫療增值服務_TC.pdf"
+      ]
+    },
+    "savingsMetrics": {
+      "insuredName": "VIP 先生",
+      "insuredAge": 1,
+      "insuredGender": "男",
+      "productName": "环X盈活储蓄保险计划(5年缴费)",
+      "currency": "美元",
+      "annualPremium": 100000.08,
+      "payYears": 5,
+      "totalPremium": 100012.93,
+      "breakevenYear": 10,
+      "multiple20": 2.72,
+      "multiple30": 5.85,
+      "withdrawStartYear": null,
+      "withdrawStartAge": null
+    },
+    "extractions": [
+      {
+        "pdfName": "環宇盈活儲蓄保險計劃.pdf",
+        "planType": "savings",
+        "data": {
+          "product_name": "环X盈活储蓄保险计划(5年缴费)",
+          "insured": {
+            "name": "VIP 先生",
+            "age": 1,
+            "gender": "男",
+            "smoker": null
+          },
+          "policy": {
+            "product_name": "环X盈活储蓄保险计划(5年缴费)",
+            "currency": "美元",
+            "sum_insured": 105000,
+            "basic_sum_insured": 1027750,
+            "annual_premium": 100000.08,
+            "premium_payment_period": "5年",
+            "coverage_period": "终身",
+            "total_premium_with_levy": 100012.93
+          },
+          "benefit_illustration": [
+            {
+              "policy_year": 1,
+              "total_premium_paid": 100000,
+              "guaranteed_cash_value": 103,
+              "reversionary_bonus": 0,
+              "terminal_dividend": 0,
+              "total_surrender_value": 103,
+              "death_benefit": 105000
+            },
+            {
+              "policy_year": 2,
+              "total_premium_paid": 200000,
+              "guaranteed_cash_value": 103,
+              "reversionary_bonus": 0,
+              "terminal_dividend": 0,
+              "total_surrender_value": 103,
+              "death_benefit": 210000
+            },
+            {
+              "policy_year": 3,
+              "total_premium_paid": 300000,
+              "guaranteed_cash_value": 26722,
+              "reversionary_bonus": 8325,
+              "terminal_dividend": 15541,
+              "total_surrender_value": 50587,
+              "death_benefit": 315000
+            },
+            {
+              "policy_year": 4,
+              "total_premium_paid": 400000,
+              "guaranteed_cash_value": 75026,
+              "reversionary_bonus": 16774,
+              "terminal_dividend": 34469,
+              "total_surrender_value": 126269,
+              "death_benefit": 420000
+            },
+            {
+              "policy_year": 5,
+              "total_premium_paid": 500000,
+              "guaranteed_cash_value": 141830,
+              "reversionary_bonus": 25351,
+              "terminal_dividend": 68452,
+              "total_surrender_value": 235632,
+              "death_benefit": 525000
+            },
+            {
+              "policy_year": 10,
+              "total_premium_paid": 500000,
+              "guaranteed_cash_value": 315519,
+              "reversionary_bonus": 62867,
+              "terminal_dividend": 281379,
+              "total_surrender_value": 659765,
+              "death_benefit": 659765
+            },
+            {
+              "policy_year": 15,
+              "total_premium_paid": 500000,
+              "guaranteed_cash_value": 365879,
+              "reversionary_bonus": 73114,
+              "terminal_dividend": 494288,
+              "total_surrender_value": 933280,
+              "death_benefit": 933280
+            },
+            {
+              "policy_year": 20,
+              "total_premium_paid": 500000,
+              "guaranteed_cash_value": 507709,
+              "reversionary_bonus": 84678,
+              "terminal_dividend": 765351,
+              "total_surrender_value": 1357738,
+              "death_benefit": 1357738
+            },
+            {
+              "policy_year": 25,
+              "total_premium_paid": 500000,
+              "guaranteed_cash_value": 512847,
+              "reversionary_bonus": 97731,
+              "terminal_dividend": 1451871,
+              "total_surrender_value": 2062449,
+              "death_benefit": 2062449
+            },
+            {
+              "policy_year": 30,
+              "total_premium_paid": 500000,
+              "guaranteed_cash_value": 517986,
+              "reversionary_bonus": 112463,
+              "terminal_dividend": 2296938,
+              "total_surrender_value": 2927387,
+              "death_benefit": 2927387
+            },
+            {
+              "policy_year": 65,
+              "total_premium_paid": 500000,
+              "guaranteed_cash_value": 584790,
+              "reversionary_bonus": 283102,
+              "terminal_dividend": 24041715,
+              "total_surrender_value": 24909607,
+              "death_benefit": 24909607
+            },
+            {
+              "policy_year": 70,
+              "total_premium_paid": 500000,
+              "guaranteed_cash_value": 595684,
+              "reversionary_bonus": 312863,
+              "terminal_dividend": 33219774,
+              "total_surrender_value": 34128321,
+              "death_benefit": 34128321
+            },
+            {
+              "policy_year": 75,
+              "total_premium_paid": 500000,
+              "guaranteed_cash_value": 608428,
+              "reversionary_bonus": 343299,
+              "terminal_dividend": 45807030,
+              "total_surrender_value": 46758758,
+              "death_benefit": 46758758
+            },
+            {
+              "policy_year": 80,
+              "total_premium_paid": 500000,
+              "guaranteed_cash_value": 620761,
+              "reversionary_bonus": 374427,
+              "terminal_dividend": 63068363,
+              "total_surrender_value": 64063551,
+              "death_benefit": 64063551
+            },
+            {
+              "policy_year": 85,
+              "total_premium_paid": 500000,
+              "guaranteed_cash_value": 635150,
+              "reversionary_bonus": 406261,
+              "terminal_dividend": 86731207,
+              "total_surrender_value": 87772617,
+              "death_benefit": 87772617
+            },
+            {
+              "policy_year": 90,
+              "total_premium_paid": 500000,
+              "guaranteed_cash_value": 648510,
+              "reversionary_bonus": 438818,
+              "terminal_dividend": 119168763,
+              "total_surrender_value": 120256092,
+              "death_benefit": 120256092
+            },
+            {
+              "policy_year": 95,
+              "total_premium_paid": 500000,
+              "guaranteed_cash_value": 665982,
+              "reversionary_bonus": 472114,
+              "terminal_dividend": 163623171,
+              "total_surrender_value": 164761267,
+              "death_benefit": 164761267
+            },
+            {
+              "policy_year": 100,
+              "total_premium_paid": 500000,
+              "guaranteed_cash_value": 680371,
+              "reversionary_bonus": 506166,
+              "terminal_dividend": 224550678,
+              "total_surrender_value": 225737215,
+              "death_benefit": 225737215
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "tenant": {
+    "tenantId": "default",
+    "companyName": "保险规划中心",
+    "colors": {
+      "primary": "#12304c",
+      "secondary": "#b89246",
+      "accent": "#2f6fb2",
+      "bgStart": "#f6efe3",
+      "bgEnd": "#eef4fb"
+    },
+    "fontFamily": "'Avenir Next','PingFang SC','Microsoft YaHei',sans-serif",
+    "imageWhitelist": {
+      "family": [
+        "https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&w=1600&q=80",
+        "https://images.unsplash.com/photo-1609220136736-443140cffec6?auto=format&fit=crop&w=1600&q=80",
+        "https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?auto=format&fit=crop&w=1600&q=80"
+      ],
+      "education": [
+        "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=1600&q=80",
+        "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1600&q=80",
+        "https://images.unsplash.com/photo-1529070538774-1843cb3265df?auto=format&fit=crop&w=1600&q=80"
+      ],
+      "retire": [
+        "https://images.unsplash.com/photo-1516307365426-bea591f05011?auto=format&fit=crop&w=1600&q=80",
+        "https://images.unsplash.com/photo-1475503572774-15a45e5d60b9?auto=format&fit=crop&w=1600&q=80",
+        "https://images.unsplash.com/photo-1556740749-887f6717d7e4?auto=format&fit=crop&w=1600&q=80"
+      ],
+      "company": [
+        "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1600&q=80",
+        "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1600&q=80",
+        "https://images.unsplash.com/photo-1460472178825-e5240623afd5?auto=format&fit=crop&w=1600&q=80"
+      ],
+      "finance": [
+        "https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?auto=format&fit=crop&w=1600&q=80",
+        "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=1600&q=80",
+        "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1600&q=80"
+      ],
+      "shield": [
+        "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=1600&q=80",
+        "https://images.unsplash.com/photo-1556740758-90de374c12ad?auto=format&fit=crop&w=1600&q=80",
+        "https://images.unsplash.com/photo-1579621970795-87facc2f976d?auto=format&fit=crop&w=1600&q=80"
+      ]
+    }
+  },
+  "outline": {
+    "markdownPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/afb78cf4_api_pipeline/outline.md",
+    "slides": [
+      {
+        "id": "cover",
+        "pageType": "cover",
+        "title": "VIP 先生 家庭资产配置方案",
+        "bullets": [
+          "环X盈活储蓄保险计划(5年缴费)"
+        ],
+        "visualIntent": "family"
+      },
+      {
+        "id": "company",
+        "pageType": "company",
+        "title": "公司介绍与资质",
+        "bullets": [
+          "友邦保险",
+          "资料来源：CTFLife_Market Insight_2024年周大福人壽分紅實現率表現全攻略_2507_(TradChi).pdf",
+          "资料来源：周大福人壽醫療增值服務_TC.pdf"
+        ],
+        "visualIntent": "company"
+      },
+      {
+        "id": "scenario",
+        "pageType": "narrative",
+        "title": "教育金方案（按年龄自动分流）",
+        "bullets": [
+          "目标：18-21岁教育金",
+          "输出：起提年份、累计提领、剩余现金价值"
+        ],
+        "visualIntent": "education"
+      },
+      {
+        "id": "chart-growth",
+        "pageType": "chart",
+        "title": "价值增长曲线（默认展示到保单80年）",
+        "bullets": [
+          "不提领20/30年相对本金倍数",
+          "长期增长趋势"
+        ],
+        "chartIntent": "growth",
+        "visualIntent": "finance"
+      },
+      {
+        "id": "chart-stacked",
+        "pageType": "chart",
+        "title": "保证/非保证构成（默认展示到保单80年）",
+        "bullets": [
+          "保证底盘与弹性贡献"
+        ],
+        "chartIntent": "stacked",
+        "visualIntent": "finance"
+      },
+      {
+        "id": "timeline-a",
+        "pageType": "timeline",
+        "title": "里程碑一：前中期资金规划",
+        "bullets": [
+          "横向里程碑：年龄/年度/金额"
+        ],
+        "visualIntent": "finance"
+      },
+      {
+        "id": "timeline-b",
+        "pageType": "timeline",
+        "title": "里程碑二：中后期与养老规划",
+        "bullets": [
+          "横向里程碑：年龄/年度/金额"
+        ],
+        "visualIntent": "retire"
+      },
+      {
+        "id": "table-withdraw",
+        "pageType": "table",
+        "title": "提领方案数据表（每10年）",
+        "bullets": [
+          "含单利复利"
+        ],
+        "visualIntent": "finance"
+      },
+      {
+        "id": "table-nowithdraw",
+        "pageType": "table",
+        "title": "不提领方案数据表（每10年）",
+        "bullets": [
+          "含单利复利"
+        ],
+        "visualIntent": "finance"
+      },
+      {
+        "id": "closing",
+        "pageType": "conclusion",
+        "title": "结束语与祝愿",
+        "bullets": [
+          "祝愿家庭资产稳健增长、代际传承顺利"
+        ],
+        "visualIntent": "family"
+      }
+    ]
+  },
+  "chartArtifact": {
+    "assetsDir": "/Users/soldier/free-code/packages/insurance-ppt/outputs/afb78cf4_api_pipeline/charts",
+    "assets": []
+  },
+  "imageArtifact": {
+    "assetsDir": "/Users/soldier/free-code/packages/insurance-ppt/outputs/afb78cf4_api_pipeline/assets",
+    "images": [
+      {
+        "slideId": "cover",
+        "pathOrUrl": "/Users/soldier/free-code/packages/insurance-ppt/outputs/afb78cf4_api_pipeline/assets/cover.jpg",
+        "source": "whitelist"
+      },
+      {
+        "slideId": "company",
+        "pathOrUrl": "/Users/soldier/free-code/packages/insurance-ppt/outputs/afb78cf4_api_pipeline/assets/company.jpg",
+        "source": "whitelist"
+      },
+      {
+        "slideId": "scenario",
+        "pathOrUrl": "/Users/soldier/free-code/packages/insurance-ppt/outputs/afb78cf4_api_pipeline/assets/scenario.jpg",
+        "source": "whitelist"
+      },
+      {
+        "slideId": "chart-growth",
+        "pathOrUrl": "/Users/soldier/free-code/packages/insurance-ppt/outputs/afb78cf4_api_pipeline/assets/chart-growth.jpg",
+        "source": "whitelist"
+      },
+      {
+        "slideId": "chart-stacked",
+        "pathOrUrl": "/Users/soldier/free-code/packages/insurance-ppt/outputs/afb78cf4_api_pipeline/assets/chart-stacked.jpg",
+        "source": "whitelist"
+      },
+      {
+        "slideId": "timeline-a",
+        "pathOrUrl": "/Users/soldier/free-code/packages/insurance-ppt/outputs/afb78cf4_api_pipeline/assets/timeline-a.jpg",
+        "source": "whitelist"
+      },
+      {
+        "slideId": "timeline-b",
+        "pathOrUrl": "/Users/soldier/free-code/packages/insurance-ppt/outputs/afb78cf4_api_pipeline/assets/timeline-b.jpg",
+        "source": "whitelist"
+      },
+      {
+        "slideId": "table-withdraw",
+        "pathOrUrl": "/Users/soldier/free-code/packages/insurance-ppt/outputs/afb78cf4_api_pipeline/assets/table-withdraw.jpg",
+        "source": "whitelist"
+      },
+      {
+        "slideId": "table-nowithdraw",
+        "pathOrUrl": "/Users/soldier/free-code/packages/insurance-ppt/outputs/afb78cf4_api_pipeline/assets/table-nowithdraw.jpg",
+        "source": "whitelist"
+      },
+      {
+        "slideId": "closing",
+        "pathOrUrl": "/Users/soldier/free-code/packages/insurance-ppt/outputs/afb78cf4_api_pipeline/assets/closing.jpg",
+        "source": "whitelist"
+      }
+    ]
+  },
+  "deck": {
+    "marpPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/afb78cf4_api_pipeline/deck.marp.md",
+    "pptxPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/afb78cf4_api_pipeline/deck.pptx"
+  },
+  "generatedAt": "2026-06-01T02:55:10.566Z"
+}

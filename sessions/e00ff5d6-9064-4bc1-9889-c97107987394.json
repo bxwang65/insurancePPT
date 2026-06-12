@@ -1,0 +1,642 @@
+{
+  "id": "e00ff5d6-9064-4bc1-9889-c97107987394",
+  "ownerId": "local",
+  "files": [
+    {
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/uploads/local/e00ff5d6-9064-4bc1-9889-c97107987394_B0F85256951A427E876B6610ACD5E4C6.pdf",
+      "name": "B0F85256951A427E876B6610ACD5E4C6.pdf",
+      "type": "iul"
+    }
+  ],
+  "status": "done",
+  "extractions": [
+    {
+      "pdfName": "B0F85256951A427E876B6610ACD5E4C6.pdf",
+      "pdfPath": "/Users/soldier/free-code/packages/insurance-ppt/uploads/local/e00ff5d6-9064-4bc1-9889-c97107987394_B0F85256951A427E876B6610ACD5E4C6.pdf",
+      "planType": "iul",
+      "data": {
+        "product_name": "Genesis III Indexed Universal Life",
+        "product_type": "iul",
+        "insured": {
+          "name": "Client",
+          "age": 66,
+          "gender": "女性",
+          "smoker": ""
+        },
+        "policy": {
+          "currency": "美元",
+          "sum_insured": 3000000,
+          "annual_premium": 143533,
+          "premium_payment_period": "10年",
+          "coverage_period": "终身"
+        },
+        "index_accounts": [
+          {
+            "name": "环球指数户口",
+            "allocation": 0
+          },
+          {
+            "name": "标普500指数户口",
+            "allocation": 100
+          },
+          {
+            "name": "标普500伊斯兰教法指数户口",
+            "allocation": 0
+          },
+          {
+            "name": "VC无上限指数户口",
+            "allocation": 0
+          }
+        ],
+        "benefit_illustration": [
+          {
+            "policy_year": 1,
+            "total_premium_paid": 143533,
+            "cost_of_insurance": 0,
+            "guaranteed_account_value": 76644,
+            "guaranteed_cash_value": 0,
+            "non_guaranteed_account_value": 84135,
+            "non_guaranteed_cash_value": 0,
+            "non_guaranteed_death_benefit": 3000000
+          },
+          {
+            "policy_year": 2,
+            "total_premium_paid": 287066,
+            "cost_of_insurance": 0,
+            "guaranteed_account_value": 165354,
+            "guaranteed_cash_value": 26836,
+            "non_guaranteed_account_value": 186864,
+            "non_guaranteed_cash_value": 42534,
+            "non_guaranteed_death_benefit": 3000000
+          },
+          {
+            "policy_year": 3,
+            "total_premium_paid": 430599,
+            "cost_of_insurance": 0,
+            "guaranteed_account_value": 251884,
+            "guaranteed_cash_value": 130019,
+            "non_guaranteed_account_value": 294703,
+            "non_guaranteed_cash_value": 161473,
+            "non_guaranteed_death_benefit": 3000000
+          },
+          {
+            "policy_year": 4,
+            "total_premium_paid": 574132,
+            "cost_of_insurance": 0,
+            "guaranteed_account_value": 336062,
+            "guaranteed_cash_value": 232643,
+            "non_guaranteed_account_value": 407830,
+            "non_guaranteed_cash_value": 285700,
+            "non_guaranteed_death_benefit": 3000000
+          },
+          {
+            "policy_year": 5,
+            "total_premium_paid": 717665,
+            "cost_of_insurance": 0,
+            "guaranteed_account_value": 420132,
+            "guaranteed_cash_value": 336969,
+            "non_guaranteed_account_value": 528969,
+            "non_guaranteed_cash_value": 417939,
+            "non_guaranteed_death_benefit": 3000000
+          },
+          {
+            "policy_year": 6,
+            "total_premium_paid": 861198,
+            "cost_of_insurance": 0,
+            "guaranteed_account_value": 500160,
+            "guaranteed_cash_value": 439087,
+            "non_guaranteed_account_value": 656431,
+            "non_guaranteed_cash_value": 556501,
+            "non_guaranteed_death_benefit": 3000000
+          },
+          {
+            "policy_year": 7,
+            "total_premium_paid": 1004731,
+            "cost_of_insurance": 0,
+            "guaranteed_account_value": 577618,
+            "guaranteed_cash_value": 540444,
+            "non_guaranteed_account_value": 790629,
+            "non_guaranteed_cash_value": 701799,
+            "non_guaranteed_death_benefit": 3000000
+          },
+          {
+            "policy_year": 8,
+            "total_premium_paid": 1148264,
+            "cost_of_insurance": 0,
+            "guaranteed_account_value": 652315,
+            "guaranteed_cash_value": 640898,
+            "non_guaranteed_account_value": 932001,
+            "non_guaranteed_cash_value": 854301,
+            "non_guaranteed_death_benefit": 3000000
+          },
+          {
+            "policy_year": 9,
+            "total_premium_paid": 1291797,
+            "cost_of_insurance": 0,
+            "guaranteed_account_value": 724179,
+            "guaranteed_cash_value": 740335,
+            "non_guaranteed_account_value": 1081128,
+            "non_guaranteed_cash_value": 1014528,
+            "non_guaranteed_death_benefit": 3000000
+          },
+          {
+            "policy_year": 10,
+            "total_premium_paid": 1435330,
+            "cost_of_insurance": 0,
+            "guaranteed_account_value": 792974,
+            "guaranteed_cash_value": 838591,
+            "non_guaranteed_account_value": 1238598,
+            "non_guaranteed_cash_value": 1183098,
+            "non_guaranteed_death_benefit": 3000000
+          },
+          {
+            "policy_year": 11,
+            "total_premium_paid": 1435330,
+            "cost_of_insurance": 0,
+            "guaranteed_account_value": 731268,
+            "guaranteed_cash_value": 797310,
+            "non_guaranteed_account_value": 1272830,
+            "non_guaranteed_cash_value": 1228430,
+            "non_guaranteed_death_benefit": 3000000
+          },
+          {
+            "policy_year": 12,
+            "total_premium_paid": 1435330,
+            "cost_of_insurance": 0,
+            "guaranteed_account_value": 664468,
+            "guaranteed_cash_value": 750685,
+            "non_guaranteed_account_value": 1306970,
+            "non_guaranteed_cash_value": 1273670,
+            "non_guaranteed_death_benefit": 3000000
+          },
+          {
+            "policy_year": 13,
+            "total_premium_paid": 1435330,
+            "cost_of_insurance": 0,
+            "guaranteed_account_value": 591655,
+            "guaranteed_cash_value": 697792,
+            "non_guaranteed_account_value": 1340719,
+            "non_guaranteed_cash_value": 1318519,
+            "non_guaranteed_death_benefit": 3000000
+          },
+          {
+            "policy_year": 14,
+            "total_premium_paid": 1435330,
+            "cost_of_insurance": 0,
+            "guaranteed_account_value": 511778,
+            "guaranteed_cash_value": 637571,
+            "non_guaranteed_account_value": 1373750,
+            "non_guaranteed_cash_value": 1362650,
+            "non_guaranteed_death_benefit": 3000000
+          },
+          {
+            "policy_year": 15,
+            "total_premium_paid": 1435330,
+            "cost_of_insurance": 0,
+            "guaranteed_account_value": 423530,
+            "guaranteed_cash_value": 568706,
+            "non_guaranteed_account_value": 1405681,
+            "non_guaranteed_cash_value": 1405681,
+            "non_guaranteed_death_benefit": 3000000
+          },
+          {
+            "policy_year": 16,
+            "total_premium_paid": 1435330,
+            "cost_of_insurance": 0,
+            "guaranteed_account_value": 356077,
+            "guaranteed_cash_value": 509579,
+            "non_guaranteed_account_value": 1467927,
+            "non_guaranteed_cash_value": 1467927,
+            "non_guaranteed_death_benefit": 3000000
+          },
+          {
+            "policy_year": 17,
+            "total_premium_paid": 1435330,
+            "cost_of_insurance": 0,
+            "guaranteed_account_value": 277568,
+            "guaranteed_cash_value": 439554,
+            "non_guaranteed_account_value": 1531108,
+            "non_guaranteed_cash_value": 1531108,
+            "non_guaranteed_death_benefit": 3000000
+          },
+          {
+            "policy_year": 18,
+            "total_premium_paid": 1435330,
+            "cost_of_insurance": 0,
+            "guaranteed_account_value": 180435,
+            "guaranteed_cash_value": 351204,
+            "non_guaranteed_account_value": 1592391,
+            "non_guaranteed_cash_value": 1592391,
+            "non_guaranteed_death_benefit": 3000000
+          },
+          {
+            "policy_year": 19,
+            "total_premium_paid": 1435330,
+            "cost_of_insurance": 0,
+            "guaranteed_account_value": 67758,
+            "guaranteed_cash_value": 247245,
+            "non_guaranteed_account_value": 1654533,
+            "non_guaranteed_cash_value": 1654533,
+            "non_guaranteed_death_benefit": 3000000
+          },
+          {
+            "policy_year": 20,
+            "total_premium_paid": 1435330,
+            "cost_of_insurance": 0,
+            "guaranteed_account_value": 0,
+            "guaranteed_cash_value": 125217,
+            "non_guaranteed_account_value": 1717455,
+            "non_guaranteed_cash_value": 1717455,
+            "non_guaranteed_death_benefit": 3000000
+          },
+          {
+            "policy_year": 21,
+            "total_premium_paid": 1435330,
+            "cost_of_insurance": 0,
+            "guaranteed_account_value": 0,
+            "guaranteed_cash_value": 0,
+            "non_guaranteed_account_value": 1781152,
+            "non_guaranteed_cash_value": 1781152,
+            "non_guaranteed_death_benefit": 3000000
+          },
+          {
+            "policy_year": 22,
+            "total_premium_paid": 1435330,
+            "cost_of_insurance": 0,
+            "guaranteed_account_value": 0,
+            "guaranteed_cash_value": 0,
+            "non_guaranteed_account_value": 1845577,
+            "non_guaranteed_cash_value": 1845577,
+            "non_guaranteed_death_benefit": 3000000
+          },
+          {
+            "policy_year": 23,
+            "total_premium_paid": 1435330,
+            "cost_of_insurance": 0,
+            "guaranteed_account_value": 0,
+            "guaranteed_cash_value": 0,
+            "non_guaranteed_account_value": 1911517,
+            "non_guaranteed_cash_value": 1911517,
+            "non_guaranteed_death_benefit": 3000000
+          },
+          {
+            "policy_year": 24,
+            "total_premium_paid": 1435330,
+            "cost_of_insurance": 0,
+            "guaranteed_account_value": 0,
+            "guaranteed_cash_value": 0,
+            "non_guaranteed_account_value": 1980363,
+            "non_guaranteed_cash_value": 1980363,
+            "non_guaranteed_death_benefit": 3000000
+          },
+          {
+            "policy_year": 25,
+            "total_premium_paid": 1435330,
+            "cost_of_insurance": 0,
+            "guaranteed_account_value": 0,
+            "guaranteed_cash_value": 0,
+            "non_guaranteed_account_value": 2052722,
+            "non_guaranteed_cash_value": 2052722,
+            "non_guaranteed_death_benefit": 3000000
+          },
+          {
+            "policy_year": 26,
+            "total_premium_paid": 1435330,
+            "cost_of_insurance": 0,
+            "guaranteed_account_value": 0,
+            "guaranteed_cash_value": 0,
+            "non_guaranteed_account_value": 2129410,
+            "non_guaranteed_cash_value": 2129410,
+            "non_guaranteed_death_benefit": 3000000
+          },
+          {
+            "policy_year": 27,
+            "total_premium_paid": 1435330,
+            "cost_of_insurance": 0,
+            "guaranteed_account_value": 0,
+            "guaranteed_cash_value": 0,
+            "non_guaranteed_account_value": 2208517,
+            "non_guaranteed_cash_value": 2208517,
+            "non_guaranteed_death_benefit": 3000000
+          },
+          {
+            "policy_year": 28,
+            "total_premium_paid": 1435330,
+            "cost_of_insurance": 0,
+            "guaranteed_account_value": 0,
+            "guaranteed_cash_value": 0,
+            "non_guaranteed_account_value": 2290899,
+            "non_guaranteed_cash_value": 2290899,
+            "non_guaranteed_death_benefit": 3000000
+          },
+          {
+            "policy_year": 29,
+            "total_premium_paid": 1435330,
+            "cost_of_insurance": 0,
+            "guaranteed_account_value": 0,
+            "guaranteed_cash_value": 0,
+            "non_guaranteed_account_value": 2377878,
+            "non_guaranteed_cash_value": 2377878,
+            "non_guaranteed_death_benefit": 3000000
+          },
+          {
+            "policy_year": 30,
+            "total_premium_paid": 1435330,
+            "cost_of_insurance": 0,
+            "guaranteed_account_value": 0,
+            "guaranteed_cash_value": 0,
+            "non_guaranteed_account_value": 2471402,
+            "non_guaranteed_cash_value": 2471402,
+            "non_guaranteed_death_benefit": 3000000
+          },
+          {
+            "policy_year": 31,
+            "total_premium_paid": 1435330,
+            "cost_of_insurance": 0,
+            "guaranteed_account_value": 0,
+            "guaranteed_cash_value": 0,
+            "non_guaranteed_account_value": 2574449,
+            "non_guaranteed_cash_value": 2574449,
+            "non_guaranteed_death_benefit": 3000000
+          },
+          {
+            "policy_year": 32,
+            "total_premium_paid": 1435330,
+            "cost_of_insurance": 0,
+            "guaranteed_account_value": 0,
+            "guaranteed_cash_value": 0,
+            "non_guaranteed_account_value": 2691558,
+            "non_guaranteed_cash_value": 2691558,
+            "non_guaranteed_death_benefit": 3000000
+          },
+          {
+            "policy_year": 33,
+            "total_premium_paid": 1435330,
+            "cost_of_insurance": 0,
+            "guaranteed_account_value": 0,
+            "guaranteed_cash_value": 0,
+            "non_guaranteed_account_value": 2829749,
+            "non_guaranteed_cash_value": 2829749,
+            "non_guaranteed_death_benefit": 3000000
+          },
+          {
+            "policy_year": 34,
+            "total_premium_paid": 1435330,
+            "cost_of_insurance": 0,
+            "guaranteed_account_value": 0,
+            "guaranteed_cash_value": 0,
+            "non_guaranteed_account_value": 3000117,
+            "non_guaranteed_cash_value": 3000117,
+            "non_guaranteed_death_benefit": 3000117
+          },
+          {
+            "policy_year": 35,
+            "total_premium_paid": 1435330,
+            "cost_of_insurance": 0,
+            "guaranteed_account_value": 0,
+            "guaranteed_cash_value": 0,
+            "non_guaranteed_account_value": 3216766,
+            "non_guaranteed_cash_value": 3216766,
+            "non_guaranteed_death_benefit": 3216766
+          },
+          {
+            "policy_year": 36,
+            "total_premium_paid": 1435330,
+            "cost_of_insurance": 0,
+            "guaranteed_account_value": 0,
+            "guaranteed_cash_value": 0,
+            "non_guaranteed_account_value": 3446720,
+            "non_guaranteed_cash_value": 3446720,
+            "non_guaranteed_death_benefit": 3446720
+          },
+          {
+            "policy_year": 37,
+            "total_premium_paid": 1435330,
+            "cost_of_insurance": 0,
+            "guaranteed_account_value": 0,
+            "guaranteed_cash_value": 0,
+            "non_guaranteed_account_value": 3690966,
+            "non_guaranteed_cash_value": 3690966,
+            "non_guaranteed_death_benefit": 3690966
+          },
+          {
+            "policy_year": 38,
+            "total_premium_paid": 1435330,
+            "cost_of_insurance": 0,
+            "guaranteed_account_value": 0,
+            "guaranteed_cash_value": 0,
+            "non_guaranteed_account_value": 3950394,
+            "non_guaranteed_cash_value": 3950394,
+            "non_guaranteed_death_benefit": 3950394
+          },
+          {
+            "policy_year": 39,
+            "total_premium_paid": 1435330,
+            "cost_of_insurance": 0,
+            "guaranteed_account_value": 0,
+            "guaranteed_cash_value": 0,
+            "non_guaranteed_account_value": 4225946,
+            "non_guaranteed_cash_value": 4225946,
+            "non_guaranteed_death_benefit": 4225946
+          },
+          {
+            "policy_year": 40,
+            "total_premium_paid": 1435330,
+            "cost_of_insurance": 0,
+            "guaranteed_account_value": 0,
+            "guaranteed_cash_value": 0,
+            "non_guaranteed_account_value": 4518624,
+            "non_guaranteed_cash_value": 4518624,
+            "non_guaranteed_death_benefit": 4518624
+          },
+          {
+            "policy_year": 41,
+            "total_premium_paid": 1435330,
+            "cost_of_insurance": 0,
+            "guaranteed_account_value": 0,
+            "guaranteed_cash_value": 0,
+            "non_guaranteed_account_value": 4829494,
+            "non_guaranteed_cash_value": 4829494,
+            "non_guaranteed_death_benefit": 4829494
+          },
+          {
+            "policy_year": 42,
+            "total_premium_paid": 1435330,
+            "cost_of_insurance": 0,
+            "guaranteed_account_value": 0,
+            "guaranteed_cash_value": 0,
+            "non_guaranteed_account_value": 5159685,
+            "non_guaranteed_cash_value": 5159685,
+            "non_guaranteed_death_benefit": 5159685
+          },
+          {
+            "policy_year": 43,
+            "total_premium_paid": 1435330,
+            "cost_of_insurance": 0,
+            "guaranteed_account_value": 0,
+            "guaranteed_cash_value": 0,
+            "non_guaranteed_account_value": 5510400,
+            "non_guaranteed_cash_value": 5510400,
+            "non_guaranteed_death_benefit": 5510400
+          },
+          {
+            "policy_year": 44,
+            "total_premium_paid": 1435330,
+            "cost_of_insurance": 0,
+            "guaranteed_account_value": 0,
+            "guaranteed_cash_value": 0,
+            "non_guaranteed_account_value": 5882912,
+            "non_guaranteed_cash_value": 5882912,
+            "non_guaranteed_death_benefit": 5882912
+          },
+          {
+            "policy_year": 45,
+            "total_premium_paid": 1435330,
+            "cost_of_insurance": 0,
+            "guaranteed_account_value": 0,
+            "guaranteed_cash_value": 0,
+            "non_guaranteed_account_value": 6278578,
+            "non_guaranteed_cash_value": 6278578,
+            "non_guaranteed_death_benefit": 6278578
+          },
+          {
+            "policy_year": 46,
+            "total_premium_paid": 1435330,
+            "cost_of_insurance": 0,
+            "guaranteed_account_value": 0,
+            "guaranteed_cash_value": 0,
+            "non_guaranteed_account_value": 6698837,
+            "non_guaranteed_cash_value": 6698837,
+            "non_guaranteed_death_benefit": 6698837
+          },
+          {
+            "policy_year": 47,
+            "total_premium_paid": 1435330,
+            "cost_of_insurance": 0,
+            "guaranteed_account_value": 0,
+            "guaranteed_cash_value": 0,
+            "non_guaranteed_account_value": 7145216,
+            "non_guaranteed_cash_value": 7145216,
+            "non_guaranteed_death_benefit": 7145216
+          },
+          {
+            "policy_year": 48,
+            "total_premium_paid": 1435330,
+            "cost_of_insurance": 0,
+            "guaranteed_account_value": 0,
+            "guaranteed_cash_value": 0,
+            "non_guaranteed_account_value": 7619339,
+            "non_guaranteed_cash_value": 7619339,
+            "non_guaranteed_death_benefit": 7619339
+          },
+          {
+            "policy_year": 49,
+            "total_premium_paid": 1435330,
+            "cost_of_insurance": 0,
+            "guaranteed_account_value": 0,
+            "guaranteed_cash_value": 0,
+            "non_guaranteed_account_value": 8122931,
+            "non_guaranteed_cash_value": 8122931,
+            "non_guaranteed_death_benefit": 8122931
+          },
+          {
+            "policy_year": 50,
+            "total_premium_paid": 1435330,
+            "cost_of_insurance": 0,
+            "guaranteed_account_value": 0,
+            "guaranteed_cash_value": 0,
+            "non_guaranteed_account_value": 8657824,
+            "non_guaranteed_cash_value": 8657824,
+            "non_guaranteed_death_benefit": 8657824
+          },
+          {
+            "policy_year": 51,
+            "total_premium_paid": 1435330,
+            "cost_of_insurance": 0,
+            "guaranteed_account_value": 0,
+            "guaranteed_cash_value": 0,
+            "non_guaranteed_account_value": 9225962,
+            "non_guaranteed_cash_value": 9225962,
+            "non_guaranteed_death_benefit": 9225962
+          },
+          {
+            "policy_year": 52,
+            "total_premium_paid": 1435330,
+            "cost_of_insurance": 0,
+            "guaranteed_account_value": 0,
+            "guaranteed_cash_value": 0,
+            "non_guaranteed_account_value": 9829413,
+            "non_guaranteed_cash_value": 9829413,
+            "non_guaranteed_death_benefit": 9829413
+          },
+          {
+            "policy_year": 53,
+            "total_premium_paid": 1435330,
+            "cost_of_insurance": 0,
+            "guaranteed_account_value": 0,
+            "guaranteed_cash_value": 0,
+            "non_guaranteed_account_value": 10470370,
+            "non_guaranteed_cash_value": 10470370,
+            "non_guaranteed_death_benefit": 10470370
+          },
+          {
+            "policy_year": 54,
+            "total_premium_paid": 1435330,
+            "cost_of_insurance": 0,
+            "guaranteed_account_value": 0,
+            "guaranteed_cash_value": 0,
+            "non_guaranteed_account_value": 11151166,
+            "non_guaranteed_cash_value": 11151166,
+            "non_guaranteed_death_benefit": 11151166
+          },
+          {
+            "policy_year": 55,
+            "total_premium_paid": 1435330,
+            "cost_of_insurance": 0,
+            "guaranteed_account_value": 0,
+            "guaranteed_cash_value": 0,
+            "non_guaranteed_account_value": 11874276,
+            "non_guaranteed_cash_value": 11874276,
+            "non_guaranteed_death_benefit": 11874276
+          }
+        ],
+        "sales_insights": {
+          "target_customer": "寻求高额寿险保障与潜在指数增长的高净值人士，尤其适合财富传承和遗产规划",
+          "key_selling_points": [
+            "高杠杆寿险：首年保费$143,533即获$3,000,000身故保障，杠杆高达20.9倍",
+            "指数增长潜力：标普500指数账户当前假设利率7.25%，保底0%不亏损",
+            "税务优惠：新加坡寿险身故赔偿金通常免税"
+          ],
+          "unique_advantages": "累计保证派息率2.00%确保退保时最低收益，长期红利每年1.00%额外增值",
+          "suggested_narrative": "利用指数万能寿险的高杠杆和增值潜力，为家人留下免税的财富传承",
+          "highlight_numbers": [
+            2090,
+            3000000,
+            3.27
+          ]
+        }
+      }
+    }
+  ],
+  "chatHistory": [
+    {
+      "role": "assistant",
+      "content": "✅ **AI 解析完成！**\n\n📄 **B0F85256951A427E876B6610ACD5E4C6.pdf** → **Genesis III Indexed Universal Life**\n   - 指数万用寿险 | 年缴: $143,533 | 10年\n   - 55年数据 | 期末倍数: 8.3x\n\n你可以在下方输入定制需求（如：教育金/养老金、提领起始年龄、公司页重点、图表页偏好），我会据此优化PPT。"
+    }
+  ],
+  "createdAt": "2026-06-10T03:57:08.484Z",
+  "pptPath": "local/e00ff5d6-9064-4bc1-9889-c97107987394_综合方案.pptx",
+  "previewPaths": [
+    "local/e00ff5d6-9064-4bc1-9889-c97107987394_preview_preview/slide_01.png",
+    "local/e00ff5d6-9064-4bc1-9889-c97107987394_preview_preview/slide_02.png",
+    "local/e00ff5d6-9064-4bc1-9889-c97107987394_preview_preview/slide_03.png",
+    "local/e00ff5d6-9064-4bc1-9889-c97107987394_preview_preview/slide_04.png",
+    "local/e00ff5d6-9064-4bc1-9889-c97107987394_preview_preview/slide_05.png",
+    "local/e00ff5d6-9064-4bc1-9889-c97107987394_preview_preview/slide_06.png",
+    "local/e00ff5d6-9064-4bc1-9889-c97107987394_preview_preview/slide_07.png",
+    "local/e00ff5d6-9064-4bc1-9889-c97107987394_preview_preview/slide_08.png",
+    "local/e00ff5d6-9064-4bc1-9889-c97107987394_preview_preview/slide_09.png"
+  ],
+  "previewPdfPath": "local/e00ff5d6-9064-4bc1-9889-c97107987394_preview_preview/e00ff5d6-9064-4bc1-9889-c97107987394_综合方案.pdf",
+  "slideCount": 9
+}

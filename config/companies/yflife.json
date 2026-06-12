@@ -1,0 +1,9 @@
+{
+  "id": "yflife",
+  "displayName": "万通保险",
+  "aliases": ["YFLife", "万通", "萬通"],
+  "tenantId": "default",
+  "knowledgeDirectories": ["YFLife-万通"],
+  "evidenceRanking": ["简介", "fact", "财务", "实力", "概览", "投资", "权益表现"],
+  "companyIntro": "万通保险相关公司资料仅使用内部资料库中已索引、可追溯的文件。"
+}

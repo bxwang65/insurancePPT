@@ -1,0 +1,9 @@
+{
+  "id": "sunlife",
+  "displayName": "永明",
+  "aliases": ["SunLife", "Sun Life", "永明"],
+  "tenantId": "default",
+  "knowledgeDirectories": ["SunLife-永明", "新加坡-永明", "百慕大-永明"],
+  "evidenceRanking": ["简介", "fact", "年报", "财务", "实力", "概览", "投资"],
+  "companyIntro": "永明相关公司资料仅使用内部资料库中已索引、可追溯的文件。"
+}

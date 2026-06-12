@@ -1,0 +1,584 @@
+{
+  "id": "400b4025-78b8-46dd-9c57-150761ff600d",
+  "ownerId": "local",
+  "files": [
+    {
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/uploads/local/400b4025-78b8-46dd-9c57-150761ff600d_ci.pdf",
+      "name": "ci.pdf",
+      "type": "ci"
+    }
+  ],
+  "status": "done",
+  "extractions": [
+    {
+      "pdfName": "ci.pdf",
+      "pdfPath": "/Users/soldier/free-code/packages/insurance-ppt/uploads/local/400b4025-78b8-46dd-9c57-150761ff600d_ci.pdf",
+      "planType": "ci",
+      "data": {
+        "product_name": "「守X家倍198」危疾保障计划",
+        "product_type": "ci",
+        "insured": {
+          "name": "VIP￿小姐",
+          "age": 32,
+          "gender": "女",
+          "smoker": null
+        },
+        "policy": {
+          "product_name": "「守X家倍198」危疾保障计划",
+          "currency": "USD",
+          "sum_insured": 100000,
+          "basic_sum_insured": 100000,
+          "annual_premium": 4949,
+          "premium_payment_period": "10年",
+          "coverage_period": "至100岁",
+          "total_premium_with_levy": 4949
+        },
+        "coverage_items": [
+          {
+            "label": "严重疾病保障",
+            "amount": 100000,
+            "percentage": 100,
+            "description": "首次确诊严重疾病",
+            "source_page": 2
+          },
+          {
+            "label": "早期危疾保障",
+            "amount": 50000,
+            "percentage": 50,
+            "description": "首次确诊早期危疾",
+            "source_page": 2
+          },
+          {
+            "label": "保费豁免",
+            "amount": 0,
+            "percentage": 100,
+            "description": "确诊后豁免后续保费",
+            "source_page": 2
+          }
+        ],
+        "base_sum_insured": 100000,
+        "upgrade_benefit_amount": 30000,
+        "upgrade_benefit_years": 10,
+        "major_ci_count": 100,
+        "early_ci_count": 50,
+        "benefit_illustration": [
+          {
+            "policy_year": 1,
+            "age": 33,
+            "total_premium_paid": 4949,
+            "death_benefit": 160000,
+            "source_page": 16
+          },
+          {
+            "policy_year": 2,
+            "age": 34,
+            "total_premium_paid": 9898,
+            "death_benefit": 160000,
+            "source_page": 16
+          },
+          {
+            "policy_year": 3,
+            "age": 35,
+            "total_premium_paid": 14847,
+            "death_benefit": 160000,
+            "source_page": 16
+          },
+          {
+            "policy_year": 4,
+            "age": 36,
+            "total_premium_paid": 19796,
+            "death_benefit": 160000,
+            "source_page": 16
+          },
+          {
+            "policy_year": 5,
+            "age": 37,
+            "total_premium_paid": 24745,
+            "death_benefit": 161491,
+            "source_page": 16
+          },
+          {
+            "policy_year": 6,
+            "age": 38,
+            "total_premium_paid": 29694,
+            "death_benefit": 161653,
+            "source_page": 16
+          },
+          {
+            "policy_year": 7,
+            "age": 39,
+            "total_premium_paid": 34643,
+            "death_benefit": 161840,
+            "source_page": 16
+          },
+          {
+            "policy_year": 8,
+            "age": 40,
+            "total_premium_paid": 39592,
+            "death_benefit": 162054,
+            "source_page": 16
+          },
+          {
+            "policy_year": 9,
+            "age": 41,
+            "total_premium_paid": 44541,
+            "death_benefit": 163678,
+            "source_page": 16
+          },
+          {
+            "policy_year": 10,
+            "age": 42,
+            "total_premium_paid": 49490,
+            "death_benefit": 167916,
+            "source_page": 16
+          },
+          {
+            "policy_year": 11,
+            "age": 43,
+            "total_premium_paid": 49490,
+            "death_benefit": 110395,
+            "source_page": 16
+          },
+          {
+            "policy_year": 12,
+            "age": 44,
+            "total_premium_paid": 49490,
+            "death_benefit": 112140,
+            "source_page": 16
+          },
+          {
+            "policy_year": 13,
+            "age": 45,
+            "total_premium_paid": 49490,
+            "death_benefit": 113838,
+            "source_page": 16
+          },
+          {
+            "policy_year": 14,
+            "age": 46,
+            "total_premium_paid": 49490,
+            "death_benefit": 115510,
+            "source_page": 16
+          },
+          {
+            "policy_year": 15,
+            "age": 47,
+            "total_premium_paid": 49490,
+            "death_benefit": 122138,
+            "source_page": 16
+          },
+          {
+            "policy_year": 16,
+            "age": 48,
+            "total_premium_paid": 49490,
+            "death_benefit": 135448,
+            "source_page": 16
+          },
+          {
+            "policy_year": 17,
+            "age": 49,
+            "total_premium_paid": 49490,
+            "death_benefit": 137817,
+            "source_page": 16
+          },
+          {
+            "policy_year": 18,
+            "age": 50,
+            "total_premium_paid": 49490,
+            "death_benefit": 138573,
+            "source_page": 16
+          },
+          {
+            "policy_year": 19,
+            "age": 51,
+            "total_premium_paid": 49490,
+            "death_benefit": 139344,
+            "source_page": 16
+          },
+          {
+            "policy_year": 20,
+            "age": 52,
+            "total_premium_paid": 49490,
+            "death_benefit": 140131,
+            "source_page": 16
+          },
+          {
+            "policy_year": 21,
+            "age": 53,
+            "total_premium_paid": 49490,
+            "death_benefit": 140934,
+            "source_page": 16
+          },
+          {
+            "policy_year": 22,
+            "age": 54,
+            "total_premium_paid": 49490,
+            "death_benefit": 141753,
+            "source_page": 16
+          },
+          {
+            "policy_year": 23,
+            "age": 55,
+            "total_premium_paid": 49490,
+            "death_benefit": 142588,
+            "source_page": 16
+          },
+          {
+            "policy_year": 24,
+            "age": 56,
+            "total_premium_paid": 49490,
+            "death_benefit": 143439,
+            "source_page": 16
+          },
+          {
+            "policy_year": 25,
+            "age": 57,
+            "total_premium_paid": 49490,
+            "death_benefit": 144308,
+            "source_page": 16
+          },
+          {
+            "policy_year": 26,
+            "age": 58,
+            "total_premium_paid": 49490,
+            "death_benefit": 145194,
+            "source_page": 16
+          },
+          {
+            "policy_year": 27,
+            "age": 59,
+            "total_premium_paid": 49490,
+            "death_benefit": 147889,
+            "source_page": 16
+          },
+          {
+            "policy_year": 28,
+            "age": 60,
+            "total_premium_paid": 49490,
+            "death_benefit": 153217,
+            "source_page": 16
+          },
+          {
+            "policy_year": 29,
+            "age": 61,
+            "total_premium_paid": 49490,
+            "death_benefit": 158754,
+            "source_page": 16
+          },
+          {
+            "policy_year": 30,
+            "age": 62,
+            "total_premium_paid": 49490,
+            "death_benefit": 168968,
+            "source_page": 16
+          },
+          {
+            "policy_year": 31,
+            "age": 63,
+            "total_premium_paid": 49490,
+            "death_benefit": 174591,
+            "source_page": 16
+          },
+          {
+            "policy_year": 32,
+            "age": 64,
+            "total_premium_paid": 49490,
+            "death_benefit": 180550,
+            "source_page": 16
+          },
+          {
+            "policy_year": 33,
+            "age": 65,
+            "total_premium_paid": 49490,
+            "death_benefit": 186854,
+            "source_page": 16
+          },
+          {
+            "policy_year": 34,
+            "age": 66,
+            "total_premium_paid": 49490,
+            "death_benefit": 193546,
+            "source_page": 16
+          },
+          {
+            "policy_year": 35,
+            "age": 67,
+            "total_premium_paid": 49490,
+            "death_benefit": 200644,
+            "source_page": 16
+          },
+          {
+            "policy_year": 36,
+            "age": 68,
+            "total_premium_paid": 49490,
+            "death_benefit": 207998,
+            "source_page": 16
+          },
+          {
+            "policy_year": 37,
+            "age": 69,
+            "total_premium_paid": 49490,
+            "death_benefit": 218469,
+            "source_page": 16
+          },
+          {
+            "policy_year": 38,
+            "age": 70,
+            "total_premium_paid": 49490,
+            "death_benefit": 235048,
+            "source_page": 17
+          },
+          {
+            "policy_year": 39,
+            "age": 71,
+            "total_premium_paid": 49490,
+            "death_benefit": 253485,
+            "source_page": 17
+          },
+          {
+            "policy_year": 40,
+            "age": 72,
+            "total_premium_paid": 49490,
+            "death_benefit": 275544,
+            "source_page": 17
+          },
+          {
+            "policy_year": 41,
+            "age": 73,
+            "total_premium_paid": 49490,
+            "death_benefit": 287498,
+            "source_page": 17
+          },
+          {
+            "policy_year": 42,
+            "age": 74,
+            "total_premium_paid": 49490,
+            "death_benefit": 300428,
+            "source_page": 17
+          },
+          {
+            "policy_year": 43,
+            "age": 75,
+            "total_premium_paid": 49490,
+            "death_benefit": 314386,
+            "source_page": 17
+          },
+          {
+            "policy_year": 44,
+            "age": 76,
+            "total_premium_paid": 49490,
+            "death_benefit": 329485,
+            "source_page": 17
+          },
+          {
+            "policy_year": 45,
+            "age": 77,
+            "total_premium_paid": 49490,
+            "death_benefit": 345873,
+            "source_page": 17
+          },
+          {
+            "policy_year": 46,
+            "age": 78,
+            "total_premium_paid": 49490,
+            "death_benefit": 363681,
+            "source_page": 17
+          },
+          {
+            "policy_year": 47,
+            "age": 79,
+            "total_premium_paid": 49490,
+            "death_benefit": 383082,
+            "source_page": 17
+          },
+          {
+            "policy_year": 48,
+            "age": 80,
+            "total_premium_paid": 49490,
+            "death_benefit": 404281,
+            "source_page": 17
+          },
+          {
+            "policy_year": 49,
+            "age": 81,
+            "total_premium_paid": 49490,
+            "death_benefit": 435592,
+            "source_page": 17
+          },
+          {
+            "policy_year": 50,
+            "age": 82,
+            "total_premium_paid": 49490,
+            "death_benefit": 488450,
+            "source_page": 17
+          },
+          {
+            "policy_year": 51,
+            "age": 83,
+            "total_premium_paid": 49490,
+            "death_benefit": 516802,
+            "source_page": 17
+          },
+          {
+            "policy_year": 52,
+            "age": 84,
+            "total_premium_paid": 49490,
+            "death_benefit": 547884,
+            "source_page": 17
+          },
+          {
+            "policy_year": 53,
+            "age": 85,
+            "total_premium_paid": 49490,
+            "death_benefit": 632262,
+            "source_page": 17
+          },
+          {
+            "policy_year": 54,
+            "age": 86,
+            "total_premium_paid": 49490,
+            "death_benefit": 668270,
+            "source_page": 17
+          },
+          {
+            "policy_year": 55,
+            "age": 87,
+            "total_premium_paid": 49490,
+            "death_benefit": 707056,
+            "source_page": 17
+          },
+          {
+            "policy_year": 56,
+            "age": 88,
+            "total_premium_paid": 49490,
+            "death_benefit": 748875,
+            "source_page": 17
+          },
+          {
+            "policy_year": 57,
+            "age": 89,
+            "total_premium_paid": 49490,
+            "death_benefit": 794055,
+            "source_page": 17
+          },
+          {
+            "policy_year": 58,
+            "age": 90,
+            "total_premium_paid": 49490,
+            "death_benefit": 842951,
+            "source_page": 17
+          },
+          {
+            "policy_year": 59,
+            "age": 91,
+            "total_premium_paid": 49490,
+            "death_benefit": 896023,
+            "source_page": 17
+          },
+          {
+            "policy_year": 60,
+            "age": 92,
+            "total_premium_paid": 49490,
+            "death_benefit": 953627,
+            "source_page": 17
+          },
+          {
+            "policy_year": 61,
+            "age": 93,
+            "total_premium_paid": 49490,
+            "death_benefit": 1016195,
+            "source_page": 17
+          },
+          {
+            "policy_year": 62,
+            "age": 94,
+            "total_premium_paid": 49490,
+            "death_benefit": 1084256,
+            "source_page": 17
+          },
+          {
+            "policy_year": 63,
+            "age": 95,
+            "total_premium_paid": 49490,
+            "death_benefit": 1158394,
+            "source_page": 17
+          },
+          {
+            "policy_year": 64,
+            "age": 96,
+            "total_premium_paid": 49490,
+            "death_benefit": 1240086,
+            "source_page": 17
+          },
+          {
+            "policy_year": 65,
+            "age": 97,
+            "total_premium_paid": 49490,
+            "death_benefit": 1329565,
+            "source_page": 17
+          },
+          {
+            "policy_year": 66,
+            "age": 98,
+            "total_premium_paid": 49490,
+            "death_benefit": 1426725,
+            "source_page": 17
+          },
+          {
+            "policy_year": 67,
+            "age": 99,
+            "total_premium_paid": 49490,
+            "death_benefit": 1534972,
+            "source_page": 17
+          },
+          {
+            "policy_year": 68,
+            "age": 100,
+            "total_premium_paid": 49490,
+            "death_benefit": 1660275,
+            "source_page": 17
+          }
+        ],
+        "withdrawal_illustration": [],
+        "sales_insights": {
+          "target_customer": "高净值客户",
+          "key_selling_points": [
+            "多重危疾保障",
+            "保额定期还原",
+            "保费豁免保障"
+          ],
+          "unique_advantages": "保额 100,000 USD",
+          "suggested_narrative": "全方位危疾保障方案",
+          "highlight_numbers": []
+        },
+        "_meta": {
+          "source": "signature_fast_path",
+          "signatureId": "ctf-hb4cila10-v1",
+          "parser": "ci-signature",
+          "warnings": []
+        }
+      }
+    }
+  ],
+  "chatHistory": [
+    {
+      "role": "assistant",
+      "content": "✅ **AI 解析完成！**\n\n📄 **ci.pdf** → **「守X家倍198」危疾保障计划**\n   - 危疾保障 | 年缴: $4,949 | 10年\n   - 68年数据 | 期末倍数: 0.0x\n\n你可以在下方输入定制需求（如：教育金/养老金、提领起始年龄、公司页重点、图表页偏好），我会据此优化PPT。"
+    }
+  ],
+  "createdAt": "2026-06-10T05:58:49.348Z",
+  "pptPath": "local/400b4025-78b8-46dd-9c57-150761ff600d_综合方案.pptx",
+  "previewPaths": [
+    "local/400b4025-78b8-46dd-9c57-150761ff600d_preview_preview/slide_01.png",
+    "local/400b4025-78b8-46dd-9c57-150761ff600d_preview_preview/slide_02.png",
+    "local/400b4025-78b8-46dd-9c57-150761ff600d_preview_preview/slide_03.png",
+    "local/400b4025-78b8-46dd-9c57-150761ff600d_preview_preview/slide_04.png",
+    "local/400b4025-78b8-46dd-9c57-150761ff600d_preview_preview/slide_05.png",
+    "local/400b4025-78b8-46dd-9c57-150761ff600d_preview_preview/slide_06.png",
+    "local/400b4025-78b8-46dd-9c57-150761ff600d_preview_preview/slide_07.png",
+    "local/400b4025-78b8-46dd-9c57-150761ff600d_preview_preview/slide_08.png",
+    "local/400b4025-78b8-46dd-9c57-150761ff600d_preview_preview/slide_09.png"
+  ],
+  "previewPdfPath": "local/400b4025-78b8-46dd-9c57-150761ff600d_preview_preview/400b4025-78b8-46dd-9c57-150761ff600d_综合方案.pdf",
+  "slideCount": 9
+}

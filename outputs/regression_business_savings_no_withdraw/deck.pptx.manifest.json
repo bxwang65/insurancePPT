@@ -1,0 +1,16 @@
+{
+  "renderMode": "artifact-tool-exact-clone-edit",
+  "starter": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_business_savings_no_withdraw/template-clone/business-savings/template-starter.pptx",
+  "editPlanPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_business_savings_no_withdraw/template-clone/business-savings/edit-plan.json",
+  "out": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_business_savings_no_withdraw/deck.pptx",
+  "slideCount": 6,
+  "previews": [
+    "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_business_savings_no_withdraw/template-clone/business-savings/final-preview/final-slide-01.png",
+    "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_business_savings_no_withdraw/template-clone/business-savings/final-preview/final-slide-02.png",
+    "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_business_savings_no_withdraw/template-clone/business-savings/final-preview/final-slide-03.png",
+    "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_business_savings_no_withdraw/template-clone/business-savings/final-preview/final-slide-04.png",
+    "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_business_savings_no_withdraw/template-clone/business-savings/final-preview/final-slide-05.png",
+    "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_business_savings_no_withdraw/template-clone/business-savings/final-preview/final-slide-06.png"
+  ],
+  "generatedAt": "2026-06-03T02:30:59.544Z"
+}

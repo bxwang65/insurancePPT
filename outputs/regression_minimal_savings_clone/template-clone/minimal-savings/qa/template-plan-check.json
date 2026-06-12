@@ -1,0 +1,10 @@
+{
+  "status": "pass",
+  "checkedAt": "2026-06-01T18:15:36.728Z",
+  "workspace": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings",
+  "mapPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-frame-map.json",
+  "inspectPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-inspect/template-inspect.ndjson",
+  "sourceSlideCount": 38,
+  "issueCount": 0,
+  "issues": []
+}

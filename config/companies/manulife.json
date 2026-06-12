@@ -1,0 +1,19 @@
+{
+  "id": "manulife",
+  "displayName": "宏利",
+  "aliases": ["ManuLife", "Manulife", "宏利", "宏利金融", "ManulifeFinancial"],
+  "tenantId": "default",
+  "knowledgeDirectories": ["ManuLife-宏利", "新加坡-宏利", "百慕大-宏利"],
+  "evidenceRanking": ["简介", "簡介", "fact", "年报", "财务", "实力", "概览", "投资"],
+  "companyIntro": "宏利金融是全球领先的金融服务集团，业务遍及亚洲、加拿大及美国，定位长期家庭财富与保障管理。",
+  "companyHighlights": [
+    {
+      "text": "宏利香港为宏利金融有限公司全资附属机构，业务覆盖香港、澳门，业务规模位居香港寿险市场前列。",
+      "sourceFile": "宏利公司简介.pdf"
+    },
+    {
+      "text": "宏利提供分红保单产品线，公开资料含分红实现率披露。",
+      "sourceFile": "宏利分红实现率.pdf"
+    }
+  ]
+}

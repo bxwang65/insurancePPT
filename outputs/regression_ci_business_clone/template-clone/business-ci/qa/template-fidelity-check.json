@@ -1,0 +1,13 @@
+{
+  "status": "pass",
+  "checkedAt": "2026-06-04T08:10:28.782Z",
+  "workspace": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_ci_business_clone/template-clone/business-ci",
+  "finalPptx": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_ci_business_clone/deck.pptx",
+  "starterPptx": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_ci_business_clone/template-clone/business-ci/template-starter.pptx",
+  "mapPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_ci_business_clone/template-clone/business-ci/template-frame-map.json",
+  "starterLayoutDir": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_ci_business_clone/template-clone/business-ci/template-starter-layout",
+  "finalLayoutDir": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_ci_business_clone/template-clone/business-ci/final-layout",
+  "editDir": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_ci_business_clone/template-clone/business-ci/authoring-evidence",
+  "issueCount": 0,
+  "issues": []
+}

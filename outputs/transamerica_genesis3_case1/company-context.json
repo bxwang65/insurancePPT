@@ -1,0 +1,38 @@
+{
+  "companyId": "transamerica",
+  "companyName": "全美人寿",
+  "companyIntro": "拥有超过百年历史，现隶属于荷兰全球人寿（Aegon），是全球高净值人寿保险市场的重要参与者。",
+  "companyHighlights": [],
+  "companyFacts": [
+    {
+      "label": "成立/上市背景",
+      "value": "源自1904年，总部位于美国，现隶属于Aegon"
+    },
+    {
+      "label": "集团实力",
+      "value": "全球高净值人寿保险市场的重要开拓者与参与者"
+    },
+    {
+      "label": "业务定位",
+      "value": "离岸信托、大额寿险及结构化IUL财富传承方案"
+    },
+    {
+      "label": "标普评级",
+      "value": "A+（强劲）"
+    },
+    {
+      "label": "穆迪评级",
+      "value": "A1（稳定）"
+    }
+  ],
+  "evidenceTitles": [
+    "全美PFG IUL储蓄产品手册中文版Product factsheet Chinese.pdf",
+    "1.全美IUL3代产品手册中文版Genesis III IUL_SG_Product Summary_SC_Sep2025.pdf",
+    "全美PFG IUL储蓄产品摘要中文版PProduct summary Chinese prospera.pdf",
+    "3.全美IUL产品指数介绍中文版brochure-sp-500-volatility-stabilizer-10-vt-intraday-tca-150-decrement-zh.pdf",
+    "4.全美IUL3代产品合同中文版Sample Policy Provision_Genesis III Indexed Universal Life_SC_Effective from 22 Sep 2025.pdf",
+    "brochure-sp-500-volatility-stabilizer-10-vt-intraday-tca-150-decrement-zh.pdf",
+    "2.全美IUL3代产品手册英文版.pdf",
+    "全美IUL储蓄5年交产品合同英文版Sample Policy Provision_SC_5Pay.pdf"
+  ]
+}

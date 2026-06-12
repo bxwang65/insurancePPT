@@ -1,0 +1,17 @@
+{
+  "id": "aia-guardian-ci",
+  "companyId": "aia",
+  "planType": "ci",
+  "displayName": "守护家危疾保障计划",
+  "aliases": ["守护家", "守x家", "守X家", "Guardian CI", "危疾保障计划"],
+  "requiredModules": [
+    "cover",
+    "company",
+    "critical-illness-coverage-summary",
+    "multi-claim-analysis",
+    "cash-value-analysis",
+    "recommendation",
+    "closing"
+  ]
+}
+

@@ -1,0 +1,15 @@
+{
+  "issues": [
+    {
+      "code": "CI_MULTI_CLAIM_RULES_MISSING",
+      "level": "warn",
+      "message": "重疾险多次赔付规则未结构化"
+    },
+    {
+      "code": "CI_PREMIUM_WAIVER_RIDERS_MISSING",
+      "level": "warn",
+      "message": "重疾险豁免保费责任未结构化"
+    }
+  ],
+  "exportApproved": true
+}

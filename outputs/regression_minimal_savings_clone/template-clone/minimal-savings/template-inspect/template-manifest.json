@@ -1,0 +1,708 @@
+{
+  "sourcePptx": "/Users/soldier/Downloads/财富保障方案——简洁风 .pptx",
+  "workspace": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings",
+  "outDir": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-inspect",
+  "generatedAt": "2026-06-01T18:15:19.516Z",
+  "slideCount": 38,
+  "slideArtifacts": [
+    {
+      "slide": 1,
+      "previewPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-inspect/source-slides/source-slide-01.png",
+      "previewRelativePath": "template-inspect/source-slides/source-slide-01.png",
+      "layoutPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-inspect/layouts/source-slide-01.layout.json",
+      "layoutRelativePath": "template-inspect/layouts/source-slide-01.layout.json"
+    },
+    {
+      "slide": 2,
+      "previewPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-inspect/source-slides/source-slide-02.png",
+      "previewRelativePath": "template-inspect/source-slides/source-slide-02.png",
+      "layoutPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-inspect/layouts/source-slide-02.layout.json",
+      "layoutRelativePath": "template-inspect/layouts/source-slide-02.layout.json"
+    },
+    {
+      "slide": 3,
+      "previewPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-inspect/source-slides/source-slide-03.png",
+      "previewRelativePath": "template-inspect/source-slides/source-slide-03.png",
+      "layoutPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-inspect/layouts/source-slide-03.layout.json",
+      "layoutRelativePath": "template-inspect/layouts/source-slide-03.layout.json"
+    },
+    {
+      "slide": 4,
+      "previewPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-inspect/source-slides/source-slide-04.png",
+      "previewRelativePath": "template-inspect/source-slides/source-slide-04.png",
+      "layoutPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-inspect/layouts/source-slide-04.layout.json",
+      "layoutRelativePath": "template-inspect/layouts/source-slide-04.layout.json"
+    },
+    {
+      "slide": 5,
+      "previewPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-inspect/source-slides/source-slide-05.png",
+      "previewRelativePath": "template-inspect/source-slides/source-slide-05.png",
+      "layoutPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-inspect/layouts/source-slide-05.layout.json",
+      "layoutRelativePath": "template-inspect/layouts/source-slide-05.layout.json"
+    },
+    {
+      "slide": 6,
+      "previewPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-inspect/source-slides/source-slide-06.png",
+      "previewRelativePath": "template-inspect/source-slides/source-slide-06.png",
+      "layoutPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-inspect/layouts/source-slide-06.layout.json",
+      "layoutRelativePath": "template-inspect/layouts/source-slide-06.layout.json"
+    },
+    {
+      "slide": 7,
+      "previewPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-inspect/source-slides/source-slide-07.png",
+      "previewRelativePath": "template-inspect/source-slides/source-slide-07.png",
+      "layoutPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-inspect/layouts/source-slide-07.layout.json",
+      "layoutRelativePath": "template-inspect/layouts/source-slide-07.layout.json"
+    },
+    {
+      "slide": 8,
+      "previewPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-inspect/source-slides/source-slide-08.png",
+      "previewRelativePath": "template-inspect/source-slides/source-slide-08.png",
+      "layoutPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-inspect/layouts/source-slide-08.layout.json",
+      "layoutRelativePath": "template-inspect/layouts/source-slide-08.layout.json"
+    },
+    {
+      "slide": 9,
+      "previewPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-inspect/source-slides/source-slide-09.png",
+      "previewRelativePath": "template-inspect/source-slides/source-slide-09.png",
+      "layoutPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-inspect/layouts/source-slide-09.layout.json",
+      "layoutRelativePath": "template-inspect/layouts/source-slide-09.layout.json"
+    },
+    {
+      "slide": 10,
+      "previewPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-inspect/source-slides/source-slide-10.png",
+      "previewRelativePath": "template-inspect/source-slides/source-slide-10.png",
+      "layoutPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-inspect/layouts/source-slide-10.layout.json",
+      "layoutRelativePath": "template-inspect/layouts/source-slide-10.layout.json"
+    },
+    {
+      "slide": 11,
+      "previewPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-inspect/source-slides/source-slide-11.png",
+      "previewRelativePath": "template-inspect/source-slides/source-slide-11.png",
+      "layoutPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-inspect/layouts/source-slide-11.layout.json",
+      "layoutRelativePath": "template-inspect/layouts/source-slide-11.layout.json"
+    },
+    {
+      "slide": 12,
+      "previewPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-inspect/source-slides/source-slide-12.png",
+      "previewRelativePath": "template-inspect/source-slides/source-slide-12.png",
+      "layoutPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-inspect/layouts/source-slide-12.layout.json",
+      "layoutRelativePath": "template-inspect/layouts/source-slide-12.layout.json"
+    },
+    {
+      "slide": 13,
+      "previewPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-inspect/source-slides/source-slide-13.png",
+      "previewRelativePath": "template-inspect/source-slides/source-slide-13.png",
+      "layoutPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-inspect/layouts/source-slide-13.layout.json",
+      "layoutRelativePath": "template-inspect/layouts/source-slide-13.layout.json"
+    },
+    {
+      "slide": 14,
+      "previewPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-inspect/source-slides/source-slide-14.png",
+      "previewRelativePath": "template-inspect/source-slides/source-slide-14.png",
+      "layoutPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-inspect/layouts/source-slide-14.layout.json",
+      "layoutRelativePath": "template-inspect/layouts/source-slide-14.layout.json"
+    },
+    {
+      "slide": 15,
+      "previewPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-inspect/source-slides/source-slide-15.png",
+      "previewRelativePath": "template-inspect/source-slides/source-slide-15.png",
+      "layoutPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-inspect/layouts/source-slide-15.layout.json",
+      "layoutRelativePath": "template-inspect/layouts/source-slide-15.layout.json"
+    },
+    {
+      "slide": 16,
+      "previewPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-inspect/source-slides/source-slide-16.png",
+      "previewRelativePath": "template-inspect/source-slides/source-slide-16.png",
+      "layoutPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-inspect/layouts/source-slide-16.layout.json",
+      "layoutRelativePath": "template-inspect/layouts/source-slide-16.layout.json"
+    },
+    {
+      "slide": 17,
+      "previewPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-inspect/source-slides/source-slide-17.png",
+      "previewRelativePath": "template-inspect/source-slides/source-slide-17.png",
+      "layoutPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-inspect/layouts/source-slide-17.layout.json",
+      "layoutRelativePath": "template-inspect/layouts/source-slide-17.layout.json"
+    },
+    {
+      "slide": 18,
+      "previewPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-inspect/source-slides/source-slide-18.png",
+      "previewRelativePath": "template-inspect/source-slides/source-slide-18.png",
+      "layoutPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-inspect/layouts/source-slide-18.layout.json",
+      "layoutRelativePath": "template-inspect/layouts/source-slide-18.layout.json"
+    },
+    {
+      "slide": 19,
+      "previewPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-inspect/source-slides/source-slide-19.png",
+      "previewRelativePath": "template-inspect/source-slides/source-slide-19.png",
+      "layoutPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-inspect/layouts/source-slide-19.layout.json",
+      "layoutRelativePath": "template-inspect/layouts/source-slide-19.layout.json"
+    },
+    {
+      "slide": 20,
+      "previewPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-inspect/source-slides/source-slide-20.png",
+      "previewRelativePath": "template-inspect/source-slides/source-slide-20.png",
+      "layoutPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-inspect/layouts/source-slide-20.layout.json",
+      "layoutRelativePath": "template-inspect/layouts/source-slide-20.layout.json"
+    },
+    {
+      "slide": 21,
+      "previewPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-inspect/source-slides/source-slide-21.png",
+      "previewRelativePath": "template-inspect/source-slides/source-slide-21.png",
+      "layoutPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-inspect/layouts/source-slide-21.layout.json",
+      "layoutRelativePath": "template-inspect/layouts/source-slide-21.layout.json"
+    },
+    {
+      "slide": 22,
+      "previewPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-inspect/source-slides/source-slide-22.png",
+      "previewRelativePath": "template-inspect/source-slides/source-slide-22.png",
+      "layoutPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-inspect/layouts/source-slide-22.layout.json",
+      "layoutRelativePath": "template-inspect/layouts/source-slide-22.layout.json"
+    },
+    {
+      "slide": 23,
+      "previewPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-inspect/source-slides/source-slide-23.png",
+      "previewRelativePath": "template-inspect/source-slides/source-slide-23.png",
+      "layoutPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-inspect/layouts/source-slide-23.layout.json",
+      "layoutRelativePath": "template-inspect/layouts/source-slide-23.layout.json"
+    },
+    {
+      "slide": 24,
+      "previewPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-inspect/source-slides/source-slide-24.png",
+      "previewRelativePath": "template-inspect/source-slides/source-slide-24.png",
+      "layoutPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-inspect/layouts/source-slide-24.layout.json",
+      "layoutRelativePath": "template-inspect/layouts/source-slide-24.layout.json"
+    },
+    {
+      "slide": 25,
+      "previewPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-inspect/source-slides/source-slide-25.png",
+      "previewRelativePath": "template-inspect/source-slides/source-slide-25.png",
+      "layoutPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-inspect/layouts/source-slide-25.layout.json",
+      "layoutRelativePath": "template-inspect/layouts/source-slide-25.layout.json"
+    },
+    {
+      "slide": 26,
+      "previewPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-inspect/source-slides/source-slide-26.png",
+      "previewRelativePath": "template-inspect/source-slides/source-slide-26.png",
+      "layoutPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-inspect/layouts/source-slide-26.layout.json",
+      "layoutRelativePath": "template-inspect/layouts/source-slide-26.layout.json"
+    },
+    {
+      "slide": 27,
+      "previewPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-inspect/source-slides/source-slide-27.png",
+      "previewRelativePath": "template-inspect/source-slides/source-slide-27.png",
+      "layoutPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-inspect/layouts/source-slide-27.layout.json",
+      "layoutRelativePath": "template-inspect/layouts/source-slide-27.layout.json"
+    },
+    {
+      "slide": 28,
+      "previewPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-inspect/source-slides/source-slide-28.png",
+      "previewRelativePath": "template-inspect/source-slides/source-slide-28.png",
+      "layoutPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-inspect/layouts/source-slide-28.layout.json",
+      "layoutRelativePath": "template-inspect/layouts/source-slide-28.layout.json"
+    },
+    {
+      "slide": 29,
+      "previewPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-inspect/source-slides/source-slide-29.png",
+      "previewRelativePath": "template-inspect/source-slides/source-slide-29.png",
+      "layoutPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-inspect/layouts/source-slide-29.layout.json",
+      "layoutRelativePath": "template-inspect/layouts/source-slide-29.layout.json"
+    },
+    {
+      "slide": 30,
+      "previewPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-inspect/source-slides/source-slide-30.png",
+      "previewRelativePath": "template-inspect/source-slides/source-slide-30.png",
+      "layoutPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-inspect/layouts/source-slide-30.layout.json",
+      "layoutRelativePath": "template-inspect/layouts/source-slide-30.layout.json"
+    },
+    {
+      "slide": 31,
+      "previewPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-inspect/source-slides/source-slide-31.png",
+      "previewRelativePath": "template-inspect/source-slides/source-slide-31.png",
+      "layoutPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-inspect/layouts/source-slide-31.layout.json",
+      "layoutRelativePath": "template-inspect/layouts/source-slide-31.layout.json"
+    },
+    {
+      "slide": 32,
+      "previewPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-inspect/source-slides/source-slide-32.png",
+      "previewRelativePath": "template-inspect/source-slides/source-slide-32.png",
+      "layoutPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-inspect/layouts/source-slide-32.layout.json",
+      "layoutRelativePath": "template-inspect/layouts/source-slide-32.layout.json"
+    },
+    {
+      "slide": 33,
+      "previewPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-inspect/source-slides/source-slide-33.png",
+      "previewRelativePath": "template-inspect/source-slides/source-slide-33.png",
+      "layoutPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-inspect/layouts/source-slide-33.layout.json",
+      "layoutRelativePath": "template-inspect/layouts/source-slide-33.layout.json"
+    },
+    {
+      "slide": 34,
+      "previewPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-inspect/source-slides/source-slide-34.png",
+      "previewRelativePath": "template-inspect/source-slides/source-slide-34.png",
+      "layoutPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-inspect/layouts/source-slide-34.layout.json",
+      "layoutRelativePath": "template-inspect/layouts/source-slide-34.layout.json"
+    },
+    {
+      "slide": 35,
+      "previewPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-inspect/source-slides/source-slide-35.png",
+      "previewRelativePath": "template-inspect/source-slides/source-slide-35.png",
+      "layoutPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-inspect/layouts/source-slide-35.layout.json",
+      "layoutRelativePath": "template-inspect/layouts/source-slide-35.layout.json"
+    },
+    {
+      "slide": 36,
+      "previewPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-inspect/source-slides/source-slide-36.png",
+      "previewRelativePath": "template-inspect/source-slides/source-slide-36.png",
+      "layoutPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-inspect/layouts/source-slide-36.layout.json",
+      "layoutRelativePath": "template-inspect/layouts/source-slide-36.layout.json"
+    },
+    {
+      "slide": 37,
+      "previewPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-inspect/source-slides/source-slide-37.png",
+      "previewRelativePath": "template-inspect/source-slides/source-slide-37.png",
+      "layoutPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-inspect/layouts/source-slide-37.layout.json",
+      "layoutRelativePath": "template-inspect/layouts/source-slide-37.layout.json"
+    },
+    {
+      "slide": 38,
+      "previewPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-inspect/source-slides/source-slide-38.png",
+      "previewRelativePath": "template-inspect/source-slides/source-slide-38.png",
+      "layoutPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-inspect/layouts/source-slide-38.layout.json",
+      "layoutRelativePath": "template-inspect/layouts/source-slide-38.layout.json"
+    }
+  ],
+  "inspectPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-inspect/template-inspect.ndjson",
+  "inspectRelativePath": "template-inspect/template-inspect.ndjson",
+  "inspectTruncated": true,
+  "inspectMetadata": {
+    "revision": "uz1to9",
+    "target": {
+      "id": "pr/rxzmoj"
+    },
+    "kind": {
+      "requested": "slide,textbox,shape,image,table,chart",
+      "tokens": [
+        "slide",
+        "textbox",
+        "shape",
+        "image",
+        "table",
+        "chart"
+      ]
+    },
+    "include": {
+      "tokens": []
+    },
+    "exclude": {
+      "tokens": []
+    },
+    "notices": []
+  },
+  "extractedMedia": [
+    {
+      "entry": "ppt/media/",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-inspect/assets/ppt/media/media",
+      "relativePath": "template-inspect/assets/ppt/media/media",
+      "bytes": 0
+    },
+    {
+      "entry": "ppt/media/image1.png",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-inspect/assets/ppt/media/image1.png",
+      "relativePath": "template-inspect/assets/ppt/media/image1.png",
+      "bytes": 1528073
+    },
+    {
+      "entry": "ppt/media/image10.jpeg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-inspect/assets/ppt/media/image10.jpeg",
+      "relativePath": "template-inspect/assets/ppt/media/image10.jpeg",
+      "bytes": 156667
+    },
+    {
+      "entry": "ppt/media/image11.jpeg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-inspect/assets/ppt/media/image11.jpeg",
+      "relativePath": "template-inspect/assets/ppt/media/image11.jpeg",
+      "bytes": 142422
+    },
+    {
+      "entry": "ppt/media/image12.jpeg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-inspect/assets/ppt/media/image12.jpeg",
+      "relativePath": "template-inspect/assets/ppt/media/image12.jpeg",
+      "bytes": 72483
+    },
+    {
+      "entry": "ppt/media/image13.jpeg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-inspect/assets/ppt/media/image13.jpeg",
+      "relativePath": "template-inspect/assets/ppt/media/image13.jpeg",
+      "bytes": 132193
+    },
+    {
+      "entry": "ppt/media/image14.jpeg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-inspect/assets/ppt/media/image14.jpeg",
+      "relativePath": "template-inspect/assets/ppt/media/image14.jpeg",
+      "bytes": 153072
+    },
+    {
+      "entry": "ppt/media/image15.jpeg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-inspect/assets/ppt/media/image15.jpeg",
+      "relativePath": "template-inspect/assets/ppt/media/image15.jpeg",
+      "bytes": 51041
+    },
+    {
+      "entry": "ppt/media/image16.jpeg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-inspect/assets/ppt/media/image16.jpeg",
+      "relativePath": "template-inspect/assets/ppt/media/image16.jpeg",
+      "bytes": 94843
+    },
+    {
+      "entry": "ppt/media/image17.jpeg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-inspect/assets/ppt/media/image17.jpeg",
+      "relativePath": "template-inspect/assets/ppt/media/image17.jpeg",
+      "bytes": 76520
+    },
+    {
+      "entry": "ppt/media/image18.jpeg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-inspect/assets/ppt/media/image18.jpeg",
+      "relativePath": "template-inspect/assets/ppt/media/image18.jpeg",
+      "bytes": 198634
+    },
+    {
+      "entry": "ppt/media/image19.jpeg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-inspect/assets/ppt/media/image19.jpeg",
+      "relativePath": "template-inspect/assets/ppt/media/image19.jpeg",
+      "bytes": 39565
+    },
+    {
+      "entry": "ppt/media/image2.png",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-inspect/assets/ppt/media/image2.png",
+      "relativePath": "template-inspect/assets/ppt/media/image2.png",
+      "bytes": 1436051
+    },
+    {
+      "entry": "ppt/media/image20.jpeg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-inspect/assets/ppt/media/image20.jpeg",
+      "relativePath": "template-inspect/assets/ppt/media/image20.jpeg",
+      "bytes": 48150
+    },
+    {
+      "entry": "ppt/media/image21.jpeg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-inspect/assets/ppt/media/image21.jpeg",
+      "relativePath": "template-inspect/assets/ppt/media/image21.jpeg",
+      "bytes": 694550
+    },
+    {
+      "entry": "ppt/media/image22.png",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-inspect/assets/ppt/media/image22.png",
+      "relativePath": "template-inspect/assets/ppt/media/image22.png",
+      "bytes": 7076
+    },
+    {
+      "entry": "ppt/media/image23.svg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-inspect/assets/ppt/media/image23.svg",
+      "relativePath": "template-inspect/assets/ppt/media/image23.svg",
+      "bytes": 1645
+    },
+    {
+      "entry": "ppt/media/image24.png",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-inspect/assets/ppt/media/image24.png",
+      "relativePath": "template-inspect/assets/ppt/media/image24.png",
+      "bytes": 9709
+    },
+    {
+      "entry": "ppt/media/image25.svg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-inspect/assets/ppt/media/image25.svg",
+      "relativePath": "template-inspect/assets/ppt/media/image25.svg",
+      "bytes": 4232
+    },
+    {
+      "entry": "ppt/media/image26.png",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-inspect/assets/ppt/media/image26.png",
+      "relativePath": "template-inspect/assets/ppt/media/image26.png",
+      "bytes": 10469
+    },
+    {
+      "entry": "ppt/media/image27.svg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-inspect/assets/ppt/media/image27.svg",
+      "relativePath": "template-inspect/assets/ppt/media/image27.svg",
+      "bytes": 8840
+    },
+    {
+      "entry": "ppt/media/image28.jpeg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-inspect/assets/ppt/media/image28.jpeg",
+      "relativePath": "template-inspect/assets/ppt/media/image28.jpeg",
+      "bytes": 172393
+    },
+    {
+      "entry": "ppt/media/image29.jpeg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-inspect/assets/ppt/media/image29.jpeg",
+      "relativePath": "template-inspect/assets/ppt/media/image29.jpeg",
+      "bytes": 124232
+    },
+    {
+      "entry": "ppt/media/image3.png",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-inspect/assets/ppt/media/image3.png",
+      "relativePath": "template-inspect/assets/ppt/media/image3.png",
+      "bytes": 1669625
+    },
+    {
+      "entry": "ppt/media/image30.jpeg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-inspect/assets/ppt/media/image30.jpeg",
+      "relativePath": "template-inspect/assets/ppt/media/image30.jpeg",
+      "bytes": 146196
+    },
+    {
+      "entry": "ppt/media/image31.jpeg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-inspect/assets/ppt/media/image31.jpeg",
+      "relativePath": "template-inspect/assets/ppt/media/image31.jpeg",
+      "bytes": 149209
+    },
+    {
+      "entry": "ppt/media/image32.jpeg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-inspect/assets/ppt/media/image32.jpeg",
+      "relativePath": "template-inspect/assets/ppt/media/image32.jpeg",
+      "bytes": 746688
+    },
+    {
+      "entry": "ppt/media/image33.svg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-inspect/assets/ppt/media/image33.svg",
+      "relativePath": "template-inspect/assets/ppt/media/image33.svg",
+      "bytes": 1645
+    },
+    {
+      "entry": "ppt/media/image34.svg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-inspect/assets/ppt/media/image34.svg",
+      "relativePath": "template-inspect/assets/ppt/media/image34.svg",
+      "bytes": 4232
+    },
+    {
+      "entry": "ppt/media/image35.svg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-inspect/assets/ppt/media/image35.svg",
+      "relativePath": "template-inspect/assets/ppt/media/image35.svg",
+      "bytes": 8840
+    },
+    {
+      "entry": "ppt/media/image36.jpeg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-inspect/assets/ppt/media/image36.jpeg",
+      "relativePath": "template-inspect/assets/ppt/media/image36.jpeg",
+      "bytes": 238223
+    },
+    {
+      "entry": "ppt/media/image37.jpeg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-inspect/assets/ppt/media/image37.jpeg",
+      "relativePath": "template-inspect/assets/ppt/media/image37.jpeg",
+      "bytes": 244712
+    },
+    {
+      "entry": "ppt/media/image38.jpeg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-inspect/assets/ppt/media/image38.jpeg",
+      "relativePath": "template-inspect/assets/ppt/media/image38.jpeg",
+      "bytes": 240224
+    },
+    {
+      "entry": "ppt/media/image39.jpeg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-inspect/assets/ppt/media/image39.jpeg",
+      "relativePath": "template-inspect/assets/ppt/media/image39.jpeg",
+      "bytes": 139548
+    },
+    {
+      "entry": "ppt/media/image4.jpeg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-inspect/assets/ppt/media/image4.jpeg",
+      "relativePath": "template-inspect/assets/ppt/media/image4.jpeg",
+      "bytes": 1051371
+    },
+    {
+      "entry": "ppt/media/image40.jpeg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-inspect/assets/ppt/media/image40.jpeg",
+      "relativePath": "template-inspect/assets/ppt/media/image40.jpeg",
+      "bytes": 144868
+    },
+    {
+      "entry": "ppt/media/image41.jpeg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-inspect/assets/ppt/media/image41.jpeg",
+      "relativePath": "template-inspect/assets/ppt/media/image41.jpeg",
+      "bytes": 859592
+    },
+    {
+      "entry": "ppt/media/image42.svg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-inspect/assets/ppt/media/image42.svg",
+      "relativePath": "template-inspect/assets/ppt/media/image42.svg",
+      "bytes": 1645
+    },
+    {
+      "entry": "ppt/media/image43.svg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-inspect/assets/ppt/media/image43.svg",
+      "relativePath": "template-inspect/assets/ppt/media/image43.svg",
+      "bytes": 4232
+    },
+    {
+      "entry": "ppt/media/image44.svg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-inspect/assets/ppt/media/image44.svg",
+      "relativePath": "template-inspect/assets/ppt/media/image44.svg",
+      "bytes": 8840
+    },
+    {
+      "entry": "ppt/media/image45.jpeg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-inspect/assets/ppt/media/image45.jpeg",
+      "relativePath": "template-inspect/assets/ppt/media/image45.jpeg",
+      "bytes": 141251
+    },
+    {
+      "entry": "ppt/media/image46.jpeg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-inspect/assets/ppt/media/image46.jpeg",
+      "relativePath": "template-inspect/assets/ppt/media/image46.jpeg",
+      "bytes": 1272518
+    },
+    {
+      "entry": "ppt/media/image47.jpeg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-inspect/assets/ppt/media/image47.jpeg",
+      "relativePath": "template-inspect/assets/ppt/media/image47.jpeg",
+      "bytes": 171836
+    },
+    {
+      "entry": "ppt/media/image48.jpeg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-inspect/assets/ppt/media/image48.jpeg",
+      "relativePath": "template-inspect/assets/ppt/media/image48.jpeg",
+      "bytes": 194191
+    },
+    {
+      "entry": "ppt/media/image49.jpeg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-inspect/assets/ppt/media/image49.jpeg",
+      "relativePath": "template-inspect/assets/ppt/media/image49.jpeg",
+      "bytes": 277389
+    },
+    {
+      "entry": "ppt/media/image5.jpeg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-inspect/assets/ppt/media/image5.jpeg",
+      "relativePath": "template-inspect/assets/ppt/media/image5.jpeg",
+      "bytes": 174497
+    },
+    {
+      "entry": "ppt/media/image50.jpeg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-inspect/assets/ppt/media/image50.jpeg",
+      "relativePath": "template-inspect/assets/ppt/media/image50.jpeg",
+      "bytes": 649264
+    },
+    {
+      "entry": "ppt/media/image51.svg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-inspect/assets/ppt/media/image51.svg",
+      "relativePath": "template-inspect/assets/ppt/media/image51.svg",
+      "bytes": 1645
+    },
+    {
+      "entry": "ppt/media/image52.svg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-inspect/assets/ppt/media/image52.svg",
+      "relativePath": "template-inspect/assets/ppt/media/image52.svg",
+      "bytes": 4232
+    },
+    {
+      "entry": "ppt/media/image53.svg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-inspect/assets/ppt/media/image53.svg",
+      "relativePath": "template-inspect/assets/ppt/media/image53.svg",
+      "bytes": 8840
+    },
+    {
+      "entry": "ppt/media/image54.jpeg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-inspect/assets/ppt/media/image54.jpeg",
+      "relativePath": "template-inspect/assets/ppt/media/image54.jpeg",
+      "bytes": 140957
+    },
+    {
+      "entry": "ppt/media/image55.jpeg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-inspect/assets/ppt/media/image55.jpeg",
+      "relativePath": "template-inspect/assets/ppt/media/image55.jpeg",
+      "bytes": 42384
+    },
+    {
+      "entry": "ppt/media/image56.jpeg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-inspect/assets/ppt/media/image56.jpeg",
+      "relativePath": "template-inspect/assets/ppt/media/image56.jpeg",
+      "bytes": 205162
+    },
+    {
+      "entry": "ppt/media/image57.jpeg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-inspect/assets/ppt/media/image57.jpeg",
+      "relativePath": "template-inspect/assets/ppt/media/image57.jpeg",
+      "bytes": 47888
+    },
+    {
+      "entry": "ppt/media/image6.jpeg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-inspect/assets/ppt/media/image6.jpeg",
+      "relativePath": "template-inspect/assets/ppt/media/image6.jpeg",
+      "bytes": 190892
+    },
+    {
+      "entry": "ppt/media/image7.jpeg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-inspect/assets/ppt/media/image7.jpeg",
+      "relativePath": "template-inspect/assets/ppt/media/image7.jpeg",
+      "bytes": 106390
+    },
+    {
+      "entry": "ppt/media/image8.jpeg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-inspect/assets/ppt/media/image8.jpeg",
+      "relativePath": "template-inspect/assets/ppt/media/image8.jpeg",
+      "bytes": 212456
+    },
+    {
+      "entry": "ppt/media/image9.jpeg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_minimal_savings_clone/template-clone/minimal-savings/template-inspect/assets/ppt/media/image9.jpeg",
+      "relativePath": "template-inspect/assets/ppt/media/image9.jpeg",
+      "bytes": 522151
+    }
+  ],
+  "fonts": [
+    "+mj-cs",
+    "+mj-ea",
+    "+mj-lt",
+    "+mn-cs",
+    "+mn-ea",
+    "+mn-lt",
+    "Angsana New",
+    "Arial",
+    "Calibri",
+    "Calibri Light",
+    "Cordia New",
+    "DaunPenh",
+    "DokChampa",
+    "Estrangelo Edessa",
+    "Euphemia",
+    "FreesiaUPC",
+    "Gautami",
+    "Iskoola Pota",
+    "Kalinga",
+    "Kartika",
+    "Latha",
+    "MV Boli",
+    "Mangal",
+    "Microsoft Himalaya",
+    "Microsoft Uighur",
+    "Microsoft Yi Baiti",
+    "Mongolian Baiti",
+    "MoolBoran",
+    "Nyala",
+    "Plantagenet Cherokee",
+    "Raavi",
+    "Shruti",
+    "Sylfaen",
+    "Tahoma",
+    "Times New Roman",
+    "Tunga",
+    "Verdana",
+    "Vrinda",
+    "宋体",
+    "微軟正黑體",
+    "微软雅黑",
+    "新細明體",
+    "굴림",
+    "맑은 고딕",
+    "ＭＳ ゴシック",
+    "ＭＳ Ｐゴシック"
+  ],
+  "packageParts": {
+    "mediaCount": 58,
+    "slideXmlCount": 38,
+    "chartCount": 0,
+    "tableSlideCount": 0
+  },
+  "inspectRefreshedAt": "2026-06-01T18:15:26.448Z",
+  "inspectMaxChars": 1200000
+}

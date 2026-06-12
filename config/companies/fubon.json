@@ -1,0 +1,9 @@
+{
+  "id": "fubon",
+  "displayName": "富邦人寿",
+  "aliases": ["Fubon", "富邦"],
+  "tenantId": "default",
+  "knowledgeDirectories": ["Fubon-Life-富邦人寿"],
+  "evidenceRanking": ["简介", "fact", "财务", "实力", "概览", "投资"],
+  "companyIntro": "富邦人寿相关公司资料仅使用内部资料库中已索引、可追溯的文件。"
+}

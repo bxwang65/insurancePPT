@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "generatedAt": "2026-06-10",
+  "assets": [
+    {
+      "id": "broker",
+      "sourceRoot": "/Users/soldier/free-code/packages/insurance-ppt/data/templates",
+      "relativePath": "broker-savings-template.pptx",
+      "fileName": "broker-savings-template.pptx",
+      "sha256": "e06eb63c2582f36cf51dc19b651d656802619ebd7d7fdf3bde5b544213782cb2",
+      "sizeBytes": 2395848,
+      "modifiedAt": "2026-06-10",
+      "slideCount": 12,
+      "mediaCount": 10,
+      "status": "indexed",
+      "mutationMode": "artifact-tool-exact-clone-edit"
+    }
+  ]
+}

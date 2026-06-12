@@ -1,0 +1,1087 @@
+{
+  "source": {
+    "pdfHash": "af4d4ea7eec9fc6d64c3b416566da3060fef9bd94097c1760f8601533736b790",
+    "pdfPath": "/Users/soldier/Downloads/官方计划书案例/匠心傳承儲蓄計劃2尊尚版.pdf",
+    "parser": "fitz-table-v1+llm-json"
+  },
+  "benefitRows": [
+    {
+      "policyYear": 1,
+      "sourcePage": 6
+    },
+    {
+      "policyYear": 2,
+      "sourcePage": 6
+    },
+    {
+      "policyYear": 3,
+      "sourcePage": 6
+    },
+    {
+      "policyYear": 4,
+      "sourcePage": 6
+    },
+    {
+      "policyYear": 5,
+      "sourcePage": 6
+    },
+    {
+      "policyYear": 6,
+      "sourcePage": 6
+    },
+    {
+      "policyYear": 7,
+      "sourcePage": 6
+    },
+    {
+      "policyYear": 8,
+      "sourcePage": 6
+    },
+    {
+      "policyYear": 9,
+      "sourcePage": 6
+    },
+    {
+      "policyYear": 10,
+      "sourcePage": 6
+    },
+    {
+      "policyYear": 11,
+      "sourcePage": 6
+    },
+    {
+      "policyYear": 12,
+      "sourcePage": 6
+    },
+    {
+      "policyYear": 13,
+      "sourcePage": 6
+    },
+    {
+      "policyYear": 14,
+      "sourcePage": 6
+    },
+    {
+      "policyYear": 15,
+      "sourcePage": 6
+    },
+    {
+      "policyYear": 16,
+      "sourcePage": 6
+    },
+    {
+      "policyYear": 17,
+      "sourcePage": 6
+    },
+    {
+      "policyYear": 18,
+      "sourcePage": 6
+    },
+    {
+      "policyYear": 19,
+      "sourcePage": 6
+    },
+    {
+      "policyYear": 20,
+      "sourcePage": 6
+    },
+    {
+      "policyYear": 21,
+      "sourcePage": 6
+    },
+    {
+      "policyYear": 22,
+      "sourcePage": 6
+    },
+    {
+      "policyYear": 23,
+      "sourcePage": 6
+    },
+    {
+      "policyYear": 24,
+      "sourcePage": 6
+    },
+    {
+      "policyYear": 25,
+      "sourcePage": 6
+    },
+    {
+      "policyYear": 26,
+      "sourcePage": 6
+    },
+    {
+      "policyYear": 27,
+      "sourcePage": 6
+    },
+    {
+      "policyYear": 28,
+      "sourcePage": 6
+    },
+    {
+      "policyYear": 29,
+      "sourcePage": 6
+    },
+    {
+      "policyYear": 30,
+      "sourcePage": 6
+    },
+    {
+      "policyYear": 31,
+      "sourcePage": 6
+    },
+    {
+      "policyYear": 32,
+      "sourcePage": 6
+    },
+    {
+      "policyYear": 33,
+      "sourcePage": 6
+    },
+    {
+      "policyYear": 34,
+      "sourcePage": 6
+    },
+    {
+      "policyYear": 35,
+      "sourcePage": 6
+    },
+    {
+      "policyYear": 36,
+      "sourcePage": 7
+    },
+    {
+      "policyYear": 37,
+      "sourcePage": 7
+    },
+    {
+      "policyYear": 38,
+      "sourcePage": 7
+    },
+    {
+      "policyYear": 39,
+      "sourcePage": 7
+    },
+    {
+      "policyYear": 40,
+      "sourcePage": 7
+    },
+    {
+      "policyYear": 41,
+      "sourcePage": 7
+    },
+    {
+      "policyYear": 42,
+      "sourcePage": 7
+    },
+    {
+      "policyYear": 43,
+      "sourcePage": 7
+    },
+    {
+      "policyYear": 44,
+      "sourcePage": 7
+    },
+    {
+      "policyYear": 45,
+      "sourcePage": 7
+    },
+    {
+      "policyYear": 46,
+      "sourcePage": 7
+    },
+    {
+      "policyYear": 47,
+      "sourcePage": 7
+    },
+    {
+      "policyYear": 48,
+      "sourcePage": 7
+    },
+    {
+      "policyYear": 49,
+      "sourcePage": 7
+    },
+    {
+      "policyYear": 50,
+      "sourcePage": 7
+    },
+    {
+      "policyYear": 51,
+      "sourcePage": 7
+    },
+    {
+      "policyYear": 52,
+      "sourcePage": 7
+    },
+    {
+      "policyYear": 53,
+      "sourcePage": 7
+    },
+    {
+      "policyYear": 54,
+      "sourcePage": 7
+    },
+    {
+      "policyYear": 55,
+      "sourcePage": 7
+    },
+    {
+      "policyYear": 56,
+      "sourcePage": 7
+    },
+    {
+      "policyYear": 57,
+      "sourcePage": 7
+    },
+    {
+      "policyYear": 58,
+      "sourcePage": 7
+    },
+    {
+      "policyYear": 59,
+      "sourcePage": 7
+    },
+    {
+      "policyYear": 60,
+      "sourcePage": 7
+    },
+    {
+      "policyYear": 61,
+      "sourcePage": 7
+    },
+    {
+      "policyYear": 62,
+      "sourcePage": 7
+    },
+    {
+      "policyYear": 63,
+      "sourcePage": 7
+    },
+    {
+      "policyYear": 64,
+      "sourcePage": 7
+    },
+    {
+      "policyYear": 65,
+      "sourcePage": 7
+    },
+    {
+      "policyYear": 66,
+      "sourcePage": 7
+    },
+    {
+      "policyYear": 67,
+      "sourcePage": 7
+    },
+    {
+      "policyYear": 68,
+      "sourcePage": 7
+    },
+    {
+      "policyYear": 69,
+      "sourcePage": 7
+    },
+    {
+      "policyYear": 70,
+      "sourcePage": 7
+    },
+    {
+      "policyYear": 71,
+      "sourcePage": 8
+    },
+    {
+      "policyYear": 72,
+      "sourcePage": 8
+    },
+    {
+      "policyYear": 73,
+      "sourcePage": 8
+    },
+    {
+      "policyYear": 74,
+      "sourcePage": 8
+    },
+    {
+      "policyYear": 75,
+      "sourcePage": 8
+    },
+    {
+      "policyYear": 76,
+      "sourcePage": 8
+    },
+    {
+      "policyYear": 77,
+      "sourcePage": 8
+    },
+    {
+      "policyYear": 78,
+      "sourcePage": 8
+    },
+    {
+      "policyYear": 79,
+      "sourcePage": 8
+    },
+    {
+      "policyYear": 80,
+      "sourcePage": 8
+    },
+    {
+      "policyYear": 81,
+      "sourcePage": 8
+    },
+    {
+      "policyYear": 82,
+      "sourcePage": 8
+    },
+    {
+      "policyYear": 83,
+      "sourcePage": 8
+    },
+    {
+      "policyYear": 84,
+      "sourcePage": 8
+    },
+    {
+      "policyYear": 85,
+      "sourcePage": 8
+    },
+    {
+      "policyYear": 86,
+      "sourcePage": 8
+    },
+    {
+      "policyYear": 87,
+      "sourcePage": 8
+    },
+    {
+      "policyYear": 88,
+      "sourcePage": 8
+    },
+    {
+      "policyYear": 89,
+      "sourcePage": 8
+    },
+    {
+      "policyYear": 90,
+      "sourcePage": 8
+    },
+    {
+      "policyYear": 91,
+      "sourcePage": 8
+    },
+    {
+      "policyYear": 92,
+      "sourcePage": 8
+    },
+    {
+      "policyYear": 93,
+      "sourcePage": 8
+    },
+    {
+      "policyYear": 94,
+      "sourcePage": 8
+    },
+    {
+      "policyYear": 95,
+      "sourcePage": 8
+    },
+    {
+      "policyYear": 96,
+      "sourcePage": 8
+    },
+    {
+      "policyYear": 97,
+      "sourcePage": 8
+    },
+    {
+      "policyYear": 98,
+      "sourcePage": 8
+    },
+    {
+      "policyYear": 99,
+      "sourcePage": 8
+    },
+    {
+      "policyYear": 100,
+      "sourcePage": 8
+    },
+    {
+      "policyYear": 101,
+      "sourcePage": 8
+    },
+    {
+      "policyYear": 102,
+      "sourcePage": 8
+    },
+    {
+      "policyYear": 103,
+      "sourcePage": 8
+    },
+    {
+      "policyYear": 104,
+      "sourcePage": 8
+    },
+    {
+      "policyYear": 105,
+      "sourcePage": 8
+    },
+    {
+      "policyYear": 106,
+      "sourcePage": 9
+    },
+    {
+      "policyYear": 107,
+      "sourcePage": 9
+    },
+    {
+      "policyYear": 108,
+      "sourcePage": 9
+    },
+    {
+      "policyYear": 109,
+      "sourcePage": 9
+    },
+    {
+      "policyYear": 110,
+      "sourcePage": 9
+    },
+    {
+      "policyYear": 111,
+      "sourcePage": 9
+    },
+    {
+      "policyYear": 112,
+      "sourcePage": 9
+    },
+    {
+      "policyYear": 113,
+      "sourcePage": 9
+    },
+    {
+      "policyYear": 114,
+      "sourcePage": 9
+    },
+    {
+      "policyYear": 115,
+      "sourcePage": 9
+    },
+    {
+      "policyYear": 116,
+      "sourcePage": 9
+    },
+    {
+      "policyYear": 117,
+      "sourcePage": 9
+    },
+    {
+      "policyYear": 118,
+      "sourcePage": 9
+    },
+    {
+      "policyYear": 119,
+      "sourcePage": 9
+    },
+    {
+      "policyYear": 120,
+      "sourcePage": 9
+    },
+    {
+      "policyYear": 121,
+      "sourcePage": 9
+    },
+    {
+      "policyYear": 122,
+      "sourcePage": 9
+    },
+    {
+      "policyYear": 123,
+      "sourcePage": 9
+    },
+    {
+      "policyYear": 124,
+      "sourcePage": 9
+    },
+    {
+      "policyYear": 125,
+      "sourcePage": 9
+    },
+    {
+      "policyYear": 126,
+      "sourcePage": 9
+    },
+    {
+      "policyYear": 127,
+      "sourcePage": 9
+    },
+    {
+      "policyYear": 128,
+      "sourcePage": 10
+    }
+  ],
+  "withdrawalRows": [
+    {
+      "policyYear": 1,
+      "sourcePage": 52
+    },
+    {
+      "policyYear": 2,
+      "sourcePage": 52
+    },
+    {
+      "policyYear": 3,
+      "sourcePage": 52
+    },
+    {
+      "policyYear": 4,
+      "sourcePage": 52
+    },
+    {
+      "policyYear": 5,
+      "sourcePage": 52
+    },
+    {
+      "policyYear": 6,
+      "sourcePage": 52
+    },
+    {
+      "policyYear": 7,
+      "sourcePage": 52
+    },
+    {
+      "policyYear": 8,
+      "sourcePage": 52
+    },
+    {
+      "policyYear": 9,
+      "sourcePage": 52
+    },
+    {
+      "policyYear": 10,
+      "sourcePage": 52
+    },
+    {
+      "policyYear": 11,
+      "sourcePage": 52
+    },
+    {
+      "policyYear": 12,
+      "sourcePage": 52
+    },
+    {
+      "policyYear": 13,
+      "sourcePage": 52
+    },
+    {
+      "policyYear": 14,
+      "sourcePage": 52
+    },
+    {
+      "policyYear": 15,
+      "sourcePage": 52
+    },
+    {
+      "policyYear": 16,
+      "sourcePage": 52
+    },
+    {
+      "policyYear": 17,
+      "sourcePage": 52
+    },
+    {
+      "policyYear": 18,
+      "sourcePage": 52
+    },
+    {
+      "policyYear": 19,
+      "sourcePage": 52
+    },
+    {
+      "policyYear": 20,
+      "sourcePage": 52
+    },
+    {
+      "policyYear": 21,
+      "sourcePage": 52
+    },
+    {
+      "policyYear": 22,
+      "sourcePage": 52
+    },
+    {
+      "policyYear": 23,
+      "sourcePage": 52
+    },
+    {
+      "policyYear": 24,
+      "sourcePage": 52
+    },
+    {
+      "policyYear": 25,
+      "sourcePage": 52
+    },
+    {
+      "policyYear": 26,
+      "sourcePage": 52
+    },
+    {
+      "policyYear": 27,
+      "sourcePage": 52
+    },
+    {
+      "policyYear": 28,
+      "sourcePage": 52
+    },
+    {
+      "policyYear": 29,
+      "sourcePage": 52
+    },
+    {
+      "policyYear": 30,
+      "sourcePage": 52
+    },
+    {
+      "policyYear": 31,
+      "sourcePage": 53
+    },
+    {
+      "policyYear": 32,
+      "sourcePage": 53
+    },
+    {
+      "policyYear": 33,
+      "sourcePage": 53
+    },
+    {
+      "policyYear": 34,
+      "sourcePage": 53
+    },
+    {
+      "policyYear": 35,
+      "sourcePage": 53
+    },
+    {
+      "policyYear": 36,
+      "sourcePage": 53
+    },
+    {
+      "policyYear": 37,
+      "sourcePage": 53
+    },
+    {
+      "policyYear": 38,
+      "sourcePage": 53
+    },
+    {
+      "policyYear": 39,
+      "sourcePage": 53
+    },
+    {
+      "policyYear": 40,
+      "sourcePage": 53
+    },
+    {
+      "policyYear": 41,
+      "sourcePage": 53
+    },
+    {
+      "policyYear": 42,
+      "sourcePage": 53
+    },
+    {
+      "policyYear": 43,
+      "sourcePage": 53
+    },
+    {
+      "policyYear": 44,
+      "sourcePage": 53
+    },
+    {
+      "policyYear": 45,
+      "sourcePage": 53
+    },
+    {
+      "policyYear": 46,
+      "sourcePage": 53
+    },
+    {
+      "policyYear": 47,
+      "sourcePage": 53
+    },
+    {
+      "policyYear": 48,
+      "sourcePage": 53
+    },
+    {
+      "policyYear": 49,
+      "sourcePage": 53
+    },
+    {
+      "policyYear": 50,
+      "sourcePage": 53
+    },
+    {
+      "policyYear": 51,
+      "sourcePage": 53
+    },
+    {
+      "policyYear": 52,
+      "sourcePage": 53
+    },
+    {
+      "policyYear": 53,
+      "sourcePage": 53
+    },
+    {
+      "policyYear": 54,
+      "sourcePage": 53
+    },
+    {
+      "policyYear": 55,
+      "sourcePage": 53
+    },
+    {
+      "policyYear": 56,
+      "sourcePage": 53
+    },
+    {
+      "policyYear": 57,
+      "sourcePage": 53
+    },
+    {
+      "policyYear": 58,
+      "sourcePage": 53
+    },
+    {
+      "policyYear": 59,
+      "sourcePage": 53
+    },
+    {
+      "policyYear": 60,
+      "sourcePage": 53
+    },
+    {
+      "policyYear": 61,
+      "sourcePage": 53
+    },
+    {
+      "policyYear": 62,
+      "sourcePage": 53
+    },
+    {
+      "policyYear": 63,
+      "sourcePage": 53
+    },
+    {
+      "policyYear": 64,
+      "sourcePage": 53
+    },
+    {
+      "policyYear": 65,
+      "sourcePage": 53
+    },
+    {
+      "policyYear": 66,
+      "sourcePage": 54
+    },
+    {
+      "policyYear": 67,
+      "sourcePage": 54
+    },
+    {
+      "policyYear": 68,
+      "sourcePage": 54
+    },
+    {
+      "policyYear": 69,
+      "sourcePage": 54
+    },
+    {
+      "policyYear": 70,
+      "sourcePage": 54
+    },
+    {
+      "policyYear": 71,
+      "sourcePage": 54
+    },
+    {
+      "policyYear": 72,
+      "sourcePage": 54
+    },
+    {
+      "policyYear": 73,
+      "sourcePage": 54
+    },
+    {
+      "policyYear": 74,
+      "sourcePage": 54
+    },
+    {
+      "policyYear": 75,
+      "sourcePage": 54
+    },
+    {
+      "policyYear": 76,
+      "sourcePage": 54
+    },
+    {
+      "policyYear": 77,
+      "sourcePage": 54
+    },
+    {
+      "policyYear": 78,
+      "sourcePage": 54
+    },
+    {
+      "policyYear": 79,
+      "sourcePage": 54
+    },
+    {
+      "policyYear": 80,
+      "sourcePage": 54
+    },
+    {
+      "policyYear": 81,
+      "sourcePage": 54
+    },
+    {
+      "policyYear": 82,
+      "sourcePage": 54
+    },
+    {
+      "policyYear": 83,
+      "sourcePage": 54
+    },
+    {
+      "policyYear": 84,
+      "sourcePage": 54
+    },
+    {
+      "policyYear": 85,
+      "sourcePage": 54
+    },
+    {
+      "policyYear": 86,
+      "sourcePage": 54
+    },
+    {
+      "policyYear": 87,
+      "sourcePage": 54
+    },
+    {
+      "policyYear": 88,
+      "sourcePage": 54
+    },
+    {
+      "policyYear": 89,
+      "sourcePage": 54
+    },
+    {
+      "policyYear": 90,
+      "sourcePage": 54
+    },
+    {
+      "policyYear": 91,
+      "sourcePage": 54
+    },
+    {
+      "policyYear": 92,
+      "sourcePage": 54
+    },
+    {
+      "policyYear": 93,
+      "sourcePage": 54
+    },
+    {
+      "policyYear": 94,
+      "sourcePage": 54
+    },
+    {
+      "policyYear": 95,
+      "sourcePage": 54
+    },
+    {
+      "policyYear": 96,
+      "sourcePage": 54
+    },
+    {
+      "policyYear": 97,
+      "sourcePage": 54
+    },
+    {
+      "policyYear": 98,
+      "sourcePage": 54
+    },
+    {
+      "policyYear": 99,
+      "sourcePage": 54
+    },
+    {
+      "policyYear": 100,
+      "sourcePage": 54
+    },
+    {
+      "policyYear": 101,
+      "sourcePage": 55
+    },
+    {
+      "policyYear": 102,
+      "sourcePage": 55
+    },
+    {
+      "policyYear": 103,
+      "sourcePage": 55
+    },
+    {
+      "policyYear": 104,
+      "sourcePage": 55
+    },
+    {
+      "policyYear": 105,
+      "sourcePage": 55
+    },
+    {
+      "policyYear": 106,
+      "sourcePage": 55
+    },
+    {
+      "policyYear": 107,
+      "sourcePage": 55
+    },
+    {
+      "policyYear": 108,
+      "sourcePage": 55
+    },
+    {
+      "policyYear": 109,
+      "sourcePage": 55
+    },
+    {
+      "policyYear": 110,
+      "sourcePage": 55
+    },
+    {
+      "policyYear": 111,
+      "sourcePage": 55
+    },
+    {
+      "policyYear": 112,
+      "sourcePage": 55
+    },
+    {
+      "policyYear": 113,
+      "sourcePage": 55
+    },
+    {
+      "policyYear": 114,
+      "sourcePage": 55
+    },
+    {
+      "policyYear": 115,
+      "sourcePage": 55
+    },
+    {
+      "policyYear": 116,
+      "sourcePage": 55
+    },
+    {
+      "policyYear": 117,
+      "sourcePage": 55
+    },
+    {
+      "policyYear": 118,
+      "sourcePage": 55
+    },
+    {
+      "policyYear": 119,
+      "sourcePage": 55
+    },
+    {
+      "policyYear": 120,
+      "sourcePage": 55
+    },
+    {
+      "policyYear": 121,
+      "sourcePage": 55
+    },
+    {
+      "policyYear": 122,
+      "sourcePage": 55
+    },
+    {
+      "policyYear": 123,
+      "sourcePage": 55
+    },
+    {
+      "policyYear": 124,
+      "sourcePage": 55
+    },
+    {
+      "policyYear": 125,
+      "sourcePage": 55
+    },
+    {
+      "policyYear": 126,
+      "sourcePage": 55
+    },
+    {
+      "policyYear": 127,
+      "sourcePage": 55
+    }
+  ],
+  "images": [
+    {
+      "slideId": "cover",
+      "pathOrUrl": "/Users/soldier/free-code/packages/insurance-ppt/outputs/ctf_artisan_formal_v3_1780457621696_pipeline/assets/cover.jpg",
+      "source": "whitelist"
+    },
+    {
+      "slideId": "company",
+      "pathOrUrl": "/Users/soldier/free-code/packages/insurance-ppt/outputs/ctf_artisan_formal_v3_1780457621696_pipeline/assets/company.jpg",
+      "source": "whitelist"
+    },
+    {
+      "slideId": "scenario",
+      "pathOrUrl": "/Users/soldier/free-code/packages/insurance-ppt/outputs/ctf_artisan_formal_v3_1780457621696_pipeline/assets/scenario.jpg",
+      "source": "whitelist"
+    },
+    {
+      "slideId": "chart-growth",
+      "pathOrUrl": "/Users/soldier/free-code/packages/insurance-ppt/outputs/ctf_artisan_formal_v3_1780457621696_pipeline/assets/chart-growth.jpg",
+      "source": "whitelist"
+    },
+    {
+      "slideId": "chart-stacked",
+      "pathOrUrl": "/Users/soldier/free-code/packages/insurance-ppt/outputs/ctf_artisan_formal_v3_1780457621696_pipeline/assets/chart-stacked.jpg",
+      "source": "whitelist"
+    },
+    {
+      "slideId": "timeline-a",
+      "pathOrUrl": "/Users/soldier/free-code/packages/insurance-ppt/outputs/ctf_artisan_formal_v3_1780457621696_pipeline/assets/timeline-a.jpg",
+      "source": "whitelist"
+    },
+    {
+      "slideId": "timeline-b",
+      "pathOrUrl": "/Users/soldier/free-code/packages/insurance-ppt/outputs/ctf_artisan_formal_v3_1780457621696_pipeline/assets/timeline-b.jpg",
+      "source": "whitelist"
+    },
+    {
+      "slideId": "table-withdraw",
+      "pathOrUrl": "/Users/soldier/free-code/packages/insurance-ppt/outputs/ctf_artisan_formal_v3_1780457621696_pipeline/assets/table-withdraw.jpg",
+      "source": "whitelist"
+    },
+    {
+      "slideId": "table-nowithdraw",
+      "pathOrUrl": "/Users/soldier/free-code/packages/insurance-ppt/outputs/ctf_artisan_formal_v3_1780457621696_pipeline/assets/table-nowithdraw.jpg",
+      "source": "whitelist"
+    },
+    {
+      "slideId": "closing",
+      "pathOrUrl": "/Users/soldier/free-code/packages/insurance-ppt/outputs/ctf_artisan_formal_v3_1780457621696_pipeline/assets/closing.jpg",
+      "source": "whitelist"
+    }
+  ],
+  "companyEvidence": [
+    "/Users/soldier/Desktop/公司介绍/CTF-周大福人寿/CTFLife_Market Insight_2024年周大福人壽分紅實現率表現全攻略_2507_(TradChi).pdf",
+    "/Users/soldier/Desktop/公司介绍/CTF-周大福人寿/周大福人壽醫療增值服務_TC.pdf"
+  ]
+}

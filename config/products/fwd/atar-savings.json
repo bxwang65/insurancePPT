@@ -1,0 +1,18 @@
+{
+  "id": "fwd-atar-savings",
+  "companyId": "fwd",
+  "planType": "savings",
+  "displayName": "盈聚天下II保险计划",
+  "aliases": ["盈聚天下", "盈聚天下II", "盈聚", "GFC5", "ATAR", "AtarSavings", "FWD盈聚", "富卫盈聚"],
+  "requiredModules": [
+    "cover",
+    "company",
+    "scenario-by-insured-age",
+    "growth-chart",
+    "guaranteed-vs-non-guaranteed",
+    "withdrawal-timeline",
+    "withdrawal-table",
+    "no-withdrawal-table",
+    "closing"
+  ]
+}

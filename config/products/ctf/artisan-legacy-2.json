@@ -1,0 +1,30 @@
+{
+  "id": "ctf-artisan-legacy-2",
+  "companyId": "ctf",
+  "planType": "savings",
+  "displayName": "匠心传承储蓄计划2",
+  "aliases": [
+    "匠心傳承",
+    "匠心传承",
+    "匠心傳承儲蓄計劃2",
+    "匠心傳承儲蓄計劃2尊尚版",
+    "匠心传承储蓄计划2",
+    "匠心传承储蓄计划2尊尚版",
+    "匠x传承",
+    "匠x傳承",
+    "匠传承",
+    "传家宝",
+    "「匠X・传承」储蓄寿险计划2(尊尚版)"
+  ],
+  "requiredModules": [
+    "cover",
+    "company",
+    "scenario-by-insured-age",
+    "growth-chart",
+    "guaranteed-vs-non-guaranteed",
+    "withdrawal-timeline",
+    "withdrawal-table",
+    "no-withdrawal-table",
+    "closing"
+  ]
+}

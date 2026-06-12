@@ -1,0 +1,13 @@
+{
+  "status": "pass",
+  "checkedAt": "2026-06-02T00:03:50.979Z",
+  "workspace": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_savings_ci_iul_bundle_clone/template-clone/savings-ci-iul-bundle",
+  "finalPptx": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_savings_ci_iul_bundle_clone/deck.pptx",
+  "starterPptx": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_savings_ci_iul_bundle_clone/template-clone/savings-ci-iul-bundle/template-starter.pptx",
+  "mapPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_savings_ci_iul_bundle_clone/template-clone/savings-ci-iul-bundle/template-frame-map.json",
+  "starterLayoutDir": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_savings_ci_iul_bundle_clone/template-clone/savings-ci-iul-bundle/template-starter-layout",
+  "finalLayoutDir": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_savings_ci_iul_bundle_clone/template-clone/savings-ci-iul-bundle/final-layout",
+  "editDir": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_savings_ci_iul_bundle_clone/template-clone/savings-ci-iul-bundle/authoring-evidence",
+  "issueCount": 0,
+  "issues": []
+}

@@ -1,0 +1,413 @@
+{
+  "templateId": "chinese",
+  "slides": [
+    {
+      "outputSlide": 1,
+      "textRewrites": [
+        {
+          "shapeId": "5",
+          "text": "VIP 先生 家庭资产配置建议书"
+        },
+        {
+          "shapeId": "7",
+          "text": "2026-06-01"
+        }
+      ],
+      "imageReplacements": []
+    },
+    {
+      "outputSlide": 2,
+      "textRewrites": [
+        {
+          "shapeId": "2",
+          "text": "友邦保险：长期财富管理实力"
+        },
+        {
+          "shapeId": "4",
+          "text": "⁠"
+        },
+        {
+          "shapeId": "5",
+          "text": "公司资料已入库并可追溯"
+        },
+        {
+          "shapeId": "6",
+          "text": "公司介绍页只使用内部资料库中的友邦公开资料，不引用无法回溯的演示数据。"
+        },
+        {
+          "shapeId": "7",
+          "text": "⁠"
+        },
+        {
+          "shapeId": "8",
+          "text": "本次方案聚焦长期储蓄"
+        },
+        {
+          "shapeId": "9",
+          "text": "产品：环球盈活储蓄保险计划。年缴 US$100,000，共缴 5 年。"
+        }
+      ],
+      "imageReplacements": [
+        {
+          "imageId": "10",
+          "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/formal_環宇盈活儲蓄保險計劃_1780301185635_pipeline/assets/company.jpg",
+          "fit": "cover"
+        }
+      ]
+    },
+    {
+      "outputSlide": 3,
+      "textRewrites": [
+        {
+          "shapeId": "2",
+          "text": "一份保单，兼顾教育金与长期储备"
+        },
+        {
+          "shapeId": "3",
+          "text": "⁠"
+        },
+        {
+          "shapeId": "5",
+          "text": "本金投入清晰"
+        },
+        {
+          "shapeId": "6",
+          "text": "合同总缴保费约 US$500,000，缴费期为 5 年。"
+        },
+        {
+          "shapeId": "7",
+          "text": "⁠"
+        },
+        {
+          "shapeId": "9",
+          "text": "长期价值可验证"
+        },
+        {
+          "shapeId": "10",
+          "text": "不提领情景：第20年退保价值约 US$1,357,738；第30年约 US$2,927,387。"
+        },
+        {
+          "shapeId": "11",
+          "text": "⁠"
+        },
+        {
+          "shapeId": "13",
+          "text": "领取后仍保留账户价值"
+        },
+        {
+          "shapeId": "14",
+          "text": "自保单第6年起每年领取 US$35,000，第20年累计领取 US$525,000。"
+        }
+      ],
+      "imageReplacements": [
+        {
+          "imageId": "15",
+          "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/formal_環宇盈活儲蓄保險計劃_1780301185635_pipeline/assets/cover.jpg",
+          "fit": "cover"
+        },
+        {
+          "imageId": "16",
+          "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/formal_環宇盈活儲蓄保險計劃_1780301185635_pipeline/assets/scenario.jpg",
+          "fit": "cover"
+        },
+        {
+          "imageId": "17",
+          "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/formal_環宇盈活儲蓄保險計劃_1780301185635_pipeline/charts/1_环X盈活储蓄保险计划_5年缴费_cashflow.png",
+          "fit": "cover"
+        }
+      ]
+    },
+    {
+      "outputSlide": 4,
+      "textRewrites": [
+        {
+          "shapeId": "2",
+          "text": "不提领情景：现金价值增长"
+        },
+        {
+          "shapeId": "3",
+          "text": "⁠"
+        },
+        {
+          "shapeId": "5",
+          "text": "20年价值"
+        },
+        {
+          "shapeId": "6",
+          "text": "第20年退保现金价值约 US$1,357,738，约为本金 2.72 倍。"
+        },
+        {
+          "shapeId": "7",
+          "text": "⁠"
+        },
+        {
+          "shapeId": "9",
+          "text": "30年价值"
+        },
+        {
+          "shapeId": "10",
+          "text": "第30年退保现金价值约 US$2,927,387，约为本金 5.85 倍。"
+        },
+        {
+          "shapeId": "11",
+          "text": "⁠"
+        },
+        {
+          "shapeId": "13",
+          "text": "保证与非保证拆分"
+        },
+        {
+          "shapeId": "14",
+          "text": "图表分别展示保证底盘、非保证弹性和总退保价值，便于解释长期价值来源。"
+        }
+      ],
+      "imageReplacements": [
+        {
+          "imageId": "15",
+          "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/formal_環宇盈活儲蓄保險計劃_1780301185635_pipeline/charts/1_环X盈活储蓄保险计划_5年缴费_growth.png",
+          "fit": "cover"
+        },
+        {
+          "imageId": "16",
+          "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/formal_環宇盈活儲蓄保險計劃_1780301185635_pipeline/charts/1_环X盈活储蓄保险计划_5年缴费_stacked.png",
+          "fit": "cover"
+        },
+        {
+          "imageId": "17",
+          "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/formal_環宇盈活儲蓄保險計劃_1780301185635_pipeline/charts/1_环X盈活储蓄保险计划_5年缴费_cashflow.png",
+          "fit": "cover"
+        }
+      ]
+    },
+    {
+      "outputSlide": 5,
+      "textRewrites": [
+        {
+          "shapeId": "10",
+          "text": "教育金领取路径：从第6年开始"
+        },
+        {
+          "shapeId": "15",
+          "text": "起领节点"
+        },
+        {
+          "shapeId": "16",
+          "text": "保单第6年开始，每年领取 US$35,000；领取后仍有退保价值 US$405,900。"
+        },
+        {
+          "shapeId": "20",
+          "text": "20岁前后"
+        },
+        {
+          "shapeId": "21",
+          "text": "第20保单年度累计领取 US$525,000，领取后退保价值 US$479,749。"
+        },
+        {
+          "shapeId": "25",
+          "text": "30岁前后"
+        },
+        {
+          "shapeId": "26",
+          "text": "第30保单年度累计领取 US$875,000，领取后退保价值 US$544,522。"
+        }
+      ],
+      "imageReplacements": [
+        {
+          "imageId": "27",
+          "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/formal_環宇盈活儲蓄保險計劃_1780301185635_pipeline/assets/scenario.jpg",
+          "fit": "cover"
+        }
+      ]
+    },
+    {
+      "outputSlide": 6,
+      "textRewrites": [
+        {
+          "shapeId": "10",
+          "text": "长期领取路径：现金流与剩余价值并行"
+        },
+        {
+          "shapeId": "15",
+          "text": "第30保单年度"
+        },
+        {
+          "shapeId": "16",
+          "text": "累计领取 US$875,000，领取后退保价值 US$544,522。"
+        },
+        {
+          "shapeId": "20",
+          "text": "第60保单年度"
+        },
+        {
+          "shapeId": "21",
+          "text": "累计领取 US$1,925,000，领取后退保价值 US$568,270。"
+        },
+        {
+          "shapeId": "25",
+          "text": "第80保单年度"
+        },
+        {
+          "shapeId": "26",
+          "text": "累计领取 US$2,625,000，领取后退保价值 US$650,209。"
+        }
+      ],
+      "imageReplacements": [
+        {
+          "imageId": "27",
+          "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/formal_環宇盈活儲蓄保險計劃_1780301185635_pipeline/assets/closing.jpg",
+          "fit": "cover"
+        }
+      ]
+    },
+    {
+      "outputSlide": 7,
+      "textRewrites": [
+        {
+          "shapeId": "2",
+          "text": "提领方案数据表（每10年）"
+        },
+        {
+          "shapeId": "4",
+          "text": "⁠"
+        },
+        {
+          "shapeId": "5",
+          "text": "固定领取节奏"
+        },
+        {
+          "shapeId": "6",
+          "text": "自第6年起每年领取 US$35,000，表中按每10年展示累计领取与领取后退保现金价值。"
+        },
+        {
+          "shapeId": "7",
+          "text": "⁠"
+        },
+        {
+          "shapeId": "8",
+          "text": "读表重点"
+        },
+        {
+          "shapeId": "9",
+          "text": "同时观察累计领取、剩余价值、单利和复利，不用单一收益率替代现金流判断。"
+        },
+        {
+          "shapeId": "10",
+          "text": "⁠"
+        },
+        {
+          "shapeId": "11",
+          "text": "数据来源"
+        },
+        {
+          "shapeId": "12",
+          "text": "本页数字均来自官方计划书提领利益演示表，未使用模拟正式数字。"
+        }
+      ],
+      "imageReplacements": [
+        {
+          "imageId": "13",
+          "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/formal_環宇盈活儲蓄保險計劃_1780301185635_pipeline/template-clone/chinese-savings/assets/withdrawal-table.png",
+          "fit": "cover"
+        }
+      ]
+    },
+    {
+      "outputSlide": 8,
+      "textRewrites": [
+        {
+          "shapeId": "2",
+          "text": "不提领方案数据表（每10年）"
+        },
+        {
+          "shapeId": "4",
+          "text": "⁠"
+        },
+        {
+          "shapeId": "5",
+          "text": "复利增长路径"
+        },
+        {
+          "shapeId": "6",
+          "text": "总缴保费约 US$500,000；第20年约 2.72 倍，第30年约 5.85 倍。"
+        },
+        {
+          "shapeId": "7",
+          "text": "⁠"
+        },
+        {
+          "shapeId": "8",
+          "text": "读表重点"
+        },
+        {
+          "shapeId": "9",
+          "text": "本页用于理解长期积累能力；保证价值与非保证价值需结合官方利益演示阅读。"
+        },
+        {
+          "shapeId": "10",
+          "text": "⁠"
+        },
+        {
+          "shapeId": "11",
+          "text": "数据来源"
+        },
+        {
+          "shapeId": "12",
+          "text": "本页数字均来自官方计划书不提领利益演示表，未使用模拟正式数字。"
+        }
+      ],
+      "imageReplacements": [
+        {
+          "imageId": "13",
+          "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/formal_環宇盈活儲蓄保險計劃_1780301185635_pipeline/template-clone/chinese-savings/assets/no-withdrawal-table.png",
+          "fit": "cover"
+        }
+      ]
+    },
+    {
+      "outputSlide": 9,
+      "textRewrites": [
+        {
+          "shapeId": "2",
+          "text": "让时间成为家庭资产配置的一部分"
+        },
+        {
+          "shapeId": "4",
+          "text": "教育金有安排"
+        },
+        {
+          "shapeId": "5",
+          "text": "在成长阶段保留可使用的教育资金，让家庭选择更从容。"
+        },
+        {
+          "shapeId": "6",
+          "text": "长期现金流有来源"
+        },
+        {
+          "shapeId": "7",
+          "text": "领取节奏与剩余价值并行展示，便于持续复盘。"
+        }
+      ],
+      "imageReplacements": [
+        {
+          "imageId": "8",
+          "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/formal_環宇盈活儲蓄保險計劃_1780301185635_pipeline/assets/closing.jpg",
+          "fit": "cover"
+        }
+      ]
+    },
+    {
+      "outputSlide": 10,
+      "textRewrites": [
+        {
+          "shapeId": "3",
+          "text": "THE END"
+        },
+        {
+          "shapeId": "4",
+          "text": "谢谢"
+        }
+      ],
+      "imageReplacements": []
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "status": "pass",
+  "checkedAt": "2026-06-01T15:58:06.140Z",
+  "workspace": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings",
+  "mapPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-frame-map.json",
+  "inspectPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/template-inspect.ndjson",
+  "sourceSlideCount": 25,
+  "issueCount": 0,
+  "issues": []
+}

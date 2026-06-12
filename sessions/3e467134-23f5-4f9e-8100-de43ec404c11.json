@@ -1,0 +1,28 @@
+{
+  "id": "3e467134-23f5-4f9e-8100-de43ec404c11",
+  "ownerId": "local",
+  "files": [
+    {
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/uploads/local/3e467134-23f5-4f9e-8100-de43ec404c11_太平保险.pdf",
+      "name": "太平保险.pdf",
+      "type": "savings"
+    }
+  ],
+  "status": "parsed",
+  "extractions": [
+    {
+      "pdfName": "太平保险.pdf",
+      "pdfPath": "/Users/soldier/free-code/packages/insurance-ppt/uploads/local/3e467134-23f5-4f9e-8100-de43ec404c11_太平保险.pdf",
+      "planType": "savings",
+      "data": null,
+      "error": "Data validation failed - unsupported format"
+    }
+  ],
+  "chatHistory": [
+    {
+      "role": "assistant",
+      "content": "✅ **AI 解析完成！**\n\n📄 **太平保险.pdf**: ❌ Data validation failed - unsupported format\n\n你可以在下方输入定制需求（如：教育金/养老金、提领起始年龄、公司页重点、图表页偏好），我会据此优化PPT。"
+    }
+  ],
+  "createdAt": "2026-06-11T06:43:20.183Z"
+}

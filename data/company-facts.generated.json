@@ -1,0 +1,268 @@
+{
+  "companies": [
+    {
+      "companyId": "aia",
+      "displayName": "友邦保险",
+      "companyIntro": "友邦保险提供长期储蓄、保障与财富传承方案。公司介绍页仅使用已入库资料和可追溯公开来源。",
+      "facts": [
+        {
+          "label": "成立时间",
+          "value": "2011年成立"
+        },
+        {
+          "label": "穆迪评级",
+          "value": "Aa2"
+        },
+        {
+          "label": "惠誉评级",
+          "value": "AA"
+        }
+      ],
+      "evidenceFiles": [
+        "/Users/soldier/Desktop/公司介绍/AIA-友邦/友邦-一图简介.pdf",
+        "/Users/soldier/Desktop/公司介绍/AIA-友邦/友邦香港及澳门简介2508.pdf",
+        "/Users/soldier/Desktop/公司介绍/新加坡友邦/aia-corporate-factsheet-chinese.pdf"
+      ]
+    },
+    {
+      "companyId": "axa",
+      "displayName": "安盛",
+      "companyIntro": "安盛相关公司资料仅使用内部资料库中已索引、可追溯的文件。",
+      "facts": [],
+      "evidenceFiles": [
+        "/Users/soldier/Desktop/公司介绍/AXA-安盛/安盛-一图简介.pdf",
+        "/Users/soldier/Desktop/公司介绍/AXA-安盛/AXA安盛-投资策略以及投资案例.pdf"
+      ]
+    },
+    {
+      "companyId": "boclife",
+      "displayName": "中银人寿",
+      "companyIntro": "中银人寿相关公司资料仅使用内部资料库中已索引、可追溯的文件。",
+      "facts": [],
+      "evidenceFiles": [
+        "/Users/soldier/Desktop/公司介绍/BOC-中银人寿/中银投资概览20250603.pdf"
+      ]
+    },
+    {
+      "companyId": "china-taiping",
+      "displayName": "中国太平",
+      "companyIntro": "中国太平相关公司资料仅使用内部资料库中已索引、可追溯的文件。",
+      "facts": [],
+      "evidenceFiles": [
+        "/Users/soldier/Desktop/公司介绍/新加坡-中国太平/CT174 Infinite Indexed Legacy EN_23.10.pdf",
+        "/Users/soldier/Desktop/公司介绍/新加坡-中国太平/CTPIS Infinite Indexed Wealth - Training Deck.pdf",
+        "/Users/soldier/Desktop/公司介绍/新加坡-中国太平/FA-Web-CTHNW-Infinite-Indexed-Legacy-CN-12.11.pdf"
+      ]
+    },
+    {
+      "companyId": "chinalife",
+      "displayName": "中国人寿",
+      "companyIntro": "中国人寿相关公司资料仅使用内部资料库中已索引、可追溯的文件。",
+      "facts": [],
+      "evidenceFiles": [
+        "/Users/soldier/Desktop/公司介绍/ChinaLife-中国人寿/国寿养老/国寿社区养老项目手册.pdf",
+        "/Users/soldier/Desktop/公司介绍/ChinaLife-中国人寿/国寿养老/宣傳單張_Digital.pdf",
+        "/Users/soldier/Desktop/公司介绍/ChinaLife-中国人寿/国寿养老/ENRICH盈加分層宣傳單張.pdf"
+      ]
+    },
+    {
+      "companyId": "chubb",
+      "displayName": "安达人寿",
+      "companyIntro": "安达人寿相关公司资料仅使用内部资料库中已索引、可追溯的文件。",
+      "facts": [],
+      "evidenceFiles": [
+        "/Users/soldier/Desktop/公司介绍/CHUBB-安达人寿/产品信息/终身寿险/兒童保障利益/兒童保障利益-产品介绍册.pdf",
+        "/Users/soldier/Desktop/公司介绍/CHUBB-安达人寿/产品信息/终身寿险/「銀齡」安心保/「銀齡」安心保-产品介绍册.pdf",
+        "/Users/soldier/Desktop/公司介绍/CHUBB-安达人寿/产品信息/终身寿险/世代傳承保險系列/世代傳承保險系列-产品介绍册.pdf"
+      ]
+    },
+    {
+      "companyId": "cpic",
+      "displayName": "太平洋保险",
+      "companyIntro": "太平洋保险相关公司资料仅使用内部资料库中已索引、可追溯的文件。",
+      "facts": [],
+      "evidenceFiles": [
+        "/Users/soldier/Desktop/公司介绍/CPIC-太平洋保险/太平洋壽險香港APP下載頁V.1.pdf",
+        "/Users/soldier/Desktop/公司介绍/CPIC-太平洋保险/太保尊尚会/太保家园直付流程-20250623.pdf",
+        "/Users/soldier/Desktop/公司介绍/CPIC-太平洋保险/太保尊尚会/太保家园产品服务手册手机版2025V1.pdf"
+      ]
+    },
+    {
+      "companyId": "ctf",
+      "displayName": "周大福人寿",
+      "companyIntro": "周大福人寿提供保障、储蓄与传承规划服务，定位长期家庭财富与保障管理。",
+      "facts": [
+        {
+          "label": "所属集团",
+          "value": "緊扣周大福集團"
+        }
+      ],
+      "evidenceFiles": [
+        "/Users/soldier/Desktop/公司介绍/CTF-周大福人寿/周大福人壽醫療增值服務_TC.pdf",
+        "/Users/soldier/Desktop/公司介绍/CTF-周大福人寿/CTFLife_Market Insight_2024年周大福人壽分紅實現率表現全攻略_2507_(TradChi).pdf"
+      ]
+    },
+    {
+      "companyId": "fubon",
+      "displayName": "富邦人寿",
+      "companyIntro": "富邦人寿相关公司资料仅使用内部资料库中已索引、可追溯的文件。",
+      "facts": [],
+      "evidenceFiles": [
+        "/Users/soldier/Desktop/公司介绍/Fubon-Life-富邦人寿/富邦三篇業配整理.pdf",
+        "/Users/soldier/Desktop/公司介绍/Fubon-Life-富邦人寿/富邦-優化現金提取.pdf"
+      ]
+    },
+    {
+      "companyId": "fwd",
+      "displayName": "富卫",
+      "companyIntro": "富卫保险业务覆盖亚洲多个市场，定位多元化保障与财富管理。",
+      "facts": [
+        {
+          "label": "核心概况",
+          "value": "富卫保险为泛亚洲人寿保险公司，业务遍及香港、澳门、泰国、印尼、菲律宾、马来西亚、越南、日本等市场。"
+        }
+      ],
+      "evidenceFiles": [
+        "/Users/soldier/Desktop/公司介绍/FWD-富卫/产品信息/医疗/醫家保醫療計劃/助销工具/醫家保醫療計劃-支援及服務簡介.pdf",
+        "/Users/soldier/Desktop/公司介绍/FWD-富卫/产品信息/医疗/尊衛您（寰譽版）醫療計劃/助销工具/尊衛您（寰譽版）醫療計劃支援及服務簡介.pdf",
+        "/Users/soldier/Desktop/公司介绍/FWD-富卫/产品信息/投資相連壽險/智悅未來/智悅未來-產品資料概要-ShineInvest-key-facts-statement.pdf"
+      ]
+    },
+    {
+      "companyId": "generali",
+      "displayName": "忠意保险",
+      "companyIntro": "忠意保险相关公司资料仅使用内部资料库中已索引、可追溯的文件。",
+      "facts": [
+        {
+          "label": "贝氏评级",
+          "value": "A"
+        }
+      ],
+      "evidenceFiles": [
+        "/Users/soldier/Desktop/公司介绍/GEN-忠意/Genarali_BrandStorybook忠意介绍_JUN2023_FINAL_TC.pdf"
+      ]
+    },
+    {
+      "companyId": "great-eastern",
+      "displayName": "大东方人寿",
+      "companyIntro": "大东方人寿相关公司资料仅使用内部资料库中已索引、可追溯的文件。",
+      "facts": [],
+      "evidenceFiles": [
+        "/Users/soldier/Desktop/公司介绍/新加坡-大东方/3.大东方IUL产品简介英文版 Prestige Legacy Index (Brokers)_Final.pdf",
+        "/Users/soldier/Desktop/公司介绍/新加坡-大东方/大东方Income储蓄产品手册中文版PLG4储蓄.pdf",
+        "/Users/soldier/Desktop/公司介绍/新加坡-大东方/5.大东方IUL 趸交合同样本英文版Sample Policy Contract.pdf"
+      ]
+    },
+    {
+      "companyId": "hsbc-life",
+      "displayName": "汇丰人寿",
+      "companyIntro": "汇丰人寿相关公司资料仅使用内部资料库中已索引、可追溯的文件。",
+      "facts": [],
+      "evidenceFiles": [
+        "/Users/soldier/Desktop/公司介绍/新加坡-汇丰/1.汇丰IUL2代产品手册英文版Specimen)HSBC IUL II PS_Final.pdf",
+        "/Users/soldier/Desktop/公司介绍/新加坡-汇丰/2.汇丰IUL2代产品摘要英文版IUL2 Competitive Analysis v1.0.pdf",
+        "/Users/soldier/Desktop/公司介绍/新加坡-汇丰/4.汇丰IUL 2代合同样本英文版Diamond Prestige IUL II GP_Final.pdf"
+      ]
+    },
+    {
+      "companyId": "manulife",
+      "displayName": "宏利",
+      "companyIntro": "宏利金融是全球领先的金融服务集团，业务遍及亚洲、加拿大及美国，定位长期家庭财富与保障管理。",
+      "facts": [
+        {
+          "label": "核心概况",
+          "value": "宏利香港为宏利金融有限公司全资附属机构，业务覆盖香港、澳门，业务规模位居香港寿险市场前列。"
+        }
+      ],
+      "evidenceFiles": [
+        "/Users/soldier/Desktop/公司介绍/ManuLife-宏利/公司概览/宏利投資概覽2025.pdf",
+        "/Users/soldier/Desktop/公司介绍/ManuLife-宏利/分红实现率/2025-分红实现率和总现金价值比率概览.pdf",
+        "/Users/soldier/Desktop/公司介绍/ManuLife-宏利/Manulife 宏利业务简介202408.pdf"
+      ]
+    },
+    {
+      "companyId": "pru",
+      "displayName": "保诚",
+      "companyIntro": "保诚相关公司资料仅使用内部资料库中已索引、可追溯的文件。",
+      "facts": [],
+      "evidenceFiles": [
+        "/Users/soldier/Desktop/公司介绍/PRU-保诚/保诚介绍companystrength-tc.pdf",
+        "/Users/soldier/Desktop/公司介绍/PRU-保诚/保誠投資概況Company Fact Sheet_ZH_7Aug2025.pdf",
+        "/Users/soldier/Desktop/公司介绍/PRU-保诚/新加坡保诚--卓势传承指数宣传手册.pdf"
+      ]
+    },
+    {
+      "companyId": "sunlife",
+      "displayName": "永明",
+      "companyIntro": "永明相关公司资料仅使用内部资料库中已索引、可追溯的文件。",
+      "facts": [],
+      "evidenceFiles": [
+        "/Users/soldier/Desktop/公司介绍/SunLife-永明/永明2025年报.pdf",
+        "/Users/soldier/Desktop/公司介绍/SunLife-永明/永明2024投资报告.pdf",
+        "/Users/soldier/Desktop/公司介绍/新加坡-永明/永明IUL储蓄计划书.pdf"
+      ]
+    },
+    {
+      "companyId": "tplife",
+      "displayName": "太平人寿",
+      "companyIntro": "太平人寿相关公司资料仅使用内部资料库中已索引、可追溯的文件。",
+      "facts": [],
+      "evidenceFiles": [
+        "/Users/soldier/Desktop/公司介绍/TPLife-太平人寿/太平养老相关文件/太平人壽（香港）養頤積分計劃.pdf",
+        "/Users/soldier/Desktop/公司介绍/TPLife-太平人寿/太平养老相关文件/2_湾区养老Q&A-2024（香港）.pdf",
+        "/Users/soldier/Desktop/公司介绍/TPLife-太平人寿/太平养老相关文件/太平人寿（香港）-港人湾区养老服务手册.pdf"
+      ]
+    },
+    {
+      "companyId": "transamerica",
+      "displayName": "全美人寿",
+      "companyIntro": "全美人寿相关公司资料仅使用内部资料库中已索引、可追溯的文件。",
+      "facts": [],
+      "evidenceFiles": [
+        "/Users/soldier/Desktop/公司介绍/新加坡-全美/全美PFG IUL储蓄产品手册中文版Product factsheet Chinese.pdf",
+        "/Users/soldier/Desktop/公司介绍/新加坡-全美/2.全美IUL3代产品手册英文版.pdf",
+        "/Users/soldier/Desktop/公司介绍/新加坡-全美/6.TA_GIUL3计划书示例 F-40-N-CN-USD-S10m-5x(SC).pdf"
+      ]
+    },
+    {
+      "companyId": "wll",
+      "displayName": "立桥人寿",
+      "companyIntro": "立桥人寿相关公司资料仅使用内部资料库中已索引、可追溯的文件。",
+      "facts": [],
+      "evidenceFiles": [
+        "/Users/soldier/Desktop/公司介绍/WLL-立桥人寿/产品信息/智選儲蓄保/智選儲蓄保-保单样本.pdf",
+        "/Users/soldier/Desktop/公司介绍/WLL-立桥人寿/产品信息/享護一生壽險計劃/享護一生壽險計劃-产品手册.pdf",
+        "/Users/soldier/Desktop/公司介绍/WLL-立桥人寿/产品信息/息享未來儲蓄保/「息」享未來儲蓄保-产品手册.pdf"
+      ]
+    },
+    {
+      "companyId": "yflife",
+      "displayName": "万通保险",
+      "companyIntro": "万通保险相关公司资料仅使用内部资料库中已索引、可追溯的文件。",
+      "facts": [],
+      "evidenceFiles": [
+        "/Users/soldier/Desktop/公司介绍/YFLife-万通/万通市场观望202511.pdf",
+        "/Users/soldier/Desktop/公司介绍/YFLife-万通/万通保险过往年金权益表现报告20250616.pdf",
+        "/Users/soldier/Desktop/公司介绍/YFLife-万通/投資選擇的投資表現報告 - 累積回報及年度回報202510.pdf"
+      ]
+    },
+    {
+      "companyId": "zurich",
+      "displayName": "苏黎世",
+      "companyIntro": "苏黎世相关公司资料仅使用内部资料库中已索引、可追溯的文件。",
+      "facts": [
+        {
+          "label": "成立时间",
+          "value": "1872年"
+        },
+        {
+          "label": "管理资产规模",
+          "value": "2,300亿美元*"
+        }
+      ],
+      "evidenceFiles": [
+        "/Users/soldier/Desktop/公司介绍/ZURICH-苏黎世/苏黎世人寿保险-企业概览.pdf"
+      ]
+    }
+  ]
+}

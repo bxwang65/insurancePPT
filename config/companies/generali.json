@@ -1,0 +1,9 @@
+{
+  "id": "generali",
+  "displayName": "忠意保险",
+  "aliases": ["GEN", "Generali", "忠意"],
+  "tenantId": "default",
+  "knowledgeDirectories": ["GEN-忠意"],
+  "evidenceRanking": ["简介", "brand", "fact", "财务", "实力", "概览"],
+  "companyIntro": "忠意保险相关公司资料仅使用内部资料库中已索引、可追溯的文件。"
+}

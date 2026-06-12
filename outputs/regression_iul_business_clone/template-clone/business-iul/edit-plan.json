@@ -1,0 +1,215 @@
+{
+  "templateId": "business",
+  "slides": [
+    {
+      "outputSlide": 1,
+      "textRewrites": [
+        {
+          "shapeId": "6",
+          "text": "王先生 家庭 IUL 定制方案"
+        },
+        {
+          "shapeId": "10",
+          "text": "友邦保险 · Genesis IUL 指数型寿险计划"
+        },
+        {
+          "shapeId": "31",
+          "text": "Index Universal Life"
+        }
+      ],
+      "imageReplacements": [],
+      "deletions": []
+    },
+    {
+      "outputSlide": 2,
+      "textRewrites": [
+        {
+          "shapeId": "6",
+          "text": "公司与IUL服务"
+        },
+        {
+          "shapeId": "10",
+          "text": "友邦保险 公开资料与产品设计理念"
+        },
+        {
+          "shapeId": "14",
+          "text": "正式资料来源"
+        },
+        {
+          "shapeId": "15",
+          "text": "公司资料库 + 官方计划书 + 源页码"
+        },
+        {
+          "shapeId": "20",
+          "text": "方案定位"
+        },
+        {
+          "shapeId": "21",
+          "text": "保障底盘 + 指数账户增值弹性 + 传承杠杆"
+        }
+      ],
+      "imageReplacements": [],
+      "deletions": []
+    },
+    {
+      "outputSlide": 3,
+      "textRewrites": [
+        {
+          "shapeId": "6",
+          "text": "保单基础信息"
+        },
+        {
+          "shapeId": "12",
+          "text": "基础保额"
+        },
+        {
+          "shapeId": "13",
+          "text": "约 US$1,000,000"
+        },
+        {
+          "shapeId": "14",
+          "text": "年缴保费"
+        },
+        {
+          "shapeId": "19",
+          "text": "约 US$50,000 / 年"
+        },
+        {
+          "shapeId": "24",
+          "text": "缴费期：10年"
+        },
+        {
+          "shapeId": "30",
+          "text": "指数账户配置 2 项（可追溯）"
+        }
+      ],
+      "imageReplacements": [],
+      "deletions": []
+    },
+    {
+      "outputSlide": 4,
+      "textRewrites": [
+        {
+          "shapeId": "6",
+          "text": "指数账户参数"
+        },
+        {
+          "shapeId": "10",
+          "text": "账户一"
+        },
+        {
+          "shapeId": "11",
+          "text": "S&P 500"
+        },
+        {
+          "shapeId": "13",
+          "text": "假设利率"
+        },
+        {
+          "shapeId": "14",
+          "text": "5.00%"
+        },
+        {
+          "shapeId": "18",
+          "text": "保底利率"
+        },
+        {
+          "shapeId": "19",
+          "text": "0.00%"
+        },
+        {
+          "shapeId": "25",
+          "text": "封顶/参与率"
+        },
+        {
+          "shapeId": "26",
+          "text": "10.00% / 100%"
+        },
+        {
+          "shapeId": "30",
+          "text": "参数用于解释收益区间，不替代正式条款"
+        },
+        {
+          "shapeId": "31",
+          "text": "全部来源于官方计划书"
+        }
+      ],
+      "imageReplacements": [],
+      "deletions": []
+    },
+    {
+      "outputSlide": 5,
+      "textRewrites": [
+        {
+          "shapeId": "6",
+          "text": "长期利益与传承杠杆"
+        },
+        {
+          "shapeId": "12",
+          "text": "第20年总缴"
+        },
+        {
+          "shapeId": "13",
+          "text": "约 US$500,000"
+        },
+        {
+          "shapeId": "15",
+          "text": "第20年非保证现金值"
+        },
+        {
+          "shapeId": "16",
+          "text": "约 US$675,000"
+        },
+        {
+          "shapeId": "19",
+          "text": "第20年非保证身故赔偿"
+        },
+        {
+          "shapeId": "21",
+          "text": "约 US$1,540,000"
+        },
+        {
+          "shapeId": "23",
+          "text": "家庭应用"
+        },
+        {
+          "shapeId": "24",
+          "text": "兼顾退休现金流弹性与代际传承杠杆"
+        }
+      ],
+      "imageReplacements": [],
+      "deletions": []
+    },
+    {
+      "outputSlide": 6,
+      "textRewrites": [
+        {
+          "shapeId": "6",
+          "text": "方案总结"
+        },
+        {
+          "shapeId": "12",
+          "text": "IUL 定制输出"
+        },
+        {
+          "shapeId": "13",
+          "text": "账户参数、利益演示、风险提示均可追溯"
+        },
+        {
+          "shapeId": "18",
+          "text": "客户沟通重点"
+        },
+        {
+          "shapeId": "19",
+          "text": "先确认风险承受，再讨论收益区间与长期目标"
+        },
+        {
+          "shapeId": "30",
+          "text": "后续可叠加储蓄险或重疾险形成组合方案"
+        }
+      ],
+      "imageReplacements": [],
+      "deletions": []
+    }
+  ]
+}

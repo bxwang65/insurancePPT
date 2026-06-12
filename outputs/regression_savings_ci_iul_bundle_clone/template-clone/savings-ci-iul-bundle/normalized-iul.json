@@ -1,0 +1,45 @@
+{
+  "kind": "iul",
+  "productName": "终身IUL保障计划",
+  "insured": {
+    "name": "陈小姐",
+    "age": 32,
+    "gender": "女",
+    "smoker": "N"
+  },
+  "policy": {
+    "currency": "USD",
+    "sumInsured": 600000,
+    "annualPremium": 12000,
+    "paymentPeriod": "10年",
+    "policyTerm": "终身"
+  },
+  "indexAccounts": [
+    {
+      "name": "S&P 指数账户",
+      "floorRate": "0.00%",
+      "capRate": "10.00%",
+      "participationRate": "100%",
+      "assumedRate": "5.00%",
+      "sourcePage": 7
+    }
+  ],
+  "benefitRows": [
+    {
+      "policyYear": 20,
+      "insuredAge": 52,
+      "totalPremiumPaid": 120000,
+      "guaranteedCashValue": 82000,
+      "nonGuaranteedCashValue": 158000,
+      "guaranteedDeathBenefit": 600000,
+      "nonGuaranteedDeathBenefit": 745000,
+      "sourcePage": 9
+    }
+  ],
+  "source": {
+    "parser": "fixture",
+    "extractedAt": "2026-06-02T00:03:09.391Z",
+    "pdfHash": "fixture-iul",
+    "pdfPath": "/tmp/iul.pdf"
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "outputSlides": [
+    {
+      "outputSlide": 1,
+      "sourceSlide": 2,
+      "narrativeRole": "cover",
+      "reuseMode": "duplicate-slide",
+      "editTargets": [
+        {
+          "action": "rewrite",
+          "sourceElementId": "sh/cvixczed"
+        }
+      ]
+    },
+    {
+      "outputSlide": 2,
+      "sourceSlide": 3,
+      "narrativeRole": "company",
+      "reuseMode": "duplicate-slide",
+      "editTargets": [
+        {
+          "action": "rewrite",
+          "sourceElementId": "sh/9cvixcze"
+        }
+      ]
+    },
+    {
+      "outputSlide": 3,
+      "sourceSlide": 4,
+      "narrativeRole": "savings",
+      "reuseMode": "duplicate-slide",
+      "editTargets": [
+        {
+          "action": "rewrite",
+          "sourceElementId": "sh/oj2t83it"
+        }
+      ]
+    },
+    {
+      "outputSlide": 4,
+      "sourceSlide": 5,
+      "narrativeRole": "ci",
+      "reuseMode": "duplicate-slide",
+      "editTargets": [
+        {
+          "action": "rewrite",
+          "sourceElementId": "sh/q1orytsv"
+        }
+      ]
+    },
+    {
+      "outputSlide": 5,
+      "sourceSlide": 6,
+      "narrativeRole": "iul",
+      "reuseMode": "duplicate-slide",
+      "editTargets": [
+        {
+          "action": "rewrite",
+          "sourceElementId": "sh/onyd0z61"
+        }
+      ]
+    },
+    {
+      "outputSlide": 6,
+      "sourceSlide": 4,
+      "narrativeRole": "closing",
+      "reuseMode": "duplicate-slide",
+      "editTargets": [
+        {
+          "action": "rewrite",
+          "sourceElementId": "sh/oj2t83it"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "status": "pass",
+  "checkedAt": "2026-06-01T15:58:22.996Z",
+  "workspace": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings",
+  "finalPptx": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/deck.pptx",
+  "starterPptx": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-starter.pptx",
+  "mapPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-frame-map.json",
+  "starterLayoutDir": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-starter-layout",
+  "finalLayoutDir": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/final-layout",
+  "editDir": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/authoring-evidence",
+  "issueCount": 0,
+  "issues": []
+}

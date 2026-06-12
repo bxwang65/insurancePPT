@@ -1,0 +1,10 @@
+{
+  "status": "pass",
+  "checkedAt": "2026-06-04T08:10:10.456Z",
+  "workspace": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_ci_business_clone/template-clone/business-ci",
+  "mapPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_ci_business_clone/template-clone/business-ci/template-frame-map.json",
+  "inspectPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_ci_business_clone/template-clone/business-ci/template-inspect/template-inspect.ndjson",
+  "sourceSlideCount": 9,
+  "issueCount": 0,
+  "issues": []
+}

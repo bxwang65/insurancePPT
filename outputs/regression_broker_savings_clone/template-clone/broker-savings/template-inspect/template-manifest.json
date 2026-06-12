@@ -1,0 +1,1291 @@
+{
+  "sourcePptx": "/Users/soldier/Downloads/财富保障方案——券商风 .pptx",
+  "workspace": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings",
+  "outDir": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect",
+  "generatedAt": "2026-06-01T15:57:35.482Z",
+  "slideCount": 25,
+  "slideArtifacts": [
+    {
+      "slide": 1,
+      "previewPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/source-slides/source-slide-01.png",
+      "previewRelativePath": "template-inspect/source-slides/source-slide-01.png",
+      "layoutPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/layouts/source-slide-01.layout.json",
+      "layoutRelativePath": "template-inspect/layouts/source-slide-01.layout.json"
+    },
+    {
+      "slide": 2,
+      "previewPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/source-slides/source-slide-02.png",
+      "previewRelativePath": "template-inspect/source-slides/source-slide-02.png",
+      "layoutPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/layouts/source-slide-02.layout.json",
+      "layoutRelativePath": "template-inspect/layouts/source-slide-02.layout.json"
+    },
+    {
+      "slide": 3,
+      "previewPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/source-slides/source-slide-03.png",
+      "previewRelativePath": "template-inspect/source-slides/source-slide-03.png",
+      "layoutPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/layouts/source-slide-03.layout.json",
+      "layoutRelativePath": "template-inspect/layouts/source-slide-03.layout.json"
+    },
+    {
+      "slide": 4,
+      "previewPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/source-slides/source-slide-04.png",
+      "previewRelativePath": "template-inspect/source-slides/source-slide-04.png",
+      "layoutPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/layouts/source-slide-04.layout.json",
+      "layoutRelativePath": "template-inspect/layouts/source-slide-04.layout.json"
+    },
+    {
+      "slide": 5,
+      "previewPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/source-slides/source-slide-05.png",
+      "previewRelativePath": "template-inspect/source-slides/source-slide-05.png",
+      "layoutPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/layouts/source-slide-05.layout.json",
+      "layoutRelativePath": "template-inspect/layouts/source-slide-05.layout.json"
+    },
+    {
+      "slide": 6,
+      "previewPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/source-slides/source-slide-06.png",
+      "previewRelativePath": "template-inspect/source-slides/source-slide-06.png",
+      "layoutPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/layouts/source-slide-06.layout.json",
+      "layoutRelativePath": "template-inspect/layouts/source-slide-06.layout.json"
+    },
+    {
+      "slide": 7,
+      "previewPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/source-slides/source-slide-07.png",
+      "previewRelativePath": "template-inspect/source-slides/source-slide-07.png",
+      "layoutPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/layouts/source-slide-07.layout.json",
+      "layoutRelativePath": "template-inspect/layouts/source-slide-07.layout.json"
+    },
+    {
+      "slide": 8,
+      "previewPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/source-slides/source-slide-08.png",
+      "previewRelativePath": "template-inspect/source-slides/source-slide-08.png",
+      "layoutPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/layouts/source-slide-08.layout.json",
+      "layoutRelativePath": "template-inspect/layouts/source-slide-08.layout.json"
+    },
+    {
+      "slide": 9,
+      "previewPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/source-slides/source-slide-09.png",
+      "previewRelativePath": "template-inspect/source-slides/source-slide-09.png",
+      "layoutPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/layouts/source-slide-09.layout.json",
+      "layoutRelativePath": "template-inspect/layouts/source-slide-09.layout.json"
+    },
+    {
+      "slide": 10,
+      "previewPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/source-slides/source-slide-10.png",
+      "previewRelativePath": "template-inspect/source-slides/source-slide-10.png",
+      "layoutPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/layouts/source-slide-10.layout.json",
+      "layoutRelativePath": "template-inspect/layouts/source-slide-10.layout.json"
+    },
+    {
+      "slide": 11,
+      "previewPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/source-slides/source-slide-11.png",
+      "previewRelativePath": "template-inspect/source-slides/source-slide-11.png",
+      "layoutPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/layouts/source-slide-11.layout.json",
+      "layoutRelativePath": "template-inspect/layouts/source-slide-11.layout.json"
+    },
+    {
+      "slide": 12,
+      "previewPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/source-slides/source-slide-12.png",
+      "previewRelativePath": "template-inspect/source-slides/source-slide-12.png",
+      "layoutPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/layouts/source-slide-12.layout.json",
+      "layoutRelativePath": "template-inspect/layouts/source-slide-12.layout.json"
+    },
+    {
+      "slide": 13,
+      "previewPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/source-slides/source-slide-13.png",
+      "previewRelativePath": "template-inspect/source-slides/source-slide-13.png",
+      "layoutPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/layouts/source-slide-13.layout.json",
+      "layoutRelativePath": "template-inspect/layouts/source-slide-13.layout.json"
+    },
+    {
+      "slide": 14,
+      "previewPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/source-slides/source-slide-14.png",
+      "previewRelativePath": "template-inspect/source-slides/source-slide-14.png",
+      "layoutPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/layouts/source-slide-14.layout.json",
+      "layoutRelativePath": "template-inspect/layouts/source-slide-14.layout.json"
+    },
+    {
+      "slide": 15,
+      "previewPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/source-slides/source-slide-15.png",
+      "previewRelativePath": "template-inspect/source-slides/source-slide-15.png",
+      "layoutPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/layouts/source-slide-15.layout.json",
+      "layoutRelativePath": "template-inspect/layouts/source-slide-15.layout.json"
+    },
+    {
+      "slide": 16,
+      "previewPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/source-slides/source-slide-16.png",
+      "previewRelativePath": "template-inspect/source-slides/source-slide-16.png",
+      "layoutPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/layouts/source-slide-16.layout.json",
+      "layoutRelativePath": "template-inspect/layouts/source-slide-16.layout.json"
+    },
+    {
+      "slide": 17,
+      "previewPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/source-slides/source-slide-17.png",
+      "previewRelativePath": "template-inspect/source-slides/source-slide-17.png",
+      "layoutPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/layouts/source-slide-17.layout.json",
+      "layoutRelativePath": "template-inspect/layouts/source-slide-17.layout.json"
+    },
+    {
+      "slide": 18,
+      "previewPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/source-slides/source-slide-18.png",
+      "previewRelativePath": "template-inspect/source-slides/source-slide-18.png",
+      "layoutPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/layouts/source-slide-18.layout.json",
+      "layoutRelativePath": "template-inspect/layouts/source-slide-18.layout.json"
+    },
+    {
+      "slide": 19,
+      "previewPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/source-slides/source-slide-19.png",
+      "previewRelativePath": "template-inspect/source-slides/source-slide-19.png",
+      "layoutPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/layouts/source-slide-19.layout.json",
+      "layoutRelativePath": "template-inspect/layouts/source-slide-19.layout.json"
+    },
+    {
+      "slide": 20,
+      "previewPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/source-slides/source-slide-20.png",
+      "previewRelativePath": "template-inspect/source-slides/source-slide-20.png",
+      "layoutPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/layouts/source-slide-20.layout.json",
+      "layoutRelativePath": "template-inspect/layouts/source-slide-20.layout.json"
+    },
+    {
+      "slide": 21,
+      "previewPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/source-slides/source-slide-21.png",
+      "previewRelativePath": "template-inspect/source-slides/source-slide-21.png",
+      "layoutPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/layouts/source-slide-21.layout.json",
+      "layoutRelativePath": "template-inspect/layouts/source-slide-21.layout.json"
+    },
+    {
+      "slide": 22,
+      "previewPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/source-slides/source-slide-22.png",
+      "previewRelativePath": "template-inspect/source-slides/source-slide-22.png",
+      "layoutPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/layouts/source-slide-22.layout.json",
+      "layoutRelativePath": "template-inspect/layouts/source-slide-22.layout.json"
+    },
+    {
+      "slide": 23,
+      "previewPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/source-slides/source-slide-23.png",
+      "previewRelativePath": "template-inspect/source-slides/source-slide-23.png",
+      "layoutPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/layouts/source-slide-23.layout.json",
+      "layoutRelativePath": "template-inspect/layouts/source-slide-23.layout.json"
+    },
+    {
+      "slide": 24,
+      "previewPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/source-slides/source-slide-24.png",
+      "previewRelativePath": "template-inspect/source-slides/source-slide-24.png",
+      "layoutPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/layouts/source-slide-24.layout.json",
+      "layoutRelativePath": "template-inspect/layouts/source-slide-24.layout.json"
+    },
+    {
+      "slide": 25,
+      "previewPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/source-slides/source-slide-25.png",
+      "previewRelativePath": "template-inspect/source-slides/source-slide-25.png",
+      "layoutPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/layouts/source-slide-25.layout.json",
+      "layoutRelativePath": "template-inspect/layouts/source-slide-25.layout.json"
+    }
+  ],
+  "inspectPath": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/template-inspect.ndjson",
+  "inspectRelativePath": "template-inspect/template-inspect.ndjson",
+  "inspectTruncated": true,
+  "inspectMetadata": {
+    "revision": "dydl4e",
+    "target": {
+      "id": "pr/5ph8eo"
+    },
+    "kind": {
+      "requested": "slide,textbox,shape,image,table,chart",
+      "tokens": [
+        "slide",
+        "textbox",
+        "shape",
+        "image",
+        "table",
+        "chart"
+      ]
+    },
+    "include": {
+      "tokens": []
+    },
+    "exclude": {
+      "tokens": []
+    },
+    "notices": []
+  },
+  "extractedMedia": [
+    {
+      "entry": "ppt/media/",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/media",
+      "relativePath": "template-inspect/assets/ppt/media/media",
+      "bytes": 0
+    },
+    {
+      "entry": "ppt/media/image1.png",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image1.png",
+      "relativePath": "template-inspect/assets/ppt/media/image1.png",
+      "bytes": 2758
+    },
+    {
+      "entry": "ppt/media/image10.svg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image10.svg",
+      "relativePath": "template-inspect/assets/ppt/media/image10.svg",
+      "bytes": 942
+    },
+    {
+      "entry": "ppt/media/image100.png",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image100.png",
+      "relativePath": "template-inspect/assets/ppt/media/image100.png",
+      "bytes": 2101
+    },
+    {
+      "entry": "ppt/media/image101.svg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image101.svg",
+      "relativePath": "template-inspect/assets/ppt/media/image101.svg",
+      "bytes": 981
+    },
+    {
+      "entry": "ppt/media/image102.png",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image102.png",
+      "relativePath": "template-inspect/assets/ppt/media/image102.png",
+      "bytes": 3436
+    },
+    {
+      "entry": "ppt/media/image103.svg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image103.svg",
+      "relativePath": "template-inspect/assets/ppt/media/image103.svg",
+      "bytes": 2015
+    },
+    {
+      "entry": "ppt/media/image104.png",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image104.png",
+      "relativePath": "template-inspect/assets/ppt/media/image104.png",
+      "bytes": 1162
+    },
+    {
+      "entry": "ppt/media/image105.svg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image105.svg",
+      "relativePath": "template-inspect/assets/ppt/media/image105.svg",
+      "bytes": 1450
+    },
+    {
+      "entry": "ppt/media/image106.png",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image106.png",
+      "relativePath": "template-inspect/assets/ppt/media/image106.png",
+      "bytes": 2321
+    },
+    {
+      "entry": "ppt/media/image107.png",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image107.png",
+      "relativePath": "template-inspect/assets/ppt/media/image107.png",
+      "bytes": 2211
+    },
+    {
+      "entry": "ppt/media/image108.svg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image108.svg",
+      "relativePath": "template-inspect/assets/ppt/media/image108.svg",
+      "bytes": 1565
+    },
+    {
+      "entry": "ppt/media/image109.png",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image109.png",
+      "relativePath": "template-inspect/assets/ppt/media/image109.png",
+      "bytes": 3046
+    },
+    {
+      "entry": "ppt/media/image11.png",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image11.png",
+      "relativePath": "template-inspect/assets/ppt/media/image11.png",
+      "bytes": 879
+    },
+    {
+      "entry": "ppt/media/image110.svg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image110.svg",
+      "relativePath": "template-inspect/assets/ppt/media/image110.svg",
+      "bytes": 1421
+    },
+    {
+      "entry": "ppt/media/image111.png",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image111.png",
+      "relativePath": "template-inspect/assets/ppt/media/image111.png",
+      "bytes": 2118
+    },
+    {
+      "entry": "ppt/media/image112.svg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image112.svg",
+      "relativePath": "template-inspect/assets/ppt/media/image112.svg",
+      "bytes": 1197
+    },
+    {
+      "entry": "ppt/media/image113.png",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image113.png",
+      "relativePath": "template-inspect/assets/ppt/media/image113.png",
+      "bytes": 2161
+    },
+    {
+      "entry": "ppt/media/image114.svg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image114.svg",
+      "relativePath": "template-inspect/assets/ppt/media/image114.svg",
+      "bytes": 943
+    },
+    {
+      "entry": "ppt/media/image115.png",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image115.png",
+      "relativePath": "template-inspect/assets/ppt/media/image115.png",
+      "bytes": 3561
+    },
+    {
+      "entry": "ppt/media/image116.svg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image116.svg",
+      "relativePath": "template-inspect/assets/ppt/media/image116.svg",
+      "bytes": 1532
+    },
+    {
+      "entry": "ppt/media/image117.png",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image117.png",
+      "relativePath": "template-inspect/assets/ppt/media/image117.png",
+      "bytes": 3069
+    },
+    {
+      "entry": "ppt/media/image118.svg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image118.svg",
+      "relativePath": "template-inspect/assets/ppt/media/image118.svg",
+      "bytes": 1089
+    },
+    {
+      "entry": "ppt/media/image119.png",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image119.png",
+      "relativePath": "template-inspect/assets/ppt/media/image119.png",
+      "bytes": 2714
+    },
+    {
+      "entry": "ppt/media/image12.svg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image12.svg",
+      "relativePath": "template-inspect/assets/ppt/media/image12.svg",
+      "bytes": 687
+    },
+    {
+      "entry": "ppt/media/image120.svg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image120.svg",
+      "relativePath": "template-inspect/assets/ppt/media/image120.svg",
+      "bytes": 1897
+    },
+    {
+      "entry": "ppt/media/image121.png",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image121.png",
+      "relativePath": "template-inspect/assets/ppt/media/image121.png",
+      "bytes": 2539
+    },
+    {
+      "entry": "ppt/media/image122.svg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image122.svg",
+      "relativePath": "template-inspect/assets/ppt/media/image122.svg",
+      "bytes": 1174
+    },
+    {
+      "entry": "ppt/media/image123.png",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image123.png",
+      "relativePath": "template-inspect/assets/ppt/media/image123.png",
+      "bytes": 1250
+    },
+    {
+      "entry": "ppt/media/image124.svg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image124.svg",
+      "relativePath": "template-inspect/assets/ppt/media/image124.svg",
+      "bytes": 2085
+    },
+    {
+      "entry": "ppt/media/image125.png",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image125.png",
+      "relativePath": "template-inspect/assets/ppt/media/image125.png",
+      "bytes": 3033
+    },
+    {
+      "entry": "ppt/media/image126.svg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image126.svg",
+      "relativePath": "template-inspect/assets/ppt/media/image126.svg",
+      "bytes": 1725
+    },
+    {
+      "entry": "ppt/media/image127.png",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image127.png",
+      "relativePath": "template-inspect/assets/ppt/media/image127.png",
+      "bytes": 2115
+    },
+    {
+      "entry": "ppt/media/image128.svg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image128.svg",
+      "relativePath": "template-inspect/assets/ppt/media/image128.svg",
+      "bytes": 807
+    },
+    {
+      "entry": "ppt/media/image129.png",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image129.png",
+      "relativePath": "template-inspect/assets/ppt/media/image129.png",
+      "bytes": 1998
+    },
+    {
+      "entry": "ppt/media/image13.png",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image13.png",
+      "relativePath": "template-inspect/assets/ppt/media/image13.png",
+      "bytes": 2337
+    },
+    {
+      "entry": "ppt/media/image130.svg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image130.svg",
+      "relativePath": "template-inspect/assets/ppt/media/image130.svg",
+      "bytes": 819
+    },
+    {
+      "entry": "ppt/media/image131.png",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image131.png",
+      "relativePath": "template-inspect/assets/ppt/media/image131.png",
+      "bytes": 1895
+    },
+    {
+      "entry": "ppt/media/image132.svg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image132.svg",
+      "relativePath": "template-inspect/assets/ppt/media/image132.svg",
+      "bytes": 1143
+    },
+    {
+      "entry": "ppt/media/image133.png",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image133.png",
+      "relativePath": "template-inspect/assets/ppt/media/image133.png",
+      "bytes": 1532
+    },
+    {
+      "entry": "ppt/media/image134.svg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image134.svg",
+      "relativePath": "template-inspect/assets/ppt/media/image134.svg",
+      "bytes": 610
+    },
+    {
+      "entry": "ppt/media/image135.png",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image135.png",
+      "relativePath": "template-inspect/assets/ppt/media/image135.png",
+      "bytes": 2859
+    },
+    {
+      "entry": "ppt/media/image136.svg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image136.svg",
+      "relativePath": "template-inspect/assets/ppt/media/image136.svg",
+      "bytes": 719
+    },
+    {
+      "entry": "ppt/media/image137.png",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image137.png",
+      "relativePath": "template-inspect/assets/ppt/media/image137.png",
+      "bytes": 1802
+    },
+    {
+      "entry": "ppt/media/image138.svg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image138.svg",
+      "relativePath": "template-inspect/assets/ppt/media/image138.svg",
+      "bytes": 912
+    },
+    {
+      "entry": "ppt/media/image139.png",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image139.png",
+      "relativePath": "template-inspect/assets/ppt/media/image139.png",
+      "bytes": 3103
+    },
+    {
+      "entry": "ppt/media/image14.svg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image14.svg",
+      "relativePath": "template-inspect/assets/ppt/media/image14.svg",
+      "bytes": 1005
+    },
+    {
+      "entry": "ppt/media/image140.svg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image140.svg",
+      "relativePath": "template-inspect/assets/ppt/media/image140.svg",
+      "bytes": 1383
+    },
+    {
+      "entry": "ppt/media/image141.png",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image141.png",
+      "relativePath": "template-inspect/assets/ppt/media/image141.png",
+      "bytes": 3782
+    },
+    {
+      "entry": "ppt/media/image142.svg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image142.svg",
+      "relativePath": "template-inspect/assets/ppt/media/image142.svg",
+      "bytes": 1685
+    },
+    {
+      "entry": "ppt/media/image143.png",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image143.png",
+      "relativePath": "template-inspect/assets/ppt/media/image143.png",
+      "bytes": 1326
+    },
+    {
+      "entry": "ppt/media/image144.svg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image144.svg",
+      "relativePath": "template-inspect/assets/ppt/media/image144.svg",
+      "bytes": 628
+    },
+    {
+      "entry": "ppt/media/image145.png",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image145.png",
+      "relativePath": "template-inspect/assets/ppt/media/image145.png",
+      "bytes": 1485
+    },
+    {
+      "entry": "ppt/media/image146.svg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image146.svg",
+      "relativePath": "template-inspect/assets/ppt/media/image146.svg",
+      "bytes": 1416
+    },
+    {
+      "entry": "ppt/media/image147.png",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image147.png",
+      "relativePath": "template-inspect/assets/ppt/media/image147.png",
+      "bytes": 1330
+    },
+    {
+      "entry": "ppt/media/image148.svg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image148.svg",
+      "relativePath": "template-inspect/assets/ppt/media/image148.svg",
+      "bytes": 1279
+    },
+    {
+      "entry": "ppt/media/image149.png",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image149.png",
+      "relativePath": "template-inspect/assets/ppt/media/image149.png",
+      "bytes": 878
+    },
+    {
+      "entry": "ppt/media/image15.png",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image15.png",
+      "relativePath": "template-inspect/assets/ppt/media/image15.png",
+      "bytes": 2093
+    },
+    {
+      "entry": "ppt/media/image150.svg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image150.svg",
+      "relativePath": "template-inspect/assets/ppt/media/image150.svg",
+      "bytes": 1046
+    },
+    {
+      "entry": "ppt/media/image151.png",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image151.png",
+      "relativePath": "template-inspect/assets/ppt/media/image151.png",
+      "bytes": 2540
+    },
+    {
+      "entry": "ppt/media/image152.svg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image152.svg",
+      "relativePath": "template-inspect/assets/ppt/media/image152.svg",
+      "bytes": 1151
+    },
+    {
+      "entry": "ppt/media/image153.png",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image153.png",
+      "relativePath": "template-inspect/assets/ppt/media/image153.png",
+      "bytes": 3487
+    },
+    {
+      "entry": "ppt/media/image154.svg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image154.svg",
+      "relativePath": "template-inspect/assets/ppt/media/image154.svg",
+      "bytes": 631
+    },
+    {
+      "entry": "ppt/media/image155.png",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image155.png",
+      "relativePath": "template-inspect/assets/ppt/media/image155.png",
+      "bytes": 1488
+    },
+    {
+      "entry": "ppt/media/image156.svg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image156.svg",
+      "relativePath": "template-inspect/assets/ppt/media/image156.svg",
+      "bytes": 1070
+    },
+    {
+      "entry": "ppt/media/image157.png",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image157.png",
+      "relativePath": "template-inspect/assets/ppt/media/image157.png",
+      "bytes": 2121
+    },
+    {
+      "entry": "ppt/media/image158.svg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image158.svg",
+      "relativePath": "template-inspect/assets/ppt/media/image158.svg",
+      "bytes": 1058
+    },
+    {
+      "entry": "ppt/media/image159.png",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image159.png",
+      "relativePath": "template-inspect/assets/ppt/media/image159.png",
+      "bytes": 2523
+    },
+    {
+      "entry": "ppt/media/image16.svg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image16.svg",
+      "relativePath": "template-inspect/assets/ppt/media/image16.svg",
+      "bytes": 860
+    },
+    {
+      "entry": "ppt/media/image160.svg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image160.svg",
+      "relativePath": "template-inspect/assets/ppt/media/image160.svg",
+      "bytes": 1113
+    },
+    {
+      "entry": "ppt/media/image161.png",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image161.png",
+      "relativePath": "template-inspect/assets/ppt/media/image161.png",
+      "bytes": 2503
+    },
+    {
+      "entry": "ppt/media/image162.svg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image162.svg",
+      "relativePath": "template-inspect/assets/ppt/media/image162.svg",
+      "bytes": 892
+    },
+    {
+      "entry": "ppt/media/image163.png",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image163.png",
+      "relativePath": "template-inspect/assets/ppt/media/image163.png",
+      "bytes": 2556
+    },
+    {
+      "entry": "ppt/media/image164.svg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image164.svg",
+      "relativePath": "template-inspect/assets/ppt/media/image164.svg",
+      "bytes": 686
+    },
+    {
+      "entry": "ppt/media/image165.png",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image165.png",
+      "relativePath": "template-inspect/assets/ppt/media/image165.png",
+      "bytes": 3338
+    },
+    {
+      "entry": "ppt/media/image166.svg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image166.svg",
+      "relativePath": "template-inspect/assets/ppt/media/image166.svg",
+      "bytes": 1352
+    },
+    {
+      "entry": "ppt/media/image167.png",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image167.png",
+      "relativePath": "template-inspect/assets/ppt/media/image167.png",
+      "bytes": 1657
+    },
+    {
+      "entry": "ppt/media/image168.svg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image168.svg",
+      "relativePath": "template-inspect/assets/ppt/media/image168.svg",
+      "bytes": 1087
+    },
+    {
+      "entry": "ppt/media/image169.png",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image169.png",
+      "relativePath": "template-inspect/assets/ppt/media/image169.png",
+      "bytes": 2607
+    },
+    {
+      "entry": "ppt/media/image17.png",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image17.png",
+      "relativePath": "template-inspect/assets/ppt/media/image17.png",
+      "bytes": 2762
+    },
+    {
+      "entry": "ppt/media/image170.svg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image170.svg",
+      "relativePath": "template-inspect/assets/ppt/media/image170.svg",
+      "bytes": 1103
+    },
+    {
+      "entry": "ppt/media/image18.png",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image18.png",
+      "relativePath": "template-inspect/assets/ppt/media/image18.png",
+      "bytes": 2082
+    },
+    {
+      "entry": "ppt/media/image19.svg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image19.svg",
+      "relativePath": "template-inspect/assets/ppt/media/image19.svg",
+      "bytes": 1036
+    },
+    {
+      "entry": "ppt/media/image2.svg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image2.svg",
+      "relativePath": "template-inspect/assets/ppt/media/image2.svg",
+      "bytes": 1577
+    },
+    {
+      "entry": "ppt/media/image20.png",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image20.png",
+      "relativePath": "template-inspect/assets/ppt/media/image20.png",
+      "bytes": 3054
+    },
+    {
+      "entry": "ppt/media/image21.svg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image21.svg",
+      "relativePath": "template-inspect/assets/ppt/media/image21.svg",
+      "bytes": 738
+    },
+    {
+      "entry": "ppt/media/image22.png",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image22.png",
+      "relativePath": "template-inspect/assets/ppt/media/image22.png",
+      "bytes": 1907
+    },
+    {
+      "entry": "ppt/media/image23.svg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image23.svg",
+      "relativePath": "template-inspect/assets/ppt/media/image23.svg",
+      "bytes": 679
+    },
+    {
+      "entry": "ppt/media/image24.png",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image24.png",
+      "relativePath": "template-inspect/assets/ppt/media/image24.png",
+      "bytes": 2808
+    },
+    {
+      "entry": "ppt/media/image25.svg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image25.svg",
+      "relativePath": "template-inspect/assets/ppt/media/image25.svg",
+      "bytes": 1145
+    },
+    {
+      "entry": "ppt/media/image26.png",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image26.png",
+      "relativePath": "template-inspect/assets/ppt/media/image26.png",
+      "bytes": 1154
+    },
+    {
+      "entry": "ppt/media/image27.svg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image27.svg",
+      "relativePath": "template-inspect/assets/ppt/media/image27.svg",
+      "bytes": 877
+    },
+    {
+      "entry": "ppt/media/image28.png",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image28.png",
+      "relativePath": "template-inspect/assets/ppt/media/image28.png",
+      "bytes": 2539
+    },
+    {
+      "entry": "ppt/media/image29.svg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image29.svg",
+      "relativePath": "template-inspect/assets/ppt/media/image29.svg",
+      "bytes": 1933
+    },
+    {
+      "entry": "ppt/media/image3.png",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image3.png",
+      "relativePath": "template-inspect/assets/ppt/media/image3.png",
+      "bytes": 2686
+    },
+    {
+      "entry": "ppt/media/image30.png",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image30.png",
+      "relativePath": "template-inspect/assets/ppt/media/image30.png",
+      "bytes": 2404
+    },
+    {
+      "entry": "ppt/media/image31.svg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image31.svg",
+      "relativePath": "template-inspect/assets/ppt/media/image31.svg",
+      "bytes": 1362
+    },
+    {
+      "entry": "ppt/media/image32.png",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image32.png",
+      "relativePath": "template-inspect/assets/ppt/media/image32.png",
+      "bytes": 29270
+    },
+    {
+      "entry": "ppt/media/image33.png",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image33.png",
+      "relativePath": "template-inspect/assets/ppt/media/image33.png",
+      "bytes": 2319
+    },
+    {
+      "entry": "ppt/media/image34.svg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image34.svg",
+      "relativePath": "template-inspect/assets/ppt/media/image34.svg",
+      "bytes": 724
+    },
+    {
+      "entry": "ppt/media/image35.png",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image35.png",
+      "relativePath": "template-inspect/assets/ppt/media/image35.png",
+      "bytes": 2687
+    },
+    {
+      "entry": "ppt/media/image36.png",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image36.png",
+      "relativePath": "template-inspect/assets/ppt/media/image36.png",
+      "bytes": 2024
+    },
+    {
+      "entry": "ppt/media/image37.svg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image37.svg",
+      "relativePath": "template-inspect/assets/ppt/media/image37.svg",
+      "bytes": 936
+    },
+    {
+      "entry": "ppt/media/image38.png",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image38.png",
+      "relativePath": "template-inspect/assets/ppt/media/image38.png",
+      "bytes": 2264
+    },
+    {
+      "entry": "ppt/media/image39.svg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image39.svg",
+      "relativePath": "template-inspect/assets/ppt/media/image39.svg",
+      "bytes": 1013
+    },
+    {
+      "entry": "ppt/media/image4.svg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image4.svg",
+      "relativePath": "template-inspect/assets/ppt/media/image4.svg",
+      "bytes": 1247
+    },
+    {
+      "entry": "ppt/media/image40.png",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image40.png",
+      "relativePath": "template-inspect/assets/ppt/media/image40.png",
+      "bytes": 2128
+    },
+    {
+      "entry": "ppt/media/image41.svg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image41.svg",
+      "relativePath": "template-inspect/assets/ppt/media/image41.svg",
+      "bytes": 1595
+    },
+    {
+      "entry": "ppt/media/image42.png",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image42.png",
+      "relativePath": "template-inspect/assets/ppt/media/image42.png",
+      "bytes": 946
+    },
+    {
+      "entry": "ppt/media/image43.svg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image43.svg",
+      "relativePath": "template-inspect/assets/ppt/media/image43.svg",
+      "bytes": 1050
+    },
+    {
+      "entry": "ppt/media/image44.png",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image44.png",
+      "relativePath": "template-inspect/assets/ppt/media/image44.png",
+      "bytes": 2420
+    },
+    {
+      "entry": "ppt/media/image45.svg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image45.svg",
+      "relativePath": "template-inspect/assets/ppt/media/image45.svg",
+      "bytes": 810
+    },
+    {
+      "entry": "ppt/media/image46.png",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image46.png",
+      "relativePath": "template-inspect/assets/ppt/media/image46.png",
+      "bytes": 2474
+    },
+    {
+      "entry": "ppt/media/image47.svg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image47.svg",
+      "relativePath": "template-inspect/assets/ppt/media/image47.svg",
+      "bytes": 1672
+    },
+    {
+      "entry": "ppt/media/image48.png",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image48.png",
+      "relativePath": "template-inspect/assets/ppt/media/image48.png",
+      "bytes": 1907
+    },
+    {
+      "entry": "ppt/media/image49.png",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image49.png",
+      "relativePath": "template-inspect/assets/ppt/media/image49.png",
+      "bytes": 50825
+    },
+    {
+      "entry": "ppt/media/image5.png",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image5.png",
+      "relativePath": "template-inspect/assets/ppt/media/image5.png",
+      "bytes": 2517
+    },
+    {
+      "entry": "ppt/media/image50.png",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image50.png",
+      "relativePath": "template-inspect/assets/ppt/media/image50.png",
+      "bytes": 54865
+    },
+    {
+      "entry": "ppt/media/image51.png",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image51.png",
+      "relativePath": "template-inspect/assets/ppt/media/image51.png",
+      "bytes": 2683
+    },
+    {
+      "entry": "ppt/media/image52.svg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image52.svg",
+      "relativePath": "template-inspect/assets/ppt/media/image52.svg",
+      "bytes": 967
+    },
+    {
+      "entry": "ppt/media/image53.png",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image53.png",
+      "relativePath": "template-inspect/assets/ppt/media/image53.png",
+      "bytes": 914
+    },
+    {
+      "entry": "ppt/media/image54.svg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image54.svg",
+      "relativePath": "template-inspect/assets/ppt/media/image54.svg",
+      "bytes": 709
+    },
+    {
+      "entry": "ppt/media/image55.png",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image55.png",
+      "relativePath": "template-inspect/assets/ppt/media/image55.png",
+      "bytes": 1698
+    },
+    {
+      "entry": "ppt/media/image56.svg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image56.svg",
+      "relativePath": "template-inspect/assets/ppt/media/image56.svg",
+      "bytes": 1389
+    },
+    {
+      "entry": "ppt/media/image57.png",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image57.png",
+      "relativePath": "template-inspect/assets/ppt/media/image57.png",
+      "bytes": 1373
+    },
+    {
+      "entry": "ppt/media/image58.svg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image58.svg",
+      "relativePath": "template-inspect/assets/ppt/media/image58.svg",
+      "bytes": 977
+    },
+    {
+      "entry": "ppt/media/image59.png",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image59.png",
+      "relativePath": "template-inspect/assets/ppt/media/image59.png",
+      "bytes": 2556
+    },
+    {
+      "entry": "ppt/media/image6.svg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image6.svg",
+      "relativePath": "template-inspect/assets/ppt/media/image6.svg",
+      "bytes": 1529
+    },
+    {
+      "entry": "ppt/media/image60.svg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image60.svg",
+      "relativePath": "template-inspect/assets/ppt/media/image60.svg",
+      "bytes": 1550
+    },
+    {
+      "entry": "ppt/media/image61.png",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image61.png",
+      "relativePath": "template-inspect/assets/ppt/media/image61.png",
+      "bytes": 2204
+    },
+    {
+      "entry": "ppt/media/image62.svg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image62.svg",
+      "relativePath": "template-inspect/assets/ppt/media/image62.svg",
+      "bytes": 670
+    },
+    {
+      "entry": "ppt/media/image63.png",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image63.png",
+      "relativePath": "template-inspect/assets/ppt/media/image63.png",
+      "bytes": 2294
+    },
+    {
+      "entry": "ppt/media/image64.svg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image64.svg",
+      "relativePath": "template-inspect/assets/ppt/media/image64.svg",
+      "bytes": 1794
+    },
+    {
+      "entry": "ppt/media/image65.png",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image65.png",
+      "relativePath": "template-inspect/assets/ppt/media/image65.png",
+      "bytes": 2360
+    },
+    {
+      "entry": "ppt/media/image66.svg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image66.svg",
+      "relativePath": "template-inspect/assets/ppt/media/image66.svg",
+      "bytes": 1003
+    },
+    {
+      "entry": "ppt/media/image67.png",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image67.png",
+      "relativePath": "template-inspect/assets/ppt/media/image67.png",
+      "bytes": 675
+    },
+    {
+      "entry": "ppt/media/image68.svg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image68.svg",
+      "relativePath": "template-inspect/assets/ppt/media/image68.svg",
+      "bytes": 1115
+    },
+    {
+      "entry": "ppt/media/image69.png",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image69.png",
+      "relativePath": "template-inspect/assets/ppt/media/image69.png",
+      "bytes": 2739
+    },
+    {
+      "entry": "ppt/media/image7.png",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image7.png",
+      "relativePath": "template-inspect/assets/ppt/media/image7.png",
+      "bytes": 1934
+    },
+    {
+      "entry": "ppt/media/image70.svg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image70.svg",
+      "relativePath": "template-inspect/assets/ppt/media/image70.svg",
+      "bytes": 1000
+    },
+    {
+      "entry": "ppt/media/image71.png",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image71.png",
+      "relativePath": "template-inspect/assets/ppt/media/image71.png",
+      "bytes": 1773
+    },
+    {
+      "entry": "ppt/media/image72.svg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image72.svg",
+      "relativePath": "template-inspect/assets/ppt/media/image72.svg",
+      "bytes": 935
+    },
+    {
+      "entry": "ppt/media/image73.png",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image73.png",
+      "relativePath": "template-inspect/assets/ppt/media/image73.png",
+      "bytes": 1789
+    },
+    {
+      "entry": "ppt/media/image74.svg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image74.svg",
+      "relativePath": "template-inspect/assets/ppt/media/image74.svg",
+      "bytes": 1368
+    },
+    {
+      "entry": "ppt/media/image75.png",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image75.png",
+      "relativePath": "template-inspect/assets/ppt/media/image75.png",
+      "bytes": 1717
+    },
+    {
+      "entry": "ppt/media/image76.svg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image76.svg",
+      "relativePath": "template-inspect/assets/ppt/media/image76.svg",
+      "bytes": 644
+    },
+    {
+      "entry": "ppt/media/image77.png",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image77.png",
+      "relativePath": "template-inspect/assets/ppt/media/image77.png",
+      "bytes": 1972
+    },
+    {
+      "entry": "ppt/media/image78.svg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image78.svg",
+      "relativePath": "template-inspect/assets/ppt/media/image78.svg",
+      "bytes": 1097
+    },
+    {
+      "entry": "ppt/media/image79.png",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image79.png",
+      "relativePath": "template-inspect/assets/ppt/media/image79.png",
+      "bytes": 2713
+    },
+    {
+      "entry": "ppt/media/image8.svg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image8.svg",
+      "relativePath": "template-inspect/assets/ppt/media/image8.svg",
+      "bytes": 648
+    },
+    {
+      "entry": "ppt/media/image80.svg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image80.svg",
+      "relativePath": "template-inspect/assets/ppt/media/image80.svg",
+      "bytes": 1384
+    },
+    {
+      "entry": "ppt/media/image81.png",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image81.png",
+      "relativePath": "template-inspect/assets/ppt/media/image81.png",
+      "bytes": 2477
+    },
+    {
+      "entry": "ppt/media/image82.svg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image82.svg",
+      "relativePath": "template-inspect/assets/ppt/media/image82.svg",
+      "bytes": 817
+    },
+    {
+      "entry": "ppt/media/image83.png",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image83.png",
+      "relativePath": "template-inspect/assets/ppt/media/image83.png",
+      "bytes": 2334
+    },
+    {
+      "entry": "ppt/media/image84.png",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image84.png",
+      "relativePath": "template-inspect/assets/ppt/media/image84.png",
+      "bytes": 2279
+    },
+    {
+      "entry": "ppt/media/image85.svg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image85.svg",
+      "relativePath": "template-inspect/assets/ppt/media/image85.svg",
+      "bytes": 921
+    },
+    {
+      "entry": "ppt/media/image86.png",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image86.png",
+      "relativePath": "template-inspect/assets/ppt/media/image86.png",
+      "bytes": 3594
+    },
+    {
+      "entry": "ppt/media/image87.svg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image87.svg",
+      "relativePath": "template-inspect/assets/ppt/media/image87.svg",
+      "bytes": 1444
+    },
+    {
+      "entry": "ppt/media/image88.png",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image88.png",
+      "relativePath": "template-inspect/assets/ppt/media/image88.png",
+      "bytes": 1363
+    },
+    {
+      "entry": "ppt/media/image89.svg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image89.svg",
+      "relativePath": "template-inspect/assets/ppt/media/image89.svg",
+      "bytes": 1922
+    },
+    {
+      "entry": "ppt/media/image9.png",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image9.png",
+      "relativePath": "template-inspect/assets/ppt/media/image9.png",
+      "bytes": 1022
+    },
+    {
+      "entry": "ppt/media/image90.png",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image90.png",
+      "relativePath": "template-inspect/assets/ppt/media/image90.png",
+      "bytes": 2038
+    },
+    {
+      "entry": "ppt/media/image91.svg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image91.svg",
+      "relativePath": "template-inspect/assets/ppt/media/image91.svg",
+      "bytes": 1360
+    },
+    {
+      "entry": "ppt/media/image92.png",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image92.png",
+      "relativePath": "template-inspect/assets/ppt/media/image92.png",
+      "bytes": 2190
+    },
+    {
+      "entry": "ppt/media/image93.svg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image93.svg",
+      "relativePath": "template-inspect/assets/ppt/media/image93.svg",
+      "bytes": 1077
+    },
+    {
+      "entry": "ppt/media/image94.png",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image94.png",
+      "relativePath": "template-inspect/assets/ppt/media/image94.png",
+      "bytes": 3042
+    },
+    {
+      "entry": "ppt/media/image95.svg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image95.svg",
+      "relativePath": "template-inspect/assets/ppt/media/image95.svg",
+      "bytes": 1472
+    },
+    {
+      "entry": "ppt/media/image96.png",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image96.png",
+      "relativePath": "template-inspect/assets/ppt/media/image96.png",
+      "bytes": 1939
+    },
+    {
+      "entry": "ppt/media/image97.svg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image97.svg",
+      "relativePath": "template-inspect/assets/ppt/media/image97.svg",
+      "bytes": 1104
+    },
+    {
+      "entry": "ppt/media/image98.png",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image98.png",
+      "relativePath": "template-inspect/assets/ppt/media/image98.png",
+      "bytes": 2635
+    },
+    {
+      "entry": "ppt/media/image99.svg",
+      "path": "/Users/soldier/free-code/packages/insurance-ppt/outputs/regression_broker_savings_clone/template-clone/broker-savings/template-inspect/assets/ppt/media/image99.svg",
+      "relativePath": "template-inspect/assets/ppt/media/image99.svg",
+      "bytes": 1695
+    }
+  ],
+  "fonts": [
+    "+mj-cs",
+    "+mj-ea",
+    "+mj-lt",
+    "+mn-cs",
+    "+mn-ea",
+    "+mn-lt",
+    "Angsana New",
+    "Arial",
+    "Calibri",
+    "Calibri Light",
+    "Cordia New",
+    "DaunPenh",
+    "DokChampa",
+    "Estrangelo Edessa",
+    "Euphemia",
+    "Gautami",
+    "Iskoola Pota",
+    "Kalinga",
+    "Kartika",
+    "Latha",
+    "MV Boli",
+    "Mangal",
+    "Microsoft Himalaya",
+    "Microsoft Uighur",
+    "Microsoft Yi Baiti",
+    "Mongolian Baiti",
+    "MoolBoran",
+    "Nyala",
+    "Plantagenet Cherokee",
+    "Raavi",
+    "Shruti",
+    "Sylfaen",
+    "Times New Roman",
+    "Tunga",
+    "Vrinda",
+    "宋体",
+    "微软雅黑",
+    "新細明體",
+    "游ゴシック",
+    "游ゴシック Light",
+    "맑은 고딕",
+    "ＭＳ Ｐゴシック"
+  ],
+  "packageParts": {
+    "mediaCount": 171,
+    "slideXmlCount": 25,
+    "chartCount": 0,
+    "tableSlideCount": 0
+  },
+  "inspectRefreshedAt": "2026-06-01T15:57:55.685Z",
+  "inspectMaxChars": 1200000
+}
