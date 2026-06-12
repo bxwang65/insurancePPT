@@ -1,0 +1,21 @@
+node_modules/
+dist/
+.env
+*.log
+*.pptx
+*.mp4
+*.mov
+
+# Generated / cache
+sessions/
+.cache/
+uploads/
+outputs/
+protected/
+downloads/
+
+# Large temp
+external/
+data/
+temp/
+tmp/
