@@ -1,21 +1,22 @@
 /**
- * OpenAI 兼容 API extractor (用于 DeepSeek / OpenAI / MiniMax)
+ * OpenAI 兼容 API extractor (用于 Kimi / DeepSeek / OpenAI / MiniMax)
  * 与 GeminiExtractor 接口一致 (extractJSON), 内部走 OpenAI Chat Completions
  */
 import fs from "fs";
 import crypto from "crypto";
 
 const PROVIDER_DEFAULTS: Record<string, { baseUrl: string; model: string }> = {
-  // 按 ~/.hermes/config.yaml: model=deepseek-v4-flash, provider=deepseek
+  kimi: { baseUrl: process.env.KIMI_BASE_URL || "https://api.kimi.com/coding", model: process.env.KIMI_MODEL || "kimi-for-coding" },
+  // 原 DeepSeek 主力保留为 fallback
   deepseek: { baseUrl: "https://api.deepseek.com/v1", model: "deepseek-v4-flash" },
   openai: { baseUrl: "https://api.openai.com/v1", model: "gpt-4o-mini" },
-  minimax: { baseUrl: "https://api.minimax.chat/v1", model: "MiniMax-Text-01" },
+  minimax: { baseUrl: "https://api.minimax.chat/v1", model: "MiniMax-M3" },
   gemini: { baseUrl: "", model: "gemini-2.5-flash" },  // 占位
 };
 
 export interface OpenAIConfig {
   apiKey: string;
-  provider?: "deepseek" | "openai" | "minimax";
+  provider?: "kimi" | "deepseek" | "openai" | "minimax";
   baseUrl?: string;
   model?: string;
   maxRetries?: number;
@@ -79,12 +80,64 @@ export class OpenAIExtractor {
       pdfText = pdfText.substring(0, MAX_CHARS) + "\n\n[... TRUNCATED ...]";
     }
 
-    const userContent = `PDF 文件路径: ${pdfPath}\nPDF SHA256: ${pdfHash}\n\n=== PDF 文本内容 ===\n${pdfText}\n\n=== 任务 ===\n请严格按 system prompt 要求输出 JSON (不要 markdown 代码块包裹)。`;
+    let userContent;
+    const pdfTextLen = pdfText.trim().length;
 
-    const body = {
+    // 图片PDF (< 50 chars text): MiniMax/Kimi 都转图片发送
+    if (pdfTextLen < 50 && (this.provider === "minimax" || this.provider === "kimi")) {
+      try {
+        const { execSync } = await import("child_process");
+        const imgOutput = execSync(
+          'python3.11 -c "import fitz,base64,sys; doc=fitz.open(sys.argv[1]); [print(base64.b64encode(doc[i].get_pixmap(matrix=fitz.Matrix(1.5,1.5)).tobytes(\'png\')).decode()) for i in range(min(len(doc),5))]; doc.close()" ' + JSON.stringify(pdfPath),
+          { timeout: 120000, encoding: "utf-8", maxBuffer: 100 * 1024 * 1024 }
+        );
+        const images = imgOutput.trim().split('\n').filter(Boolean);
+        if (images.length > 0) {
+          const textBlock = "你是一位保险精算师。从这些保单截图页面中提取完整的利益演示数据。"
+            + "\n\n输出JSON格式:"
+            + '\n{"product_name": "", "insured": {"name":"","age":0,"gender":""},'
+            + '\n"policy": {"annual_premium":0,"sum_insured":0,"premium_payment_period":"趸交或N年"},'
+            + '\n"benefit_illustration":[{"policy_year":1,"total_premium_paid":0,"non_guaranteed_cash_value":0,"death_benefit":0}]}'
+            + "\n\n注意: 提取当前假设(非保证)的数据, premium_payment_period是趸交还是N年缴";
+
+          if (this.provider === "kimi") {
+            // Kimi: Anthropic-style content blocks
+            const blocks: any[] = [{ type: "text", text: textBlock }];
+            for (const b64 of images) {
+              blocks.push({ type: "image", source: { type: "base64", media_type: "image/png", data: b64 } });
+            }
+            userContent = blocks; // stays as array, sent directly
+          } else {
+            // OpenAI-compatible (MiniMax)
+            const contentArr: any[] = [{ type: "text", text: textBlock }];
+            for (const b64 of images) {
+              contentArr.push({ type: "image_url", image_url: { url: "data:image/png;base64," + b64 } });
+            }
+            userContent = contentArr;
+          }
+        }
+      } catch (e) {
+        console.warn(`[${this.provider}] image extraction failed:`, (e as Error)?.message);
+      }
+    }
+
+    if (!userContent) {
+      userContent = `PDF 文件路径: ${pdfPath}\nPDF SHA256: ${pdfHash}\n\n=== PDF 文本内容 ===\n${pdfText}\n\n=== 任务 ===\n请严格按 system prompt 要求输出 JSON (不要 markdown 代码块包裹)。`;
+    }
+
+    const systemContent = systemPrompt + "\n\n重要: 你的输出必须是合法 JSON。不要任何推理过程, 不要 ```json 包裹, 不要其他解释文字。只输出 JSON 本身。";
+    const body: any = this.provider === "kimi" ? {
+      model: this.model,
+      system: systemContent,
+      messages: [
+        { role: "user", content: userContent }, // 可以是 string 或 content block array
+      ],
+      temperature: 0.1,
+      max_tokens: 32000,
+    } : {
       model: this.model,
       messages: [
-        { role: "system", content: systemPrompt + "\n\n重要: 你的输出必须是合法 JSON。不要任何推理过程, 不要 ```json 包裹, 不要其他解释文字。只输出 JSON 本身。" },
+        { role: "system", content: systemContent },
         { role: "user", content: userContent },
       ],
       response_format: this.provider === "openai" ? { type: "json_object" } : undefined,
@@ -98,12 +151,17 @@ export class OpenAIExtractor {
       try {
         const ctrl = new AbortController();
         const timer = setTimeout(() => ctrl.abort(), this.timeout);
-        const res = await fetch(`${this.baseUrl}/chat/completions`, {
+        const endpoint = this.provider === "kimi"
+          ? `${this.baseUrl.replace(/\/$/, "")}/v1/messages`
+          : `${this.baseUrl.replace(/\/$/, "")}/chat/completions`;
+        const headers: Record<string, string> = {
+          "Content-Type": "application/json",
+          "Authorization": `Bearer ${this.apiKey}`,
+        };
+        if (this.provider === "kimi") headers["anthropic-version"] = "2023-06-01";
+        const res = await fetch(endpoint, {
           method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-            "Authorization": `Bearer ${this.apiKey}`,
-          },
+          headers,
           body: JSON.stringify(body),
           signal: ctrl.signal,
         });
@@ -113,11 +171,13 @@ export class OpenAIExtractor {
           throw new Error(`HTTP ${res.status}: ${errText.substring(0, 500)}`);
         }
         const json: any = await res.json();
-        const content = json.choices?.[0]?.message?.content || "";
+        const content = this.provider === "kimi"
+          ? (json.content || []).map((part: any) => part?.text || "").join("")
+          : json.choices?.[0]?.message?.content || "";
         const usage = json.usage ? {
-          promptTokens: json.usage.prompt_tokens || 0,
-          completionTokens: json.usage.completion_tokens || 0,
-          totalTokens: json.usage.total_tokens || 0,
+          promptTokens: json.usage.prompt_tokens || json.usage.input_tokens || 0,
+          completionTokens: json.usage.completion_tokens || json.usage.output_tokens || 0,
+          totalTokens: json.usage.total_tokens || ((json.usage.input_tokens || 0) + (json.usage.output_tokens || 0)),
         } : undefined;
         // 解析 JSON (可能含 markdown 包裹)
         const data = this._parseJson(content);

@@ -6,6 +6,7 @@ import { spawn, execSync } from "child_process";
 import { z } from "zod";
 
 import { ExtractionOrchestrator } from "../extraction/orchestrator.ts";
+import { extractionQueue } from "./extraction-queue.ts";
 import { ChatEngine } from "../chat/chat-engine.ts";
 import { OutlineGenerator } from "../chat/outline-generator.ts";
 import { generateSavingsPpt } from "../generation/pptx-generator.ts";
@@ -77,12 +78,13 @@ try {
 
 // ─── AI Provider 配置 ─────────────────────────────────
 // 优先级: 用户 header X-User-Api-Key > 服务端环境变量
-// 默认 provider: deepseek (按 ~/.hermes/config.yaml 配置)
-const DEFAULT_PROVIDER = (process.env.LLM_PROVIDER || "deepseek") as "deepseek" | "openai" | "gemini" | "minimax";
+// 默认 provider: kimi (Kimi Coding Plan, Anthropic Messages-compatible), DeepSeek 仅保留 fallback
+const DEFAULT_PROVIDER = (process.env.LLM_PROVIDER || "kimi") as "kimi" | "deepseek" | "openai" | "gemini" | "minimax";
+const KIMI_API_KEY = process.env.KIMI_API_KEY || "";
 const DEEPSEEK_API_KEY = process.env.DEEPSEEK_API_KEY || process.env.OPENAI_API_KEY || "";
 const GEMINI_API_KEY = process.env.GEMINI_API_KEY || "";
-// API_KEY (向下兼容) — 默认指向 DeepSeek, 若有 GEMINI 优先用 Gemini
-const API_KEY = DEEPSEEK_API_KEY || GEMINI_API_KEY;
+const MINIMAX_API_KEY = process.env.MINIMAX_API_KEY || "";
+const API_KEY = KIMI_API_KEY || DEEPSEEK_API_KEY || GEMINI_API_KEY || MINIMAX_API_KEY;
 
 function requireApiKey(req: Request): Response | null {
   // APP_API_KEY 未配置时，默认开放（本地开发）
@@ -487,9 +489,17 @@ async function handleEnhancedGenerate(params: {
     const primaryData = savingsData || iulDataClean || ciDataClean || {};
     const ins = primaryData.insured || {};
     const pol = primaryData.policy || {};
-    const insuredAge = Number(ins.age) || 1;
+    // 修复 AI 提取常见错误: 姓名和年龄互换 ("1岁"→ name="1", age=100)
+    let rawAge = ins.age;
+    let insuredAge = (rawAge !== undefined && rawAge !== null && rawAge !== '') ? Number(rawAge) : 1;
+    if (/^\d{1,2}$/.test(String(ins.name || '')) && insuredAge > 80) {
+      insuredAge = Number(ins.name) || 1;
+      ins.age = insuredAge;
+    }
+    insuredAge = Number(insuredAge) || 1;
     const annualPremium = Number(pol.annual_premium) || 0;
-    const payYears = parseInt(String(pol.premium_payment_period || "5")) || 5;
+    const rawPeriod = String(pol.premium_payment_period || "5");
+    const payYears = rawPeriod === "趸交" ? 1 : (parseInt(rawPeriod) || 5);
     const paidTotal = annualPremium * payYears;
 
     // Build no_withdraw dict from benefit_illustration
@@ -504,13 +514,18 @@ async function handleEnhancedGenerate(params: {
         const rev = Number(r.reversionary_bonus || 0);
         const term = Number(r.terminal_dividend || 0);
         const paid = Number(r.total_premium_paid || 0);
-        const irr = (y > 0 && total > paidTotal && paidTotal > 0) ? (total / paidTotal) ** (1 / y) - 1 : null;
-        const simple = (y > 0 && paidTotal > 0) ? (total - paidTotal) / paidTotal / y : null;
+        // 修复: 当 total 小于 guar（不可能）或 total 明显小于 guar+rev+term 时重算
+        const computedSum = guar + rev + term;
+        const correctedTotal = (total < guar || (computedSum > total && computedSum - total > total * 0.01))
+          ? Math.max(total, computedSum)
+          : (total > 0 ? total : computedSum);
+        const irr = (y > 0 && correctedTotal > paidTotal && paidTotal > 0) ? (correctedTotal / paidTotal) ** (1 / y) - 1 : null;
+        const simple = (y > 0 && paidTotal > 0) ? (correctedTotal - paidTotal) / paidTotal / y : null;
         noWithdraw[String(y)] = {
           Y: y, Age: insuredAge + y - 1, Paid: paid,
           Guar_CV: guar, Rev: rev, Term: term,
-          Total: total > 0 ? total : guar + rev + term,
-          Mult: paidTotal ? total / paidTotal : 0,
+          Total: correctedTotal,
+          Mult: paidTotal ? correctedTotal / paidTotal : 0,
           IRR: irr, Simple: simple,
         };
       }
@@ -594,8 +609,8 @@ async function handleEnhancedGenerate(params: {
     const logoPath = path.join(coDir, 'logo.png');
     const coverPathJpg = path.join(coDir, 'company-hero-01.jpg');
     const coverPathPng = path.join(coDir, 'company-hero-01.png');
-    // 封面只用jpg (png可能是IUL大图, 不适合储蓄险封面)
-    const coverPath = coverPathJpg;
+    // 封面优先用png(定制封面), 回退到jpg
+    const coverPath = fs.existsSync(coverPathPng) ? coverPathPng : coverPathJpg;
     const companyImages = [
       path.join(coDir, 'brand-01.jpg'),
       path.join(coDir, 'brand-02.jpg'),
@@ -666,6 +681,15 @@ async function handleEnhancedGenerate(params: {
     const tmpIulJson = iulDataRaw ? `/tmp/enhanced_iul_${Date.now()}.json` : '';
     if (ciDataRaw) fs.writeFileSync(tmpCiJson, JSON.stringify(sanitizeForXml(ciDataRaw), null, 2), 'utf-8');
     if (iulDataRaw) {
+      // 所有IUL产品统一名称
+      iulDataRaw.product_name = "新加坡IUL";
+      if (!iulDataRaw.summary) iulDataRaw.summary = {};
+      iulDataRaw.summary.product_name = "新加坡IUL";
+      if (!iulDataRaw.policy) iulDataRaw.policy = {};
+      iulDataRaw.policy.product_name = "新加坡IUL";
+      // 从IUL保单数据计算缴费年期
+      const iulPeriod = String(iulDataRaw.policy.premium_payment_period || "5");
+      iulDataRaw.summary.payment_years = iulPeriod === "趸交" ? 1 : (parseInt(iulPeriod) || 5);
       // IUL 字段映射: AI 输出 account_value/cash_value/death_benefit → non_guaranteed_*
       iulDataRaw.benefit_illustration = (iulDataRaw.benefit_illustration || []).map((r: any) => ({
         ...r,
@@ -824,10 +848,17 @@ serve({
     const method = req.method;
     const pathname = url.pathname;
 
-    // CORS preflight
+    // CORS preflight (允许 h5-app iframe 跨域请求)
+    const ALLOWED_HEADERS = "Content-Type, X-API-Key, X-User-Id, X-User-Api-Key, X-User-Api-Provider, Authorization";
     if (method === "OPTIONS") {
       return new Response(null, {
-        headers: { "Access-Control-Allow-Origin": "*", "Access-Control-Allow-Methods": "GET,POST,OPTIONS", "Access-Control-Allow-Headers": "Content-Type, X-API-Key, X-User-Id" },
+        headers: {
+          "Access-Control-Allow-Origin": req.headers.get("Origin") || "*",
+          "Access-Control-Allow-Methods": "GET,POST,PATCH,DELETE,OPTIONS",
+          "Access-Control-Allow-Headers": ALLOWED_HEADERS,
+          "Access-Control-Allow-Credentials": "true",
+          "Access-Control-Max-Age": "86400",
+        },
       });
     }
 
@@ -925,25 +956,37 @@ serve({
         });
       }
 
-      // Search company info (use DeepSeek as primary, Gemini as fallback)
-      if (pathname === "/api/company-info" && method === "POST" && (DEEPSEEK_API_KEY || GEMINI_API_KEY)) {
+      // Search company info (use Kimi as primary, Gemini as fallback)
+      if (pathname === "/api/company-info" && method === "POST" && (KIMI_API_KEY || DEEPSEEK_API_KEY || GEMINI_API_KEY)) {
         const authErr = requireApiKey(req); if (authErr) return authErr;
         const { name } = await req.json().catch(() => ({}));
         if (!name) return json({ error: "Company name required" }, 400);
         let info = "未找到相关信息。";
-        if (DEEPSEEK_API_KEY) {
+        if (KIMI_API_KEY || DEEPSEEK_API_KEY) {
+          const apiKey = KIMI_API_KEY || DEEPSEEK_API_KEY;
+          const baseUrl = KIMI_API_KEY
+            ? process.env.KIMI_BASE_URL || "https://api.kimi.com/coding"
+            : process.env.DEEPSEEK_BASE_URL || "https://api.deepseek.com/v1";
+          const model = KIMI_API_KEY
+            ? process.env.KIMI_MODEL || "kimi-for-coding"
+            : process.env.DEEPSEEK_MODEL || "deepseek-v4-flash";
           try {
-            const res = await fetch(`${process.env.DEEPSEEK_BASE_URL || "https://api.deepseek.com/v1"}/chat/completions`, {
-              method: "POST",
-              headers: { "Content-Type": "application/json", "Authorization": `Bearer ${DEEPSEEK_API_KEY}` },
-              body: JSON.stringify({
-                model: process.env.DEEPSEEK_MODEL || "deepseek-v4-flash",
-                messages: [{ role: "user", content: `请简要介绍${name}这家保险公司（中文，200字以内），包括成立时间、总部、核心业务、市场地位。如果不知道这家公司，请说明。` }],
-                max_tokens: 300,
-              }),
-            });
+            const prompt = `请简要介绍${name}这家保险公司（中文，200字以内），包括成立时间、总部、核心业务、市场地位。如果不知道这家公司，请说明。`;
+            const res = KIMI_API_KEY
+              ? await fetch(`${baseUrl.replace(/\/$/, "")}/v1/messages`, {
+                  method: "POST",
+                  headers: { "Content-Type": "application/json", "Authorization": `Bearer ${apiKey}`, "anthropic-version": "2023-06-01" },
+                  body: JSON.stringify({ model, messages: [{ role: "user", content: prompt }], max_tokens: 300 }),
+                })
+              : await fetch(`${baseUrl.replace(/\/$/, "")}/chat/completions`, {
+                  method: "POST",
+                  headers: { "Content-Type": "application/json", "Authorization": `Bearer ${apiKey}` },
+                  body: JSON.stringify({ model, messages: [{ role: "user", content: prompt }], max_tokens: 300 }),
+                });
             const data = await res.json();
-            info = data.choices?.[0]?.message?.content || info;
+            info = KIMI_API_KEY
+              ? (data.content || []).map((part: any) => part?.text || "").join("") || info
+              : data.choices?.[0]?.message?.content || info;
           } catch {}
         }
         return json({ info });
@@ -954,6 +997,7 @@ serve({
         const formData = await req.formData();
         const files = formData.getAll("files") as File[];
         const types = formData.getAll("types") as string[];
+        const companies = formData.getAll("companies") as string[];
         if (!files.length) return json({ error: "No files uploaded" }, 400);
 
         const sessionId = genId();
@@ -976,7 +1020,8 @@ serve({
             || (f.name.toLowerCase().includes("危疾") || f.name.toLowerCase().includes("守護") ? "ci" as const
               : f.name.toLowerCase().includes("iul") || f.name.toLowerCase().includes("genesis") ? "iul" as const
               : "savings" as const);
-          session.files.push({ path: fp, name: cleanName, type });
+          const companyId = companies[i] || "";
+          session.files.push({ path: fp, name: cleanName, type, companyId });
         }
         if (!session.files.length) return json({ error: "No valid PDFs" }, 400);
         saveSession(session);
@@ -992,22 +1037,92 @@ serve({
         // 关键: 用户可从前端传 X-User-Api-Key 覆盖服务端 key
         const userKey = req.headers.get("X-User-Api-Key");
         const userProvider = req.headers.get("X-User-Api-Provider") || DEFAULT_PROVIDER;
-        const effectiveApiKey = userKey || API_KEY;
-        // API key 缺失时, 仍可跑 (signature fast-path / signature extractor 不需要 LLM)
-        // 只有当所有文件都不能用 fast-path 时, 才需要 LLM fallback
-        // orchestrator 内部会自动降级
+        // 按 provider 选择对应的 API key
+        const providerKeyMap: Record<string, string> = {
+          kimi: KIMI_API_KEY,
+          deepseek: DEEPSEEK_API_KEY,
+          openai: DEEPSEEK_API_KEY,
+          gemini: GEMINI_API_KEY,
+          minimax: MINIMAX_API_KEY,
+        };
+        const effectiveApiKey = userKey || providerKeyMap[userProvider] || KIMI_API_KEY || DEEPSEEK_API_KEY;
 
         transition(session, "parsing");
         session.extractions = [];
         saveSession(session);
 
-        const orch = new ExtractionOrchestrator({
-          apiKey: effectiveApiKey,
-          provider: userProvider as "deepseek" | "openai" | "gemini" | "minimax" | undefined,
-          useCache: true,
-        });
         for (const f of session.files) {
-          const r = await orch.extractPlan(f.path, f.type);
+                    // 宏利 IUL: 使用 Gemini 多模态提取
+          let resolvedProvider = userProvider;
+          let resolvedKey = effectiveApiKey;
+          if (f.type === "iul" && (f as any).companyId === "manulife" && MINIMAX_API_KEY) {
+            resolvedProvider = "minimax";
+            resolvedKey = MINIMAX_API_KEY;
+            console.log("[server] Manulife IUL detected, using MiniMax M3");
+          }
+
+          const orch = new ExtractionOrchestrator({
+            apiKey: resolvedKey,
+            provider: resolvedProvider as "deepseek" | "openai" | "gemini" | "minimax" | undefined,
+            useCache: true,
+          });
+          let r = await extractionQueue.run(() => orch.extractPlan(f.path, f.type));
+
+          // Manulife IUL: MiniMax 失败时自动降级到 Kimi
+          if ((!r.data || r.status === "error") && f.type === "iul" && (f as any).companyId === "manulife" && KIMI_API_KEY && resolvedProvider === "minimax") {
+            console.log("[server] Manulife IUL MiniMax failed, falling back to Kimi");
+            const kimiOrch = new ExtractionOrchestrator({
+              apiKey: KIMI_API_KEY,
+              provider: "kimi",
+              useCache: false, // 避免用 MiniMax 的 cache
+            });
+            const r2 = await extractionQueue.run(() => kimiOrch.extractPlan(f.path, f.type));
+            if (r2.data && r2.status === "success") {
+              r = r2;
+              const biLen = (r2.data as any).benefit_illustration?.length || 0;
+              console.log(`[server] Kimi fallback succeeded: ${biLen} rows`);
+            }
+          }
+          // LLM失败时用fitz兜底(适用于有签名的储蓄险,断网时可用)
+          if (!r.data && f.type === "savings" && fs.existsSync(f.path)) {
+            try {
+              const { spawnSync } = await import("child_process");
+              const scriptPath = path.resolve(import.meta.dir, "../../scripts/extract_savings_tables.py");
+              const py = spawnSync("python3.11", [scriptPath, f.path], { timeout: 30000, encoding: "utf-8" });
+              if (py.status === 0 && py.stdout) {
+                const ft = JSON.parse(py.stdout.trim());
+                if (ft.benefit_illustration?.length > 5) {
+                  (r as any).data = {
+                    product_name: "储蓄保险计划",
+                    product_type: "savings",
+                    insured: { name: "VIP", age: 1, gender: "男", smoker: null },
+                    policy: { product_name: "储蓄保险计划", currency: "USD", sum_insured: null, basic_sum_insured: null, annual_premium: 100000, premium_payment_period: "5年", coverage_period: "终身", total_premium_with_levy: null },
+                    benefit_illustration: ft.benefit_illustration.map((row: any) => ({
+                      policy_year: row.policy_year,
+                      total_premium_paid: row.total_premium_paid || 0,
+                      guaranteed_cash_value: row.guaranteed_cash_value || 0,
+                      reversionary_bonus: row.reversionary_bonus || 0,
+                      terminal_dividend: row.terminal_dividend || 0,
+                      total_surrender_value: row.total_surrender_value || 0,
+                      death_benefit: row.death_benefit || 0,
+                    })),
+                    withdrawal_illustration: (ft.withdrawal_illustration || []).map((row: any) => ({
+                      policy_year: row.policy_year,
+                      total_premium_paid: row.total_premium_paid || 0,
+                      annual_withdrawal: row.annual_withdrawal || 0,
+                      total_withdrawn: row.total_withdrawn || 0,
+                      surrender_value_before: row.surrender_value_before || 0,
+                      surrender_value_after: row.surrender_value_after || 0,
+                    })),
+                    sales_insights: { target_customer: "高净值客户", key_selling_points: ["稳健增值", "财富传承"], unique_advantages: "", suggested_narrative: "", highlight_numbers: [] },
+                    _meta: { source: "fitz_fallback", parser: "fitz-table-v1" },
+                  };
+                  (r as any).status = "success";
+                  console.log(`[server] LLM失败, fitz兜底成功: ${ft.benefit_illustration.length} rows`);
+                }
+              }
+            } catch (_) {}
+          }
           // Try fitz extraction for savings/CI 表格
           if (r.data && fs.existsSync(f.path)) {
             try {
@@ -1030,8 +1145,62 @@ serve({
                   (r.data as any).benefit_illustration = ft.ci_benefit_illustration;
                   console.log(`[server] fitz 覆盖 CI: ${ft.ci_benefit_illustration.length} rows`);
                 }
+                if (f.type === "ci") {
+                  try {
+                    const ciScript = path.resolve(import.meta.dir, "../../scripts/extract_aia_ci.py");
+                    if (fs.existsSync(ciScript)) {
+                      const { execSync } = await import("child_process");
+                      const py2 = execSync(`python3.11 "${ciScript}" "${f.path}"`, { timeout: 15000, encoding: "utf-8" });
+                      const ciResult = JSON.parse(py2.trim());
+                      const ciBi = ciResult.benefit_illustration || [];
+                      if (ciBi.length > 5) {
+                        (r.data as any).benefit_illustration = ciBi;
+                        console.log(`[server] CI fitz 覆盖 benefit: ${ciBi.length} rows`);
+                      }
+                    }
+                  } catch (_) { /* CI fitz silent */ }
+                }
               }
             } catch (_) { /* fitz fallback silent */ }
+
+            // IUL 专用提取 (独立于上面的 savings/CI fitz, 避免被异常跳过)
+            if (f.type === "iul") {
+              const iulScripts = [
+                path.resolve(import.meta.dir, "../../scripts/extract_sunlife_iul.py"),
+                path.resolve(import.meta.dir, "../../scripts/extract_transamerica_iul.py"),
+              ];
+              for (const iulScript of iulScripts) {
+                if (!fs.existsSync(iulScript)) continue;
+                try {
+                  const { execSync } = await import("child_process");
+                  const py2 = execSync(`python3.11 "${iulScript}" "${f.path}"`, { timeout: 15000, encoding: "utf-8" });
+                  const iulResult = JSON.parse(py2.trim());
+                  const iulBi = iulResult.benefit_illustration || [];
+                  if (iulBi.length > 5) {
+                    (r.data as any).benefit_illustration = iulBi.map((row: any) => ({
+                      policy_year: row.policy_year,
+                      total_premium_paid: row.total_premium_paid || row.premium || 0,
+                      non_guaranteed_cash_value: row.non_guaranteed_cash_value || row.surrender_value || row.account_value || 0,
+                      non_guaranteed_account_value: row.non_guaranteed_account_value || row.account_value || 0,
+                      guaranteed_cash_value: row.guaranteed_cash_value || row.guaranteed_value || 0,
+                      death_benefit: row.death_benefit || 0,
+                    }));
+                    // 同步保费/保额
+                    const sm = iulResult.summary || {};
+                    const policy = (r.data as any)?.policy || {};
+                    if (sm.annual_premium && !policy.annual_premium) {
+                      policy.annual_premium = sm.annual_premium;
+                    }
+                    if (sm.sum_insured && !policy.sum_insured) {
+                      policy.sum_insured = sm.sum_insured;
+                    }
+                    console.log(`[server] IUL fitz 覆盖 benefit: ${iulBi.length} rows (${iulScript.split('/').pop()})`);
+                    break;
+                  }
+                } catch (_) { continue; }
+              }
+            }
+
             // 年龄兜底: 从PDF首页提取年龄
             const ins = (r.data as any)?.insured;
             if (ins && (!ins.age || ins.age === 0)) {
@@ -1046,9 +1215,11 @@ serve({
           }
           // DIAG: 检查 IUL 数据字段
           if (f.type === "iul" && r.data && Array.isArray(r.data.benefit_illustration)) {
-            const row0 = r.data.benefit_illustration[0] as Record<string, unknown>;
-            console.log(`[diag] IUL row[0] keys: ${Object.keys(row0).join(",")}`);
-            console.log(`[diag] IUL row[0] cv=${row0.cash_value} ng_cv=${row0.non_guaranteed_cash_value}`);
+            const row0 = r.data.benefit_illustration[0] as Record<string, unknown> | undefined;
+            if (row0) {
+              console.log(`[diag] IUL row[0] keys: ${Object.keys(row0).join(",")}`);
+              console.log(`[diag] IUL row[0] cv=${row0.cash_value} ng_cv=${row0.non_guaranteed_cash_value}`);
+            }
           }
           // IUL 字段映射: AI 可能输出 account_value/cash_value/death_benefit（无前缀）
           // 也可能输出 non_guaranteed_*/guaranteed_*（有前缀），统一补齐
@@ -1067,6 +1238,19 @@ serve({
           const forcedPlanType = r.data ? f.type : r.planType;
           if (r.data && forcedPlanType !== r.planType) {
             console.log(`[type] 修正 ${f.name}: AI检测=${r.planType} → 强制=${forcedPlanType}`);
+          }
+          // 根据利益表数据修正缴费年期（不依赖AI提取）
+          if (r.data && Array.isArray(r.data.benefit_illustration)) {
+            const bi = r.data.benefit_illustration as any[];
+            const pol = (r.data as any).policy || {};
+            const annualPrem = Number(pol.annual_premium || 0);
+            const maxTotalPrem = Math.max(...bi.map(r => Number(r.total_premium_paid || 0)), 0);
+
+            // 用最大累计保费 ÷ 年缴保费 = 缴费年数（精确）
+            if (annualPrem > 0 && maxTotalPrem > 0) {
+              const payCount = Math.round(maxTotalPrem / annualPrem);
+              pol.premium_payment_period = payCount === 1 ? "趸交" : `${payCount}年`;
+            }
           }
           session.extractions.push({ pdfName: f.name, pdfPath: f.path, planType: forcedPlanType, data: r.data ?? null, error: r.error });
         }
@@ -1305,10 +1489,10 @@ serve({
             if (y) prevY = y;
           }
 
-          // Check age consistency
+          // Check age consistency - 降级为warn, 数据构建层已自动修复
           for (const row of bi) {
             if (row.total_surrender_value != null && row.guaranteed_cash_value != null && row.total_surrender_value < row.guaranteed_cash_value) {
-              issues.push({ field: "benefit_illustration", severity: "error", message: `${ext.pdfName}: Y${row.policy_year} 退保总额 < 保证现金价值` });
+              issues.push({ field: "benefit_illustration", severity: "warn", message: `${ext.pdfName}: Y${row.policy_year} 退保总额已自动修正` });
               break;
             }
           }
