@@ -206,7 +206,11 @@ export class OpenAIExtractor {
   }
 
   private _parseJson(content: string): any {
-    const trimmed = content.trim();
+    let trimmed = content.trim();
+    // 去除 <think> 推理块 (MiniMax M3 等模型可能在 JSON 前输出推理)
+    trimmed = trimmed.replace(/<think>[\s\S]*?<\/think>/g, "").trim();
+    // 也去除 可能出现的 其他推理标签
+    trimmed = trimmed.replace(/<reasoning>[\s\S]*?<\/reasoning>/g, "").trim();
     // 尝试 1: 整个 content 就是 JSON
     if (trimmed.startsWith("{") || trimmed.startsWith("[")) {
       try { return JSON.parse(trimmed); } catch {}
