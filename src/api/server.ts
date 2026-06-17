@@ -1165,7 +1165,25 @@ serve({
                     _meta: { source: "fitz_fallback", parser: path.basename(iulScript).replace(".py", "") },
                   };
                   (r as any).status = "success";
-                  console.log(`[server] IUL fitz兜底成功: ${bi.length} rows (${path.basename(iulScript)})`);
+
+                  // 年龄兜底: BI数据年龄字段 → extract_age.py
+                  let age = Number(iulResult.summary?.insured_age || 0);
+                  if (age <= 0 && bi[0]?.age) age = Number(bi[0].age);
+                  if (age <= 0) {
+                    try {
+                      const ageScript = path.resolve(import.meta.dir, "../../scripts/extract_age.py");
+                      if (fs.existsSync(ageScript)) {
+                        const pyAge = execSync(`python3.11 "${ageScript}" "${f.path}" 2>/dev/null`, { timeout: 10000, encoding: "utf-8" });
+                        // 取最后一行 (Mutool 错误也写到 stdout)
+                        const lines = pyAge.trim().split('\n').filter(Boolean);
+                        const parsed = parseInt(lines[lines.length - 1], 10);
+                        if (parsed > 0 && parsed < 120) age = parsed;
+                      }
+                    } catch (_) {}
+                  }
+                  if (age > 0) (r as any).data.insured.age = age;
+
+                  console.log(`[server] IUL fitz兜底成功: ${bi.length} rows, age=${age} (${path.basename(iulScript)})`);
                   break;
                 }
               } catch (_) {}
@@ -1255,8 +1273,9 @@ serve({
               try {
                 const { execSync } = await import("child_process");
                 const ageScript = path.resolve(import.meta.dir, "../../scripts/extract_age.py");
-                const out = execSync(`python3.11 ${ageScript} '${f.path}'`, { timeout: 5000, encoding: "utf-8" });
-                const age = parseInt(out.trim(), 10);
+                const out = execSync(`python3.11 ${ageScript} "${f.path}" 2>/dev/null`, { timeout: 5000, encoding: "utf-8" });
+                const lines = out.trim().split('\n').filter(Boolean);
+                const age = parseInt(lines[lines.length - 1], 10);
                 if (age > 0 && age < 120) { ins.age = age; console.log(`[server] 年龄兜底: ${age}`); }
               } catch {}
             }
