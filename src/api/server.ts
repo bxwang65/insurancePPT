@@ -1123,6 +1123,54 @@ serve({
               }
             } catch (_) {}
           }
+          // IUL: LLM失败时用fitz兜底(永明/全美IUL有表格结构,断网可用)
+          if (!r.data && f.type === "iul" && fs.existsSync(f.path)) {
+            const iulScripts = [
+              path.resolve(import.meta.dir, "../../scripts/extract_sunlife_iul.py"),
+              path.resolve(import.meta.dir, "../../scripts/extract_transamerica_iul.py"),
+            ];
+            for (const iulScript of iulScripts) {
+              if (!fs.existsSync(iulScript)) continue;
+              try {
+                const { execSync } = await import("child_process");
+                const py2 = execSync(`python3.11 "${iulScript}" "${f.path}"`, { timeout: 15000, encoding: "utf-8" });
+                const iulResult = JSON.parse(py2.trim());
+                const bi = (iulResult.benefit_illustration || []) as any[];
+                if (bi.length > 5) {
+                  (r as any).data = {
+                    product_name: iulResult.summary?.insured_name || "IUL Plan",
+                    product_type: "iul",
+                    insured: { name: "VIP", age: Number(iulResult.summary?.insured_age || 0), gender: iulResult.summary?.insured_gender || "", smoker: null },
+                    policy: {
+                      product_name: iulResult.summary?.insured_name || "IUL Plan",
+                      currency: "USD",
+                      sum_insured: iulResult.summary?.sum_insured || null,
+                      basic_sum_insured: null,
+                      annual_premium: iulResult.summary?.annual_premium || 0,
+                      premium_payment_period: `${iulResult.summary?.payment_years || 0}年`,
+                      coverage_period: "终身",
+                      total_premium_with_levy: null,
+                    },
+                    benefit_illustration: bi.map((row: any) => ({
+                      policy_year: row.policy_year,
+                      total_premium_paid: row.total_premium_paid || row.premium || 0,
+                      non_guaranteed_account_value: row.non_guaranteed_account_value || row.account_value || 0,
+                      non_guaranteed_cash_value: row.non_guaranteed_cash_value || row.surrender_value || 0,
+                      guaranteed_cash_value: row.guaranteed_cash_value || row.guaranteed_value || 0,
+                      death_benefit: row.death_benefit || 0,
+                      sum_insured: row.sum_insured || 0,
+                    })),
+                    withdrawal_illustration: [],
+                    sales_insights: { target_customer: "高净值客户", key_selling_points: ["指数账户", "身故保障杠杆"], unique_advantages: "", suggested_narrative: "", highlight_numbers: [] },
+                    _meta: { source: "fitz_fallback", parser: path.basename(iulScript).replace(".py", "") },
+                  };
+                  (r as any).status = "success";
+                  console.log(`[server] IUL fitz兜底成功: ${bi.length} rows (${path.basename(iulScript)})`);
+                  break;
+                }
+              } catch (_) {}
+            }
+          }
           // Try fitz extraction for savings/CI 表格
           if (r.data && fs.existsSync(f.path)) {
             try {
