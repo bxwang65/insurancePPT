@@ -5,6 +5,8 @@ dist/
 *.pptx
 *.mp4
 *.mov
+__pycache__/
+*.pyc
 
 # Generated / cache
 sessions/
@@ -12,7 +14,7 @@ sessions/
 uploads/
 outputs/
 protected/
-downloads/
+public/downloads/
 
 # Large temp
 external/
