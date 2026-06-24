@@ -13,7 +13,7 @@ import type { PdfSignature } from "./signatures/types.ts";
 const SCRIPT_BY_TYPE = {
   savings: path.resolve(import.meta.dir, "../../scripts/extract_savings_by_signature.py"),
   ci: path.resolve(import.meta.dir, "../../scripts/extract_ci_by_signature.py"),
-  iul: path.resolve(import.meta.dir, "../../scripts/extract_ci_by_signature.py"),
+  iul: path.resolve(import.meta.dir, "../../scripts/extract_iul_stub.py"),
 } as const;
 
 export interface SignatureExtractionResult {

@@ -432,6 +432,51 @@ export const SIGNATURES: PdfSignature[] = [
       { label: "Y20 总额", policyYear: 20, field: "total_surrender_value", expected: 1433573, tolerance: 500 },
     ],
   },
+
+  // ─── 永明新加坡 IUL ────────────────────────────
+  {
+    id: "sunlife-sbiul2-v1",
+    companyId: "sunlife",
+    productCode: "SBIUL2",
+    productName: "Sun Life 新加坡 IUL",
+    planType: "iul",
+    currency: "USD",
+    titleKeywords: ["保障金额", "初始保费", "指数账户"],
+    firstPageMustContain: ["受保人", "货币"],
+    productCodeAliases: ["SBIUL2", "SLS_SBIUL2"],
+    presentationHorizonYears: 120,
+    pageTargets: { summary: 1 },
+  },
+
+  // ─── 宏利新加坡 IUL ────────────────────────────
+  {
+    id: "manulife-siul3-v1",
+    companyId: "manulife",
+    productCode: "SIUL3",
+    productName: "Manulife 新加坡 IUL",
+    planType: "iul",
+    currency: "USD",
+    titleKeywords: ["Manulife", "SIUL3", "指数策略"],
+    firstPageMustContain: ["受保人", "货币"],
+    productCodeAliases: ["SIUL3", "MLS_SIUL3"],
+    presentationHorizonYears: 120,
+    pageTargets: { summary: 1 },
+  },
+
+  // ─── 全美新加坡 IUL ────────────────────────────
+  {
+    id: "transamerica-giul3-v1",
+    companyId: "transamerica",
+    productCode: "GIUL3",
+    productName: "Transamerica 新加坡 IUL",
+    planType: "iul",
+    currency: "USD",
+    titleKeywords: ["GIUL3", "首日现金价值", "指数"],
+    firstPageMustContain: ["保单", "现金价值"],
+    productCodeAliases: ["GIUL3", "TA_GIUL3"],
+    presentationHorizonYears: 120,
+    pageTargets: { summary: 1 },
+  },
 ];
 
 const SIGNATURE_INDEX = new Map(SIGNATURES.map((s) => [s.id, s]));

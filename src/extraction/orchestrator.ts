@@ -274,6 +274,102 @@ export class ExtractionOrchestrator {
                 warnings: [],
               },
             };
+            // IUL: 尝试用 fitz 提取利益数据 + 摘要覆盖
+            //   - Sunlife (文本型) → extract_sunlife_iul.py 走 find_tables 拿全部数据
+            //   - Manulife (图片型) → fitz 拿不到表, 回退到 LLM 多模态 (M3 视觉)
+            let fitzGotRows = false;
+            try {
+              const scriptPath = path.resolve(import.meta.dir, "../../scripts/extract_sunlife_iul.py");
+              if (fs.existsSync(scriptPath)) {
+                const proc = Bun.spawn(["python3.11", scriptPath, absPath]);
+                const out = await new Response(proc.stdout).text();
+                const parsed = JSON.parse(out);
+                const fitzBi = (parsed.benefit_illustration || []) as any[];
+                if (fitzBi.length > 5) {
+                  // 关键映射: Sunlife 表列7=退保价值 → non_guaranteed_account_value
+                  wrapped.benefit_illustration = fitzBi.map((r: any) => ({
+                    policy_year: r.policy_year,
+                    age: r.age || 0,
+                    annual_premium: r.planned_premium ?? r.premium ?? 0,
+                    total_premium_paid: r.cumulative_premium_paid ?? r.premium ?? 0,
+                    non_guaranteed_account_value: r.surrender_value || 0,
+                    non_guaranteed_cash_value: r.surrender_value || 0,
+                    guaranteed_account_value: r.guaranteed_value || 0,
+                    guaranteed_cash_value: r.guaranteed_value || 0,
+                    death_benefit: r.death_benefit || 0,
+                    sum_insured: r.sum_insured || 0,
+                    source_page: r.source_page || 1,
+                  }));
+                  fitzGotRows = true;
+                  console.log(`[orch] IUL fitz overrode benefit: ${fitzBi.length} rows`);
+                }
+                // 关键: 把脚本返回的摘要合并到 wrapped
+                const fitzSummary = parsed.summary || {};
+                if (fitzSummary.annual_premium && !wrapped.policy.annual_premium) {
+                  wrapped.policy.annual_premium = fitzSummary.annual_premium;
+                  console.log(`[orch] IUL fitz merged annual_premium: ${fitzSummary.annual_premium}`);
+                }
+                if (fitzSummary.sum_insured && !wrapped.policy.sum_insured) {
+                  wrapped.policy.sum_insured = fitzSummary.sum_insured;
+                  wrapped.policy.basic_sum_insured = fitzSummary.sum_insured;
+                }
+                if (fitzSummary.insured_age && !wrapped.insured.age) {
+                  wrapped.insured.age = Number(fitzSummary.insured_age);
+                }
+                if (fitzSummary.insured_gender && !wrapped.insured.gender) {
+                  wrapped.insured.gender = fitzSummary.insured_gender;
+                }
+                // 关键: 自动计算 premium_payment_period (从 benefit_illustration 实际保费年数)
+                // 避免 LLM 错填 "5年" 但实际是 10 年缴
+                if (Array.isArray(wrapped.benefit_illustration) && wrapped.benefit_illustration.length > 0) {
+                  const payYears = wrapped.benefit_illustration.filter((r: any) => Number(r?.annual_premium || 0) > 0).length;
+                  if (payYears > 0) {
+                    const correctPeriod = `${payYears}年`;
+                    if (wrapped.policy.premium_payment_period !== correctPeriod) {
+                      console.log(`[orch] IUL fix premium_payment_period: ${wrapped.policy.premium_payment_period} -> ${correctPeriod}`);
+                      wrapped.policy.premium_payment_period = correctPeriod;
+                    }
+                  }
+                }
+                // 关键: 指数账户配置 (fitz 脚本从首页文本提取)
+                if (Array.isArray(fitzSummary.index_accounts) && fitzSummary.index_accounts.length) {
+                  (wrapped as any).index_accounts = fitzSummary.index_accounts;
+                  console.log(`[orch] IUL fitz merged ${fitzSummary.index_accounts.length} index accounts`);
+                }
+              }
+            } catch (e) {
+              console.warn("[orch] IUL fitz unavailable:", (e as Error)?.message?.slice(0, 80));
+            }
+
+            // IUL: fitz 没拿到数据 (图片型) → 回退到 LLM 多模态
+            if (!fitzGotRows && this.extractor) {
+              try {
+                console.log(`[orch] IUL fitz returned 0 rows, falling back to LLM`);
+                const llmRaw = await this.extractor.extractJSON<RawLLMOutput>(absPath, IUL_SYSTEM_PROMPT);
+                const llmData = llmRaw.data || {};
+                if (llmData.insured) {
+                  if (llmData.insured.age && !wrapped.insured.age) wrapped.insured.age = Number(llmData.insured.age);
+                  if (llmData.insured.gender && !wrapped.insured.gender) wrapped.insured.gender = llmData.insured.gender;
+                }
+                if (llmData.policy) {
+                  const llmPolicy = llmData.policy as Record<string, unknown>;
+                  if (llmPolicy.annual_premium && !wrapped.policy.annual_premium) {
+                    wrapped.policy.annual_premium = Number(llmPolicy.annual_premium);
+                  }
+                  if (llmPolicy.sum_insured && !wrapped.policy.sum_insured) {
+                    wrapped.policy.sum_insured = Number(llmPolicy.sum_insured);
+                    wrapped.policy.basic_sum_insured = Number(llmPolicy.sum_insured);
+                  }
+                }
+                if (Array.isArray(llmData.benefit_illustration) && llmData.benefit_illustration.length > 5) {
+                  wrapped.benefit_illustration = llmData.benefit_illustration;
+                  console.log(`[orch] IUL LLM merged benefit: ${llmData.benefit_illustration.length} rows`);
+                }
+                wrapped._meta.parser = "iul-fitz+llm-multimodal";
+              } catch (e) {
+                console.warn("[orch] IUL LLM fallback failed:", (e as Error)?.message?.slice(0, 120));
+              }
+            }
             if (this.useCache) this.saveToCache(absPath, wrapped);
             return {
               pdfPath: absPath, productName: wrapped.product_name,

@@ -1230,7 +1230,9 @@ serve({
             } catch (_) { /* fitz fallback silent */ }
 
             // IUL 专用提取 (独立于上面的 savings/CI fitz, 避免被异常跳过)
-            if (f.type === "iul") {
+            // 关键: orchestrator 的 fast-path 已经把 IUL row 完整映射 (含 age/annual_premium/source_page)
+            //       这里只对 LLM-only 路径 (无 _meta.source="signature_fast_path") 做兜底, 避免降级覆盖
+            if (f.type === "iul" && (r.data as any)?._meta?.source !== "signature_fast_path") {
               const iulScripts = [
                 path.resolve(import.meta.dir, "../../scripts/extract_sunlife_iul.py"),
                 path.resolve(import.meta.dir, "../../scripts/extract_transamerica_iul.py"),
@@ -1307,16 +1309,22 @@ serve({
             console.log(`[type] 修正 ${f.name}: AI检测=${r.planType} → 强制=${forcedPlanType}`);
           }
           // 根据利益表数据修正缴费年期（不依赖AI提取）
+          // 关键: 不能用 max(total_premium_paid) / annual_premium,
+          //   首年2倍保费 (10年交 Y1=2x, Y2-10=1x) 算出来是 4.99 ≈ 5年, 错!
+          // 正确: 数 annual_premium > 0 的行数 (Y1到第一个 0 元之间)
           if (r.data && Array.isArray(r.data.benefit_illustration)) {
             const bi = r.data.benefit_illustration as any[];
             const pol = (r.data as any).policy || {};
-            const annualPrem = Number(pol.annual_premium || 0);
-            const maxTotalPrem = Math.max(...bi.map(r => Number(r.total_premium_paid || 0)), 0);
-
-            // 用最大累计保费 ÷ 年缴保费 = 缴费年数（精确）
-            if (annualPrem > 0 && maxTotalPrem > 0) {
-              const payCount = Math.round(maxTotalPrem / annualPrem);
-              pol.premium_payment_period = payCount === 1 ? "趸交" : `${payCount}年`;
+            let payYears = 0;
+            for (const row of bi) {
+              if (Number(row?.annual_premium || 0) > 0) {
+                payYears++;
+              } else {
+                break;
+              }
+            }
+            if (payYears > 0) {
+              pol.premium_payment_period = payYears === 1 ? "趸交" : `${payYears}年`;
             }
           }
           session.extractions.push({ pdfName: f.name, pdfPath: f.path, planType: forcedPlanType, data: r.data ?? null, error: r.error });

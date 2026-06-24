@@ -25,6 +25,7 @@
     "test:template-clone-business-no-withdraw": "bun run scripts/test_business_template_clone_no_withdraw.ts",
     "test:template-clone-ci": "bun run scripts/test_ci_template_clone.ts",
     "test:template-clone-iul": "bun run scripts/test_iul_template_clone.ts",
+    "test:sunlife-iul-lumpsum": "bun run scripts/test_sunlife_iul_lumpsum.ts",
     "demo:iul-sunlife": "bun run scripts/generate_sunlife_iul_formal.ts",
     "test:template-clone-savings-ci": "bun run scripts/test_savings_ci_bundle_clone.ts",
     "test:template-clone-savings-iul": "bun run scripts/test_savings_iul_bundle_renderer.ts",

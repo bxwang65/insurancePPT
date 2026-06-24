@@ -125,10 +125,16 @@ def extract_sunlife_iul(pdf_path):
             for table in tables:
                 ex = table.extract()
                 if not ex or len(ex) < 2: continue
-                hdr = ' '.join([str(c)[:10] for c in ex[0]])
-                if '保单年度' not in hdr and 'account' not in hdr.lower():
+                # 严格过滤: 只接受中文"保单年度"表 (Sunlife IUL 利益表)
+                # 排除英文 Premium Breakdown 表 (End of Year / Premium Outlay / COI 等 schema 完全不同)
+                # 趸交 PDF 第 7-9 页有此表, schema 9 列但 col 1 是 Premium Outlay 不是年龄, col 3 是 COI 不是保费
+                hdr_compact = ''.join([str(c).replace('\n', '') for c in ex[0]])
+                if '保单年度' not in hdr_compact:
                     continue
                 if len(ex[0]) < 7: continue
+                # 利益表只有 header + data 两行; >3 行说明是英文 Premium Breakdown (8 行) 或其他补充表
+                if len(ex) > 3:
+                    continue
 
                 # 第二行通常有子表头或数据
                 for row_data in ex[1:]:
@@ -187,15 +193,27 @@ def extract_sunlife_iul(pdf_path):
         cumulative += r['planned_premium']
         r['cumulative_premium_paid'] = cumulative
 
+    # 关键: 自动识别缴费年期 (数据驱动, 不依赖文件名/用户输入)
+    # 趸交 → planned_premium 仅 Y1 > 0 → pay_years=1 → "趸交"
+    # 5/10/13年交 → 前 N 年 > 0 → pay_years=N → "N年"
+    pay_years = sum(1 for r in unique_rows if r.get('planned_premium', 0) > 0)
+
+    # 关键: summary.annual_premium 用首个非零 planned_premium, 比 raw text 提取的更可靠
+    # (raw 提取的可能是 "USD 412,700" 误算成 412700, 也可能被英文表污染)
+    first_year_premium = next((r['planned_premium'] for r in unique_rows if r['planned_premium'] > 0), 0)
+
     # 构建与 IUL  schema 兼容的输出
     result = {
         "benefit_illustration": unique_rows,
         "summary": {
             "insured_age": info.get('age', 0),
             "insured_gender": info.get('gender', ''),
-            "annual_premium": info.get('annual_premium', 0),
+            "annual_premium": first_year_premium,
             "sum_insured": info.get('sum_insured', 0),
             "index_accounts": info.get('index_accounts', []),
+            "payment_term_years": pay_years,
+            "payment_term_label": "趸交" if pay_years == 1 else f"{pay_years}年",
+            "total_premium_paid": cumulative if pay_years > 0 else 0,
         },
         "diagnostics": {
             "parser": "sunlife-iul-fitz",
