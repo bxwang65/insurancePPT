@@ -1,0 +1,9 @@
+{
+  "id": "chinalife",
+  "displayName": "中国人寿",
+  "aliases": ["ChinaLife", "China Life", "中国人寿", "國壽", "国寿"],
+  "tenantId": "default",
+  "knowledgeDirectories": ["ChinaLife-中国人寿", "新加坡-国寿"],
+  "evidenceRanking": ["简介", "fact", "年报", "财务", "实力", "概览", "投资"],
+  "companyIntro": "中国人寿相关公司资料仅使用内部资料库中已索引、可追溯的文件。"
+}

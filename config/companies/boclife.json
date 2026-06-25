@@ -1,0 +1,9 @@
+{
+  "id": "boclife",
+  "displayName": "中银人寿",
+  "aliases": ["BOC", "BOC Life", "中银人寿", "中銀人壽"],
+  "tenantId": "default",
+  "knowledgeDirectories": ["BOC-中银人寿"],
+  "evidenceRanking": ["简介", "fact", "财务", "实力", "概览", "投资"],
+  "companyIntro": "中银人寿相关公司资料仅使用内部资料库中已索引、可追溯的文件。"
+}

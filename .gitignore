@@ -1,0 +1,23 @@
+node_modules/
+dist/
+.env
+*.log
+*.pptx
+*.mp4
+*.mov
+__pycache__/
+*.pyc
+
+# Generated / cache
+sessions/
+.cache/
+uploads/
+outputs/
+protected/
+public/downloads/
+
+# Large temp
+external/
+data/
+temp/
+tmp/

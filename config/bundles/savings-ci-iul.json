@@ -1,0 +1,15 @@
+{
+  "id": "savings-ci-iul",
+  "displayName": "储蓄险加重疾险加IUL组合方案",
+  "products": ["savings", "ci", "iul"],
+  "templateFamily": "bundle",
+  "status": "active",
+  "modules": [
+    "family-risk-map",
+    "savings-growth-analysis",
+    "critical-illness-protection-gap",
+    "iul-legacy-leverage",
+    "asset-allocation-summary",
+    "recommendation"
+  ]
+}

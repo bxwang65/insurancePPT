@@ -1,0 +1,14 @@
+{
+  "id": "savings-single",
+  "displayName": "单一储蓄险定制方案",
+  "products": ["savings"],
+  "templateFamily": "savings",
+  "modules": [
+    "company-profile",
+    "scenario-by-insured-age",
+    "growth-analysis",
+    "withdrawal-analysis",
+    "official-data-tables",
+    "closing"
+  ]
+}

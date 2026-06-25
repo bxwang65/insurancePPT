@@ -1,0 +1,9 @@
+{
+  "id": "axa",
+  "displayName": "安盛",
+  "aliases": ["AXA", "安盛"],
+  "tenantId": "default",
+  "knowledgeDirectories": ["AXA-安盛"],
+  "evidenceRanking": ["简介", "一图", "fact", "财务", "实力", "概览", "投资"],
+  "companyIntro": "安盛相关公司资料仅使用内部资料库中已索引、可追溯的文件。"
+}

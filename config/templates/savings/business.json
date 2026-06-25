@@ -1,0 +1,17 @@
+{
+  "id": "savings-business",
+  "planType": "savings",
+  "stylePreset": "business",
+  "sourceTemplateAssetId": "business",
+  "cloneReady": true,
+  "cloneRenderer": "savings-business-v1",
+  "displayName": "储蓄险商务风",
+  "maxDisplayPolicyYear": 80,
+  "tableIntervalYears": 10,
+  "qualityRules": {
+    "forbidPlaceholderImages": true,
+    "forbidSyntheticOfficialValues": true,
+    "requirePdfHash": true,
+    "requireSourcePagesForOfficialTables": true
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "id": "manulife-spark-savings",
+  "companyId": "manulife",
+  "planType": "savings",
+  "displayName": "丰誉传承储蓄计划",
+  "aliases": ["丰誉传承", "丰誉", "SPARK", "SparkSavings", "ManulifeReadyBuilder", "宏利丰誉"],
+  "requiredModules": [
+    "cover",
+    "company",
+    "scenario-by-insured-age",
+    "growth-chart",
+    "guaranteed-vs-non-guaranteed",
+    "withdrawal-timeline",
+    "withdrawal-table",
+    "no-withdrawal-table",
+    "closing"
+  ]
+}

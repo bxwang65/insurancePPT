@@ -1,0 +1,24 @@
+{
+  "id": "ci-business",
+  "planType": "ci",
+  "stylePreset": "business",
+  "sourceTemplateAssetId": "business",
+  "cloneReady": true,
+  "cloneRenderer": "ci-business-v1",
+  "displayName": "重疾险商务风",
+  "requiredPageTypes": [
+    "cover",
+    "company",
+    "narrative",
+    "chart",
+    "compare",
+    "table",
+    "conclusion"
+  ],
+  "qualityRules": {
+    "forbidPlaceholderImages": true,
+    "forbidSyntheticOfficialValues": true,
+    "requirePdfHash": true,
+    "requireSourcePagesForOfficialTables": true
+  }
+}

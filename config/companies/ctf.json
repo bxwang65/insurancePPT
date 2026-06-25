@@ -1,0 +1,19 @@
+{
+  "id": "ctf",
+  "displayName": "周大福人寿",
+  "aliases": ["CTF", "周大福"],
+  "tenantId": "ctf",
+  "knowledgeDirectories": ["CTF-周大福人寿"],
+  "evidenceRanking": ["简介", "一图", "fact", "年报", "财务", "实力", "概览"],
+  "companyIntro": "周大福人寿提供保障、储蓄与传承规划服务，定位长期家庭财富与保障管理。",
+  "companyHighlights": [
+    {
+      "text": "公开资料显示，其分红实现率专题材料覆盖「匠心・传承」同类型产品系列，可用于公司长期分红兑现能力说明。",
+      "sourceFile": "CTFLife_Market Insight_2024年周大福人壽分紅實現率表現全攻略_2507_(TradChi).pdf"
+    },
+    {
+      "text": "公开资料显示，公司提供一站式医疗增值服务与康复支持，可作为客户服务能力补充说明。",
+      "sourceFile": "周大福人壽醫療增值服務_TC.pdf"
+    }
+  ]
+}

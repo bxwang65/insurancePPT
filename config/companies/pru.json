@@ -1,0 +1,9 @@
+{
+  "id": "pru",
+  "displayName": "保诚",
+  "aliases": ["PRU", "Prudential", "保诚", "保誠"],
+  "tenantId": "default",
+  "knowledgeDirectories": ["PRU-保诚", "新加坡-保诚"],
+  "evidenceRanking": ["简介", "fact", "年报", "财务", "实力", "概览", "投资"],
+  "companyIntro": "保诚相关公司资料仅使用内部资料库中已索引、可追溯的文件。"
+}

@@ -1,0 +1,9 @@
+{
+  "id": "tplife",
+  "displayName": "太平人寿",
+  "aliases": ["TPLife", "太平人寿", "太平人壽"],
+  "tenantId": "default",
+  "knowledgeDirectories": ["TPLife-太平人寿"],
+  "evidenceRanking": ["简介", "fact", "财务", "实力", "概览", "养老"],
+  "companyIntro": "太平人寿相关公司资料仅使用内部资料库中已索引、可追溯的文件。"
+}

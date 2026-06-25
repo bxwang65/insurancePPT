@@ -1,0 +1,14 @@
+{
+  "id": "iul-single",
+  "displayName": "单一IUL定制方案",
+  "products": ["iul"],
+  "templateFamily": "iul",
+  "status": "active",
+  "modules": [
+    "company-profile",
+    "index-account-configuration",
+    "guaranteed-floor-analysis",
+    "legacy-leverage-analysis",
+    "recommendation"
+  ]
+}

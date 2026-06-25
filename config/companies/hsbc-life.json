@@ -1,0 +1,9 @@
+{
+  "id": "hsbc-life",
+  "displayName": "汇丰人寿",
+  "aliases": ["HSBC", "汇丰", "匯豐"],
+  "tenantId": "default",
+  "knowledgeDirectories": ["新加坡-汇丰"],
+  "evidenceRanking": ["简介", "fact", "财务", "实力", "概览", "指数"],
+  "companyIntro": "汇丰人寿相关公司资料仅使用内部资料库中已索引、可追溯的文件。"
+}

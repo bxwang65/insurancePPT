@@ -1,0 +1,29 @@
+{
+  "id": "savings-chinese",
+  "planType": "savings",
+  "stylePreset": "chinese",
+  "sourceTemplateAssetId": "chinese",
+  "cloneReady": true,
+  "cloneRenderer": "savings-chinese-v1",
+  "displayName": "储蓄险中国风",
+  "maxDisplayPolicyYear": 80,
+  "tableIntervalYears": 10,
+  "requiredPageTypes": [
+    "cover",
+    "company",
+    "narrative",
+    "chart",
+    "chart",
+    "timeline",
+    "timeline",
+    "table",
+    "table",
+    "conclusion"
+  ],
+  "qualityRules": {
+    "forbidPlaceholderImages": true,
+    "forbidSyntheticOfficialValues": true,
+    "requirePdfHash": true,
+    "requireSourcePagesForOfficialTables": true
+  }
+}
