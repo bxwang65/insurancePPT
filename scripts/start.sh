@@ -1,5 +1,5 @@
 #!/bin/bash
-# V3 启动脚本 - nohup 后台守护, 终端关闭不影响
+# V3 启动脚本 - nohup + disown 后台守护, 终端关闭不影响
 set -e
 cd "$(dirname "$0")/.."
 
@@ -19,10 +19,16 @@ fi
 # 清理旧 PID
 rm -f "$PID_FILE"
 
-# 启动 (nohup + setsid 让进程完全脱离当前会话)
-export PATH="/Users/soldier/.bun/bin:$PATH"
-nohup setsid bun run src/api/server.ts > "$LOG_FILE" 2>&1 < /dev/null &
+# macOS 没有 setsid, 用 nohup + disown 替代
+# nohup 忽略 SIGHUP (终端关闭信号), disown 从 jobs 表移除, 父进程退出后被 launchd 收养 (PPID=1)
+BUN_BIN="/Users/soldier/.bun/bin/bun"
+if [ ! -x "$BUN_BIN" ]; then
+  echo "[start] ✗ bun not found at $BUN_BIN"
+  exit 1
+fi
+nohup "$BUN_BIN" run src/api/server.ts > "$LOG_FILE" 2>&1 < /dev/null &
 NEW_PID=$!
+disown $NEW_PID 2>/dev/null || true
 echo "$NEW_PID" > "$PID_FILE"
 
 # 等待启动
