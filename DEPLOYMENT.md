@@ -3,129 +3,179 @@
 ## 部署概览
 
 - **本地路径**: `/Users/soldier/insurance-ppt-v3/`
-- **公网域名**: https://ppt.gllpsce.cn
+- **公网域名**: http://ppt.gllpsce.cn
 - **Git**: github.com/bxwang65/insurancePPT @ branch `v3-frozen` / tag `v3.0.0-frozen`
-- **架构**: Bun server (localhost:3000) → Cloudflare Tunnel → 公网 HTTPS
+- **架构 (V3.0.1 起)**: 用户 → ppt.gllpsce.cn → 阿里云 HK ECS (47.242.58.70:80) → Bun server
 
 ```
-┌─────────────┐    ┌──────────────────┐    ┌─────────────────┐    ┌─────────────┐
-│ 浏览器/用户  │ -> │ ppt.gllpsce.cn  │ -> │ Cloudflare Edge │ -> │ Cloudflared │
-└─────────────┘    └──────────────────┘    └─────────────────┘    └──────┬──────┘
-                                                                          │ QUIC/HTTP2
+┌─────────────┐    ┌──────────────────┐    ┌─────────────────┐    ┌──────────────────┐
+│ 浏览器/用户  │ -> │ ppt.gllpsce.cn  │ -> │ Cloudflare DNS  │ -> │ 阿里云 HK ECS   │
+│ (国内直连)  │    │ (A 记录 DNS)    │    │ (只解析不代理)   │    │ 47.242.58.70:80 │
+└─────────────┘    └──────────────────┘    └─────────────────┘    └────────┬─────────┘
+                                                                          │
                                                                           ▼
                                                                   ┌───────────────┐
-                                                                  │ localhost:3000│
-                                                                  │  (bun server) │
+                                                                  │  Bun server   │
+                                                                  │  (port 80)    │
                                                                   └───────────────┘
 ```
 
+## 为什么切到阿里云 HK ECS
+
+| 方案 | 延迟 | 上传速度 | 稳定性 | 月成本 |
+|---|---|---|---|---|
+| ❌ Cloudflare Tunnel (旧) | 1-15秒 | 17-83 KB/s | 节点会掉 | $0 |
+| ❌ 家庭宽带端口映射 | — | — | ISP 限制入站 | $0 |
+| ❌ OpenFrp 免费节点 | — | — | 节点离线 | $0 |
+| ✅ **阿里云 HK ECS (新)** | **165-230ms** | **6-7 MB/s** | **7×24 在线** | **$0.10/小时 (按量)** |
+
+**优势**:
+- 国内 BGP 直连, 上传满速 (比之前快 **80-400 倍**)
+- ECS 按量付费, 不用可释放, **节省计划 $90 抵扣 ~1.3 个月**
+- 公网 IP 固定, DNS 直解析, 不依赖任何隧道
+- 用户**无需翻墙**即可访问
+
 ## 启动 / 停止 / 重启
+
+### ECS 服务管理 (在 Mac 上)
 
 ```bash
 cd ~/insurance-ppt-v3
 
-# 启动 (nohup + setsid 后台守护, 终端关闭不影响)
-bash scripts/start.sh
+# 状态检查
+bash scripts/ecs-status.sh
 
-# 停止
-bash scripts/stop.sh
+# 部署 (rsync + 重启)
+bash scripts/ecs-deploy.sh
 
-# 重启
-bash scripts/restart.sh
+# SSH 进 ECS 手动操作
+ssh root@47.242.58.70
+```
 
-# 状态检查 (本地 + 公网)
-bash scripts/status.sh
+### ECS 实例管理 (阿里云控制台)
+
+| 动作 | 操作 |
+|---|---|
+| **释放实例** (完全停费) | ECS 控制台 → 实例 → 释放 (释放后公网 IP 保留 7 天) |
+| **重启实例** | ECS 控制台 → 实例 → 重启 |
+| **停止实例** (短时停费) | ECS 控制台 → 实例 → 停止 (保留磁盘, 不计费) |
+| **重新创建** (释放后) | ECS 控制台 → 创建实例, 选之前的镜像或重新选 Ubuntu 22.04 |
+
+### 省钱策略
+
+```bash
+# 周末不用 → 释放实例, 周一重建
+# ECS 销毁后, 公网 IP 在 7 天内可重新绑定
 ```
 
 ## 关键命令
 
 ```bash
-# 查看实时日志
-tail -f ~/insurance-ppt-v3/logs/server.log
+# 在 Mac 上
+bash scripts/ecs-status.sh   # 一键检查 ECS 状态
+bash scripts/ecs-deploy.sh   # 部署代码 + 重启服务
 
-# 启动 Cloudflare tunnel (如果没运行)
-nohup cloudflared tunnel --no-autoupdate run 14ae1918-7d62-4a2c-b74d-bf6367449cc3 \
-  > ~/insurance-ppt-v3/logs/cloudflared.log 2>&1 &
-
-# 验证公网
-curl -sI https://ppt.gllpsce.cn | head -3
+# SSH 进 ECS
+ssh root@47.242.58.70
+# 进去后:
+ps aux | grep bun
+cat /opt/insurance-ppt/logs/server.log
+tail -f /opt/insurance-ppt/logs/server.log
+kill $(cat /opt/insurance-ppt/logs/server.pid)  # 停止
 ```
 
-## 为什么 nohup 不会因终端关闭而退出
+## ECS 关键信息
 
-1. `nohup` - 忽略 SIGHUP 信号 (终端关闭时发送的"挂断"信号)
-2. `setsid` - 创建新会话, 完全脱离原 terminal session 的进程组
-3. 重定向 stdin/stdout/stderr 到 logs/, 不依赖原终端文件描述符
-4. Bun runtime 是常驻进程, 主循环不退出
+- **实例 ID**: i-j6c9hh6jylw675dyuhru
+- **公网 IP**: 47.242.58.70
+- **实例名**: insurance-ppt-v3
+- **区域**: 中国香港 D
+- **规格**: ecs.c9i.large (2 vCPU 4 GiB)
+- **镜像**: Ubuntu 20.04
+- **带宽**: 5 Mbps 按使用流量
+- **价格**: $0.097872/小时 (节省计划覆盖 $90)
+- **安全组**: SSH 22, HTTP 80, HTTPS 443, ICMP
+- **登录**: root + 密码 (用户在本地保存)
 
-即使关闭所有 Claude Code 终端窗口, server 进程仍由 PID 1 (launchd) 收养继续运行.
+## 部署历史
 
-## 文件结构
+### V3.0.1 (2026-06-25) — ECS 部署
+- 切换: Cloudflare Tunnel → 阿里云 HK ECS
+- 速度提升: 17-83 KB/s → 6-7 MB/s
+- 域名解析: Cloudflare DNS (DNS only 模式)
+- 新增脚本: `ecs-deploy.sh`, `ecs-status.sh`, `ecs-restart.sh`
 
-```
-~/insurance-ppt-v3/
-├── VERSION.txt          # 版本元数据 (frozen)
-├── CHANGELOG_V3.md      # 变更日志
-├── DEPLOYMENT.md        # 本文件
-├── README.md
-├── package.json         # Bun 项目配置
-├── bun.lock             # 依赖锁定
-├── railway.toml         # Railway 部署配置
-├── tsconfig.json
-├── src/                 # TypeScript 源码 (chmod 444 冻结)
-├── scripts/             # Python + Shell 脚本
-│   ├── start.sh
-│   ├── stop.sh
-│   ├── status.sh
-│   ├── restart.sh
-│   └── ... (extractor scripts)
-├── public/              # 静态资源 (模板, 字体)
-├── data/                # 公司知识库
-├── config/              # 配置
-├── docs/                # 文档
-├── logs/                # 运行时日志 (chmod 755 可写)
-│   ├── server.log
-│   └── server.pid
-└── node_modules/        # 依赖 (47M, 不进 git)
-```
-
-## 更新流程 (需要用户授权)
-
-⚠️ V3 是冻结版本. 如需修复 bug:
-
-1. 在 `/Users/soldier/free-code/packages/insurance-ppt/` 修改并测试
-2. 用户明确授权后, 重新封装:
-   ```bash
-   rsync -a --delete --exclude='node_modules' --exclude='logs' \
-     --exclude='.cache' --exclude='outputs' --exclude='uploads' \
-     --exclude='sessions' /Users/soldier/free-code/packages/insurance-ppt/ \
-     ~/insurance-ppt-v3/
-   cd ~/insurance-ppt-v3
-   chmod -R u+w src scripts
-   # ... 修改文件 ...
-   chmod -R u-w src
-   git add -A && git commit -m "fix: ..."
-   git tag v3.0.1-frozen
-   git push origin v3-frozen --tags --force
-   bash scripts/restart.sh
-   ```
-3. 旧版本通过 git reflog 找回
+### V3.0.0 (frozen) — Cloudflare Tunnel
+- 初始部署, 实际部署发现慢
 
 ## 故障排查
 
 | 现象 | 原因 | 解决 |
 |---|---|---|
-| localhost:3000 FAIL | server 没启动 | `bash scripts/start.sh` |
-| ppt.gllpsce.cn FAIL | tunnel 没运行 | 启动 cloudflared (命令见上) |
-| ppt.gllpsce.cn 502 | tunnel 在但 server 不在 | `bash scripts/start.sh` |
-| 端口被占用 | 旧实例残留 | `bash scripts/stop.sh` 后再启动 |
-| Python 脚本错误 | 缺 tesseract / pymupdf | `brew install tesseract tesseract-lang` + `pip3 install pymupdf pillow` |
-| .env 缺失 | 敏感配置未写入 | 从旧目录 `cp .env ~/insurance-ppt-v3/`, 或参考 `.env.example` |
+| ppt.gllpsce.cn 访问失败 | ECS 实例被释放 | 控制台重新创建, 重新绑定公网 IP |
+| 上传慢 (回到 17 KB/s) | DNS 改回了 Cloudflare 代理 | 检查 CF 记录: 应是灰云 (DNS only) |
+| SSH 连不上 | ECS 被释放 / 公网 IP 变更 | 控制台查新 IP, 更新 `ecs-deploy.sh` |
+| ECS 上 python3.11 错误 | Ubuntu 20.04 默认 Python 3.8 | 已 symlink `/usr/local/bin/python3.11 -> python3` |
+| 端口 80 占用 | 旧进程残留 | `pkill -f "bun run"` |
 
-## 环境依赖
+## 环境依赖 (ECS)
 
-- Bun >= 1.0 (`/Users/soldier/.bun/bin/bun`)
-- Python 3.11 (用于 PyMuPDF OCR)
-- Tesseract (Manulife 图片型 PDF OCR): `brew install tesseract tesseract-lang`
-- cloudflared (`/opt/homebrew/bin/cloudflared`)
-- LLM API keys (写入 `.env`, 见 `.env.example`)
+- Ubuntu 20.04 (系统默认)
+- Bun 1.3.14 (`/usr/local/bin/bun`)
+- Python 3.8 + pymupdf + pillow (3.11 symlinked)
+- Tesseract OCR (中/英文)
+- Git
+
+## 文件结构
+
+```
+~/insurance-ppt-v3/
+├── VERSION.txt          # 版本元数据
+├── CHANGELOG_V3.md      # 变更日志
+├── DEPLOYMENT.md        # 本文件
+├── README.md
+├── package.json         # Bun 项目配置
+├── bun.lock             # 依赖锁定
+├── tsconfig.json
+├── src/                 # TypeScript 源码
+├── scripts/             # 管理脚本
+│   ├── start.sh         # Mac 本地启动 (备用)
+│   ├── stop.sh
+│   ├── status.sh
+│   ├── restart.sh
+│   ├── ecs-deploy.sh    # 部署到 ECS
+│   ├── ecs-status.sh    # ECS 状态检查
+│   ├── ecs-restart.sh   # ECS 上重启服务
+│   ├── ecs-rsync.sh     # 单独 rsync (无重启)
+│   └── ... (extractor scripts)
+├── public/              # 静态资源
+├── data/                # 公司知识库
+├── config/              # 配置
+├── docs/                # 文档
+├── logs/                # Mac 本地日志
+└── node_modules/        # 依赖
+
+ECS /opt/insurance-ppt/
+├── 镜像 Mac 的所有源代码
+├── logs/server.log      # 运行时日志
+├── logs/server.pid      # 进程 ID
+└── .env                 # LLM API keys (600 权限)
+```
+
+## 部署流程 (新代码上线)
+
+```bash
+# 1. Mac 上修改代码
+cd ~/insurance-ppt-v3
+# ... edit files ...
+
+# 2. 部署 (rsync + 重启)
+bash scripts/ecs-deploy.sh
+
+# 3. 验证
+bash scripts/ecs-status.sh
+curl -I http://ppt.gllpsce.cn
+```
+
+**耗时**: ~30 秒 (取决于代码量)
+**回滚**: Git checkout 旧版本 + 重新部署
