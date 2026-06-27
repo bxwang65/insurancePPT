@@ -1052,39 +1052,59 @@ serve({
         saveSession(session);
 
         for (const f of session.files) {
-                    // 宏利 IUL: 使用 Gemini 多模态提取
+          // 宏利 IUL: Kimi 主 (用户实测比 MiniMax 快很多), MiniMax / DeepSeek 备用
           let resolvedProvider = userProvider;
           let resolvedKey = effectiveApiKey;
-          if (f.type === "iul" && (f as any).companyId === "manulife" && MINIMAX_API_KEY) {
-            resolvedProvider = "minimax";
-            resolvedKey = MINIMAX_API_KEY;
-            console.log("[server] Manulife IUL detected, using MiniMax M3");
+          if (f.type === "iul" && (f as any).companyId === "manulife" && KIMI_API_KEY) {
+            resolvedProvider = "kimi";
+            resolvedKey = KIMI_API_KEY;
+            console.log("[server] Manulife IUL detected, using Kimi (primary)");
           }
 
           const orch = new ExtractionOrchestrator({
             apiKey: resolvedKey,
-            provider: resolvedProvider as "deepseek" | "openai" | "gemini" | "minimax" | undefined,
+            provider: resolvedProvider as "kimi" | "deepseek" | "openai" | "gemini" | "minimax" | undefined,
             useCache: true,
           });
           let r = await extractionQueue.run(() => orch.extractPlan(f.path, f.type));
 
-          // Manulife IUL: MiniMax 失败时自动降级到 Kimi
-          if ((!r.data || r.status === "error") && f.type === "iul" && (f as any).companyId === "manulife" && KIMI_API_KEY && resolvedProvider === "minimax") {
-            console.log("[server] Manulife IUL MiniMax failed, falling back to Kimi");
-            const kimiOrch = new ExtractionOrchestrator({
-              apiKey: KIMI_API_KEY,
-              provider: "kimi",
-              useCache: false, // 避免用 MiniMax 的 cache
+          // Manulife IUL fallback 1: Kimi → MiniMax (MiniMax 也支持图片 PDF, 比 Kimi 慢但能兜底)
+          if ((!r.data || r.status === "error") && f.type === "iul" && (f as any).companyId === "manulife" && MINIMAX_API_KEY && resolvedProvider !== "minimax") {
+            console.log("[server] Manulife IUL Kimi failed, falling back to MiniMax");
+            const mmOrch = new ExtractionOrchestrator({
+              apiKey: MINIMAX_API_KEY,
+              provider: "minimax",
+              useCache: false,
             });
-            const r2 = await extractionQueue.run(() => kimiOrch.extractPlan(f.path, f.type));
+            const r2 = await extractionQueue.run(() => mmOrch.extractPlan(f.path, f.type));
             if (r2.data && r2.status === "success") {
               r = r2;
               const biLen = (r2.data as any).benefit_illustration?.length || 0;
-              console.log(`[server] Kimi fallback succeeded: ${biLen} rows`);
+              console.log(`[server] MiniMax fallback succeeded: ${biLen} rows`);
             }
           }
-          // LLM失败时用fitz兜底(适用于有签名的储蓄险,断网时可用)
-          if (!r.data && f.type === "savings" && fs.existsSync(f.path)) {
+
+          // Manulife IUL fallback 2: MiniMax → DeepSeek (文本型 PDF 可用, 图片型仍会失败, 但作为最后兜底)
+          if ((!r.data || r.status === "error") && f.type === "iul" && (f as any).companyId === "manulife" && DEEPSEEK_API_KEY && resolvedProvider !== "deepseek") {
+            console.log("[server] Manulife IUL MiniMax failed, falling back to DeepSeek");
+            const dsOrch = new ExtractionOrchestrator({
+              apiKey: DEEPSEEK_API_KEY,
+              provider: "deepseek",
+              useCache: false,
+            });
+            const r3 = await extractionQueue.run(() => dsOrch.extractPlan(f.path, f.type));
+            if (r3.data && r3.status === "success") {
+              r = r3;
+              const biLen = (r3.data as any).benefit_illustration?.length || 0;
+              console.log(`[server] DeepSeek fallback succeeded: ${biLen} rows`);
+            }
+          }
+          // LLM失败 / fast path 0 行 时用 fitz 兜底(适用于有签名的储蓄险,断网时可用)
+          // 关键: fast path 命中但 0 行时 status=success 但 data.benefit_illustration 为空, 也算失败
+          // 关键: LLM schema 校验失败时 status=error 但 data.benefit_illustration 有 fitz 行, 也需重建结构
+          const fastPathEmpty = r.data && Array.isArray((r.data as any).benefit_illustration) && (r.data as any).benefit_illustration.length === 0;
+          const llmValidationFailed = (r as any).status === "error" && r.data && Array.isArray((r.data as any).benefit_illustration) && (r.data as any).benefit_illustration.length > 0;
+          if ((!r.data || fastPathEmpty || llmValidationFailed) && f.type === "savings" && fs.existsSync(f.path)) {
             try {
               const { spawnSync } = await import("child_process");
               const scriptPath = path.resolve(import.meta.dir, "../../scripts/extract_savings_tables.py");
@@ -1118,6 +1138,7 @@ serve({
                     _meta: { source: "fitz_fallback", parser: "fitz-table-v1" },
                   };
                   (r as any).status = "success";
+                  (r as any).error = undefined;
                   console.log(`[server] LLM失败, fitz兜底成功: ${ft.benefit_illustration.length} rows`);
                 }
               }
@@ -1199,13 +1220,26 @@ serve({
               if (py.status === 0 && py.stdout) {
                 const ft = JSON.parse(py.stdout.trim());
                 if (f.type === "savings") {
-                  if (ft.benefit_illustration?.length > 20) {
+                  // 只在 Python 行数 STRICTLY 多于 LLM 时才覆盖, 避免 LLM 完整数据被降级
+                  // (历史问题: 财富盈活 LLM=90 行, Python 旧阈值 >20 把 22 行错数据覆盖上去)
+                  const llmBiLen = (r.data as any).benefit_illustration?.length || 0;
+                  const llmWdLen = (r.data as any).withdrawal_illustration?.length || 0;
+                  let fitzRecovered = false;
+                  if (ft.benefit_illustration?.length > llmBiLen) {
                     (r.data as any).benefit_illustration = ft.benefit_illustration;
-                    console.log(`[server] fitz 覆盖 benefit: ${ft.benefit_illustration.length} rows`);
+                    console.log(`[server] fitz 覆盖 benefit: ${ft.benefit_illustration.length} rows (LLM=${llmBiLen})`);
+                    fitzRecovered = true;
                   }
-                  if (ft.withdrawal_illustration?.length > 0) {
+                  if (ft.withdrawal_illustration?.length > llmWdLen) {
                     (r.data as any).withdrawal_illustration = ft.withdrawal_illustration;
-                    console.log(`[server] fitz 覆盖 withdrawal: ${ft.withdrawal_illustration.length} rows`);
+                    console.log(`[server] fitz 覆盖 withdrawal: ${ft.withdrawal_illustration.length} rows (LLM=${llmWdLen})`);
+                    fitzRecovered = true;
+                  }
+                  // LLM schema 校验失败时 r.status=error 但 r.data 仍存在, fitz 覆盖后应清掉错误
+                  if (fitzRecovered && (r as any).status === "error") {
+                    (r as any).status = "success";
+                    (r as any).error = undefined;
+                    console.log(`[server] fitz 覆盖后清除 LLM 校验错误, 标记为 success`);
                   }
                 }
                 if (f.type === "ci" && ft.ci_benefit_illustration?.length > (r.data as any).benefit_illustration?.length) {

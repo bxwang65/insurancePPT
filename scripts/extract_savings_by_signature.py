@@ -65,6 +65,12 @@ def _header_contains(page, keywords: List[str]) -> bool:
     return all(kw in text for kw in keywords)
 
 
+def _any_kw_in_page(page, keywords: List[str]) -> bool:
+    """OR 模式: 任一关键词在页面文本里即返回 True (用于简体+繁体双支持)"""
+    text = page.extract_text() or ""
+    return any(kw in text for kw in keywords)
+
+
 def extract_summary(pdf_path: str, page_idx: int) -> Dict:
     """提取投保摘要 (兼容港陆两式, 1-based → 0-based)"""
     doc = fitz.open(pdf_path)
@@ -144,18 +150,27 @@ def extract_summary(pdf_path: str, page_idx: int) -> Dict:
         else: summary["currency"] = c
 
     # 缴费年期
-    m = re.search(r"保費繳付期\s*[：:]\s*(\d+)\s*年", text)
-    if not m: m = re.search(r"保費繳付年期", text)  # CTF 独有格式
-    if not m: m = re.search(r"保费供款年期\s*[：:]?\s*(\d+)\s*年", text)
-    if not m: m = re.search(r"保費供款年期\s*[：:]?\s*(\d+)\s*年", text)
-    if not m: m = re.search(r"缴费年期\s*[：:]\s*(\d+)\s*年", text)
-    if not m: m = re.search(r"(\d+)\s*年\s*缴(?:费|付)", text)
-    if not m: m = re.search(r"(\d+)\s*年\s*供", text)
-    if not m: m = re.search(r"(\d+)\s*年\s*\n\s*至\d+\s*岁", text)
-    if m:
-        v = int(m.group(1))
-        if 1 <= v <= 30:
-            summary["payment_years"] = v
+    # 关键: 每个分支必须有 group(1) 才能提取数字; line 148 旧版没有 group 会抛 IndexError
+    payment_patterns = [
+        r"保費繳付期\s*[：:]\s*(\d+)\s*年",
+        r"保費繳付年期\s*[：:]?\s*(\d+)\s*年",  # CTF 独有格式 (原版无 group, 已修)
+        r"保费供款年期\s*[：:]?\s*(\d+)\s*年",
+        r"保費供款年期\s*[：:]?\s*(\d+)\s*年",
+        r"缴费年期\s*[：:]\s*(\d+)\s*年",
+        r"(\d+)\s*年\s*缴(?:费|付)",
+        r"(\d+)\s*年\s*供",
+        r"(\d+)\s*年\s*\n\s*至\d+\s*岁",
+    ]
+    for pat in payment_patterns:
+        m = re.search(pat, text)
+        if m:
+            try:
+                v = int(m.group(1))
+                if 1 <= v <= 30:
+                    summary["payment_years"] = v
+                    break
+            except (IndexError, ValueError):
+                continue
 
     # 保障年期
     m = re.search(r"保障至年齡\s*[：:]\s*(\S+)", text)
@@ -219,10 +234,24 @@ def extract_no_withdraw_ctf(pdf_path: str, page_indices: List[int]) -> Dict[int,
                 continue
             page = pdf.pages[pg - 1]
             text = page.extract_text() or ""
-            # 双签名: 3.基本计划 + 退保发还金额 + 缴付保费, 排除提领页
-            if "3. 基本计划" not in text or "退保发还金额" not in text or "缴付保费" not in text:
+            # 简体 + 繁体双支持, 用 OR 逻辑
+            # 简体: "3. 基本计划" + "退保发还金额" + "缴付保费"
+            # 繁体: "3. 基本計劃" + (退保發還金額 / 已繳付保費總額)
+            # 关键: 不要求 3 个关键词全中, 任一即可 (表结构判断交给 row 级 _parse_multi)
+            # 排除明显不是数据表的页 (封面/说明页)
+            has_section = any(kw in text for kw in ["3. 基本计划", "3. 基本計劃", "說明摘要", "退保發還金額", "退保发还金额", "保證現金價值", "保证现金价值"])
+            has_surrender_or_paid = any(kw in text for kw in [
+                "退保发还金额", "退保發還金額", "退保權益", "退保价值",
+                "已繳付保費總額", "已繳保費總額",
+                "现金价值", "現金價值",
+                "繳付保費", "缴付保费", "已繳付保費", "已繳保費",
+                "保費繳付", "保费缴付", "應付保費",
+                "保單年度", "保单年度", "年期", "退保", "身故",
+            ])
+            if not (has_section or has_surrender_or_paid):
                 continue
-            if "现金提取" in text:  # 排除提领页
+            # 排除提领页 (P11-P15 的提取款項/現金提取表是 withdraw, 不应进 no_withdraw)
+            if any(kw in text for kw in ["现金提取", "現金提取", "款項提取", "提取款項"]):
                 continue
             for t in page.extract_tables():
                 if not t or len(t) < 4:
@@ -259,7 +288,13 @@ def extract_withdraw_ctf(pdf_path: str, page_indices: List[int]) -> Dict[int, Di
             if pg < 1 or pg > len(pdf.pages):
                 continue
             page = pdf.pages[pg - 1]
-            if not _header_contains(page, ["现金提取", "退保发还"]):
+            # 简体/繁体/通用关键词: 含"提取/退保/部退"任一 + 有数字表 视为提领页
+            if not _any_kw_in_page(page, [
+                "现金提取", "現金提取", "款項提取", "提取款項", "提取金额", "提取金額",
+                "退保发还", "退保發還", "退保價值", "退保价值",
+                "部份退保", "部分退保", "现金提取后", "現金提取後",
+                "提款", "提取说明", "提取說明",
+            ]):
                 continue
             for t in page.extract_tables():
                 if not t or len(t) < 4:
@@ -409,7 +444,7 @@ def extract_withdraw_aia(pdf_path: str, page_indices: List[int]) -> Dict[int, Di
                                 "Paid": 0, "Annual_WD": annual_total, "Cum_WD": 0,
                                 "Guar_CV": a[k] if k < len(a) else 0,
                                 "Rev": (b[k] if k < len(b) else 0) + (c[k] if k < len(c) else 0),
-                                "Term": 0, "Total": 0, "Total_WD": 0,
+                                "Term": 0, "Total": annual_total, "Total_WD": 0,
                             }
     # 累计 = sum 累加
     cum = 0

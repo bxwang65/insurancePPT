@@ -4,6 +4,7 @@
 This parser deliberately extracts numbers only. LLM extraction remains useful
 for semantics, but formal proposal values must come from insurer table cells.
 """
+from typing import List, Tuple, Optional  # 兼容 Python 3.8 (ECS 部署)
 import argparse
 import contextlib
 import io
@@ -1169,7 +1170,7 @@ def parse_ci_benefit(page, page_num):
 
 
 # ── 产品类型识别 ──────────────────────────────────
-PRODUCT_KEYWORDS: list[tuple[str, str]] = [
+PRODUCT_KEYWORDS: List[Tuple[str, str]] = [
     ("pru", "明天多元貨幣"),
     ("ctf", "匠心"),
     ("aia-huanyu", "環宇盈活"),
@@ -1186,7 +1187,7 @@ PRODUCT_KEYWORDS: list[tuple[str, str]] = [
 ]
 
 
-def _identify_doc_type(full_text: str) -> str | None:
+def _identify_doc_type(full_text: str) -> Optional[str]:
     """扫描全文识别产品类型, 返回 doc_type 或 None"""
     for doc_type, kw in PRODUCT_KEYWORDS:
         if kw in full_text:

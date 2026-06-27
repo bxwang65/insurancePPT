@@ -93,10 +93,12 @@ export class OpenAIExtractor {
         const { execFileSync } = await import("child_process");
         const imgOutput = execFileSync(
           python,
-          ["-c", "import fitz,base64,sys; doc=fitz.open(sys.argv[1]); [print(base64.b64encode(doc[i].get_pixmap(matrix=fitz.Matrix(1.5,1.5)).tobytes('png')).decode()) for i in range(min(len(doc),5))]; doc.close()", pdfPath],
+          ["-c", "import fitz,base64,sys,os; os.environ.setdefault('PYMUPDF_LOG','no'); doc=fitz.open(sys.argv[1]); [print(base64.b64encode(doc[i].get_pixmap(matrix=fitz.Matrix(1.5,1.5)).tobytes('png')).decode()) for i in range(min(len(doc),5))]; doc.close()", pdfPath],
           { timeout: 120000, encoding: "utf-8", maxBuffer: 100 * 1024 * 1024 },
         );
-        const images = imgOutput.trim().split('\n').filter(Boolean);
+        // 关键: PyMuPDF 错误可能写到 stdout (如 "MuPDF error: syntax error..."), 会被混进 base64 列表
+        // 过滤掉非 base64 行 (仅保留 base64 字符), 防止 MiniMax/OR 在 byte 5 报 "illegal base64 data"
+        const images = imgOutput.split('\n').filter((line) => /^[A-Za-z0-9+/=]+$/.test(line.trim()) && line.trim().length > 100);
         if (images.length > 0) {
           const textBlock = "你是一位保险精算师。从这些保单截图页面中提取完整的利益演示数据。"
             + "\n\n输出JSON格式:"
@@ -114,6 +116,8 @@ export class OpenAIExtractor {
             userContent = blocks; // stays as array, sent directly
           } else {
             // OpenAI-compatible (MiniMax / OpenRouter MiniMax)
+            // 注: MiniMax API 实际要求 data URI 前缀 (api.minimax.chat 返回 "must be http(s):// or data:...;base64")
+            //     之前的 byte 5 错误是另一回事, 不是这个
             const contentArr: any[] = [{ type: "text", text: textBlock }];
             for (const b64 of images) {
               contentArr.push({ type: "image_url", image_url: { url: "data:image/png;base64," + b64 } });

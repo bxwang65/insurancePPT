@@ -120,7 +120,16 @@ export class ExtractionOrchestrator {
     if (type === "savings" || type === "ci" || type === "iul") {
       try {
         const fast = await tryFastExtraction(absPath, { minConfidence: 0.7 });
-        if (fast.matched && fast.data && fast.signature) {
+        // 关键: fast path 命中但 savings 提取 0 行 = 等同于没匹配上, 回退 LLM
+        // 原因: PDF 实际页码/格式与签名配置不符时, extractor 静默返回空表
+        const fastEmptySavings =
+          fast.matched && fast.data && fast.signature &&
+          fast.signature.planType === "savings" &&
+          (!fast.data.no_withdraw || Object.keys(fast.data.no_withdraw).length === 0);
+        if (fastEmptySavings) {
+          console.warn(`[orch] ${path.basename(absPath)}: 签名 ${fast.signature?.id} 命中但提取 0 行, 回退 LLM`);
+        }
+        if (fast.matched && fast.data && fast.signature && !fastEmptySavings) {
           // 按 plan type 路由到对应 schema
           const sigPlanType = fast.signature.planType;
           if (sigPlanType === "savings") {
@@ -137,16 +146,16 @@ export class ExtractionOrchestrator {
                 if (age > 0 && age < 120) { plan.insured.age = age; console.log('[orch] 年龄兜底: '+age); }
               } catch (e) { console.warn('[orch] 年龄兜底失败:', e); }
             }
-            // fitz 始终覆盖签名数据 (列映射以脚本为准)
+            // fitz 仅在 STRICTLY 多于签名数据时覆盖, 避免签名完整数据被降级
             try {
               const ft = await extractSavingsTables(absPath);
-              if (ft.benefit_illustration.length > 20) {
+              if (ft.benefit_illustration.length > plan.benefit_illustration.length) {
                 plan.benefit_illustration = ft.benefit_illustration as any;
-                console.log(`[orch] fitz 覆盖 benefit: ${ft.benefit_illustration.length} rows`);
+                console.log(`[orch] fitz 覆盖 benefit: ${ft.benefit_illustration.length} rows (签名=${plan.benefit_illustration.length})`);
               }
-              if (ft.withdrawal_illustration.length > 0) {
+              if (ft.withdrawal_illustration.length > plan.withdrawal_illustration.length) {
                 plan.withdrawal_illustration = ft.withdrawal_illustration as any;
-                console.log(`[orch] fitz 覆盖 withdrawal: ${ft.withdrawal_illustration.length} rows`);
+                console.log(`[orch] fitz 覆盖 withdrawal: ${ft.withdrawal_illustration.length} rows (签名=${plan.withdrawal_illustration.length})`);
               }
             } catch (_) { /* fitz 失败则用签名数据 */ }
             const validated = SavingsPlanExtractionSchema.safeParse(plan);

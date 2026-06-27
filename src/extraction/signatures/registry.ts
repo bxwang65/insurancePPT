@@ -298,7 +298,7 @@ export const SIGNATURES: PdfSignature[] = [
     firstPageMustContain: ["受保人", "保单货币"],
     productCodeAliases: ["CFYH"],
     presentationHorizonYears: 100,
-    pageTargets: { summary: 1, noWithdraw: range(2, 15), withdraw: range(15, 28) },
+    pageTargets: { summary: 1, noWithdraw: range(2, 15), withdraw: range(15, 28), withdrawRemainder: range(19, 22) },
     crossCheckBaseline: [
       { label: "Y5 退保总额", policyYear: 5, field: "total_surrender_value", expected: 235858, tolerance: 200 },
     ],
