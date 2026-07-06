@@ -1,44 +1,52 @@
-V3.0.0-frozen
-============
+V3.1.0-fastpath-complete
+=======================
 
-封装日期: 2026-06-24
-Git commit: 见 git log (HEAD = v3-frozen branch / v3.0.0-frozen tag)
-源快照: /Users/soldier/free-code/packages/insurance-ppt/ @ 2026-06-24
+封装日期: 2026-07-05
+Git HEAD: 5fd23a4 fix: 9 buggy savings products + fitz fallback for LLM validation failures
+ECS PID: 101553 (启动于 2026-07-06 12:49 UTC+8)
+公网: https://ppt.gllpsce.cn (ECS Ubuntu 20.04 + Python 3.8 + Bun 1.3.14)
 
-本版本包含的关键修复 (相对于 v2):
+本版本关键特性 (相对于 v3.0.2-stable-14products):
 
-1. Manulife IUL PDF 提取
-   - scripts/extract_first_n_pages.py: 添加 CJK 字符检测, 自动 OCR 兜底
-   - scripts/extract_manulife_iul.py: parse_table_lines 修复 7-列 off-by-one
-     (退保價值 = nums[4], 不是 nums[3]; 之前读到的是最低退保價值)
-   - scripts/extract_manulife_iul.py: 自动识别缴费年期 (1/5/10/趸交)
+1. Fast-path 覆盖率 92% → 100% (24/24 储蓄险 + IUL)
+   - scripts/extract_savings_by_signature.py:
+     * extract_no_withdraw_pru()         保誠「信守明天」多元貨幣計劃 (TRST)
+     * extract_no_withdraw_china_taiping_1121()  太平「頤·樂享」尊享版 (1121NWLP7)
+     * extract_no_withdraw_chinalife()   中国人寿傲珑盛世 (C540)
+     * extract_no_withdraw_taiping()     中国太平鑫安逸 (AAXNA1U)
+   - src/extraction/signatures/registry.ts:
+     * PRU pageTargets: [2, 12, 13, 14] (从 14 页收敛到 4 页)
+     * 太平-1121 pageTargets: [3, 7, 8, 9, 10, 14] (从 12 页收敛到 6 页)
+   - src/extraction/orchestrator.ts:
+     * 完整性 check 优先用 signature.presentationHorizonYears
+     * JSON.parse 防御 (PyMuPDF ExtGState 错误污染 stdout)
 
-2. IUL PPTX 表头修正
-   - packages/insurance-deck/insdeck/render/pptx_renderer.py:
-     表头 "户口价值 非保证(USD)" → "退保价值 (USD)"
-     数据源 account_value_less_fee → non_guaranteed_cash_value (with fallback)
-   - 同上: 折线图系列名 "非保证户口价值" → "退保价值"
+2. LLM provider chain 简化
+   - kimi (踢出链, 配额耗尽) → minimax (主) → deepseek → agnes
+   - Agnes 仅作 fallback (实测慢 4-5x + 图多超时)
 
-冻结策略
-========
+3. 新增 signature
+   - aia-aibanhang-v1       AIA 愛伴航保險計劃 2
+   - aia-huanyu5-v2         AIA 環宇盈活儲蓄保險計劃 (5 年繳)
+   - transamerica-giul3-v2  全美 TA_GIUL3+M IUL (繁體版)
+   - transamerica-genesis3-v1  Genesis III IUL
 
-⚠️ 本目录代码已冻结. 任何改动需要用户明确命令.
-
-- 源文件: chmod 444 (只读)
-- 配置/数据: chmod 555 (只读 + 可执行)
-- 部署日志: chmod 755 logs/ (可写)
-- .env 模板: .env.example 可读, .env 由运维手动写入
-
-如需更新:
-  1. 在 /Users/soldier/free-code/packages/insurance-ppt/ 修改
-  2. 测试通过后, 重新封装 (rsync 覆盖 + 新 commit + 新 tag)
-  3. 重启服务: scripts/restart.sh
+4. AIA premium 解析增强 (scripts/extract_savings_by_signature.py)
+   - Pattern 1b: 表格列里识别 NN,NNN.XX
+   - Pattern 2: 重复 2+ 次的 NN,NNN.XX
+   - Pattern 3: 简体 levy 优先
 
 部署信息
 ========
-
 公网域名: https://ppt.gllpsce.cn
-本地端口: 3000
-Cloudflare Tunnel ID: 14ae1918-7d62-4a2c-b74d-bf6367449cc3
-启动方式: nohup bun run src/api/server.ts > logs/server.log 2>&1 &
+本地端口: 3000 (Docker) / 80 (ECS)
+启动方式: bash scripts/ecs-restart.sh
 管理脚本: scripts/start.sh, scripts/stop.sh, scripts/status.sh
+
+部署命令: bash scripts/ecs-deploy.sh
+备份命令: bash scripts/ecs-backup.sh <tag>
+
+回滚命令:
+  ssh root@47.242.58.70 'rm -rf /opt/insurance-ppt'
+  scp ~/insurance-ppt-v3-backups/ecs-2026-07-05-v3.1.0-fastpath-complete.tar.gz root@47.242.58.70:/opt/
+  ssh root@47.242.58.70 'cd /opt && tar -xzf ecs-2026-07-05-v3.1.0-fastpath-complete.tar.gz && bash /opt/insurance-ppt/scripts/ecs-restart.sh'
