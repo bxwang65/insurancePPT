@@ -1,0 +1,94 @@
+{
+  "customer_name": "陈先生全家",
+  "title": "家庭保障与财富传承方案",
+  "date": "2026-05-25",
+  "extractions": [
+    {
+      "pdfName": "匠心传承储蓄计划2.pdf",
+      "plan_type": "savings",
+      "data": {
+        "product_name": "匠心传承储蓄计划2尊尚版",
+        "insured": { "name": "陈先生", "age": 45, "gender": "男" },
+        "policy": {
+          "annual_premium": 100000,
+          "premium_payment_period": "5年",
+          "currency": "USD"
+        },
+        "benefit_illustration": [
+          { "policy_year": 1, "total_premium_paid": 100000, "total_surrender_value": 45000, "guaranteed_cash_value": 32000, "reversionary_bonus": 8000, "terminal_dividend": 5000 },
+          { "policy_year": 3, "total_premium_paid": 300000, "total_surrender_value": 280000, "guaranteed_cash_value": 220000, "reversionary_bonus": 40000, "terminal_dividend": 20000 },
+          { "policy_year": 5, "total_premium_paid": 500000, "total_surrender_value": 520000, "guaranteed_cash_value": 410000, "reversionary_bonus": 70000, "terminal_dividend": 40000 },
+          { "policy_year": 6, "total_premium_paid": 500000, "total_surrender_value": 560000, "guaranteed_cash_value": 440000, "reversionary_bonus": 80000, "terminal_dividend": 40000 },
+          { "policy_year": 7, "total_premium_paid": 500000, "total_surrender_value": 610000, "guaranteed_cash_value": 465000, "reversionary_bonus": 95000, "terminal_dividend": 50000 },
+          { "policy_year": 10, "total_premium_paid": 500000, "total_surrender_value": 820000, "guaranteed_cash_value": 560000, "reversionary_bonus": 160000, "terminal_dividend": 100000 },
+          { "policy_year": 15, "total_premium_paid": 500000, "total_surrender_value": 1150000, "guaranteed_cash_value": 680000, "reversionary_bonus": 280000, "terminal_dividend": 190000 },
+          { "policy_year": 20, "total_premium_paid": 500000, "total_surrender_value": 1350000, "guaranteed_cash_value": 780000, "reversionary_bonus": 350000, "terminal_dividend": 220000 }
+        ],
+        "withdrawal_illustration": [
+          { "policy_year": 1, "total_premium_paid": 100000, "annual_withdrawal": 35000, "total_withdrawn": 35000, "surrender_value_before": 45000, "surrender_value_after": 42000, "guaranteed_value_after": 30000 },
+          { "policy_year": 3, "total_premium_paid": 300000, "annual_withdrawal": 35000, "total_withdrawn": 105000, "surrender_value_before": 280000, "surrender_value_after": 240000, "guaranteed_value_after": 200000 },
+          { "policy_year": 5, "total_premium_paid": 500000, "annual_withdrawal": 35000, "total_withdrawn": 175000, "surrender_value_before": 520000, "surrender_value_after": 450000, "guaranteed_value_after": 380000 },
+          { "policy_year": 6, "total_premium_paid": 500000, "annual_withdrawal": 35000, "total_withdrawn": 210000, "surrender_value_before": 560000, "surrender_value_after": 490000, "guaranteed_value_after": 420000 },
+          { "policy_year": 10, "total_premium_paid": 500000, "annual_withdrawal": 35000, "total_withdrawn": 350000, "surrender_value_before": 820000, "surrender_value_after": 680000, "guaranteed_value_after": 550000 },
+          { "policy_year": 15, "total_premium_paid": 500000, "annual_withdrawal": 35000, "total_withdrawn": 525000, "surrender_value_before": 1150000, "surrender_value_after": 920000, "guaranteed_value_after": 700000 },
+          { "policy_year": 20, "total_premium_paid": 500000, "annual_withdrawal": 35000, "total_withdrawn": 700000, "surrender_value_before": 1350000, "surrender_value_after": 1080000, "guaranteed_value_after": 820000 }
+        ]
+      }
+    },
+    {
+      "pdfName": "愛伴航危疾保障.pdf",
+      "plan_type": "ci",
+      "data": {
+        "product_name": "愛伴航危疾保障计划",
+        "insured": { "name": "陈太太", "age": 40, "gender": "女" },
+        "policy": {
+          "sum_insured": 160000,
+          "annual_premium": 4800,
+          "premium_payment_period": "10年",
+          "coverage_period": "终身",
+          "currency": "USD"
+        },
+        "coverage_items": [
+          { "name": "癌症保障", "amount": 160000, "description": "三次赔付" },
+          { "name": "心脏病保障", "amount": 160000, "description": "严重心脏病" },
+          { "name": "中风保障", "amount": 160000, "description": "严重中风" },
+          { "name": "肾衰竭保障", "amount": 80000, "description": "末期肾衰竭" },
+          { "name": "冠状动脉手术", "amount": 80000, "description": "需要通波仔" },
+          { "name": "失明保障", "amount": 80000, "description": "完全失明" },
+          { "name": "主要器官移植", "amount": 160000, "description": "心脏/肝脏等" },
+          { "name": "柏金逊症保障", "amount": 40000, "description": "确诊即赔" }
+        ],
+        "multi_claim": [
+          { "condition": "癌症", "claim_count": 3, "description": "每次独立赔付，最高3次" },
+          { "condition": "心脏病", "claim_count": 2, "description": "每次独立赔付" },
+          { "condition": "中风", "claim_count": 2, "description": "每次独立赔付" }
+        ]
+      }
+    },
+    {
+      "pdfName": "万用寿险IUL.pdf",
+      "plan_type": "iul",
+      "data": {
+        "product_name": "环球万用寿险",
+        "insured": { "name": "陈先生", "age": 45, "gender": "男" },
+        "policy": {
+          "sum_insured": 500000,
+          "initial_premium": 100000,
+          "premium_payment_period": "灵活保费",
+          "coverage_period": "终身",
+          "fixed_account_rate": "4.25%",
+          "index_account_rate": "7.25%",
+          "currency": "USD"
+        },
+        "benefit_illustration": [
+          { "policy_year": 5, "total_premium_paid": 100000, "guaranteed_cash_value": 110000, "guaranteed_account_value": 115000, "guaranteed_death_benefit": 500000, "non_guaranteed_cash_value": 145000, "non_guaranteed_account_value": 150000, "non_guaranteed_death_benefit": 500000 },
+          { "policy_year": 10, "total_premium_paid": 100000, "guaranteed_cash_value": 143000, "guaranteed_account_value": 150000, "guaranteed_death_benefit": 500000, "non_guaranteed_cash_value": 280000, "non_guaranteed_account_value": 310000, "non_guaranteed_death_benefit": 500000 },
+          { "policy_year": 15, "total_premium_paid": 100000, "guaranteed_cash_value": 186000, "guaranteed_account_value": 195000, "guaranteed_death_benefit": 500000, "non_guaranteed_cash_value": 520000, "non_guaranteed_account_value": 580000, "non_guaranteed_death_benefit": 500000 },
+          { "policy_year": 20, "total_premium_paid": 100000, "guaranteed_cash_value": 243000, "guaranteed_account_value": 255000, "guaranteed_death_benefit": 500000, "non_guaranteed_cash_value": 920000, "non_guaranteed_account_value": 1050000, "non_guaranteed_death_benefit": 500000 },
+          { "policy_year": 25, "total_premium_paid": 100000, "guaranteed_cash_value": 318000, "guaranteed_account_value": 335000, "guaranteed_death_benefit": 500000, "non_guaranteed_cash_value": 1650000, "non_guaranteed_account_value": 1900000, "non_guaranteed_death_benefit": 500000 },
+          { "policy_year": 30, "total_premium_paid": 100000, "guaranteed_cash_value": 415000, "guaranteed_account_value": 440000, "guaranteed_death_benefit": 500000, "non_guaranteed_cash_value": 2950000, "non_guaranteed_account_value": 3400000, "non_guaranteed_death_benefit": 500000 }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+# Docker Compose for insurance-ppt-v3 local development
+# 用法:
+#   docker compose up --build    # 首次构建并启动
+#   docker compose up             # 之后启动 (热重载源码)
+#   docker compose down           # 停止
+#
+# 设计:
+#   - 镜像和 ECS 完全一致 (Ubuntu 20.04 + Python 3.11 + Bun + LibreOffice)
+#   - 源码通过 bind mount 热重载 (改 src/ 自动 reload)
+#   - node_modules 用 named volume 保留 (避免被本地空目录覆盖)
+#   - 端口: 容器内 80, 本地 3000
+
+services:
+  insurance-ppt:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: insurance-ppt:v3.0.3
+    container_name: insurance-ppt-dev
+    restart: unless-stopped
+    ports:
+      - "3000:80"
+    volumes:
+      # 源码热重载 (本地改文件, 容器内 --watch 自动 reload)
+      - ./src:/opt/insurance-ppt/src
+      - ./scripts:/opt/insurance-ppt/scripts
+      - ./public:/opt/insurance-ppt/public
+      - ./config:/opt/insurance-ppt/config
+      - ./data:/opt/insurance-ppt/data
+      - ./docs:/opt/insurance-ppt/docs
+      - ./package.json:/opt/insurance-ppt/package.json:ro
+      - ./bun.lock:/opt/insurance-ppt/bun.lock:ro
+      # .env 注入 (必须存在)
+      - ./.env:/opt/insurance-ppt/.env:ro
+      # node_modules 用 named volume 保留 (不被本地空目录覆盖)
+      - node_modules:/opt/insurance-ppt/node_modules
+      # 上传文件 / cache / sessions / logs 持久化
+      - uploads_data:/opt/insurance-ppt/uploads
+      - sessions_data:/opt/insurance-ppt/sessions
+      - cache_data:/opt/insurance-ppt/.cache
+      - outputs_data:/opt/insurance-ppt/outputs
+      - logs_data:/opt/insurance-ppt/logs
+    environment:
+      - PORT=80
+      # 清掉 Mac 上 VPN 的代理设置 (容器内 127.0.0.1:7890 不可达)
+      - HTTP_PROXY=
+      - HTTPS_PROXY=
+      - http_proxy=
+      - https_proxy=
+      - NO_PROXY=*
+      - no_proxy=*
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:80/api/health"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+
+  # 4IN1 (松石菘蓝工具箱 H5) - Vue3 + Vite
+  # 路径有空格, 通过 docker/4in1/src symlink 访问
+  # 必须 linux/amd64 (匹配 ECS), 否则 npm install 在 Mac arm64 上拉 arm64 二进制,
+  # 容器跑 linux/amd64 时 esbuild 会报 platform mismatch
+  4in1:
+    build:
+      context: ./docker/4in1/src
+      dockerfile: ../Dockerfile
+      platforms:
+        - linux/amd64
+    image: 4in1:dev
+    container_name: 4in1-dev
+    restart: unless-stopped
+    platform: linux/amd64
+    ports:
+      - "8080:8080"
+    volumes:
+      # 源码热重载 (symlink 解决路径空格问题)
+      - ./docker/4in1/src/src:/app/src
+      - ./docker/4in1/src/public:/app/public
+      - ./docker/4in1/src/index.html:/app/index.html:ro
+      - ./docker/4in1/src/vite.config.js:/app/vite.config.js:ro
+      - ./docker/4in1/src/package.json:/app/package.json:ro
+      - ./docker/4in1/src/package-lock.json:/app/package-lock.json:ro
+      - ./docker/4in1/src/.env:/app/.env:ro
+      # node_modules: 不挂载, 直接用 image 里的 (linux/amd64 原生二进制)
+      # 改 deps 时: docker compose build 4in1 --no-cache 重新构建 image
+      # 注意: 4in1_node_modules volume 不再使用, 保留以防需要回滚
+    environment:
+      # 清掉 Mac 上 VPN 的代理设置
+      - HTTP_PROXY=
+      - HTTPS_PROXY=
+      - http_proxy=
+      - https_proxy=
+      - NO_PROXY=*
+      - no_proxy=*
+      # 4IN1 的 vite.config.js 会读 VITE_API_PROXY
+      # 这里设了保险起见, 但 iframe 模式其实用不到 (iframe src 在 .env 里写死 localhost:3000)
+      - VITE_API_PROXY=http://insurance-ppt:80
+    depends_on:
+      - insurance-ppt
+
+volumes:
+  node_modules:
+  uploads_data:
+  sessions_data:
+  cache_data:
+  outputs_data:
+  logs_data:
+  4in1_node_modules:

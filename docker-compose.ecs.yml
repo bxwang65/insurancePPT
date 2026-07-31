@@ -1,0 +1,79 @@
+# Docker Compose for insurance-ppt-v3 ECS deployment
+# Created: 2026-07-24, ECS docker 化方案 (方案 A: 不格式化系统盘)
+#
+# 与 docker-compose.yml 的关键差异 (Mac 8080 god backup 不动):
+#   - ports: 80:80           (Mac 是 3000:80, 因为 Mac 有 insurance-ppt-live 容器跑 3000)
+#   - 容器名: insurance-ppt-ecs                     (避免跟 Mac 容器名冲突)
+#   - image tag: insurance-ppt:ecs-v3.0.3          (避免跟 Mac 镜像混淆)
+#   - 不跑 4in1 service (ECS 上 4in1 是手动 npm run dev 在 /opt/4in1/src 跑 PID 481)
+#     原因: docker/4in1/src symlink 是死链接 (指向 Mac 路径), 不重建 4in1 容器
+#
+# 用法 (在 ECS 上跑):
+#   docker compose -f docker-compose.ecs.yml build
+#   docker compose -f docker-compose.ecs.yml up -d
+#
+# 代码更新流程 (Mac 上一键):
+#   bash scripts/ecs-deploy.sh
+#
+# 4in1 更新流程 (Mac 上一键):
+#   bash scripts/ecs-deploy-4in1.sh  # TODO: 待写
+
+services:
+  insurance-ppt:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: insurance-ppt:ecs-v3.0.3
+    container_name: insurance-ppt-ecs
+    restart: unless-stopped
+    ports:
+      - "3000:80"  # 2026-07-30: ECS 主机 80 给 nginx 反代, insurance-ppt 后端改用 3000
+    volumes:
+      # 源码热重载 (Mac 改 src/, 容器内 --watch 自动 reload)
+      - ./src:/opt/insurance-ppt/src
+      - ./scripts:/opt/insurance-ppt/scripts
+      - ./public:/opt/insurance-ppt/public
+      - ./config:/opt/insurance-ppt/config
+      - ./data:/opt/insurance-ppt/data
+      # 2026-07-27: 硬编码路径 /Users/soldier/Desktop/公司介绍 在 ECS Ubuntu 容器里不存在,
+      # 把本地 Mac 的公司资料库挂到容器里, 让 company-kb.ts 的 KNOWLEDGE_ROOT 检查能通过
+      - /opt/insurance-ppt/data/company-evidence:/Users/soldier/Desktop/公司介绍
+      - ./docs:/opt/insurance-ppt/docs
+      - ./package.json:/opt/insurance-ppt/package.json:ro
+      - ./bun.lock:/opt/insurance-ppt/bun.lock:ro
+      # .env 注入 (必须存在, 包含 LLM keys + Firebase config)
+      - ./.env:/opt/insurance-ppt/.env:ro
+      # node_modules 用 named volume 保留 (不被本地空目录覆盖)
+      - node_modules_ecs:/opt/insurance-ppt/node_modules
+      # 上传文件 / cache / sessions / logs 持久化
+      - uploads_data_ecs:/opt/insurance-ppt/uploads
+      - sessions_data_ecs:/opt/insurance-ppt/sessions
+      - cache_data_ecs:/opt/insurance-ppt/.cache
+      - outputs_data_ecs:/opt/insurance-ppt/outputs
+      - logs_data_ecs:/opt/insurance-ppt/logs
+    environment:
+      - PORT=80
+      # 清掉 Mac 上 VPN 的代理设置 (容器内 127.0.0.1:7890 不可达)
+      - HTTP_PROXY=
+      - HTTPS_PROXY=
+      - http_proxy=
+      - https_proxy=
+      - NO_PROXY=*
+      - no_proxy=*
+      # ECS 主机名, 让 Bun 日志能识别环境
+      - ECS_HOSTNAME=iZj6c9hh6jylw675dyuhruZ
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:80/api/health"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+    # 关键: Bun crash 后 docker 自动重启 (unless-stopped = 除非手动 stop 否则一直 restart)
+    # 这是 ECS "便于后期更新" + "Bun 死了用户感知不到" 的核心保障
+
+volumes:
+  node_modules_ecs:
+  uploads_data_ecs:
+  sessions_data_ecs:
+  cache_data_ecs:
+  outputs_data_ecs:
+  logs_data_ecs:

@@ -1,0 +1,27 @@
+{
+  "name": "huashu-design",
+  "version": "1.0.0",
+  "description": "<sub>🌐 <a href=\"README.md\">English</a> · <b>中文</b></sub>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alchaincyf/huashu-design.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/alchaincyf/huashu-design/issues"
+  },
+  "homepage": "https://github.com/alchaincyf/huashu-design#readme",
+  "dependencies": {
+    "pdf-lib": "^1.17.1",
+    "playwright": "^1.60.0",
+    "pptxgenjs": "^4.0.1",
+    "sharp": "^0.34.5"
+  }
+}

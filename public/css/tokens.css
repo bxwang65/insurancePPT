@@ -1,0 +1,187 @@
+/* =========================================================================
+   Insurance Plan AI - 设计系统 Tokens
+   由 00-DESIGN-SYSTEM.md 提炼而来
+   ========================================================================= */
+
+:root {
+  /* —— Surface 系统 (Material 3 风格 Apple 化) —— */
+  --bg-base:               #FAFAFA;
+  --surface:               #f9f9f9;
+  --surface-container-lowest: #ffffff;
+  --surface-container-low: #f3f3f3;
+  --surface-container:     #eeeeee;
+  --surface-container-high: #e8e8e8;
+  --surface-container-highest: #e2e2e2;
+
+  /* —— 文字 —— */
+  --on-surface:            #1a1c1c;
+  --text-primary:          #1D1D1F;
+  --text-secondary:        #6E6E73;
+  --text-tertiary:         #AEAEB2;
+
+  /* —— 边框 / 描边 —— */
+  --border-subtle:         #E5E5EA;
+  --outline-variant:       #d3c4b2;
+
+  /* —— 品牌金 (单屏 ≤ 2 处) —— */
+  --brand-gold:            #C8963E;
+  --brand-gold-hover:      #A87E2A;
+  --brand-gold-soft:       #FBF6EC;
+  --primary-container:     #c8963e;
+  --on-primary-container:  #4a3100;
+
+  /* —— 状态色 (Apple 系统色) —— */
+  --status-success:        #34C759;
+  --status-warning:        #FF9500;
+  --status-error:          #FF3B30;
+  --status-info:           #007AFF;
+
+  /* —— 其他 Material 3 派生色 (留给跨屏组件) —— */
+  --tertiary:              #005bc1;
+  --tertiary-fixed:        #d8e2ff;
+  --secondary:             #5f5e60;
+  --on-tertiary-fixed-variant: #004493;
+  --inverse-surface:       #2f3131;
+  --surface-tint:          #7e5700;
+
+  /* —— 圆角 —— */
+  --radius-xs:             6px;
+  --radius-sm:             10px;
+  --radius-md:             14px;
+  --radius-lg:             20px;
+  --radius-xl:             28px;
+  --radius-full:           9999px;
+
+  /* —— 阴影 (极轻, iOS 质感) —— */
+  --shadow-sm:             0 1px 2px rgba(0,0,0,0.04);
+  --shadow-md:             0 4px 12px rgba(0,0,0,0.05), 0 1px 3px rgba(0,0,0,0.03);
+  --shadow-lg:             0 12px 32px rgba(0,0,0,0.08), 0 2px 8px rgba(0,0,0,0.04);
+  --shadow-xl:             0 24px 64px rgba(0,0,0,0.10);
+
+  /* —— 字体 —— */
+  --font-sans: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Inter",
+               "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", system-ui, sans-serif;
+  --font-mono: "SF Mono", ui-monospace, Menlo, monospace;
+
+  /* —— 间距 8 栅格 —— */
+  --space-1:  4px;
+  --space-2:  8px;
+  --space-3:  12px;
+  --space-4:  16px;
+  --space-5:  20px;
+  --space-6:  24px;
+  --space-8:  32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-20: 80px;
+}
+
+/* —— 全局 reset —— */
+* { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+html, body { font-family: var(--font-sans); }
+body { background: var(--bg-base); color: var(--on-surface); line-height: 1.5; -webkit-font-smoothing: antialiased; }
+
+/* —— 滚动条 (干净) —— */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #e2e2e2; border-radius: 10px; }
+::-webkit-scrollbar-thumb:hover { background: var(--brand-gold); }
+
+/* —— 屏幕切换基础 —— */
+.screen { display: none; min-height: 100vh; }
+.screen.active { display: block; animation: screenIn 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94); }
+@keyframes screenIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* —— Material Symbols 字体微调 —— */
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  vertical-align: middle;
+}
+
+/* —— 步骤指示器 (5 屏共享) —— */
+.steps-nav {
+  position: fixed; top: 0; left: 0; right: 0;
+  height: 64px; background: var(--surface);
+  border-bottom: 1px solid var(--border-subtle);
+  z-index: 50;
+  display: flex; align-items: center; justify-content: center;
+  gap: 24px;
+  font-family: var(--font-sans);
+}
+.steps-nav .step-item {
+  display: flex; align-items: center; gap: 8px;
+  font-size: 13px; font-weight: 500; color: var(--text-tertiary);
+  transition: color 0.2s;
+}
+.steps-nav .step-item .step-dot {
+  width: 24px; height: 24px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  background: var(--surface-container-high);
+  color: var(--text-tertiary); font-size: 11px; font-weight: 600;
+  transition: all 0.2s;
+}
+.steps-nav .step-item.done .step-dot {
+  background: var(--status-success); color: white;
+  font-variation-settings: 'FILL' 1;
+}
+.steps-nav .step-item.done { color: var(--status-success); }
+.steps-nav .step-item.active .step-dot {
+  background: var(--on-surface); color: var(--surface);
+}
+.steps-nav .step-item.active { color: var(--on-surface); font-weight: 600; }
+.steps-nav .step-divider {
+  width: 32px; height: 1px; background: var(--border-subtle);
+}
+.steps-nav .step-divider.done { background: var(--status-success); }
+
+/* —— 通用工具 —— */
+.ambient-shadow { box-shadow: var(--shadow-md); }
+.hide-scrollbar::-webkit-scrollbar { display: none; }
+.hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+.fade-enter { animation: fadeIn 0.3s ease-out; }
+@keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+
+/* —— 品牌主按钮 —— */
+.btn-brand {
+  background: var(--primary-container); color: white;
+  border: none; border-radius: var(--radius-md);
+  padding: 0 32px; height: 48px;
+  font-size: 16px; font-weight: 600; cursor: pointer;
+  display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+  transition: all 0.2s;
+  box-shadow: var(--shadow-sm);
+}
+.btn-brand:hover { background: var(--brand-gold-hover); }
+.btn-brand:active { transform: scale(0.98); }
+.btn-brand:disabled { background: var(--surface-container-high); color: var(--text-tertiary); cursor: not-allowed; transform: none; }
+
+.btn-secondary {
+  background: var(--surface-container-lowest); color: var(--on-surface);
+  border: 1px solid var(--border-subtle); border-radius: var(--radius-md);
+  padding: 0 24px; height: 48px;
+  font-size: 15px; font-weight: 500; cursor: pointer;
+  display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+  transition: all 0.2s;
+}
+.btn-secondary:hover { background: var(--surface-container-low); }
+.btn-secondary:active { transform: scale(0.98); }
+
+.btn-text {
+  background: transparent; border: none; color: var(--status-info);
+  font-size: 13px; font-weight: 500; cursor: pointer; padding: 6px 10px;
+  border-radius: var(--radius-sm);
+  transition: background 0.2s;
+}
+.btn-text:hover { background: rgba(0,122,255,0.08); }
+
+/* —— 卡片基础 —— */
+.card-base {
+  background: var(--surface-container-lowest);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+}

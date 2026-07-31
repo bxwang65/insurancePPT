@@ -1,0 +1,71 @@
+{
+  "version": 1,
+  "generatedAt": "2026-06-14T16:05:19.539316+00:00",
+  "assets": [
+    {
+      "id": "broker",
+      "sourceRoot": "/Users/soldier/Downloads",
+      "relativePath": "财富保障方案——券商风 .pptx",
+      "fileName": "财富保障方案——券商风 .pptx",
+      "sha256": "641b236286205e75e3f49fa6df9c4fa81978669a1675e2589cde42a9dbd04d2e",
+      "sizeBytes": 1454044,
+      "modifiedAt": "2026-06-01T02:10:45+00:00",
+      "slideCount": 25,
+      "mediaCount": 170,
+      "status": "indexed",
+      "mutationMode": "artifact-tool-exact-clone-edit"
+    },
+    {
+      "id": "business",
+      "sourceRoot": "/Users/soldier/Downloads",
+      "relativePath": "财富保障方案——商务风 .pptx",
+      "fileName": "财富保障方案——商务风 .pptx",
+      "sha256": "a956c2ca0c98e75a18e4ebdbc7716a3c8557fbe1b8da71c00fd536fcb9030488",
+      "sizeBytes": 3433594,
+      "modifiedAt": "2026-06-01T02:06:35+00:00",
+      "slideCount": 9,
+      "mediaCount": 37,
+      "status": "indexed",
+      "mutationMode": "artifact-tool-exact-clone-edit"
+    },
+    {
+      "id": "minimal",
+      "sourceRoot": "/Users/soldier/Downloads",
+      "relativePath": "财富保障方案——简洁风 .pptx",
+      "fileName": "财富保障方案——简洁风 .pptx",
+      "sha256": "333fc0f3863b151fd8660d27fb4448bc5724b9c5a51364dc6aea4fc4777af7c0",
+      "sizeBytes": 15799678,
+      "modifiedAt": "2026-06-01T02:07:34+00:00",
+      "slideCount": 38,
+      "mediaCount": 57,
+      "status": "indexed",
+      "mutationMode": "artifact-tool-exact-clone-edit"
+    },
+    {
+      "id": "chinese",
+      "sourceRoot": "/Users/soldier/Downloads",
+      "relativePath": "财富保障方案——中国风 .pptx",
+      "fileName": "财富保障方案——中国风 .pptx",
+      "sha256": "77b3bb58b4c238e285b45f4a9dc2c90ffbd56318055b200a6c6da2d4f605d888",
+      "sizeBytes": 15888805,
+      "modifiedAt": "2026-06-01T02:05:50+00:00",
+      "slideCount": 27,
+      "mediaCount": 39,
+      "status": "indexed",
+      "mutationMode": "artifact-tool-exact-clone-edit"
+    },
+    {
+      "id": "ink",
+      "sourceRoot": "/Users/soldier/Downloads",
+      "relativePath": "财富保障方案——水墨风 .pptx",
+      "fileName": "财富保障方案——水墨风 .pptx",
+      "sha256": "9812333e4868a0e3ea8dfe39236a564009d60bed3ed3821ba873b430559766b0",
+      "sizeBytes": 12211794,
+      "modifiedAt": "2026-06-01T02:04:34+00:00",
+      "slideCount": 31,
+      "mediaCount": 50,
+      "status": "indexed",
+      "mutationMode": "artifact-tool-exact-clone-edit"
+    }
+  ]
+}

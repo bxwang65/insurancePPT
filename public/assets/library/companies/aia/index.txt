@@ -1,0 +1,9 @@
+# AIA 友邦保险 素材库
+
+adviser-01.jpg  -  顾问服务 / 高净值咨询场景
+adviser-02.jpg  -  顾问服务备用图
+brand-01.jpg  -  公司品牌感主图
+brand-02.jpg  -  公司品牌感辅图
+company-hero-01.jpg  -  公司介绍页大横图
+logo.png  -  公司 logo 占位图（白底/彩色）
+office-01.jpg  -  金融办公 / 会议室场景

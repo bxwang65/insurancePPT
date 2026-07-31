@@ -1,0 +1,544 @@
+{
+  "product_id": "aia-huanyuyinghuo",
+  "product_name": "「環宇盈活」儲蓄保險計劃",
+  "product_code": "HYYH",
+  "company": "aia",
+  "plan_type": "savings",
+  "currency": "USD",
+  "extracted_at": "2026-07-07T00:00:00Z",
+  "samples": [
+    {
+      "source_pdf": "友邦——環宇盈活儲蓄保險計劃.pdf",
+      "insured_age": 1,
+      "insured_gender": "男",
+      "annual_premium": 100000.08,
+      "sum_insured": 105000.0,
+      "payment_years": 5,
+      "coverage_period": "终身",
+      "benefit_illustration_rows": 18,
+      "data": {
+        "summary": {
+          "insured_name": "性别：男",
+          "insured_age": 1,
+          "insured_gender": "男",
+          "smoker": null,
+          "product_name": "「環宇盈活」儲蓄保險計劃",
+          "product_code": "HYYH",
+          "currency": "USD",
+          "annual_premium": 100000.08,
+          "annual_premium_with_levy": 100012.93,
+          "payment_years": 5,
+          "coverage_period": "终身",
+          "premium_total": 500000.4,
+          "sum_insured": 105000.0,
+          "basic_amount": null,
+          "coverage_items": [
+            {
+              "name": "首12个月意外身故赔偿",
+              "amount": 100000.0,
+              "period": null
+            },
+            {
+              "name": "保单货币",
+              "amount": 105000.0,
+              "period": "终身"
+            },
+            {
+              "name": "投保时保额",
+              "amount": 105000.0,
+              "period": "终身"
+            }
+          ],
+          "key_clauses": [
+            "保证现金价值",
+            "复归红利",
+            "终期分红",
+            "身故赔偿",
+            "退保发还金额",
+            "保费征费"
+          ]
+        },
+        "benefit_illustration": [
+          {
+            "policy_year": 1,
+            "total_premium_paid": 100000.0,
+            "guaranteed_cash_value": 103.0,
+            "reversionary_bonus": 0.0,
+            "total_surrender_value": 103.0,
+            "guaranteed_death_benefit": 105000.0,
+            "non_guaranteed_death_benefit": 0.0,
+            "death_benefit": 105000.0,
+            "source_page": 1
+          },
+          {
+            "policy_year": 2,
+            "total_premium_paid": 200000.0,
+            "guaranteed_cash_value": 103.0,
+            "reversionary_bonus": 0.0,
+            "total_surrender_value": 103.0,
+            "guaranteed_death_benefit": 210000.0,
+            "non_guaranteed_death_benefit": 0.0,
+            "death_benefit": 210000.0,
+            "source_page": 1
+          },
+          {
+            "policy_year": 3,
+            "total_premium_paid": 300000.0,
+            "guaranteed_cash_value": 26722.0,
+            "reversionary_bonus": 23866.0,
+            "total_surrender_value": 50587.0,
+            "guaranteed_death_benefit": 315000.0,
+            "non_guaranteed_death_benefit": 23866.0,
+            "death_benefit": 315000.0,
+            "source_page": 1
+          },
+          {
+            "policy_year": 4,
+            "total_premium_paid": 400000.0,
+            "guaranteed_cash_value": 75026.0,
+            "reversionary_bonus": 51243.0,
+            "total_surrender_value": 126269.0,
+            "guaranteed_death_benefit": 420000.0,
+            "non_guaranteed_death_benefit": 51243.0,
+            "death_benefit": 420000.0,
+            "source_page": 1
+          },
+          {
+            "policy_year": 5,
+            "total_premium_paid": 500000.0,
+            "guaranteed_cash_value": 141830.0,
+            "reversionary_bonus": 93803.0,
+            "total_surrender_value": 235632.0,
+            "guaranteed_death_benefit": 525000.0,
+            "non_guaranteed_death_benefit": 93803.0,
+            "death_benefit": 525000.0,
+            "source_page": 1
+          },
+          {
+            "policy_year": 10,
+            "total_premium_paid": 500000.0,
+            "guaranteed_cash_value": 315519.0,
+            "reversionary_bonus": 344246.0,
+            "total_surrender_value": 659765.0,
+            "guaranteed_death_benefit": 525000.0,
+            "non_guaranteed_death_benefit": 344246.0,
+            "death_benefit": 659765.0,
+            "source_page": 1
+          },
+          {
+            "policy_year": 15,
+            "total_premium_paid": 500000.0,
+            "guaranteed_cash_value": 365879.0,
+            "reversionary_bonus": 567402.0,
+            "total_surrender_value": 933280.0,
+            "guaranteed_death_benefit": 525000.0,
+            "non_guaranteed_death_benefit": 567402.0,
+            "death_benefit": 933280.0,
+            "source_page": 1
+          },
+          {
+            "policy_year": 20,
+            "total_premium_paid": 500000.0,
+            "guaranteed_cash_value": 507709.0,
+            "reversionary_bonus": 850029.0,
+            "total_surrender_value": 1357738.0,
+            "guaranteed_death_benefit": 525000.0,
+            "non_guaranteed_death_benefit": 850029.0,
+            "death_benefit": 1357738.0,
+            "source_page": 1
+          },
+          {
+            "policy_year": 25,
+            "total_premium_paid": 500000.0,
+            "guaranteed_cash_value": 512847.0,
+            "reversionary_bonus": 1549602.0,
+            "total_surrender_value": 2062449.0,
+            "guaranteed_death_benefit": 525000.0,
+            "non_guaranteed_death_benefit": 1549602.0,
+            "death_benefit": 2062449.0,
+            "source_page": 1
+          },
+          {
+            "policy_year": 30,
+            "total_premium_paid": 500000.0,
+            "guaranteed_cash_value": 517986.0,
+            "reversionary_bonus": 2409401.0,
+            "total_surrender_value": 2927387.0,
+            "guaranteed_death_benefit": 525000.0,
+            "non_guaranteed_death_benefit": 2409401.0,
+            "death_benefit": 2927387.0,
+            "source_page": 1
+          },
+          {
+            "policy_year": 65,
+            "total_premium_paid": 500000.0,
+            "guaranteed_cash_value": 584790.0,
+            "reversionary_bonus": 24324817.0,
+            "total_surrender_value": 24909607.0,
+            "guaranteed_death_benefit": 584790.0,
+            "non_guaranteed_death_benefit": 24324817.0,
+            "death_benefit": 24909607.0,
+            "source_page": 1
+          },
+          {
+            "policy_year": 70,
+            "total_premium_paid": 500000.0,
+            "guaranteed_cash_value": 595684.0,
+            "reversionary_bonus": 33532637.0,
+            "total_surrender_value": 34128321.0,
+            "guaranteed_death_benefit": 595684.0,
+            "non_guaranteed_death_benefit": 33532637.0,
+            "death_benefit": 34128321.0,
+            "source_page": 1
+          },
+          {
+            "policy_year": 75,
+            "total_premium_paid": 500000.0,
+            "guaranteed_cash_value": 608428.0,
+            "reversionary_bonus": 46150329.0,
+            "total_surrender_value": 46758758.0,
+            "guaranteed_death_benefit": 608428.0,
+            "non_guaranteed_death_benefit": 46150329.0,
+            "death_benefit": 46758758.0,
+            "source_page": 1
+          },
+          {
+            "policy_year": 80,
+            "total_premium_paid": 500000.0,
+            "guaranteed_cash_value": 620761.0,
+            "reversionary_bonus": 63442790.0,
+            "total_surrender_value": 64063551.0,
+            "guaranteed_death_benefit": 620761.0,
+            "non_guaranteed_death_benefit": 63442790.0,
+            "death_benefit": 64063551.0,
+            "source_page": 1
+          },
+          {
+            "policy_year": 85,
+            "total_premium_paid": 500000.0,
+            "guaranteed_cash_value": 635150.0,
+            "reversionary_bonus": 87137468.0,
+            "total_surrender_value": 87772617.0,
+            "guaranteed_death_benefit": 635150.0,
+            "non_guaranteed_death_benefit": 87137468.0,
+            "death_benefit": 87772617.0,
+            "source_page": 1
+          },
+          {
+            "policy_year": 90,
+            "total_premium_paid": 500000.0,
+            "guaranteed_cash_value": 648510.0,
+            "reversionary_bonus": 119607581.0,
+            "total_surrender_value": 120256092.0,
+            "guaranteed_death_benefit": 648510.0,
+            "non_guaranteed_death_benefit": 119607581.0,
+            "death_benefit": 120256092.0,
+            "source_page": 1
+          },
+          {
+            "policy_year": 95,
+            "total_premium_paid": 500000.0,
+            "guaranteed_cash_value": 665982.0,
+            "reversionary_bonus": 164095285.0,
+            "total_surrender_value": 164761267.0,
+            "guaranteed_death_benefit": 665982.0,
+            "non_guaranteed_death_benefit": 164095285.0,
+            "death_benefit": 164761267.0,
+            "source_page": 1
+          },
+          {
+            "policy_year": 100,
+            "total_premium_paid": 500000.0,
+            "guaranteed_cash_value": 680371.0,
+            "reversionary_bonus": 225056844.0,
+            "total_surrender_value": 225737215.0,
+            "guaranteed_death_benefit": 680371.0,
+            "non_guaranteed_death_benefit": 225056844.0,
+            "death_benefit": 225737215.0,
+            "source_page": 1
+          }
+        ]
+      }
+    },
+    {
+      "source_pdf": "友邦——環宇盈活儲蓄保險計劃(1).pdf",
+      "insured_age": 1,
+      "insured_gender": "男",
+      "annual_premium": 100000.08,
+      "sum_insured": 105000.0,
+      "payment_years": 5,
+      "coverage_period": "终身",
+      "benefit_illustration_rows": 18,
+      "data": {
+        "summary": {
+          "insured_name": "性别：男",
+          "insured_age": 1,
+          "insured_gender": "男",
+          "smoker": null,
+          "product_name": "「環宇盈活」儲蓄保險計劃",
+          "product_code": "HYYH",
+          "currency": "USD",
+          "annual_premium": 100000.08,
+          "annual_premium_with_levy": 100012.94,
+          "payment_years": 5,
+          "coverage_period": "终身",
+          "premium_total": 500000.4,
+          "sum_insured": 105000.0,
+          "basic_amount": null,
+          "coverage_items": [
+            {
+              "name": "首12个月意外身故赔偿",
+              "amount": 100000.0,
+              "period": null
+            },
+            {
+              "name": "保单货币",
+              "amount": 105000.0,
+              "period": "终身"
+            },
+            {
+              "name": "投保时保额",
+              "amount": 105000.0,
+              "period": "终身"
+            }
+          ],
+          "key_clauses": [
+            "保证现金价值",
+            "复归红利",
+            "终期分红",
+            "身故赔偿",
+            "退保发还金额",
+            "保费征费"
+          ]
+        },
+        "benefit_illustration": [
+          {
+            "policy_year": 1,
+            "total_premium_paid": 100000.0,
+            "guaranteed_cash_value": 103.0,
+            "reversionary_bonus": 0.0,
+            "total_surrender_value": 103.0,
+            "guaranteed_death_benefit": 105000.0,
+            "non_guaranteed_death_benefit": 0.0,
+            "death_benefit": 105000.0,
+            "source_page": 1
+          },
+          {
+            "policy_year": 2,
+            "total_premium_paid": 200000.0,
+            "guaranteed_cash_value": 103.0,
+            "reversionary_bonus": 0.0,
+            "total_surrender_value": 103.0,
+            "guaranteed_death_benefit": 210000.0,
+            "non_guaranteed_death_benefit": 0.0,
+            "death_benefit": 210000.0,
+            "source_page": 1
+          },
+          {
+            "policy_year": 3,
+            "total_premium_paid": 300000.0,
+            "guaranteed_cash_value": 26722.0,
+            "reversionary_bonus": 23866.0,
+            "total_surrender_value": 50587.0,
+            "guaranteed_death_benefit": 315000.0,
+            "non_guaranteed_death_benefit": 23866.0,
+            "death_benefit": 315000.0,
+            "source_page": 1
+          },
+          {
+            "policy_year": 4,
+            "total_premium_paid": 400000.0,
+            "guaranteed_cash_value": 75026.0,
+            "reversionary_bonus": 51243.0,
+            "total_surrender_value": 126269.0,
+            "guaranteed_death_benefit": 420000.0,
+            "non_guaranteed_death_benefit": 51243.0,
+            "death_benefit": 420000.0,
+            "source_page": 1
+          },
+          {
+            "policy_year": 5,
+            "total_premium_paid": 500000.0,
+            "guaranteed_cash_value": 141830.0,
+            "reversionary_bonus": 93803.0,
+            "total_surrender_value": 235632.0,
+            "guaranteed_death_benefit": 525000.0,
+            "non_guaranteed_death_benefit": 93803.0,
+            "death_benefit": 525000.0,
+            "source_page": 1
+          },
+          {
+            "policy_year": 10,
+            "total_premium_paid": 500000.0,
+            "guaranteed_cash_value": 315519.0,
+            "reversionary_bonus": 344246.0,
+            "total_surrender_value": 659765.0,
+            "guaranteed_death_benefit": 525000.0,
+            "non_guaranteed_death_benefit": 344246.0,
+            "death_benefit": 659765.0,
+            "source_page": 1
+          },
+          {
+            "policy_year": 15,
+            "total_premium_paid": 500000.0,
+            "guaranteed_cash_value": 365879.0,
+            "reversionary_bonus": 567402.0,
+            "total_surrender_value": 933280.0,
+            "guaranteed_death_benefit": 525000.0,
+            "non_guaranteed_death_benefit": 567402.0,
+            "death_benefit": 933280.0,
+            "source_page": 1
+          },
+          {
+            "policy_year": 20,
+            "total_premium_paid": 500000.0,
+            "guaranteed_cash_value": 507709.0,
+            "reversionary_bonus": 850029.0,
+            "total_surrender_value": 1357738.0,
+            "guaranteed_death_benefit": 525000.0,
+            "non_guaranteed_death_benefit": 850029.0,
+            "death_benefit": 1357738.0,
+            "source_page": 1
+          },
+          {
+            "policy_year": 25,
+            "total_premium_paid": 500000.0,
+            "guaranteed_cash_value": 512847.0,
+            "reversionary_bonus": 1549602.0,
+            "total_surrender_value": 2062449.0,
+            "guaranteed_death_benefit": 525000.0,
+            "non_guaranteed_death_benefit": 1549602.0,
+            "death_benefit": 2062449.0,
+            "source_page": 1
+          },
+          {
+            "policy_year": 30,
+            "total_premium_paid": 500000.0,
+            "guaranteed_cash_value": 517986.0,
+            "reversionary_bonus": 2409401.0,
+            "total_surrender_value": 2927387.0,
+            "guaranteed_death_benefit": 525000.0,
+            "non_guaranteed_death_benefit": 2409401.0,
+            "death_benefit": 2927387.0,
+            "source_page": 1
+          },
+          {
+            "policy_year": 65,
+            "total_premium_paid": 500000.0,
+            "guaranteed_cash_value": 584790.0,
+            "reversionary_bonus": 24324817.0,
+            "total_surrender_value": 24909607.0,
+            "guaranteed_death_benefit": 584790.0,
+            "non_guaranteed_death_benefit": 24324817.0,
+            "death_benefit": 24909607.0,
+            "source_page": 1
+          },
+          {
+            "policy_year": 70,
+            "total_premium_paid": 500000.0,
+            "guaranteed_cash_value": 595684.0,
+            "reversionary_bonus": 33532637.0,
+            "total_surrender_value": 34128321.0,
+            "guaranteed_death_benefit": 595684.0,
+            "non_guaranteed_death_benefit": 33532637.0,
+            "death_benefit": 34128321.0,
+            "source_page": 1
+          },
+          {
+            "policy_year": 75,
+            "total_premium_paid": 500000.0,
+            "guaranteed_cash_value": 608428.0,
+            "reversionary_bonus": 46150329.0,
+            "total_surrender_value": 46758758.0,
+            "guaranteed_death_benefit": 608428.0,
+            "non_guaranteed_death_benefit": 46150329.0,
+            "death_benefit": 46758758.0,
+            "source_page": 1
+          },
+          {
+            "policy_year": 80,
+            "total_premium_paid": 500000.0,
+            "guaranteed_cash_value": 620761.0,
+            "reversionary_bonus": 63442790.0,
+            "total_surrender_value": 64063551.0,
+            "guaranteed_death_benefit": 620761.0,
+            "non_guaranteed_death_benefit": 63442790.0,
+            "death_benefit": 64063551.0,
+            "source_page": 1
+          },
+          {
+            "policy_year": 85,
+            "total_premium_paid": 500000.0,
+            "guaranteed_cash_value": 635150.0,
+            "reversionary_bonus": 87137468.0,
+            "total_surrender_value": 87772617.0,
+            "guaranteed_death_benefit": 635150.0,
+            "non_guaranteed_death_benefit": 87137468.0,
+            "death_benefit": 87772617.0,
+            "source_page": 1
+          },
+          {
+            "policy_year": 90,
+            "total_premium_paid": 500000.0,
+            "guaranteed_cash_value": 648510.0,
+            "reversionary_bonus": 119607581.0,
+            "total_surrender_value": 120256092.0,
+            "guaranteed_death_benefit": 648510.0,
+            "non_guaranteed_death_benefit": 119607581.0,
+            "death_benefit": 120256092.0,
+            "source_page": 1
+          },
+          {
+            "policy_year": 95,
+            "total_premium_paid": 500000.0,
+            "guaranteed_cash_value": 665982.0,
+            "reversionary_bonus": 164095285.0,
+            "total_surrender_value": 164761267.0,
+            "guaranteed_death_benefit": 665982.0,
+            "non_guaranteed_death_benefit": 164095285.0,
+            "death_benefit": 164761267.0,
+            "source_page": 1
+          },
+          {
+            "policy_year": 100,
+            "total_premium_paid": 500000.0,
+            "guaranteed_cash_value": 680371.0,
+            "reversionary_bonus": 225056844.0,
+            "total_surrender_value": 225737215.0,
+            "guaranteed_death_benefit": 680371.0,
+            "non_guaranteed_death_benefit": 225056844.0,
+            "death_benefit": 225737215.0,
+            "source_page": 1
+          }
+        ]
+      }
+    }
+  ],
+  "canonical_sample": "友邦——環宇盈活儲蓄保險計劃(1).pdf",
+  "coverage_items": [
+    {
+      "name": "首12个月意外身故赔偿",
+      "amount": 100000.0,
+      "period": null
+    },
+    {
+      "name": "保单货币",
+      "amount": 105000.0,
+      "period": "终身"
+    },
+    {
+      "name": "投保时保额",
+      "amount": 105000.0,
+      "period": "终身"
+    }
+  ],
+  "key_clauses": [
+    "保证现金价值",
+    "复归红利",
+    "终期分红",
+    "身故赔偿",
+    "退保发还金额",
+    "保费征费"
+  ],
+  "fitz_version": "pymupdf-1.24"
+}
