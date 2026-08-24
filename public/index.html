@@ -18,7 +18,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
 
 <!-- 本地设计系统 token + 共享样式 -->
-<link rel="stylesheet" href="/css/tokens.css">
+<link rel="stylesheet" href="./css/tokens.css">
 
 <script id="tailwind-config">
   tailwind.config = {
@@ -159,51 +159,36 @@
       <div class="bg-surface-container-lowest rounded-2xl border border-border-subtle/50 p-4">
         <div class="flex items-center gap-2 mb-3">
           <span class="text-sm font-bold text-on-surface">📗 储蓄险</span>
-          <span class="text-caption text-text-secondary">(选填)</span>
-          <select id="companySavings" class="ml-auto h-8 px-2 text-xs bg-surface-container-low border border-border-subtle rounded-lg">
-            <option value="">选择公司...</option>
-          </select>
+          <span class="text-caption text-text-secondary">(选填 · 可添加多份对比)</span>
         </div>
-        <div id="dropzoneSavings" class="border-2 border-dashed border-border-subtle rounded-xl p-4 flex flex-col items-center justify-center text-center h-28 transition-colors duration-300 cursor-pointer hover:border-primary-container">
-          <span class="material-symbols-outlined text-primary-container text-2xl">cloud_upload</span>
-          <p class="text-sm text-text-secondary mt-1">点击上传储蓄计划书 (PDF)</p>
-          <input type="file" accept=".pdf" class="hidden">
-        </div>
-        <div id="fileSavings" class="hidden mt-2 flex items-center gap-2 text-sm"><span class="material-symbols-outlined text-status-success text-lg">check_circle</span><span id="fileSavingsName"></span></div>
+        <div id="filesSavings" class="flex flex-col gap-2"></div>
+        <button id="addFileSavings" class="mt-2 w-full h-9 rounded-lg border border-dashed border-border-subtle text-caption text-text-secondary hover:border-primary-container hover:text-primary-container transition-colors flex items-center justify-center gap-1">
+          <span class="material-symbols-outlined text-[16px]">add</span> 添加另一份储蓄险
+        </button>
       </div>
 
       <!-- 重疾险 -->
       <div class="bg-surface-container-lowest rounded-2xl border border-border-subtle/50 p-4">
         <div class="flex items-center gap-2 mb-3">
           <span class="text-sm font-bold text-on-surface">📕 重疾险</span>
-          <span class="text-caption text-text-secondary">(选填)</span>
-          <select id="companyCi" class="ml-auto h-8 px-2 text-xs bg-surface-container-low border border-border-subtle rounded-lg">
-            <option value="">选择公司...</option>
-          </select>
+          <span class="text-caption text-text-secondary">(选填 · 可添加多份对比)</span>
         </div>
-        <div id="dropzoneCi" class="border-2 border-dashed border-border-subtle rounded-xl p-4 flex flex-col items-center justify-center text-center h-28 transition-colors duration-300 cursor-pointer hover:border-primary-container">
-          <span class="material-symbols-outlined text-primary-container text-2xl">cloud_upload</span>
-          <p class="text-sm text-text-secondary mt-1">点击上传重疾计划书 (PDF)</p>
-          <input type="file" accept=".pdf" class="hidden">
-        </div>
-        <div id="fileCi" class="hidden mt-2 flex items-center gap-2 text-sm"><span class="material-symbols-outlined text-status-success text-lg">check_circle</span><span id="fileCiName"></span></div>
+        <div id="filesCi" class="flex flex-col gap-2"></div>
+        <button id="addFileCi" class="mt-2 w-full h-9 rounded-lg border border-dashed border-border-subtle text-caption text-text-secondary hover:border-primary-container hover:text-primary-container transition-colors flex items-center justify-center gap-1">
+          <span class="material-symbols-outlined text-[16px]">add</span> 添加另一份重疾险
+        </button>
       </div>
 
       <!-- IUL -->
       <div class="bg-surface-container-lowest rounded-2xl border border-border-subtle/50 p-4">
         <div class="flex items-center gap-2 mb-3">
           <span class="text-sm font-bold text-on-surface">📙 IUL 万用寿险</span>
-          <span class="text-caption text-text-secondary">(选填)</span>
-          <select id="companyIul" class="ml-auto h-8 px-2 text-xs bg-surface-container-low border border-border-subtle rounded-lg">
-            <option value="">选择公司...</option>
-          </select>
+          <span class="text-caption text-text-secondary">(选填 · 可添加多份对比)</span>
         </div>
-        <div id="dropzoneIul" class="border-2 border-dashed border-border-subtle rounded-xl p-4 flex flex-col items-center justify-center text-center h-28 transition-colors duration-300 cursor-pointer hover:border-primary-container">
-          <span class="material-symbols-outlined text-primary-container text-2xl">cloud_upload</span>
-          <p class="text-sm text-text-secondary mt-1">点击上传IUL计划书 (PDF)</p>
-          <input type="file" accept=".pdf" class="hidden">
-        </div>
-        <div id="fileIul" class="hidden mt-2 flex items-center gap-2 text-sm"><span class="material-symbols-outlined text-status-success text-lg">check_circle</span><span id="fileIulName"></span></div>
+        <div id="filesIul" class="flex flex-col gap-2"></div>
+        <button id="addFileIul" class="mt-2 w-full h-9 rounded-lg border border-dashed border-border-subtle text-caption text-text-secondary hover:border-primary-container hover:text-primary-container transition-colors flex items-center justify-center gap-1">
+          <span class="material-symbols-outlined text-[16px]">add</span> 添加另一份 IUL
+        </button>
       </div>
 
       <div class="bg-surface-container-lowest rounded-2xl shadow-sm p-3 border border-border-subtle/50">
@@ -316,6 +301,18 @@
             <span class="text-caption text-text-secondary">5 选 1</span>
           </div>
           <div id="styleGrid" class="grid grid-cols-3 md:grid-cols-3 gap-base"></div>
+        </section>
+
+        <!-- per-product 公司选择 (对比方案时每个产品单独选) -->
+        <section id="productCompanySection" class="hidden">
+          <div class="flex items-baseline justify-between mb-stack-md">
+            <div>
+              <p class="text-[11px] font-semibold tracking-[0.1em] text-primary-container mb-1">02 · PER-PRODUCT COMPANY</p>
+              <h2 class="text-h2 text-on-surface">为每个产品选公司</h2>
+            </div>
+            <span id="productCompanyCount" class="text-caption text-text-secondary">0 个产品</span>
+          </div>
+          <div id="productCompanyList" class="flex flex-col gap-2"></div>
         </section>
 
         <!-- 公司 -->
@@ -512,10 +509,10 @@
 </style>
 
 <!-- html2canvas (用于导出摘要图) -->
-<script src="/js/html2canvas.min.js"></script>
+<script src="./js/html2canvas.min.js"></script>
 
 <!-- App 入口 (ES Modules) -->
-<script type="module" src="/js/app.js"></script>
+<script type="module" src="./js/app.js"></script>
 <!-- 浮动 AI 设置按钮 -->
 <button onclick="openAiSettings()" id="aiSettingsFab"
   class="fixed bottom-24 right-4 z-30 w-12 h-12 rounded-full bg-primary text-on-primary shadow-lg active:scale-95 transition-transform flex items-center justify-center"
@@ -615,6 +612,20 @@ window.closeAiSettings = closeAiSettings;
 window.saveAiSettings = saveAiSettings;
 window.clearAiSettings = clearAiSettings;
 </script>
+
+<!-- 模板: per-product 公司选择行 (被 generate.js 克隆) -->
+<template id="productCompanyRowTpl">
+  <div class="bg-surface-container-lowest border border-border-subtle rounded-xl p-3 flex items-center gap-3" data-row>
+    <div class="px-2 py-1 rounded-md text-[10px] font-semibold shrink-0" data-type-badge></div>
+    <div class="min-w-0 flex-1">
+      <div class="text-sm font-medium text-on-surface truncate" data-product-name></div>
+      <div class="text-[11px] text-text-secondary truncate" data-pdf-name></div>
+    </div>
+    <select class="h-9 px-2 text-xs bg-surface-container-low border border-border-subtle rounded-lg shrink-0" data-company-select>
+      <option value="">选择公司...</option>
+    </select>
+  </div>
+</template>
 
 </body>
 </html>

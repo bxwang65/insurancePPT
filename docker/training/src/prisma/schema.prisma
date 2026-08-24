@@ -1,0 +1,371 @@
+// ============================================================
+// 培训模块数据库 Schema（Prisma 规范）
+// ============================================================
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite" // 开发环境 SQLite，生产可替换为 postgresql
+  url      = env("DATABASE_URL")
+}
+
+// ------------------------------------------------------------
+// 用户表（含账号体系）
+// 2026-08-12: 培训走 4in1 IdP, 不再自己维护 phone+password 登录.
+//   - firebase_uid: 4in1 Firebase UID 唯一索引, 4in1 IdP 映射主键
+//   - email:        4in1 email (admin 后台查找用, 4in1 user 共享)
+//   - phone/password/role: 旧字段, 保留 schema 兼容, 新用户为 null
+// ------------------------------------------------------------
+model User {
+  id                       String    @id @default(cuid())
+  firebase_uid             String?   @unique          // 4in1 IdP 唯一 ID (NEW, nullable for migration of legacy users)
+  email                    String?   @unique          // 4in1 email (NEW)
+  name                     String                     // 从 4in1 JWT 取
+  avatar_url               String?
+  phone                    String?   @unique          // 旧字段, 新用户为 null
+  mobile                   String?                    // 2026-08-23: 联系手机号 (可选, 区别于旧 phone 登录字段)
+  password                 String?                    // deprecated, 4in1 Firebase 管理
+  role                     String?                    // deprecated
+  title                    String?
+  level                    Int       @default(1)
+  level_name               String    @default("初阶阶段")
+  total_learning_minutes   Int       @default(0)
+  is_active                Boolean   @default(true)
+  is_admin                 Boolean   @default(false)
+
+  // 2026-08-12: 业务业绩 (HKD, 学员自己填, admin 后台管理)
+  sales_amount             Decimal?  @default(0)
+  // 综合业绩得分 (学习时长 + 课程完成率 + 业务加权, 0-100)
+  performance_score        Int       @default(0)
+  // 业绩最近更新时间
+  performance_updated_at   DateTime?
+
+  // 2026-08-12: 基本法 (L/M 等级 + 推管分离两棵树)
+  // L 业务等级 (1-3, 默认 L1, 由 HK/SG 标保近6月合计触发晋升)
+  current_level            Int       @default(1)
+  // M 管理等级 (1-3, 默认 M1, 由招募树2级近6月合计标保触发晋升)
+  current_management_level Int       @default(1)
+  // 招募人 (招我进来的人), 招管分离的第1棵树
+  recruiter_id             String?
+  // 主管 (管我的上级), 招管分离的第2棵树; 默认 = recruiter_id, admin 可改写
+  manager_id               String?
+  // 主推产品 (HK/SG/ART_MODERN/ART_CONTEMP)
+  main_product             String?
+  // 入职时间 (生产计算起始日, before this date 不算)
+  joined_at                DateTime  @default(now())
+  // 状态 (ACTIVE/INACTIVE)
+  status                   String    @default("ACTIVE")
+
+  // 2026-08-16: 等级维护期 (Phase 7) — pending/committed 模型
+  // eval 达成但未生效的目标等级 (commit 后清空), 走次月 1 号生效
+  pending_level              Int?
+  pending_management_level   Int?
+  pending_effective_at       DateTime?
+  // 最近一次 L 或 M 升级生效时间, 用于判断维护期
+  last_promoted_at           DateTime?
+  // 维护期截止 (= last_promoted_at + 6m), null=无维护期 (L1 或未升级)
+  in_maintenance_until       DateTime?
+
+  course_progress          UserCourseProgress[]
+  honors                   UserHonor[]
+  feedback                 Feedback[]
+
+  // 2026-08-12: 推管两棵树自引用关系
+  recruiter                User?     @relation("RecruiterTree", fields: [recruiter_id], references: [id])
+  recruited                User[]    @relation("RecruiterTree")
+  manager                  User?     @relation("ManagerTree",   fields: [manager_id],   references: [id])
+  manages                  User[]    @relation("ManagerTree")
+
+  // 2026-08-12: 业绩/历史/日志关联
+  transactions             Transaction[]
+  level_history            LevelHistory[]
+  manager_changed_logs     ManagerChangeLog[] @relation("ChangedUser")
+  manager_changes_made     ManagerChangeLog[] @relation("ChangedBy")
+  // 2026-08-16: 我作为招募人收到的伯乐 (下级出单时由交易创建触发)
+  received_berlue          TransactionBerlue[] @relation("ReceivedBerlue")
+  // 2026-08-16: 我作为主管收到的管理奖 (极差, manager_id 链)
+  received_management      TransactionManagement[] @relation("ReceivedManagement")
+
+  created_at               DateTime  @default(now())
+  updated_at               DateTime  @updatedAt
+}
+
+// ------------------------------------------------------------
+// 课程表
+// ------------------------------------------------------------
+model Course {
+  id               String   @id @default(cuid())
+  title            String                     // 课程标题
+  cover_image      String                     // 封面图 URL
+  video_url        String?                   // 视频 CDN URL（本地路径或 OSS 链接）
+  stage            String                     // 枚举：ONBOARDING / TRANSFER / ADVANCEMENT
+  stage_name       String                     // 阶段中文名
+  duration_minutes Int      @default(0)       // 课程总时长（分钟）
+  description      String?                   // 课程简介
+
+  progress         UserCourseProgress[]
+  feedback         Feedback[]
+  materials        CourseMaterial[]
+
+  created_at       DateTime @default(now())
+  updated_at       DateTime @updatedAt
+}
+
+// ------------------------------------------------------------
+// 课程课件表
+// ------------------------------------------------------------
+model CourseMaterial {
+  id          String   @id @default(cuid())
+  course_id   String
+  title       String                     // 课件名称：如 "第一章：数字化转型.pdf"
+  file_url    String                     // OSS/CDN 下载链接
+  file_type   String                     // 枚举：PDF / PPT / DOC
+  file_size   Int?                       // 文件大小（字节），用于前端提示
+  created_at  DateTime @default(now())
+
+  course      Course   @relation(fields: [course_id], references: [id], onDelete: Cascade)
+}
+
+// ------------------------------------------------------------
+// 用户-课程学习进度关联表（核心）
+// ------------------------------------------------------------
+model UserCourseProgress {
+  id                  String   @id @default(cuid())
+  user_id             String
+  course_id           String
+  progress_percentage Int      @default(0)   // 0-100
+  last_watched_at     DateTime?              // 最后观看时间
+  last_position       Int      @default(0)  // 上次播放位置（秒）
+  total_watch_seconds Int      @default(0)  // 累计观看秒数（用于统计）
+
+  user                User     @relation(fields: [user_id], references: [id], onDelete: Cascade)
+  course              Course   @relation(fields: [course_id], references: [id], onDelete: Cascade)
+
+  created_at          DateTime @default(now())
+  updated_at          DateTime @updatedAt
+
+  @@unique([user_id, course_id])
+  @@index([user_id, last_watched_at])
+}
+
+// ------------------------------------------------------------
+// 荣誉勋章表
+// ------------------------------------------------------------
+model Honor {
+  id          String   @id @default(cuid())
+  name        String
+  icon_url    String
+  description String?
+  earned_at   DateTime @default(now())
+
+  users UserHonor[]
+}
+
+model UserHonor {
+  id       String   @id @default(cuid())
+  user_id  String
+  honor_id String
+  earned_at DateTime @default(now())
+
+  user  User  @relation(fields: [user_id], references: [id], onDelete: Cascade)
+  honor Honor @relation(fields: [honor_id], references: [id], onDelete: Cascade)
+
+  @@unique([user_id, honor_id])
+}
+
+// ------------------------------------------------------------
+// 课程反馈表（好评点赞 + 星级评价）
+// ------------------------------------------------------------
+model Feedback {
+  id          String   @id @default(cuid())
+  user_id     String
+  course_id   String
+  rating      Int      // 1-5 星级
+  comment     String?  // 可选的文字评价
+  liked       Boolean  @default(true)  // 点赞
+  created_at  DateTime @default(now())
+  updated_at  DateTime @updatedAt
+
+  user   User   @relation(fields: [user_id], references: [id], onDelete: Cascade)
+  course Course @relation(fields: [course_id], references: [id], onDelete: Cascade)
+
+  @@unique([user_id, course_id]) // 每个用户每门课程只能评价一次
+}
+
+// ------------------------------------------------------------
+// 等级阶段配置（静态数据）
+// ------------------------------------------------------------
+model LevelConfig {
+  id                  Int     @id @default(autoincrement())
+  level               Int     @unique
+  name                String
+  min_minutes         Int     // 进入该等级所需最低学习时长（分钟）
+  next_level_minutes  Int?    // 下一等级所需最低时长
+}
+
+// ============================================================
+// 2026-08-12: 基本法 模块 (L/M 等级 + 推管分离 + 双算)
+// ============================================================
+
+// ------------------------------------------------------------
+// Transaction (业绩流水) - 合并原 Production (HK/SG) + ArtSales (ART)
+// product_type: 'HK' | 'SG' | 'ART_MODERN' | 'ART_CONTEMP'
+// HK/SG 必填: annual_premium, payment_years (auto-compute std_premium = annual × years / 5)
+// ART 必填: artist, work_title, sale_price, currency
+// ------------------------------------------------------------
+model Transaction {
+  id                   String   @id @default(cuid())
+  user_id              String
+  product_type         String   // 'HK' | 'SG' | 'ART_MODERN' | 'ART_CONTEMP'
+
+  // HK/SG 字段 (ART 时全部 null)
+  annual_premium       Decimal?
+  payment_years        Int?
+  std_premium          Decimal?  // auto-computed: annual × years / 5
+  policy_no            String?
+
+  // ART 字段 (HK/SG 时全部 null)
+  artist               String?
+  work_title           String?
+  sale_price           Decimal?
+  currency             String?    // RMB / USD / HKD
+
+  // 公共
+  sold_at              DateTime
+  recorded_by          String     // admin user_id
+  // 佣金 (费用表未到时为 null, 后期按 CommissionTable 计算填入)
+  commission_amount    Decimal?
+  commission_breakdown String?  // SQLite 不支持 Json, 用 String 存 JSON.stringify
+
+  // 2026-08-16: HK 产品识别 (从 hx-rates /products + /preview 填充)
+  //   - product_type='HK' 时必填, 其他产品类型全 null
+  //   - hk_term 是 hx-rates 查找键 (与 payment_years 不同语义: 10年保单可5年付清)
+  //   - hk_code + hk_plan 联合定位 (同 code 多 plan 存在)
+  hk_company           String?
+  hk_code              String?
+  hk_plan              String?
+  hk_term              Int?
+
+  created_at           DateTime  @default(now())
+
+  user                 User       @relation(fields: [user_id], references: [id])
+  // 2026-08-16: 给上下两级招募人的伯乐记录 (event-driven, 录入时自动算)
+  berlue_entries       TransactionBerlue[]
+  // 2026-08-16: 给 manager 链的极差管理奖 (event-driven, 录入时自动算)
+  management_entries   TransactionManagement[]
+
+  @@index([user_id, sold_at])
+  @@index([product_type, sold_at])
+  @@index([hk_company, hk_code, hk_term])
+}
+
+// ------------------------------------------------------------
+// TransactionBerlue (HK 交易 → 招募链上下两级伯乐)
+// 2026-08-16: 录入 HK 交易时, 自动算:
+//   - direct upline (seller.recruiter_id) → direct_pct × annual_premium
+//   - indirect upline (directUpline.recruiter_id) → indirect_pct × annual_premium
+// 在推管树页面反查 "我收到的伯乐"
+// ------------------------------------------------------------
+model TransactionBerlue {
+  id              String   @id @default(cuid())
+  transaction_id  String
+  beneficiary_id  String     // 拿到伯乐的招募人
+  type            String     // 'direct' | 'indirect'
+  amount          Decimal    // USD
+  // 审计快照 (rate 表可能后续刷新, 存当时算的 pct)
+  direct_pct      Decimal?
+  indirect_pct    Decimal?
+  investor        String     // 计算时 beneficiary 的 investor 假设 (默认 'pi')
+  level           String     // 计算时 beneficiary 的 level (L1/L2/L3)
+  computed_at     DateTime  @default(now())
+
+  transaction     Transaction @relation(fields: [transaction_id], references: [id])
+  beneficiary     User        @relation("ReceivedBerlue", fields: [beneficiary_id], references: [id])
+
+  @@index([beneficiary_id, computed_at])
+  @@index([transaction_id])
+}
+
+// ------------------------------------------------------------
+// 2026-08-16: TransactionManagement (管理奖 = 极差, 招管分离第2棵树)
+//   - seller 出单 → 走 manager_id 链 → 上级 manager 拿 (manager.y1_pct - L1.y1_pct) × premium
+//   - chain_depth: 1=直接主管 (L2 seller 的 L2 上级), 2=间接主管 (L3 上级)
+//   - skip L1 manager (无 spread, per spec "管理人是L2/L3")
+//   - 链尾 (manager_id=null) → 归公司, 不发
+// ------------------------------------------------------------
+model TransactionManagement {
+  id              String   @id @default(cuid())
+  transaction_id  String
+  beneficiary_id  String     // 拿到管理奖的上级
+  chain_depth     Int        // 1=直接, 2=间接
+  amount          Decimal    // USD (差值 × premium)
+  // 审计快照 (rate 表可能后续刷新, 存当时算的 y1_pct)
+  manager_y1_pct  Decimal?
+  l1_y1_pct       Decimal?
+  investor        String     // 'pi'
+  level           String     // beneficiary 的 level (L1/L2/L3)
+  computed_at     DateTime  @default(now())
+
+  transaction     Transaction @relation(fields: [transaction_id], references: [id])
+  beneficiary     User        @relation("ReceivedManagement", fields: [beneficiary_id], references: [id])
+
+  @@index([beneficiary_id, computed_at])
+  @@index([transaction_id])
+}
+
+// ------------------------------------------------------------
+// LevelHistory (等级变更历史)
+// reason: 'PROMOTE' | 'DEMOTE' | 'MAINTAIN' | 'INITIAL'
+// trigger: 'CRON' | 'MANUAL' | 'NEW_HIRE'
+// ------------------------------------------------------------
+model LevelHistory {
+  id           String   @id @default(cuid())
+  user_id      String
+  level        Int      // L 等级
+  mgmt_level   Int      // M 等级
+  eval_at      DateTime @default(now())
+  // 2026-08-16: 真正生效时间 (pending 时为次月1, 即时变动同 eval_at)
+  effective_at DateTime?
+  window_start DateTime
+  window_end   DateTime
+  reason       String   // 'PROMOTE' | 'DEMOTE' | 'MAINTAIN' | 'INITIAL'
+  trigger      String   // 'CRON' | 'MANUAL' | 'NEW_HIRE'
+  // 2026-08-16: 'STAGED' (eval 出) | 'COMMITTED' (到点生效) | 'CANCELLED' (被覆盖)
+  status       String   @default("STAGED")
+
+  user         User     @relation(fields: [user_id], references: [id])
+
+  @@index([user_id, eval_at])
+}
+
+// ------------------------------------------------------------
+// ManagerChangeLog (主管变更日志 - 招管分离的 override)
+// ------------------------------------------------------------
+model ManagerChangeLog {
+  id             String   @id @default(cuid())
+  user_id        String   // 被改的人
+  old_manager_id String?
+  new_manager_id String?
+  changed_by     String   // admin user_id
+  reason         String?
+  at             DateTime @default(now())
+
+  user           User     @relation("ChangedUser", fields: [user_id], references: [id])
+  changer        User     @relation("ChangedBy",   fields: [changed_by], references: [id])
+
+  @@index([user_id, at])
+}
+
+// ------------------------------------------------------------
+// Config (基本法配置 - admin 可改阈值与比例)
+// key 形如: 'L_PROMOTE_HK' | 'M_PROMOTE' | 'RECRUITER_RATES' | 'MGMT_RATES' | 'ART_RATES'
+// value 存 JSON
+// ------------------------------------------------------------
+model Config {
+  key        String   @id
+  value      String   // SQLite 不支持 Json, 用 String 存 JSON.stringify
+  updated_at DateTime @updatedAt
+  updated_by String?
+}
