@@ -16,7 +16,11 @@ ENV PORT=80
 
 # ── 1. 系统依赖 (匹配 ECS: libreoffice-core + libreoffice-impress) ──
 # Ubuntu 22.04 默认 Python 3.10, ECS 是 3.11. 装 3.11 从 deadsnakes (jammy 也支持).
-RUN apt-get update && apt-get install -y --no-install-recommends \
+# 2026-09-12: 加 apt 重试配置 —— 构建机走本机代理时, apt 对部分包会偶发
+#   `502 Bad Gateway`, 默认 0 重试导致整步 exit 100 失败. 写进 apt.conf.d 后
+#   本 RUN 及后续 RUN (含 playwright install --with-deps) 都继承. 仅影响下载容错, 不改镜像内容.
+RUN printf 'Acquire::Retries "10";\nAcquire::http::Timeout "30";\nAcquire::https::Timeout "30";\n' > /etc/apt/apt.conf.d/99-retries \
+    && apt-get update && apt-get install -y --no-install-recommends \
     ca-certificates curl wget gnupg unzip \
     software-properties-common \
     libreoffice-core libreoffice-impress \
@@ -45,6 +49,12 @@ RUN curl -fsSL https://bun.sh/install | bash \
     && bun --version
 
 # ── 3. Python 3.11 pip + insurance-deck 依赖 (匹配 ECS) ──
+# 2026-09-12: 补 jinja2 / matplotlib / playwright —— 这三项此前镜像里没有,
+#   导致两条生产链路在容器内必然失败(ECS 日志实证):
+#     jinja2     -> tools/long-poster/render_poster.py 海报渲染  (23 次 ModuleNotFoundError)
+#     matplotlib -> scripts/generate_chart_assets.py 图表生成    (18 次 ModuleNotFoundError)
+#     playwright -> 海报 HTML→PNG 截图 (需同时装 chromium 浏览器)
+#   注: generate_chart_assets.py 里 _render_with_plotly 无调用点(死代码), 故不装 plotly
 RUN curl -fsSL https://bootstrap.pypa.io/get-pip.py | python3.11 \
     && python3.11 -m pip install --no-cache-dir \
         "pdfplumber>=0.10.0" \
@@ -54,6 +64,12 @@ RUN curl -fsSL https://bootstrap.pypa.io/get-pip.py | python3.11 \
         "pdfminer.six>=20221105" \
         "python-pptx>=0.6.21" \
         "lxml" \
+        "jinja2>=3.1.0" \
+        "matplotlib>=3.8.0" \
+        "playwright>=1.40.0" \
+    && python3.11 -m playwright install --with-deps chromium \
+    && rm -rf /var/lib/apt/lists/* \
+    && python3.11 -c "import jinja2, matplotlib, playwright; print('poster/chart deps OK')" \
     && python3.11 --version
 
 # ── 4. soffice symlink (匹配 ECS: /opt/homebrew/bin/soffice) ──

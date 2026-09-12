@@ -32,6 +32,9 @@ services:
       # 2026-08-16: 季度刷新上传 UI (Phase 4 #23) 需要 admin 上传 PDF/CSV 到 db/source_pdfs/inbox/<quarter>/
       - ./db:/opt/insurance-ppt/db
       - ./docs:/opt/insurance-ppt/docs
+      # 2026-09-12: 长图海报渲染器 (server.ts renderPosterForExtraction -> tools/long-poster/render_poster.py)
+      #   之前漏挂 -> 本地容器内该文件不存在 -> 海报渲染必然 exit=2, 本地永远无法复现生产海报
+      - ./tools:/opt/insurance-ppt/tools
       - ./package.json:/opt/insurance-ppt/package.json:ro
       - ./bun.lock:/opt/insurance-ppt/bun.lock:ro
       # .env 注入 (必须存在)
