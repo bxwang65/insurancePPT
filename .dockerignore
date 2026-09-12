@@ -3,6 +3,10 @@ node_modules/
 .git/
 .DS_Store
 *.log
+# 2026-09-12: .env 必须排除 —— 否则 `COPY . .` 会把含全部密钥的 .env 烤进镜像层,
+#   镜像一旦推到 registry 即全量泄露. 运行时由 docker-compose bind mount 注入.
+.env
+.env.*
 uploads/
 sessions/
 .cache/

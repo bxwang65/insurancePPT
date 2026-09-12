@@ -5,6 +5,17 @@ export function normalizeDownloadPath(relativePath: string): string {
   return relativePath.split(path.sep).join("/");
 }
 
+/**
+ * 2026-09-12: URL 有效期从硬编码 3600 改为可配 —— 用户需要把结果链接外发给
+ * 客户/同事, 1 小时就失效不可用. 默认改为 7 天 (604800s).
+ * 设 DOWNLOAD_URL_TTL_SEC=3600 可回到旧行为; 非法/空值回退默认.
+ */
+function defaultTtlSec(): number {
+  const raw = process.env.DOWNLOAD_URL_TTL_SEC;
+  const v = Number(raw);
+  return raw != null && raw !== "" && Number.isFinite(v) && v > 0 ? v : 604800;
+}
+
 export function buildSignedDownloadUrl(params: {
   relativePath: string;
   signingSecret: string;
@@ -15,7 +26,7 @@ export function buildSignedDownloadUrl(params: {
   const base = `/downloads/${normalized.split("/").map((seg) => encodeURIComponent(seg)).join("/")}`;
   if (!params.signingSecret) return base;
   const now = params.nowSec ?? Math.floor(Date.now() / 1000);
-  const expires = now + (params.ttlSec ?? 3600);
+  const expires = now + (params.ttlSec ?? defaultTtlSec());
   const token = crypto.createHmac("sha256", params.signingSecret).update(`${normalized}:${expires}`).digest("hex");
   return `${base}?expires=${expires}&token=${token}`;
 }
