@@ -27,7 +27,8 @@ ssh "${SSH_BASE_OPTS[@]}" root@$ECS_IP "echo SSH_OK" 2>/dev/null || {
 }
 
 echo ""
-echo "=== 2. rsync 同步代码 (排除 downloads) ==="
+echo "=== 2. rsync 同步代码 (排除 downloads + .env) ==="
+# 关键: --exclude='.env' 防止本地 .env 覆盖 ECS secrets (每个环境的 API key 不同)
 rsync -avz --progress \
   --exclude='node_modules' \
   --exclude='logs' \
@@ -38,6 +39,9 @@ rsync -avz --progress \
   --exclude='sessions' \
   --exclude='*.log' \
   --exclude='.DS_Store' \
+  --exclude='.env' \
+  --exclude='.env.local' \
+  --exclude='.env.*.local' \
   ./ \
   "root@$ECS_IP:$APP_DIR/"
 

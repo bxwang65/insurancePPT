@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>宏传承保障计划 - 长图海报</title>
+<style>
+  /* === Reset + 全局 === */
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { font-family: "PingFang SC", "Microsoft YaHei", "Source Han Sans CN", sans-serif;
+    color: #1a1a1a; background: #f5f1ea; -webkit-font-smoothing: antialiased; }
+  body { width: 720px; /* 单列海报宽度 */ }
+
+  /* === 配色变量 (周大福冷色 / Manulife暖色 由 class 切换) === */
+  .theme-manulife { --primary: #7a1f1f; --accent: #e8792b; --bg-soft: #f5f1ea; --bg-deep: #2a1410; }
+  .theme-ctf { --primary: #1a4a3a; --accent: #d4a857; --bg-soft: #eef0eb; --bg-deep: #0e2820; }
+
+  /* === Header (深色 hero 区) === */
+  .header {
+    background: linear-gradient(135deg, var(--bg-deep) 0%, var(--primary) 100%);
+    color: #fff; padding: 40px 60px 56px; position: relative; overflow: hidden;
+  }
+  .header::before {
+    content: ""; position: absolute; top: 0; right: 0; width: 60%; height: 100%;
+    background: linear-gradient(135deg, transparent 0%, rgba(232,121,43,.15) 100%);
+  }
+  .brand-line { display: flex; align-items: center; gap: 12px; font-size: 14px; opacity: .9; margin-bottom: 24px; }
+  .brand-dot { width: 10px; height: 10px; background: var(--accent); border-radius: 50%; }
+  .tag-line { position: absolute; top: 40px; right: 60px; font-size: 12px; letter-spacing: .2em; opacity: .75; }
+  .hero-title {
+    font-size: 38px; font-weight: 600; line-height: 1.35; letter-spacing: .02em;
+    margin-bottom: 28px; max-width: 600px;
+  }
+  .customer-bar {
+    background: rgba(255,255,255,.08); backdrop-filter: blur(8px);
+    border-radius: 4px; padding: 18px 24px; display: grid; grid-template-columns: repeat(4, 1fr);
+    gap: 24px; margin-top: 8px;
+  }
+  .customer-cell .label { font-size: 11px; opacity: .7; margin-bottom: 6px; }
+  .customer-cell .value { font-size: 22px; font-weight: 600; color: var(--accent); }
+  .customer-cell .unit { font-size: 11px; opacity: .7; margin-left: 4px; font-weight: 400; }
+
+  /* === 通用章节 === */
+  .chapter { padding: 48px 60px; background: var(--bg-soft); }
+  .chapter.dark { background: var(--bg-deep); color: #fff; }
+  .chapter.accent { background: var(--primary); color: #fff; }
+  .chapter-num {
+    font-size: 13px; letter-spacing: .25em; color: var(--accent); margin-bottom: 14px;
+    text-transform: uppercase; font-weight: 500;
+  }
+  .chapter-title {
+    font-size: 30px; line-height: 1.4; font-weight: 600; margin-bottom: 16px;
+  }
+  .chapter-desc { font-size: 14px; line-height: 1.7; opacity: .82; margin-bottom: 32px; }
+
+  /* === 章节 01: 数字增长计划 === */
+  .big-number-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-bottom: 28px; }
+  .big-num-card {
+    background: #fff; border-radius: 6px; padding: 24px 20px;
+    border-left: 4px solid var(--accent);
+  }
+  .big-num-card .label { font-size: 11px; color: #888; margin-bottom: 8px; }
+  .big-num-card .num { font-size: 36px; font-weight: 700; color: var(--primary); line-height: 1; }
+  .big-num-card .unit { font-size: 14px; color: var(--primary); margin-left: 4px; font-weight: 500; }
+  .summary-card {
+    background: rgba(255,255,255,.6); border-left: 3px solid var(--accent);
+    padding: 16px 20px; font-size: 13px; line-height: 1.6;
+  }
+  .summary-card strong { color: var(--accent); font-weight: 600; }
+
+  /* === 章节 02: 长期储蓄演示 === */
+  .chart-wrap {
+    background: #fff; border-radius: 6px; padding: 20px;
+    margin-bottom: 28px; box-shadow: 0 1px 4px rgba(0,0,0,.06);
+  }
+  .chart-wrap svg { width: 100%; height: 320px; }
+  .data-grid {
+    display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 16px;
+  }
+  .data-card {
+    background: #fff; border-radius: 6px; padding: 14px 16px;
+    border: 1px solid #e8e2d4;
+  }
+  .data-card .y-label { font-size: 11px; color: #888; margin-bottom: 6px; }
+  .data-card .y-num { font-size: 22px; font-weight: 700; color: var(--primary); line-height: 1; }
+  .data-card .y-num .unit { font-size: 11px; font-weight: 500; margin-left: 2px; }
+  .data-card .meta { display: flex; justify-content: space-between; margin-top: 10px; font-size: 11px; color: #666; }
+  .data-card .meta .v { color: #1a1a1a; font-weight: 500; }
+  .data-card .meta .v.dim { color: #999; }
+  .chart-legend { display: flex; gap: 18px; font-size: 12px; color: #555; margin-top: 12px; padding: 0 8px; }
+  .chart-legend .dot { display: inline-block; width: 10px; height: 3px; margin-right: 6px; vertical-align: middle; border-radius: 1px; }
+
+  /* === 章节 03: 规划价值 === */
+  .value-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
+  .value-card {
+    background: rgba(255,255,255,.06); border-radius: 6px; padding: 18px 20px;
+    border-left: 3px solid var(--accent);
+  }
+  .value-card .v-name { font-size: 15px; font-weight: 600; margin-bottom: 8px; color: var(--accent); }
+  .value-card .v-desc { font-size: 12px; line-height: 1.6; opacity: .82; }
+
+  /* === 章节 04: 看懂三件事 === */
+  .trio-row { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px; }
+  .trio-card { padding: 18px 0; border-top: 2px solid var(--accent); }
+  .trio-card .t-label { font-size: 11px; color: rgba(255,255,255,.6); margin-bottom: 8px; }
+  .trio-card .t-value { font-size: 22px; font-weight: 700; color: #fff; line-height: 1.2; }
+  .trio-card .t-desc { font-size: 12px; margin-top: 8px; line-height: 1.6; opacity: .8; }
+
+  /* === 章节 05: 决策框架 === */
+  .decision-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  .decision-card {
+    background: rgba(255,255,255,.05); border-radius: 6px; padding: 22px 24px;
+    border-top: 3px solid;
+  }
+  .decision-card.suitable { border-color: #6db78c; }
+  .decision-card.unsuitable { border-color: #c97a6f; }
+  .decision-card .d-name { font-size: 16px; font-weight: 600; margin-bottom: 12px; }
+  .decision-card.suitable .d-name { color: #6db78c; }
+  .decision-card.unsuitable .d-name { color: #c97a6f; }
+  .decision-card .d-desc { font-size: 13px; line-height: 1.7; opacity: .85; }
+
+  /* === 章节 06: 哲理收尾 === */
+  .philosophy { padding: 56px 60px 64px; background: var(--bg-deep); color: #fff; text-align: center; }
+  .philosophy .chapter-num { color: var(--accent); margin-bottom: 16px; }
+  .philosophy .chapter-title { font-size: 32px; max-width: 540px; margin: 0 auto 24px; }
+  .philosophy .desc { font-size: 13px; line-height: 1.8; max-width: 480px; margin: 0 auto; opacity: .78; }
+
+  /* === Footer === */
+  .footer { background: #1a1410; color: #888; padding: 20px 60px; font-size: 11px; line-height: 1.6; }
+  .footer-row { display: flex; justify-content: space-between; align-items: center; }
+  .footer .risk { max-width: 80%; }
+  .footer .author { color: var(--accent); font-weight: 500; }
+</style>
+</head>
+<body class="theme-manulife">
+
+<!-- ============ Header ============ -->
+<section class="header">
+  <div class="brand-line">
+    <span class="brand-dot"></span>
+    <span>宏利 Manulife</span>
+    <span style="opacity:.5">|</span>
+    <span>宏传承保障计划</span>
+  </div>
+  <div class="tag-line">长期储蓄 · 现金价值 · 财富传承</div>
+  <h1 class="hero-title">让一笔长期储蓄,<br>兼顾财富累积、保障<br>与传承。</h1>
+  <div class="customer-bar">
+    <div class="customer-cell">
+      <div class="label">受保人</div>
+      <div class="value">1<span class="unit">岁 / 男</span></div>
+    </div>
+    <div class="customer-cell">
+      <div class="label">年缴保费</div>
+      <div class="value">USD 9.2<span class="unit">万</span></div>
+    </div>
+    <div class="customer-cell">
+      <div class="label">缴费年期</div>
+      <div class="value">5<span class="unit">年</span></div>
+    </div>
+    <div class="customer-cell">
+      <div class="label">全部基本保费</div>
+      <div class="value">USD 46.0<span class="unit">万</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 01 数字增长计划 ============ -->
+<section class="chapter">
+  <div class="chapter-num">01 / 数字增长计划</div>
+  <h2 class="chapter-title">1岁开始,<br>为未来准备一笔可持续的长期资产。</h2>
+  <p class="chapter-desc">事业与家庭责任逐步稳定,把短期现金流转化为长期资产,是这份计划设计的核心问题。</p>
+  <div class="big-number-row">
+    <div class="big-num-card">
+      <div class="label">年缴基本保费</div>
+      <div class="num">USD 9.2<span class="unit">万</span></div>
+    </div>
+    <div class="big-num-card">
+      <div class="label">保费缴付年期</div>
+      <div class="num">5<span class="unit">年</span></div>
+    </div>
+    <div class="big-num-card">
+      <div class="label">全部基本保费</div>
+      <div class="num">USD 46.0<span class="unit">万</span></div>
+    </div>
+  </div>
+  <div class="summary-card">
+    计划摘要: 累计投入 <strong>USD 46.0 万</strong>,
+    缴费 <strong>5 年</strong>, 适合希望长期拥有保险以保证价值、身故、退休与财富传承安排的客户。
+  </div>
+</section>
+
+<!-- ============ 02 长期储蓄演示 ============ -->
+<section class="chapter">
+  <div class="chapter-num">02 / 长期储蓄演示</div>
+  <h2 class="chapter-title">时间越久,<br>更要分清确定与不确定。</h2>
+  <p class="chapter-desc">"演示退保总值" = 保证现金价值 + 非保证红利部分。你看过的部分是保险公司未来现金流分红的演示安排,并非承诺。</p>
+  <div class="chart-wrap">
+    <svg viewBox="0 0 640 320" xmlns="http://www.w3.org/2000/svg">
+<line x1="50" y1="280.0" x2="616" y2="280.0" stroke="#eee" stroke-width="1"/>
+<text x="44" y="284.0" font-size="9" fill="#999" text-anchor="end">$0K</text>
+<line x1="50" y1="217.5" x2="616" y2="217.5" stroke="#eee" stroke-width="1"/>
+<text x="44" y="221.5" font-size="9" fill="#999" text-anchor="end">$122万</text>
+<line x1="50" y1="155.0" x2="616" y2="155.0" stroke="#eee" stroke-width="1"/>
+<text x="44" y="159.0" font-size="9" fill="#999" text-anchor="end">$244万</text>
+<line x1="50" y1="92.5" x2="616" y2="92.5" stroke="#eee" stroke-width="1"/>
+<text x="44" y="96.5" font-size="9" fill="#999" text-anchor="end">$366万</text>
+<line x1="50" y1="30.0" x2="616" y2="30.0" stroke="#eee" stroke-width="1"/>
+<text x="44" y="34.0" font-size="9" fill="#999" text-anchor="end">$488万</text>
+<text x="50.0" y="296" font-size="9" fill="#999" text-anchor="middle">0年</text>
+<text x="333.0" y="296" font-size="9" fill="#999" text-anchor="middle">10年</text>
+<text x="616.0" y="296" font-size="9" fill="#999" text-anchor="middle">20年</text>
+<text x="899.0" y="296" font-size="9" fill="#999" text-anchor="middle">30年</text>
+<text x="1182.0" y="296" font-size="9" fill="#999" text-anchor="middle">40年</text>
+<line x1="50.0" y1="256.4" x2="616.0" y2="256.4" stroke="#999" stroke-width="2" stroke-dasharray="4 3"/>
+<polyline points="50.0,280.0 191.5,264.3 333.0,244.1 474.5,226.1 616.0,206.2 757.5,181.9 899.0,151.5 1040.5,112.8 1182.0,62.6" fill="none" stroke="#e8792b" stroke-width="2.5"/>
+<circle cx="191.5" cy="264.3" r="4" fill="#fff" stroke="#e8792b" stroke-width="2"/>
+<text x="191.5" y="256.3" font-size="9" fill="#7a1f1f" text-anchor="middle" font-weight="600">USD 30.6万</text>
+<circle cx="333.0" cy="244.1" r="4" fill="#fff" stroke="#e8792b" stroke-width="2"/>
+<text x="333.0" y="236.1" font-size="9" fill="#7a1f1f" text-anchor="middle" font-weight="600">USD 70.1万</text>
+<circle cx="474.5" cy="226.1" r="4" fill="#fff" stroke="#e8792b" stroke-width="2"/>
+<circle cx="616.0" cy="206.2" r="4" fill="#fff" stroke="#e8792b" stroke-width="2"/>
+<text x="616.0" y="198.2" font-size="9" fill="#7a1f1f" text-anchor="middle" font-weight="600">USD 144万</text>
+<circle cx="757.5" cy="181.9" r="4" fill="#fff" stroke="#e8792b" stroke-width="2"/>
+<circle cx="899.0" cy="151.5" r="4" fill="#fff" stroke="#e8792b" stroke-width="2"/>
+<text x="899.0" y="143.5" font-size="9" fill="#7a1f1f" text-anchor="middle" font-weight="600">USD 251万</text>
+<circle cx="1040.5" cy="112.8" r="4" fill="#fff" stroke="#e8792b" stroke-width="2"/>
+<circle cx="1182.0" cy="62.6" r="4" fill="#fff" stroke="#e8792b" stroke-width="2"/>
+<text x="1182.0" y="54.6" font-size="9" fill="#7a1f1f" text-anchor="middle" font-weight="600">USD 424万</text>
+<text x="50" y="18" font-size="12" fill="#555" font-weight="600">演示退保总值 vs 累计已缴保费 (USD)</text>
+</svg>
+  </div>
+  <div class="chart-legend">
+    <span><span class="dot" style="background:#999"></span>累计已缴保费</span>
+    <span><span class="dot" style="background:var(--accent)"></span>演示退保总值(含非保证)</span>
+  </div>
+  <div class="data-grid" style="margin-top: 20px;">
+    
+    <div class="data-card">
+      <div class="y-label">保单年度 5 年</div>
+      <div class="y-num">USD 30.6<span class="unit">万</span></div>
+      <div class="meta">
+        <span>保证 <span class="v dim">12.5万</span></span>
+        <span>总保费 <span class="v">46.0万</span></span>
+      </div>
+    </div>
+    
+    <div class="data-card">
+      <div class="y-label">保单年度 10 年</div>
+      <div class="y-num">USD 70.1<span class="unit">万</span></div>
+      <div class="meta">
+        <span>保证 <span class="v dim">30.0万</span></span>
+        <span>总保费 <span class="v">46.0万</span></span>
+      </div>
+    </div>
+    
+    <div class="data-card">
+      <div class="y-label">保单年度 15 年</div>
+      <div class="y-num">USD 105<span class="unit">万</span></div>
+      <div class="meta">
+        <span>保证 <span class="v dim">40.9万</span></span>
+        <span>总保费 <span class="v">46.0万</span></span>
+      </div>
+    </div>
+    
+    <div class="data-card">
+      <div class="y-label">保单年度 20 年</div>
+      <div class="y-num">USD 144<span class="unit">万</span></div>
+      <div class="meta">
+        <span>保证 <span class="v dim">56.0万</span></span>
+        <span>总保费 <span class="v">46.0万</span></span>
+      </div>
+    </div>
+    
+    <div class="data-card">
+      <div class="y-label">保单年度 25 年</div>
+      <div class="y-num">USD 191<span class="unit">万</span></div>
+      <div class="meta">
+        <span>保证 <span class="v dim">71.0万</span></span>
+        <span>总保费 <span class="v">46.0万</span></span>
+      </div>
+    </div>
+    
+    <div class="data-card">
+      <div class="y-label">保单年度 30 年</div>
+      <div class="y-num">USD 251<span class="unit">万</span></div>
+      <div class="meta">
+        <span>保证 <span class="v dim">86.0万</span></span>
+        <span>总保费 <span class="v">46.0万</span></span>
+      </div>
+    </div>
+    
+    <div class="data-card">
+      <div class="y-label">保单年度 35 年</div>
+      <div class="y-num">USD 326<span class="unit">万</span></div>
+      <div class="meta">
+        <span>保证 <span class="v dim">101万</span></span>
+        <span>总保费 <span class="v">46.0万</span></span>
+      </div>
+    </div>
+    
+    <div class="data-card">
+      <div class="y-label">保单年度 40 年</div>
+      <div class="y-num">USD 424<span class="unit">万</span></div>
+      <div class="meta">
+        <span>保证 <span class="v dim">116万</span></span>
+        <span>总保费 <span class="v">46.0万</span></span>
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+<!-- ============ 03 规划价值 ============ -->
+<section class="chapter accent">
+  <div class="chapter-num">03 / 不仅是 一笔现金价值</div>
+  <h2 class="chapter-title" style="color:#fff">规划的价值,<br>也在未来可调整的空间。</h2>
+  <p class="chapter-desc" style="color:rgba(255,255,255,.82)">以下功能须符合保单条款、公司当时预测及税务条件,申请后可能影响保证价值,退保或评估。</p>
+  <div class="value-grid">
+    
+    <div class="value-card">
+      <div class="v-name">财富增值选项</div>
+      <div class="v-desc">将保证部分调减后增加非保证部分,实现更激进的资产配置,可能获得更高潜在回报。</div>
+    </div>
+    
+    <div class="value-card">
+      <div class="v-name">终期红利锁定</div>
+      <div class="v-desc">将部分终期红利锁定为周年红利,提取或留存账户,提供流动性同时保留长期增长。</div>
+    </div>
+    
+    <div class="value-card">
+      <div class="v-name">暂领转换权益</div>
+      <div class="v-desc">将保单暂领部分转换为定期入息,实现养老补充或子女教育金安排。</div>
+    </div>
+    
+    <div class="value-card">
+      <div class="v-name">保单分拆安排</div>
+      <div class="v-desc">可拆分为两份或以上新保单,适配家庭结构变化或财富传承安排。</div>
+    </div>
+    
+    <div class="value-card">
+      <div class="v-name">灵活价值提取</div>
+      <div class="v-desc">保单可部分退保提取现金价值,满足不同阶段的资金需求。</div>
+    </div>
+    
+  </div>
+</section>
+
+<!-- ============ 04 看懂三件事 ============ -->
+<section class="chapter dark">
+  <div class="chapter-num">04 / 关键三件事</div>
+  <h2 class="chapter-title" style="color:#fff">看懂三件事,<br>再判断这份计划是否适合你。</h2>
+  <div class="trio-row">
+    <div class="trio-card">
+      <div class="t-label">数字多少</div>
+      <div class="t-value">USD 9.2万</div>
+      <div class="t-desc">这是您您您承诺投入的金额,不等于已经实现收益。</div>
+    </div>
+    <div class="trio-card">
+      <div class="t-label">名义金额</div>
+      <div class="t-value">USD 50.0万</div>
+      <div class="t-desc">这是身故赔偿基数,不代表现金价值或实际退保发还。</div>
+    </div>
+    <div class="trio-card">
+      <div class="t-label">灵活提取</div>
+      <div class="t-value">可调整</div>
+      <div class="t-desc">行使提取功能需符合保单条款,且会影响后续年度保证价值。</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 05 决策框架 ============ -->
+<section class="chapter dark">
+  <div class="chapter-num">05 / 决策框架帮你判断</div>
+  <h2 class="chapter-title" style="color:#fff">关键不是数字够不够大,<br>而是你的钱能不能放得够久。</h2>
+  <div class="decision-grid">
+    <div class="decision-card suitable">
+      <div class="d-name">更适合</div>
+      <div class="d-desc">现金流稳定,具备长缴付期、有定期财务安排、并愿意承担分红非保证特征的人群。</div>
+    </div>
+    <div class="decision-card unsuitable">
+      <div class="d-name">可能不适合</div>
+      <div class="d-desc">几年内就需用钱,只想要稳定收益、不愿承担分红波动或者流动性诉求高的人群。</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 06 哲理收尾 ============ -->
+<section class="philosophy">
+  <div class="chapter-num">06 / 哲理未来</div>
+  <h2 class="chapter-title">今天的安排,<br>是给家人多一种从容。</h2>
+  <p class="desc">长期规划不在一纸保单,而是承诺一种价值。资产在沉淀,承诺在兑现,希望你能感受到安排的不与一份保单的努力。</p>
+</section>
+
+<!-- ============ Footer ============ -->
+<footer class="footer">
+  <div class="footer-row">
+    <div class="risk">
+      风险提示: 保险产品含有投资成分,分红为非保证部分,实际回报可能低于演示。本海报由保单数据自动生成,具体保障内容以保单合同为准。
+    </div>
+    <div class="author">宏利香港</div>
+  </div>
+</footer>
+
+</body>
+</html>

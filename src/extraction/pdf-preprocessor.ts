@@ -43,11 +43,18 @@ export class PdfPreprocessor {
         if (code !== 0) {
           return reject(new Error(`python3.11 preprocess failed: exit ${code}; ${stderr}`));
         }
+        // 鲁棒解析: 容忍 stdout 里的前导垃圾 (PyMuPDF warning / MuPDF error / debug print)
+        // 这些 warning 默认走 stdout (不是 stderr!), 会被埋到 JSON 前面
+        // 策略: 找最后一段完整 JSON (从首个 { 或 [ 到匹配的结尾)
+        const jsonMatch = stdout.match(/[\{\[][\s\S]*[\}\]]\s*$/);
+        if (!jsonMatch) {
+          return reject(new Error(`preprocess stdout has no JSON. head=${stdout.slice(0, 200)}`));
+        }
         try {
-          const parsed = JSON.parse(stdout.trim()) as PreprocessResult;
+          const parsed = JSON.parse(jsonMatch[0]) as PreprocessResult;
           resolve(parsed);
         } catch (e: any) {
-          reject(new Error(`preprocess output parse failed: ${e.message}`));
+          reject(new Error(`preprocess JSON parse failed: ${e.message}; jsonHead=${jsonMatch[0].slice(0, 200)}`));
         }
       });
     });

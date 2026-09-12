@@ -1,0 +1,200 @@
+# Docker Compose for insurance-ppt-v3 local development
+# 用法:
+#   docker compose up --build    # 首次构建并启动
+#   docker compose up             # 之后启动 (热重载源码)
+#   docker compose down           # 停止
+#
+# 设计:
+#   - 镜像和 ECS 完全一致 (Ubuntu 20.04 + Python 3.11 + Bun + LibreOffice)
+#   - 源码通过 bind mount 热重载 (改 src/ 自动 reload)
+#   - node_modules 用 named volume 保留 (避免被本地空目录覆盖)
+#   - 端口: 容器内 80, 本地 3000
+
+services:
+  insurance-ppt:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: insurance-ppt:ecs-v3.0.3
+    container_name: insurance-ppt-dev
+    restart: unless-stopped
+    # 2026-08-12: 不暴露 backend 到 host, 与 ECS 架构一致 (ECS 上 backend 只走容器网络 + nginx 反代)
+    # debug 用 docker exec insurance-ppt-dev curl http://localhost:80/api/health
+    expose:
+      - "80"
+    volumes:
+      # 源码热重载 (本地改文件, 容器内 --watch 自动 reload)
+      - ./src:/opt/insurance-ppt/src
+      - ./scripts:/opt/insurance-ppt/scripts
+      - ./public:/opt/insurance-ppt/public
+      - ./config:/opt/insurance-ppt/config
+      - ./data:/opt/insurance-ppt/data
+      # 2026-08-16: 季度刷新上传 UI (Phase 4 #23) 需要 admin 上传 PDF/CSV 到 db/source_pdfs/inbox/<quarter>/
+      - ./db:/opt/insurance-ppt/db
+      - ./docs:/opt/insurance-ppt/docs
+      - ./package.json:/opt/insurance-ppt/package.json:ro
+      - ./bun.lock:/opt/insurance-ppt/bun.lock:ro
+      # .env 注入 (必须存在)
+      - ./.env:/opt/insurance-ppt/.env:ro
+      # node_modules 用 named volume 保留 (不被本地空目录覆盖)
+      - node_modules:/opt/insurance-ppt/node_modules
+      # 上传文件 / cache / sessions / logs 持久化
+      - uploads_data:/opt/insurance-ppt/uploads
+      - sessions_data:/opt/insurance-ppt/sessions
+      - cache_data:/opt/insurance-ppt/.cache
+      - outputs_data:/opt/insurance-ppt/outputs
+      - logs_data:/opt/insurance-ppt/logs
+    environment:
+      - PORT=80
+      # 2026-08-12: 与培训 backend 共享的 JWT_SECRET (从 repo 根 .env 读)
+      - JWT_SECRET=${JWT_SECRET:-4in1-dev-shared-with-training-2026-change-in-prod}
+      - JWT_EXPIRES_IN=${JWT_EXPIRES_IN:-7d}
+      # 清掉 Mac 上 VPN 的代理设置 (容器内 127.0.0.1:7890 不可达)
+      - HTTP_PROXY=
+      - HTTPS_PROXY=
+      - http_proxy=
+      - https_proxy=
+      - NO_PROXY=*
+      - no_proxy=*
+      # 2026-08-12: 本地 dev 模式 — 仅本地 docker compose 开启, ECS 上不设此 env → /auth/dev-bypass 永远 403
+      - ENABLE_DEV_BYPASS=true
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:80/api/health"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+
+  # 4IN1 (融合以琳工具箱 H5) - Vue3 + Vite
+  # 路径有空格, 通过 docker/4in1/src symlink 访问
+  # 必须 linux/amd64 (匹配 ECS), 否则 npm install 在 Mac arm64 上拉 arm64 二进制,
+  # 容器跑 linux/amd64 时 esbuild 会报 platform mismatch
+  4in1:
+    build:
+      context: ./docker/4in1/src
+      dockerfile: ../Dockerfile
+      platforms:
+        - linux/amd64
+    image: 4in1:dev
+    container_name: 4in1-dev
+    restart: unless-stopped
+    platform: linux/amd64
+    ports:
+      # 2026-08-12: 3000 = 4in1 (等同 hksgtools.cn), backend 不外露
+      - "3000:8080"
+    volumes:
+      # 源码热重载 (symlink 解决路径空格问题)
+      - ./docker/4in1/src/src:/app/src
+      - ./docker/4in1/src/public:/app/public
+      - ./docker/4in1/src/index.html:/app/index.html:ro
+      - ./docker/4in1/src/vite.config.js:/app/vite.config.js:ro
+      - ./docker/4in1/src/package.json:/app/package.json:ro
+      - ./docker/4in1/src/package-lock.json:/app/package-lock.json:ro
+      - ./docker/4in1/src/.env:/app/.env:ro
+      # node_modules: 不挂载, 直接用 image 里的 (linux/amd64 原生二进制)
+      # 改 deps 时: docker compose build 4in1 --no-cache 重新构建 image
+      # 注意: 4in1_node_modules volume 不再使用, 保留以防需要回滚
+    environment:
+      # 清掉 Mac 上 VPN 的代理设置
+      - HTTP_PROXY=
+      - HTTPS_PROXY=
+      - http_proxy=
+      - https_proxy=
+      - NO_PROXY=*
+      - no_proxy=*
+      # 4IN1 的 vite.config.js 会读 VITE_API_PROXY
+      # 这里设了保险起见, 但 iframe 模式其实用不到 (iframe src 在 .env 里写死 localhost:3000)
+      - VITE_API_PROXY=http://insurance-ppt:80
+    depends_on:
+      - insurance-ppt
+      - training-backend
+      - hx-rates-api
+
+  # 2026-08-15: HK 佣金费率查询 API (FastAPI 包装 db/scripts/lookup_commission.py)
+  #   - 内部端口 5000, 不外露 (insurance-ppt server.ts 通过 fetch 反代)
+  #   - SQLite db 单目录 bind mount (db/hx_rates.db + db/scripts/ + db/pdfs/)
+  #   - 季度刷新只需替换 db/hx_rates.db + docker compose restart hx-rates-api, 无需重建 image
+  #   - linux/amd64 (匹配 ECS)
+  hx-rates-api:
+    build:
+      context: ./docker/hx-rates
+      dockerfile: Dockerfile
+      platforms:
+        - linux/amd64
+    image: hx-rates-api:dev
+    container_name: hx-rates-api-dev
+    restart: unless-stopped
+    platform: linux/amd64
+    # 内部网络可达; 不暴露 host 端口
+    expose:
+      - "5000"
+    volumes:
+      - ./db:/app/db
+    environment:
+      - PORT=5000
+      - HX_RATES_DB=/app/db/hx_rates.db
+      - SCRIPTS_DIR=/app/db/scripts
+      # 清掉 Mac 上 VPN 代理残留
+      - HTTP_PROXY=
+      - HTTPS_PROXY=
+      - http_proxy=
+      - https_proxy=
+      - NO_PROXY=*
+      - no_proxy=*
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:5000/healthz', timeout=3)"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+
+  # 2026-08-12: 融合以琳培训系统 backend (NestJS + Prisma + SQLite)
+  #   - 内部端口 3000, 不外露 (4in1 vite proxy /api/training 和 /uploads 转进来)
+  #   - SQLite dev.db + uploads/ 通过 bind mount 持久化
+  #   - linux/amd64 (匹配 ECS)
+  #   - 启动时自动 migrate deploy + seed (idempotent)
+  training-backend:
+    build:
+      context: ./docker/training
+      dockerfile: Dockerfile
+      platforms:
+        - linux/amd64
+    image: training-backend:dev
+    container_name: training-backend-dev
+    restart: unless-stopped
+    platform: linux/amd64
+    # 内部网络可达; 不暴露 host 端口 (4in1 vite proxy 转 /api/training/*)
+    expose:
+      - "3000"
+    volumes:
+      # 持久化: SQLite db 单文件挂载 (避免覆盖 image 里的 schema.prisma + migrations/)
+      # 注: data/prisma/ 目录需存在且含 dev.db (空文件也行, prisma migrate 会初始化)
+      - ./docker/training/data/prisma/dev.db:/app/prisma/dev.db
+      # 上传文件
+      - ./docker/training/data/uploads:/app/uploads
+    environment:
+      - NODE_ENV=production
+      - PORT=3000
+      - DATABASE_URL=file:/app/prisma/dev.db
+      # 2026-08-12: 必须与 insurance-ppt 的 JWT_SECRET 同步 (从 repo 根 .env 读)
+      #   prod 必须换真随机 (会作废所有已签 token)
+      - JWT_SECRET=${JWT_SECRET:-4in1-dev-shared-with-training-2026-change-in-prod}
+      # 清掉 Mac 上 VPN 代理残留 (防 nuxt/prisma 拉包时走 7890)
+      - HTTP_PROXY=
+      - HTTPS_PROXY=
+      - http_proxy=
+      - https_proxy=
+      - NO_PROXY=*
+      - no_proxy=*
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://localhost:3000/docs"]
+      interval: 30s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  node_modules:
+  uploads_data:
+  sessions_data:
+  cache_data:
+  outputs_data:
+  logs_data:
+  4in1_node_modules:

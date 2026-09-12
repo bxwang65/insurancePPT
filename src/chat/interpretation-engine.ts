@@ -8,6 +8,7 @@
 import type { SavingsPlanExtraction } from "../schemas/savings-plan.ts";
 import type { CiPlanExtraction } from "../schemas/critical-illness.ts";
 import type { IulExtraction } from "../schemas/iul.ts";
+import { totalPremiumPaid } from "../api/insurance-math.ts";
 
 export type PlanData = SavingsPlanExtraction | CiPlanExtraction | IulExtraction;
 
@@ -124,13 +125,13 @@ export class InterpretationEngine {
       winner: longTermMultiples.findIndex((m) => m === Math.max(...longTermMultiples.filter(Boolean) as number[])),
     });
 
-    // 保障杠杆对比
+    // 保障杠杆对比 — 保额 / 总缴保费 (不是首年保费)
     const leverageRatios = interpretations.map((i) => {
       if (i.planType === "ci" || i.planType === "iul") {
         const pol = i.policy;
-        const premium = (pol.annual_premium as number) || (pol.initial_premium as number) || 0;
         const sumInsured = (pol.sum_insured as number) || 0;
-        return premium > 0 ? sumInsured / premium : 0;
+        const totalPremium = totalPremiumPaid(pol);
+        return totalPremium > 0 ? sumInsured / totalPremium : 0;
       }
       return 0;
     });
@@ -457,7 +458,11 @@ export class InterpretationEngine {
     let narrative = `每天只需 $${dailyCost}，换 ${this.fmt(sumInsured)} 的全面保障。`;
 
     if (coverageItems.length > 0) {
-      const cancerItem = coverageItems.find((c) => c.name.toLowerCase().includes("癌") || c.name.includes("cancer"));
+      const cancerItem = coverageItems.find((c) => {
+        const name = (c as any)?.name;
+        if (typeof name !== "string") return false;
+        return name.toLowerCase().includes("癌") || name.toLowerCase().includes("cancer");
+      });
       if (cancerItem) {
         narrative += " 癌症保障全面覆盖。";
       }
@@ -484,7 +489,11 @@ export class InterpretationEngine {
 
     points.push(`年缴 ${this.fmt(policy.annual_premium as number)}，保障 ${policy.coverage_period || "终身"}`);
 
-    if (coverageItems.some((c) => c.name.includes("癌") || c.name.includes("cancer"))) {
+    const hasCancer = coverageItems.some((c) => {
+      const name = (c as any)?.name;
+      return typeof name === "string" && (name.includes("癌") || name.toLowerCase().includes("cancer"));
+    });
+    if (hasCancer) {
       points.push("癌症多次赔付，保障不中断");
     }
 
@@ -529,7 +538,7 @@ export class InterpretationEngine {
         slideTitle: "危疾保障范围",
         contentFocus: "各类危疾保障项目和赔付金额",
         chartType: "表格",
-        emphasisPoints: coverageItems.slice(0, 5).map((c) => c.name),
+        emphasisPoints: coverageItems.slice(0, 5).map((c) => (c as any)?.name ?? "(未命名)"),
         visualStyle: "数据驱动",
         narrativeText: "全面覆盖常见危疾，包括癌症、心脏病、中风等，每项都有明确的赔付额度",
       });

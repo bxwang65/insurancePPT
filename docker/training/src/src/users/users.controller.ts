@@ -89,9 +89,12 @@ export class UsersController {
           'Authorization': `Bearer ${adminToken}`,
         },
         body: JSON.stringify({
+          // 2026-08-24: 透传 isAdmin — 之前没传, insurance-ppt 默认 false (修复了 callerIsAdmin bug)
+          //   这里显式传更明确, admin 走完整审核 (培训 admin count 上限校验已在前面做完)
           users: rows.map((u) => ({
             email: u.email,
             name: u.name || u.email.split('@')[0],
+            isAdmin: u.is_admin === true,
           })),
           defaultPassword: '123456',
         }),
@@ -197,9 +200,10 @@ export class UsersController {
 
   @Patch(':id')
   @UseGuards(AdminGuard)
-  @ApiOperation({ summary: '更新员工信息（头衔/角色/等级/业绩/招募人/主管/主推产品）' })
+  @ApiOperation({ summary: '更新员工信息（头衔/角色/等级/业绩/招募人/主管/主推产品; 改 is_admin 仅超级管理员可）' })
   async update(@Param('id') id: string, @Body() dto: UpdateUserDto, @Req() req: any) {
-    return this.usersService.update(id, dto, req.user?.sub)
+    // 2026-08-24: 把请求者 email 透传到 service, 让 service 判 is_admin 改写权限
+    return this.usersService.update(id, dto, req.user?.sub, req.user?.email)
   }
 
   @Patch(':id/status')
@@ -211,9 +215,12 @@ export class UsersController {
 
   @Delete(':id')
   @UseGuards(AdminGuard)
-  @ApiOperation({ summary: '删除员工 (级联清理进度/业绩/日志, 不可恢复)' })
-  async remove(@Param('id') id: string) {
-    return this.usersService.remove(id)
+  @ApiOperation({ summary: '删除员工 (级联清理进度/业绩/日志, 不可恢复; 删 admin 仅超级管理员可)' })
+  async remove(@Param('id') id: string, @Req() req: any) {
+    // 2026-08-24: 超级管理员 123@qqq.com 唯一可删 admin 账号
+    const superAdminEmail = (process.env.SUPER_ADMIN_EMAIL || '123@qqq.com').toLowerCase()
+    const requesterEmail = (req.user?.email || '').toLowerCase()
+    return this.usersService.remove(id, requesterEmail, superAdminEmail)
   }
 
   /**

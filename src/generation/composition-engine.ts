@@ -5,6 +5,7 @@ import fs from "fs";
 import type { SavingsPlanExtraction, YearlyBenefitRow } from "../schemas/savings-plan.ts";
 import type { CiPlanExtraction } from "../schemas/critical-illness.ts";
 import type { IulExtraction } from "../schemas/iul.ts";
+import { totalPremiumPaid, parsePayYears } from "../api/insurance-math.ts";
 
 type PlanData = SavingsPlanExtraction | CiPlanExtraction | IulExtraction;
 
@@ -306,15 +307,17 @@ export class CompositionEngine {
     s1.background = { fill: "FFFFFF" };
     this.addSlideHeader(s1, "📈 IUL 方案概覽", d.product_name);
 
+    const annualPrem = d.policy.annual_premium ?? d.policy.initial_premium ?? 0;
+    const payYears = parsePayYears(d.policy.premium_payment_period);
+    const totalPrem = totalPremiumPaid(d.policy);
     let ctx = `**受保人**: ${d.insured.name} | ${d.insured.age ?? "?"}歲\n`;
     ctx += `**保障金額**: $${this.fmt(d.policy.sum_insured ?? 0)}\n`;
-    ctx += `**首年保費**: $${this.fmt(d.policy.initial_premium ?? 0)}\n`;
+    ctx += `**年繳保費**: $${this.fmt(annualPrem)} × ${payYears}年 = $${this.fmt(totalPrem)}\n`;
     ctx += `**繳付**: ${d.policy.premium_payment_period} | 保障${d.policy.coverage_period}\n`;
     if (d.policy.day_1_cash_value) ctx += `**首日現金價值**: $${this.fmt(d.policy.day_1_cash_value)}\n`;
 
-    const lev = d.policy.initial_premium && d.policy.initial_premium > 0
-      ? ((d.policy.sum_insured ?? 0) / d.policy.initial_premium).toFixed(1) : "-";
-    ctx += `\n**🏆 槓桿比率: ${lev}x** — 僅需繳付 $${this.fmt(d.policy.initial_premium ?? 0)}，即可獲得 $${this.fmt(d.policy.sum_insured ?? 0)} 的身故保障\n`;
+    const lev = totalPrem > 0 ? ((d.policy.sum_insured ?? 0) / totalPrem).toFixed(1) : "-";
+    ctx += `\n**🏆 槓桿比率: ${lev}x** — 總繳 $${this.fmt(totalPrem)}，即可獲得 $${this.fmt(d.policy.sum_insured ?? 0)} 的身故保障\n`;
 
     if (d.index_accounts?.length) {
       ctx += `\n**指數帳戶配置**:\n${d.index_accounts.map((a) => `• ${a.name}: ${a.allocation}%${a.current_assumed_rate ? ` (利率 ${a.current_assumed_rate})` : ""}`).join("\n")}`;

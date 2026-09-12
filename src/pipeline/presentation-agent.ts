@@ -39,6 +39,33 @@ function getSavings(req: PipelineRequest): any | null {
   return null;
 }
 
+function _maIrrBisect(cf: Array<[number, number]>): number | null {
+  const npv = (r: number) => cf.reduce((s, [t, a]) => s + a / Math.pow(1 + r, t), 0);
+  let lo = -0.99, hi = 1.0;
+  let fLo = npv(lo), fHi = npv(hi);
+  if (fLo * fHi > 0) return null;
+  for (let i = 0; i < 200; i++) {
+    const mid = (lo + hi) / 2;
+    const fMid = npv(mid);
+    if (Math.abs(fMid) < 1e-6 || (hi - lo) < 1e-10) return mid;
+    if (fLo * fMid < 0) { hi = mid; fHi = fMid; } else { lo = mid; fLo = fMid; }
+  }
+  return (lo + hi) / 2;
+}
+function _iaIrrCap(currency?: string): number {
+  const c = String(currency || 'USD').toUpperCase().trim();
+  return (c === 'HKD' || c === '港币' || c === '港元') ? 0.06 : 0.065;
+}
+function computeIrrMA(annualPrem: number, payYrs: number, sv: number, yr: number, currency?: string): number | null {
+  if (yr <= 0 || annualPrem <= 0 || sv <= 0 || payYrs < 1) return null;
+  const cf: Array<[number, number]> = [[0, -annualPrem]];
+  for (let i = 1; i < payYrs; i++) cf.push([i, -annualPrem]);
+  cf.push([yr, sv]);
+  const r = _maIrrBisect(cf);
+  if (r === null) return null;
+  return Math.min(r, _iaIrrCap(currency));
+}
+
 function decadeRows(s: any, withWithdraw: boolean) {
   const insuredAge = Number(s?.insured?.age || 1);
   const base = (s?.benefitRows || []) as any[];
@@ -49,6 +76,11 @@ function decadeRows(s: any, withWithdraw: boolean) {
     total_premium_paid: r.totalPremiumPaid, annual_withdrawal: 0, cumulative_withdrawal: 0,
     surrender_value_after: r.totalSurrenderValue,
   }));
+  // 缴费方式: 从 benefit illustration 推算 (与 PPT/服务端一致)
+  const ap = Number(s?.policy?.annual_premium ?? s?.policy?.annualPremium ?? 0);
+  const nonZeroPrem = base.filter((r: any) => Number(r?.annualPremium ?? r?.annual_premium ?? 0) > 0).length;
+  const payYrs = Math.max(nonZeroPrem, 1);
+  const cur = String(s?.policy?.currency ?? 'USD');
   const out: any[] = [];
   for (const r of src) {
     const py = Number(r.policy_year ?? r.policyYear ?? 0);
@@ -58,7 +90,9 @@ function decadeRows(s: any, withWithdraw: boolean) {
     const val = Number(r.surrender_value_after ?? r.surrenderValueAfter ?? r.total_surrender_value ?? r.totalSurrenderValue ?? 0);
     const years = Math.max(py, 1);
     const simple = ((val / Math.max(paid, 1) - 1) / years) * 100;
-    const cagr = (Math.pow(val / Math.max(paid, 1), 1 / years) - 1) * 100;
+    // 复利列改为 M-A NPV IRR (与 server.ts / result-summary.js 完全一致), 封顶 HK IA
+    const ma = computeIrrMA(ap, payYrs, val, py, cur);
+    const compound = ma !== null ? ma * 100 : 0;
     out.push({
       age: Number(r.age || insuredAge + py),
       policy_year: py,
@@ -67,7 +101,7 @@ function decadeRows(s: any, withWithdraw: boolean) {
       cumulative_withdrawal: Number(r.cumulative_withdrawal ?? r.cumulativeWithdrawal ?? 0),
       surrender_value_after: val,
       simple_rate: simple,
-      cagr_rate: cagr,
+      cagr_rate: compound,
     });
   }
   return out.slice(0, 15);
@@ -187,7 +221,13 @@ function buildTheme(tenant: TenantBrandConfig, coverRel: string, preset: Pipelin
 
 async function render(marpPath: string, themePath: string, output: string, mode: "--pptx" | "--pdf"): Promise<void> {
   await new Promise<void>((resolve, reject) => {
-    const p = spawn("npx", ["@marp-team/marp-cli@latest", marpPath, mode, "--allow-local-files", "--theme-set", themePath, "--theme", "pipeline-brand", "-o", output], { stdio: "inherit" });
+    // ECS 容器只有 bun 没有 node/npx, 直接用 bun 调用本地 marp-cli.js
+    // 同时指定 Chrome for Testing 路径 (避免 marp 找不到系统 chromium)
+    const marpCli = "/opt/insurance-ppt/.cache/marp/node_modules/@marp-team/marp-cli/marp-cli.js";
+    const chromePath = "/root/.cache/puppeteer/chrome/linux-152.0.7977.42/chrome-linux64/chrome";
+    const args = [marpCli, marpPath, mode, "--allow-local-files", "--theme-set", themePath, "--theme", "pipeline-brand", "-o", output];
+    if (fs.existsSync(chromePath)) args.push("--browser-path", chromePath);
+    const p = spawn("bun", args, { stdio: "inherit" });
     p.on("error", reject); p.on("close", (code) => code === 0 ? resolve() : reject(new Error(`marp exit ${code}`)));
   });
 }

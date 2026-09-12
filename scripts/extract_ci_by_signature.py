@@ -35,6 +35,44 @@ import pdfplumber
 import fitz
 
 
+# === M-A NPV IRR (与 docker/insurance-deck/insdeck/extract/savings_normalizer.py 一致) ===
+def _ia_irr_cap(currency: str) -> float:
+    c = (currency or "USD").upper().strip()
+    return 0.06 if c in ("HKD", "港币", "港元", "港幣") else 0.065
+
+
+def _ma_irr_bisect(npv, lo: float = -0.99, hi: float = 1.0):
+    f_lo, f_hi = npv(lo), npv(hi)
+    if f_lo * f_hi > 0:
+        return None
+    for _ in range(200):
+        mid = (lo + hi) / 2
+        f_mid = npv(mid)
+        if abs(f_mid) < 1e-6 or (hi - lo) < 1e-10:
+            return mid
+        if f_lo * f_mid < 0:
+            hi, f_hi = mid, f_mid
+        else:
+            lo, f_lo = mid, f_mid
+    return (lo + hi) / 2
+
+
+def _calc_irr_ma(years: int, total: float, paid_total: float, pay_years: int, currency: str):
+    if years <= 0 or total <= 0 or paid_total <= 0:
+        return None
+    n = pay_years if pay_years >= 1 else 1
+    annual = paid_total / n
+    if annual <= 0:
+        return None
+    cf = [(0.0, -annual)]
+    for i in range(1, n):
+        cf.append((float(i), -annual))
+    cf.append((float(years), total))
+    cap = _ia_irr_cap(currency)
+    irr = _ma_irr_bisect(lambda r: sum(a / (1 + r) ** t for t, a in cf))
+    return min(irr, cap) if irr is not None else None
+
+
 def _parse_multi(cell) -> List[int]:
     """Cell可能含多值用\\n分隔"""
     if not cell:
@@ -205,15 +243,14 @@ def main():
         # 1-based → 0-based for pdfplumber
         pg = sorted({p - 1 for p in args.pages_premium_table if p > 0})
         rows = extract_benefit_illustration(args.pdf, pg)
-        # 算 IRR/单利/倍数
+        # 算 M-A IRR / 单利 / 倍数 (与 savings_normalizer.py 一致)
         paid_total = summary.get("premium_total") or 0
+        pay_years = int(summary.get("payment_years") or summary.get("premium_payment_period") or 0)
+        currency = summary.get("currency") or "USD"
         for r in rows:
             total = r["Total"]
             r["Mult"] = round(total / paid_total, 4) if paid_total else 0
-            if r["Y"] > 0 and total > paid_total and paid_total > 0:
-                r["IRR"] = (total / paid_total) ** (1 / r["Y"]) - 1
-            else:
-                r["IRR"] = None
+            r["IRR"] = _calc_irr_ma(int(r["Y"]), total, paid_total, pay_years, currency)
             r["Simple"] = ((total - paid_total) / paid_total / r["Y"]) if r["Y"] > 0 and paid_total else 0
 
         out = {

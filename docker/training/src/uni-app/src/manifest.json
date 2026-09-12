@@ -1,0 +1,23 @@
+{
+  "name": "融合以琳培训",
+  "appid": "__UNI__TRAINING",
+  "description": "融合以琳培训系统移动端",
+  "versionName": "1.0.0",
+  "versionCode": "100",
+  "transformPx": false,
+  "h5": {
+    "title": "融合以琳培训",
+    "router": {
+      "mode": "history"
+    }
+  },
+  "mp-weixin": {
+    "appid": "",
+    "setting": {
+      "urlCheck": false,
+      "es6": true,
+      "minified": true
+    },
+    "usingComponents": true
+  }
+}

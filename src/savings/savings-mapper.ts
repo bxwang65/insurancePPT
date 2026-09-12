@@ -30,10 +30,35 @@ export function mapSavingsMetrics(data: any): SavingsKeyMetrics {
   const rows = Array.isArray(data?.benefit_illustration) ? data.benefit_illustration : [];
   const insuredAge = n(data?.insured?.age || 0);
   const annualPremium = n(data?.policy?.annual_premium || 0);
-  const payYears = parseYears(data?.policy?.premium_payment_period || 0);
+  let payYears = parseYears(data?.policy?.premium_payment_period || 0);
   // `total_premium_with_levy` in insurer proposals is commonly one annual
   // premium including levy, not the contractual total across all pay years.
-  const totalPremium = annualPremium * payYears;
+  let totalPremium = annualPremium * payYears;
+
+  // 防御性兜底: 提取器返回 premium_payment_period="0年" 时 (如 AXA 盛利II / CPIC 世代悅享),
+  // 从 benefit_illustration 自动推算 payYears (与 orchestrator.ts IUL 逻辑一致)
+  if (payYears <= 0 && annualPremium > 0 && rows.length > 0) {
+    let inferredPay = 0;
+    let prevPaid = 0;
+    for (const r of rows) {
+      const paid = n(r?.total_premium_paid);
+      if (paid > prevPaid) {
+        inferredPay += 1;
+        prevPaid = paid;
+      } else if (paid > 0 && paid === prevPaid) {
+        break;  // 已缴完 (整付)
+      } else {
+        break;
+      }
+    }
+    if (inferredPay > 0 && inferredPay <= 30) {
+      payYears = inferredPay;
+      totalPremium = annualPremium * payYears;
+    } else if (rows[0] && n(rows[0].total_premium_paid) >= annualPremium) {
+      payYears = 1;
+      totalPremium = annualPremium;
+    }
+  }
 
   const row20 = rows.find((r: any) => n(r?.policy_year) === 20);
   const row30 = rows.find((r: any) => n(r?.policy_year) === 30);

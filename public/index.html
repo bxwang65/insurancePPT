@@ -12,10 +12,11 @@
   }
 </script>
 
+<!-- 2026-07-26: 第三方 CDN 本地化 (某些网络下 cdn.tailwindcss.com + fonts.googleapis.com ERR_CONNECTION_CLOSED) -->
 <!-- Tailwind -->
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script src="./vendor/tailwind/tailwind.js"></script>
 <!-- Material Symbols -->
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./vendor/material-symbols/material-symbols.css">
 
 <!-- 本地设计系统 token + 共享样式 -->
 <link rel="stylesheet" href="./css/tokens.css">
@@ -482,10 +483,9 @@
           </button>
           <button id="resultSummaryBtn" class="h-12 w-full bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-600 hover:to-teal-700 text-white rounded-lg text-body font-semibold flex items-center justify-center gap-2 transition-all active:scale-95 duration-200 shadow-sm">
             <span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1">image</span>
-            生成保单摘要图
+            生成保单简要海报
           </button>
         </div>
-        <div id="summaryExportArea" style="display:none;"></div>
         <div class="h-px w-full bg-border-subtle"></div>
         <div class="flex flex-col gap-1">
           <button id="resultRegenerateBtn" class="text-left w-full px-3 py-3 rounded-md hover:bg-surface-container-low text-text-secondary hover:text-on-surface text-caption transition-colors flex items-center gap-2">
@@ -508,8 +508,7 @@
   .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
 </style>
 
-<!-- html2canvas (用于导出摘要图) -->
-<script src="./js/html2canvas.min.js"></script>
+<!-- (html2canvas 不再使用 — 保单简要海报走服务端生成的品牌 PNG) -->
 
 <!-- App 入口 (ES Modules) -->
 <script type="module" src="./js/app.js"></script>

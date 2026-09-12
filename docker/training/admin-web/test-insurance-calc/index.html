@@ -1,0 +1,1039 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>各保司优惠计算器</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f4f7fb; color: #333; max-width: 420px; margin: 0 auto; padding: 12px; font-size: 14px; }
+h1 { font-size: 18px; text-align: center; padding: 16px 0 12px; color: #1a2a4a; }
+h2 { font-size: 15px; margin: 12px 0 8px; color: #2c3e50; }
+
+.company-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin: 8px 0; }
+.company-btn { padding: 10px 4px; border: 2px solid #dce3ed; border-radius: 10px; background: #fff; font-size: 13px; font-weight: 500; cursor: pointer; text-align: center; transition: all .15s; }
+.company-btn:active { transform: scale(0.96); }
+.company-btn.selected { border-color: #2196f3; background: #e3f2fd; color: #1565c0; }
+
+.form-card { background: #fff; border-radius: 12px; padding: 16px; margin: 8px 0; box-shadow: 0 1px 4px rgba(0,0,0,.06); }
+.form-group { margin-bottom: 12px; }
+.form-group:last-child { margin-bottom: 0; }
+.form-group label { display: block; font-size: 13px; color: #666; margin-bottom: 4px; font-weight: 500; }
+.form-group select, .form-group input { width: 100%; padding: 10px 12px; border: 1px solid #d0d7e2; border-radius: 8px; font-size: 14px; background: #fff; appearance: auto; }
+.form-group input:focus, .form-group select:focus { outline: none; border-color: #2196f3; box-shadow: 0 0 0 2px rgba(33,150,243,.15); }
+.form-row { display: flex; gap: 12px; }
+.form-row .form-group { flex: 1; }
+.toggle-group { display: flex; gap: 8px; flex-wrap: wrap; }
+.toggle-btn { padding: 8px 16px; border: 1.5px solid #d0d7e2; border-radius: 8px; background: #fff; font-size: 13px; cursor: pointer; }
+.toggle-btn.active { border-color: #2196f3; background: #e3f2fd; color: #1565c0; }
+.toggle-btn:disabled { opacity: .5; cursor: not-allowed; }
+
+.results-card { background: #fff; border-radius: 12px; padding: 16px; margin: 8px 0; box-shadow: 0 1px 4px rgba(0,0,0,.06); display: none; }
+.results-card.visible { display: block; }
+.result-row { display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #f0f2f5; }
+.result-row:last-child { border-bottom: none; }
+.result-label { color: #666; font-size: 13px; }
+.result-value { font-weight: 600; font-size: 14px; text-align: right; }
+.result-value .sub { font-weight: 400; font-size: 12px; color: #999; margin-left: 4px; }
+.highlight { color: #e65100; }
+
+table { width: 100%; border-collapse: collapse; margin: 8px 0; font-size: 13px; }
+th, td { padding: 8px 6px; text-align: center; border: 1px solid #e8ecf0; }
+th { background: #f5f7fa; font-weight: 600; color: #555; }
+td:first-child { text-align: left; font-weight: 500; }
+.positive { color: #2e7d32; }
+.negative { color: #c62828; }
+.note-text { font-size: 12px; color: #888; margin-top: 8px; padding: 8px; background: #f9fafb; border-radius: 8px; line-height: 1.6; white-space: pre-wrap; }
+
+.verify-badge { display: inline-block; background: #e8f5e9; color: #2e7d32; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 600; }
+.calc-hint { font-size: 11px; color: #999; margin-top: 4px; font-family: monospace; }
+</style>
+</head>
+<body>
+
+<h1>各保司优惠计算器</h1>
+
+<div class="company-grid" id="companyGrid"></div>
+
+<div class="form-card" id="inputCard" style="display:none">
+  <div class="form-row">
+    <div class="form-group">
+      <label>投保计划</label>
+      <select id="selProduct" onchange="onProductChange()"></select>
+    </div>
+    <div class="form-group">
+      <label>缴费年期</label>
+      <select id="selPeriod" onchange="onPeriodChange()"></select>
+    </div>
+  </div>
+  <div class="form-group">
+    <label>年缴保费 (USD/HKD)</label>
+    <input type="number" id="inputPremium" placeholder="输入年缴保费金额" min="0" step="1000" oninput="onCalculate()">
+  </div>
+  <div class="form-group" id="extraDiscountGroup" style="display:none">
+    <label>组合优惠</label>
+    <div class="toggle-group">
+      <button class="toggle-btn" data-value="no" onclick="setExtraDiscount('no')">无</button>
+      <button class="toggle-btn active" data-value="yes" onclick="setExtraDiscount('yes')">有</button>
+    </div>
+  </div>
+  <div class="form-group" id="extraCategoryGroup" style="display:none">
+    <label>组合优惠类型</label>
+    <select id="selExtraCategory" onchange="onCalculate()">
+      <option value="危疾/人寿">危疾/人寿</option>
+      <option value="危疾+人寿">危疾+人寿</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label>预缴</label>
+    <div class="toggle-group" id="prepayGroup"></div>
+  </div>
+  <div id="expiryNote" style="font-size:11px;color:#999;margin-top:4px"></div>
+</div>
+
+<div class="results-card" id="resultsCard">
+  <h2>计算结果</h2>
+
+  <div class="result-row">
+    <span class="result-label">优惠比例</span>
+    <span class="result-value" id="resDiscountRate">-</span>
+  </div>
+  <div class="result-row">
+    <span class="result-label">优惠方式</span>
+    <span class="result-value" id="resDiscountType">-</span>
+  </div>
+  <div class="result-row">
+    <span class="result-label">优惠金额</span>
+    <span class="result-value" id="resDiscountAmount">-</span>
+  </div>
+
+  <div style="margin-top:12px">
+    <table>
+      <thead><tr><th>年度</th><th>缴纳保费</th><th>说明</th></tr></thead>
+      <tbody id="resYearlyTable"></tbody>
+    </table>
+  </div>
+
+  <div class="result-row">
+    <span class="result-label">实际总保费</span>
+    <span class="result-value highlight" id="resTotalActual">-</span>
+  </div>
+  <div class="result-row">
+    <span class="result-label">相比原总保费节省</span>
+    <span class="result-value positive" id="resTotalSaved">-</span>
+  </div>
+
+  <div id="resPrepaySection" style="display:none;margin-top:12px;border-top:2px solid #e3f2fd;padding-top:12px">
+    <h2>预缴计算</h2>
+    <div class="result-row">
+      <span class="result-label">预缴年利率</span>
+      <span class="result-value" id="resPrepayRate">-</span>
+    </div>
+    <div class="result-row">
+      <span class="result-label">第一年一笔过缴纳</span>
+      <span class="result-value" id="resLumpSum">-</span>
+    </div>
+    <div style="margin-top:8px">
+      <table>
+        <thead><tr><th>年度</th><th>预缴抵扣</th><th>折现计算</th></tr></thead>
+        <tbody id="resPrepayTable"></tbody>
+      </table>
+    </div>
+    <div class="result-row">
+      <span class="result-label">预缴利息金额</span>
+      <span class="result-value" id="resPrepayInterest">-</span>
+    </div>
+    <div class="result-row">
+      <span class="result-label">总优惠金额</span>
+      <span class="result-value" id="resTotalDiscount">-</span>
+    </div>
+    <div class="result-row">
+      <span class="result-label">实际缴纳总保费</span>
+      <span class="result-value highlight" id="resFinalTotal">-</span>
+    </div>
+  </div>
+
+  <div class="note-text" id="resNote"></div>
+  <div class="calc-hint" id="resFormulaHint"></div>
+</div>
+
+<script>
+// ============================================================
+// CONFIG DATA (from Sheet15)
+// ============================================================
+window.CONFIG = {
+  "meta": {"version": "1.0", "date": "2026-05-19"},
+  "companies": [
+    {
+      "id": "youbang", "name": "友B", "expiry": "5月31日",
+      "products": {
+        "盈御3/环宇盈活": {
+          "periods": ["5年缴", "趸缴"],
+          "discount": {
+            "5年缴": {"type": "vlookup", "tiers": [{"min":0,"rate":0.05},{"min":10000,"rate":0.12},{"min":30000,"rate":0.18},{"min":50000,"rate":0.24},{"min":100000,"rate":0.31},{"min":200000,"rate":0.32},{"min":1000000,"rate":0.33}]},
+            "趸缴": {"type": "vlookup", "tiers": [{"min":0,"rate":0},{"min":100000,"rate":0.02},{"min":300000,"rate":0.03},{"min":600000,"rate":0.04},{"min":1000000,"rate":0.05},{"min":2000000,"rate":0.06},{"min":3500000,"rate":0.07}]}
+          },
+          "extraDiscount": {"type":"fixed_add","rate":0.03,"desc":"有组合优惠:+3%"}
+        }
+      },
+      "prepayment": {
+        "预缴1年": {"rate": 0.043},
+        "预缴4年": {"tiers":[{"operator":">=","threshold":200000,"rate":0.04},{"operator":"<","threshold":200000,"rate":0.038}]}
+      }
+    },
+    {
+      "id": "ansheng", "name": "安S", "expiry": "5月31日",
+      "products": {
+        "挚H储蓄计划": {"periods":["5年缴"],"discount":{"5年缴":{"type":"vlookup","tiers":[{"min":0,"rate":0},{"min":5000,"rate":0.1},{"min":40000,"rate":0.13},{"min":80000,"rate":0.18},{"min":200000,"rate":0.21}]}}},
+        "盛LII": {"periods":["2年缴","5年缴"],"discount":{"5年缴":{"type":"vlookup","tiers":[{"min":0,"rate":0},{"min":5000,"rate":0.1},{"min":40000,"rate":0.13},{"min":80000,"rate":0.2},{"min":200000,"rate":0.25}]},"2年缴":{"type":"none"}}},
+        "尊S盈家Ⅱ": {"periods":["趸缴"],"discount":{"趸缴":{"type":"vlookup","tiers":[{"min":0,"rate":0.01},{"min":500000,"rate":0.02},{"min":1000000,"rate":0.03}]}}}
+      },
+      "extraDiscount": {"type":"combo_vlookup","desc":"同一持有人指定储蓄/投资计划仍生效","tiers":[{"min":200000,"rate":0.05},{"min":80000,"rate":0.05},{"min":40000,"rate":0.05},{"min":5000,"rate":0.05},{"min":0,"rate":0}]},
+      "prepayment": {
+        "预缴4年": {"tiers":[{"min":0,"rate":0.038},{"min":120000,"rate":0.045}]},
+        "2pay预缴": {"tiers":[{"min":0,"rate":0.04},{"min":200000,"rate":0.08}]}
+      }
+    },
+    {
+      "id": "hongli", "name": "宏L", "expiry": "26年6月30日",
+      "products": {
+        "宏Z传承": {"periods":["2年缴","5年缴"],"discount":{
+          "2年缴":{"type":"vlookup_2col","tiers":[{"min":0,"rate":0},{"min":5000,"rate":0.01},{"min":100000,"rate":0.02},{"min":250000,"rate":0.03}],"secondYearTiers":[{"min":0,"rate":0},{"min":5000,"rate":0},{"min":100000,"rate":0},{"min":250000,"rate":0}]},
+          "5年缴":{"type":"vlookup_2col","tiers":[{"min":0,"rate":0},{"min":5000,"rate":0.03},{"min":10000,"rate":0.08},{"min":50000,"rate":0.08},{"min":70000,"rate":0.08},{"min":100000,"rate":0.08},{"min":250000,"rate":0.08}],"secondYearTiers":[{"min":0,"rate":0},{"min":5000,"rate":0},{"min":10000,"rate":0},{"min":50000,"rate":0.06},{"min":70000,"rate":0.08},{"min":100000,"rate":0.13},{"min":250000,"rate":0.15}]}
+        },"extraDiscount":{"type":"combo_macro","desc":"危疾/人寿:+2%,危疾+人寿:+4%(第2年)","cat1Rate":0.02,"cat2Rate":0.04,"cat1Thresh":250000,"cat2Thresh":100000}},
+        "宏Z家传承": {"inherit":"宏Z传承", "periods":["2年缴","5年缴"]}
+      },
+      "prepayment": {
+        "预缴4年": {"base":{"tiers":[{"min":80000,"rate":0.045},{"min":0,"rate":0.04}]},"extra":0.01},
+        "预缴2年": {"base":{"tiers":[{"min":150000,"rate":0.065},{"min":0,"rate":0.06}]}}
+      }
+    },
+    {
+      "id": "fuwei", "name": "富W", "expiry": "6月30日(保费)/5月31日(预缴)",
+      "products": {
+        "盈J天下": {"periods":["5年缴"],"discount":{"5年缴":{"type":"vlookup_2col","firstYear":0,"secondYearTiers":[{"min":0,"rate":0.16},{"min":30000,"rate":0.18},{"min":100000,"rate":0.21}]}}},
+        "盈J天下2": {"periods":["2年缴","3年缴","5年缴"],"discount":{
+          "2年缴":{"type":"vlookup","tiers":[{"min":0,"rate":0.01},{"min":50000,"rate":0.02},{"min":100000,"rate":0.0325}]},
+          "3年缴":{"type":"vlookup","tiers":[{"min":0,"rate":0.1},{"min":50000,"rate":0.35},{"min":100000,"rate":0.4},{"min":200000,"rate":0.45}]},
+          "5年缴":{"type":"vlookup_2col","firstYear":0,"secondYearTiers":[{"min":0,"rate":0.16},{"min":30000,"rate":0.18},{"min":100000,"rate":0.21}]}
+        }}
+      },
+      "prepayment": {"5年缴":{"rate":0.045},"3年缴":{"rate":0.045},"2年缴":{"rate":0.045}}
+    },
+    {
+      "id": "baocheng", "name": "保C", "expiry": "6月30日(保费)/5月31日(预缴)",
+      "products": {
+        "信S明天": {"periods":["5年缴"],"discount":{"5年缴":{"type":"vlookup","tiers":[{"min":0,"rate":0},{"min":5000,"rate":0.04},{"min":20000,"rate":0.07},{"min":40000,"rate":0.11},{"min":60000,"rate":0.15},{"min":150000,"rate":0.17},{"min":1500000,"rate":0.29}]}},"extraDiscount":{"type":"fixed_add","rate":0.02,"desc":"启耀未来储蓄保险系列折扣+2%"}}
+      },
+      "prepayment":{"预缴4年":{"tiers":[{"operator":">=","threshold":100000,"rate":0.045},{"operator":"<","threshold":100000,"rate":0.038}]}}
+    },
+    {
+      "id": "zhoudafu", "name": "周D福", "expiry": "6月30日",
+      "products": {
+        "匠X2": {"periods":["2年缴","5年缴"],"discount":{
+          "2年缴":{"type":"none"},
+          "5年缴":{"type":"vlookup_2col","tiers":[{"min":0,"rate":0},{"min":5000,"rate":0.05},{"min":10000,"rate":0.08},{"min":30000,"rate":0.08},{"min":50000,"rate":0.08},{"min":100000,"rate":0.08},{"min":250000,"rate":0.08}],"secondYearTiers":[{"min":0,"rate":0},{"min":5000,"rate":0},{"min":10000,"rate":0.04},{"min":30000,"rate":0.07},{"min":50000,"rate":0.12},{"min":100000,"rate":0.14},{"min":250000,"rate":0.16}]}
+        }},
+        "匠X飞越": {"inherit":"匠X2","periods":["2年缴","5年缴"]}
+      },
+      "prepayment":{"2年缴":{"tiers":[{"operator":">=","threshold":80000,"rate":0.071},{"operator":"<","threshold":80000,"rate":0.04}]},"5年缴":{"tiers":[{"operator":">=","threshold":80000,"rate":0.045},{"operator":"<","threshold":80000,"rate":0.04}]}}
+    },
+    {
+      "id": "wantong", "name": "万T", "expiry": "26年7月2日(保费)/26年5月29日(预缴)",
+      "products": {
+        "富R万家": {"periods":["2年缴","5年缴"],"discount":{
+          "2年缴":{"type":"vlookup","tiers":[{"min":0,"rate":0},{"min":30000,"rate":0.02},{"min":100000,"rate":0.04},{"min":250000,"rate":0.06}]},
+          "5年缴":{"type":"vlookup_2col","tiers":[{"min":0,"rate":0.06},{"min":2500,"rate":0.06},{"min":5000,"rate":0.06},{"min":30000,"rate":0.08},{"min":100000,"rate":0.08},{"min":250000,"rate":0.08},{"min":500000,"rate":0.08}],"secondYearTiers":[{"min":0,"rate":0},{"min":2500,"rate":0},{"min":5000,"rate":0.04},{"min":30000,"rate":0.1},{"min":100000,"rate":0.14},{"min":250000,"rate":0.16},{"min":500000,"rate":0.18}]}
+        }}
+      },
+      "prepayment":{"2年缴":{"tiers":[{"min":50000,"rate":0.1},{"min":0,"rate":0.0525}]},"5年缴":{"firstYearTiers":[{"min":50000,"rate":0.08},{"min":0,"rate":0.072}],"otherYears":0.032}}
+    },
+    {
+      "id": "guoshou", "name": "国S", "expiry": "6月30日",
+      "products": {
+        "智Y世代多元货币卓越": {"periods":["5年缴"],"discount":{"5年缴":{"type":"vlookup","tiers":[{"min":0,"rate":0.1},{"min":2500,"rate":0.15}]}}},
+        "傲L盛世": {"periods":["5年缴","2年缴"],"discount":{"5年缴":{"type":"vlookup_2col","tiers":[{"min":0,"rate":0.06},{"min":1600,"rate":0.06},{"min":20000,"rate":0.06},{"min":50000,"rate":0.06},{"min":100000,"rate":0.06},{"min":200000,"rate":0.06}],"secondYearTiers":[{"min":0,"rate":0},{"min":1600,"rate":0},{"min":20000,"rate":0.04},{"min":50000,"rate":0.14},{"min":100000,"rate":0.16},{"min":200000,"rate":0.18}]},"2年缴":{"type":"none"}}}
+      },
+      "prepayment":{"智裕_5年缴":{"rate":0.035},"傲龙_2年缴":{"rate":0.045},"傲龙_5年缴":{"rate":0.035}}
+    },
+    {
+      "id": "taibao", "name": "太B", "expiry": "6月30日",
+      "products": {
+        "鑫A逸": {"periods":["3年缴"],"discount":{"type":"none"}},
+        "世D悦享3": {"periods":["2年缴","5年缴"],"discount":{"2年缴":{"type":"vlookup","tiers":[{"min":0,"rate":0},{"min":30000,"rate":0.03},{"min":50000,"rate":0.06},{"min":250000,"rate":0.08},{"min":1000000,"rate":0.1}]},"5年缴":{"type":"vlookup_2col","tiers":[{"min":0,"rate":0},{"min":10000,"rate":0.1},{"min":50000,"rate":0.15},{"min":100000,"rate":0.2},{"min":200000,"rate":0.2},{"min":500000,"rate":0.2},{"min":1000000,"rate":0.2}],"secondYearTiers":[{"min":0,"rate":0},{"min":10000,"rate":0},{"min":50000,"rate":0},{"min":100000,"rate":0.02},{"min":200000,"rate":0.05},{"min":500000,"rate":0.15},{"min":1000000,"rate":0.3}]}}}
+      },
+      "prepayment":{"rate":0.045}
+    },
+    {
+      "id": "taiping", "name": "太P", "expiry": "6月30日",
+      "products": {
+        "颐N乐享2": {"periods":["3年缴","5年缴"],"discount":{"5年缴":{"type":"vlookup","tiers":[{"min":0,"rate":0.1},{"min":10000,"rate":0.15},{"min":62500,"rate":0.25}]},"3年缴":{"type":"vlookup","tiers":[{"min":0,"rate":0.12},{"min":81250,"rate":0.18}]}}},
+        "辉H世代": {"periods":["5年缴","3年缴"],"discount":{"5年缴":{"type":"vlookup","tiers":[{"min":0,"rate":0.1},{"min":10000,"rate":0.1},{"min":150000,"rate":0.15},{"min":250000,"rate":0.25}]}}},
+        "颐N乐享尊享版": {"periods":["5年缴"],"discount":{"5年缴":{"type":"vlookup","tiers":[{"min":0,"rate":0.1},{"min":10000,"rate":0.15},{"min":62500,"rate":0.25},{"min":200000,"rate":0.3}]}}}
+      },
+      "prepayment":{"rate":0.045}
+    },
+    {
+      "id": "yongming", "name": "永M", "expiry": "5月31日",
+      "products": {
+        "万N青·星H尊享II/星H传承II": {"periods":["2年缴","5年缴"],"discount":{"5年缴":{"type":"vlookup","tiers":[{"min":0,"rate":0},{"min":10000,"rate":0.12},{"min":30000,"rate":0.18},{"min":50000,"rate":0.23},{"min":100000,"rate":0.26},{"min":200000,"rate":0.28},{"min":1000000,"rate":0.3}]},"2年缴":{"type":"vlookup","tiers":[{"min":0,"rate":0},{"min":20000,"rate":0.02},{"min":100000,"rate":0.045}]}}}
+      },
+      "prepayment":{"5年缴":{"firstYear":0.05,"otherYears":0.043},"2年缴":{"rate":0}}
+    },
+    {
+      "id": "zhongyin", "name": "中Y", "expiry": "6月30日",
+      "products": {
+        "月Y出息": {"periods":["2年缴","5年缴"],"discount":{"2年缴":{"type":"fixed","rate":0.01},"5年缴":{"type":"fixed","rate":0.02}}},
+        "寰Y安心": {"periods":["2年缴","5年缴"],"discount":{"5年缴":{"type":"vlookup_2col","tiers":[{"min":0,"rate":0.04},{"min":18750,"rate":0.08},{"min":45000,"rate":0.1},{"min":250000,"rate":0.1}],"secondYearTiers":[{"min":0,"rate":0},{"min":18750,"rate":0},{"min":45000,"rate":0.02},{"min":250000,"rate":0.06}]},"2年缴":{"type":"vlookup_2col","tiers":[{"min":0,"rate":0.016},{"min":47000,"rate":0.032},{"min":112500,"rate":0.04},{"min":625000,"rate":0.04}],"secondYearTiers":[{"min":0,"rate":0},{"min":47000,"rate":0},{"min":112500,"rate":0.008},{"min":625000,"rate":0.024}]}}}
+      },
+      "prepayment":{"5年缴":{"rate":0.05},"2年缴":{"rate":0.04}}
+    },
+    {
+      "id": "zhongyi", "name": "忠Y", "expiry": "6月30日",
+      "products": {
+        "启H创富卓越": {"periods":["5年缴","2年缴"],"discount":{"5年缴":{"type":"vlookup","tiers":[{"min":0,"rate":0.2},{"min":200000,"rate":0.25}]},"2年缴":{"type":"vlookup","tiers":[{"min":0,"rate":0.02},{"min":500000,"rate":0.04},{"min":1000000,"rate":0.05}]}}}
+      },
+      "prepayment":{"5年缴":{"rate":0.041}}
+    },
+    {
+      "id": "anda", "name": "安D", "expiry": "6月30日",
+      "products": {
+        "传C首创丰足": {"periods":["5年缴"],"discount":{"5年缴":{"type":"fixed","rate":0.1,"note":"首年10%折扣"}}},
+        "传C首创丰成": {"periods":["5年缴"],"discount":{"5年缴":{"type":"fixed_multi_year","rate":0.1,"years":"each","note":"每年10%折扣"}}}
+      },
+      "prepayment":{"rate":0.04}
+    },
+    {
+      "id": "sulishi", "name": "苏L世", "expiry": "5月31日",
+      "products": {
+        "瑞Y": {"periods":["2年缴","5年缴"],"discount":{"5年缴":{"type":"vlookup","tiers":[{"min":0,"rate":0.02},{"min":10000,"rate":0.05},{"min":50000,"rate":0.1},{"min":100000,"rate":0.12},{"min":200000,"rate":0.18}]},"2年缴":{"type":"vlookup","tiers":[{"min":0,"rate":0},{"min":30000,"rate":0.015},{"min":200000,"rate":0.04}]}}}
+      },
+      "prepayment":{"tiers":[{"min":50000,"rate":0.045},{"min":0,"rate":0.04}]}
+    }
+  ]
+};
+// ============================================================
+// END CONFIG
+// ============================================================
+
+// ============================================================
+// CALCULATION ENGINE
+// ============================================================
+
+// Excel-style VLOOKUP approximate match (returns rate for largest threshold <= value)
+function approxMatch(tiers, value) {
+  if (!tiers || tiers.length === 0) return 0;
+  // Sort by min ascending
+  const sorted = [...tiers].sort((a, b) => a.min - b.min);
+  let result = sorted[0].rate;
+  for (const t of sorted) {
+    if (value >= t.min) result = t.rate;
+    else break;
+  }
+  return result;
+}
+
+// Threshold match with operator (>= or <) or min format
+function thresholdMatch(items, value) {
+  if (!items) return 0;
+  for (const item of items) {
+    if (item.operator === '>=' && value >= item.threshold) return item.rate;
+    if (item.operator === '<' && value < item.threshold) return item.rate;
+  }
+  // Fallback: treat as approx match (min format)
+  return approxMatch(items, value);
+}
+
+// Get discount rate for a company/product/period
+function getDiscountRate(company, productName, period, premium, hasExtra, extraCategory) {
+  const prod = company.products[productName];
+  if (!prod) return { rate1: 0, rate2: 0 };
+
+  // Handle inherited products
+  let actualProd = prod;
+  if (prod.inherit) {
+    actualProd = company.products[prod.inherit];
+  }
+
+  const disc = actualProd.discount;
+  if (!disc) return { rate1: 0, rate2: 0 };
+
+  // Direct-type discount (no period keys): { type: "none" }
+  const topType = disc.type;
+  if (topType === 'none') return { rate1: 0, rate2: 0 };
+
+  // Get period-specific discount definition
+  const discDef = disc[period];
+  if (!discDef) return { rate1: 0, rate2: 0 };
+  if (discDef.type === 'none') return { rate1: 0, rate2: 0 };
+
+  const t = discDef.type;
+
+  // Fixed rate (single year: 中Y 月Y出息)
+  if (t === 'fixed') {
+    return { rate1: discDef.rate, rate2: 0 };
+  }
+
+  // Fixed multi-year (each year same rate: 安D 传C首创丰成)
+  if (t === 'fixed_multi_year') {
+    return { rate1: discDef.rate, rate2: discDef.rate };
+  }
+
+  // VLOOKUP single column
+  if (t === 'vlookup') {
+    const rate1 = approxMatch(discDef.tiers, premium);
+    return { rate1, rate2: 0 };
+  }
+
+  // VLOOKUP with 2 columns (year 1 and year 2)
+  if (t === 'vlookup_2col') {
+    let rate1 = 0, rate2 = 0;
+    if (discDef.firstYear !== undefined) {
+      rate1 = discDef.firstYear;
+    } else if (discDef.tiers) {
+      rate1 = approxMatch(discDef.tiers, premium);
+    }
+    if (discDef.secondYearTiers) {
+      rate2 = approxMatch(discDef.secondYearTiers, premium);
+    }
+    return { rate1, rate2 };
+  }
+
+  return { rate1: 0, rate2: 0 };
+}
+
+// Get extra discount
+function getExtraDiscount(company, productName, premium, extraCategory) {
+  const prod = company.products[productName];
+  if (!prod) return 0;
+  let actualProd = prod;
+  if (prod.inherit) actualProd = company.products[prod.inherit];
+  const extra = actualProd.extraDiscount;
+  if (!extra) return 0;
+
+  if (extra.type === 'combo_vlookup' || extra.type === 'combo_threshold') {
+    return approxMatch(extra.tiers, premium);
+  }
+  if (extra.type === 'combo_macro') {
+    // For 宏L: 危疾/人寿 or 危疾+人寿
+    const cat = extraCategory === '危疾+人寿' ? 'cat2' : 'cat1';
+    const threshKey = cat + 'Thresh';
+    const rateKey = cat + 'Rate';
+    if (extra[threshKey] !== undefined && premium >= extra[threshKey]) {
+      return extra[rateKey] || 0;
+    }
+    return 0; // No threshold met, no extra discount
+  }
+  if (extra.type === 'fixed_add') {
+    return extra.rate;
+  }
+  return 0;
+}
+
+// Get prepayment rate
+function getPrepayRate(company, productName, period, premium, prepayYears) {
+  const pp = company.prepayment;
+  if (!pp) return 0;
+
+  // Simple rate
+  if (pp.rate !== undefined) return pp.rate;
+
+  // Named prepay periods (like 友B: 预缴1年, 预缴4年)
+  const prepayKey = '预缴' + prepayYears + '年';
+  if (pp[prepayKey]) {
+    const p = pp[prepayKey];
+    if (p.rate !== undefined) return p.rate;
+    if (p.tiers) return thresholdMatch(p.tiers, premium);
+    if (p.base) {
+      let base = thresholdMatch(p.base.tiers, premium);
+      if (p.extra && premium >= 5000) base += p.extra;
+      return base;
+    }
+  }
+
+  // 2pay预缴 (安S)
+  if (pp['2pay预缴'] && period === '2年缴') {
+    return thresholdMatch(pp['2pay预缴'].tiers, premium);
+  }
+
+  // 预缴2年 (宏L)
+  if (pp['预缴2年'] && period === '2年缴') {
+    const p = pp['预缴2年'];
+    return approxMatch(p.base ? p.base.tiers : p.tiers, premium);
+  }
+
+  // Period-based (富W, 太B, 太P)
+  if (pp[period]) {
+    const p = pp[period];
+    if (p.rate !== undefined) return p.rate;
+    if (p.tiers) {
+      // Detect operator-based tiers vs min-based tiers
+      const first = p.tiers[0];
+      if (first && first.operator) return thresholdMatch(p.tiers, premium);
+      return approxMatch(p.tiers, premium);
+    }
+    if (p.firstYearTiers) {
+      // 万T style: different rate for first year vs other years
+      return approxMatch(p.firstYearTiers, premium);
+    }
+    if (p.firstYear !== undefined) {
+      // 永M style
+      return prepayYears === 1 || p.otherYears === undefined ? p.firstYear : p.otherYears;
+    }
+  }
+
+  // Generic tiers
+  if (pp.tiers) return approxMatch(pp.tiers, premium);
+
+  // Named product keys (国S)
+  const prodKey = productName.includes('傲L') ? '傲龙' : (productName.includes('智Y') ? '智裕' : '');
+  if (prodKey) {
+    const lookupKey = prodKey + '_' + period;
+    if (pp[lookupKey]) return pp[lookupKey].rate;
+  }
+  if (pp['智裕_5年缴'] && productName.includes('智Y')) return pp['智裕_5年缴'].rate;
+  if (pp['傲龙_5年缴'] && productName.includes('傲L')) return pp['傲龙_5年缴'].rate;
+
+  return 0;
+}
+
+// Get total years from period string
+function getTotalYears(period) {
+  if (period === '趸缴') return 1;
+  if (period === '2年缴') return 2;
+  if (period === '3年缴') return 3;
+  if (period === '5年缴') return 5;
+  if (period === '6年缴') return 6;
+  const m = period.match(/(\d+)年/);
+  return m ? parseInt(m[1]) : 5;
+}
+
+// Get number of prepay years
+function getPrepayYears(period, prepayOption) {
+  if (!prepayOption || prepayOption === '否') return 0;
+  const total = getTotalYears(period);
+  if (prepayOption === '预缴1年') return 1;
+  if (prepayOption === '预缴2年') return 2;
+  if (prepayOption === '预缴4年') return Math.min(4, total - 1);
+  if (prepayOption === '是') return total - 1;
+  return total - 1;
+}
+
+// Main calculation function
+function calculate(companyId, productName, period, premium, hasExtra, extraCategory, prepayOption) {
+  const company = CONFIG.companies.find(c => c.id === companyId);
+  if (!company || !premium || premium <= 0) return null;
+
+  const totalYears = getTotalYears(period);
+  const isSinglePay = period === '趸缴';
+
+  // Get discount rates
+  const { rate1, rate2 } = getDiscountRate(company, productName, period, premium, hasExtra, extraCategory);
+  let extraRate = 0;
+  if (hasExtra !== 'no') {
+    extraRate = getExtraDiscount(company, productName, premium, extraCategory);
+  }
+
+  // Apply rates (some companies combine extra into rate1 already)
+  let finalRate1 = rate1;
+  let finalRate2 = rate2;
+
+  // For 友B: extra is FLAT +3% added to rate1 for 5年缴
+  if (companyId === 'youbang' && period === '5年缴' && hasExtra !== 'no') {
+    finalRate1 = rate1 + extraRate;
+  }
+  // For 安S: extra is FLAT +3% for 盛LII 5年缴
+  if (companyId === 'ansheng' && hasExtra !== 'no') {
+    finalRate1 = rate1 + extraRate;
+  }
+  // For 保C: extra is FLAT +2% added directly
+  if (companyId === 'baocheng' && hasExtra !== 'no') {
+    finalRate1 = rate1 + extraRate;
+  }
+  // For 宏L: extra applies to YEAR 2 ONLY (not year 1)
+  if (companyId === 'hongli' && hasExtra !== 'no') {
+    finalRate2 = rate2 + extraRate;
+  }
+
+  // Discount amount
+  let discountAmount = 0;
+  const yearlyPayments = [];
+
+  if (isSinglePay) {
+    // 趸缴: discount applied upfront
+    discountAmount = premium * finalRate1;
+    yearlyPayments.push({ year: 1, amount: premium - discountAmount, note: '趸缴' });
+  } else {
+    // 保费回赠 vs 保费折扣 logic per company
+    const isCashback = ['baocheng', 'taiping', 'yongming', 'zhongyi', 'sulishi'].includes(companyId)
+      || (companyId === 'ansheng' && productName !== '尊S盈家Ⅱ')
+      || (companyId === 'youbang');
+
+    for (let y = 1; y <= totalYears; y++) {
+      let amount = premium;
+      let note = '';
+
+      if (y === 1) {
+        // Year 1: discount if 保费折扣, full if 保费回赠
+        if (companyId === 'youbang' && period === '5年缴') {
+          // 友B 5年缴: 保费回赠 - first year full pay
+          amount = premium;
+          note = '首年全缴';
+        } else if (companyId === 'hongli' || companyId === 'zhoudafu' || companyId === 'wantong' || companyId === 'guoshou' || companyId === 'zhongyin') {
+          // 保费折扣 - first year gets discount
+          if (companyId === 'hongli' || (companyId === 'zhoudafu' && period === '5年缴') || companyId === 'wantong' || companyId === 'guoshou' || companyId === 'zhongyin') {
+            if (period === '2年缴' && (companyId === 'zhoudafu' || companyId === 'guoshou')) {
+              amount = premium;
+              note = '2年缴无折扣';
+            } else {
+              amount = premium - premium * finalRate1;
+              note = '首年折扣 ' + (finalRate1 * 100).toFixed(1) + '%';
+            }
+          } else {
+            amount = premium;
+            note = '首年全缴';
+          }
+        } else if (companyId === 'fuwei') {
+          if (period === '2年缴') {
+            amount = premium - premium * finalRate1;
+            note = '首年折扣 ' + (finalRate1 * 100).toFixed(1) + '%';
+          } else if (productName === '盈J天下2' && period === '3年缴') {
+            amount = premium;
+            note = '首年全缴';
+          } else {
+            amount = premium - premium * finalRate1;
+            note = '首年折扣 ' + (finalRate1 * 100).toFixed(1) + '%';
+          }
+        } else if (companyId === 'anda') {
+          amount = premium - premium * rate1;
+          note = '首年折扣 ' + (rate1 * 100).toFixed(1) + '%';
+        } else {
+          // Default: 保费回赠 - first year full
+          amount = premium;
+          note = '首年全缴';
+        }
+      } else if (y === 2 && finalRate2 > 0) {
+        amount = premium - premium * finalRate2;
+        note = '第2年折扣 ' + (finalRate2 * 100).toFixed(1) + '%';
+      } else if (y === 2 && finalRate1 > 0 && ['baocheng','taiping','yongming','zhongyi','sulishi'].includes(companyId)) {
+        // 保费回赠 - discount applied in year 2
+        amount = premium - premium * finalRate1;
+        note = '保费回赠 ' + (finalRate1 * 100).toFixed(1) + '%';
+      } else if (companyId === 'anda' && rate1 > 0 && finalRate2 > 0) {
+        amount = premium - premium * rate1;
+        note = '每年折扣 ' + (rate1 * 100).toFixed(1) + '%';
+      } else {
+        amount = premium;
+        note = '全缴';
+      }
+
+      // For 友B: 保费回赠 applies in year 2
+      if (companyId === 'youbang' && y === 2) {
+        discountAmount = premium * finalRate1;
+        amount = premium - discountAmount;
+        note = '保费回赠 ' + (finalRate1 * 100).toFixed(1) + '%';
+      }
+
+      yearlyPayments.push({ year: y, amount: Math.round(amount * 100) / 100, note });
+    }
+  }
+
+  // Calculate totals
+  const totalOriginal = premium * totalYears;
+  const totalActual = yearlyPayments.reduce((s, p) => s + p.amount, 0);
+  const totalSaved = totalOriginal - totalActual;
+
+  // Discount info
+  let discountType = '保费回赠';
+  const discountRateDisplay = finalRate1 + (finalRate2 > 0 ? '/' + finalRate2 : '');
+
+  // =============================================
+  // PREPAYMENT CALCULATION
+  // =============================================
+  const prepayYears = getPrepayYears(period, prepayOption);
+  const result = {
+    yearlyPayments,
+    totalOriginal,
+    totalActual,
+    totalSaved,
+    discountRate: finalRate1,
+    discountRate2: finalRate2,
+    discountType,
+    prepayYears,
+    prepayRate: 0,
+    prepayDetails: [],
+    prepayInterest: 0,
+    prepayLumpSum: 0,
+    totalDiscount: 0,
+    finalTotal: 0,
+    note: '',
+    formulaHint: ''
+  };
+
+  if (prepayYears > 0) {
+    const prepayRate = getPrepayRate(company, productName, period, premium, prepayYears);
+    result.prepayRate = prepayRate;
+
+    // Prepayment calculation: per-company Excel formula patterns
+    if (companyId === 'youbang') {
+      // 友B: cumulative compound interest
+      const isPrepay4 = prepayYears >= 4;
+      const prepayRate4 = isPrepay4 ? thresholdMatch(company.prepayment['预缴4年'].tiers, premium) : 0;
+      const actualPrepayRate = !isPrepay4 ? company.prepayment['预缴1年'].rate : prepayRate4;
+      result.prepayRate = actualPrepayRate;
+      const r = actualPrepayRate;
+
+      if (isPrepay4) {
+        // Excel: P24 = G7*4*G21, T25 = (G7*3+P24)*G21, V26 = (G7*2+P24+T25)*G21, X27 = (G7*1+P24+T25+V26)*G21
+        const p24 = premium * 4 * r;
+        const t25 = (premium * 3 + p24) * r;
+        const v26 = (premium * 2 + p24 + t25) * r;
+        const x27 = (premium * 1 + p24 + t25 + v26) * r;
+        result.prepayInterest = Math.round((p24 + t25 + v26 + x27) * 100) / 100;
+        result.prepayLumpSum = Math.round((premium * totalYears) * 100) / 100;
+        result.prepayDetails.push({ year: 2, discounted: Math.round(p24 * 100) / 100, formula: '' });
+        result.prepayDetails.push({ year: 3, discounted: Math.round(t25 * 100) / 100, formula: '' });
+        result.prepayDetails.push({ year: 4, discounted: Math.round(v26 * 100) / 100, formula: '' });
+        result.prepayDetails.push({ year: 5, discounted: Math.round(x27 * 100) / 100, formula: '' });
+      } else {
+        // 预缴1年: G28 = G7*G21, G31 = G23+G25+G26+G27 where G25=G7-G28-G29
+        result.prepayInterest = Math.round(premium * r * 100) / 100;
+        result.prepayLumpSum = Math.round((premium * 2) * 100) / 100;
+        result.prepayDetails.push({ year: 2, discounted: Math.round(premium * r * 100) / 100, formula: '' });
+      }
+      result.totalDiscount = Math.round((result.prepayInterest + discountAmount) * 100) / 100;
+      result.finalTotal = isPrepay4
+        ? Math.round((result.prepayLumpSum - result.totalDiscount) * 100) / 100
+        // 预缴1年: G31 = G23 + (G7-G28-G29) + G26 + G27
+        : Math.round((result.prepayLumpSum + (premium - result.prepayInterest - discountAmount) + yearlyPayments.slice(3).reduce((s, p) => s + p.amount, 0)) * 100) / 100;
+
+    } else if (companyId === 'ansheng') {
+      // 安S: cumulative compound (Excel: O24+S25+U26+W27 for 5年缴, O24 for 2年缴)
+      const r = prepayRate;
+      result.prepayLumpSum = Math.round((premium * totalYears) * 100) / 100;
+      const totalInt = prepayYears >= 4
+        ? (premium * 4 * r) + (premium * 3 + premium * 4 * r) * r + (premium * 2 + premium * 4 * r + (premium * 3 + premium * 4 * r) * r) * r + (premium * 1 + premium * 4 * r + (premium * 3 + premium * 4 * r) * r + (premium * 2 + premium * 4 * r + (premium * 3 + premium * 4 * r) * r) * r) * r
+        : premium * r;
+      result.prepayInterest = Math.round(totalInt * 100) / 100;
+      result.totalDiscount = Math.round((result.prepayInterest + discountAmount) * 100) / 100;
+      result.finalTotal = Math.round((result.prepayLumpSum - result.totalDiscount) * 100) / 100;
+
+    } else if (companyId === 'hongli') {
+      // 宏L: cumulative compound (Excel: O26+S27+U28+W29 for 5年缴, O26 for 2年缴)
+      const r = prepayRate;
+      const year1Disc = premium - yearlyPayments[0].amount;
+      result.prepayLumpSum = Math.round((premium * totalYears - year1Disc) * 100) / 100;
+      const totalInt = prepayYears >= 4
+        ? (premium * 4 * r) + (premium * 3 + premium * 4 * r) * r + (premium * 2 + premium * 4 * r + (premium * 3 + premium * 4 * r) * r) * r + (premium * 1 + premium * 4 * r + (premium * 3 + premium * 4 * r) * r + (premium * 2 + premium * 4 * r + (premium * 3 + premium * 4 * r) * r) * r) * r
+        : premium * r;
+      result.prepayInterest = Math.round(totalInt * 100) / 100;
+      const year2DiscAmt = finalRate2 > 0 ? premium * finalRate2 : 0;
+      result.totalDiscount = Math.round((result.prepayInterest + year2DiscAmt) * 100) / 100;
+      result.finalTotal = Math.round((result.prepayLumpSum - result.totalDiscount) * 100) / 100;
+
+    } else if (companyId === 'baocheng') {
+      // 保C: standard present value on FULL premium (Excel: K24+O24+Q25+S26+U27)
+      const r = prepayRate;
+      let totalDiscounted = 0;
+      const prepayDetails = [];
+      for (let n = 1; n <= prepayYears; n++) {
+        const discounted = premium / Math.pow(1 + r, n);
+        totalDiscounted += discounted;
+        prepayDetails.push({ year: n + 1, original: premium, discounted: Math.round(discounted * 100) / 100, formula: '' });
+      }
+      const firstYear = yearlyPayments[0] ? yearlyPayments[0].amount : premium;
+      result.prepayLumpSum = Math.round((firstYear + totalDiscounted) * 100) / 100;
+      result.prepayInterest = Math.round((premium * totalYears - result.prepayLumpSum) * 100) / 100;
+      result.prepayDetails = prepayDetails;
+      result.totalDiscount = Math.round((result.prepayInterest + totalSaved) * 100) / 100;
+      result.finalTotal = Math.round((result.prepayLumpSum - totalSaved) * 100) / 100;
+
+    } else if (companyId === 'taiping') {
+      // 太P: standard present value on FULL premium (like 保C)
+      const r = prepayRate;
+      let totalDiscounted = 0;
+      for (let n = 1; n <= prepayYears; n++) {
+        totalDiscounted += premium / Math.pow(1 + r, n);
+      }
+      const firstYear = yearlyPayments[0] ? yearlyPayments[0].amount : premium;
+      result.prepayLumpSum = Math.round((firstYear + totalDiscounted) * 100) / 100;
+      result.prepayInterest = Math.round((premium * totalYears - result.prepayLumpSum) * 100) / 100;
+      result.totalDiscount = Math.round((result.prepayInterest + totalSaved) * 100) / 100;
+      result.finalTotal = Math.round((result.prepayLumpSum - totalSaved) * 100) / 100;
+    } else if (companyId === 'yongming') {
+      // 永M: variable rate prepay (firstYear=5%, others=4.3%)
+      // Excel: G22 = premium + premium/(1+r1) + premium/((1+r1)*(1+r2)) + ... - totalSaved
+      const ppCfg = company.prepayment[period];
+      const r1 = ppCfg.firstYear || prepayRate;
+      const r2 = ppCfg.otherYears || prepayRate;
+      result.prepayRate = r1;
+
+      let totalDiscounted = 0;
+      for (let k = 1; k <= prepayYears; k++) {
+        const factor = (1 + r1) * Math.pow(1 + r2, k - 1);
+        totalDiscounted += premium / factor;
+      }
+      result.prepayLumpSum = Math.round((premium + totalDiscounted - totalSaved) * 100) / 100;
+      result.prepayInterest = Math.round((totalActual - result.prepayLumpSum) * 100) / 100;
+      result.totalDiscount = Math.round((result.prepayInterest + totalSaved) * 100) / 100;
+      result.finalTotal = Math.round(result.prepayLumpSum * 100) / 100;
+    } else if (companyId === 'wantong') {
+      // 万T: full-premium PV (2年缴: simple rate from tiers; 5年缴: variable rate firstYearTiers+otherYears)
+      // Excel: prepayLumpSum = firstYearDiscounted + premium/(1+r1) + premium/((1+r1)(1+r2)) + ...
+      // firstYear already has discount baked in (no extra cashback subtraction)
+      const ppCfg = company.prepayment[period];
+      let r1 = prepayRate;
+      let r2 = prepayRate;
+      if (ppCfg && ppCfg.firstYearTiers && ppCfg.otherYears !== undefined) {
+        r1 = approxMatch(ppCfg.firstYearTiers, premium);
+        r2 = ppCfg.otherYears;
+        result.prepayRate = r1;
+      }
+      let totalDiscounted = 0;
+      for (let k = 1; k <= prepayYears; k++) {
+        const amt = yearlyPayments[k] ? yearlyPayments[k].amount : premium;
+        const factor = (1 + r1) * Math.pow(1 + r2, k - 1);
+        totalDiscounted += amt / factor;
+      }
+      const firstYear = yearlyPayments[0] ? yearlyPayments[0].amount : premium;
+      result.prepayLumpSum = Math.round((firstYear + totalDiscounted) * 100) / 100;
+      result.prepayInterest = Math.round((totalActual - result.prepayLumpSum) * 100) / 100;
+      result.totalDiscount = Math.round((result.prepayInterest + totalSaved) * 100) / 100;
+      result.finalTotal = Math.round(result.prepayLumpSum * 100) / 100;
+    } else {
+      // Standard present value for all other companies
+      const r = prepayRate;
+      let totalDiscounted = 0;
+      const prepayDetails = [];
+
+      for (let n = 1; n <= prepayYears; n++) {
+        const yearIdx = n;
+        const amount = yearlyPayments[yearIdx] ? yearlyPayments[yearIdx].amount : premium;
+        const discounted = amount / Math.pow(1 + r, n);
+        prepayDetails.push({ year: n + 1, original: amount, discounted: Math.round(discounted * 100) / 100, formula: '' });
+        totalDiscounted += discounted;
+      }
+
+      result.prepayDetails = prepayDetails;
+      const firstYear = yearlyPayments[0] ? yearlyPayments[0].amount : premium;
+      result.prepayLumpSum = Math.round((firstYear + totalDiscounted) * 100) / 100;
+      const futureYearsSum = yearlyPayments.slice(1, 1 + prepayYears).reduce((s, p) => s + p.amount, 0);
+      result.prepayInterest = Math.round((futureYearsSum - totalDiscounted) * 100) / 100;
+      result.totalDiscount = Math.round((result.prepayInterest + totalSaved) * 100) / 100;
+      result.finalTotal = Math.round(result.prepayLumpSum * 100) / 100;
+    }
+
+    // Formula hint
+    result.formulaHint = '预缴利率: ' + (result.prepayRate * 100).toFixed(2) + '%';
+  }
+
+  return result;
+}
+// ============================================================
+// END ENGINE
+// ============================================================
+
+// ============================================================
+// UI
+// ============================================================
+let selectedCompany = null;
+let currentResult = null;
+
+function initUI() {
+  const grid = document.getElementById('companyGrid');
+  CONFIG.companies.forEach(c => {
+    const btn = document.createElement('button');
+    btn.className = 'company-btn';
+    btn.textContent = c.name;
+    btn.dataset.id = c.id;
+    btn.onclick = () => selectCompany(c.id);
+    grid.appendChild(btn);
+  });
+}
+
+function selectCompany(id) {
+  selectedCompany = id;
+  document.querySelectorAll('.company-btn').forEach(b => b.classList.toggle('selected', b.dataset.id === id));
+  document.getElementById('inputCard').style.display = 'block';
+  document.getElementById('resultsCard').classList.remove('visible');
+  currentResult = null;
+
+  const company = CONFIG.companies.find(c => c.id === id);
+  if (!company) return;
+
+  // Populate products
+  const selProd = document.getElementById('selProduct');
+  selProd.innerHTML = '';
+  Object.keys(company.products).forEach(p => {
+    const opt = document.createElement('option');
+    opt.value = p;
+    opt.textContent = p;
+    selProd.appendChild(opt);
+  });
+
+  // Expiry note
+  document.getElementById('expiryNote').textContent = '优惠有效期: ' + (company.expiry || '');
+
+  onProductChange();
+}
+
+function onProductChange() {
+  const company = CONFIG.companies.find(c => c.id === selectedCompany);
+  if (!company) return;
+  const productName = document.getElementById('selProduct').value;
+  const prod = company.products[productName];
+  let actualProd = prod;
+  if (prod && prod.inherit) actualProd = company.products[prod.inherit];
+
+  // Populate periods
+  const selPeriod = document.getElementById('selPeriod');
+  selPeriod.innerHTML = '';
+  if (actualProd && actualProd.periods) {
+    actualProd.periods.forEach(p => {
+      const opt = document.createElement('option');
+      opt.value = p;
+      opt.textContent = p;
+      selPeriod.appendChild(opt);
+    });
+  }
+
+  // Extra discount visibility
+  const hasExtra = actualProd && actualProd.extraDiscount;
+  document.getElementById('extraDiscountGroup').style.display = hasExtra ? 'block' : 'none';
+
+  // Extra category visibility (宏L specific)
+  document.getElementById('extraCategoryGroup').style.display = (hasExtra && hasExtra.type === 'combo_macro') ? 'block' : 'none';
+
+  // Prepay options
+  const prepayGroup = document.getElementById('prepayGroup');
+  prepayGroup.innerHTML = '';
+  const addPrepayBtn = (label, value) => {
+    const btn = document.createElement('button');
+    btn.className = 'toggle-btn' + (value === '否' ? ' active' : '');
+    btn.textContent = label;
+    btn.dataset.value = value;
+    btn.onclick = () => setPrepay(value);
+    prepayGroup.appendChild(btn);
+  };
+  addPrepayBtn('不预缴', '否');
+
+  const period = selPeriod.value;
+  const totalYears = getTotalYears(period);
+  if (totalYears > 1 && company.prepayment) {
+    // Check available prepay options
+    if (company.prepayment['预缴1年']) addPrepayBtn('预缴1年', '预缴1年');
+    if (company.prepayment['预缴2年'] || company.prepayment['预缴4年'] || !company.prepayment['预缴1年']) {
+      if (totalYears >= 4 && company.prepayment['预缴4年']) addPrepayBtn('预缴全部', '预缴4年');
+      else addPrepayBtn('预缴全部', '是');
+    }
+  }
+
+  onCalculate();
+}
+
+function onPeriodChange() {
+  // Save selected period before re-initializing
+  const period = document.getElementById('selPeriod').value;
+  onProductChange(); // re-init prepay options
+  // Restore selected period (innerHTML reset loses it)
+  const selPeriod = document.getElementById('selPeriod');
+  if (period && [...selPeriod.options].some(o => o.value === period)) {
+    selPeriod.value = period;
+  }
+}
+
+function setExtraDiscount(val) {
+  document.querySelectorAll('#extraDiscountGroup .toggle-btn').forEach(b => b.classList.toggle('active', b.dataset.value === val));
+  onCalculate();
+}
+
+function setPrepay(val) {
+  document.querySelectorAll('#prepayGroup .toggle-btn').forEach(b => b.classList.toggle('active', b.dataset.value === val));
+  onCalculate();
+}
+
+function onCalculate() {
+  const company = CONFIG.companies.find(c => c.id === selectedCompany);
+  if (!company) return;
+
+  const productName = document.getElementById('selProduct').value;
+  const period = document.getElementById('selPeriod').value;
+  const premium = parseFloat(document.getElementById('inputPremium').value);
+  const hasExtra = document.querySelector('#extraDiscountGroup .toggle-btn.active')?.dataset.value || 'no';
+  const extraCategory = document.getElementById('selExtraCategory').value;
+  const prepayOption = document.querySelector('#prepayGroup .toggle-btn.active')?.dataset.value || '否';
+
+  if (!premium || premium <= 0) {
+    document.getElementById('resultsCard').classList.remove('visible');
+    return;
+  }
+
+  const result = calculate(selectedCompany, productName, period, premium, hasExtra, extraCategory, prepayOption);
+  if (!result) return;
+
+  currentResult = result;
+  displayResults(result, company, productName, period);
+}
+
+function displayResults(result, company, productName, period) {
+  const card = document.getElementById('resultsCard');
+  card.classList.add('visible');
+
+  // Discount rate
+  const rateStr = result.discountRate2 > 0
+    ? (result.discountRate * 100).toFixed(2) + '% / ' + (result.discountRate2 * 100).toFixed(2) + '%'
+    : (result.discountRate * 100).toFixed(2) + '%';
+  document.getElementById('resDiscountRate').textContent = rateStr;
+
+  // Discount type
+  document.getElementById('resDiscountType').textContent = result.discountType;
+
+  // Discount amount
+  document.getElementById('resDiscountAmount').textContent = result.totalSaved.toLocaleString();
+
+  // Yearly table
+  const tbody = document.getElementById('resYearlyTable');
+  tbody.innerHTML = '';
+  result.yearlyPayments.forEach(p => {
+    const tr = document.createElement('tr');
+    tr.innerHTML = '<td>第' + p.year + '年</td><td>' + p.amount.toLocaleString(undefined, {minimumFractionDigits: 2}) + '</td><td style="font-size:12px;color:#888">' + p.note + '</td>';
+    tbody.appendChild(tr);
+  });
+
+  // Totals
+  document.getElementById('resTotalActual').textContent = result.totalActual.toLocaleString(undefined, {minimumFractionDigits: 2});
+  document.getElementById('resTotalSaved').textContent = result.totalSaved.toLocaleString(undefined, {minimumFractionDigits: 2}) + ' (' + ((result.totalSaved / result.totalOriginal) * 100).toFixed(1) + '%)';
+
+  // Prepay section
+  const prepaySection = document.getElementById('resPrepaySection');
+  if (result.prepayYears > 0) {
+    prepaySection.style.display = 'block';
+    document.getElementById('resPrepayRate').textContent = (result.prepayRate * 100).toFixed(2) + '%';
+    document.getElementById('resLumpSum').textContent = result.prepayLumpSum.toLocaleString(undefined, {minimumFractionDigits: 2});
+
+    const ptbody = document.getElementById('resPrepayTable');
+    ptbody.innerHTML = '';
+    result.prepayDetails.forEach(d => {
+      const tr = document.createElement('tr');
+      tr.innerHTML = '<td>第' + d.year + '年</td><td>' + (d.discounted || 0).toLocaleString(undefined, {minimumFractionDigits: 2}) + '</td><td style="font-size:11px;font-family:monospace;color:#666">' + (d.formula || '') + '</td>';
+      ptbody.appendChild(tr);
+    });
+
+    document.getElementById('resPrepayInterest').textContent = result.prepayInterest.toLocaleString(undefined, {minimumFractionDigits: 2});
+    document.getElementById('resTotalDiscount').textContent = result.totalDiscount.toLocaleString(undefined, {minimumFractionDigits: 2});
+    document.getElementById('resFinalTotal').textContent = result.finalTotal.toLocaleString(undefined, {minimumFractionDigits: 2});
+  } else {
+    prepaySection.style.display = 'none';
+  }
+
+  // Note
+  document.getElementById('resNote').textContent = '1. 仅供参考，实际以保险公司核实的金额为准。\n2. 预缴利息非保证，保司可不时更改。';
+
+  // Formula hint
+  document.getElementById('resFormulaHint').textContent = result.formulaHint || '';
+}
+
+initUI();
+</script>
+</body>
+</html>

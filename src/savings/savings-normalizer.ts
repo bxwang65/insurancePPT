@@ -121,7 +121,30 @@ export function normalizeSavingsPlan(
     .sort((a, b) => a.policyYear - b.policyYear);
 
   const annualPremium = number(raw.policy.annual_premium);
-  const payYears = years(raw.policy.premium_payment_period);
+  let payYears = years(raw.policy.premium_payment_period);
+
+  // 防御性兜底: 提取器返回 premium_payment_period="0年" 时 (如 AXA 盛利II / CPIC 世代悅享),
+  // 从 benefitRows 自动推算 payYears (与 orchestrator.ts IUL 逻辑一致)
+  if (payYears <= 0 && annualPremium > 0 && benefitRows.length > 0) {
+    let inferredPay = 0;
+    let prevPaid = 0;
+    for (const r of benefitRows) {
+      const paid = number(r.totalPremiumPaid);
+      if (paid > prevPaid) {
+        inferredPay += 1;
+        prevPaid = paid;
+      } else if (paid > 0 && paid === prevPaid) {
+        break;
+      } else {
+        break;
+      }
+    }
+    if (inferredPay > 0 && inferredPay <= 30) {
+      payYears = inferredPay;
+    } else if (benefitRows[0] && number(benefitRows[0].totalPremiumPaid) >= annualPremium) {
+      payYears = 1;
+    }
+  }
   const rawProductName = raw.product_name || raw.policy.product_name;
   return {
     kind: "savings",

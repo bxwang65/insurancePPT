@@ -7,6 +7,7 @@
  */
 
 import type { 计划书解读, PPT修改建议 } from "./interpretation-engine.ts";
+import { leverageRatio } from "../api/insurance-math.ts";
 
 export interface TemplateInput {
   interpretations: 计划书解读[];
@@ -112,7 +113,7 @@ export class MarkdownTemplateEngine {
       } else if (interp.planType === "iul") {
         const pol = interp.policy;
         kpiCards.push(`身故保障: $${((pol.sum_insured as number) || 0 / 1000).toFixed(0)}K`);
-        kpiCards.push(`杠杆: ${((pol.sum_insured as number) || 0) / ((pol.initial_premium as number) || 1) * 1}x`);
+        kpiCards.push(`杠杆: ${leverageRatio((pol.sum_insured as number) || 0, pol)}`);
       }
     }
 

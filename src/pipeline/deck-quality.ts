@@ -20,8 +20,12 @@ export function validateDeckQuality(
   }
 
   const chartSlides = slides.filter((slide) => slide.pageType === "chart").length;
-  if (chartSlides < 2 || charts.assets.length < 2) {
+  const isSavings = req.normalizedSavings || (outline.meta?.planType === "savings");
+  if (isSavings && (chartSlides < 2 || charts.assets.length < 2)) {
     issues.push({ code: "CHART_COVERAGE_LOW", level: "error", message: "储蓄险正式版至少需要两张图表" });
+  }
+  if (!isSavings && (chartSlides < 1 || charts.assets.length < 1)) {
+    issues.push({ code: "CHART_COVERAGE_LOW", level: "warn", message: "CI/IUL 正式版建议至少 1 张图表" });
   }
 
   for (const image of images.images) {

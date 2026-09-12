@@ -26,6 +26,7 @@ import io
 import json
 import re
 import sys
+from collections import defaultdict
 from typing import Dict, List, Optional, Tuple
 
 import pdfplumber
@@ -58,6 +59,39 @@ def _parse_y(cell) -> List[int]:
         if s.isdigit():
             out.append(int(s))
     return out
+
+
+def _parse_int(s: str) -> Optional[int]:
+    """单值整数解析 (用于 X-clustering 后逐 cell 解析)"""
+    if not s:
+        return None
+    s = s.strip().replace(",", "").replace("-", "").replace(" ", "")
+    if not s or not s.replace(".", "").isdigit():
+        return None
+    try:
+        return int(float(s))
+    except ValueError:
+        return None
+
+
+def _cluster_words_xy(page: fitz.Page) -> List[List[Tuple[float, str]]]:
+    """PyMuPDF get_text('words') → 按 X 聚列 + Y 聚行的二维 [[(x, text), ...], ...]
+
+    解决 pdfplumber 解析失败的中文储蓄险 PDF (列被竖排堆叠时 pdfplumber 输出 1 列空字符串)
+    """
+    words = page.get_text("words")
+    if not words:
+        return []
+    rows_by_y: Dict[float, List[Tuple[float, str]]] = defaultdict(list)
+    for w in words:
+        x0, y0 = w[0], w[1]
+        text = w[4]
+        if not text or not text.strip():
+            continue
+        # 行 Y 坐标用 round(0) 聚簇, 避免浮点漂移
+        rows_by_y[round(y0, 0)].append((x0, text))
+    sorted_ys = sorted(rows_by_y.keys())
+    return [sorted(rows_by_y[y], key=lambda c: c[0]) for y in sorted_ys]
 
 
 def _header_contains(page, keywords: List[str]) -> bool:
@@ -112,6 +146,10 @@ def extract_summary(pdf_path: str, page_idx: int) -> Dict:
     if not summary.get("insured_age"):
         # 关键: \s 默认不匹配 \n, 用 [\s\S] 兼容多行
         m = re.search(r"年龄\s*[：:]?[\s\S]*?(\d+)", text)
+        if m: summary["insured_age"] = int(m.group(1))
+    if not summary.get("insured_age"):
+        # 繁體 "年齡" (AIA 整付保費 P1 格式, 與「年齡：VIP 女士 40」場景)
+        m = re.search(r"年齡\s*[：:]?[\s\S]*?(\d+)", text)
         if m: summary["insured_age"] = int(m.group(1))
     if not summary.get("insured_gender"):
         m = re.search(r"性別\s*[：:]\s*(\S+)", text)
@@ -172,6 +210,12 @@ def extract_summary(pdf_path: str, page_idx: int) -> Dict:
             except (IndexError, ValueError):
                 continue
 
+    # 整付保費 (AIA SP, 繁體): 保費供款年期显示为 "整付" → payment_years=1
+    # 注意: "保費供款年期" 和 "整付保費" 之间有表格列 (投保時, 基本金額, 数值等), 用 [\s\S]*? 跳过
+    if not summary.get("payment_years"):
+        if re.search(r"保費供款年期[\s\S]{0,300}?整付保費", text) or re.search(r"保费供款年期[\s\S]{0,300}?整付保費", text):
+            summary["payment_years"] = 1
+
     # 保障年期
     m = re.search(r"保障至年齡\s*[：:]\s*(\S+)", text)
     if m: summary["coverage_period"] = m.group(1)
@@ -181,31 +225,19 @@ def extract_summary(pdf_path: str, page_idx: int) -> Dict:
     if not summary.get("coverage_period") and ("終身" in text or "终身" in text):
         summary["coverage_period"] = "终身"
 
-    # 年保费 - 策略: 找出现两次的 6位USD整数 (400,000.00 重复 = 名义金额 = 每年保费)
-    m = re.search(r"年繳保費\s*[：:]\s*([\d,]+\.?\d*)", text)
-    if not m: m = re.search(r"年缴保费\s*[：:]\s*([\d,]+\.?\d*)", text)
-    if m:
-        summary["annual_premium"] = float(m.group(1).replace(",", ""))
-    if not summary.get("annual_premium"):
-        # 找页面里 重复出现 2+ 次的 5位整数.00 (港式: 名义金额 = 每年保费)
-        cands = re.findall(r"(\d{2,3},\d{3}\.00)", text)
-        from collections import Counter
-        cnt = Counter(cands)
-        for v, n in cnt.most_common(3):
-            if n >= 2:
-                summary["annual_premium"] = float(v.replace(",", ""))
-                break
-    if not summary.get("annual_premium"):
-        # CTF/AIA 旧格式: 单一 5位整数.2位小数
-        cands = re.findall(r"(\d{2,3},\d{3}\.\d{2})", text)
-        for c in cands:
-            v = float(c.replace(",", ""))
-            if 90000 < v < 110000:
-                summary["annual_premium"] = v
-                break
-
+    # 年保费 - 多种格式兼容 (CTF 传统 / AIA 表格列 / AIA 简体 + 旧版数字)
+    # 注: AIA 环宇盈活等 plan 的"年缴保费"在表格列里, 值在表头后几百字符内才出现
+    #     之前限定 \s*[：:] 紧跟数字, 表格格式 (换行 + 其他列头 + 数字) 会失败
+    #     之前限定 \d{2,3},\d{3}\.00, AIA 数字 .09/.49 等含征费小数都失败
+    #
+    # 顺序: 先取 annual_premium_with_levy (排除 levy 值), 再取 annual_premium
     # 首年实缴总保费（含折扣/征费）优先从明确字段读取
-    m = re.search(r"總額（包括投保時每年保費之保費徵費）\s*([\d,]+\.?\d*)", text)
+    # 注: AIA 简体 "投保时年缴总保费" 在 v3 之前漏了, 加 简体优先
+    m = re.search(r"投保时年缴总保费\s*[：:]?\s*([\d,]+\.?\d*)", text)
+    if not m:
+        m = re.search(r"投保時整付總保費\s*[：:]?\s*([\d,]+\.?\d*)", text)
+    if not m:
+        m = re.search(r"總額（包括投保時每年保費之保費徵費）\s*([\d,]+\.?\d*)", text)
     if not m:
         m = re.search(r"投保時每年總保費\s*\(.*?\)\s*([\d,]+\.?\d*)", text)
     if not m:
@@ -214,8 +246,72 @@ def extract_summary(pdf_path: str, page_idx: int) -> Dict:
         m = re.search(r"总额\s*\(1\)\s*\+\s*\(2\)\s*[：:]\s*([\d,]+\.?\d*)", text)
     if not m:
         m = re.search(r"总额（包括投保时每年保费之保费征费）\s*([\d,]+\.?\d*)", text)
+    levy_amount = None
     if m:
-        summary["annual_premium_with_levy"] = float(m.group(1).replace(",", ""))
+        levy_amount = float(m.group(1).replace(",", ""))
+        summary["annual_premium_with_levy"] = levy_amount
+
+    # Pattern 1a: 繁简 "年繳保費/年缴保费" 紧跟冒号 (CTF/部分 AIA 旧格式)
+    m = re.search(r"年繳保費\s*[：:]\s*([\d,]+\.?\d*)", text)
+    if not m: m = re.search(r"年缴保费\s*[：:]\s*([\d,]+\.?\d*)", text)
+    if m:
+        v = float(m.group(1).replace(",", ""))
+        if levy_amount is None or v != levy_amount:
+            summary["annual_premium"] = v
+    # Pattern 1b: AIA 表格列 (header → 跨过其他列头 → 第一个 NN,NNN.XX)
+    # 关键: NN,NNN 格式 (5,250/50,506 等保额/基本金额) 不带小数, 不会匹配 \.\d{2}
+    if not summary.get("annual_premium"):
+        m = re.search(r"年繳保費[\s\S]{0,500}?(\d{1,3}(?:,\d{3})+\.\d{2})", text)
+        if not m: m = re.search(r"年缴保费[\s\S]{0,500}?(\d{1,3}(?:,\d{3})+\.\d{2})", text)
+        if m:
+            v = float(m.group(1).replace(",", ""))
+            if levy_amount is None or v != levy_amount:
+                summary["annual_premium"] = v
+    # Pattern 1c: AIA 整付保費 SP 格式 (繁體, e.g. 财富盈活整付)
+    # 摘要表: 投保時\n整付保費 (header), 数据行第二个 NN,NNN.XX = annual_premium
+    # 第一个 NN,NNN 是 sum_insured (无小数, 被此 regex 排除), 第二个 NN,NNN.XX = annual_premium
+    if not summary.get("annual_premium"):
+        m = re.search(r"投保時\s*\n?\s*整付保費\s*[\s\S]{0,500}?(\d{1,3}(?:,\d{3})+\.\d{2})", text)
+        if m:
+            v = float(m.group(1).replace(",", ""))
+            if levy_amount is None or v != levy_amount:
+                summary["annual_premium"] = v
+    # Pattern 2: 重复 2+ 次的 NN,NNN.XX (港式名义金额 = 每年保费)
+    # 注: 之前限定 .00, 已放宽接受任何 .XX (含征费小数)
+    if not summary.get("annual_premium"):
+        cands = re.findall(r"(\d{1,3}(?:,\d{3})+\.\d{2})", text)
+        from collections import Counter
+        cnt = Counter(cands)
+        for v, n in cnt.most_common(3):
+            if n >= 2:
+                vf = float(v.replace(",", ""))
+                if levy_amount is None or vf != levy_amount:
+                    summary["annual_premium"] = vf
+                    break
+    # Pattern 3: 单次 NN,NNN.XX, 放宽到 1000-110000 (AIA 5-pay 也常见 $5,000+ 范围)
+    if not summary.get("annual_premium"):
+        cands = re.findall(r"(\d{1,3}(?:,\d{3})+\.\d{2})", text)
+        for c in cands:
+            v = float(c.replace(",", ""))
+            if 1000 < v < 110000:
+                if levy_amount is None or v != levy_amount:
+                    summary["annual_premium"] = v
+                    break
+
+    # ─── 投保时保额 sum_insured ───
+    # AIA 表格列 header "投保时保额(2)" 或 繁體 "投保時保額(2)"
+    # 注: 第一个 NN,NNN (无小数也可) 在 header 之后正确 = 保额 (5,250)
+    #     因为 text 顺序里 保额列 在 年缴保费列之前, data row 第一个 NN,NNN = 保额
+    # 排除 annual_premium 值 (避免重复)
+    if not summary.get("sum_insured"):
+        m = re.search(r"投保時保額\s*\(\s*2\s*\)\s*[\s\S]{0,500}?(\d{1,3}(?:,\d{3})+(?:\.\d+)?)", text)
+        if not m:
+            m = re.search(r"投保时保额\s*\(\s*2\s*\)\s*[\s\S]{0,500}?(\d{1,3}(?:,\d{3})+(?:\.\d+)?)", text)
+        if m:
+            v = float(m.group(1).replace(",", ""))
+            if (summary.get("annual_premium") is None or v != summary["annual_premium"]) \
+                    and (levy_amount is None or v != levy_amount):
+                summary["sum_insured"] = v
 
     if summary.get("annual_premium") and summary.get("payment_years"):
         summary["premium_total"] = round(summary["annual_premium"] * summary["payment_years"], 2)
@@ -280,6 +376,238 @@ def extract_no_withdraw_ctf(pdf_path: str, page_indices: List[int]) -> Dict[int,
     return rows
 
 
+def extract_no_withdraw_chinalife(pdf_path: str, page_indices: List[int]) -> Dict[int, Dict]:
+    """中国人寿傲珑盛世 C540 (USD 5-pay, 演示最长130年)
+
+    PDF 布局: Page 2-4 是「退保发还金额 + 身故赔偿额」并列双表 (11 列同 Y 行)
+    列序: [Y, Paid, Guar, Rev_CV, Term_CV, Total_CV, Guar_D, Rev_D, Term_D, Total_D, Final]
+
+    取前 6 列做不提取演示 (Total_CV = Guar + Rev + Term)
+    Page 2 通常含 Y1-Y9, Page 3 重复不同情景 (悲观/乐观), Page 4 身故; 只取 Page 2 的退保表
+    """
+    rows = {}
+    doc = fitz.open(pdf_path)
+    for pg in page_indices:
+        if pg < 1 or pg > doc.page_count:
+            continue
+        page = doc[pg - 1]
+        text = page.get_text()
+        # 仅取退保发还金额页 (Page 3/4 是不同情景, 不是默认演示)
+        if "退保發還金額" not in text and "退保发还金额" not in text:
+            continue
+        # Page 3 标记悲观/乐观情景, 跳过
+        if "悲觀情景" in text or "悲观情景" in text or "樂觀情景" in text or "乐观情景" in text:
+            continue
+        # Page 4 是身故, 跳过
+        if "身故賠償額" in text and "退保" not in text:
+            continue
+        rows_list = _cluster_words_xy(page)
+        for row in rows_list:
+            if len(row) < 6:
+                continue
+            y_str = row[0][1].strip().replace("歲", "").replace("岁", "")
+            if not y_str.isdigit():
+                continue
+            y = int(y_str)
+            if not (1 <= y <= 130) or y in rows:
+                continue
+            paid = _parse_int(row[1][1])
+            guar = _parse_int(row[2][1])
+            rev = _parse_int(row[3][1])
+            term = _parse_int(row[4][1])
+            total = _parse_int(row[5][1])
+            if paid is None or total is None:
+                continue
+            rows[y] = {
+                "Y": y, "Age": y, "Paid": paid,
+                "Guar_CV": guar or 0,
+                "Rev": rev or 0,
+                "Term": term or 0,
+                "Total": total,
+                "SourcePage": pg,
+            }
+    doc.close()
+    return rows
+
+
+def extract_no_withdraw_pru(pdf_path: str, page_indices: List[int]) -> Dict[int, Dict]:
+    """保誠「信守明天」多元貨幣計劃 TRST (USD 5-pay, 演示100年)
+
+    PDF 布局:
+      - Page 2: 默认演示 退保价值 (6列, Y1-Y30)
+      - Page 11: 备注 (跳过)
+      - Pages 12-14: 补充说明 退保价值 (6列, Y1-Y95+)
+      - Pages 3-5: 身故/不同投资回报 (跳过)
+      - Pages 15-16: 补充说明 身故 (跳过)
+    表头 (多行): "保證金額 (A)" + "累積歸原紅利 (B)" + "終期紅利 (C)" + "總額 (A)+(B)+(C)"
+    列序: [Y, Paid, Guar, Rev, Term, Total]
+    """
+    rows = {}
+    doc = fitz.open(pdf_path)
+    for pg in page_indices:
+        if pg < 1 or pg > doc.page_count:
+            continue
+        page = doc[pg - 1]
+        text = page.get_text()
+        # 仅取退保价值页 (Page 3-5 是身故/不同投资回报, Page 11 是备注, Page 15+ 是身故)
+        if "退保" not in text or "保證金額" not in text or "累積歸原紅利" not in text or "終期紅利" not in text:
+            continue
+        # 排除 身故 page: 找页头中的 "身故" 标识 (避免误杀 备注里提到 身故 的 退保 页)
+        # PRU 身故页 section 头: "3. 基本計劃 – 身故賠償之説明摘要" / "5. 基本計劃 – 身故賠償 – 不同投資回報" /
+        #                        "基本計劃補充說明 – 身故賠償之説明摘要"
+        if "3. 基本計劃 – 身故賠償" in text or "3. 基本計劃-身故" in text \
+                or "5. 基本計劃 – 身故" in text or "5. 基本計劃-身故" in text \
+                or "基本計劃補充說明 – 身故" in text or "基本計劃補充說明-身故" in text:
+            continue
+        # 排除 退保 不同投资回报页: "4. 基本計劃 – 退保價值 – 不同投資回報" (避免误杀 备注里提到 投资回报 的 退保 页)
+        if "4. 基本計劃 – 退保" in text or "4. 基本計劃-退保" in text:
+            continue
+        rows_list = _cluster_words_xy(page)
+        for row in rows_list:
+            if len(row) < 6:
+                continue
+            y_str = row[0][1].strip()
+            # 跳过 "65歲"/"ANB" 等非 Y 纯数字格式
+            if not y_str.isdigit():
+                continue
+            y = int(y_str)
+            if not (1 <= y <= 110) or y in rows:
+                continue
+            paid = _parse_int(row[1][1])
+            guar = _parse_int(row[2][1])
+            rev = _parse_int(row[3][1])
+            term = _parse_int(row[4][1])
+            total = _parse_int(row[5][1])
+            if paid is None or total is None:
+                continue
+            # 验证 Total = Guar + Rev + Term (允许 ±1 整数舍入)
+            if guar is not None and rev is not None and term is not None:
+                expected = guar + rev + term
+                if abs(expected - total) > max(2, total * 0.001):
+                    continue  # 异常行, 跳过
+            rows[y] = {
+                "Y": y, "Age": y, "Paid": paid,
+                "Guar_CV": guar or 0,
+                "Rev": rev or 0,
+                "Term": term or 0,
+                "Total": total,
+                "SourcePage": pg,
+            }
+    doc.close()
+    return rows
+
+
+def extract_no_withdraw_china_taiping_1121(pdf_path: str, page_indices: List[int]) -> Dict[int, Dict]:
+    """中国太平「頤·樂享」儲蓄保險計劃(尊享版) 1121NWLP7 (USD 5-pay, 演示130年)
+
+    PDF 布局:
+      - Page 3: 默认演示 退保权益 (7列, Y1-Y30 + 65歲/70歲... sparse)
+      - Pages 7-10: 补充说明 退保权益 (7列, Y1-Y122+ 完整)
+      - Pages 4-6: 身故/不同投资回报 (跳过)
+      - Page 11+: 身故/文字/提领 (跳过)
+    表头 (多行): "保證現金價值 (B)" + "復歸紅利現金價值 (C)" + "終期分紅現金價值 (D)" +
+                  "額外終期分紅現金價值 (E)" + "總額 =(B)+(C)+(D)+(E)"
+    列序: [Y, Paid, Guar=B, Rev=C, Term=D, Extra_Term=E, Total]
+    内部映射: Term_internal = D + E
+    """
+    rows = {}
+    doc = fitz.open(pdf_path)
+    for pg in page_indices:
+        if pg < 1 or pg > doc.page_count:
+            continue
+        page = doc[pg - 1]
+        text = page.get_text()
+        # 仅取退保权益页 (含 額外終期分紅 = 7 列特征)
+        if "退保權益" not in text or "保證現金價值" not in text or "復歸紅利" not in text:
+            continue
+        if "額外終期分紅" not in text:
+            continue  # 退保权益表特有 7 列
+        # 排除 身故 page: 找页头中的 "身故權益" 标识 (避免误杀 备注里提到 身故 的 退保 页)
+        # 太平 身故页 section 头: "3. 基本計劃 - 說明摘要 (身故權益)" /
+        #                         "5. 基本計劃 - 身故權益 - 不同投資回報"
+        if "說明摘要 (身故權益)" in text or "身故權益 - 不同" in text or "身故權益-不同" in text:
+            continue
+        # 排除 退保 不同投资回报页: "4. 基本計劃 - 退保權益 - 不同投資回報"
+        if "退保權益 - 不同" in text or "退保權益-不同" in text:
+            continue
+        rows_list = _cluster_words_xy(page)
+        for row in rows_list:
+            if len(row) < 7:
+                continue
+            y_str = row[0][1].strip()
+            # 跳过 "65歲"/"ANB" 等非 Y 纯数字格式
+            if not y_str.isdigit():
+                continue
+            y = int(y_str)
+            if not (1 <= y <= 140) or y in rows:
+                continue
+            paid = _parse_int(row[1][1])
+            guar = _parse_int(row[2][1])  # B
+            rev = _parse_int(row[3][1])   # C
+            term = _parse_int(row[4][1])  # D
+            extra = _parse_int(row[5][1]) if len(row) > 5 else None  # E
+            total = _parse_int(row[6][1]) if len(row) > 6 else None
+            if paid is None or total is None:
+                continue
+            # 验证 Total = B + C + D + E
+            if guar is not None and rev is not None and term is not None and extra is not None:
+                expected = guar + rev + term + extra
+                if abs(expected - total) > max(2, total * 0.001):
+                    continue
+            rows[y] = {
+                "Y": y, "Age": y, "Paid": paid,
+                "Guar_CV": guar or 0,
+                "Rev": rev or 0,
+                "Term": (term or 0) + (extra or 0),  # 合并 D + E
+                "Total": total,
+                "SourcePage": pg,
+            }
+    doc.close()
+    return rows
+
+
+def extract_no_withdraw_taiping(pdf_path: str, page_indices: List[int]) -> Dict[int, Dict]:
+    """中国太平鑫安逸 AAXNA1U (USD 3-pay, 30年演示)
+
+    PDF 布局: Page 2 是「保證退保价值 + 保證身故赔偿」表 (4 列 + 30 行)
+    列序: [Y, Paid, Guar_CV, Guar_Death]
+    无分红演示 → Rev=0, Term=0, Total = Guar_CV
+    """
+    rows = {}
+    doc = fitz.open(pdf_path)
+    for pg in page_indices:
+        if pg < 1 or pg > doc.page_count:
+            continue
+        page = doc[pg - 1]
+        text = page.get_text()
+        if "保證退保價值" not in text and "保证退保价值" not in text:
+            continue
+        rows_list = _cluster_words_xy(page)
+        for row in rows_list:
+            if len(row) < 4:
+                continue
+            y_str = row[0][1].strip()
+            if not y_str.isdigit():
+                continue
+            y = int(y_str)
+            if not (1 <= y <= 50) or y in rows:
+                continue
+            paid = _parse_int(row[1][1])
+            guar_cv = _parse_int(row[2][1])
+            if paid is None or guar_cv is None:
+                continue
+            rows[y] = {
+                "Y": y, "Age": y, "Paid": paid,
+                "Guar_CV": guar_cv,
+                "Rev": 0,
+                "Term": 0,
+                "Total": guar_cv,
+                "SourcePage": pg,
+            }
+    doc.close()
+    return rows
+
+
 def extract_withdraw_ctf(pdf_path: str, page_indices: List[int]) -> Dict[int, Dict]:
     """CTF 提领表 (11列: Age, Y, Paid, Annual_WD, Cum_WD, Guar_CV, _, Rev, Term, Total, Total+WD)"""
     rows = {}
@@ -333,6 +661,7 @@ def extract_no_withdraw_aia(pdf_path: str, page_indices: List[int]) -> Dict[int,
     """AIA 多页 (P12-15): 详细说明 (退保/身故) + 现金价值 (可套现)
 
     Header 匹配: "保单年度 终结" (身故) / "保单年度 现金价值" / "保单年度 可套现"
+    兼容繁體中文 (保單年度 / 現金價值 / 可套現 / 總額) — AIA 整付保費版本用繁體
     """
     rows = {}
     with pdfplumber.open(pdf_path) as pdf:
@@ -340,11 +669,15 @@ def extract_no_withdraw_aia(pdf_path: str, page_indices: List[int]) -> Dict[int,
             if pg < 1 or pg > len(pdf.pages):
                 continue
             page = pdf.pages[pg - 1]
-            # 宽松匹配: 任何含 "保单年度" + "身故/退保/现金价值/可套现/总额" 的页
+            # 宽松匹配: 任何含 "保单/保單" + "年度" + "身故/退保/现金价值/現金價值/可套现/可套現/总额/總額" 的页
+            # 注: pdfplumber 经常把 "保單" 和 "年度" 拆到两行, 不能用连续 substring 检查
             txt = page.extract_text() or ""
-            if "保单年度" not in txt:
+            has_year_header = ("保单年度" in txt or "保單年度" in txt or
+                               ("保单" in txt and "年度" in txt) or
+                               ("保單" in txt and "年度" in txt))
+            if not has_year_header:
                 continue
-            if not any(kw in txt for kw in ["退保", "现金价值", "可套现", "身故", "总额"]):
+            if not any(kw in txt for kw in ["退保", "现金价值", "現金價值", "可套现", "可套現", "身故", "总额", "總額"]):
                 continue
             for t in page.extract_tables():
                 if not t or len(t) < 4:
@@ -352,13 +685,27 @@ def extract_no_withdraw_aia(pdf_path: str, page_indices: List[int]) -> Dict[int,
                 for r in t[3:]:  # 跳表头
                     if not r or len(r) < 6:
                         continue
-                    ys = _parse_y(r[0])
+                    # 列布局检测: 11列布局 r[0]=年度, 12列布局 (AIA 整付保費) r[0]=年齡, r[1]=年度
+                    # 启发式: 同时 r[0] 和 r[1] 都解析出 year 时 → r[1] 是真正的年度 (12列)
+                    r0_years = _parse_y(r[0])
+                    r1_years = _parse_y(r[1]) if len(r) > 1 else []
+                    has_age_col = bool(r0_years) and bool(r1_years)
+                    if has_age_col:
+                        # 12列布局 (AIA 整付保費): r[0]=年齡, r[1]=年度, r[2]=保費, r[3]=保證, r[4]=復歸, r[5]=終期, r[6]=總額
+                        ys = r1_years
+                        paid = _parse_multi(r[2]) if len(r) > 2 else []
+                        guar = _parse_multi(r[3]) if len(r) > 3 else []
+                        rev_term = (_parse_multi(r[4]) if len(r) > 4 else []) + (_parse_multi(r[5]) if len(r) > 5 else [])
+                        total = _parse_multi(r[6]) if len(r) > 6 else []
+                    else:
+                        # 11列布局 (AIA 5年缴简体): r[0]=年度, r[1]=保費, r[2]=保證, r[3]=復歸, r[4]=終期, r[5]=總額
+                        ys = r0_years
+                        paid = _parse_multi(r[1])
+                        guar = _parse_multi(r[2]) if len(r) > 2 else []
+                        rev_term = (_parse_multi(r[3]) if len(r) > 3 else []) + (_parse_multi(r[4]) if len(r) > 4 else [])
+                        total = _parse_multi(r[5]) if len(r) > 5 else []
                     if not ys:
                         continue
-                    paid = _parse_multi(r[1])
-                    guar = _parse_multi(r[2]) if len(r) > 2 else []
-                    rev_term = (_parse_multi(r[3]) if len(r) > 3 else []) + (_parse_multi(r[4]) if len(r) > 4 else [])
-                    total = _parse_multi(r[5]) if len(r) > 5 else []
                     n = min(len(ys), len(paid), len(total))
                     for k in range(n):
                         y = ys[k]
@@ -534,10 +881,10 @@ def extract_no_withdraw_manulife(pdf_path: str, page_indices: List[int]) -> Dict
 
 
 def extract_withdraw_manulife(pdf_path: str, page_indices: List[int]) -> Dict[int, Dict]:
-    """Manulife 宏挚家 提领表 (9列: Y, Paid, Annual_WD, _, _, _, _, _, Remain_Total)
+    """Manulife 宏挚家 提领表 (9列: Y, Paid, Annual_WD_Guar, Annual_WD_NonG, Annual_WD_Total, _, SV_Guar, SV_NonG, SV_Total)
     页头: '款項提取說明 – 退保價值' + '該年提取款項' + '款項提取后的退保價值'
-    列序: [Y, Paid, Annual_WD, _, Sum_Guar, Sum_Term, Sum_Total, Remain_Guar, Remain_Term, Remain_Total]
-    实际为 10 列, 取关键列
+    列序: [Y, Paid, 保證(A), 非保證(B), 總額(A)+(B), 名義金額, 保證(C), 非保證(D), 總額(C)+(D)]
+    2026-09-12 bug fix: 之前 r[2] 只读"保證金額"列, annual_wd 应为 (A)+(B) 总额 (宏挚家应是 200000 而不是 95575)
     """
     rows = {}
     with pdfplumber.open(pdf_path) as pdf:
@@ -558,17 +905,25 @@ def extract_withdraw_manulife(pdf_path: str, page_indices: List[int]) -> Dict[in
                     if not ys or not (1 <= ys[0] <= 128):
                         continue
                     paid = _parse_multi(r[1])
-                    annual = _parse_multi(r[2]) if len(r) > 2 else []
+                    # 2026-09-12 fix: annual_wd 总分在 r[4] (A+B 总额), 没有总额列时 fallback 到 r[2]+r[3] 求和
+                    annual_total = _parse_multi(r[4]) if len(r) > 4 else []
+                    annual_a = _parse_multi(r[2]) if len(r) > 2 else []
+                    annual_b = _parse_multi(r[3]) if len(r) > 3 else []
                     # 剩余退保总额在最后一列或倒数第二列
                     remain_total = _parse_multi(r[-1]) if len(r) > 1 else []
                     n = min(len(ys), len(paid), len(remain_total))
                     for k in range(n):
                         y = ys[k]
                         if 1 <= y <= 128 and y not in rows:
-                            annual_wd = annual[k] if k < len(annual) else 0
+                            # 优先用 r[4] 总额列, 若为 0 fallback 到 r[2]+r[3]
+                            wd_total = annual_total[k] if k < len(annual_total) else 0
+                            if wd_total == 0:
+                                a = annual_a[k] if k < len(annual_a) else 0
+                                b = annual_b[k] if k < len(annual_b) else 0
+                                wd_total = a + b
                             rows[y] = {
                                 "Y": y, "Age": y, "Paid": paid[k],
-                                "Annual_WD": annual_wd, "Cum_WD": 0,
+                                "Annual_WD": wd_total, "Cum_WD": 0,
                                 "Guar_CV": 0, "Rev": 0, "Term": 0,
                                 "Total": remain_total[k],
                                 "SourcePage": pg,
@@ -581,22 +936,92 @@ def extract_withdraw_manulife(pdf_path: str, page_indices: List[int]) -> Dict[in
     return rows
 
 
-def enrich(rows: Dict[int, Dict], paid_total: float) -> Dict[int, Dict]:
-    """加 IRR/单利/倍数"""
+def _ia_irr_cap(currency: str) -> float:
+    """HK IA IRR 上限: 港元 6.0%, 非港元 6.5%"""
+    c = (currency or "USD").upper().strip()
+    return 0.06 if c in ("HKD", "港币", "港元", "港幣") else 0.065
+
+
+def _ma_irr_bisect(npv, lo: float = -0.99, hi: float = 1.0):
+    """二分法求根"""
+    f_lo, f_hi = npv(lo), npv(hi)
+    if f_lo * f_hi > 0:
+        return None
+    for _ in range(200):
+        mid = (lo + hi) / 2
+        f_mid = npv(mid)
+        if abs(f_mid) < 1e-6 or (hi - lo) < 1e-10:
+            return mid
+        if f_lo * f_mid < 0:
+            hi, f_hi = mid, f_mid
+        else:
+            lo, f_lo = mid, f_mid
+    return (lo + hi) / 2
+
+
+def calc_irr_ma(years: int, total: float, paid_total: float, pay_years: int = 0, currency: str = "USD"):
+    """M-A NPV IRR (不提领). 现金流: -P at t=0..n-1, +SV at t=year. 封顶 HK IA."""
+    if years <= 0 or total <= 0 or paid_total <= 0:
+        return None
+    n = pay_years if pay_years >= 1 else 1
+    annual = paid_total / n
+    if annual <= 0:
+        return None
+    cf = [(0.0, -annual)]
+    for i in range(1, n):
+        cf.append((float(i), -annual))
+    cf.append((float(years), total))
+    cap = _ia_irr_cap(currency)
+    irr = _ma_irr_bisect(lambda r: sum(a / (1 + r) ** t for t, a in cf))
+    return min(irr, cap) if irr is not None else None
+
+
+def calc_irr_ma_withdraw(years: int, total_received: float, paid_total: float,
+                         pay_years: int = 0, currency: str = "USD",
+                         start_wd_yr: int = 0, annual_wd: float = 0):
+    """M-A NPV IRR (提领). 现金流: 保费同 calc_irr_ma; 从 start_wd_yr 起每年末 +aw, 终年 +aw+SV."""
+    if years <= 0 or total_received <= 0 or paid_total <= 0:
+        return None
+    n = pay_years if pay_years >= 1 else 1
+    annual = paid_total / n
+    if annual <= 0:
+        return None
+    cap = _ia_irr_cap(currency)
+    cf = [(0.0, -annual)]
+    for i in range(1, n):
+        cf.append((float(i), -annual))
+    if start_wd_yr > 0 and annual_wd > 0 and years >= start_wd_yr:
+        for w in range(start_wd_yr, years):
+            cf.append((float(w), annual_wd))
+        cf.append((float(years), total_received))
+    else:
+        cf.append((float(years), total_received))
+    irr = _ma_irr_bisect(lambda r: sum(a / (1 + r) ** t for t, a in cf))
+    return min(irr, cap) if irr is not None else None
+
+
+def enrich(rows: Dict[int, Dict], paid_total: float, pay_years: int = 0, currency: str = "USD") -> Dict[int, Dict]:
+    """加 M-A IRR / 单利 / 倍数. 与 docker/insurance-deck/insdeck/extract/savings_normalizer.py 完全一致."""
+    # 找提领起始年 (M-A 提领公式需要)
+    start_wd_yr, annual_wd = 0, 0
+    for yk in sorted(int(k) for k in rows.keys()):
+        aw = rows[yk].get("Annual_WD", 0) or 0
+        if yk > 0 and aw > 0:
+            start_wd_yr, annual_wd = yk, aw
+            break
     for y, r in rows.items():
+        yi = int(y)
         total = r.get("Total", 0) or 0
         if "Cum_WD" in r:
             received = (r.get("Cum_WD", 0) or 0) + total
             r["Total_Received"] = received
             r["Mult"] = received / paid_total if paid_total else 0
-            if received > paid_total and y > 0:
-                r["IRR"] = (received / paid_total) ** (1 / y) - 1
-                r["Simple"] = (received - paid_total) / paid_total / y
+            r["IRR"] = calc_irr_ma_withdraw(yi, received, paid_total, pay_years, currency, start_wd_yr, annual_wd)
+            r["Simple"] = (received - paid_total) / paid_total / yi if (paid_total and yi > 0) else None
         else:
             r["Mult"] = total / paid_total if paid_total else 0
-            if total > paid_total and y > 0:
-                r["IRR"] = (total / paid_total) ** (1 / y) - 1
-                r["Simple"] = (total - paid_total) / paid_total / y
+            r["IRR"] = calc_irr_ma(yi, total, paid_total, pay_years, currency)
+            r["Simple"] = (total - paid_total) / paid_total / yi if (paid_total and yi > 0) else None
     return rows
 
 
@@ -730,14 +1155,40 @@ def main():
         elif args.company == "fwd":
             no_wd = extract_no_withdraw_fwd(args.pdf, pages_nw)
             wd = extract_withdraw_fwd(args.pdf, pages_wd) if pages_wd else {}
+        elif args.company == "chinalife":
+            # 中国人寿傲珑盛世 (C540): X-clustering 11列取前6列 (退保发还金额)
+            no_wd = extract_no_withdraw_chinalife(args.pdf, pages_nw)
+            wd = {}  # C540 默认演示无提领场景
+        elif args.company == "china-taiping":
+            # 中国太平: 按 signature.productCode 分流 (颐年乐享 vs 鑫安逸)
+            if args.signature == "china-taiping-1121nwlp7-v1":
+                # 颐年乐享尊享版 1121NWLP7: 7列 (B+C+D+E) X-clustering
+                no_wd = extract_no_withdraw_china_taiping_1121(args.pdf, pages_nw)
+                wd = {}  # 默认演示无提领场景
+            else:
+                # 鑫安逸 (AAXNA1U): X-clustering 4列 (保證 only, 无分红)
+                no_wd = extract_no_withdraw_taiping(args.pdf, pages_nw)
+                wd = {}
+        elif args.company == "pru":
+            # 保诚: 按 signature.productCode 分流 (信守明天 vs 隽富)
+            if args.signature == "pru-trst-v1":
+                # 信守明天 TRST: 6列 X-clustering (Page 2 + 12-14)
+                no_wd = extract_no_withdraw_pru(args.pdf, pages_nw)
+                wd = {}  # 默认演示无提领场景
+            else:
+                # 隽富 CAESARS: 复用 CTF 通用提取器 (旧产品格式简单)
+                no_wd = extract_no_withdraw_ctf(args.pdf, pages_nw)
+                wd = extract_withdraw_ctf(args.pdf, pages_wd) if pages_wd else {}
         else:
             # 通用 fallback: 复用 CTF 提取器（部分产品格式相同）
             no_wd = extract_no_withdraw_ctf(args.pdf, pages_nw)
             wd = extract_withdraw_ctf(args.pdf, pages_wd) if pages_wd else {}
 
         paid_total = int(summary.get("premium_total") or 500000)
-        enrich(no_wd, paid_total)
-        enrich(wd, paid_total)
+        pay_years = int(summary.get("payment_years") or 0)
+        currency = summary.get("currency") or "USD"
+        enrich(no_wd, paid_total, pay_years, currency)
+        enrich(wd, paid_total, pay_years, currency)
 
         diagnostics = {
             "warnings": [],

@@ -30,6 +30,8 @@ export interface SignatureExtractionResult {
     payment_years?: number;
     coverage_period?: string;
     premium_total?: number;
+    sum_insured?: number;
+    basic_sum_insured?: number;
   };
   paid_total: number;
   no_withdraw: Record<string, {
@@ -87,7 +89,12 @@ export async function extractBySignature(pdfPath: string, sig: PdfSignature): Pr
         return reject(new Error(`signature-extractor exited ${code}: ${stderr}`));
       }
       try {
-        const result = JSON.parse(stdout.trim()) as SignatureExtractionResult;
+        // 鲁棒解析: 容忍 stdout 里的前导垃圾 (PyMuPDF warning / MuPDF error / debug print)
+        // 这些 warning 默认走 stdout (不是 stderr!), 会被埋到 JSON 前面
+        // 策略: 找最后一段完整 JSON (从首个 { 或 [ 到匹配的结尾)
+        const jsonMatch = stdout.match(/[\{\[][\s\S]*[\}\]]\s*$/);
+        const jsonStr = jsonMatch ? jsonMatch[0] : stdout.trim();
+        const result = JSON.parse(jsonStr) as SignatureExtractionResult;
         resolve(result);
       } catch (e: any) {
         reject(new Error(`signature-extractor output parse failed: ${e.message}; stdout=${stdout.slice(0, 200)}`));

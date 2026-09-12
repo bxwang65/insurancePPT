@@ -32,6 +32,8 @@ export interface Session {
   markdownPath?: string;
   previewPaths?: string[];
   previewPdfPath?: string;
+  posterPath?: string;             // 2026-09-10: 储蓄险 PNG 长图 (per-session, 单产品时)
+  posterPerExtraction?: string[];  // 2026-09-10: 多 PDF 时, 每份各一张
   slideCount?: number;
   createdAt: string;
 }

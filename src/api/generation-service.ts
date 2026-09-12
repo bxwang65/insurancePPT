@@ -142,8 +142,10 @@ async function runFastSavingsGeneration(params: {
 
   const source = (savings.data as any).source || {};
   const signatureId = getSavingsSignatureId(savings.data);
+  // ⚠️ 修复: fast-path 的 source.pdfPath 经常为 undefined, 必须 fallback 到 extraction entry
+  const pdfPath = source.pdfPath || savings.entry?.pdfPath;
   const normalized = normalizeSavingsPlan(savings.data, {
-    pdfPath: source.pdfPath,
+    pdfPath,
     parser: source.parser || "api-fast",
     signatureId: source.signatureId || signatureId,
   } as any);

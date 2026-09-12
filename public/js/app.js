@@ -41,6 +41,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         state.markdownUrl = session.markdownUrl || '';
         state.previewUrls = session.previewUrls || [];
         state.previewPdfUrl = session.previewPdfUrl || '';
+        state.posterUrl = session.posterUrl || '';
+        state.posterPerExtraction = (session.posterPerExtraction || []).map((p) => p.url || p.path);
         state.slideCount = session.slideCount || 0;
         state.resultFilename = (() => {
           try {

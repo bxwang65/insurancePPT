@@ -12,6 +12,7 @@ import { extractSavingsTables } from "./savings-table-parser.ts";
 import { tryFastExtraction } from "./fast-path.ts";
 import { toSavingsPlanFromSignature } from "./fast-path-adapter.ts";
 import { getSignatureById } from "./signatures/registry.ts";
+import { learnAndVerifySignature } from "./signatures/learning.ts";
 import type { PlanType } from "../pipeline/types.ts";
 
 /** Raw LLM JSON output before schema validation */
@@ -117,9 +118,17 @@ export class ExtractionOrchestrator {
 
     // === Signature Fast Path: 命中后跳过 LLM ===
     // 关键修复: 原本只支持 savings, 现在 ci/iul 也能命中
-    if (type === "savings" || type === "ci" || type === "iul") {
+    // 2026-09-09: IUL 暂跳过 fast-path, 走 DeepSeek vision (vision 多模态) 验证路径
+    //   Manulife IUL 之前默认走签名 fast-path → fitz (extract_manulife_iul.py), 不调 LLM
+    //   用户要求: 验证 DeepSeek-V4-Flash-Vision-Exp 路径真的能工作
+    //   fitz 兜底逻辑仍在 server.ts, 不会丢安全性
+    if (type === "savings" || type === "ci") {
       try {
         const fast = await tryFastExtraction(absPath, { minConfidence: 0.7 });
+      // Debug: 仅当 fast 命中但 0 行 / 低置信度时打, 减少日志噪声
+      if (fast.matched && (!fast.data || Object.keys(fast.data.no_withdraw || {}).length === 0)) {
+        console.warn(`[orch] ${path.basename(absPath)}: 签名 ${fast.signature?.id} 命中但提取 0 行, 回退 LLM`);
+      }
         // 关键: fast path 命中但 savings 提取 0 行 = 等同于没匹配上, 回退 LLM
         // 原因: PDF 实际页码/格式与签名配置不符时, extractor 静默返回空表
         const fastEmptySavings =
@@ -129,6 +138,31 @@ export class ExtractionOrchestrator {
         if (fastEmptySavings) {
           console.warn(`[orch] ${path.basename(absPath)}: 签名 ${fast.signature?.id} 命中但提取 0 行, 回退 LLM`);
         }
+        // 2026-07-30: Fitz-first 校验策略
+        //   旧行为: 签名 partial (如 cpic-aarj31u 30 行 < 预期 45) 直接回退 LLM, 等 6 分钟
+        //   新行为: partial 也立即返回, 标记 warning, 后台 LLM 异步补全 (60s timeout)
+        //   收益: 用户 1-3s 看到部分数据, 不再傻等 LLM 超时
+        let fastPartialSavings = false;
+        let partialWarnings: string[] = [];
+        if (fast.matched && fast.data && fast.signature &&
+            fast.signature.planType === "savings" && !fastEmptySavings &&
+            fast.data.no_withdraw) {
+          const summary = fast.data.summary || {};
+          const age = Number(summary.insured_age || 0);
+          const payYears = Number(summary.payment_years || 0);
+          const cov = String(summary.coverage_period || "");
+          const sigHorizon = Number((fast.signature as any).presentationHorizonYears || 0);
+          const targetAge = /终身|100/.test(cov) ? 100 : /90/.test(cov) ? 90 : 80;
+          const baseAge = age > 0 && age < 120 ? age : 35;
+          const expectedMaxY = sigHorizon > 0 ? sigHorizon : targetAge - baseAge + payYears;
+          const actualMaxY = Object.keys(fast.data.no_withdraw).map(Number).reduce((m, y) => Math.max(m, y), 0);
+          if (actualMaxY > 0 && actualMaxY < expectedMaxY - 3) {
+            fastPartialSavings = true;
+            partialWarnings.push(`signature_partial: ${actualMaxY}/${expectedMaxY} 行 (age=${age||"?"},pay=${payYears||"?"},cov=${cov||"?"})`);
+            console.log(`[orch] ${path.basename(absPath)}: 签名 ${fast.signature.id} 部分提取 ${actualMaxY}/${expectedMaxY} 行, 立即返回+后台补全`);
+          }
+        }
+        // 旧行为用 !fastPartialSavings, 新行为: partial 也接受, 记 warning
         if (fast.matched && fast.data && fast.signature && !fastEmptySavings) {
           // 按 plan type 路由到对应 schema
           const sigPlanType = fast.signature.planType;
@@ -158,6 +192,15 @@ export class ExtractionOrchestrator {
                 console.log(`[orch] fitz 覆盖 withdrawal: ${ft.withdrawal_illustration.length} rows (签名=${plan.withdrawal_illustration.length})`);
               }
             } catch (_) { /* fitz 失败则用签名数据 */ }
+            // 2026-07-30: partial warning 注入 _meta, 客户端可见 + 后续 LLM 异步补全触发依据
+            if (fastPartialSavings) {
+              (plan as any)._meta = (plan as any)._meta || {};
+              (plan as any)._meta.warnings = [
+                ...((plan as any)._meta.warnings || []),
+                ...partialWarnings,
+              ];
+              (plan as any)._meta.needs_llm_enrichment = true;
+            }
             const validated = SavingsPlanExtractionSchema.safeParse(plan);
             if (validated.success) {
               if (this.useCache) this.saveToCache(absPath, validated.data);
@@ -293,32 +336,59 @@ export class ExtractionOrchestrator {
               const iulScriptByCompany: Record<string, string> = {
                 sunlife: "extract_sunlife_iul.py",
                 manulife: "extract_manulife_iul.py",
+                transamerica: "extract_transamerica_iul.py",
               };
               const scriptName = iulScriptByCompany[fast.signature.companyId] || "extract_sunlife_iul.py";
               const scriptPath = path.resolve(import.meta.dir, "../../scripts", scriptName);
               if (fs.existsSync(scriptPath)) {
                 const proc = Bun.spawn(["python3.11", scriptPath, absPath]);
                 const out = await new Response(proc.stdout).text();
-                const parsed = JSON.parse(out);
+                // ECS PyMuPDF 1.24.x 会把 ExtGState 错误写到 stdout, 污染 JSON.parse
+                // 防御: 找第一个 { 开头, 最后一个 } 结尾, 截取这段作为 JSON
+                const firstBrace = out.indexOf("{");
+                const lastBrace = out.lastIndexOf("}");
+                const jsonText = (firstBrace >= 0 && lastBrace > firstBrace)
+                  ? out.slice(firstBrace, lastBrace + 1)
+                  : out;
+                const parsed = JSON.parse(jsonText);
                 const fitzBi = (parsed.benefit_illustration || []) as any[];
                 if (fitzBi.length > 5) {
                   // 关键映射: 按 companyId 选字段映射
-                  //   Sunlife: surrender_value (当前) / guaranteed_value (保证)
+                  //   Sunlife: surrender_value (当前) / guaranteed_value (保证) / planned_premium (年缴)
                   //   Manulife: surrender_value (当前) / min_surrender_value (保证最低)
-                  const isManulife = fast.signature.companyId === "manulife";
-                  wrapped.benefit_illustration = fitzBi.map((r: any) => ({
-                    policy_year: r.policy_year,
-                    age: r.age || 0,
-                    annual_premium: r.planned_premium ?? r.premium ?? 0,
-                    total_premium_paid: r.cumulative_premium_paid ?? r.premium ?? 0,
-                    non_guaranteed_account_value: r.surrender_value || 0,
-                    non_guaranteed_cash_value: r.surrender_value || 0,
-                    guaranteed_account_value: isManulife ? (r.min_surrender_value || 0) : (r.guaranteed_value || 0),
-                    guaranteed_cash_value: isManulife ? (r.min_surrender_value || 0) : (r.guaranteed_value || 0),
-                    death_benefit: r.death_benefit || 0,
-                    sum_insured: r.sum_insured || 0,
-                    source_page: r.source_page || 1,
-                  }));
+                  //   Transamerica: surrender_value (当前) / guaranteed_cash_value (保证) / 无年缴字段 (从累计推)
+                  const companyKey = fast.signature.companyId;
+                  const isManulife = companyKey === "manulife";
+                  const isTransamerica = companyKey === "transamerica";
+                  // Transamerica: 脚本字段 = total_premium_paid / non_guaranteed_cash_value / guaranteed_cash_value
+                  // 无 planned_premium, 年缴从累计推
+                  let prevCum = 0;
+                  wrapped.benefit_illustration = fitzBi.map((r: any) => {
+                    const cum = isTransamerica
+                      ? (r.total_premium_paid || 0)
+                      : (r.cumulative_premium_paid ?? r.premium ?? 0);
+                    const perYear = isTransamerica ? Math.max(cum - prevCum, 0) : (r.planned_premium ?? r.premium ?? 0);
+                    prevCum = cum;
+                    const guarVal = isManulife ? (r.min_surrender_value || 0)
+                      : isTransamerica ? (r.guaranteed_cash_value || 0)
+                      : (r.guaranteed_value || 0);
+                    const surrVal = isTransamerica
+                      ? (r.non_guaranteed_cash_value || r.non_guaranteed_account_value || 0)
+                      : (r.surrender_value || 0);
+                    return {
+                      policy_year: r.policy_year,
+                      age: r.age || 0,
+                      annual_premium: perYear,
+                      total_premium_paid: cum,
+                      non_guaranteed_account_value: surrVal,
+                      non_guaranteed_cash_value: surrVal,
+                      guaranteed_account_value: guarVal,
+                      guaranteed_cash_value: guarVal,
+                      death_benefit: r.death_benefit || 0,
+                      sum_insured: r.sum_insured || 0,
+                      source_page: r.source_page || 1,
+                    };
+                  });
                   fitzGotRows = true;
                   console.log(`[orch] IUL fitz overrode benefit: ${fitzBi.length} rows`);
                 }
@@ -410,6 +480,16 @@ export class ExtractionOrchestrator {
         error: "LLM 未配置 (无 GEMINI_API_KEY) 且 fast-path 未能匹配此 PDF。请上传带签名的储蓄险 PDF 或配置 API key。",
         durationMs: Date.now() - start,
       };
+    }
+
+    // 2026-07-30: Fitz-first 策略 — fast path 已尝试但失败时 (匹配 0 行或 sig 不全) 用较短 LLM 超时
+    //   之前默认 180s, 用户体感是"点了下载半天没动静"
+    //   短超时 (60s) 让用户在 2-3x 时间窗口内拿到 fallback 或错误, 而不是傻等 3 分钟
+    const fastPathAttempted = true;  // 走到这一步 = fast path 已 attempt (matched=false 或 partial/empty)
+    const llmTimeoutMs = fastPathAttempted ? 60_000 : 180_000;
+    if (typeof (this.extractor as any).setTimeoutMs === "function") {
+      (this.extractor as any).setTimeoutMs(llmTimeoutMs);
+      console.log(`[orch] LLM fallback timeout: ${llmTimeoutMs}ms (fast path attempted)`);
     }
 
     try {
@@ -508,6 +588,49 @@ schemaList.find((s) => s.type === pt)!).filter(Boolean);
       const pt = (validatedData as { product_type?: string })?.product_type;
       const detectedType: PlanType = pt === "ci" ? "ci" : pt === "iul" ? "iul" : "savings";
       if (this.useCache) this.saveToCache(absPath, validatedData);
+
+      // 2026-07-30: 自学习签名 (Step 3)
+      //   触发条件: fast path miss → LLM 提取成功 → LLM 给出完整 schema → 准备学签名
+      //   流程: 生成签名 → re-extraction → LLM 复核 → 通过则存 learned/
+      //   fire-and-forget (setImmediate), 不阻塞返回
+      if (type === "savings" && this.useCache) {
+        setImmediate(() => {
+          (async () => {
+            try {
+              const policy = (raw as any).policy || {};
+              const benefitIl = (raw as any).benefit_illustration || [];
+              if (!Array.isArray(benefitIl) || benefitIl.length < 10) {
+                console.log(`[orch] 学习跳过: ${path.basename(absPath)} 仅 ${benefitIl.length} 行 benefit`);
+                return;
+              }
+              const productCode = (raw as any)?.policy?.product_code || (raw as any)?.product_code;
+              const r = await learnAndVerifySignature({
+                pdfPath: absPath,
+                pdfSha256: crypto.createHash("sha256").update(fs.readFileSync(absPath)).digest("hex"),
+                companyId: (raw as any)?.company?.id || (raw as any)?.company_id || "unknown",
+                productCode,
+                productName: raw?.product_name || "Unknown Product",
+                planType: "savings",
+                currency: policy.currency || "USD",
+                titleKeywords: [raw?.product_name || ""].filter(Boolean),
+                firstPageMustContain: ["受保人", "保单货币"],
+                llmData: {
+                  insured: { age: Number(raw?.insured?.age || 0), gender: raw?.insured?.gender || "" },
+                  policy: { annual_premium: Number(policy.annual_premium || 0), premium_payment_period: policy.premium_payment_period || "", total_premium_with_levy: policy.total_premium_with_levy },
+                  benefit_illustration: benefitIl.map((r: any) => ({
+                    policy_year: Number(r.policy_year || 0),
+                    total_premium_paid: Number(r.total_premium_paid || 0),
+                    total_surrender_value: Number(r.total_surrender_value || 0),
+                  })),
+                },
+              });
+              console.log(`[orch] 学习结果: ok=${r.ok}${r.signatureId ? " sig=" + r.signatureId : ""}${r.error ? " err=" + r.error : ""}${r.verification ? " verdict=" + r.verification.llmVerdict : ""}`);
+            } catch (e) {
+              console.warn("[orch] 学习异常:", (e as Error)?.message?.slice(0, 120));
+            }
+          })();
+        });
+      }
 
       return {
         pdfPath: absPath, productName: validatedData.product_name,

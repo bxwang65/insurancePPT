@@ -1,7 +1,35 @@
 #!/bin/bash
 # V3 部署到阿里云 HK ECS 脚本 (在 ECS 上跑)
 # 用法: bash scripts/deploy-ecs.sh
+#
+# ⚠️  强制预检: 跑在 Mac 上 → 自动调用 ecs-preflight.sh --deploy (含 8 个水土不服点修复)
+#               跑在 ECS 上 → 跳过预检, 直接装依赖起服务 (假设 Mac 端已 preflight 过)
 set -e
+
+# ── 0. 强制预检 (在 Mac 上时自动调用) ────────────────────
+if [ "$(uname -s)" = "Darwin" ]; then
+  SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+  echo "=== [0/6] ⚠️  检测到 Mac 端, 先跑 ecs-preflight.sh --deploy ==="
+  echo "    (含 8 个水土不服点: insurance-deck 同步 / __pycache__ 清 / Bun 对齐 / health check 端口 / .env 单独传 ...)"
+  bash "$SCRIPT_DIR/ecs-preflight.sh" --deploy
+  PREFLIGHT_EXIT=$?
+  if [ $PREFLIGHT_EXIT -ne 0 ]; then
+    echo "✗ preflight 失败 (exit=$PREFLIGHT_EXIT), 终止 deploy"
+    exit $PREFLIGHT_EXIT
+  fi
+  echo ""
+  echo "=== preflight 通过, 继续 ECS 端服务启动 ==="
+  # preflight --deploy 已经在 ECS 上跑过 bun install + 启动服务, 这里只需 health check
+  echo ""
+  echo "=== [6/6] 健康检查 ==="
+  sleep 2
+  curl -s http://localhost:80/api/health
+  echo ""
+  echo "=== 部署完成 ==="
+  echo "应用目录: /opt/insurance-ppt"
+  echo "日志: /opt/insurance-ppt/logs/server.log"
+  exit 0
+fi
 
 echo "=== [1/6] 安装 Bun ==="
 if ! command -v bun &> /dev/null; then
@@ -58,7 +86,7 @@ fi
 echo ""
 echo "=== [6/6] 健康检查 ==="
 sleep 2
-curl -s -o /dev/null -w "localhost:3000 = HTTP %{http_code}\n" http://localhost:3000
+curl -s http://localhost:80/api/health
 echo ""
 echo "=== 部署完成 ==="
 echo "应用目录: $APP_DIR"

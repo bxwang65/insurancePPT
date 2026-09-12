@@ -128,9 +128,44 @@ function rowsToDict(rows: any[], yearKey: string, valueTransform?: (r: any) => a
   return dict;
 }
 
-function calcIRR(years: number, total: number, paid: number): number | null {
-  if (years <= 0 || total <= paid || paid <= 0) return null;
-  return (total / paid) ** (1 / years) - 1;
+// === M-A NPV IRR (与 server.ts / savings_normalizer.py 完全一致) ===
+function _maIrrBisect(cf: Array<[number, number]>): number | null {
+  const npv = (r: number) => cf.reduce((s, [t, a]) => s + a / Math.pow(1 + r, t), 0);
+  let lo = -0.99, hi = 1.0;
+  let fLo = npv(lo), fHi = npv(hi);
+  if (fLo * fHi > 0) return null;
+  for (let i = 0; i < 200; i++) {
+    const mid = (lo + hi) / 2;
+    const fMid = npv(mid);
+    if (Math.abs(fMid) < 1e-6 || (hi - lo) < 1e-10) return mid;
+    if (fLo * fMid < 0) { hi = mid; fHi = fMid; } else { lo = mid; fLo = fMid; }
+  }
+  return (lo + hi) / 2;
+}
+function _iaIrrCap(currency: string): number {
+  const c = String(currency || "USD").toUpperCase().trim();
+  return (c === "HKD" || c === "港币" || c === "港元" || c === "港幣") ? 0.06 : 0.065;
+}
+function calcIRR(years: number, total: number, paid: number, payYears: number, currency: string): number | null {
+  if (years <= 0 || total <= 0 || paid <= 0 || payYears < 1) return null;
+  const cf: Array<[number, number]> = [[0, -paid / payYears]];
+  for (let i = 1; i < payYears; i++) cf.push([i, -paid / payYears]);
+  cf.push([years, total]);
+  const r = _maIrrBisect(cf);
+  return r === null ? null : Math.min(r, _iaIrrCap(currency));
+}
+function calcIRRWithdraw(years: number, totalReceived: number, paid: number, payYears: number, currency: string, startWdYr: number, annualWd: number): number | null {
+  if (years <= 0 || totalReceived <= 0 || paid <= 0 || payYears < 1) return null;
+  const cf: Array<[number, number]> = [[0, -paid / payYears]];
+  for (let i = 1; i < payYears; i++) cf.push([i, -paid / payYears]);
+  if (startWdYr > 0 && annualWd > 0 && years >= startWdYr) {
+    for (let w = startWdYr; w < years; w++) cf.push([w, annualWd]);
+    cf.push([years, totalReceived]);
+  } else {
+    cf.push([years, totalReceived]);
+  }
+  const r = _maIrrBisect(cf);
+  return r === null ? null : Math.min(r, _iaIrrCap(currency));
 }
 
 function calcSimple(years: number, total: number, paid: number): number | null {
@@ -252,6 +287,14 @@ async function main() {
   const annualPremium = Number(planData.policy?.annual_premium || 0);
   const payYears = parseInt(String(planData.policy?.premium_payment_period || "5")) || 5;
   const paidTotal = annualPremium * payYears;
+  const currency = planData.policy?.currency || "USD";
+
+  // 找提领起始年 (M-A 提领公式需要)
+  let startWdYr = 0, annualWd = 0;
+  for (const r of [...wi].sort((a, b) => Number(a.policy_year || 0) - Number(b.policy_year || 0))) {
+    const aw = Number(r.annual_withdrawal || 0);
+    if (Number(r.policy_year) > 0 && aw > 0) { startWdYr = Number(r.policy_year); annualWd = aw; break; }
+  }
 
   console.log(`✓ 产品: ${planData.product_name || "(见 debug JSON)"}`);
   console.log(`✓ 受保人: ${planData.insured?.name || "未知"}, ${insuredAge}岁`);
@@ -274,7 +317,7 @@ async function main() {
       Term: Number(r.terminal_dividend || 0),
       Total: total,
       Mult: paidTotal ? total / paidTotal : 0,
-      IRR: calcIRR(y, total, paidTotal),
+      IRR: calcIRR(y, total, paidTotal, payYears, currency),
       Simple: calcSimple(y, total, paidTotal),
     };
   }
@@ -303,7 +346,7 @@ async function main() {
       Rev: 0,
       Term: 0,
       Mult: paidTotal ? (cum + total) / paidTotal : 0,
-      IRR: calcIRR(y, cum + total, paidTotal),
+      IRR: calcIRRWithdraw(y, cum + total, paidTotal, payYears, currency, startWdYr, annualWd),
       Simple: calcSimple(y, cum + total, paidTotal),
     };
   }

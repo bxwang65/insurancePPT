@@ -21,3 +21,23 @@ external/
 data/
 temp/
 tmp/
+
+# 2026-09-12 harness 快照提交前的排除项
+# bxwang65/insurancePPT 是公开仓库 -> 任何 *.bak / .env 备份一律不入库
+.env.bak*
+*.bak.*
+# 长图海报渲染产物 (可重新生成, 单张 ~1MB)
+tools/long-poster/output_*.png
+
+# 佣金费率数据: 商业敏感 (保险公司 rate card) + SQLite 运行态文件
+#   -> 公开仓库不得入库; 本地从 ECS/备份取, 或由 db/scripts 重新抽取
+db/hx_rates.db
+db/hx_rates.db-shm
+db/hx_rates.db-wal
+db/source_pdfs/
+db/db/
+db/pdfs/
+db/reference/*.csv
+
+# 0 字节 SQLite 占位文件 (docker compose bind-mount 用, 非数据)
+docker/hx-rates/hx_rates.db

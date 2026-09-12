@@ -20,6 +20,20 @@ export function buildSignedDownloadUrl(params: {
   return `${base}?expires=${expires}&token=${token}`;
 }
 
+/**
+ * 2026-07-26: 给所有下载 URL 加 `?v=<mtime>` 强制 CF cache-bust。
+ * 之前 CF 把 /downloads/local/* 错 cache 成 404 持续 4 小时,
+ * SPA 缩略图全部 broken (自然图片 alt text 显示)。
+ * 加上 mtime 后, CF 不会命中旧 cache, 总走 origin。
+ * bun 端 Cache-Control: no-store 也设置; 这里 query 只是兜底应对已 cache 的旧 404。
+ */
+export function appendCacheBustQuery(url: string, mtimeMs?: number): string {
+  if (!url || url.startsWith("data:") || url.startsWith("blob:")) return url;
+  const ts = mtimeMs ?? Date.now();
+  const sep = url.includes("?") ? "&" : "?";
+  return `${url}${sep}v=${ts}`;
+}
+
 export function verifyDownloadSignature(params: {
   relativePath: string;
   signingSecret: string;

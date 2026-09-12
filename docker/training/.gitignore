@@ -1,0 +1,13 @@
+node_modules/
+admin-web/node_modules/
+admin-web/dist/
+src/uni-app/h5-app/node_modules/
+src/uni-app/h5-app/dist/
+src/node_modules/
+src/dist/
+data/prisma/dev.db*
+data/uploads/
+data/
+.env
+*.log
+.DS_Store

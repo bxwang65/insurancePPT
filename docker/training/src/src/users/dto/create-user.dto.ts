@@ -139,6 +139,11 @@ export class UpdateUserDto {
   @ApiPropertyOptional({ description: '账号状态 ACTIVE/INACTIVE' })
   @IsOptional() @IsIn(USER_STATUSES)
   status?: string
+
+  // 2026-08-24: admin 标志位 (仅超级管理员可改, 把 admin 降为普通员工或反之)
+  @ApiPropertyOptional({ description: '管理员标志 (仅超级管理员 123@qqq.com 可改)' })
+  @IsOptional() @IsBoolean()
+  is_admin?: boolean
 }
 
 export class UserQueryDto {

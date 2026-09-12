@@ -1,9 +1,26 @@
 #!/usr/bin/env python3
 """Classify insurer PDF pages before structured extraction."""
-import fitz
+# ⚠️ 关键: MuPDF 环境变量必须在 import fitz 之前设置, 否则对已加载的 fitz 无效
+# (PyMuPDF 在 import 时读取 MUPDF_LOG_LEVEL, 之后改 .env 不生效)
+import os
+os.environ.setdefault("MUPDF_LOG_LEVEL", "0")
+
+import warnings
 import sys
 import json
 import re
+
+# 双保险: 静音所有 Python warning (fitz deprecation 等) + 强制 warning 走 stderr
+# 防止 stdout 污染让 TS 端 JSON.parse 失败
+warnings.filterwarnings("ignore")
+warnings.filterwarnings("ignore", category=DeprecationWarning)
+
+# 现在才 import fitz (MUPDF_LOG_LEVEL 已生效)
+try:
+    import fitz
+except ImportError:
+    # 退回到 pymupdf
+    import pymupdf as fitz  # type: ignore
 
 pdf_path = sys.argv[1]
 doc = fitz.open(pdf_path)

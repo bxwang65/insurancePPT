@@ -85,9 +85,44 @@ function resolveSceneImages(insuredAge: number): string[] {
   return [`${ASSETS}/themes/savings/family-wealth-01.jpg`, `${ASSETS}/themes/savings/long-term-growth-01.jpg`, `${ASSETS}/themes/family/father-child-01.jpg`].filter(fs.existsSync);
 }
 
-function calcIRR(years: number, total: number, paid: number): number | null {
-  if (years <= 0 || total <= paid || paid <= 0) return null;
-  return (total / paid) ** (1 / years) - 1;
+// === M-A NPV IRR (与 src/api/server.ts / docker/insurance-deck/insdeck/extract/savings_normalizer.py 一致) ===
+function _maIrrBisect(cf: Array<[number, number]>): number | null {
+  const npv = (r: number) => cf.reduce((s, [t, a]) => s + a / Math.pow(1 + r, t), 0);
+  let lo = -0.99, hi = 1.0;
+  let fLo = npv(lo), fHi = npv(hi);
+  if (fLo * fHi > 0) return null;
+  for (let i = 0; i < 200; i++) {
+    const mid = (lo + hi) / 2;
+    const fMid = npv(mid);
+    if (Math.abs(fMid) < 1e-6 || (hi - lo) < 1e-10) return mid;
+    if (fLo * fMid < 0) { hi = mid; fHi = fMid; } else { lo = mid; fLo = fMid; }
+  }
+  return (lo + hi) / 2;
+}
+function _iaIrrCap(currency: string): number {
+  const c = String(currency || "USD").toUpperCase().trim();
+  return (c === "HKD" || c === "港币" || c === "港元" || c === "港幣") ? 0.06 : 0.065;
+}
+function calcIRR(years: number, total: number, paid: number, payYears: number, currency: string): number | null {
+  if (years <= 0 || total <= 0 || paid <= 0 || payYears < 1) return null;
+  const cf: Array<[number, number]> = [[0, -paid / payYears]];
+  for (let i = 1; i < payYears; i++) cf.push([i, -paid / payYears]);
+  cf.push([years, total]);
+  const r = _maIrrBisect(cf);
+  return r === null ? null : Math.min(r, _iaIrrCap(currency));
+}
+function calcIRRWithdraw(years: number, totalReceived: number, paid: number, payYears: number, currency: string, startWdYr: number, annualWd: number): number | null {
+  if (years <= 0 || totalReceived <= 0 || paid <= 0 || payYears < 1) return null;
+  const cf: Array<[number, number]> = [[0, -paid / payYears]];
+  for (let i = 1; i < payYears; i++) cf.push([i, -paid / payYears]);
+  if (startWdYr > 0 && annualWd > 0 && years >= startWdYr) {
+    for (let w = startWdYr; w < years; w++) cf.push([w, annualWd]);
+    cf.push([years, totalReceived]);
+  } else {
+    cf.push([years, totalReceived]);
+  }
+  const r = _maIrrBisect(cf);
+  return r === null ? null : Math.min(r, _iaIrrCap(currency));
 }
 
 function calcSimple(years: number, total: number, paid: number): number | null {
@@ -102,9 +137,16 @@ async function extractPdf(pdfPath: string, prompt: string, apiKey: string): Prom
   return result.data;
 }
 
-function buildSavingsData(planData: any, insuredAge: number, annualPremium: number, payYears: number, paidTotal: number) {
+function buildSavingsData(planData: any, insuredAge: number, annualPremium: number, payYears: number, paidTotal: number, currency: string = "USD") {
   const bi = planData.benefit_illustration || [];
   const wi = planData.withdrawal_illustration || [];
+
+  // 找提领起始年 (M-A 提领公式需要)
+  let startWdYr = 0, annualWd = 0;
+  for (const r of (wi || []).sort((a: any, b: any) => Number(a.policy_year) - Number(b.policy_year))) {
+    const aw = Number(r.annual_withdrawal || 0);
+    if (Number(r.policy_year) > 0 && aw > 0) { startWdYr = Number(r.policy_year); annualWd = aw; break; }
+  }
 
   const noWithdraw: Record<string, any> = {};
   for (const r of bi) {
@@ -117,7 +159,7 @@ function buildSavingsData(planData: any, insuredAge: number, annualPremium: numb
       Rev: Number(r.reversionary_bonus || 0),
       Term: Number(r.terminal_dividend || 0),
       Total: total, Mult: paidTotal ? total / paidTotal : 0,
-      IRR: calcIRR(y, total, paidTotal),
+      IRR: calcIRR(y, total, paidTotal, payYears, currency),
       Simple: calcSimple(y, total, paidTotal),
     };
   }
@@ -136,7 +178,7 @@ function buildSavingsData(planData: any, insuredAge: number, annualPremium: numb
       Annual_WD: aw, Cum_WD: cum, Total: total,
       Total_Received: cum + total, Guar_CV: 0, Rev: 0, Term: 0,
       Mult: paidTotal ? (cum + total) / paidTotal : 0,
-      IRR: calcIRR(y, cum + total, paidTotal),
+      IRR: calcIRRWithdraw(y, cum + total, paidTotal, payYears, currency, startWdYr, annualWd),
       Simple: calcSimple(y, cum + total, paidTotal),
     };
   }
@@ -179,7 +221,7 @@ async function main() {
   console.log(`  产品: ${savingsData.product_name}, 受保人: ${si.name}, ${insuredAge}岁`);
   console.log(`  年缴: $${annualPremium.toLocaleString()}, ${payYears}年`);
 
-  const { noWithdraw, withdraw } = buildSavingsData(savingsData, insuredAge, annualPremium, payYears, paidTotal);
+  const { noWithdraw, withdraw } = buildSavingsData(savingsData, insuredAge, annualPremium, payYears, paidTotal, sp.currency || "USD");
 
   // Step 2: Extract CI (optional)
   let ciData = null;

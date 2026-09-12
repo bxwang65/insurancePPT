@@ -4,7 +4,7 @@ V3.1.0-fastpath-complete
 封装日期: 2026-07-05
 Git HEAD: 5fd23a4 fix: 9 buggy savings products + fitz fallback for LLM validation failures
 ECS PID: 101553 (启动于 2026-07-06 12:49 UTC+8)
-公网: https://ppt.gllpsce.cn (ECS Ubuntu 20.04 + Python 3.8 + Bun 1.3.14)
+公网: https://hksgtools.cn (Cloudflare Tunnel → ECS Ubuntu 22.04 + Python 3.11 + Bun 1.3.14)
 
 本版本关键特性 (相对于 v3.0.2-stable-14products):
 
@@ -38,7 +38,7 @@ ECS PID: 101553 (启动于 2026-07-06 12:49 UTC+8)
 
 部署信息
 ========
-公网域名: https://ppt.gllpsce.cn
+公网域名: https://hksgtools.cn
 本地端口: 3000 (Docker) / 80 (ECS)
 启动方式: bash scripts/ecs-restart.sh
 管理脚本: scripts/start.sh, scripts/stop.sh, scripts/status.sh

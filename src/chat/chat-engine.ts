@@ -5,6 +5,7 @@
 
 import { InterpretationEngine, type 计划书解读, type 销售洞察 } from "./interpretation-engine.ts";
 import { llmClient } from "../lib/llm-client.ts";
+import { totalPremiumPaid, leverageRatio, parsePayYears } from "../api/insurance-math.ts";
 
 interface ExtractedPlan {
   pdfName: string;
@@ -115,9 +116,11 @@ ${message}
         }
       } else if (interp.planType === "iul") {
         const sumInsured = (pol.sum_insured as number) || 0;
-        const initialPrem = (pol.initial_premium as number) || 0;
-        const leverage = initialPrem > 0 ? (sumInsured / initialPrem).toFixed(1) : "—";
-        ctx += `身故保障: ${this.fmt(sumInsured)} | 初始保费: ${this.fmt(initialPrem)} | 杠杆: ${leverage}x\n`;
+        const annualPrem = (pol.annual_premium as number) || (pol.initial_premium as number) || 0;
+        const payYears = parsePayYears(pol.premium_payment_period as string);
+        const totalPrem = totalPremiumPaid(pol);
+        const leverage = leverageRatio(sumInsured, pol);
+        ctx += `身故保障: ${this.fmt(sumInsured)} | 年缴: ${this.fmt(annualPrem)} × ${payYears}年 = ${this.fmt(totalPrem)} | 杠杆: ${leverage}\n`;
         if (pol.index_account_rate) ctx += `指数账户假设利率: ${pol.index_account_rate}%\n`;
         if (pol.fixed_account_rate) ctx += `固定账户保证利率: ${pol.fixed_account_rate}%\n`;
       }

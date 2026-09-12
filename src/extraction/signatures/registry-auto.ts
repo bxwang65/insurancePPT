@@ -1,11 +1,13 @@
 /**
  * 自动从 config/products/ + config/companies/ 加载产品，生成默认签名
  * 用户上传新产品的 PDF 后，可以用此函数快速添加签名
+ * 2026-07-30: 加 loadLearnedSignatures, 把 data/signatures/learned/*.json 也并入
  */
 import fs from "fs";
 import path from "path";
 import { SIGNATURES } from "./registry.ts";
 import type { PdfSignature } from "./types.ts";
+import { loadLearnedSignatures } from "./learning.ts";
 
 const PRODUCTS_DIR = path.resolve(import.meta.dir, "../../../config/products");
 const COMPANIES_DIR = path.resolve(import.meta.dir, "../../../config/companies");
@@ -70,5 +72,5 @@ export function getAutoSignatures(): PdfSignature[] {
 }
 
 export function getAllSignatures(): PdfSignature[] {
-  return [...SIGNATURES, ...getAutoSignatures()];
+  return [...SIGNATURES, ...getAutoSignatures(), ...loadLearnedSignatures()];
 }

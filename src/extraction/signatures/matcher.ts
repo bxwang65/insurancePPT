@@ -77,9 +77,9 @@ export function matchPdfSignatureAll(input: MatchInput, threshold = 0.5): PdfSig
   return out.sort((a, b) => b.confidence - a.confidence);
 }
 
-/** 从 PDF 全文中检测产品代号（如 MW2IUA / WE2 / HUANYU5） */
+/** 从 PDF 全文中检测产品代号（如 MW2IUA / WE2 / HUANYU5 / AIBANHANG2） */
 export function detectProductCodeFromText(text: string): string | undefined {
-  const codePattern = /\b(MW\d+[A-Z]+|WE\d+|HUANYU\d+|CAESARS|SPARK|ATAR|TRST|WEB\d+|AAXNA1U|MW3U|2606171|WPD|MIAHJ|CFYH)\b/i;
+  const codePattern = /\b(MW\d+[A-Z]+|WE\d+|HUANYU\d+|CAESARS|SPARK|ATAR|TRST|WEB\d+|AAXNA1U|MW3U|2606171|WPD|MIAHJ|CFYH|AIBANHANG2?|TA_GIUL3\+?M?|GIUL3|GENESIS3|SBIUL2|SIUL3)\b/i;
   const m = text.match(codePattern);
   return m ? m[1].toUpperCase() : undefined;
 }

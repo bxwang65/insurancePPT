@@ -219,6 +219,161 @@ def dedupe(rows):
     return [by_year[year] for year in sorted(by_year)]
 
 
+# ── 2026-09-01: 数据合理性自检层 (Phase 1 升级) ─────────────────
+# 目的: 对解析出的每行数据做一致性校验, 标记 parse_quality, 防止错误数据
+# 默默流入下游 PPT 渲染或 IRR 计算 (例如 WEBB05 错位 bug).
+
+
+def _validate_parsing(rows, table_name="benefit"):
+    """对解析出的 benefit illustration 表做合理性校验, 返回 (warnings, quality)。
+
+    校验项:
+    - GCV + RB + TB ≈ total (允许 0.5% 误差或 ±10 元绝对值, 应对舍入)
+    - 保单年度严格递增 (1,2,3...)
+    - total_premium_paid 单调不减 (保费累计)
+    - total_surrender_value 单调不减 (退保总额, 头两年允许 0)
+    - 首年 CV 通常 > 0 (允许少数产品首年 CV=0)
+
+    Args:
+        rows: list[dict] (已 dedupe, 按 policy_year 排序)
+        table_name: "benefit" / "withdrawal", 仅用于 warning prefix
+
+    Returns:
+        (warnings: list[str], quality: "ok" | "suspicious" | "failed")
+    """
+    warnings = []
+    if not rows:
+        return warnings, "failed"
+
+    # 按年度排序
+    rows = sorted(rows, key=lambda r: r.get("policy_year", 0))
+
+    # 1. 年度单调递增
+    prev_yr = 0
+    for r in rows:
+        yr = r.get("policy_year", 0)
+        if yr <= prev_yr:
+            warnings.append(f"[{table_name}] 年度非递增: Y{prev_yr} → Y{yr}")
+        prev_yr = yr
+
+    # 2. premium 单调不减
+    prev_paid = 0
+    for r in rows:
+        paid = r.get("total_premium_paid", 0)
+        if paid < prev_paid - 1:  # 允许 1 元浮点舍入
+            warnings.append(
+                f"[{table_name}] premium 倒退: Y{prev_yr} {prev_paid:,.0f} → "
+                f"Y{r.get('policy_year', '?')} {paid:,.0f}"
+            )
+        prev_paid = max(prev_paid, paid)
+
+    # 3. total 单调不减 (头两年允许 0, 因为 CV 可能延后产生)
+    prev_total = 0
+    non_zero_start_year = None
+    for r in rows:
+        yr = r.get("policy_year", 0)
+        total = r.get("total_surrender_value", 0)
+        if total > 0 and non_zero_start_year is None:
+            non_zero_start_year = yr
+        if total > 0 and prev_total > 0:
+            if total < prev_total * 0.95:  # 允许 5% 下降 (含分红回撤情形)
+                warnings.append(
+                    f"[{table_name}] total 显著下降: "
+                    f"Y{yr-1} {prev_total:,.0f} → Y{yr} {total:,.0f}"
+                )
+        prev_total = max(prev_total, total)
+
+    # 4. GCV + RB + TB ≈ total (允许 ±0.5% 或 ±10 元)
+    bad_rows = 0
+    for r in rows:
+        gcv = r.get("guaranteed_cash_value", 0)
+        rev = r.get("reversionary_bonus", 0)
+        term = r.get("terminal_dividend", 0)
+        total = r.get("total_surrender_value", 0)
+        if total <= 0:
+            continue
+        sub_sum = gcv + rev + term
+        if sub_sum <= 0:
+            continue
+        diff = abs(sub_sum - total)
+        ratio = diff / total
+        if ratio > 0.005 and diff > 10:
+            bad_rows += 1
+            if bad_rows <= 3:
+                warnings.append(
+                    f"[{table_name}] Y{r.get('policy_year', '?')}: "
+                    f"GCV+RB+TB={sub_sum:,.0f} ≠ total={total:,.0f} "
+                    f"(差 {ratio:.2%})"
+                )
+    if bad_rows > len(rows) * 0.3:
+        warnings.append(
+            f"[{table_name}] {bad_rows}/{len(rows)} 行 GCV+RB+TB≠total, "
+            f"可能错抓金额列"
+        )
+
+    # 5. 首年 CV 通常 > 0 (允许 Y1=0 的少见情况)
+    if rows and rows[0].get("policy_year") == 1:
+        first_total = rows[0].get("total_surrender_value", 0)
+        if first_total == 0 and non_zero_start_year and non_zero_start_year > 5:
+            warnings.append(
+                f"[{table_name}] 首 5 年 total=0, 但 Y{non_zero_start_year} 突现, "
+                f"可能漏抓前几年数据"
+            )
+
+    # 定级: 0 warning=ok, 1-2 minor=suspicious, 3+ 或结构性错误=failed
+    if len(warnings) == 0:
+        quality = "ok"
+    elif len(warnings) <= 2 and bad_rows == 0:
+        quality = "suspicious"
+    else:
+        quality = "failed"
+    return warnings, quality
+
+
+def _validate_withdrawal_parsing(rows):
+    """对提领表做合理性校验。
+
+    校验项:
+    - 提取金额 ≤ 当年退保价值 (否则提空了)
+    - 累计提取 ≤ 累计保费 * 合理倍数 (防止解析错位导致离谱数字)
+
+    Returns:
+        (warnings, quality)
+    """
+    warnings = []
+    if not rows:
+        return warnings, "ok"
+
+    rows = sorted(rows, key=lambda r: r.get("policy_year", 0))
+    prev_cum = 0
+    for r in rows:
+        yr = r.get("policy_year", 0)
+        wd = r.get("annual_withdrawal", 0)
+        sv = r.get("surrender_value_after", 0)
+        prem = r.get("total_premium_paid", 0)
+
+        # 提取后 CV 应 >= 0
+        if sv < 0:
+            warnings.append(f"[withdrawal] Y{yr}: sv_after 变负 {sv:,.0f}")
+
+        # 累计提取不应远大于累计保费 (允许长期提取)
+        # 真实场景: 5-pay 100K + 50 年 35K/年提取 = 累计 1.75M, 是累计保费 500K 的 3.5x
+        # 这里 prem 字段实际是当年度对应的某个保费参考值, 不一定是 lifetime cumulative,
+        # 所以只看 cumulative > lifetime_premium * 100 的离谱情形 (即 > 100 个 lifetime)
+        if prem > 0:
+            ratio = prev_cum / prem if prem > 0 else 0
+            if ratio > 200:  # 累计提取 > 200 倍年缴 = 极度异常 (非正常保单数据)
+                warnings.append(
+                    f"[withdrawal] Y{yr}: 累计提取 {prev_cum:,.0f} "
+                    f"异常大于累计保费 {prem:,.0f} (ratio={ratio:.0f}x)"
+                )
+
+        prev_cum += wd
+
+    quality = "ok" if len(warnings) == 0 else "suspicious"
+    return warnings, quality
+
+
 def parse_ctf_withdrawal_surrender_text(page, page_num, benefit_rows):
     text = page.get_text("text")
     if "现金提取" not in text or "退保发还金额及" not in text or "身故赔偿额" in text:
@@ -335,88 +490,95 @@ def parse_ctf_base_death_text(page, page_num):
     return rows
 
 
+def _parse_cpic_table(page, page_num):
+    """CPIC page 7-8 共享解析器: 10 行/年 竖排表 (age/year/prem/wd/A/B/C/D/sum_v/notional)
+    仅匹配含 "按保單年度" + "退保價值" 子标题 (page 9-10 身故赔偿表会排除)
+    返回 policy_year + age + 8 数字的 dict 列表"""
+    rows = []
+    txt = page.get_text()
+    if "按保單年度" not in txt or "退保價值" not in txt:
+        return rows
+    lines = [l.strip() for l in txt.split("\n")]
+    nums = []
+    for l in lines:
+        s = l.replace(",", "").replace(" ", "")
+        if s.isdigit():
+            nums.append(int(s))
+    # 检测 (age 30-150) + (year 1-71) + 8 数字 模式
+    i = 0
+    while i + 9 < len(nums):
+        age = nums[i]
+        year = nums[i+1]
+        if 30 <= age <= 150 and 1 <= year <= 71:
+            prem, wd, A, B, C, D, sum_v, notional = nums[i+2:i+10]
+            rows.append({
+                "policy_year": year,
+                "age": age,
+                "total_premium_paid": prem,
+                "annual_withdrawal": wd,
+                "guaranteed_cash_value": A,
+                "reversionary_bonus": B,
+                "terminal_dividend": C,
+                "total_surrender_value": D,
+                "sum_value": sum_v,
+                "notional": notional,
+                "source_page": page_num,
+            })
+            i += 10
+        else:
+            i += 1
+    return rows
+
+
 def parse_cpic_withdrawal(page, page_num):
-    """CPIC 11列提领表: 提取年份/提取金额(用table_rows解合并单元格)"""
+    """CPIC 提取场景: page 7-8 是 10 行/年 竖排表
+    仅在含 "現金提取" header 的页运行 (不提取 PDF page 7-8 无此 header → 跳过)"""
     rows = []
     txt = page.get_text()
     if "現金提取" not in txt:
         return []
-    with contextlib.redirect_stdout(io.StringIO()):
-        tables = page.find_tables().tables
-    for table in tables:
-        extracted = table.extract()
-        if not extracted or len(extracted[0]) not in (9, 11):
-            continue
-        hdr = " ".join(str(c) for c in extracted[0])
-        if "提取" not in hdr:
-            continue
-        # 列: 年龄,年度,保费,提取,保证,归原,终期,总额,累计,(价值+提取),(名义金额)
-        for row_data in extracted[3:]:
-            vals = [values(c) for c in row_data]
-            if not vals or not any(vals):
-                continue
-            n = min(len(v) for v in vals if v) if any(v for v in vals) else 1
-            for i in range(n):
-                yr = integer(vals[2][i]) if len(vals) > 2 and i < len(vals[2]) else 0
-                wd = number(vals[4][i]) if len(vals) > 4 and i < len(vals[4]) else 0
-                sv = number(vals[8][i]) if len(vals) > 8 and i < len(vals[8]) else 0
-                prem = number(vals[3][i]) if len(vals) > 3 and i < len(vals[3]) else 0
-                if yr > 0:
-                    rows.append({
-                        "policy_year": yr,
-                        "total_premium_paid": prem,
-                        "annual_withdrawal": wd if wd > 0 else 0,
-                        "surrender_value_after": sv if sv > 0 else 0,
-                        "total_withdrawn": 0,
-                    })
+    if "按保單年度" not in txt:
+        return []
+    raw = _parse_cpic_table(page, page_num)
+    for r in raw:
+        year = r["policy_year"]
+        wd = r["annual_withdrawal"]
+        # cum_wd: Y6 起每年提取, Y71 不再提取 → cum_wd = wd × min(year-5, 65)
+        if year <= 70:
+            cum_wd = wd * max(0, year - 5)
+        else:
+            cum_wd = wd * 65
+        rows.append({
+            "policy_year": year,
+            "total_premium_paid": r["total_premium_paid"],
+            "annual_withdrawal": wd,
+            "surrender_value_after": r["total_surrender_value"],
+            "total_withdrawn": cum_wd,
+        })
     return rows
 
 
 def parse_cpic_base(page, page_num):
-    """CPIC 储蓄表(文本解析,竖排): 年度/总保费/保证金额/归原红利/终期红利/总额"""
+    """CPIC 不提取场景: page 7-8 是 10 行/年 竖排表
+    跳过含 "現金提取" header 的页 (留给 parse_cpic_withdrawal)
+    不提取 PDF 的 page 7-8 无 "現金提取" → 解析"""
     rows = []
     txt = page.get_text()
-    if "保單年度終結" not in txt:
+    if "按保單年度" not in txt:
         return rows
-    lines = txt.split("\n")
-    # 提取所有数字行（竖排表格：每个值占一行）
-    data_lines = []
-    in_table = False
-    for line in lines:
-        s = line.strip()
-        if "保單年度終結" in s:
-            in_table = True
-            continue
-        if not in_table:
-            continue
-        # 跳过表头
-        if any(k in s for k in ["繳付保費總額", "保證金額", "非保證金額", "歸原紅利", "終期紅利", "總額", "(A)", "(B)", "(C)", "(D)", "退保價值"]):
-            continue
-        # 纯数字行 或 年龄行
-        clean = s.replace("歲", "").replace("岁", "").replace(",", "").strip()
-        if clean and (clean.isdigit() or (clean[:-1].isdigit() if clean else False)):
-            data_lines.append(s)
-    # 重组: 每6行一组(标签+5个值)
-    i = 0
-    while i < len(data_lines):
-        label = data_lines[i].replace("歲", "").replace("岁", "").strip()
-        if not label.isdigit():
-            i += 1
-            continue
-        year = int(label)
-        if i + 5 >= len(data_lines):
-            break
-        vals = data_lines[i+1:i+6]
+    if "現金提取" in txt:
+        return rows  # withdrawal page, 留给 parse_cpic_withdrawal
+    raw = _parse_cpic_table(page, page_num)
+    for r in raw:
         rows.append({
-            "policy_year": year,
-            "total_premium_paid": number(vals[0]) if len(vals) > 0 else 0,
-            "guaranteed_cash_value": number(vals[1]) if len(vals) > 1 else 0,
-            "reversionary_bonus": number(vals[2]) if len(vals) > 2 else 0,
-            "terminal_dividend": number(vals[3]) if len(vals) > 3 else 0,
-            "total_surrender_value": number(vals[4]) if len(vals) > 4 else 0,
+            "policy_year": r["policy_year"],
+            "total_premium_paid": r["total_premium_paid"],
+            "guaranteed_cash_value": r["guaranteed_cash_value"],
+            "reversionary_bonus": r["reversionary_bonus"],
+            "terminal_dividend": r["terminal_dividend"],
+            "total_surrender_value": r["total_surrender_value"],
             "source_page": page_num,
         })
-        i += 6
     return rows
 
 
@@ -1172,26 +1334,52 @@ def parse_ci_benefit(page, page_num):
 # ── 产品类型识别 ──────────────────────────────────
 PRODUCT_KEYWORDS: List[Tuple[str, str]] = [
     ("pru", "明天多元貨幣"),
-    ("ctf", "匠心"),
+    ("ctf", "匠心"),  # 兼顧 匠心飛越 (MW3U) + 匠心傳承2 (MW2IUA)
     ("aia-huanyu", "環宇盈活"),
-    ("cpic", "世代悅享3"),
+    ("aia-huanyu", "环盈活"),  # 2026-09-02: 簡體 PDF 是 "环盈活" (跨行) 不是 "环宇盈活", 修復友邦路由
+    ("cpic", "悅享儲蓄保險計劃3"),
     ("chinalife", "傲瓏"),
     ("china-taiping", "頤年樂享"),
-    ("axa", "WEB05"),
+    ("axa", "WEB05"),  # 盛利II 至尊 (特級身故保險賠償 - 含 30% bonus)
+    ("axa", "WEBB05"),  # 盛利II 至尊 (基本身故保險賠償 - 100% premium), 2026-09-01 发现
     ("xinanyi", "AAXNA1U"),
     ("cfyh", "盈活储蓄"),
     ("qihang", "WPD"),
     ("hongzhi", "2606171"),
     ("hongzhi", "家傳承保險計劃"),
     ("jiangxin", "MW3U"),
+    ("ctf", "MW2IUA"),  # 匠心傳承2 (MW2IUA) 2026-09-02 自動學習寫入
+    ("wantong", "BISP5"),  # 萬通富饒萬家 (BISP5) 2026-09-02 自動學習寫入
+    ("taiping", "1121NWLP7"),  # 太平頤年樂享尊享版 (1121NWLP7) 2026-09-02 自動學習寫入
+    ("fwd", "GFC5"),  # 富卫 盈聚天下II (GFC5) 2026-09-02 自動學習寫入
+    ("fwd", "盈聚天下"),  # 富卫 盈聚天下II 跨行簡體備名
 ]
 
 
 def _identify_doc_type(full_text: str) -> Optional[str]:
-    """扫描全文识别产品类型, 返回 doc_type 或 None"""
+    """扫描全文识别产品类型, 返回 doc_type 或 None
+
+    2026-09-01 升级: 先 exact → 再 regex → 再 auto-extract (auto_keywords.json).
+    旧调用方 (返回 str|None) 行为兼容, 详细信息通过 stderr 输出。
+    2026-09-02: 在 exact 匹配前, 把 PDF 文本里的换行/制表符去掉, 避免
+    跨行拆分的产品名 (例如 "环\n盈活储蓄") 漏匹配。
+    """
+    # 兼容旧调用方: 没有 pdf_path, 仅做 exact+regex
+    # 先在去换行版本上做一次扫描, 避免 "环\n盈活" 这种跨行匹配不到
+    norm_text = _re_phase2.sub(r"\s+", "", full_text) if full_text else full_text
+    # 优先去换行版本匹配 (跨行产品名场景)
     for doc_type, kw in PRODUCT_KEYWORDS:
-        if kw in full_text:
+        if kw in norm_text:
             return doc_type
+    # 退化到原始文本匹配
+    doc_type, source = _identify_doc_type_v2(full_text, None)
+    if doc_type:
+        if source != "exact":
+            print(
+                f"[fitz] 模糊匹配: doc_type={doc_type} via {source}",
+                file=__import__("sys").stderr,
+            )
+        return doc_type
     return None
 
 
@@ -1334,9 +1522,18 @@ def main():
     withdrawal_amounts = []
     after_withdrawal = []
 
-    doc_type = _identify_doc_type("".join(p.get_text() for p in doc))
+    full_text = "".join(p.get_text() for p in doc)
+    # 2026-09-01: Phase 2 升级 — 优先 exact, 然后 regex, 最后 auto-extract (page1 code → auto_keywords.json)
+    doc_type, doc_type_source = _identify_doc_type_v2(full_text, pdf)
     if doc_type:
-        print(f"[fitz] 识别产品类型: {doc_type}", file=__import__("sys").stderr)
+        if doc_type_source == "exact":
+            print(f"[fitz] 识别产品类型: {doc_type}", file=__import__("sys").stderr)
+        else:
+            print(f"[fitz] 模糊识别产品类型: {doc_type} (via {doc_type_source})", file=__import__("sys").stderr)
+    else:
+        # 未识别, 尝试从 page 1 自动注册 (持久化到 data/auto_keywords.json)
+        # 注: 即使注册了也不一定能解析, 但下次再遇到同类代码会进 regex 兜底
+        _persist_auto_keyword(pdf, full_text)
 
     for index, page in enumerate(doc):
         page_num = index + 1
@@ -1399,10 +1596,31 @@ def main():
             "total_withdrawn": cumulative,
         })
 
+    # 2026-09-01: Phase 1 sanity check — 标记 parse_quality 防止错误数据静默流入下游
+    base_warnings, base_quality = _validate_parsing(base, table_name="benefit")
+    wd_warnings, wd_quality = _validate_withdrawal_parsing(withdrawal)
+    overall_quality = "ok"
+    if base_quality == "failed" or wd_quality == "failed":
+        overall_quality = "failed"
+    elif base_quality == "suspicious" or wd_quality == "suspicious":
+        overall_quality = "suspicious"
+    all_warnings = base_warnings + wd_warnings
+    if all_warnings:
+        for w in all_warnings:
+            print(f"[fitz:validate] WARN {w}", file=__import__("sys").stderr)
+        print(
+            f"[fitz:validate] quality={overall_quality} warnings={len(all_warnings)}",
+            file=__import__("sys").stderr,
+        )
+
     print(json.dumps({
         "parser": "fitz-table-v1",
         "pdf": str(pdf),
         "total_pages": len(doc),
+        "doc_type": doc_type,
+        "doc_type_source": doc_type_source,
+        "parse_quality": overall_quality,
+        "parse_warnings": all_warnings,
         "benefit_illustration": base,
         "ci_benefit_illustration": dedupe(ci_base),
         "withdrawal_illustration": withdrawal,
@@ -1637,6 +1855,202 @@ def auto_generate_parser_code(spec):
         lines.append('    return rows')
 
     return "\n".join(lines)
+
+
+# ── 2026-09-01: 正则关键词 + 自动学习 (Phase 2 升级) ─────────────────
+# 目的: 把 PRODUCT_KEYWORDS 从 exact-match 升级到 regex-match,
+# 并自动从 PDF 第 1 页提取产品代码, 写入 data/auto_keywords.json 持久化。
+# 下次同名产品出现, 直接走专用解析器, 不用再 manual 加 keyword。
+
+import re as _re_phase2
+_AUTO_KEYWORDS_PATH = Path(__file__).resolve().parent.parent / "data" / "auto_keywords.json"
+_AUTO_KEYWORDS_HEADER = "# 2026-09-01 自动学习的关键词, 格式 {doc_type: [keyword, ...]}\n"
+
+
+def _load_auto_keywords():
+    """读取 data/auto_keywords.json, 返回 dict[doc_type, list[str]], 不存在则返 {}"""
+    if not _AUTO_KEYWORDS_PATH.exists():
+        return {}
+    try:
+        with open(_AUTO_KEYWORDS_PATH, "r", encoding="utf-8") as f:
+            raw = f.read()
+        # 跳过注释行
+        lines = [l for l in raw.splitlines() if not l.startswith("#")]
+        if not lines:
+            return {}
+        return json.loads("\n".join(lines))
+    except (json.JSONDecodeError, OSError):
+        return {}
+
+
+def _save_auto_keywords(d):
+    """持久化自动学习的关键词。"""
+    try:
+        _AUTO_KEYWORDS_PATH.parent.mkdir(parents=True, exist_ok=True)
+        with open(_AUTO_KEYWORDS_PATH, "w", encoding="utf-8") as f:
+            f.write(_AUTO_KEYWORDS_HEADER)
+            json.dump(d, f, ensure_ascii=False, indent=2, sort_keys=True)
+        return True
+    except OSError:
+        return False
+
+
+# 把简单字符串关键词升级为正则模式:
+#   - 字母数字混合 (如 WEB05, WPD, 2606171, MW3U): \w? 容忍 WEB/WEBB 差异
+#   - 中文关键词: 原样匹配
+#   - 显式包含 "?" 或 "*": 视作正则
+# 这样以后新代码 (如 "WEB05" 改成 "WEB05B" / "WEB05C") 都能自动命中。
+def _keyword_to_regex(kw):
+    """把字符串关键词编译成容忍变体的正则 (例如 WEB05 → WEB\\w?05)"""
+    # 显式正则
+    if "?" in kw or "*" in kw or "[" in kw:
+        return _re_phase2.compile(kw)
+    # 字母数字混合 (无中文, 无标点): 容忍变体
+    is_ascii_alnum = all(c.isascii() and (c.isalnum() or c == "_") for c in kw)
+    if is_ascii_alnum and any(c.isalpha() for c in kw) and any(c.isdigit() for c in kw):
+        # 在字母和数字交界处允许插入 1 个可选 \w (例如 WEB05 ↔ WEBB05)
+        pattern_parts = []
+        prev_kind = None
+        for ch in kw:
+            kind = "alpha" if ch.isalpha() else ("digit" if ch.isdigit() else "other")
+            if prev_kind == "alpha" and kind == "digit":
+                pattern_parts.append(r"\w?")  # 容忍 WEB05 → WEBB05 边界插入字母
+            elif prev_kind == "digit" and kind == "alpha":
+                pattern_parts.append(r"\w?")  # 容忍 05W → 05WB 边界插入字母
+            pattern_parts.append(_re_phase2.escape(ch))
+            prev_kind = kind
+        return _re_phase2.compile(r"(?<![A-Za-z0-9])" + "".join(pattern_parts) + r"(?![A-Za-z0-9])")
+    # 中文 / 纯数字: 原样匹配
+    return _re_phase2.compile(_re_phase2.escape(kw))
+
+
+def _extract_product_code_from_page1(pdf_path):
+    """从 PDF 第 1 页扫描产品代码 (例: (WEBB05) / (AAXNA1U) / (MW3U) / (2606171))。
+
+    启发式: 找形如 `(CODE)` 的短串 (4-12 字符, 全大写字母数字), 排除常见无关字。
+    返回最像产品代码的那个, 或空串。
+    """
+    if not pdf_path or not Path(pdf_path).exists():
+        return ""
+    try:
+        doc = fitz.open(pdf_path)
+        text = doc[0].get_text() if len(doc) > 0 else ""
+        doc.close()
+    except Exception:
+        return ""
+    # 候选: 4-12 字符 (字母数字), 不含空格的 token
+    candidates = _re_phase2.findall(r"\(([A-Z0-9]{4,12})\)", text)
+    # 排除常见无关字
+    blacklist = {"USD", "HKD", "RMB", "CNY", "FNS", "HK", "CN", "MO", "SG", "PDF"}
+    candidates = [c for c in candidates if c not in blacklist]
+    # 取第一个出现且最像产品代码的 (通常 (CODE) 在第一行副标题)
+    return candidates[0] if candidates else ""
+
+
+def _identify_doc_type_v2(full_text, pdf_path=None):
+    """Phase 2 升级版: 先 exact → 再 regex → 再 auto-extract。
+
+    Returns:
+        (doc_type, source) 其中 source ∈ {"exact", "regex", "auto_extracted", None}
+
+    2026-09-02: Pass 1 在去换行版 + 原始版两种文本上匹配, 容忍跨行产品名。
+    """
+    # Pass 1a: exact match on 去换行版 (跨行产品名)
+    norm_text = _re_phase2.sub(r"\s+", "", full_text) if full_text else full_text
+    for doc_type, kw in PRODUCT_KEYWORDS:
+        if kw in norm_text:
+            return doc_type, "exact"
+    # Pass 1b: exact match on 原始文本 (含空格/换行)
+    for doc_type, kw in PRODUCT_KEYWORDS:
+        if kw in full_text:
+            return doc_type, "exact"
+    # Pass 2: regex match (容忍代码变体)
+    for doc_type, kw in PRODUCT_KEYWORDS:
+        if _keyword_to_regex(kw).search(full_text):
+            return doc_type, "regex"
+    # Pass 3: 从 page 1 提取产品代码, 看是否在 auto_keywords 里
+    if pdf_path:
+        code = _extract_product_code_from_page1(pdf_path)
+        if code:
+            auto_kw = _load_auto_keywords()
+            for doc_type, kws in auto_kw.items():
+                if code in kws:
+                    return doc_type, "auto_extracted"
+    return None, None
+
+
+def _auto_register_keyword(pdf_path, full_text):
+    """当 _identify_doc_type_v2 返回 None 时, 尝试从 PDF 自动识别产品,
+    并写入 data/auto_keywords.json 标记为 'pending_review'。
+
+    启发式:
+    - 从 PDF 提取 (CODE)
+    - 检查 PDF 首页是否含 "保險計劃" / "儲蓄保險" 等关键词
+    - 用产品代码首字母拼出临时 doc_type (如 'auto_axa_webb05')
+
+    Returns:
+        dict: {doc_type, code, suggested_keyword} or None
+    """
+    if not pdf_path:
+        return None
+    code = _extract_product_code_from_page1(pdf_path)
+    if not code:
+        return None
+    # 仅当 PDF 真的是保险计划书
+    plan_markers = ["保險計劃", "保險计划", "儲蓄保險", "储蓄保险", "儲蓄計劃", "储蓄计划",
+                   "保障計劃", "保障计划", "人壽保險", "人寿保险"]
+    if not any(m in full_text for m in plan_markers):
+        return None
+    # 拼出 doc_type: code 小写 + "auto_"
+    # 同类代码 (e.g. WEB05 / WEBB05) 共享 axa family
+    code_lower = code.lower()
+    if code_lower.startswith(("web", "webb")):
+        doc_type = "axa"
+    elif code_lower.startswith("aia") or code_lower.startswith("aax"):
+        doc_type = "aia-family"  # AIA 系 (环宇/财富/愛伴航 都可能)
+    elif code_lower.startswith(("pru", "prs", "prl")):
+        doc_type = "pru"
+    elif code_lower.startswith(("cpic", "cpi")):
+        doc_type = "cpic"
+    elif code_lower.startswith(("mls", "mlm", "mli", "msl")):
+        doc_type = "manulife"
+    elif code_lower.startswith(("wpd", "wpa", "wpb")):
+        doc_type = "qihang"  # 启航系
+    elif code_lower.startswith(("mw", "w3", "w5", "w7")):
+        doc_type = "ctf"  # 周大福系
+    elif code_lower.startswith(("sls", "slg", "slb")):
+        doc_type = "sunlife"
+    elif code_lower.startswith(("pls", "plb", "ple")):
+        doc_type = "prulife"
+    else:
+        doc_type = f"auto_{code_lower}"
+    return {
+        "doc_type": doc_type,
+        "code": code,
+        "suggested_keyword": code,
+    }
+
+
+def _persist_auto_keyword(pdf_path, full_text):
+    """成功解析后, 把未识别产品的代码持久化到 data/auto_keywords.json。
+
+    Returns:
+        True if persisted, False otherwise.
+    """
+    info = _auto_register_keyword(pdf_path, full_text)
+    if not info:
+        return False
+    doc_type = info["doc_type"]
+    code = info["code"]
+    auto_kw = _load_auto_keywords()
+    if doc_type not in auto_kw:
+        auto_kw[doc_type] = []
+    if code not in auto_kw[doc_type]:
+        auto_kw[doc_type].append(code)
+    ok = _save_auto_keywords(auto_kw)
+    if ok:
+        print(f"[fitz:auto-keyword] 已学习 {doc_type} ← {code}", file=__import__("sys").stderr)
+    return ok
 
 
 if __name__ == "__main__":

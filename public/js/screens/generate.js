@@ -1,10 +1,21 @@
 /* =========================================================================
-   Screen 4: Generate - 风格 + 公司选择
+   Screen 4: Generate - 风格 + per-product 公司选择
    ========================================================================= */
 
 import { state } from '../state.js';
 import { getRenderOptions, generatePPT, validateExtraction, sendChat } from '../api.js';
 import { goStep, toast } from '../steps.js';
+
+const TYPE_META = {
+  savings: { label: '储蓄险', badgeClass: 'bg-emerald-100 text-emerald-700' },
+  ci:      { label: '重疾险', badgeClass: 'bg-rose-100 text-rose-700' },
+  iul:     { label: 'IUL',    badgeClass: 'bg-indigo-100 text-indigo-700' },
+};
+
+// 产品类型 -> 可选公司 ID 列表 (与 /api/render-options 保持一致; IUL 限定 3 家)
+const IUL_COMPANY_IDS = ['transamerica', 'sunlife', 'manulife'];
+let _companiesList = [];  // 缓存 /api/render-options 返回
+let _loadedCompanies = false;
 
 const STYLE_PRESETS = [
   { id: 'broker',   name: '券商风',   primary: 'linear-gradient(135deg,#0D1B2A,#1B2A4A)', accent: '#C8963E', tag: '专业高端' },
@@ -75,6 +86,7 @@ function renderStyles() {
 }
 
 function renderCompanies(companies) {
+  // 老的公司 grid (单选) - 现在不显示, 但保留函数以防后续扩展
   const el = document.getElementById('companyGrid');
   if (!el) return;
   el.innerHTML = '';
@@ -106,6 +118,52 @@ function renderCompanies(companies) {
       updatePreview();
     };
     el.appendChild(div);
+  });
+}
+
+// Per-product 公司选择: 每个 extraction 一行, 一个公司下拉
+function renderProductCompanyList() {
+  const section = document.getElementById('productCompanySection');
+  const list = document.getElementById('productCompanyList');
+  const countEl = document.getElementById('productCompanyCount');
+  if (!section || !list) return;
+
+  const extractions = (state.extractions || []).filter((e) => e && !e.error && e.data);
+  if (extractions.length === 0) {
+    section.classList.add('hidden');
+    return;
+  }
+  section.classList.remove('hidden');
+  if (countEl) countEl.textContent = `${extractions.length} 个产品`;
+
+  const tpl = document.getElementById('productCompanyRowTpl');
+  list.innerHTML = '';
+  extractions.forEach((ext) => {
+    if (!tpl) return;
+    const node = tpl.content.firstElementChild.cloneNode(true);
+    const meta = TYPE_META[ext.planType] || { label: ext.planType, badgeClass: 'bg-gray-100 text-gray-700' };
+    const badge = node.querySelector('[data-type-badge]');
+    badge.textContent = meta.label;
+    badge.className = `px-2 py-1 rounded-md text-[10px] font-semibold shrink-0 ${meta.badgeClass}`;
+
+    const productName = (ext.data && (ext.data.product_name || (ext.data.policy || {}).product_name)) || '—';
+    node.querySelector('[data-product-name]').textContent = productName;
+    node.querySelector('[data-pdf-name]').textContent = ext.pdfName || '';
+
+    // 填公司选项
+    const sel = node.querySelector('[data-company-select]');
+    const companies = _companiesList.length
+      ? _companiesList
+      : [{ id: 'fwd', name: '富卫 FWD' }, { id: 'aia', name: '友邦 AIA' }, { id: 'manulife', name: '宏利 Manulife' }];
+    const allowed = ext.planType === 'iul' ? companies.filter((c) => IUL_COMPANY_IDS.includes(c.id)) : companies;
+    sel.innerHTML = '<option value="">选择公司...</option>' + allowed.map((c) => `<option value="${c.id}">${c.name}</option>`).join('');
+    // 恢复已选
+    const saved = state.productCompanies[ext.pdfName];
+    if (saved) sel.value = saved;
+    sel.onchange = () => {
+      state.productCompanies[ext.pdfName] = sel.value;
+    };
+    list.appendChild(node);
   });
 }
 
@@ -158,6 +216,16 @@ async function onGenerate() {
     toast(`存在 ${state.validation.errorCount} 项数据错误，请先修复后再生成`, 'error');
     return;
   }
+  // 校验 per-product 公司都已选 (per-product section 可见时)
+  const extractions = (state.extractions || []).filter((e) => e && !e.error && e.data);
+  if (extractions.length > 0) {
+    const missing = extractions.filter((e) => !state.productCompanies[e.pdfName]);
+    if (missing.length) {
+      const names = missing.map((e) => e.data?.product_name || e.pdfName).join('、');
+      toast(`请为以下产品选择公司: ${names}`, 'warning');
+      return;
+    }
+  }
   const btn = document.getElementById('startGenerateBtn');
   btn.disabled = true;
   const oldHtml = btn.innerHTML;
@@ -172,13 +240,26 @@ async function onGenerate() {
       } catch (e) { console.warn('AI建议获取失败，使用默认总结', e); }
     }
 
+    // 构造 per-product assignments + 兼容老 per-type companyId (取第 1 个有值的兜底)
+    const assignments = extractions
+      .map((e) => ({ pdfName: e.pdfName, companyId: state.productCompanies[e.pdfName] }))
+      .filter((a) => a.pdfName && a.companyId);
+    const firstCi = extractions.find((e) => e.planType === 'ci');
+    const firstIul = extractions.find((e) => e.planType === 'iul');
+    const firstSav = extractions.find((e) => e.planType === 'savings');
+    const legacyCompanyId = (firstSav && state.productCompanies[firstSav.pdfName])
+      || (firstCi && state.productCompanies[firstCi.pdfName])
+      || (firstIul && state.productCompanies[firstIul.pdfName])
+      || 'ctf';
+
     const data = await generatePPT({
       sessionId: state.sessionId,
       style: state.selectedStyle,
-      companyId: state.savingsCompany || state.ciCompany || state.iulCompany || 'ctf',
-      savingsCompanyId: state.savingsCompany || '',
-      ciCompanyId: state.ciCompany || '',
-      iulCompanyId: state.iulCompany || '',
+      companyId: legacyCompanyId,
+      savingsCompanyId: firstSav ? (state.productCompanies[firstSav.pdfName] || '') : '',
+      ciCompanyId: firstCi ? (state.productCompanies[firstCi.pdfName] || '') : '',
+      iulCompanyId: firstIul ? (state.productCompanies[firstIul.pdfName] || '') : '',
+      assignments,
       companyInfo: state.companyInfo,
       format: state.selectedFormat,
       quality: state.selectedQuality,
@@ -188,6 +269,8 @@ async function onGenerate() {
     state.markdownUrl = data.markdownUrl || '';
     state.previewUrls = data.previewUrls || [];
     state.previewPdfUrl = data.previewPdfUrl || '';
+    state.posterUrl = data.posterUrl || '';
+    state.posterPerExtraction = (data.posterPerExtraction || []).map((p) => p.url || p.path);
     state.slideCount = data.slideCount || 0;
     state.resultFilename = (() => {
       try {
@@ -209,7 +292,18 @@ async function onGenerate() {
 export async function initGenerate() {
   renderStyles();
   renderValidation();
-  // 公司已经在上传时按产品选择，生成页不再需要选公司
+  // 加载可选公司列表 (用于 per-product 公司下拉)
+  if (!_loadedCompanies) {
+    try {
+      const opts = await getRenderOptions();
+      _companiesList = opts.companies || [];
+      _loadedCompanies = true;
+    } catch (e) {
+      console.warn('加载公司列表失败', e);
+    }
+  }
+  // 渲染 per-product 公司选择 (单产品时也显示, 便于用户改默认)
+  renderProductCompanyList();
   if (state.sessionId) {
     try {
       state.validation = await validateExtraction(state.sessionId);

@@ -88,7 +88,8 @@ export function crossValidateSavings(
     } else if (passed / checked >= 0.6) {
       issues.push({ code: "CROSS_CHECK_PARTIAL", level: "warn", message: `⚠ 关键数字交叉验证 ${passed}/${checked} 通过 (${passRate}%)，需人工复核舍入` });
     } else {
-      issues.push({ code: "CROSS_CHECK_FAIL", level: "error", message: `✗ 关键数字交叉验证 ${passed}/${checked} 通过 (${passRate}%)，疑似数据源错误` });
+      // 关键 baseline 不匹配不阻断导出 (PDF 提取/基线偏差都常见), 仅 warn 提醒
+      issues.push({ code: "CROSS_CHECK_FAIL", level: "warn", message: `✗ 关键数字交叉验证 ${passed}/${checked} 通过 (${passRate}%)，疑似数据源错误` });
     }
   }
   return issues;

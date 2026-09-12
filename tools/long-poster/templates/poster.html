@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>{{ product_name }} - 长图海报</title>
+<style>
+  /* === Reset + 全局 === */
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Source Han Sans CN", "Noto Sans CJK SC", "Noto Sans SC", "WenQuanYi Zen Hei", "WenQuanYi Micro Hei", "Heiti SC", sans-serif;
+    color: #1a1a1a; background: #f5f1ea; -webkit-font-smoothing: antialiased;
+    font-weight: 500; /* 解决思源/苹方细体模糊 */ }
+  body { width: 720px; /* 单列海报宽度 */ font-feature-settings: "tnum" 1, "kern" 1; }
+
+  /* === 配色变量 (从 themes/<company>.json 注入, 单一来源) === */
+  :root {
+    --primary: {{ colors.primary }};
+    --accent: {{ colors.accent }};
+    --bg-deep: {{ colors.bg_deep }};
+    /* bg-soft: 主色淡化版, 用于浅色章节背景 */
+    --bg-soft: {{ colors.bg_soft or '#f5f1ea' }};
+  }
+
+  /* === Header (深色 hero 区 + AI 真实背景图: 家庭剪影日落) === */
+  .header {
+    color: #fff; padding: 56px 60px 64px; position: relative; overflow: hidden;
+    min-height: 540px;
+    background-color: var(--bg-deep);
+  }
+  .brand-logo {
+    position: relative; z-index: 2; margin-bottom: 24px;
+    display: inline-block;
+    background: rgba(255,255,255,0.96);
+    padding: 8px 18px;
+    border-radius: 4px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.18);
+  }
+  .brand-logo img { height: 40px; width: auto; display: block; }
+  /* 真实 AI 背景图 (家庭剪影日落) */
+  .header::before {
+    content: ""; position: absolute; inset: 0;
+    background-image: url("data:image/jpeg;base64,{{ bg_header }}");
+    background-size: cover; background-position: center 75%;
+  }
+  /* 深色渐变蒙版 (左→右 暗→中, 保证左侧文字可读) */
+  .header::after {
+    content: ""; position: absolute; inset: 0;
+    background:
+      linear-gradient(90deg, rgba(20,8,4,.92) 0%, rgba(20,8,4,.75) 30%, rgba(20,8,4,.45) 55%, rgba(20,8,4,.15) 80%, transparent 100%),
+      linear-gradient(180deg, rgba(20,8,4,.4) 0%, transparent 30%, transparent 60%, rgba(20,8,4,.55) 100%);
+  }
+  /* 装饰横线 */
+  .header::after {
+    content: ""; position: absolute; left: 60px; top: 28px; width: 36px; height: 3px;
+    background: var(--accent);
+  }
+  .brand-line { display: flex; align-items: center; gap: 12px; font-size: 14px; opacity: .9; margin-bottom: 24px; position: relative; z-index: 1; }
+  .brand-dot { width: 10px; height: 10px; background: var(--accent); border-radius: 50%; }
+  .tag-line { position: absolute; top: 28px; right: 60px; font-size: 12px; letter-spacing: .2em; opacity: .75; z-index: 1; }
+  .tag-line::before { content: ""; display: inline-block; width: 24px; height: 2px; background: var(--accent); margin-right: 10px; vertical-align: middle; }
+  .hero-title {
+    font-size: 42px; font-weight: 700; line-height: 1.35; letter-spacing: .02em;
+    margin: 36px 0 32px; max-width: 580px; position: relative; z-index: 1;
+  }
+  .hero-title em { font-style: normal; color: var(--accent); font-weight: 700; }
+  .customer-bar {
+    background: rgba(15,5,2,.65); backdrop-filter: blur(16px);
+    border: 1px solid rgba(255,255,255,.18);
+    border-radius: 6px; padding: 18px 24px; display: grid; grid-template-columns: repeat(4, 1fr);
+    gap: 24px; margin-top: 8px; position: relative; z-index: 1;
+    box-shadow: 0 4px 20px rgba(0,0,0,.4);
+  }
+  .customer-cell .label { font-size: 11px; color: rgba(255,255,255,.65); margin-bottom: 6px; letter-spacing: .05em; }
+  .customer-cell .value { font-size: 22px; font-weight: 700; color: #fff; letter-spacing: -.01em; text-shadow: 0 1px 4px rgba(0,0,0,.5); }
+  .customer-cell .value .unit { font-size: 11px; color: rgba(255,255,255,.7); margin-left: 4px; font-weight: 400; }
+  /* 客户年龄缺失时: 显示 "客户" + 性别/姓名 替代 */
+  .customer-cell .value.placeholder { color: rgba(255,255,255,.7); font-weight: 400; font-size: 18px; }
+
+  /* === 通用章节 === */
+  .chapter { padding: 48px 60px; background: var(--bg-soft); }
+  .chapter.dark { background: var(--bg-deep); color: #fff; }
+  .chapter.accent { background: var(--primary); color: #fff; }
+  .chapter-num {
+    font-size: 13px; letter-spacing: .25em; color: var(--accent); margin-bottom: 14px;
+    text-transform: uppercase; font-weight: 500;
+  }
+  .chapter-title {
+    font-size: 30px; line-height: 1.4; font-weight: 600; margin-bottom: 16px;
+  }
+  .chapter-desc { font-size: 14px; line-height: 1.7; opacity: .82; margin-bottom: 32px; }
+
+  /* === 章节 01: 数字增长计划 === */
+  .big-number-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-bottom: 28px; }
+  .big-num-card {
+    background: #fff; border-radius: 6px; padding: 24px 20px;
+    border-left: 4px solid var(--accent);
+  }
+  .big-num-card .label { font-size: 11px; color: #888; margin-bottom: 8px; }
+  .big-num-card .num { font-size: 36px; font-weight: 700; color: var(--primary); line-height: 1; }
+  .big-num-card .unit { font-size: 14px; color: var(--primary); margin-left: 4px; font-weight: 500; }
+  .summary-card {
+    background: rgba(255,255,255,.6); border-left: 3px solid var(--accent);
+    padding: 16px 20px; font-size: 13px; line-height: 1.6;
+  }
+  .summary-card strong { color: var(--accent); font-weight: 600; }
+
+  /* === 章节 02: 长期储蓄演示 === */
+  .chart-wrap {
+    background: #fff; border-radius: 6px; padding: 20px;
+    margin-bottom: 28px; box-shadow: 0 1px 4px rgba(0,0,0,.06);
+  }
+  .chart-wrap svg { width: 100%; height: 320px; }
+  .data-grid {
+    display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 16px;
+  }
+  .data-card {
+    background: #fff; border-radius: 6px; padding: 14px 16px;
+    border: 1px solid #e8e2d4;
+  }
+  .data-card .y-label { font-size: 11px; color: #888; margin-bottom: 6px; }
+  .data-card .y-num { font-size: 22px; font-weight: 700; color: var(--primary); line-height: 1; }
+  .data-card .y-num .unit { font-size: 11px; font-weight: 500; margin-left: 2px; }
+  .data-card .meta { display: flex; justify-content: space-between; margin-top: 10px; font-size: 11px; color: #666; }
+  .data-card .meta .v { color: #1a1a1a; font-weight: 600; }
+  .data-card .meta .v.irr { color: #7a1f1f; }
+  .data-card .meta .v.si { color: #2d6b3f; }
+  .data-card .meta .v.dim { color: #999; }
+  .chart-legend { display: flex; gap: 18px; font-size: 12px; color: #555; margin-top: 12px; padding: 0 8px; }
+  .chart-legend .dot { display: inline-block; width: 10px; height: 3px; margin-right: 6px; vertical-align: middle; border-radius: 1px; }
+
+  /* === 章节 03: 规划价值 === */
+  .value-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
+  .value-card {
+    background: rgba(255,255,255,.08); border-radius: 8px; padding: 18px 22px;
+    border-left: 3px solid var(--accent);
+    box-shadow: 0 2px 8px rgba(0,0,0,.15);
+  }
+  .value-card .v-name { font-size: 16px; font-weight: 700; margin-bottom: 8px; color: var(--accent); letter-spacing: .02em; }
+  .value-card .v-desc { font-size: 12.5px; line-height: 1.7; opacity: .88; }
+
+  /* === 章节 04: 看懂三件事 === */
+  .trio-row { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px; }
+  .trio-card { padding: 18px 0; border-top: 2px solid var(--accent); }
+  .trio-card .t-label { font-size: 11px; color: rgba(255,255,255,.6); margin-bottom: 8px; }
+  .trio-card .t-value { font-size: 22px; font-weight: 700; color: #fff; line-height: 1.2; }
+  .trio-card .t-desc { font-size: 12px; margin-top: 8px; line-height: 1.6; opacity: .8; }
+
+  /* === 章节 05: 决策框架 === */
+  .decision-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  .decision-card {
+    background: rgba(255,255,255,.05); border-radius: 6px; padding: 22px 24px;
+    border-top: 3px solid;
+  }
+  .decision-card.suitable { border-color: #6db78c; }
+  .decision-card.unsuitable { border-color: #c97a6f; }
+  .decision-card .d-name { font-size: 16px; font-weight: 600; margin-bottom: 12px; }
+  .decision-card.suitable .d-name { color: #6db78c; }
+  .decision-card.unsuitable .d-name { color: #c97a6f; }
+  .decision-card .d-desc { font-size: 13px; line-height: 1.7; opacity: .85; }
+
+  /* === 章节 02: 长期储蓄演示 (金色光芒背景) === */
+  .chapter-growth {
+    position: relative; overflow: hidden;
+    background-color: #fff8ee;
+  }
+  .chapter-growth::before {
+    content: ""; position: absolute; inset: 0;
+    background-image: url("data:image/jpeg;base64,{{ bg_chapter02 }}");
+    background-size: cover; background-position: center;
+    opacity: .25;
+    z-index: 0;
+  }
+  .chapter-growth > * { position: relative; z-index: 1; }
+
+  /* === 章节 06: 哲理收尾 (帆船日落背景) === */
+  .philosophy {
+    padding: 56px 60px 64px; color: #fff; text-align: center; position: relative; overflow: hidden;
+    min-height: 480px; background-color: var(--bg-deep);
+  }
+  .philosophy::before {
+    content: ""; position: absolute; inset: 0;
+    background-image: url("data:image/jpeg;base64,{{ bg_sailboat }}");
+    background-size: cover; background-position: center;
+  }
+  .philosophy::after {
+    content: ""; position: absolute; inset: 0;
+    background: linear-gradient(180deg, rgba(20,8,4,.4) 0%, rgba(20,8,4,.25) 50%, rgba(20,8,4,.7) 100%);
+  }
+  .philosophy .chapter-num { color: var(--accent); margin-bottom: 16px; position: relative; z-index: 1; }
+  .philosophy .chapter-title { font-size: 32px; max-width: 540px; margin: 0 auto 28px; position: relative; z-index: 1; text-shadow: 0 2px 12px rgba(0,0,0,.6); }
+  .philosophy .sailboat { margin: 16px auto 28px; position: relative; z-index: 1; }
+  .philosophy .desc { font-size: 13px; line-height: 1.8; max-width: 480px; margin: 0 auto; opacity: .92; position: relative; z-index: 1; text-shadow: 0 1px 6px rgba(0,0,0,.6); }
+
+  /* === Footer === */
+  .footer { background: #1a1410; color: #888; padding: 20px 60px; font-size: 11px; line-height: 1.6; }
+  .footer-row { display: flex; justify-content: space-between; align-items: center; }
+  .footer .risk { max-width: 80%; }
+  .footer .author { color: var(--accent); font-weight: 500; }
+
+  /* === 章节 07: 提取方案摘要 (官方计划书 withdrawal_illustration, 2026-09-11) === */
+  .withdraw-section {
+    padding: 56px 60px 48px; background: var(--bg-soft);
+    color: #1a1a1a; border-top: 4px solid var(--primary);
+  }
+  .withdraw-section .chapter-num { color: var(--accent); font-size: 13px; letter-spacing: 2px; font-weight: 600; margin-bottom: 8px; }
+  .withdraw-section h2 { font-size: 26px; font-weight: 700; line-height: 1.4; margin-bottom: 8px; color: var(--bg-deep); }
+  .withdraw-section .desc { font-size: 13px; color: #555; margin-bottom: 24px; line-height: 1.6; }
+  .withdraw-table {
+    width: 100%; border-collapse: collapse; font-size: 12px;
+    background: #fff; border-radius: 6px; overflow: hidden;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  }
+  .withdraw-table thead th {
+    background: var(--bg-deep); color: #fff; font-weight: 600;
+    padding: 12px 10px; text-align: center; font-size: 11px; letter-spacing: 1px;
+  }
+  .withdraw-table tbody td {
+    padding: 10px 8px; text-align: center; border-bottom: 1px solid #f0ebe4;
+    font-feature-settings: "tnum" 1;
+  }
+  .withdraw-table tbody tr:nth-child(even) td { background: var(--bg-soft); }
+  .withdraw-table tbody tr:hover td { background: rgba(232, 121, 43, 0.08); }
+  .withdraw-table .col-year { font-weight: 700; color: var(--primary); }
+  .withdraw-table .col-age { font-weight: 600; color: #333; }
+  .withdraw-table .col-premium { color: #555; }
+  .withdraw-table .col-withdraw { color: var(--accent); font-weight: 700; }
+  .withdraw-table .col-surrender { color: var(--bg-deep); font-weight: 700; }
+  .withdraw-note { margin-top: 14px; font-size: 11px; color: #888; font-style: italic; }
+  .extract-start-note {
+    background: linear-gradient(135deg, rgba(232, 121, 43, 0.08), rgba(232, 121, 43, 0.02));
+    border-left: 4px solid var(--accent);
+    padding: 12px 18px;
+    margin-bottom: 22px;
+    border-radius: 0 6px 6px 0;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #2a1410;
+  }
+  .extract-start-note .es-label { font-weight: 700; color: var(--accent); margin-right: 8px; letter-spacing: 1px; }
+  .extract-start-note .es-value b { color: var(--bg-deep); font-weight: 700; font-size: 16px; }
+</style>
+</head>
+<body class="theme-{{ theme }}">
+
+<!-- ============ Header ============ -->
+<section class="header">
+  <!-- 真实 LOGO (从 themes/<company>.logo_path 读, 渲染时内嵌 base64) -->
+  {% if logo_data_uri %}
+  <div class="brand-logo">
+    <img src="{{ logo_data_uri }}" alt="{{ brand_name }}"/>
+  </div>
+  {% endif %}
+  <div class="brand-line">
+    <span style="opacity:.5">|</span>
+    <span>{{ product_name }}</span>
+  </div>
+  <div class="tag-line">{{ tagline }}</div>
+  <h1 class="hero-title">让一笔长期储蓄,<br>兼顾财富累积、保障<br>与传承。</h1>
+  <div class="customer-bar">
+    <div class="customer-cell">
+      <div class="label">受保人</div>
+      {% if insured.age and insured.age > 1 %}
+      <div class="value">{{ insured.age }}<span class="unit">岁 / {{ insured.gender_cn }}</span></div>
+      {% else %}
+      <div class="value placeholder">客户<span class="unit"> / {{ insured.gender_cn }}</span></div>
+      {% endif %}
+    </div>
+    <div class="customer-cell">
+      <div class="label">年缴保费</div>
+      <div class="value">{{ currency }} {{ premium_wan }}<span class="unit">万</span></div>
+    </div>
+    <div class="customer-cell">
+      <div class="label">缴费年期</div>
+      <div class="value">{{ pay_years }}<span class="unit">年</span></div>
+    </div>
+    <div class="customer-cell">
+      <div class="label">全部基本保费</div>
+      <div class="value">{{ currency }} {{ total_premium_wan }}<span class="unit">万</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 01 数字增长计划 ============ -->
+<section class="chapter">
+  <div class="chapter-num">01 / 数字增长计划</div>
+  <h2 class="chapter-title">{% if insured.age and insured.age > 1 %}{{ insured.age }}岁开始,{% endif %}<br>为未来准备一笔可持续的长期资产。</h2>
+  <p class="chapter-desc">事业与家庭责任逐步稳定,把短期现金流转化为长期资产,是这份计划设计的核心问题。</p>
+  <div class="big-number-row">
+    <div class="big-num-card">
+      <div class="label">年缴基本保费</div>
+      <div class="num">{{ currency }} {{ premium_wan }}<span class="unit">万</span></div>
+    </div>
+    <div class="big-num-card">
+      <div class="label">保费缴付年期</div>
+      <div class="num">{{ pay_years }}<span class="unit">年</span></div>
+    </div>
+    <div class="big-num-card">
+      <div class="label">全部基本保费</div>
+      <div class="num">{{ currency }} {{ total_premium_wan }}<span class="unit">万</span></div>
+    </div>
+  </div>
+  <div class="summary-card">
+    计划摘要: 累计投入 <strong>{{ currency }} {{ total_premium_wan }} 万</strong>,
+    缴费 <strong>{{ pay_years }} 年</strong>, 适合希望长期拥有保险以保证价值、身故、退休与财富传承安排的客户。
+  </div>
+</section>
+
+<!-- ============ 02 长期储蓄演示 (金色光芒背景) ============ -->
+<section class="chapter chapter-growth">
+  <div class="chapter-num">02 / 长期储蓄演示</div>
+  <h2 class="chapter-title">时间越久,<br>更要分清确定与不确定。</h2>
+  <p class="chapter-desc">"演示退保总值" = 保证现金价值 + 非保证红利部分。你看过的部分是保险公司未来现金流分红的演示安排,并非承诺。</p>
+  <div class="chart-wrap">
+    {{ chart_svg | safe }}
+  </div>
+  <div class="chart-legend">
+    <span><span class="dot" style="background:#999"></span>累计已缴保费</span>
+    <span><span class="dot" style="background:var(--accent)"></span>演示退保总值(含非保证)</span>
+  </div>
+  <div class="data-grid" style="margin-top: 20px;">
+    {% for card in data_cards %}
+    <div class="data-card">
+      <div class="y-label">保单年度 {{ card.year }} 年</div>
+      <div class="y-num">{{ currency }} {{ card.tsv_wan }}<span class="unit">万</span></div>
+      <div class="meta">
+        <span>复利IRR <span class="v irr">{{ card.irr_pct }}</span></span>
+        <span>单利SI <span class="v si">{{ card.si_pct }}</span></span>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
+<!-- ============ 03 提取方案摘要 (官方计划书, 仅当有真实 annual_withdrawal 时渲染) ============ -->
+{% if withdraw_table_rows and withdraw_table_rows|length > 0 %}
+<section class="withdraw-section">
+  <div class="chapter-num">03 / 提取方案</div>
+  <h2>提领摘要 · 退保发还金额与累计提取</h2>
+  <p class="desc">以下按演示提领方案整理的关键年度摘要（每 5 年一行，最多 11 行，显示至保单演示表自然截止）。具体提取方案以保单合同为准。</p>
+  {% if extract_start %}
+  <div class="extract-start-note">
+    <span class="es-label">提取方案：</span>
+    <span class="es-value">
+      {% if extract_start.is_one_time %}
+      保单第 <b>{{ extract_start.start_year }}</b> 年，<b>一次性</b>提取 <b>{{ currency }} {{ fmt_wan(extract_start.annual_amount) }}</b>
+      {% else %}
+      保单第 <b>{{ extract_start.start_year }}</b> 年起，每年提取 <b>{{ currency }} {{ fmt_wan(extract_start.annual_amount) }}</b>
+      {% endif %}
+    </span>
+  </div>
+  {% endif %}
+  <table class="withdraw-table">
+    <thead>
+      <tr>
+        <th>保单<br>年度</th>
+        <th>受保人<br>年龄</th>
+        <th>已交保费</th>
+        <th>领取金额</th>
+        <th>预期总<br>现金价值</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for r in withdraw_table_rows %}
+      <tr>
+        <td class="col-year">第 {{ r.year }} 年</td>
+        <td class="col-age">{{ r.age }} 岁</td>
+        <td class="col-premium">{{ fmt_wan(r.total_premium) }}</td>
+        <td class="col-withdraw">{{ fmt_wan(r.withdrawal) if r.withdrawal > 0 else '—' }}</td>
+        <td class="col-surrender">{{ fmt_wan(r.surrender_value) }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  <p class="withdraw-note">* 数据来源于保单演示表 ({{ product_name }}), 单位均为美元 (USD), 现金价值含非保证部分, 实际回报可能低于演示。</p>
+</section>
+{% endif %}
+
+<!-- ============ 04 规划价值 ============ -->
+<section class="chapter accent">
+  <div class="chapter-num">04 / 不仅是 一笔现金价值</div>
+  <h2 class="chapter-title" style="color:#fff">规划的价值,<br>也在未来可调整的空间。</h2>
+  <p class="chapter-desc" style="color:rgba(255,255,255,.82)">以下功能须符合保单条款、公司当时预测及税务条件,申请后可能影响保证价值,退保或评估。</p>
+  <div class="value-grid">
+    {% for v in value_items %}
+    <div class="value-card">
+      <div class="v-name">{{ v.name }}</div>
+      <div class="v-desc">{{ v.desc }}</div>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
+<!-- ============ 04 看懂三件事 ============ -->
+<section class="chapter dark">
+  <div class="chapter-num">05 / 关键三件事</div>
+  <h2 class="chapter-title" style="color:#fff">看懂三件事,<br>再判断这份计划是否适合你。</h2>
+  <div class="trio-row">
+    <div class="trio-card">
+      <div class="t-label">数字多少</div>
+      <div class="t-value">{{ currency }} {{ premium_wan }}万</div>
+      <div class="t-desc">这是您您您承诺投入的金额,不等于已经实现收益。</div>
+    </div>
+    <div class="trio-card">
+      <div class="t-label">名义金额</div>
+      <div class="t-value">{{ currency }} {{ sum_insured_wan }}万</div>
+      <div class="t-desc">这是身故赔偿基数,不代表现金价值或实际退保发还。</div>
+    </div>
+    <div class="trio-card">
+      <div class="t-label">灵活提取</div>
+      <div class="t-value">可调整</div>
+      <div class="t-desc">行使提取功能需符合保单条款,且会影响后续年度保证价值。</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 05 决策框架 ============ -->
+<section class="chapter dark">
+  <div class="chapter-num">06 / 决策框架帮你判断</div>
+  <h2 class="chapter-title" style="color:#fff">关键不是数字够不够大,<br>而是你的钱能不能放得够久。</h2>
+  <div class="decision-grid">
+    <div class="decision-card suitable">
+      <div class="d-name">更适合</div>
+      <div class="d-desc">现金流稳定,具备长缴付期、有定期财务安排、并愿意承担分红非保证特征的人群。</div>
+    </div>
+    <div class="decision-card unsuitable">
+      <div class="d-name">可能不适合</div>
+      <div class="d-desc">几年内就需用钱,只想要稳定收益、不愿承担分红波动或者流动性诉求高的人群。</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 06 哲理收尾 (帆船日落背景图) ============ -->
+<section class="philosophy">
+  <div class="chapter-num">07 / 哲理未来</div>
+  <h2 class="chapter-title">今天的安排,<br>是给家人多一种从容。</h2>
+  <p class="desc">长期规划不在一纸保单,而是承诺一种价值。资产在沉淀,承诺在兑现,希望你能感受到安排的不与一份保单的努力。</p>
+</section>
+
+<!-- ============ Footer ============ -->
+<footer class="footer">
+  <div class="footer-row">
+    <div class="risk">
+      风险提示: 保险产品含有投资成分,分红为非保证部分,实际回报可能低于演示。本海报由保单数据自动生成,具体保障内容以保单合同为准。
+    </div>
+    <div class="author">{{ author }}</div>
+  </div>
+</footer>
+
+</body>
+</html>

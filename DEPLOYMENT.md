@@ -3,21 +3,21 @@
 ## 部署概览
 
 - **本地路径**: `/Users/soldier/insurance-ppt-v3/`
-- **公网域名**: http://ppt.gllpsce.cn
+- **公网域名**: https://hksgtools.cn
 - **Git**: github.com/bxwang65/insurancePPT @ branch `v3-frozen` / tag `v3.0.0-frozen`
-- **架构 (V3.0.1 起)**: 用户 → ppt.gllpsce.cn → 阿里云 HK ECS (47.242.58.70:80) → Bun server
+- **架构 (V3.0.1 起)**: 用户 → hksgtools.cn → Cloudflare Tunnel (cloudflared on ECS) → 阿里云 HK ECS (47.242.58.70:80) → Bun server
 
 ```
 ┌─────────────┐    ┌──────────────────┐    ┌─────────────────┐    ┌──────────────────┐
-│ 浏览器/用户  │ -> │ ppt.gllpsce.cn  │ -> │ Cloudflare DNS  │ -> │ 阿里云 HK ECS   │
-│ (国内直连)  │    │ (A 记录 DNS)    │    │ (只解析不代理)   │    │ 47.242.58.70:80 │
+│ 浏览器/用户  │ -> │ hksgtools.cn    │ -> │ Cloudflare edge │ -> │ cloudflared      │
+│ (国内直连)  │    │ (CNAME via CF)  │    │ (HTTPS 终止)   │    │ on ECS           │
 └─────────────┘    └──────────────────┘    └─────────────────┘    └────────┬─────────┘
                                                                           │
                                                                           ▼
-                                                                  ┌───────────────┐
-                                                                  │  Bun server   │
-                                                                  │  (port 80)    │
-                                                                  └───────────────┘
+                                                              ┌────────────────────┐
+                                                              │ Bun server (ECS)   │
+                                                              │ localhost:80       │
+                                                              └────────────────────┘
 ```
 
 ## 为什么切到阿里云 HK ECS
@@ -112,7 +112,7 @@ kill $(cat /opt/insurance-ppt/logs/server.pid)  # 停止
 
 | 现象 | 原因 | 解决 |
 |---|---|---|
-| ppt.gllpsce.cn 访问失败 | ECS 实例被释放 | 控制台重新创建, 重新绑定公网 IP |
+| hksgtools.cn 访问失败 | cloudflared 服务挂了 / ECS 被释放 | `systemctl status cloudflared` 排查; ECS 重启后 `systemctl start cloudflared` |
 | 上传慢 (回到 17 KB/s) | DNS 改回了 Cloudflare 代理 | 检查 CF 记录: 应是灰云 (DNS only) |
 | SSH 连不上 | ECS 被释放 / 公网 IP 变更 | 控制台查新 IP, 更新 `ecs-deploy.sh` |
 | ECS 上 python3.11 错误 | Ubuntu 20.04 默认 Python 3.8 | 已 symlink `/usr/local/bin/python3.11 -> python3` |
@@ -174,7 +174,7 @@ bash scripts/ecs-deploy.sh
 
 # 3. 验证
 bash scripts/ecs-status.sh
-curl -I http://ppt.gllpsce.cn
+curl -I https://hksgtools.cn
 ```
 
 **耗时**: ~30 秒 (取决于代码量)

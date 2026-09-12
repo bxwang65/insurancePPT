@@ -8,6 +8,6 @@ export function validateFormalCiPlan(plan: NormalizedCiPlan): FormalDeckIssue[] 
   if (plan.policy.sumInsured <= 0) issues.push({ code: "CI_SUM_INSURED_INVALID", level: "error", message: "重疾险保额无效" });
   if (plan.policy.annualPremium <= 0) issues.push({ code: "CI_ANNUAL_PREMIUM_INVALID", level: "error", message: "重疾险年缴保费无效" });
   if (plan.policy.payYears <= 0) issues.push({ code: "CI_PAY_YEARS_INVALID", level: "error", message: "重疾险缴费年期无效" });
-  if (!plan.coverageItems.length) issues.push({ code: "CI_COVERAGE_ITEMS_MISSING", level: "error", message: "重疾险保障项目为空" });
+  if (!plan.coverageItems.length) issues.push({ code: "CI_COVERAGE_ITEMS_MISSING", level: "warn", message: "重疾险保障项目为空 (部分 PDF 未列出独立保障项, 将从其他字段兜底)" });
   return issues;
 }

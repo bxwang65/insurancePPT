@@ -112,6 +112,10 @@ async function pollBackend() {
       if (session.status === 'parsed') {
         clearInterval(_polling); _polling = null;
         state.extractions = session.extractions || [];
+        // 关键: 收集失败明细供 result.js banner (2026-07-08 V3.1.3+)
+        state.parseErrors = (state.extractions || [])
+          .filter((e) => !e.data || e.error)
+          .map((e) => ({ file: e.pdfName, error: e.error || '解析失败' }));
         completeAll();
         toast('解析完成!', 'success');
       } else if (session.status === 'error') {
@@ -159,7 +163,17 @@ window.__triggerParse = async function() {
   // 关键: parseSession 不阻塞, 但收到响应后立即 completeAll
   // (pollBackend 仍会兜底, 但 explicit complete 避免 race condition)
   parseSession(state.sessionId).then((data) => {
+    // 2026-07-23: parse 改为 fire-and-forget, 服务器返回 202 + status="parsing" 表示后台运行中
+    //   这时 data.extractions 不存在, 不能 completeAll, 让 pollBackend 继续轮询
+    if (data && data.status === 'parsing') {
+      console.log('[parse] 后台解析已启动, 等 pollBackend 拿结果');
+      return;
+    }
     state.extractions = data.extractions || [];
+    // 关键: 收集失败明细供 result.js banner (2026-07-08 V3.1.3+)
+    state.parseErrors = (state.extractions || [])
+      .filter((e) => e.status === 'error' || e.error)
+      .map((e) => ({ file: e.pdfName, error: e.error || '解析失败' }));
     // 立即触发 completeAll, 不等 pollBackend
     if (_polling) { clearInterval(_polling); _polling = null; }
     completeAll();

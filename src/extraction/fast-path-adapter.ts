@@ -18,8 +18,8 @@ export interface SavingsPlanLike {
   policy: {
     product_name: string;
     currency: string;
-    sum_insured: null;
-    basic_sum_insured: null;
+    sum_insured: number | null;
+    basic_sum_insured: number | null;
     annual_premium: number;
     premium_payment_period: string;
     coverage_period: string;
@@ -69,6 +69,9 @@ export function toSavingsPlanFromSignature(
   const insuredGender = s.insured_gender || "";
   const annualPremium = Number(s.annual_premium || 0);
   const annualPremiumWithLevy = Number(s.annual_premium_with_levy || 0) || null;
+  // 关键: sum_insured / basic_sum_insured 从 Python 签名提取器取 (之前 hardcode null, AIA 表格列保额丢失)
+  const sumInsured = Number(s.sum_insured || 0) || null;
+  const basicSumInsured = Number(s.basic_sum_insured || 0) || null;
   const payYears = Number(s.payment_years || 0);
   const totalPremium = Number(s.premium_total || annualPremium * payYears);
   const coveragePeriod = s.coverage_period || `至128岁`;
@@ -141,8 +144,8 @@ export function toSavingsPlanFromSignature(
     policy: {
       product_name: signatureProductName || s.product_name || "",
       currency: s.currency || currency,
-      sum_insured: null,
-      basic_sum_insured: null,
+      sum_insured: sumInsured,
+      basic_sum_insured: basicSumInsured,
       annual_premium: annualPremium,
       premium_payment_period: `${payYears}年`,
       coverage_period: coveragePeriod,

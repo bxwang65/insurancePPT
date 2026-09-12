@@ -39,7 +39,11 @@ export const WithdrawalRowSchema = z.object({
 
 export type WithdrawalRow = z.infer<typeof WithdrawalRowSchema>;
 
-/** 储蓄险完整提取结果 */
+/** 储蓄险完整提取结果
+ *  关键: 加 .passthrough() 让 _meta 等元数据流过 Zod 验证
+ *  否则 fast-path-adapter 设置的 _meta.source = "signature_fast_path"
+ *  会被 Zod 默认 .strip() 行为剥掉, 客户端无法判断真假修复
+ */
 export const SavingsPlanExtractionSchema = z.object({
   /** 产品名称 */
   product_name: z.string().describe("产品名称"),
@@ -57,7 +61,7 @@ export const SavingsPlanExtractionSchema = z.object({
   sales_insights: SalesInsightsSchema.optional().describe("AI 从销售视角分析的洞察"),
   /** 原始文本摘要（用于调试） */
   _raw_summary: z.string().optional().describe("原始文本摘要"),
-});
+}).passthrough();
 
 export type SavingsPlanExtraction = z.infer<typeof SavingsPlanExtractionSchema>;
 

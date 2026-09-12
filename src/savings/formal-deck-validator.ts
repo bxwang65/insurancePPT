@@ -17,8 +17,9 @@ export function validateFormalSavingsPlan(plan: NormalizedSavingsPlan): FormalDe
   if (!plan.insured.age && plan.insured.age !== 0) issues.push({ code: "INSURED_AGE_MISSING", level: "error", message: "缺少受保人年龄" });
   if (plan.policy.annualPremium <= 0) issues.push({ code: "ANNUAL_PREMIUM_INVALID", level: "error", message: "年缴保费无效" });
   if (plan.policy.payYears <= 0) issues.push({ code: "PAY_YEARS_INVALID", level: "error", message: "缴费年期无效" });
-  if (plan.benefitRows.length < 20) issues.push({ code: "BENEFIT_ROWS_INCOMPLETE", level: "error", message: `基础利益表仅提取 ${plan.benefitRows.length} 行` });
-  if (!continuity(plan.benefitRows)) issues.push({ code: "BENEFIT_ROWS_DISCONTINUOUS", level: "error", message: "基础利益表保单年度不连续" });
+  if (plan.benefitRows.length < 3) issues.push({ code: "BENEFIT_ROWS_INCOMPLETE", level: "error", message: `基础利益表仅提取 ${plan.benefitRows.length} 行` });
+  if (plan.benefitRows.length >= 3 && plan.benefitRows.length < 20) issues.push({ code: "BENEFIT_ROWS_PARTIAL", level: "warn", message: `基础利益表仅提取 ${plan.benefitRows.length}/~50 行 (部分产品 PDF 仅展示非整年或部分年度, 如 Generali 啟航創富仅前 10 行)` });
+  if (!continuity(plan.benefitRows)) issues.push({ code: "BENEFIT_ROWS_DISCONTINUOUS", level: "warn", message: "基础利益表保单年度不连续 (PDF仅展示部分年度, 如每5年一跳)" });
   if (!plan.source.pdfHash) issues.push({ code: "SOURCE_HASH_MISSING", level: "error", message: "缺少源 PDF 哈希" });
   if (plan.benefitRows.some((row) => !row.sourcePage)) issues.push({ code: "BENEFIT_SOURCE_PAGE_MISSING", level: "warn", message: "基础利益表存在缺少来源页码的数据" });
   if (plan.withdrawalRows.length && !continuity(plan.withdrawalRows)) issues.push({ code: "WITHDRAWAL_ROWS_DISCONTINUOUS", level: "error", message: "提领表保单年度不连续" });

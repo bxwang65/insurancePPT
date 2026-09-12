@@ -260,7 +260,9 @@ export const SIGNATURES: PdfSignature[] = [
     firstPageMustContain: ["受保人", "保单货币"],
     productCodeAliases: ["1121NWLP7"],
     presentationHorizonYears: 130,
-    pageTargets: { summary: 1, noWithdraw: range(2, 12), withdraw: range(12, 22) },
+    // 退保数据: P3 (默认演示) + P7-10 (补充说明) + P14 (补充说明 末尾)
+    // 跳过: P2 (保费征费) / P4-6 (身故/不同投资回报) / P11+ (身故补充/备注)
+    pageTargets: { summary: 1, noWithdraw: [3, 7, 8, 9, 10, 14], withdraw: [17, 18, 19, 20, 24] },
     crossCheckBaseline: [
       { label: "Y5 退保总额", policyYear: 5, field: "total_surrender_value", expected: 315234, tolerance: 100 },
       { label: "Y10 退保总额", policyYear: 10, field: "total_surrender_value", expected: 638914, tolerance: 200 },
@@ -286,12 +288,12 @@ export const SIGNATURES: PdfSignature[] = [
     ],
   },
 
-  // ─── 友邦 (AIA) ─── 财富盈活储蓄保险计划
+  // ─── 友邦 (AIA) ─── 财富盈活储蓄保险计划 (5年缴, 简体)
   {
     id: "aia-cfyh-v1",
     companyId: "aia",
     productCode: "CFYH",
-    productName: "财富盈活储蓄保险计划",
+    productName: "财富盈活储蓄保险计划（5年缴费）",
     planType: "savings",
     currency: "USD",
     titleKeywords: ["财", "盈活储蓄保险计划"],
@@ -301,6 +303,27 @@ export const SIGNATURES: PdfSignature[] = [
     pageTargets: { summary: 1, noWithdraw: range(2, 15), withdraw: range(15, 28), withdrawRemainder: range(19, 22) },
     crossCheckBaseline: [
       { label: "Y5 退保总额", policyYear: 5, field: "total_surrender_value", expected: 235858, tolerance: 200 },
+    ],
+  },
+
+  // ─── 友邦 (AIA) ─── 财富盈活储蓄保险计划 (整付保费, 繁體)
+  // AIA 整付保費版本: 14 页, 繁體中文 (財富盈活儲蓄保險計劃)
+  // BI 表在 P12-13 (詳細說明, 退保發還金額, 繳付保費 — 繁體)
+  // 不同於 5年缴 简体 29 页, 单独 signature 防止 pageTargets 错位
+  {
+    id: "aia-cfyh-sp-v1",
+    companyId: "aia",
+    productCode: "CFYH-SP",
+    productName: "財富盈活儲蓄保險計劃（整付保費）",
+    planType: "savings",
+    currency: "USD",
+    titleKeywords: ["財", "盈活儲蓄保險計劃", "整付保費"],
+    firstPageMustContain: ["計劃", "退保發還金額"],
+    productCodeAliases: ["CFYH-SP", "CFYH"],
+    presentationHorizonYears: 100,
+    pageTargets: { summary: 1, noWithdraw: range(12, 14) },
+    crossCheckBaseline: [
+      { label: "Y5 退保总额", policyYear: 5, field: "total_surrender_value", expected: 924749, tolerance: 500 },
     ],
   },
 
@@ -359,9 +382,11 @@ export const SIGNATURES: PdfSignature[] = [
     firstPageMustContain: ["受保人", "保單貨幣"],
     productCodeAliases: ["TRST", "信守明天"],
     presentationHorizonYears: 100,
+    // 退保数据: P2 (默认演示) + P12-14 (补充说明 Y1-Y99)
+    // 跳过: P3-5 (身故/不同投资回报) / P6-11 (其他) / P15+ (身故补充/提领)
     pageTargets: {
       summary: 1,
-      noWithdraw: [...range(2, 5), ...range(11, 16)],
+      noWithdraw: [2, 12, 13, 14],
       withdraw: range(16, 24),
     },
     crossCheckBaseline: [
@@ -479,6 +504,85 @@ export const SIGNATURES: PdfSignature[] = [
     titleKeywords: ["GIUL3", "首日现金价值", "指数"],
     firstPageMustContain: ["保单", "现金价值"],
     productCodeAliases: ["GIUL3", "TA_GIUL3"],
+    presentationHorizonYears: 120,
+    pageTargets: { summary: 1 },
+  },
+
+  // ─── AIA 愛伴航保險計劃2 ────────────────────────────
+  // 注: PDF 标题被换行分割 "爱 | 航", 字符间有空白
+  {
+    id: "aia-aibanhang-v1",
+    companyId: "aia",
+    productCode: "AIBANHANG2",
+    productName: "「爱伴航」保险计划 2",
+    planType: "savings",
+    currency: "USD",
+    titleKeywords: ["爱", "航", "保险计划 2", "10 年缴费"],
+    firstPageMustContain: ["受保人", "保单货币"],
+    productCodeAliases: ["AIBANHANG2", "ABH2"],
+    presentationHorizonYears: 100,
+    pageTargets: {
+      summary: 1,
+      noWithdraw: range(2, 6),
+      withdraw: range(15, 25),
+    },
+  },
+
+  // ─── AIA 環宇盈活儲蓄保險計劃 ────────────────────────────
+  // 注: 原 aia-huanyu5-v1 假设 "环宇盈活" 连续存在, 但 PDF 实际显示 "环 | 盈活"
+  // 增强版: 用分散字符 + 缴费年期 + 独有字段精确识别
+  {
+    id: "aia-huanyu5-v2",
+    companyId: "aia",
+    productCode: "HUANYU5",
+    productName: "「环宇盈活」储蓄保险计划（5年缴费）",
+    planType: "savings",
+    currency: "USD",
+    titleKeywords: ["环", "盈活", "5 年缴费", "储蓄保险计划"],
+    firstPageMustContain: ["受保人", "保单货币"],
+    productCodeAliases: ["HUANYU5", "环宇盈活"],
+    presentationHorizonYears: 80,
+    pageTargets: {
+      summary: 1,
+      noWithdraw: [...range(2, 5), ...range(10, 17)],
+      withdraw: range(14, 21),
+      withdrawRemainder: range(17, 21),
+    },
+    crossCheckBaseline: [
+      { label: "Y7 提领年额", policyYear: 7, field: "annual_withdrawal", expected: 35000, tolerance: 100 },
+      { label: "Y20 累计提领", policyYear: 20, field: "cumulative_withdrawal", expected: 525006, tolerance: 500 },
+    ],
+  },
+
+  // ─── 全美 (Transamerica) TA_GIUL3 +M 变体 ────────────────────────────
+  // 注: PDF 为繁体, 原 v1 用简体 "首日现金价值" 命中率=0
+  // 变体 v2: 用繁体 + 文件名产品代号 + 实际文档关键词
+  {
+    id: "transamerica-giul3-v2",
+    companyId: "transamerica",
+    productCode: "TA_GIUL3",
+    productName: "Transamerica TA_GIUL3+M IUL",
+    planType: "iul",
+    currency: "USD",
+    titleKeywords: ["保單銷售說明文件", "首日現金價值", "標普500", "指數"],
+    firstPageMustContain: ["保單", "現金價值"],
+    productCodeAliases: ["TA_GIUL3", "TA_GIUL3+M", "GIUL3"],
+    presentationHorizonYears: 120,
+    pageTargets: { summary: 1 },
+  },
+
+  // ─── 全美 (Transamerica) Genesis III Indexed Universal Life ────────────────────────────
+  // 注: 全新产品类型, 完全独立于 TA_GIUL3
+  {
+    id: "transamerica-genesis3-v1",
+    companyId: "transamerica",
+    productCode: "GENESIS3",
+    productName: "Genesis III Indexed Universal Life",
+    planType: "iul",
+    currency: "USD",
+    titleKeywords: ["Genesis III", "Indexed Universal Life", "全美人壽"],
+    firstPageMustContain: ["保單貨幣", "全美人壽"],
+    productCodeAliases: ["GENESIS3", "Genesis III"],
     presentationHorizonYears: 120,
     pageTargets: { summary: 1 },
   },

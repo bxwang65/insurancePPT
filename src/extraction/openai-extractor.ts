@@ -1,5 +1,6 @@
 /**
- * OpenAI 兼容 API extractor (用于 Kimi / DeepSeek / OpenAI / MiniMax)
+ * OpenAI 兼容 API extractor (用于 DeepSeek / OpenAI / MiniMax)
+ * 2026-07-30: Kimi API 已停用, 彻底删除
  * 与 GeminiExtractor 接口一致 (extractJSON), 内部走 OpenAI Chat Completions
  */
 import fs from "fs";
@@ -7,18 +8,22 @@ import crypto from "crypto";
 import { resolveExtractionPython } from "./python-runtime.ts";
 
 const PROVIDER_DEFAULTS: Record<string, { baseUrl: string; model: string }> = {
-  kimi: { baseUrl: process.env.KIMI_BASE_URL || "https://api.kimi.com/coding", model: process.env.KIMI_MODEL || "kimi-for-coding" },
-  // 原 DeepSeek 主力保留为 fallback
+  // 主力 provider 全部 OpenAI Chat Completions 兼容
   deepseek: { baseUrl: "https://api.deepseek.com/v1", model: "deepseek-v4-flash" },
   openai: { baseUrl: "https://api.openai.com/v1", model: "gpt-4o-mini" },
   minimax: { baseUrl: "https://api.minimax.chat/v1", model: "MiniMax-M3" },
   "openrouter-minimax": { baseUrl: process.env.OPENROUTER_BASE_URL || "https://openrouter.ai/api/v1", model: process.env.OPENROUTER_MINIMAX_MODEL || "minimax/minimax-m3" },
+  agnes: { baseUrl: process.env.AGNES_BASE_URL || "https://apihub.agnes-ai.com/v1", model: process.env.AGNES_MODEL || "agnes-2.0-flash" },
+  // 火山引擎方舟 ARK (OpenAI 兼容) - model 填接入点 ID (ep-xxx) 或模型名
+  doubao: { baseUrl: process.env.DOUBAO_BASE_URL || "https://ark.cn-beijing.volces.com/api/v3", model: process.env.DOUBAO_MODEL || "doubao-seed-2-1-turbo" },
+  // 阿里云百炼 DashScope (OpenAI 兼容) - model 填 qwen 系列名
+  qwen: { baseUrl: process.env.QWEN_BASE_URL || "https://dashscope.aliyuncs.com/compatible-mode/v1", model: process.env.QWEN_MODEL || "qwen3.7-plus" },
   gemini: { baseUrl: "", model: "gemini-2.5-flash" },  // 占位
 };
 
 export interface OpenAIConfig {
   apiKey: string;
-  provider?: "kimi" | "deepseek" | "openai" | "minimax" | "openrouter-minimax";
+  provider?: "deepseek" | "openai" | "minimax" | "openrouter-minimax" | "agnes" | "doubao" | "qwen";
   baseUrl?: string;
   model?: string;
   maxRetries?: number;
@@ -41,12 +46,22 @@ export class OpenAIExtractor {
 
   constructor(config: OpenAIConfig) {
     this.apiKey = config.apiKey;
+    // 2026-07-30: Kimi 已删, 默认走 deepseek
     this.provider = config.provider || "deepseek";
     const defaults = PROVIDER_DEFAULTS[this.provider] || PROVIDER_DEFAULTS.deepseek;
     this.baseUrl = config.baseUrl || defaults.baseUrl;
     this.model = config.model || defaults.model;
     this.maxRetries = config.maxRetries ?? 2;
     this.timeout = config.timeout ?? 180_000;
+  }
+
+  /**
+   * 2026-07-30: Fitz-first 策略需要动态调整 LLM 超时
+   *   当 fast path 失败时 LLM fallback 用 60s, 避免用户傻等 180s
+   *   直接修改私有字段 (TS private 仅编译期检查, 运行时仍可写)
+   */
+  setTimeoutMs(ms: number): void {
+    this.timeout = ms;
   }
 
   /**
@@ -69,13 +84,23 @@ export class OpenAIExtractor {
     const python = resolveExtractionPython();
     let pdfText = "";
     try {
+      // 2026-09-08: 抑制 pymupdf 的 "fitz is deprecated" 警告 (新版本会污染 stdout, 让 pdfText 长度虚高,
+      //   触发 vision 分支判断失误 — 假图片 PDF 走了 text 路径)
+      //   改用 import pymupdf as fitz + warnings.filterwarnings('ignore')
       pdfText = execFileSync(
         python,
-        ["-c", "import fitz,sys; doc=fitz.open(sys.argv[1]); print('\\n'.join(p.get_text() for p in doc)); doc.close()", pdfPath],
+        ["-c", "import sys, warnings; warnings.filterwarnings('ignore'); import pymupdf as fitz; doc=fitz.open(sys.argv[1]); print('\\n'.join(p.get_text() for p in doc)); doc.close()", pdfPath],
         { timeout: 30000, encoding: "utf-8" },
       );
     } catch (e) {
       pdfText = `[PDF text extraction failed: ${(e as Error).message}]`;
+    }
+    // 2026-09-08: 防御: 若 pdfText 是 PyMuPDF 警告/错误信息 (无真实 PDF 文本), 视为图片 PDF
+    //   常见: "warning: The `fitz` API is deprecated..." 或 "MuPDF error: ..."
+    const pdfTextLooksLikeWarning = /^(warning:|MuPDF error:|PDF text extraction failed:)/i.test(pdfText.trim());
+    if (pdfTextLooksLikeWarning && pdfText.length < 500) {
+      console.warn(`[openai-extractor] pdfText 只含警告/错误, 视为图片 PDF (${pdfText.length} chars): ${pdfText.slice(0, 80)}`);
+      pdfText = "";
     }
     // 截断: 防止超 token 限制 (DeepSeek 4K上下文, 只发前15页)
     const MAX_CHARS = 30_000;
@@ -87,8 +112,11 @@ export class OpenAIExtractor {
     const pdfTextLen = pdfText.trim().length;
     const looksCorruptedPdfText = this._looksCorruptedPdfText(pdfText);
 
-    // 图片PDF / 乱码PDF: MiniMax/Kimi/OpenRouter MiniMax 都转图片发送
-    if ((pdfTextLen < 50 || looksCorruptedPdfText) && (this.provider === "minimax" || this.provider === "kimi" || this.provider === "openrouter-minimax")) {
+    // 图片PDF / 乱码PDF: 支持多模态的 provider 都转图片发送
+    // 2026-07-30: Kimi 已删, vision provider 列表 = MiniMax / OpenRouter MiniMax / Agnes / Doubao / Qwen-VL
+    // 2026-09-08: DeepSeek-v4-flash-vision-exp 加入, 灰度切默认后承担纯图片 PDF (如 Manulife IUL)
+    const imageCapable = ["minimax", "openrouter-minimax", "agnes", "doubao", "qwen", "deepseek"];
+    if ((pdfTextLen < 50 || looksCorruptedPdfText) && imageCapable.includes(this.provider)) {
       try {
         const { execFileSync } = await import("child_process");
         const imgOutput = execFileSync(
@@ -103,27 +131,17 @@ export class OpenAIExtractor {
           const textBlock = "你是一位保险精算师。从这些保单截图页面中提取完整的利益演示数据。"
             + "\n\n输出JSON格式:"
             + '\n{"product_name": "", "insured": {"name":"","age":0,"gender":""},'
-            + '\n"policy": {"annual_premium":0,"sum_insured":0,"premium_payment_period":"趸交或N年"},'
+            + '\n"policy": {"currency":"USD","sum_insured":0,"annual_premium":0,"premium_payment_period":"N年","coverage_period":"终身"},'
             + '\n"benefit_illustration":[{"policy_year":1,"total_premium_paid":0,"non_guaranteed_cash_value":0,"death_benefit":0}]}'
-            + "\n\n注意: 提取当前假设(非保证)的数据, premium_payment_period是趸交还是N年缴";
+            + "\n\n注意: 提取当前假设(非保证)的数据, premium_payment_period是趸交还是N年缴, currency 默认 USD, coverage_period 默认 终身";
 
-          if (this.provider === "kimi") {
-            // Kimi: Anthropic-style content blocks
-            const blocks: any[] = [{ type: "text", text: textBlock }];
-            for (const b64 of images) {
-              blocks.push({ type: "image", source: { type: "base64", media_type: "image/png", data: b64 } });
-            }
-            userContent = blocks; // stays as array, sent directly
-          } else {
-            // OpenAI-compatible (MiniMax / OpenRouter MiniMax)
-            // 注: MiniMax API 实际要求 data URI 前缀 (api.minimax.chat 返回 "must be http(s):// or data:...;base64")
-            //     之前的 byte 5 错误是另一回事, 不是这个
-            const contentArr: any[] = [{ type: "text", text: textBlock }];
-            for (const b64 of images) {
-              contentArr.push({ type: "image_url", image_url: { url: "data:image/png;base64," + b64 } });
-            }
-            userContent = contentArr;
+          // 2026-07-30: Kimi 已删, 全部走 OpenAI-compatible vision 格式
+          // 注: MiniMax API 实际要求 data URI 前缀 (api.minimax.chat 返回 "must be http(s):// or data:...;base64")
+          const contentArr: any[] = [{ type: "text", text: textBlock }];
+          for (const b64 of images) {
+            contentArr.push({ type: "image_url", image_url: { url: "data:image/png;base64," + b64 } });
           }
+          userContent = contentArr;
         }
       } catch (e) {
         console.warn(`[${this.provider}] image extraction failed:`, (e as Error)?.message);
@@ -131,19 +149,15 @@ export class OpenAIExtractor {
     }
 
     if (!userContent) {
+      console.log(`[openai-extractor] DEBUG: text branch entered (vision branch not taken), pdfTextLen=${pdfTextLen} looksCorrupted=${looksCorruptedPdfText}`);
       userContent = `PDF 文件路径: ${pdfPath}\nPDF SHA256: ${pdfHash}\n\n=== PDF 文本内容 ===\n${pdfText}\n\n=== 任务 ===\n请严格按 system prompt 要求输出 JSON (不要 markdown 代码块包裹)。`;
     }
 
     const systemContent = systemPrompt + "\n\n重要: 你的输出必须是合法 JSON。不要任何推理过程, 不要 ```json 包裹, 不要其他解释文字。只输出 JSON 本身。";
-    const body: any = this.provider === "kimi" ? {
-      model: this.model,
-      system: systemContent,
-      messages: [
-        { role: "user", content: userContent }, // 可以是 string 或 content block array
-      ],
-      temperature: 0.1,
-      max_tokens: 32000,
-    } : {
+    // 2026-07-30: Kimi 已删, 统一用 OpenAI-compatible Chat Completions body
+    // 2026-09-08: DeepSeek V4 默认 thinking 开启, reasoning_content 会吃光 max_tokens → content 空字符串
+    //   显式 disable, 同时把 max_tokens 降到 8000 (实测 4000-8000 区间最稳, 32K 触发 chunked drop)
+    const body: any = {
       model: this.model,
       messages: [
         { role: "system", content: systemContent },
@@ -151,8 +165,8 @@ export class OpenAIExtractor {
       ],
       response_format: this.provider === "openai" ? { type: "json_object" } : undefined,
       temperature: 0.1,
-      max_tokens: 32000,
-      // DeepSeek V4 Flash 会输出 reasoning_content, 需要足够 token 预算
+      max_tokens: 8000,
+      ...(this.provider === "deepseek" ? { thinking: { type: "disabled" } } : {}),
     };
 
     let lastErr: Error | null = null;
@@ -160,9 +174,7 @@ export class OpenAIExtractor {
       try {
         const ctrl = new AbortController();
         const timer = setTimeout(() => ctrl.abort(), this.timeout);
-        const endpoint = this.provider === "kimi"
-          ? `${this.baseUrl.replace(/\/$/, "")}/v1/messages`
-          : `${this.baseUrl.replace(/\/$/, "")}/chat/completions`;
+        const endpoint = `${this.baseUrl.replace(/\/$/, "")}/chat/completions`;
         const headers: Record<string, string> = {
           "Content-Type": "application/json",
           "Authorization": `Bearer ${this.apiKey}`,
@@ -171,11 +183,16 @@ export class OpenAIExtractor {
           headers["HTTP-Referer"] = process.env.OPENROUTER_SITE_URL || "http://localhost:3000";
           headers["X-Title"] = process.env.OPENROUTER_APP_NAME || "insurance-ppt";
         }
-        if (this.provider === "kimi") headers["anthropic-version"] = "2023-06-01";
+        // 2026-09-08: vision 模式下切换到 vision-exp 模型 (DeepSeek 同一 baseUrl, model 区分 vision 能力)
+        //   userContent 是 array (含 image_url) 时才需要切换; 其他 provider 自动用同一 model
+        const isVisionRequest = Array.isArray(userContent);
+        const requestBody = isVisionRequest && this.provider === "deepseek"
+          ? { ...body, model: "deepseek-v4-flash-vision-exp" }
+          : body;
         const res = await fetch(endpoint, {
           method: "POST",
           headers,
-          body: JSON.stringify(body),
+          body: JSON.stringify(requestBody),
           signal: ctrl.signal,
         });
         clearTimeout(timer);
@@ -184,9 +201,8 @@ export class OpenAIExtractor {
           throw new Error(`HTTP ${res.status}: ${errText.substring(0, 500)}`);
         }
         const json: any = await res.json();
-        const content = this.provider === "kimi"
-          ? (json.content || []).map((part: any) => part?.text || "").join("")
-          : json.choices?.[0]?.message?.content || "";
+        // 2026-07-30: Kimi 已删, 全部走 OpenAI-compatible 响应格式
+        const content = json.choices?.[0]?.message?.content || "";
         const usage = json.usage ? {
           promptTokens: json.usage.prompt_tokens || json.usage.input_tokens || 0,
           completionTokens: json.usage.completion_tokens || json.usage.output_tokens || 0,

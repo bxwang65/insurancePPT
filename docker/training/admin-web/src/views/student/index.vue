@@ -35,14 +35,18 @@
 
     <!-- 学员列表 -->
     <el-table :data="students" border stripe v-loading="loading">
-      <el-table-column label="员工" min-width="180">
+      <el-table-column label="员工" min-width="200">
         <template #default="{ row }">
           <div class="student-cell">
             <el-avatar :size="40" :src="row.avatar_url" class="student-avatar">
               {{ row.name.slice(0, 1) }}
             </el-avatar>
             <div class="student-info">
-              <div class="student-name">{{ row.name }}</div>
+              <div class="student-name">
+                {{ row.name }}
+                <!-- 2026-08-24: 管理员徽章 (后端硬上限 3 个, 列表显眼标识) -->
+                <el-tag v-if="row.is_admin" size="small" type="danger" effect="dark" style="margin-left:6px;vertical-align:middle;">管理员</el-tag>
+              </div>
               <div class="student-phone">{{ row.phone }}</div>
             </div>
           </div>
@@ -596,6 +600,83 @@
           </el-form>
         </div>
 
+        <!-- 2026-08-24: 等级调整 (手动覆盖 L 业务等级 + M 管理等级, 不走 cron 次月生效)
+             用法: 招错人/审核不通过/纠正历史数据时 admin 直接改; 留 LevelHistory 审计
+             注: 当前 current_level=1 直接写; 若有 pending_*, 本次覆盖会顶掉 pending (跟原行为一致) -->
+        <div class="section-card">
+          <div class="section-title">
+            等级调整
+            <span class="form-tip-inline">手动覆盖, 立即生效 (不走次月 pending)</span>
+          </div>
+          <el-form label-width="90px" size="default">
+            <el-form-item label="L 业务等级">
+              <el-select v-model="levelForm.current_level" style="width: 100%" placeholder="选择 L 等级 (1=初级, 2=中级, 3=高级)">
+                <el-option label="L1 — 初级" :value="1" />
+                <el-option label="L2 — 中级" :value="2" />
+                <el-option label="L3 — 高级" :value="3" />
+              </el-select>
+            </el-form-item>
+            <el-form-item label="M 管理等级">
+              <el-select v-model="levelForm.current_management_level" style="width: 100%" placeholder="选择 M 等级 (0=无, 1=初级, 2=中级, 3=高级)">
+                <el-option label="M0 — 无管理" :value="0" />
+                <el-option label="M1 — 初级" :value="1" />
+                <el-option label="M2 — 中级" :value="2" />
+                <el-option label="M3 — 高级" :value="3" />
+              </el-select>
+            </el-form-item>
+            <el-form-item label="改级原因">
+              <el-input v-model="levelForm.change_reason" placeholder="如: 招错级别 / 业务调整 / 数据纠正" maxlength="200" show-word-limit />
+            </el-form-item>
+            <el-form-item>
+              <el-button type="primary" :loading="savingLevel" @click="saveLevel">保存等级</el-button>
+              <span class="form-tip-inline">
+                <span v-if="detail?.pending_level !== null && detail?.pending_level !== undefined && detail?.pending_level !== detail?.current_level" style="color:#e6a23c;">
+                  ⚠ 当前有 pending {{ detail.pending_level > (detail.current_level ?? 1) ? '升级' : '降级' }}, 保存将顶掉
+                </span>
+              </span>
+            </el-form-item>
+          </el-form>
+        </div>
+
+        <!-- 2026-08-24: 账号角色 (admin ↔ 普通员工) — 仅超级管理员可改 -->
+        <div v-if="isSuperAdmin" class="section-card">
+          <div class="section-title">
+            账号角色
+            <span class="form-tip-inline">仅超级管理员可改 (硬上限 3 个 admin)</span>
+          </div>
+          <el-form label-width="90px" size="default">
+            <el-form-item label="管理员">
+              <el-switch
+                v-model="roleForm.is_admin"
+                active-text="是管理员"
+                inactive-text="普通员工"
+                inline-prompt
+                style="--el-switch-on-color: #f56c6c;"
+              />
+              <span class="form-tip-inline" style="margin-left:12px;">
+                当前 {{ detail?.is_admin ? '已开启' : '未开启' }} 管理员权限
+              </span>
+            </el-form-item>
+            <el-form-item>
+              <el-button type="primary" :loading="savingRole" @click="saveRole">保存角色</el-button>
+              <span class="form-tip-inline">
+                <span v-if="adminCountComputed >= 3 && roleForm.is_admin" style="color:#f56c6c;">⚠ 当前已有 3 个 admin, 保存会顶掉当前选中 (其他 admin 会被降级)</span>
+              </span>
+            </el-form-item>
+          </el-form>
+        </div>
+        <div v-else class="section-card">
+          <div class="section-title">账号角色</div>
+          <el-form label-width="90px" size="default">
+            <el-form-item label="管理员">
+              <el-tag :type="detail?.is_admin ? 'danger' : 'info'">
+                {{ detail?.is_admin ? '是管理员' : '普通员工' }}
+              </el-tag>
+              <span class="form-tip-inline" style="margin-left:8px;">改 admin 角色仅超级管理员可操作</span>
+            </el-form-item>
+          </el-form>
+        </div>
+
         <!-- 2026-08-14: 删除学员 — 级联删 progress/transaction/level_history, 不可恢复 -->
         <div class="section-card danger-zone">
           <div class="section-title">危险操作</div>
@@ -734,6 +815,7 @@ import { Search, Plus, Upload, Refresh } from '@element-plus/icons-vue'
 import { ElMessage, type FormInstance, type FormRules } from 'element-plus'
 import request from '@/utils/request'
 import * as echarts from 'echarts'
+import { useUserStore } from '@/store/user'
 
 // ============ Types ============
 interface StudentItem {
@@ -801,6 +883,13 @@ interface StudentDetail {
   recruiter_name?: string | null
   manager_id?: string | null
   manager_name?: string | null
+  // 2026-08-24: Phase 7 等级维护期 + admin 徽章 / 手动改级 UI 用的字段
+  is_admin?: boolean
+  current_level?: number
+  current_management_level?: number
+  pending_level?: number | null
+  pending_management_level?: number | null
+  pending_effective_at?: string | null
 }
 
 // ============ State ============
@@ -1140,6 +1229,24 @@ const relForm = reactive({
   recruiter_id: '' as string | null,
   manager_id: '' as string | null,
 })
+
+// 2026-08-24: 等级调整 (L 业务等级 + M 管理等级 手动覆盖, 立即生效)
+const levelForm = reactive({
+  id: '',
+  current_level: 1 as number,
+  current_management_level: 0 as number,
+  change_reason: '',
+})
+const savingLevel = ref(false)
+
+// 2026-08-24: 账号角色 (admin ↔ 普通员工, 仅超级管理员可改)
+const roleForm = reactive({
+  is_admin: false,
+})
+const savingRole = ref(false)
+// 当前 admin 总数 (硬上限 3) — 改 admin 时若超过上限给提示
+// 注: 与下方的 adminCount (行 ~1071) 重复声明 — 这里改用 computed 实时计算
+const adminCountComputed = computed(() => students.value.filter((s: any) => s.is_admin).length)
 const savingRel = ref(false)
 
 // 2026-08-14: 个人业务画像 (业务进度 + 招管树 + sparkline)
@@ -1408,6 +1515,13 @@ const viewDetail = async (row: StudentItem) => {
       relForm.id = resData.id
       relForm.recruiter_id = resData.recruiter_id ?? null
       relForm.manager_id = resData.manager_id ?? null
+      // 2026-08-24: 同步初始化等级调整表单
+      levelForm.id = resData.id
+      levelForm.current_level = resData.current_level ?? 1
+      levelForm.current_management_level = resData.current_management_level ?? 0
+      levelForm.change_reason = ''
+      // 2026-08-24: 同步初始化角色表单
+      roleForm.is_admin = !!resData.is_admin
       drawerVisible.value = true
       nextTick(() => initRadar())
       loadAllUsers()
@@ -1441,13 +1555,87 @@ const saveRel = async () => {
   }
 }
 
+// 2026-08-24: 角色调整 — 改 is_admin (仅超级管理员可调, 后端已校验)
+const saveRole = async () => {
+  if (!levelForm.id) return
+  const targetAdmin = roleForm.is_admin
+  const wasAdmin = !!detail.value?.is_admin
+  if (targetAdmin === wasAdmin) {
+    ElMessage.warning('管理员状态未变化, 无需保存')
+    return
+  }
+  if (!confirm(`确认将「${detail.value?.name}」${targetAdmin ? '设为' : '降为普通员工'}?`)) return
+  savingRole.value = true
+  try {
+    await request.patch(`${API_USERS}/${levelForm.id}`, {
+      is_admin: targetAdmin,
+    })
+    ElMessage.success(`已${targetAdmin ? '设为管理员' : '降为普通员工'}`)
+    fetchStudents()
+    if (detail.value) {
+      detail.value.is_admin = targetAdmin
+    }
+  } catch (e: any) {
+    ElMessage.error(e?.response?.data?.message || '保存失败')
+  } finally {
+    savingRole.value = false
+  }
+}
+
+// 2026-08-24: 等级调整 — 手动覆盖 L/M, 立即生效 (不走 cron 次月 pending)
+//   - 后端 PATCH /api/admin/users/:id 接受 current_level + current_management_level
+//   - direct update, 不写 LevelHistory (跟原 manual override 行为一致)
+//   - change_reason 暂存前端, 未来可加 LevelHistory.notes 列
+const saveLevel = async () => {
+  if (!levelForm.id) return
+  // 二次确认 — 覆盖是立即的, 跟 cron pending 次月生效不同
+  const oldL = detail.value?.current_level ?? 1
+  const oldM = detail.value?.current_management_level ?? 0
+  if (levelForm.current_level === oldL && levelForm.current_management_level === oldM) {
+    ElMessage.warning('L/M 等级未变化, 无需保存')
+    return
+  }
+  if (!confirm(`确认将「${detail.value?.name}」改为 L${levelForm.current_level} / M${levelForm.current_management_level}? (立即生效)`)) return
+  savingLevel.value = true
+  try {
+    await request.patch(`${API_USERS}/${levelForm.id}`, {
+      current_level: levelForm.current_level,
+      current_management_level: levelForm.current_management_level,
+    })
+    ElMessage.success(`等级已更新: L${oldL}→L${levelForm.current_level}, M${oldM}→M${levelForm.current_management_level}`)
+    fetchStudents()
+    if (detail.value) {
+      detail.value.current_level = levelForm.current_level
+      detail.value.current_management_level = levelForm.current_management_level
+    }
+  } catch (e: any) {
+    ElMessage.error(e?.response?.data?.message || '保存失败')
+  } finally {
+    savingLevel.value = false
+  }
+}
+
 // 2026-08-14: 删除学员 — 二次确认, 后端 cascade 删 progress/transaction/level_history
 const deleting = ref(false)
+// 2026-08-24: 当前用户是否是超级管理员 (env SUPERR_ADMIN_EMAIL, 默认 123@qqq.com)
+//   - 用 useUserStore 拿 JWT 解出的 email, 比直接读 localStorage 健壮
+const SUPER_ADMIN_EMAIL = (import.meta.env.VITE_SUPER_ADMIN_EMAIL as string) || '123@qqq.com'
+const userStore = useUserStore()
+const currentUserEmail = (userStore.userInfo?.email || '').toLowerCase()
+const isSuperAdmin = !!currentUserEmail && currentUserEmail === SUPER_ADMIN_EMAIL.toLowerCase()
+
 const deleteStudent = async () => {
   if (!detail.value) return
   const id = detail.value.id
   const name = detail.value.name
-  if (!confirm(`确定删除员工「${name}」？\n此操作不可恢复, 会一并清除学习进度/业绩/等级历史。`)) return
+  const targetIsAdmin = !!detail.value.is_admin
+  // 2026-08-24: 非超级管理员不可删 admin
+  if (targetIsAdmin && !isSuperAdmin) {
+    ElMessage.error(`删除 admin 账号仅超级管理员 ${SUPER_ADMIN_EMAIL} 可操作`)
+    return
+  }
+  const adminWarn = targetIsAdmin ? `\n⚠ 这是 admin 账号, 你是超级管理员, 确认删除?` : ''
+  if (!confirm(`确定删除员工「${name}」？\n此操作不可恢复, 会一并清除学习进度/业绩/等级历史。${adminWarn}`)) return
   if (!confirm(`再次确认: 删除「${name}」的账号 + 全部业务数据？`)) return
   deleting.value = true
   try {

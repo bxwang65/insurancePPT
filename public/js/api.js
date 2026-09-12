@@ -26,13 +26,13 @@ function authHeaders(extra = {}) {
 /* —— POST /api/upload ——————————————————————————————————————————
    入参: files = [{ file: File, type: 'savings'|'ci'|'iul' }]
    出参: { sessionId, files: [] }
-   异常: throw Error(msg)  */
-export async function uploadFiles(files, companies = {}) {
+   异常: throw Error(msg)
+   注: 公司选择在生成页 per-product 选, 上传阶段不再传 companies  */
+export async function uploadFiles(files) {
   const form = new FormData();
   for (const { file, type } of files) {
     form.append('files', file);
     form.append('types', type);
-    form.append('companies', companies[type] || '');
   }
   const res = await fetch(BASE + '/api/upload', {
     method: 'POST',
@@ -117,9 +117,9 @@ export async function getRenderOptions() {
 
 /* —— POST /api/generate-enhanced/:id ——————————————————————————
    使用增强渲染器 (python-pptx 原生表格/图表)
-   入参: { companyId, theme }
+   入参: { companyId, theme, assignments: [{ pdfName, companyId }] }
    出参: { downloadUrl }  */
-export async function generatePPT({ sessionId, style, companyId, companyInfo, format = 'pptx', quality = 'high', savingsCompanyId, ciCompanyId, iulCompanyId, aiNarrative }) {
+export async function generatePPT({ sessionId, style, companyId, companyInfo, format = 'pptx', quality = 'high', savingsCompanyId, ciCompanyId, iulCompanyId, aiNarrative, assignments = [] }) {
   const res = await fetch(BASE + `/api/generate-enhanced/${sessionId}`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json', ...authHeaders() },
@@ -133,6 +133,7 @@ export async function generatePPT({ sessionId, style, companyId, companyInfo, fo
       ciCompanyId: ciCompanyId || '',
       iulCompanyId: iulCompanyId || '',
       aiNarrative: aiNarrative || '',
+      assignments: assignments || [],
     }),
   });
   const data = await res.json();
@@ -142,8 +143,17 @@ export async function generatePPT({ sessionId, style, companyId, companyInfo, fo
 
 /* —— 下载签名文件 ——————————————————————————————————————————
    走带 expires+token 的签名 URL
-   出参: Blob  */
+   2026-07-30: 改用 window.location.href 直跳 — 浏览器边收边弹保存框, 不再 await blob
+   之前 await fetch + res.blob() 让用户等整个 PPT 下载完才看到弹窗 (冷缓存 30-60s 黑屏)
+   Server Content-Disposition 已带 UTF-8 filename, 不需要前端设 a.download
+   出参: 空 Blob (保留 async 签名兼容调用方)  */
 export async function downloadSignedFile(relativeUrl) {
+  // 在浏览器中: 直接跳转让浏览器接管流式下载 + 立即弹保存框
+  if (typeof window !== "undefined" && window.location) {
+    window.location.href = BASE + relativeUrl;
+    return new Blob();
+  }
+  // Node/SSR 兜底: 仍走 fetch + blob
   const res = await fetch(BASE + relativeUrl);
   if (!res.ok) throw new Error(`下载失败 (${res.status})`);
   return res.blob();

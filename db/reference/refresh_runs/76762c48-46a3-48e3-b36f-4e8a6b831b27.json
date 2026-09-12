@@ -1,0 +1,10 @@
+{
+  "runId": "76762c48-46a3-48e3-b36f-4e8a6b831b27",
+  "quarter": "2026Q3",
+  "effective_from": "2026-08-16",
+  "status": "fail",
+  "started_at": "2026-08-16T08:26:44.824Z",
+  "email": "123@qqq.com",
+  "exit_code": 1,
+  "finished_at": "2026-08-16T08:26:44.849Z"
+}

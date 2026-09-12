@@ -209,10 +209,20 @@ export class UsersService {
    * 通用更新 (头衔/角色/等级/业绩/招募人/主管/主推产品)
    * 改 manager_id 会写 ManagerChangeLog (招管分离的 override 审计)
    */
-  async update(id: string, dto: UpdateUserDto, recordedBy?: string) {
+  async update(id: string, dto: UpdateUserDto, recordedBy?: string, requesterEmail?: string, superAdminEmail = '123@qqq.com') {
     const user = await this.prisma.user.findUnique({ where: { id } })
     if (!user) {
       throw new NotFoundException(`员工 ${id} 不存在`)
+    }
+
+    // 2026-08-24: is_admin 改写权限校验 — 仅超级管理员可改 (覆盖批量开通时的 admin 计数上限)
+    if (dto.is_admin !== undefined && dto.is_admin !== user.is_admin) {
+      const isSuperAdmin = requesterEmail?.toLowerCase() === superAdminEmail.toLowerCase()
+      if (!isSuperAdmin) {
+        throw new BadRequestException(
+          `改 admin 标志仅超级管理员 ${superAdminEmail} 可操作`,
+        )
+      }
     }
 
     const data: any = {}
@@ -232,6 +242,8 @@ export class UsersService {
     // 2026-08-14: main_product 字段已删除
     if (dto.joined_at !== undefined) data.joined_at = new Date(dto.joined_at)
     if (dto.status !== undefined) data.status = dto.status
+    // 2026-08-24: admin 标志 (穿透 — 上面已校验权限)
+    if (dto.is_admin !== undefined) data.is_admin = dto.is_admin
 
     // 2026-08-12: 招管分离 - 改 manager_id 时记录 override 日志
     let managerChanged = false
@@ -314,10 +326,19 @@ export class UsersService {
    *   - 4in1 那边 Firebase Auth + users.json 不动 (admin 用 4in1 管理账号, 不耦合培训 DB)
    *     如需一并删, 请走 4in1 batch-create 同款的 reverse (TODO)
    */
-  async remove(id: string) {
+  async remove(id: string, requesterEmail?: string, superAdminEmail = '123@qqq.com') {
     const user = await this.prisma.user.findUnique({ where: { id } })
     if (!user) throw new NotFoundException(`员工 ${id} 不存在`)
-    if (user.is_admin) throw new BadRequestException('不能删除 admin 账号, 请先降权')
+    // 2026-08-24: 超级管理员 (默认 123@qqq.com) 唯一可删 admin 账号
+    //   普通 admin 删 admin → 403, 必须先降权 (is_admin=false)
+    if (user.is_admin) {
+      const isSuperAdmin = requesterEmail?.toLowerCase() === superAdminEmail.toLowerCase()
+      if (!isSuperAdmin) {
+        throw new BadRequestException(
+          `不能删除 admin 账号, 请先降权 (仅超级管理员 ${superAdminEmail} 可删除 admin)`,
+        )
+      }
+    }
 
     // 1. 清空指向该 user 的反向引用 (其他员工保留, 仅关系断)
     await this.prisma.user.updateMany({

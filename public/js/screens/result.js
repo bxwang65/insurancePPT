@@ -5,7 +5,7 @@
 import { state, resetState } from '../state.js';
 import { downloadSignedFile } from '../api.js';
 import { goStep, toast } from '../steps.js';
-import { renderSummaryTo, showIntervalDialog } from './result-summary.js';
+import { previewBrandedPoster } from './result-summary.js';
 
 const STYLE_NAMES = {
   broker:   '专业券商风',
@@ -83,8 +83,53 @@ function render() {
   if (downloadBtn) {
     downloadBtn.innerHTML = `<span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1">file_download</span> 下载 .${ext}`;
   }
+  renderBanners();
   renderThumbs();
   setPreview(0);
+}
+
+// 顶部 banner: 对比模式提示 + 解析失败警告
+function renderBanners() {
+  const screen = document.getElementById('screen-result');
+  if (!screen) return;
+  const main = screen.querySelector('main');
+  if (!main) return;
+
+  // 移除旧 banner
+  const oldBanners = main.querySelectorAll('.result-banner');
+  oldBanners.forEach((b) => b.remove());
+
+  // Banner 1: 对比模式已启用
+  if (state.compareMode && (state.compareTypes || []).length > 0) {
+    const labels = { savings: '储蓄险', ci: '重疾险', iul: 'IUL' };
+    const typeNames = (state.compareTypes || []).map((t) => labels[t] || t).join('、');
+    const banner = document.createElement('div');
+    banner.className = 'result-banner w-full mb-4 px-4 py-3 bg-primary-container/10 border border-primary-container/30 rounded-xl flex items-start gap-2 text-sm text-on-surface';
+    banner.innerHTML = `
+      <span class="material-symbols-outlined text-primary-container text-[20px] flex-shrink-0 mt-0.5">compare_arrows</span>
+      <div class="flex-1">
+        <div class="font-semibold text-primary-container">已启用产品对比模式</div>
+        <div class="text-text-secondary mt-0.5">${typeNames} 各上传 ≥2 份 · 末尾已加入对比表 + 柱状图 + 最佳选择叙事</div>
+      </div>
+    `;
+    main.insertBefore(banner, main.firstChild);
+  }
+
+  // Banner 2: 解析失败警告
+  const errors = (state.parseErrors || []);
+  if (errors.length > 0) {
+    const names = errors.map((e) => e.file || e.pdfName || '?').join('、');
+    const banner = document.createElement('div');
+    banner.className = 'result-banner w-full mb-4 px-4 py-3 bg-status-warning/10 border border-status-warning/40 rounded-xl flex items-start gap-2 text-sm text-on-surface';
+    banner.innerHTML = `
+      <span class="material-symbols-outlined text-status-warning text-[20px] flex-shrink-0 mt-0.5">warning</span>
+      <div class="flex-1">
+        <div class="font-semibold text-status-warning">⚠️ ${errors.length} 个文件解析失败</div>
+        <div class="text-text-secondary mt-0.5">${names} · 已跳过, 不影响其他文件渲染</div>
+      </div>
+    `;
+    main.insertBefore(banner, main.firstChild);
+  }
 }
 
 async function downloadFile(url, filename, btnId) {
@@ -96,12 +141,10 @@ async function downloadFile(url, filename, btnId) {
     btn.innerHTML = '<span class="material-symbols-outlined animate-spin">progress_activity</span> 准备下载...';
   }
   try {
-    const blob = await downloadSignedFile(url);
-    const a = document.createElement('a');
-    a.href = URL.createObjectURL(blob);
-    a.download = filename;
-    a.click();
-    URL.revokeObjectURL(a.href);
+    // 2026-07-30: downloadSignedFile 内部已 window.location.href 直跳,
+    //   浏览器立即接管流式下载并弹保存框 (不再 await 整个 blob)
+    //   filename 由 server 的 Content-Disposition 提供, 不需要前端设
+    await downloadSignedFile(url);
     toast('已开始下载', 'success');
     if (btn) {
       btn.innerHTML = '<span class="material-symbols-outlined" style="font-variation-settings:\'FILL\' 1">check_circle</span> 已下载';
@@ -141,13 +184,13 @@ export function initResult() {
   const regenBtn = document.getElementById('resultRegenerateBtn');
   if (regenBtn) regenBtn.onclick = () => { goStep('generate'); };
 
-  // 仅储蓄险显示保单摘要图功能
+  // 仅储蓄险显示保单简要海报功能 (走 server 端已生成的品牌 PNG, 不再用 html2canvas)
   const summaryBtn = document.getElementById('resultSummaryBtn');
   if (summaryBtn) {
     const types = [...new Set((state.extractions || []).map(e => e.planType).filter(Boolean))];
     if (types.length === 1 && types[0] === 'savings') {
       summaryBtn.style.display = 'flex';
-      summaryBtn.onclick = () => { showIntervalDialog(); };
+      summaryBtn.onclick = () => { previewBrandedPoster(); };
     } else {
       summaryBtn.style.display = 'none';
     }

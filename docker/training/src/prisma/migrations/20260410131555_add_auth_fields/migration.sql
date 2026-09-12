@@ -1,0 +1,31 @@
+/*
+  Warnings:
+
+  - Added the required column `password` to the `User` table without a default value. This is not possible if the table is not empty.
+  - Added the required column `phone` to the `User` table without a default value. This is not possible if the table is not empty.
+
+*/
+-- RedefineTables
+PRAGMA defer_foreign_keys=ON;
+PRAGMA foreign_keys=OFF;
+CREATE TABLE "new_User" (
+    "id" TEXT NOT NULL PRIMARY KEY,
+    "name" TEXT NOT NULL,
+    "phone" TEXT NOT NULL,
+    "password" TEXT NOT NULL,
+    "avatar_url" TEXT,
+    "role" TEXT NOT NULL,
+    "title" TEXT,
+    "level" INTEGER NOT NULL DEFAULT 1,
+    "level_name" TEXT NOT NULL DEFAULT '初阶阶段',
+    "total_learning_minutes" INTEGER NOT NULL DEFAULT 0,
+    "is_active" BOOLEAN NOT NULL DEFAULT true,
+    "created_at" DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    "updated_at" DATETIME NOT NULL
+);
+INSERT INTO "new_User" ("avatar_url", "created_at", "id", "level", "level_name", "name", "role", "title", "total_learning_minutes", "updated_at") SELECT "avatar_url", "created_at", "id", "level", "level_name", "name", "role", "title", "total_learning_minutes", "updated_at" FROM "User";
+DROP TABLE "User";
+ALTER TABLE "new_User" RENAME TO "User";
+CREATE UNIQUE INDEX "User_phone_key" ON "User"("phone");
+PRAGMA foreign_keys=ON;
+PRAGMA defer_foreign_keys=OFF;

@@ -40,6 +40,13 @@ export class GeminiExtractor {
   }
 
   /**
+   * 2026-07-30: Fitz-first 策略需要动态调整 LLM 超时 (与 OpenAIExtractor 同)
+   */
+  setTimeoutMs(ms: number): void {
+    this.timeout = ms;
+  }
+
+  /**
    * Read a PDF and extract structured JSON using Gemini's native PDF understanding.
    */
   async extractJSON<T>(pdfPath: string, prompt: string): Promise<{ data: T; usage: TokenUsage }> {

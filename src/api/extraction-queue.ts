@@ -29,6 +29,13 @@ export class ExtractionQueue {
       });
     }
   }
+
+  /** 当前等待中的任务数 (用于溢出路由判断) */
+  get pending(): number { return this.queue.length; }
+  /** 当前正在执行的任务数 */
+  get active(): number { return this.running; }
+  /** 总负载 = 等待 + 正在执行 */
+  get load(): number { return this.queue.length + this.running; }
 }
 
 export const extractionQueue = new ExtractionQueue(5);

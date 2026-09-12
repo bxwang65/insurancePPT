@@ -1,0 +1,33 @@
+{
+  "company_id": "unknown",
+  "brand_name_zh": "未知公司",
+  "brand_name_en": "Unknown",
+  "brand_label": "未识别保险公司",
+  "author": "请联系开发者添加公司配置",
+  "tagline": "新产品 · 待补充品牌信息",
+  "colors": {
+    "primary": "#4a5568",
+    "accent": "#718096",
+    "bg_deep": "#1a202c",
+    "bg_soft": "#f7fafc"
+  },
+  "logo_path": "",
+  "image_prompts": {
+    "header": "neutral abstract gradient, blue-gray tones, professional financial theme, no logos, no text",
+    "chapter02": "neutral abstract soft gradient, no logos, no text",
+    "chapter06": "neutral abstract soft gradient, no logos, no text"
+  },
+  "value_items": [
+    {"name": "财富增值选项", "desc": "将保证部分调减后增加非保证部分,实现更激进的资产配置,可能获得更高潜在回报。"},
+    {"name": "终期红利锁定", "desc": "将部分终期红利转换为周年红利,提供更稳定的现金流动性。"},
+    {"name": "保费假期选项", "desc": "在指定保单年度内暂停缴付保费,保单继续生效,适合资金周转需要。"},
+    {"name": "弹性身故赔偿", "desc": "受益人可选择一次性领取或分期领取身故赔偿,灵活规划传承安排。"},
+    {"name": "保单分拆选项", "desc": "将保单分拆为多份独立保单,分别指定受益人,实现更细致的财富传承。"},
+    {"name": "多种货币选择", "desc": "支持美元/港元/人民币/澳元等多种保单货币,灵活应对汇率波动。"}
+  ],
+  "images": {
+    "header": "",
+    "chapter02": "",
+    "chapter06": ""
+  }
+}

@@ -1,0 +1,16 @@
+# 排除不需要打入镜像的文件 (加速构建, 减小体积)
+node_modules/
+.git/
+.DS_Store
+*.log
+uploads/
+sessions/
+.cache/
+outputs/
+logs/
+public/downloads/
+docker/insurance-deck/  # 通过 Dockerfile 单独 COPY
+docker/training/data/uploads/  # 2026-08-17: 培训学员上传视频 (14GB on ECS, 走 bind mount 不进 image)
+docker/training/data/prisma/dev.db  # SQLite 在 ECS bind mount, 也不进 image
+.vscode/
+.idea/

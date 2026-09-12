@@ -1,0 +1,23 @@
+# ⚠ DEPRECATED (2026-07-21): 现用 Cloudflare Tunnel (systemd on ECS), 保留作历史参考
+# 当前访问路径: hksgtools.cn → Cloudflare edge → cloudflared on ECS → localhost:80
+# 旧访问路径: ppt.gllpsce.cn → frp 58048 → local 3000 (已废)
+# V3 frp client config - OpenFrp 免费隧道 (替换 Cloudflare Tunnel)
+# 节点: #32 宁德电信 | 远程端口: 58048 | 类型: TCP (HTTPS 不可用, 公网访问需带端口)
+serverAddr = "700b5e2ab48a.ofalias.net"
+serverPort = 57010
+auth.method = "token"
+auth.token = "1ea0f108f62e8e7e6bed4a8e65eb48bd"
+
+# 与 frp server 通信加密 (不影响本地 HTTP)
+transport.tls.enable = true
+
+[[proxies]]
+name = "pptv3"
+type = "tcp"
+localIP = "127.0.0.1"
+localPort = 3000
+remotePort = 58048
+
+# 带宽限制 (免费节点保守值, 避免触发风控)
+transport.bandwidthLimit = "10MB"
+transport.bandwidthLimitMode = "client"
