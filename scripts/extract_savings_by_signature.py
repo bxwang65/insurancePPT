@@ -49,6 +49,14 @@ def _parse_multi(cell) -> List[int]:
     return out
 
 
+def _self_consistent(row: Dict) -> bool:
+    """2026-09-12: 行内自洽校验 —— PDF 原文保证 保证(A)+复归(B)+终期(C) == 退保总额.
+    分子列误读(如 Rev/Term 未按年份索引)时该等式不成立, 用它做行优先级的判据."""
+    total = row.get("Total") or 0
+    parts = (row.get("Guar_CV") or 0) + (row.get("Rev") or 0) + (row.get("Term") or 0)
+    return abs(parts - total) <= max(1, abs(total) * 0.001)
+
+
 def _parse_y(cell) -> List[int]:
     """解析Y值, 处理 '65岁' 格式"""
     if not cell:
@@ -695,28 +703,39 @@ def extract_no_withdraw_aia(pdf_path: str, page_indices: List[int]) -> Dict[int,
                         ys = r1_years
                         paid = _parse_multi(r[2]) if len(r) > 2 else []
                         guar = _parse_multi(r[3]) if len(r) > 3 else []
-                        rev_term = (_parse_multi(r[4]) if len(r) > 4 else []) + (_parse_multi(r[5]) if len(r) > 5 else [])
+                        rev = _parse_multi(r[4]) if len(r) > 4 else []
+                        term = _parse_multi(r[5]) if len(r) > 5 else []
                         total = _parse_multi(r[6]) if len(r) > 6 else []
                     else:
                         # 11列布局 (AIA 5年缴简体): r[0]=年度, r[1]=保費, r[2]=保證, r[3]=復歸, r[4]=終期, r[5]=總額
                         ys = r0_years
                         paid = _parse_multi(r[1])
                         guar = _parse_multi(r[2]) if len(r) > 2 else []
-                        rev_term = (_parse_multi(r[3]) if len(r) > 3 else []) + (_parse_multi(r[4]) if len(r) > 4 else [])
+                        rev = _parse_multi(r[3]) if len(r) > 3 else []
+                        term = _parse_multi(r[4]) if len(r) > 4 else []
                         total = _parse_multi(r[5]) if len(r) > 5 else []
                     if not ys:
                         continue
                     n = min(len(ys), len(paid), len(total))
                     for k in range(n):
                         y = ys[k]
-                        if y not in rows:
-                            rows[y] = {
-                                "Y": y, "Age": y, "Paid": paid[k],
-                                "Guar_CV": guar[k] if k < len(guar) else 0,
-                                "Rev": rev_term[0] if rev_term else 0,
-                                "Term": rev_term[1] if len(rev_term) > 1 else 0,
-                                "Total": total[k],
-                            }
+                        # 2026-09-12 修复: Rev/Term 必须按 k 分别取 B列/C列.
+                        #   旧代码 `rev_term = B堆叠 + C堆叠` 后只取 [0]/[1] -> 与 k 无关,
+                        #   导致同一表格行的 5 个年份共用同一对值, 且 Term 取到的是 B 列的
+                        #   下一年值、C 列从未被使用 (AIA 两款 98% 行违反 A+B+C=Total).
+                        cand = {
+                            "Y": y, "Age": y, "Paid": paid[k],
+                            "Guar_CV": guar[k] if k < len(guar) else 0,
+                            "Rev": rev[k] if k < len(rev) else 0,
+                            "Term": term[k] if k < len(term) else 0,
+                            "Total": total[k],
+                        }
+                        prev = rows.get(y)
+                        # 2026-09-12 修复: 页序兜底. pages_no_withdraw 里"说明摘要"页(5年分组)
+                        #   排在逐年"详细说明"页之前, 旧的 `if y not in rows` 会把摘要页的
+                        #   错误值锁死. 改为: 自洽行(A+B+C==Total)可覆盖不自洽行.
+                        if prev is None or (_self_consistent(cand) and not _self_consistent(prev)):
+                            rows[y] = cand
     return rows
 
 

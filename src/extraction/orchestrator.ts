@@ -69,7 +69,7 @@ export interface ExtractionConfig {
   cacheDir?: string;
 }
 
-const CACHE_VERSION = 3;
+const CACHE_VERSION = 4; // 2026-09-12: 3->4 使缓存失效 (AIA Rev/Term 子列错位修复后, 旧缓存条目含错误值; 见 cacheVersion 校验)
 
 const PROMPTS: Record<PlanType, string> = {
   savings: SAVINGS_PLAN_SYSTEM_PROMPT,
