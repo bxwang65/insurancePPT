@@ -38,8 +38,6 @@ services:
       # 2026-07-27: 硬编码路径 /Users/soldier/Desktop/公司介绍 在 ECS Ubuntu 容器里不存在,
       # 把本地 Mac 的公司资料库挂到容器里, 让 company-kb.ts 的 KNOWLEDGE_ROOT 检查能通过
       - /opt/insurance-ppt/data/company-evidence:/Users/soldier/Desktop/公司介绍
-      # 2026-08-16: 季度刷新上传 UI (Phase 4 #23) 需要 admin 上传 PDF/CSV 到 db/source_pdfs/inbox/<quarter>/
-      - ./db:/opt/insurance-ppt/db
       - ./docs:/opt/insurance-ppt/docs
       - ./package.json:/opt/insurance-ppt/package.json:ro
       - ./bun.lock:/opt/insurance-ppt/bun.lock:ro
@@ -72,6 +70,45 @@ services:
     # 关键: Bun crash 后 docker 自动重启 (unless-stopped = 除非手动 stop 否则一直 restart)
     # 这是 ECS "便于后期更新" + "Bun 死了用户感知不到" 的核心保障
 
+  # 2026-08-14: 培训后端 (NestJS + Prisma + SQLite)
+  #   端口 3001 (host) -> 3000 (container), 不与 insurance-ppt-ecs:3000 冲突
+  #   bind mount 数据目录, node_modules 用 named volume 防 bind-mount 空目录覆盖
+  training-backend:
+    build:
+      context: ./docker/training
+      dockerfile: Dockerfile
+    image: insurance-ppt:ecs-training-20260831-phase5
+    container_name: training-backend-ecs
+    restart: unless-stopped
+    ports:
+      - "3001:3000"
+    volumes:
+      - ./docker/training/data/prisma/dev.db:/app/prisma/dev.db
+      - ./docker/training/data/uploads:/app/uploads
+      - training_node_modules:/app/node_modules
+    environment:
+      - NODE_ENV=production
+      - ENABLE_DEV_BYPASS=true
+      - PORT=3000
+      - DATABASE_URL=file:/app/prisma/dev.db
+      # 2026-08-14: 与 insurance-ppt 共享 JWT_SECRET (4in1 IdP 统一)
+      - JWT_SECRET=${JWT_SECRET}
+      - JWT_EXPIRES_IN=7d
+      # 2026-08-31: Aliyun OSS (培训资料上传)
+      - OSS_ACCESS_KEY_ID=${OSS_ACCESS_KEY_ID}
+      - OSS_ACCESS_KEY_SECRET=${OSS_ACCESS_KEY_SECRET}
+      - OSS_REGION=oss-cn-hongkong
+      - OSS_BUCKET=insurance-training-2026
+      - OSS_KEY_PREFIX=training/uploads/
+      # 2026-08-31: Phase 5 灰度 - 命中 stage 走 OSS, 空 = 全量 ECS
+      - OSS_GRAY_STAGES=${OSS_GRAY_STAGES}
+      - HTTP_PROXY=
+      - HTTPS_PROXY=
+      - http_proxy=
+      - https_proxy=
+      - NO_PROXY=*
+      - no_proxy=*
+
 volumes:
   node_modules_ecs:
   uploads_data_ecs:
@@ -79,3 +116,5 @@ volumes:
   cache_data_ecs:
   outputs_data_ecs:
   logs_data_ecs:
+  training_node_modules:
+  training_dist:

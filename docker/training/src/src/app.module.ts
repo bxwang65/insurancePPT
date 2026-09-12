@@ -11,7 +11,7 @@ import { PrismaModule } from './prisma/prisma.module'
 import { AuthModule } from './auth/auth.module'
 import { UsersModule } from './users/users.module'
 import { StudentModule } from './student/student.module'
-import { UploadController } from './upload/upload.controller'
+import { UploadModule } from './upload/upload.module'
 import { JwtAuthGuard } from './auth/guards/jwt-auth.guard'
 import { TransactionsModule } from './transactions/transactions.module'
 import { ConfigModule } from './config/config.module'
@@ -25,11 +25,9 @@ import { LevelModule } from './level/level.module'
       signOptions: { expiresIn: '7d' },
     }),
     // 2026-08-15: 全局 rate limit (防止暴力破解 / 接口刷量)
-    //   - 默认 100 req / 60s / IP, 写操作 30 req / 60s
-    //   - 通过 @Throttle 装饰器可单独覆盖
     ThrottlerModule.forRoot([
-      { name: 'short', ttl: 1000, limit: 10 },   // 10 req/s 突发限速
-      { name: 'medium', ttl: 60000, limit: 100 }, // 100 req/min 总限速
+      { name: 'short', ttl: 1000, limit: 10 },
+      { name: 'medium', ttl: 60000, limit: 100 },
     ]),
     PrismaModule,
     CoursesModule,
@@ -44,15 +42,16 @@ import { LevelModule } from './level/level.module'
     ConfigModule,
     TransactionsModule,
     LevelModule,
+    // 2026-08-31: 培训资料迁移 OSS 后, upload 走 UploadModule (含 OssService)
+    UploadModule,
   ],
-  controllers: [UploadController],
   providers: [
     // 全局鉴权 Guard，所有接口默认需要 JWT
     {
       provide: APP_GUARD,
       useClass: JwtAuthGuard,
     },
-    // 2026-08-15: 全局 rate limit guard
+    // 全局 rate limit guard
     {
       provide: APP_GUARD,
       useClass: ThrottlerGuard,
