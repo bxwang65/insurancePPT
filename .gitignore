@@ -26,6 +26,9 @@ tmp/
 # bxwang65/insurancePPT 是公开仓库 -> 任何 *.bak / .env 备份一律不入库
 .env.bak*
 *.bak.*
+# 2026-09-13: 上面的 *.bak.* 只匹配点号分隔 (foo.bak.20260913),
+# 匹配不到连字符分隔的时间戳备份 (foo.ts.bak-20260913-9pdf) -> 补一条
+*.bak-*
 # 长图海报渲染产物 (可重新生成, 单张 ~1MB)
 tools/long-poster/output_*.png
 

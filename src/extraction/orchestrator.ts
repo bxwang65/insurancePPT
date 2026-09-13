@@ -69,7 +69,7 @@ export interface ExtractionConfig {
   cacheDir?: string;
 }
 
-const CACHE_VERSION = 4; // 2026-09-12: 3->4 使缓存失效 (AIA Rev/Term 子列错位修复后, 旧缓存条目含错误值; 见 cacheVersion 校验)
+const CACHE_VERSION = 5; // 2026-09-13: 4->5 (9-PDF 修复: ① signature-extractor 硬编码 python3.11→resolveExtractionPython, 修复后全部签名 fast-path 首次真正生效; ② savings-table-parser 鲁棒 JSON 解析; ③ 新增 4 个签名; ④ 太平 1121 系列分派改前缀匹配。旧缓存全是 fast-path 失效期间 LLM 慢路径的产物, 必须作废)
 
 const PROMPTS: Record<PlanType, string> = {
   savings: SAVINGS_PLAN_SYSTEM_PROMPT,

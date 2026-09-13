@@ -26,6 +26,7 @@ import io
 import json
 import re
 import sys
+import unicodedata
 from collections import defaultdict
 from typing import Dict, List, Optional, Tuple
 
@@ -866,7 +867,10 @@ def extract_no_withdraw_manulife(pdf_path: str, page_indices: List[int]) -> Dict
             if pg < 1 or pg > len(pdf.pages):
                 continue
             page = pdf.pages[pg - 1]
-            text = page.extract_text() or ""
+            # 2026-09-13: pdfplumber 从部分 PDF 取出的字符落在 CJK 兼容区
+            # (实测 MANULIFE_GCIP: ⾦ U+2FA6 而非正体 金 U+91D1) → "保證現金價值" 判据失效
+            # → 整页 continue → 提取 0 行。NFKC 归一化回正体后再做页头判据。
+            text = unicodedata.normalize("NFKC", page.extract_text() or "")
             if "保證現金價值" not in text or "終期紅利" not in text:
                 continue
             if "現金提取" in text or "款項提取" in text:
@@ -911,7 +915,8 @@ def extract_withdraw_manulife(pdf_path: str, page_indices: List[int]) -> Dict[in
             if pg < 1 or pg > len(pdf.pages):
                 continue
             page = pdf.pages[pg - 1]
-            text = page.extract_text() or ""
+            # 2026-09-13: 同 extract_no_withdraw_manulife —— NFKC 归一化兼容区异体字
+            text = unicodedata.normalize("NFKC", page.extract_text() or "")
             if "款項提取" not in text or "退保價值" not in text:
                 continue
             for t in page.extract_tables():
@@ -1180,8 +1185,11 @@ def main():
             wd = {}  # C540 默认演示无提领场景
         elif args.company == "china-taiping":
             # 中国太平: 按 signature.productCode 分流 (颐年乐享 vs 鑫安逸)
-            if args.signature == "china-taiping-1121nwlp7-v1":
-                # 颐年乐享尊享版 1121NWLP7: 7列 (B+C+D+E) X-clustering
+            if args.signature.startswith("china-taiping-1121nwlp"):
+                # 颐年乐享系列: 1121NWLP7 (尊享版) / 1121NWLP9 (至尊版) 同族同表式
+                # 2026-09-13: 原为 == "china-taiping-1121nwlp7-v1" 精确匹配 →
+                #   新增的 china-taiping-1121nwlp9-v1 会掉进下面 else 的鑫安逸分支
+                #   (4列/无分红) → 签名命中 conf=0.9 但提取 0 行。改为前缀匹配。
                 no_wd = extract_no_withdraw_china_taiping_1121(args.pdf, pages_nw)
                 wd = {}  # 默认演示无提领场景
             else:
