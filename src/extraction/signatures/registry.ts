@@ -446,7 +446,11 @@ export const SIGNATURES: PdfSignature[] = [
     productName: "匠心飞越储蓄保险计划",
     planType: "savings",
     currency: "USD",
-    titleKeywords: ["匠", "飞越", "MW3U"],
+    // 2026-09-13: 「匠心·飛越」实测有繁体(FTLIFE_MWBSIP)与简体两种 PDF 措辞。
+    // 不用繁简双写 —— 双写会让 titleKeywords 分母变大, 两版都只命中子集, score 压线在 0.70。
+    // 改为只用繁简同形词(匠 / MW3U): 两版都是 2/2=1.0 → score 0.75+ (firstPage 中 "保单货币"
+    // 是简体, 繁体 PDF 里命中不了, 故 firstPageRatio=0.5), 留有余量。
+    titleKeywords: ["匠", "MW3U"],
     firstPageMustContain: ["受保人姓名", "保单货币"],
     productCodeAliases: ["MW3U"],
     presentationHorizonYears: 100,
@@ -585,6 +589,83 @@ export const SIGNATURES: PdfSignature[] = [
     productCodeAliases: ["GENESIS3", "Genesis III"],
     presentationHorizonYears: 120,
     pageTargets: { summary: 1 },
+  },
+
+  // ═══════════════════════════════════════════════════════════════════
+  // 2026-09-13: 9-PDF 修复新增 4 个签名
+  //   重要: 文件名用的是【系统产品代码】(如 YFLIFE_VIS / FWDLIFE_MFLIIIP /
+  //   MANULIFE_GCIP / AXA_WAIISIS), 与 PDF 首页正文的【营销名/代号】不同
+  //   (VISP5 / GFB5 / 宏摯家傳承 / 盛利II). 严禁据文件名推断产品,
+  //   以下字段全部按 PDF 首页正文实读。
+  //   pageTargets 已按各 PDF 实际页数裁剪, 避免 doc[pg-1] 越界导致整体失败。
+  // ═══════════════════════════════════════════════════════════════════
+
+  // ─── 万通保险 (YFLife) ─── 富饒傳家 5年繳付 (VISP5)
+  {
+    id: "yflife-visp5-v1",
+    companyId: "yflife",
+    productCode: "VISP5",
+    productName: "「富饒傳家」儲蓄保險計劃(5年繳付)",
+    planType: "savings",
+    currency: "USD",
+    titleKeywords: ["富", "傳家", "儲蓄保險計劃"],
+    firstPageMustContain: ["受保人", "保單貨幣"],
+    productCodeAliases: ["VISP5", "VIS", "富饒傳家"],
+    presentationHorizonYears: 80,
+    // 实测: PDF 共 9 页, 利益说明表在 P6-P8 (benefit 85 行 / 无提领场景)
+    pageTargets: { summary: 1, noWithdraw: range(2, 9) },
+  },
+
+  // ─── 中国太平 (China Taiping) ─── 「頤年·樂享」至尊版 (1121NWLP9)
+  {
+    id: "china-taiping-1121nwlp9-v1",
+    companyId: "china-taiping",
+    productCode: "1121NWLP9",
+    productName: "「頤年·樂享」儲蓄保險計劃(至尊版)",
+    planType: "savings",
+    currency: "USD",
+    titleKeywords: ["頤年", "樂享", "至尊", "1121NWLP9"],
+    firstPageMustContain: ["受保人", "保單貨幣"],
+    productCodeAliases: ["1121NWLP9", "頤年樂享"],
+    presentationHorizonYears: 130,
+    // 实测: PDF 共 20 页, 退保表在 P4/P7-P9
+    // 注意: 1121NWLP7 的 withdraw 含 P24, 本 PDF 只 20 页 → 去掉 24 免得越界
+    pageTargets: { summary: 1, noWithdraw: [3, 4, 7, 8, 9, 10, 14], withdraw: [17, 18, 19, 20] },
+  },
+
+  // ─── 富卫 (FWD) ─── 盈聚·天下 II 5年供 (GFB5)
+  {
+    id: "fwd-gfb5-v1",
+    companyId: "fwd",
+    productCode: "GFB5",
+    productName: "「盈聚‧天下 II」保險計劃(5年供)",
+    planType: "savings",
+    currency: "USD",
+    // 注意: PDF 正文是「盈聚‧天下 II 保險計劃」(数字前有空格), 故用 "天下" 而非 "天下II"
+    titleKeywords: ["盈聚", "天下", "GFB5"],
+    firstPageMustContain: ["被保人姓名", "保單貨幣"],
+    productCodeAliases: ["GFB5", "盈聚天下II", "天下II"],
+    presentationHorizonYears: 80,
+    // 实测: PDF 共 29 页, 表在 P9 及 P19-P22; 复用 fwd-atar2-v1 的分段结构
+    pageTargets: { summary: 1, noWithdraw: range(2, 15), withdraw: range(15, 22) },
+  },
+
+  // ─── 安盛 (AXA) ─── 盛利 II 儲蓄保險 – 至尊
+  {
+    id: "axa-shengli2-jt-v1",
+    companyId: "axa",
+    productCode: "WEB05",
+    productName: "盛利II储蓄保险–至尊",
+    planType: "savings",
+    currency: "USD",
+    // PDF 正文: 「盛利 II 儲蓄保險 – 至尊」; 原 axa-shengli2-v1 的 kw 是 ["WEB05","至尊"],
+    // 而 WEB05 不出现在正文 → 只命中 1/2 = 0.5, score 仅 0.60 卡在阈值下. 这里直接用正文词
+    titleKeywords: ["盛利", "至尊"],
+    firstPageMustContain: ["被保人姓名", "保單貨幣"],
+    productCodeAliases: ["WEB05", "盛利II", "WAIISIS"],
+    presentationHorizonYears: 130,
+    // 实测: PDF 共 18 页, 退保表 P7-P8, 提领表 P10-P11; 复用 axa-shengli2-v1 结构
+    pageTargets: { summary: 1, noWithdraw: range(2, 10), withdraw: range(10, 16) },
   },
 ];
 

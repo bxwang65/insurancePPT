@@ -8,6 +8,7 @@
 import { spawn } from "child_process";
 import path from "path";
 import type { PdfSignature } from "./signatures/types.ts";
+import { resolveExtractionPython } from "./python-runtime.ts";
 
 // 储蓄险用 savings 提取器, 重疾/万用寿险用 ci 提取器
 const SCRIPT_BY_TYPE = {
@@ -78,7 +79,12 @@ export async function extractBySignature(pdfPath: string, sig: PdfSignature): Pr
   }
 
   return await new Promise<SignatureExtractionResult>((resolve, reject) => {
-    const proc = spawn("python3.11", args, { stdio: ["ignore", "pipe", "pipe"] });
+    // 2026-09-13 修复: 原先硬编码 spawn("python3.11") → 解析到 /Users/soldier/.local/bin/python3.11
+    // (uv 装的 cpython-3.11.14, 没有 fitz) → 必然 exit 1 + stdout 空
+    //   → "signature-extractor exited 1: Traceback ... ModuleNotFoundError: No module named 'fitz'"
+    //   → 全部 33 个签名的 fast-path 从未生效, 所有 PDF 都在走 LLM 慢路径 (180s/份)
+    // 改用项目自带的运行时解析器 (与 savings-table-parser.ts 一致), 它会实测 import fitz/pdfplumber/pptx
+    const proc = spawn(resolveExtractionPython(), args, { stdio: ["ignore", "pipe", "pipe"] });
     let stdout = "";
     let stderr = "";
     proc.stdout.on("data", (d) => { stdout += d.toString(); });

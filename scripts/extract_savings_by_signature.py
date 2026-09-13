@@ -26,6 +26,7 @@ import io
 import json
 import re
 import sys
+import unicodedata
 from collections import defaultdict
 from typing import Dict, List, Optional, Tuple
 
@@ -47,6 +48,14 @@ def _parse_multi(cell) -> List[int]:
             except ValueError:
                 pass
     return out
+
+
+def _self_consistent(row: Dict) -> bool:
+    """2026-09-12: 行内自洽校验 —— PDF 原文保证 保证(A)+复归(B)+终期(C) == 退保总额.
+    分子列误读(如 Rev/Term 未按年份索引)时该等式不成立, 用它做行优先级的判据."""
+    total = row.get("Total") or 0
+    parts = (row.get("Guar_CV") or 0) + (row.get("Rev") or 0) + (row.get("Term") or 0)
+    return abs(parts - total) <= max(1, abs(total) * 0.001)
 
 
 def _parse_y(cell) -> List[int]:
@@ -695,28 +704,39 @@ def extract_no_withdraw_aia(pdf_path: str, page_indices: List[int]) -> Dict[int,
                         ys = r1_years
                         paid = _parse_multi(r[2]) if len(r) > 2 else []
                         guar = _parse_multi(r[3]) if len(r) > 3 else []
-                        rev_term = (_parse_multi(r[4]) if len(r) > 4 else []) + (_parse_multi(r[5]) if len(r) > 5 else [])
+                        rev = _parse_multi(r[4]) if len(r) > 4 else []
+                        term = _parse_multi(r[5]) if len(r) > 5 else []
                         total = _parse_multi(r[6]) if len(r) > 6 else []
                     else:
                         # 11列布局 (AIA 5年缴简体): r[0]=年度, r[1]=保費, r[2]=保證, r[3]=復歸, r[4]=終期, r[5]=總額
                         ys = r0_years
                         paid = _parse_multi(r[1])
                         guar = _parse_multi(r[2]) if len(r) > 2 else []
-                        rev_term = (_parse_multi(r[3]) if len(r) > 3 else []) + (_parse_multi(r[4]) if len(r) > 4 else [])
+                        rev = _parse_multi(r[3]) if len(r) > 3 else []
+                        term = _parse_multi(r[4]) if len(r) > 4 else []
                         total = _parse_multi(r[5]) if len(r) > 5 else []
                     if not ys:
                         continue
                     n = min(len(ys), len(paid), len(total))
                     for k in range(n):
                         y = ys[k]
-                        if y not in rows:
-                            rows[y] = {
-                                "Y": y, "Age": y, "Paid": paid[k],
-                                "Guar_CV": guar[k] if k < len(guar) else 0,
-                                "Rev": rev_term[0] if rev_term else 0,
-                                "Term": rev_term[1] if len(rev_term) > 1 else 0,
-                                "Total": total[k],
-                            }
+                        # 2026-09-12 修复: Rev/Term 必须按 k 分别取 B列/C列.
+                        #   旧代码 `rev_term = B堆叠 + C堆叠` 后只取 [0]/[1] -> 与 k 无关,
+                        #   导致同一表格行的 5 个年份共用同一对值, 且 Term 取到的是 B 列的
+                        #   下一年值、C 列从未被使用 (AIA 两款 98% 行违反 A+B+C=Total).
+                        cand = {
+                            "Y": y, "Age": y, "Paid": paid[k],
+                            "Guar_CV": guar[k] if k < len(guar) else 0,
+                            "Rev": rev[k] if k < len(rev) else 0,
+                            "Term": term[k] if k < len(term) else 0,
+                            "Total": total[k],
+                        }
+                        prev = rows.get(y)
+                        # 2026-09-12 修复: 页序兜底. pages_no_withdraw 里"说明摘要"页(5年分组)
+                        #   排在逐年"详细说明"页之前, 旧的 `if y not in rows` 会把摘要页的
+                        #   错误值锁死. 改为: 自洽行(A+B+C==Total)可覆盖不自洽行.
+                        if prev is None or (_self_consistent(cand) and not _self_consistent(prev)):
+                            rows[y] = cand
     return rows
 
 
@@ -847,7 +867,10 @@ def extract_no_withdraw_manulife(pdf_path: str, page_indices: List[int]) -> Dict
             if pg < 1 or pg > len(pdf.pages):
                 continue
             page = pdf.pages[pg - 1]
-            text = page.extract_text() or ""
+            # 2026-09-13: pdfplumber 从部分 PDF 取出的字符落在 CJK 兼容区
+            # (实测 MANULIFE_GCIP: ⾦ U+2FA6 而非正体 金 U+91D1) → "保證現金價值" 判据失效
+            # → 整页 continue → 提取 0 行。NFKC 归一化回正体后再做页头判据。
+            text = unicodedata.normalize("NFKC", page.extract_text() or "")
             if "保證現金價值" not in text or "終期紅利" not in text:
                 continue
             if "現金提取" in text or "款項提取" in text:
@@ -892,7 +915,8 @@ def extract_withdraw_manulife(pdf_path: str, page_indices: List[int]) -> Dict[in
             if pg < 1 or pg > len(pdf.pages):
                 continue
             page = pdf.pages[pg - 1]
-            text = page.extract_text() or ""
+            # 2026-09-13: 同 extract_no_withdraw_manulife —— NFKC 归一化兼容区异体字
+            text = unicodedata.normalize("NFKC", page.extract_text() or "")
             if "款項提取" not in text or "退保價值" not in text:
                 continue
             for t in page.extract_tables():
@@ -1161,8 +1185,11 @@ def main():
             wd = {}  # C540 默认演示无提领场景
         elif args.company == "china-taiping":
             # 中国太平: 按 signature.productCode 分流 (颐年乐享 vs 鑫安逸)
-            if args.signature == "china-taiping-1121nwlp7-v1":
-                # 颐年乐享尊享版 1121NWLP7: 7列 (B+C+D+E) X-clustering
+            if args.signature.startswith("china-taiping-1121nwlp"):
+                # 颐年乐享系列: 1121NWLP7 (尊享版) / 1121NWLP9 (至尊版) 同族同表式
+                # 2026-09-13: 原为 == "china-taiping-1121nwlp7-v1" 精确匹配 →
+                #   新增的 china-taiping-1121nwlp9-v1 会掉进下面 else 的鑫安逸分支
+                #   (4列/无分红) → 签名命中 conf=0.9 但提取 0 行。改为前缀匹配。
                 no_wd = extract_no_withdraw_china_taiping_1121(args.pdf, pages_nw)
                 wd = {}  # 默认演示无提领场景
             else:
